@@ -40,7 +40,7 @@ markers = [
 [tool.mypy]
 python_version = "3.12"
 strict = true
-files = ["src/tra_cuu_gtdb/domain", "src/tra_cuu_gtdb/kb", "src/tra_cuu_gtdb/retrieval"]
+files = ["src/tra_cuu_gtdb/domain", "src/tra_cuu_gtdb/kb", "src/tra_cuu_gtdb/retrieval", "src/tra_cuu_gtdb/api/trinh_bay.py"]
 
 # scikit-learn khong phat hanh stub kieu; chi bo qua dung hai module nay.
 [[tool.mypy.overrides]]
