@@ -26,6 +26,9 @@ jobs:
       - name: Kiểm tra kiểu (domain + kb, strict)
         run: mypy
 
+      - name: Kiểm tra hiệu lực đã suy diễn (idempotent)
+        run: python scripts/suy_dien_hieu_luc.py --kiem-tra
+
       - name: Kiểm thử + độ phủ
         run: pytest --cov --cov-report=term-missing --cov-fail-under=80
 

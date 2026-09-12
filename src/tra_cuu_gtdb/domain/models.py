@@ -19,6 +19,8 @@ from typing import Annotated, Literal
 
 from pydantic import BaseModel, Field, field_validator, model_validator
 
+from tra_cuu_gtdb.domain.temporal import KhoangHieuLuc
+
 ChuoiKhongRong = Annotated[str, Field(min_length=1)]
 
 # Giấy phép lái xe có tổng 12 điểm (Điều 58 Luật 36/2024/QH15).
@@ -159,6 +161,10 @@ class QuyTac(MoHinhGoc):
     tinh_trang: str | None = None
     sua_doi_boi: str | None = None
     nguyen_van_truoc_sua_doi: str | None = None
+    # Khoảng hiệu lực, suy ra tất định từ documents.json bởi
+    # scripts/suy_dien_hieu_luc.py. Để trống nếu chưa chạy suy diễn.
+    hieu_luc: KhoangHieuLuc | None = None
+
     nguon: str | None = None
     ghi_chu: str | None = None
     text_search: str = ""
@@ -186,6 +192,10 @@ class ViPham(MoHinhGoc):
     sua_doi_boi: str | None = None
     hanh_vi_truoc_sua_doi: str | None = None
     ghi_chu_sua_doi: str | None = None
+    # Khoảng hiệu lực, suy ra tất định từ documents.json bởi
+    # scripts/suy_dien_hieu_luc.py. Để trống nếu chưa chạy suy diễn.
+    hieu_luc: KhoangHieuLuc | None = None
+
     keyphrases: list[str] = Field(default_factory=list)
     text_search: str = ""
     text_search_kd: str = ""

@@ -7,7 +7,8 @@ che mất.
 from __future__ import annotations
 
 import json
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
+from datetime import date
 from pathlib import Path
 from typing import Any
 
@@ -59,6 +60,23 @@ class CoSoTriThuc:
             [c.id for c in self.khai_niem]
             + [r.id for r in self.quy_tac]
             + [v.id for v in self.vi_pham]
+        )
+
+    def tai_thoi_diem(self, moc: date | None = None) -> CoSoTriThuc:
+        """Trả về cơ sở tri thức chỉ gồm điều khoản CÓ HIỆU LỰC tại mốc thời gian.
+
+        Điều khoản chưa có khoảng hiệu lực (chưa chạy suy diễn) được giữ lại để
+        không âm thầm làm rỗng cơ sở tri thức.
+        """
+        moc = moc or date.today()
+
+        def con_hieu_luc(x: QuyTac | ViPham) -> bool:
+            return x.hieu_luc is None or x.hieu_luc.hieu_luc_tai(moc)
+
+        return replace(
+            self,
+            quy_tac=tuple(r for r in self.quy_tac if con_hieu_luc(r)),
+            vi_pham=tuple(v for v in self.vi_pham if con_hieu_luc(v)),
         )
 
     def thong_ke(self) -> dict[str, int]:
