@@ -31,7 +31,8 @@ TEN_DAI_LUONG = {
 
 
 def _kd(s):
-    """Đưa chuỗi tiếng Việt về dạng không dấu, viết thường (dùng cho so khớp biểu thức chính quy)."""
+    """Đưa chuỗi tiếng Việt về dạng không dấu, viết thường
+    (dùng cho so khớp biểu thức chính quy)."""
     s = unicodedata.normalize("NFD", s or "")
     s = "".join(c for c in s if unicodedata.category(c) != "Mn")
     return s.replace("đ", "d").replace("Đ", "D").lower()
@@ -73,7 +74,8 @@ def trich_nguong(hanh_vi):
             out.append({"dai_luong": CON_MAU, "can_duoi": _so(m.group(1)),
                         "can_tren": _so(m.group(2)),
                         "mo_ta": "vượt quá %s đến %s" % (m.group(1), m.group(2))})
-        m = re.search(r"vuot qua\s+([\d.,]+)\s*miligam\s*den\s*([\d.,]+)\s*miligam\s*/\s*1\s*lit", t)
+        m = re.search(
+            r"vuot qua\s+([\d.,]+)\s*miligam\s*den\s*([\d.,]+)\s*miligam\s*/\s*1\s*lit", t)
         if m:
             out.append({"dai_luong": CON_KHI_THO, "can_duoi": _so(m.group(1)),
                         "can_tren": _so(m.group(2)),
@@ -182,11 +184,11 @@ class NumericReasoner:
         self.nguong = {}          # id hanh vi -> danh sach nguong
         self.theo_dai_luong = {}  # dai_luong -> [(id, nguong)]
         for v in violations:
-            ng = trich_nguong(v["hanh_vi"])
+            ng = trich_nguong(v.hanh_vi)
             if ng:
-                self.nguong[v["id"]] = ng
+                self.nguong[v.id] = ng
                 for n in ng:
-                    self.theo_dai_luong.setdefault(n["dai_luong"], []).append((v["id"], n))
+                    self.theo_dai_luong.setdefault(n["dai_luong"], []).append((v.id, n))
 
     def suy_dien(self, truy_van, phuong_tien=None, violations_by_id=None):
         """Trả về (giá_trị_tìm_thấy, tập_id_hành_vi_thoả_mãn, giải_thích)."""
@@ -201,7 +203,7 @@ class NumericReasoner:
                     continue
                 if phuong_tien and violations_by_id:
                     v = violations_by_id.get(vid)
-                    if v and not (set(phuong_tien) & set(v["phuong_tien"])):
+                    if v and not (set(phuong_tien) & set(v.phuong_tien)):
                         continue
                 ids.add(vid)
             if ids:
