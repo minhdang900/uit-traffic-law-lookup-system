@@ -96,7 +96,14 @@ pip install -e ".[dev,ui]"
 ```bash
 pytest                       # chạy toàn bộ kiểm thử
 python eval/evaluate.py      # đo lại các chỉ số
-streamlit run ui/app.py      # giao diện web
+python eval/ablation.py      # thí nghiệm loại bỏ thành phần
+```
+
+Giao diện tra cứu (cần gói tuỳ chọn `ui`):
+
+```bash
+pip install -e '.[ui]'
+streamlit run src/tra_cuu_gtdb/api/app.py
 ```
 
 ## Cấu trúc
