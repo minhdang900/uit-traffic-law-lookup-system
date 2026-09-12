@@ -114,6 +114,9 @@ class KhaiNiem(MoHinhGoc):
     can_cu_text: ChuoiKhongRong
     thuoc_tinh: dict[str, str] = Field(default_factory=dict)
     keyphrases: list[str] = Field(default_factory=list)
+    #: Khái niệm cũng bị văn bản sửa đổi chạm tới, y như quy tắc và vi phạm.
+    sua_doi_boi: str | None = None
+    ghi_chu: str | None = None
     # Trường chỉ mục dựng sẵn lúc build; thuộc về tầng index nhưng lưu kèm dữ liệu.
     text_search: str = ""
     text_search_kd: str = ""
@@ -272,6 +275,8 @@ class VanBan(MoHinhGoc):
     vai_tro: str = ""
     hop_nhat: str | None = None
     sua_doi_boi: list[str] = Field(default_factory=list)
+    #: Xuất xứ siêu dữ liệu — nêu rõ lấy từ văn bản nào, để kiểm chứng lại được.
+    ghi_chu: str | None = None
 
     @model_validator(mode="after")
     def _hieu_luc_khong_truoc_ban_hanh(self) -> VanBan:

@@ -1,0 +1,376 @@
+{
+ "nguon": "Văn bản hợp nhất 55/VBHN-VPQH ngày 23/3/2026 (Văn phòng Quốc hội), tải từ https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/3/55-vbhn-vpqh.pdf",
+ "mo_ta": "Bảng chú thích của văn bản hợp nhất, liệt kê từng điều khoản của Luật 36/2024/QH15 bị Luật 118/2025/QH15 sửa đổi. Trích tự động bằng pdftotext -layout rồi so khớp biểu thức chính quy.",
+ "han_che": "Chỉ ánh xạ được 31/46 chú thích về (điều, khoản) cụ thể; số còn lại là thay cụm từ nên dấu chú thích nằm giữa câu, chưa bắt được. Vì vậy danh sách điều khoản bị ảnh hưởng là CẬN DƯỚI.",
+ "so_chu_thich": 46,
+ "chu_thich": [
+  {
+   "chu_thich": 2,
+   "loai": "sua_doi",
+   "dieu_luat36": null,
+   "khoan_luat36": null,
+   "can_cu_sua_doi": "điểm a khoản 22 Điều 7",
+   "nguyen_van_chu_thich": "Cụm từ “, Bộ Lao động, Thương binh và Xã hội,” được bỏ theo quy định tại điểm a khoản 22 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026."
+  },
+  {
+   "chu_thich": 3,
+   "loai": "sua_doi",
+   "dieu_luat36": null,
+   "khoan_luat36": null,
+   "can_cu_sua_doi": "điểm a khoản 1 Điều 7",
+   "nguyen_van_chu_thich": "Điểm này được sửa đổi, bổ sung theo quy định tại điểm a khoản 1 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026."
+  },
+  {
+   "chu_thich": 4,
+   "loai": "sua_doi",
+   "dieu_luat36": 7,
+   "khoan_luat36": "điểm d",
+   "can_cu_sua_doi": "điểm a khoản 1 Điều 7",
+   "nguyen_van_chu_thich": "Điểm này được sửa đổi, bổ sung theo quy định tại điểm a khoản 1 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026."
+  },
+  {
+   "chu_thich": 5,
+   "loai": "sua_doi",
+   "dieu_luat36": 7,
+   "khoan_luat36": "điểm h",
+   "can_cu_sua_doi": "điểm b khoản 1 Điều 7",
+   "nguyen_van_chu_thich": "Điểm này được sửa đổi, bổ sung theo quy định tại điểm b khoản 1 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026."
+  },
+  {
+   "chu_thich": 6,
+   "loai": "sua_doi",
+   "dieu_luat36": 9,
+   "khoan_luat36": "khoản 18",
+   "can_cu_sua_doi": "khoản 2 Điều 7",
+   "nguyen_van_chu_thich": "Khoản này được sửa đổi, bổ sung theo quy định tại khoản 2 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026."
+  },
+  {
+   "chu_thich": 7,
+   "loai": "bo_sung",
+   "dieu_luat36": null,
+   "khoan_luat36": null,
+   "can_cu_sua_doi": "khoản 2 Điều 7",
+   "nguyen_van_chu_thich": "Khoản này được bổ sung theo quy định tại khoản 2 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026."
+  },
+  {
+   "chu_thich": 8,
+   "loai": "sua_doi",
+   "dieu_luat36": 10,
+   "khoan_luat36": "khoản 3",
+   "can_cu_sua_doi": "khoản 3 Điều 7",
+   "nguyen_van_chu_thich": "Khoản này được sửa đổi, bổ sung theo quy định tại khoản 3 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026."
+  },
+  {
+   "chu_thich": 9,
+   "loai": "sua_doi",
+   "dieu_luat36": null,
+   "khoan_luat36": null,
+   "can_cu_sua_doi": "khoản 21 Điều 7",
+   "nguyen_van_chu_thich": "Cụm từ “Bộ Giao thông vận tải” được thay thế bằng cụm từ “Bộ Xây dựng” theo quy định tại khoản 21 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026."
+  },
+  {
+   "chu_thich": 10,
+   "loai": "sua_doi",
+   "dieu_luat36": null,
+   "khoan_luat36": null,
+   "can_cu_sua_doi": "khoản 21 Điều 7",
+   "nguyen_van_chu_thich": "Cụm từ “Bộ Giao thông vận tải” được thay thế bằng cụm từ “Bộ Xây dựng” theo quy định tại khoản 21 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026."
+  },
+  {
+   "chu_thich": 11,
+   "loai": "sua_doi",
+   "dieu_luat36": 27,
+   "khoan_luat36": "điểm a",
+   "can_cu_sua_doi": "khoản 4 Điều 7",
+   "nguyen_van_chu_thich": "Điểm này được sửa đổi, bổ sung theo quy định tại khoản 4 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026."
+  },
+  {
+   "chu_thich": 12,
+   "loai": "sua_doi",
+   "dieu_luat36": null,
+   "khoan_luat36": null,
+   "can_cu_sua_doi": "khoản 4 Điều 7",
+   "nguyen_van_chu_thich": "Điểm này được sửa đổi, bổ sung theo quy định tại khoản 4 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026."
+  },
+  {
+   "chu_thich": 13,
+   "loai": "sua_doi",
+   "dieu_luat36": 34,
+   "khoan_luat36": "khoản 4",
+   "can_cu_sua_doi": "điểm a khoản 5 Điều 7",
+   "nguyen_van_chu_thich": "Khoản này được sửa đổi, bổ sung theo quy định tại điểm a khoản 5 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026."
+  },
+  {
+   "chu_thich": 14,
+   "loai": "sua_doi",
+   "dieu_luat36": 34,
+   "khoan_luat36": "khoản 6",
+   "can_cu_sua_doi": "điểm b khoản 5 Điều 7",
+   "nguyen_van_chu_thich": "Khoản này được sửa đổi, bổ sung theo quy định tại điểm b khoản 5 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026."
+  },
+  {
+   "chu_thich": 15,
+   "loai": "sua_doi",
+   "dieu_luat36": 35,
+   "khoan_luat36": "khoản 2",
+   "can_cu_sua_doi": "khoản 6 Điều 7",
+   "nguyen_van_chu_thich": "Khoản này được sửa đổi, bổ sung theo quy định tại khoản 6 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026."
+  },
+  {
+   "chu_thich": 16,
+   "loai": "sua_doi",
+   "dieu_luat36": 35,
+   "khoan_luat36": "khoản 3",
+   "can_cu_sua_doi": "khoản 6 Điều 7",
+   "nguyen_van_chu_thich": "Khoản này được sửa đổi, bổ sung theo quy định tại khoản 6 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026."
+  },
+  {
+   "chu_thich": 17,
+   "loai": "sua_doi",
+   "dieu_luat36": 41,
+   "khoan_luat36": "khoản 7",
+   "can_cu_sua_doi": "khoản 7 Điều 7",
+   "nguyen_van_chu_thich": "Khoản này được sửa đổi, bổ sung theo quy định tại khoản 7 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026."
+  },
+  {
+   "chu_thich": 18,
+   "loai": "sua_doi",
+   "dieu_luat36": null,
+   "khoan_luat36": null,
+   "can_cu_sua_doi": "điểm a khoản 8 Điều 7",
+   "nguyen_van_chu_thich": "Khoản này được sửa đổi, bổ sung theo quy định tại điểm a khoản 8 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026."
+  },
+  {
+   "chu_thich": 19,
+   "loai": "sua_doi",
+   "dieu_luat36": null,
+   "khoan_luat36": null,
+   "can_cu_sua_doi": "khoản 21 Điều 7",
+   "nguyen_van_chu_thich": "Cụm từ “Bộ Giao thông vận tải” được thay thế bằng cụm từ “Bộ Xây dựng” theo quy định tại khoản 21 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026."
+  },
+  {
+   "chu_thich": 20,
+   "loai": "sua_doi",
+   "dieu_luat36": 42,
+   "khoan_luat36": "điểm e",
+   "can_cu_sua_doi": "điểm b khoản 8 Điều 7",
+   "nguyen_van_chu_thich": "Điểm này được sửa đổi, bổ sung theo quy định tại điểm b khoản 8 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026."
+  },
+  {
+   "chu_thich": 21,
+   "loai": "sua_doi",
+   "dieu_luat36": 42,
+   "khoan_luat36": "khoản 1",
+   "can_cu_sua_doi": "khoản 9 Điều 7",
+   "nguyen_van_chu_thich": "Khoản này được sửa đổi, bổ sung theo quy định tại khoản 9 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026."
+  },
+  {
+   "chu_thich": 22,
+   "loai": "sua_doi",
+   "dieu_luat36": null,
+   "khoan_luat36": null,
+   "can_cu_sua_doi": "khoản 21 Điều 7",
+   "nguyen_van_chu_thich": "Cụm từ “Bộ Giao thông vận tải” được thay thế bằng cụm từ “Bộ Xây dựng” theo quy định tại khoản 21 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026."
+  },
+  {
+   "chu_thich": 23,
+   "loai": "sua_doi",
+   "dieu_luat36": 52,
+   "khoan_luat36": "khoản 9",
+   "can_cu_sua_doi": "khoản 10 Điều 7",
+   "nguyen_van_chu_thich": "Khoản này được sửa đổi, bổ sung theo quy định tại khoản 10 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026."
+  },
+  {
+   "chu_thich": 24,
+   "loai": "sua_doi",
+   "dieu_luat36": null,
+   "khoan_luat36": null,
+   "can_cu_sua_doi": "khoản 21 Điều 7",
+   "nguyen_van_chu_thich": "Cụm từ “Bộ Giao thông vận tải” được thay thế bằng cụm từ “Bộ Xây dựng” theo quy định tại khoản 21 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026."
+  },
+  {
+   "chu_thich": 25,
+   "loai": "sua_doi",
+   "dieu_luat36": 57,
+   "khoan_luat36": "khoản 9",
+   "can_cu_sua_doi": "khoản 11 Điều 7",
+   "nguyen_van_chu_thich": "Khoản này được sửa đổi, bổ sung theo quy định tại khoản 11 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026."
+  },
+  {
+   "chu_thich": 26,
+   "loai": "sua_doi",
+   "dieu_luat36": 60,
+   "khoan_luat36": "điểm e",
+   "can_cu_sua_doi": "điểm a khoản 12 Điều 7",
+   "nguyen_van_chu_thich": "Điểm này được sửa đổi, bổ sung theo quy định tại điểm a khoản 12 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026."
+  },
+  {
+   "chu_thich": 27,
+   "loai": "sua_doi",
+   "dieu_luat36": 60,
+   "khoan_luat36": "khoản 7",
+   "can_cu_sua_doi": "điểm b khoản 12 Điều 7",
+   "nguyen_van_chu_thich": "Khoản này được sửa đổi, bổ sung theo quy định tại điểm b khoản 12 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026."
+  },
+  {
+   "chu_thich": 28,
+   "loai": "sua_doi",
+   "dieu_luat36": 60,
+   "khoan_luat36": "khoản 8",
+   "can_cu_sua_doi": "điểm b khoản 12 Điều 7",
+   "nguyen_van_chu_thich": "Khoản này được sửa đổi, bổ sung theo quy định tại điểm b khoản 12 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026."
+  },
+  {
+   "chu_thich": 29,
+   "loai": "bo_sung",
+   "dieu_luat36": 60,
+   "khoan_luat36": "khoản 9",
+   "can_cu_sua_doi": "điểm b khoản 12 Điều 7",
+   "nguyen_van_chu_thich": "Khoản này được bổ sung theo quy định tại điểm b khoản 12 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026."
+  },
+  {
+   "chu_thich": 30,
+   "loai": "sua_doi",
+   "dieu_luat36": 60,
+   "khoan_luat36": "khoản 4",
+   "can_cu_sua_doi": "điểm a khoản 13 Điều 7",
+   "nguyen_van_chu_thich": "Khoản này được sửa đổi, bổ sung theo quy định tại điểm a khoản 13 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026."
+  },
+  {
+   "chu_thich": 31,
+   "loai": "sua_doi",
+   "dieu_luat36": 60,
+   "khoan_luat36": "khoản 6",
+   "can_cu_sua_doi": "điểm b khoản 13 Điều 7",
+   "nguyen_van_chu_thich": "Khoản này được sửa đổi, bổ sung theo quy định tại điểm b khoản 13 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026."
+  },
+  {
+   "chu_thich": 32,
+   "loai": "sua_doi",
+   "dieu_luat36": 60,
+   "khoan_luat36": "khoản 7",
+   "can_cu_sua_doi": "điểm b khoản 13 Điều 7",
+   "nguyen_van_chu_thich": "Khoản này được sửa đổi, bổ sung theo quy định tại điểm b khoản 13 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026."
+  },
+  {
+   "chu_thich": 33,
+   "loai": "bo_sung",
+   "dieu_luat36": 60,
+   "khoan_luat36": "khoản 8",
+   "can_cu_sua_doi": "điểm b khoản 13 Điều 7",
+   "nguyen_van_chu_thich": "Khoản này được bổ sung theo quy định tại điểm b khoản 13 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026."
+  },
+  {
+   "chu_thich": 34,
+   "loai": "sua_doi",
+   "dieu_luat36": 60,
+   "khoan_luat36": "điểm b",
+   "can_cu_sua_doi": "điểm a khoản 14 Điều 7",
+   "nguyen_van_chu_thich": "Điểm này được sửa đổi, bổ sung theo quy định tại điểm a khoản 14 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026."
+  },
+  {
+   "chu_thich": 35,
+   "loai": "sua_doi",
+   "dieu_luat36": 60,
+   "khoan_luat36": "khoản 6",
+   "can_cu_sua_doi": "điểm b khoản 14 Điều 7",
+   "nguyen_van_chu_thich": "Khoản này được sửa đổi, bổ sung theo quy định tại điểm b khoản 14 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026."
+  },
+  {
+   "chu_thich": 36,
+   "loai": "sua_doi",
+   "dieu_luat36": 60,
+   "khoan_luat36": "khoản 7",
+   "can_cu_sua_doi": "khoản 23 Điều 7",
+   "nguyen_van_chu_thich": "Khoản này được bãi bỏ theo quy định tại khoản 23 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026."
+  },
+  {
+   "chu_thich": 37,
+   "loai": "sua_doi",
+   "dieu_luat36": null,
+   "khoan_luat36": null,
+   "can_cu_sua_doi": "khoản 21 Điều 7",
+   "nguyen_van_chu_thich": "Cụm từ “Bộ Giao thông vận tải” được thay thế bằng cụm từ “Bộ Xây dựng” theo quy định tại khoản 21 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026."
+  },
+  {
+   "chu_thich": 38,
+   "loai": "sua_doi",
+   "dieu_luat36": 64,
+   "khoan_luat36": "khoản 1",
+   "can_cu_sua_doi": "khoản 15 Điều 7",
+   "nguyen_van_chu_thich": "Khoản này được sửa đổi, bổ sung theo quy định tại khoản 15 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026."
+  },
+  {
+   "chu_thich": 39,
+   "loai": "sua_doi",
+   "dieu_luat36": 67,
+   "khoan_luat36": "khoản 3",
+   "can_cu_sua_doi": "khoản 16 Điều 7",
+   "nguyen_van_chu_thich": "Khoản này được sửa đổi, bổ sung theo quy định tại khoản 16 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026."
+  },
+  {
+   "chu_thich": 40,
+   "loai": "sua_doi",
+   "dieu_luat36": null,
+   "khoan_luat36": null,
+   "can_cu_sua_doi": "khoản 17 Điều 7",
+   "nguyen_van_chu_thich": "Điều này được sửa đổi, bổ sung theo quy định tại khoản 17 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026."
+  },
+  {
+   "chu_thich": 41,
+   "loai": "sua_doi",
+   "dieu_luat36": null,
+   "khoan_luat36": null,
+   "can_cu_sua_doi": "điểm b khoản 22 Điều 7",
+   "nguyen_van_chu_thich": "Cụm từ “trực thuộc trung ương” được bỏ theo quy định tại điểm b khoản 22 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026."
+  },
+  {
+   "chu_thich": 42,
+   "loai": "sua_doi",
+   "dieu_luat36": 75,
+   "khoan_luat36": "điểm c",
+   "can_cu_sua_doi": "khoản 18 Điều 7",
+   "nguyen_van_chu_thich": "Điểm này được sửa đổi, bổ sung theo quy định tại khoản 18 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026."
+  },
+  {
+   "chu_thich": 43,
+   "loai": "sua_doi",
+   "dieu_luat36": 87,
+   "khoan_luat36": "khoản 2",
+   "can_cu_sua_doi": "khoản 19 Điều 7",
+   "nguyen_van_chu_thich": "Khoản này được sửa đổi, bổ sung theo quy định tại khoản 19 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026."
+  },
+  {
+   "chu_thich": 44,
+   "loai": "sua_doi",
+   "dieu_luat36": 87,
+   "khoan_luat36": "khoản 3",
+   "can_cu_sua_doi": "khoản 19 Điều 7",
+   "nguyen_van_chu_thich": "Khoản này được sửa đổi, bổ sung theo quy định tại khoản 19 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026."
+  },
+  {
+   "chu_thich": 45,
+   "loai": "sua_doi",
+   "dieu_luat36": null,
+   "khoan_luat36": null,
+   "can_cu_sua_doi": null,
+   "nguyen_van_chu_thich": "Khoản 1 và khoản 2 Điều 11 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 Luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026 quy định như sau: “Điều 11. Điều khoản thi hành"
+  },
+  {
+   "chu_thich": 46,
+   "loai": "sua_doi",
+   "dieu_luat36": 88,
+   "khoan_luat36": "khoản 2",
+   "can_cu_sua_doi": "điểm a khoản 20 Điều 7",
+   "nguyen_van_chu_thich": "Khoản này được sửa đổi, bổ sung theo quy định tại điểm a khoản 20 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 01 năm 2026."
+  },
+  {
+   "chu_thich": 47,
+   "loai": "bo_sung",
+   "dieu_luat36": null,
+   "khoan_luat36": null,
+   "can_cu_sua_doi": "điểm b khoản 20 Điều 7",
+   "nguyen_van_chu_thich": "Khoản này được bổ sung theo quy định tại điểm b khoản 20 Điều 7 của Luật số 118/2025/QH15 sửa đổi, bổ sung một số điều của 10 luật có liên quan đến an ninh, trật tự, có hiệu lực kể từ ngày 01 tháng 7 năm 2026."
+  }
+ ]
+}
