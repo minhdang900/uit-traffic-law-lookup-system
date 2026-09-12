@@ -106,6 +106,13 @@ pip install -e '.[ui]'
 streamlit run src/tra_cuu_gtdb/api/app.py
 ```
 
+Sinh khung báo cáo Word đúng định dạng đề bài (cần gói tuỳ chọn `bao-cao`):
+
+```bash
+pip install -e '.[bao-cao]'
+python -m tra_cuu_gtdb.bao_cao.tao_bao_cao   # -> docs/bao_cao_de_tai_4_khung.docx
+```
+
 ## Cấu trúc
 
 ```
