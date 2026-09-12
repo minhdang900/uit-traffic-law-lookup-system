@@ -1,0 +1,38 @@
+{
+ "so_cau_trong_mien": 120,
+ "so_cau_ngoai_mien": 40,
+ "ket_qua": [
+  {
+   "tin_hieu": "TF-IDF thô",
+   "auc": 0.8746,
+   "loai_rac_khi_0_oan": 0.075,
+   "san_trong_mien": 0.1349,
+   "oan_khi_loai_het_rac": 0.6667,
+   "tran_ngoai_mien": 0.3812
+  },
+  {
+   "tin_hieu": "số keyphrase",
+   "auc": 0.95,
+   "loai_rac_khi_0_oan": 0.0,
+   "san_trong_mien": 0.0,
+   "oan_khi_loai_het_rac": 0.1,
+   "tran_ngoai_mien": 0.0
+  },
+  {
+   "tin_hieu": "phủ từ vựng KB",
+   "auc": 0.7243,
+   "loai_rac_khi_0_oan": 0.475,
+   "san_trong_mien": 0.7647,
+   "oan_khi_loai_het_rac": 1.0,
+   "tran_ngoai_mien": 1.0
+  },
+  {
+   "tin_hieu": "dense",
+   "auc": 0.9958,
+   "loai_rac_khi_0_oan": 0.775,
+   "san_trong_mien": 0.3919,
+   "oan_khi_loai_het_rac": 0.0583,
+   "tran_ngoai_mien": 0.5158
+  }
+ ]
+}

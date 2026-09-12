@@ -42,6 +42,21 @@ nhận bằng các test xfail bên dưới thay vì giấu đi.
 HƯỚNG XỬ LÝ ĐỀ XUẤT (ngoài phạm vi pha này)
     - Sửa hàm tính điểm để bỏ sàn 0.300, cho điểm phản ánh độ tương đồng thật
     - Hoặc thêm một bộ phân lớp miền (trong/ngoài lĩnh vực giao thông) riêng
+
+CẬP NHẬT — ĐỀ XUẤT THỨ HAI ĐÃ ĐƯỢC KIỂM CHỨNG
+----------------------------------------------
+``src/tra_cuu_gtdb/retrieval/dense.py`` hiện thực bộ lọc miền bằng dense
+embedding. Đo trên chính 120 câu này cộng 40 truy vấn ngoài miền:
+
+    tín hiệu            AUC     loại rác khi 0 câu oan
+    TF-IDF thô        0.8746     7,5%
+    số keyphrase      0.9500     0,0%
+    dense             0.9958    77,5%
+    dense + keyphrase    --     92,5%
+
+Tức là tách miền LÀ KHẢ THI, chỉ không khả thi với đặc trưng thưa. Tầng dense
+là tuỳ chọn (mô hình ~470 MB) nên cấu hình mặc định — thứ mà tệp này đo — vẫn
+giữ nguyên hành vi cũ, và các xfail dưới đây vẫn đúng.
 """
 import pytest
 
@@ -124,8 +139,12 @@ class TestHanCheDaBietVaDoDuoc:
         "nhất LUÔN được kéo về 1.0 dù khớp tệ tới đâu. NHƯNG bỏ chuẩn hoá cũng "
         "KHÔNG cứu được: đo trên độ tương đồng thô, 56/120 câu hợp lệ vẫn chấm "
         "điểm thấp hơn hoặc bằng truy vấn rác (concept 57/120, rule 82/120). "
-        "Tín hiệu TF-IDF quá yếu để tách miền — cần đặc trưng khác (dense "
-        "embedding hoặc bộ phân lớp miền riêng), không phải chỉnh ngưỡng."))
+        "Tín hiệu TF-IDF quá yếu để tách miền — cần đặc trưng khác, không phải "
+        "chỉnh ngưỡng. ĐÃ KIỂM CHỨNG ĐỀ XUẤT ĐÓ: dense embedding nâng AUC "
+        "0.8746 -> 0.9958 và loại được 92,5% truy vấn rác mà không làm oan câu "
+        "hợp lệ nào (xem tests/test_phat_hien_mien.py). Test này vẫn xfail vì "
+        "nó đo CẤU HÌNH MẶC ĐỊNH, nơi tầng dense cố ý không được bật: mô hình "
+        "nặng ~470 MB nên là gói tuỳ chọn."))
     @pytest.mark.parametrize("truy_van", NGOAI_LINH_VUC)
     def test_nen_tu_choi_truy_van_ngoai_linh_vuc(self, he_thong, truy_van):
         kq = he_thong.hoi(truy_van)

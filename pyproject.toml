@@ -40,11 +40,11 @@ markers = [
 [tool.mypy]
 python_version = "3.12"
 strict = true
-files = ["src/tra_cuu_gtdb/domain", "src/tra_cuu_gtdb/kb"]
+files = ["src/tra_cuu_gtdb/domain", "src/tra_cuu_gtdb/kb", "src/tra_cuu_gtdb/retrieval"]
 
 # scikit-learn khong phat hanh stub kieu; chi bo qua dung hai module nay.
 [[tool.mypy.overrides]]
-module = ["sklearn.*"]
+module = ["sklearn.*", "sentence_transformers.*"]
 ignore_missing_imports = true
 
 [tool.ruff]
