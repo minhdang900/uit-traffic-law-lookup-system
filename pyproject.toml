@@ -55,11 +55,11 @@ target-version = "py312"
 select = ["E", "F", "I", "UP", "B"]
 
 [tool.ruff.lint.per-file-ignores]
-# Port NGUYEN VAN dong co suy dien da do duoc Top-1 76,67%. Khong dinh dang lai
-# de tranh lam troi thuat giai; viec don dep se lam trong buoc refactor rieng
-# khi da co cong chi so canh giu trong CI.
-"src/tra_cuu_gtdb/reasoning/engine.py" = ["E501", "E741", "B007", "B905", "UP031", "UP038"]
-"src/tra_cuu_gtdb/reasoning/numeric.py" = ["E501", "E741", "B007", "B905", "UP031", "UP038"]
+# Sau buoc chuyen sang mo hinh co kieu, 5/6 nhom canh bao bi chan truoc day da
+# tu het: chi con UP031 (dinh dang kieu %). Doi sang f-string la thay doi thuan
+# hinh thuc tren ~44 cho, de rieng mot PR khac cho de soat.
+"src/tra_cuu_gtdb/reasoning/engine.py" = ["UP031"]
+"src/tra_cuu_gtdb/reasoning/numeric.py" = ["UP031"]
 "eval/*.py" = ["E501", "UP031", "B007"]
 
 [tool.coverage.run]

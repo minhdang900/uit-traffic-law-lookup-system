@@ -100,9 +100,9 @@ class BoLocMien:
         self.ten_mo_hinh = ten_mo_hinh
         self.analyzer = QueryAnalyzer(kb)
         self.mo_hinh = _nap_mo_hinh(ten_mo_hinh)
-        self.corpus = ([v["text_search"] for v in kb.violations]
-                       + [c["text_search"] for c in kb.concepts]
-                       + [r["text_search"] for r in kb.rules])
+        self.corpus = ([v.text_search for v in kb.violations]
+                       + [c.text_search for c in kb.concepts]
+                       + [r.text_search for r in kb.rules])
         self.E = self._nhung_corpus()
 
     # ------------------------------------------------------------- chi muc

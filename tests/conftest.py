@@ -22,8 +22,13 @@ def he_thong():
 
 
 @pytest.fixture(scope="session")
-def kb_dict(he_thong):
-    """Cơ sở tri thức ở dạng dict mà tầng suy diễn dùng (xem ghi chú đường biên kiểu)."""
+def kb_da_lap_chi_muc(he_thong):
+    """Cơ sở tri thức ĐÃ LẬP CHỈ MỤC mà tầng suy diễn dùng.
+
+    Từ bước chuyển sang mô hình có kiểu, các bộ sưu tập ở đây (``keyphrases``,
+    ``violations``...) chứa mô hình Pydantic chứ không còn ``dict``; chỉ đầu ra
+    của ``hoi()`` mới là dict.
+    """
     return he_thong.kb
 
 

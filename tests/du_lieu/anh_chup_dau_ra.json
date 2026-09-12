@@ -1,0 +1,1111 @@
+{
+ "xe cơ giới là gì": {
+  "lop_bai_toan": "P1_TRA_CUU_KHAI_NIEM",
+  "khong_tim_thay": false,
+  "khai_niem": [
+   {
+    "id": "KN_XE_CO_GIOI",
+    "diem": 0.85,
+    "bo_sung": false
+   },
+   {
+    "id": "KN_PHUONG_TIEN_GIAO_THONG_DUONG_BO",
+    "diem": 0.6544,
+    "bo_sung": false
+   },
+   {
+    "id": "KN_DO_XE",
+    "diem": 0.0784,
+    "bo_sung": false
+   },
+   {
+    "id": "KN_NGUOI_DIEU_KHIEN_PHUONG_TIEN",
+    "diem": 0.075,
+    "bo_sung": false
+   },
+   {
+    "id": "KN_VUOT_XE",
+    "diem": 0.0569,
+    "bo_sung": false
+   }
+  ],
+  "quy_tac": [],
+  "hanh_vi": [],
+  "truong_hanh_vi": [],
+  "truong_khai_niem": [
+   "can_cu",
+   "can_cu_text",
+   "diem",
+   "dinh_nghia",
+   "id",
+   "keyphrases",
+   "loai",
+   "ten",
+   "text_search",
+   "text_search_kd",
+   "thuoc_tinh"
+  ]
+ },
+ "nồng độ cồn là gì": {
+  "lop_bai_toan": "P1_TRA_CUU_KHAI_NIEM",
+  "khong_tim_thay": false,
+  "khai_niem": [
+   {
+    "id": "KN_NONG_DO_CON",
+    "diem": 0.85,
+    "bo_sung": false
+   },
+   {
+    "id": "KN_DO_XE",
+    "diem": 0.062,
+    "bo_sung": false
+   },
+   {
+    "id": "KN_XE_MAY_CHUYEN_DUNG",
+    "diem": 0.0349,
+    "bo_sung": false
+   }
+  ],
+  "quy_tac": [],
+  "hanh_vi": [
+   {
+    "id": "VP_OTO_ND168D6_K6C",
+    "diem": 0.8968,
+    "bo_sung": true
+   },
+   {
+    "id": "VP_MOTO_ND168D7_K6A",
+    "diem": 0.7529,
+    "bo_sung": true
+   },
+   {
+    "id": "VP_ND168D9_K1P",
+    "diem": 0.7525,
+    "bo_sung": true
+   }
+  ],
+  "truong_hanh_vi": [
+   "bien_phap_khac_phuc",
+   "bo_sung",
+   "can_cu",
+   "can_cu_text",
+   "chi_tiet_diem",
+   "chu_the",
+   "diem",
+   "ghi_chu_sua_doi",
+   "hanh_vi",
+   "hanh_vi_truoc_sua_doi",
+   "hieu_luc",
+   "hinh_phat_bo_sung",
+   "id",
+   "keyphrases",
+   "linh_vuc",
+   "nhom",
+   "phat_tien",
+   "phuong_tien",
+   "sua_doi_boi",
+   "ten_nhom",
+   "text_search",
+   "text_search_kd",
+   "tinh_trang",
+   "tru_diem_gplx"
+  ],
+  "truong_khai_niem": [
+   "can_cu",
+   "can_cu_text",
+   "diem",
+   "dinh_nghia",
+   "id",
+   "keyphrases",
+   "loai",
+   "ten",
+   "text_search",
+   "text_search_kd",
+   "thuoc_tinh"
+  ]
+ },
+ "người lái xe phải mang theo giấy tờ gì": {
+  "lop_bai_toan": "P2_TRA_CUU_QUY_DINH",
+  "khong_tim_thay": false,
+  "khai_niem": [
+   {
+    "id": "KN_NGUOI_DIEU_KHIEN_PHUONG_TIEN",
+    "diem": 0.7221,
+    "bo_sung": false
+   },
+   {
+    "id": "KN_GIAY_PHEP_LAI_XE",
+    "diem": 0.3,
+    "bo_sung": false
+   }
+  ],
+  "quy_tac": [
+   {
+    "id": "R88",
+    "diem": 0.3,
+    "bo_sung": false
+   },
+   {
+    "id": "R89",
+    "diem": 0.2457,
+    "bo_sung": false
+   },
+   {
+    "id": "R91",
+    "diem": 0.1493,
+    "bo_sung": false
+   },
+   {
+    "id": "R90",
+    "diem": 0.1313,
+    "bo_sung": false
+   },
+   {
+    "id": "R92",
+    "diem": 0.1237,
+    "bo_sung": false
+   }
+  ],
+  "hanh_vi": [
+   {
+    "id": "VP_ND168D18_K2D",
+    "diem": 0.3225,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_ND168D18_K3A",
+    "diem": 0.2885,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_ND168D18_K3C",
+    "diem": 0.2444,
+    "bo_sung": false
+   }
+  ],
+  "truong_hanh_vi": [
+   "bien_phap_khac_phuc",
+   "can_cu",
+   "can_cu_text",
+   "chi_tiet_diem",
+   "chu_the",
+   "diem",
+   "ghi_chu_sua_doi",
+   "hanh_vi",
+   "hanh_vi_truoc_sua_doi",
+   "hieu_luc",
+   "hinh_phat_bo_sung",
+   "id",
+   "keyphrases",
+   "linh_vuc",
+   "nhom",
+   "phat_tien",
+   "phuong_tien",
+   "sua_doi_boi",
+   "ten_nhom",
+   "text_search",
+   "text_search_kd",
+   "tinh_trang",
+   "tru_diem_gplx"
+  ],
+  "truong_khai_niem": [
+   "can_cu",
+   "can_cu_text",
+   "diem",
+   "dinh_nghia",
+   "id",
+   "keyphrases",
+   "loai",
+   "ten",
+   "text_search",
+   "text_search_kd",
+   "thuoc_tinh"
+  ]
+ },
+ "quy tắc nhường đường tại nơi giao nhau": {
+  "lop_bai_toan": "P2_TRA_CUU_QUY_DINH",
+  "khong_tim_thay": false,
+  "khai_niem": [
+   {
+    "id": "KN_DUONG_UU_TIEN",
+    "diem": 0.8139,
+    "bo_sung": false
+   },
+   {
+    "id": "KN_UN_TAC_GIAO_THONG",
+    "diem": 0.3,
+    "bo_sung": false
+   }
+  ],
+  "quy_tac": [
+   {
+    "id": "R54",
+    "diem": 0.3,
+    "bo_sung": false
+   },
+   {
+    "id": "R55",
+    "diem": 0.2959,
+    "bo_sung": false
+   },
+   {
+    "id": "R39",
+    "diem": 0.212,
+    "bo_sung": false
+   },
+   {
+    "id": "R53",
+    "diem": 0.1928,
+    "bo_sung": false
+   },
+   {
+    "id": "R73",
+    "diem": 0.1628,
+    "bo_sung": false
+   }
+  ],
+  "hanh_vi": [
+   {
+    "id": "VP_OTO_ND168D6_K2C",
+    "diem": 0.735,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_MOTO_ND168D7_K1DD",
+    "diem": 0.7303,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_MOTO_ND168D7_K6D",
+    "diem": 0.6129,
+    "bo_sung": false
+   }
+  ],
+  "truong_hanh_vi": [
+   "bien_phap_khac_phuc",
+   "can_cu",
+   "can_cu_text",
+   "chi_tiet_diem",
+   "chu_the",
+   "diem",
+   "ghi_chu_sua_doi",
+   "hanh_vi",
+   "hanh_vi_truoc_sua_doi",
+   "hieu_luc",
+   "hinh_phat_bo_sung",
+   "id",
+   "keyphrases",
+   "linh_vuc",
+   "nhom",
+   "phat_tien",
+   "phuong_tien",
+   "sua_doi_boi",
+   "ten_nhom",
+   "text_search",
+   "text_search_kd",
+   "tinh_trang",
+   "tru_diem_gplx"
+  ],
+  "truong_khai_niem": [
+   "can_cu",
+   "can_cu_text",
+   "diem",
+   "dinh_nghia",
+   "id",
+   "keyphrases",
+   "loai",
+   "ten",
+   "text_search",
+   "text_search_kd",
+   "thuoc_tinh"
+  ]
+ },
+ "vượt đèn đỏ xe máy phạt bao nhiêu": {
+  "lop_bai_toan": "P3_TRA_CUU_CHE_TAI",
+  "khong_tim_thay": false,
+  "khai_niem": [
+   {
+    "id": "KN_VUOT_XE",
+    "diem": 0.3,
+    "bo_sung": false
+   },
+   {
+    "id": "KN_DEN_TIN_HIEU_GIAO_THONG",
+    "diem": 0.1944,
+    "bo_sung": false
+   }
+  ],
+  "quy_tac": [],
+  "hanh_vi": [
+   {
+    "id": "VP_MOTO_ND168D7_K7C",
+    "diem": 0.9816,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_ND168D9_K2DD",
+    "diem": 0.555,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_OTO_ND168D6_K9B",
+    "diem": 0.497,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_ND168D10_K1B",
+    "diem": 0.3535,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_MOTO_ND168D7_K4A",
+    "diem": 0.143,
+    "bo_sung": false
+   }
+  ],
+  "truong_hanh_vi": [
+   "bien_phap_khac_phuc",
+   "can_cu",
+   "can_cu_text",
+   "chi_tiet_diem",
+   "chu_the",
+   "diem",
+   "ghi_chu_sua_doi",
+   "hanh_vi",
+   "hanh_vi_truoc_sua_doi",
+   "hieu_luc",
+   "hinh_phat_bo_sung",
+   "id",
+   "keyphrases",
+   "linh_vuc",
+   "nhom",
+   "phat_tien",
+   "phuong_tien",
+   "sua_doi_boi",
+   "ten_nhom",
+   "text_search",
+   "text_search_kd",
+   "tinh_trang",
+   "tru_diem_gplx"
+  ],
+  "truong_khai_niem": [
+   "can_cu",
+   "can_cu_text",
+   "diem",
+   "dinh_nghia",
+   "id",
+   "keyphrases",
+   "loai",
+   "ten",
+   "text_search",
+   "text_search_kd",
+   "thuoc_tinh"
+  ]
+ },
+ "không đội mũ bảo hiểm phạt bao nhiêu": {
+  "lop_bai_toan": "P3_TRA_CUU_CHE_TAI",
+  "khong_tim_thay": false,
+  "khai_niem": [
+   {
+    "id": "KN_MU_BAO_HIEM",
+    "diem": 0.3,
+    "bo_sung": false
+   },
+   {
+    "id": "KN_BAO_HIEU_DUONG_BO",
+    "diem": 0.1204,
+    "bo_sung": false
+   }
+  ],
+  "quy_tac": [],
+  "hanh_vi": [
+   {
+    "id": "VP_MOTO_ND168D7_K2H",
+    "diem": 0.8725,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_ND168D9_K4D",
+    "diem": 0.672,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_ND168D12_K5B",
+    "diem": 0.6627,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_MOTO_ND168D7_K2I",
+    "diem": 0.6602,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_ND168D9_K4DD",
+    "diem": 0.643,
+    "bo_sung": false
+   }
+  ],
+  "truong_hanh_vi": [
+   "bien_phap_khac_phuc",
+   "can_cu",
+   "can_cu_text",
+   "chi_tiet_diem",
+   "chu_the",
+   "diem",
+   "ghi_chu_sua_doi",
+   "hanh_vi",
+   "hanh_vi_truoc_sua_doi",
+   "hieu_luc",
+   "hinh_phat_bo_sung",
+   "id",
+   "keyphrases",
+   "linh_vuc",
+   "nhom",
+   "phat_tien",
+   "phuong_tien",
+   "sua_doi_boi",
+   "ten_nhom",
+   "text_search",
+   "text_search_kd",
+   "tinh_trang",
+   "tru_diem_gplx"
+  ],
+  "truong_khai_niem": [
+   "can_cu",
+   "can_cu_text",
+   "diem",
+   "dinh_nghia",
+   "id",
+   "keyphrases",
+   "loai",
+   "ten",
+   "text_search",
+   "text_search_kd",
+   "thuoc_tinh"
+  ]
+ },
+ "nồng độ cồn 0,3 mg/l phạt thế nào": {
+  "lop_bai_toan": "P3_TRA_CUU_CHE_TAI",
+  "khong_tim_thay": false,
+  "khai_niem": [
+   {
+    "id": "KN_NONG_DO_CON",
+    "diem": 0.85,
+    "bo_sung": false
+   },
+   {
+    "id": "KN_DO_XE",
+    "diem": 0.0501,
+    "bo_sung": false
+   }
+  ],
+  "quy_tac": [],
+  "hanh_vi": [
+   {
+    "id": "VP_ND168D9_K3D",
+    "diem": 0.835,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_MOTO_ND168D7_K8B",
+    "diem": 0.7759,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_OTO_ND168D6_K9A",
+    "diem": 0.7637,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_OTO_ND168D6_K11B",
+    "diem": 0.4325,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_ND168D9_K4C",
+    "diem": 0.4156,
+    "bo_sung": false
+   }
+  ],
+  "truong_hanh_vi": [
+   "bien_phap_khac_phuc",
+   "can_cu",
+   "can_cu_text",
+   "chi_tiet_diem",
+   "chu_the",
+   "diem",
+   "ghi_chu_sua_doi",
+   "hanh_vi",
+   "hanh_vi_truoc_sua_doi",
+   "hieu_luc",
+   "hinh_phat_bo_sung",
+   "id",
+   "keyphrases",
+   "linh_vuc",
+   "nhom",
+   "phat_tien",
+   "phuong_tien",
+   "sua_doi_boi",
+   "ten_nhom",
+   "text_search",
+   "text_search_kd",
+   "tinh_trang",
+   "tru_diem_gplx"
+  ],
+  "truong_khai_niem": [
+   "can_cu",
+   "can_cu_text",
+   "diem",
+   "dinh_nghia",
+   "id",
+   "keyphrases",
+   "loai",
+   "ten",
+   "text_search",
+   "text_search_kd",
+   "thuoc_tinh"
+  ]
+ },
+ "lỗi nào bị trừ 10 điểm giấy phép lái xe": {
+  "lop_bai_toan": "P4_TRA_CUU_NGUOC",
+  "khong_tim_thay": false,
+  "khai_niem": [
+   {
+    "id": "KN_DIEM_GIAY_PHEP_LAI_XE",
+    "diem": 0.8271,
+    "bo_sung": true
+   }
+  ],
+  "quy_tac": [],
+  "hanh_vi": [
+   {
+    "id": "VP_ND168D32_K16B",
+    "diem": 1.0,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_OTO_ND168D6_K11DD",
+    "diem": 1.0,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_ND168D13_K8A",
+    "diem": 1.0,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_ND168D32_K13D",
+    "diem": 1.0,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_OTO_ND168D6_K10A",
+    "diem": 1.0,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_OTO_ND168D6_K10B",
+    "diem": 1.0,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_OTO_ND168D6_K9A",
+    "diem": 1.0,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_MOTO_ND168D7_K10A",
+    "diem": 1.0,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_MOTO_ND168D7_K10B",
+    "diem": 1.0,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_MOTO_ND168D7_K8B",
+    "diem": 1.0,
+    "bo_sung": false
+   }
+  ],
+  "truong_hanh_vi": [
+   "bien_phap_khac_phuc",
+   "can_cu",
+   "can_cu_text",
+   "chu_the",
+   "diem",
+   "ghi_chu_sua_doi",
+   "hanh_vi",
+   "hanh_vi_truoc_sua_doi",
+   "hieu_luc",
+   "hinh_phat_bo_sung",
+   "id",
+   "keyphrases",
+   "linh_vuc",
+   "nhom",
+   "phat_tien",
+   "phuong_tien",
+   "sua_doi_boi",
+   "ten_nhom",
+   "text_search",
+   "text_search_kd",
+   "tinh_trang",
+   "tru_diem_gplx"
+  ],
+  "truong_khai_niem": [
+   "bo_sung",
+   "can_cu",
+   "can_cu_text",
+   "diem",
+   "dinh_nghia",
+   "id",
+   "keyphrases",
+   "loai",
+   "ten",
+   "text_search",
+   "text_search_kd",
+   "thuoc_tinh"
+  ]
+ },
+ "những lỗi nào bị phạt trên 30 triệu đồng": {
+  "lop_bai_toan": "P4_TRA_CUU_NGUOC",
+  "khong_tim_thay": false,
+  "khai_niem": [],
+  "quy_tac": [],
+  "hanh_vi": [
+   {
+    "id": "VP_ND168D32_K16B",
+    "diem": 1.0,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_ND168D32_K16A",
+    "diem": 1.0,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_ND168D32_K16C",
+    "diem": 1.0,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_OTO_ND168D6_K13",
+    "diem": 1.0,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_OTO_ND168D6_K12",
+    "diem": 1.0,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_OTO_ND168D6_K11DD",
+    "diem": 1.0,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_ND168D32_K15",
+    "diem": 1.0,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_OTO_ND168D6_K11A",
+    "diem": 1.0,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_OTO_ND168D6_K11B",
+    "diem": 1.0,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_OTO_ND168D6_K11C",
+    "diem": 1.0,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_OTO_ND168D6_K11D",
+    "diem": 1.0,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_ND168D12_K14A",
+    "diem": 1.0,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_ND168D12_K14B",
+    "diem": 1.0,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_ND168D12_K13",
+    "diem": 1.0,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_ND168D32_K14A",
+    "diem": 1.0,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_ND168D32_K14B",
+    "diem": 1.0,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_ND168D32_K14C",
+    "diem": 1.0,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_ND168D32_K14D",
+    "diem": 1.0,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_ND168D32_K14E",
+    "diem": 1.0,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_ND168D32_K14G",
+    "diem": 1.0,
+    "bo_sung": false
+   }
+  ],
+  "truong_hanh_vi": [
+   "bien_phap_khac_phuc",
+   "can_cu",
+   "can_cu_text",
+   "chu_the",
+   "diem",
+   "ghi_chu_sua_doi",
+   "hanh_vi",
+   "hanh_vi_truoc_sua_doi",
+   "hieu_luc",
+   "hinh_phat_bo_sung",
+   "id",
+   "keyphrases",
+   "linh_vuc",
+   "nhom",
+   "phat_tien",
+   "phuong_tien",
+   "sua_doi_boi",
+   "ten_nhom",
+   "text_search",
+   "text_search_kd",
+   "tinh_trang",
+   "tru_diem_gplx"
+  ],
+  "truong_khai_niem": []
+ },
+ "Điều 6 khoản 9 điểm a Nghị định 168/2024/NĐ-CP nói về lỗi gì?": {
+  "lop_bai_toan": "P6_TRA_CUU_CAN_CU",
+  "khong_tim_thay": false,
+  "khai_niem": [],
+  "quy_tac": [],
+  "hanh_vi": [
+   {
+    "id": "VP_OTO_ND168D6_K9A",
+    "diem": 1.0,
+    "bo_sung": false
+   }
+  ],
+  "truong_hanh_vi": [
+   "bien_phap_khac_phuc",
+   "can_cu",
+   "can_cu_text",
+   "chu_the",
+   "diem",
+   "ghi_chu_sua_doi",
+   "hanh_vi",
+   "hanh_vi_truoc_sua_doi",
+   "hieu_luc",
+   "hinh_phat_bo_sung",
+   "id",
+   "keyphrases",
+   "linh_vuc",
+   "nhom",
+   "phat_tien",
+   "phuong_tien",
+   "sua_doi_boi",
+   "ten_nhom",
+   "text_search",
+   "text_search_kd",
+   "tinh_trang",
+   "tru_diem_gplx"
+  ],
+  "truong_khai_niem": []
+ },
+ "tôi vừa vượt đèn đỏ vừa không có giấy phép lái xe thì bị phạt bao nhiêu": {
+  "lop_bai_toan": "P5_SUY_DIEN_TINH_HUONG",
+  "khong_tim_thay": false,
+  "khai_niem": [
+   {
+    "id": "KN_DEN_TIN_HIEU_GIAO_THONG",
+    "diem": 0.7244,
+    "bo_sung": true
+   }
+  ],
+  "quy_tac": [],
+  "hanh_vi": [
+   {
+    "id": "VP_OTO_ND168D6_K9B",
+    "diem": 0.8214,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_ND168D18_K5A",
+    "diem": 0.7999,
+    "bo_sung": false
+   }
+  ],
+  "truong_hanh_vi": [
+   "bien_phap_khac_phuc",
+   "can_cu",
+   "can_cu_text",
+   "chi_tiet_diem",
+   "chu_the",
+   "diem",
+   "ghi_chu_sua_doi",
+   "hanh_vi",
+   "hanh_vi_truoc_sua_doi",
+   "hieu_luc",
+   "hinh_phat_bo_sung",
+   "id",
+   "keyphrases",
+   "linh_vuc",
+   "nhom",
+   "phat_tien",
+   "phuong_tien",
+   "sua_doi_boi",
+   "ten_nhom",
+   "text_search",
+   "text_search_kd",
+   "tinh_trang",
+   "tru_diem_gplx"
+  ],
+  "truong_khai_niem": [
+   "bo_sung",
+   "can_cu",
+   "can_cu_text",
+   "diem",
+   "dinh_nghia",
+   "id",
+   "keyphrases",
+   "loai",
+   "ten",
+   "text_search",
+   "text_search_kd",
+   "thuoc_tinh"
+  ]
+ },
+ "Xe ưu tiên.": {
+  "lop_bai_toan": "P7_TRA_CUU_LIEN_QUAN",
+  "khong_tim_thay": false,
+  "khai_niem": [
+   {
+    "id": "KN_DUONG_UU_TIEN",
+    "diem": 0.3,
+    "bo_sung": false
+   },
+   {
+    "id": "KN_XE_UU_TIEN",
+    "diem": 0.2494,
+    "bo_sung": false
+   },
+   {
+    "id": "KN_SUC_KHOE_NGUOI_LAI_XE",
+    "diem": 0.0855,
+    "bo_sung": false
+   }
+  ],
+  "quy_tac": [
+   {
+    "id": "R68",
+    "diem": 0.3,
+    "bo_sung": false
+   },
+   {
+    "id": "R11",
+    "diem": 0.2918,
+    "bo_sung": false
+   },
+   {
+    "id": "R67",
+    "diem": 0.2514,
+    "bo_sung": false
+   }
+  ],
+  "hanh_vi": [
+   {
+    "id": "VP_OTO_ND168D6_K5E",
+    "diem": 0.3225,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_MOTO_ND168D7_K7DD",
+    "diem": 0.3124,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_OTO_ND168D6_K6B",
+    "diem": 0.3011,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_MOTO_ND168D7_K2DD",
+    "diem": 0.2921,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_OTO_ND168D6_K4H",
+    "diem": 0.2613,
+    "bo_sung": false
+   }
+  ],
+  "truong_hanh_vi": [
+   "bien_phap_khac_phuc",
+   "can_cu",
+   "can_cu_text",
+   "chi_tiet_diem",
+   "chu_the",
+   "diem",
+   "ghi_chu_sua_doi",
+   "hanh_vi",
+   "hanh_vi_truoc_sua_doi",
+   "hieu_luc",
+   "hinh_phat_bo_sung",
+   "id",
+   "keyphrases",
+   "linh_vuc",
+   "nhom",
+   "phat_tien",
+   "phuong_tien",
+   "sua_doi_boi",
+   "ten_nhom",
+   "text_search",
+   "text_search_kd",
+   "tinh_trang",
+   "tru_diem_gplx"
+  ],
+  "truong_khai_niem": [
+   "can_cu",
+   "can_cu_text",
+   "diem",
+   "dinh_nghia",
+   "id",
+   "keyphrases",
+   "loai",
+   "ten",
+   "text_search",
+   "text_search_kd",
+   "thuoc_tinh"
+  ]
+ },
+ "cách nấu phở bò": {
+  "lop_bai_toan": "P7_TRA_CUU_LIEN_QUAN",
+  "khong_tim_thay": false,
+  "khai_niem": [
+   {
+    "id": "KN_TOC_DO_VA_KHOANG_CACH_AN_TOAN",
+    "diem": 0.3,
+    "bo_sung": false
+   },
+   {
+    "id": "KN_NGUOI_DI_BO",
+    "diem": 0.1407,
+    "bo_sung": false
+   },
+   {
+    "id": "KN_VACH_KE_DUONG",
+    "diem": 0.0953,
+    "bo_sung": false
+   }
+  ],
+  "quy_tac": [
+   {
+    "id": "R45",
+    "diem": 0.3,
+    "bo_sung": false
+   },
+   {
+    "id": "R21",
+    "diem": 0.1508,
+    "bo_sung": false
+   },
+   {
+    "id": "R74",
+    "diem": 0.1239,
+    "bo_sung": false
+   }
+  ],
+  "hanh_vi": [
+   {
+    "id": "VP_OTO_ND168D6_K3DD",
+    "diem": 0.3225,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_MOTO_ND168D7_K3I",
+    "diem": 0.3017,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_OTO_ND168D6_K3B",
+    "diem": 0.2952,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_MOTO_ND168D7_K1H",
+    "diem": 0.2867,
+    "bo_sung": false
+   },
+   {
+    "id": "VP_ND168D10_K1A",
+    "diem": 0.28,
+    "bo_sung": false
+   }
+  ],
+  "truong_hanh_vi": [
+   "bien_phap_khac_phuc",
+   "can_cu",
+   "can_cu_text",
+   "chi_tiet_diem",
+   "chu_the",
+   "diem",
+   "ghi_chu_sua_doi",
+   "hanh_vi",
+   "hanh_vi_truoc_sua_doi",
+   "hieu_luc",
+   "hinh_phat_bo_sung",
+   "id",
+   "keyphrases",
+   "linh_vuc",
+   "nhom",
+   "phat_tien",
+   "phuong_tien",
+   "sua_doi_boi",
+   "ten_nhom",
+   "text_search",
+   "text_search_kd",
+   "tinh_trang",
+   "tru_diem_gplx"
+  ],
+  "truong_khai_niem": [
+   "can_cu",
+   "can_cu_text",
+   "diem",
+   "dinh_nghia",
+   "id",
+   "keyphrases",
+   "loai",
+   "ten",
+   "text_search",
+   "text_search_kd",
+   "thuoc_tinh"
+  ]
+ }
+}

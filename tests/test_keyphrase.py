@@ -11,21 +11,21 @@ pytestmark = pytest.mark.cham
 class TestTuDienKeyphrase:
     """Cấu trúc của từ điển keyphrase."""
 
-    def test_moi_keyphrase_co_ban_khong_dau(self, kb_dict):
+    def test_moi_keyphrase_co_ban_khong_dau(self, kb_da_lap_chi_muc):
         """Bản không dấu cho phép người dùng gõ 'vuot den do' vẫn tra được."""
-        thieu = [k["cum_tu"] for k in kb_dict.keyphrases if not k.get("khong_dau")]
+        thieu = [k.cum_tu for k in kb_da_lap_chi_muc.keyphrases if not k.khong_dau]
         assert thieu == [], f"{len(thieu)} keyphrase thiếu bản không dấu: {thieu[:5]}"
 
-    def test_ban_khong_dau_that_su_khong_con_dau(self, kb_dict):
+    def test_ban_khong_dau_that_su_khong_con_dau(self, kb_da_lap_chi_muc):
         from tra_cuu_gtdb.reasoning.engine import bo_dau
-        sai = [k["cum_tu"] for k in kb_dict.keyphrases[:200]
-               if k["khong_dau"] != bo_dau(k["cum_tu"])]
+        sai = [k.cum_tu for k in kb_da_lap_chi_muc.keyphrases[:200]
+               if k.khong_dau != bo_dau(k.cum_tu)]
         assert sai == [], f"Bản không dấu không khớp bo_dau(): {sai[:5]}"
 
-    def test_so_tu_khop_voi_cum_tu(self, kb_dict):
+    def test_so_tu_khop_voi_cum_tu(self, kb_da_lap_chi_muc):
         """Trường so_tu quyết định thứ tự ưu tiên khi so khớp cụm dài nhất."""
-        sai = [k["cum_tu"] for k in kb_dict.keyphrases
-               if k.get("so_tu") != len(k["cum_tu"].split())]
+        sai = [k.cum_tu for k in kb_da_lap_chi_muc.keyphrases
+               if k.so_tu != len(k.cum_tu.split())]
         assert sai == [], f"so_tu không khớp số từ thực tế: {sai[:5]}"
 
 

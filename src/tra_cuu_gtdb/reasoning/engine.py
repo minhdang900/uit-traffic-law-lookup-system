@@ -13,10 +13,22 @@ Thuật giải xử lý truy vấn (QP):
     B6. Sinh câu trả lời kèm căn cứ pháp lý và tri thức liên quan
 """
 # GHI CHU KIEN TRUC — duong bien kieu du lieu
-# Tang kb/ nap va kiem kieu bang Pydantic. Tang nay nhan lai dang dict qua
-# model_dump() de giu NGUYEN VAN thuat giai da do duoc Top-1 76,67%. Viec
-# chuyen loi suy dien sang truy cap thuoc tinh la mot buoc refactor RIENG,
-# chi nen lam khi da co cong chi so canh giu trong CI.
+# Tri thuc di suot tang nay duoi dang MO HINH CO KIEU (Pydantic): kb.violations
+# la tuple[ViPham], kb.concepts la tuple[KhaiNiem]... Truy cap bang thuoc tinh
+# (v.hanh_vi), khong con v["hanh_vi"].
+#
+# Chi co DUNG MOT cho chuyen nguoc ve dict: ham _ra_dict(), goi khi TRA KET QUA
+# ra ngoai. Ly do la hinh dang dict cua ket qua {"id":..., "diem":...} la hop
+# dong cong khai ma giao dien, bo danh gia va bo kiem thu dang doc; doi no la
+# mot thay doi pha vo tuong thich, khac han voi viec don dep noi bo.
+#
+# Cac dict KHAC trong tep nay khong phai tri thuc nen giu nguyen: Q (bieu dien
+# truy van), kq (ket qua dang dung), cc/rb (rang buoc rut tu cau hoi), va ban
+# ghi keyphrase sau khi da qua _ra_dict().
+#
+# Buoc chuyen doi nay duoc canh boi ba lop: cong chi so trong CI, anh chup vang
+# tests/test_hop_dong_dau_ra.py (13 truy van, khoa ca bo truong cua dict tra
+# ve), va 106 test. Ket qua eval sau refactor giong TUNG BYTE ban truoc.
 import json
 import os
 import re
@@ -26,6 +38,7 @@ import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
+from tra_cuu_gtdb.domain.models import QuanHe
 from tra_cuu_gtdb.kb.text import bo_dau, chuan_hoa, tach_so_tien
 from tra_cuu_gtdb.reasoning.numeric import NumericReasoner
 
@@ -75,6 +88,19 @@ TEN_LOP_BAI_TOAN = {
 
 
 
+def _ra_dict(mau):
+    """Chuyển một mô hình tri thức thành ``dict`` để TRẢ RA ngoài.
+
+    Hình dạng dict là hợp đồng công khai: giao diện, bộ đánh giá và bộ kiểm thử
+    đều đọc ``x["id"]``, ``x["diem"]``... Bên trong tầng suy diễn thì luôn dùng
+    mô hình có kiểu; phép chuyển chỉ xảy ra ở đúng đường biên này.
+
+    Dùng ``mode="json"`` để ngày tháng ra chuỗi, giữ y hệt dạng dữ liệu mà bộ
+    đánh giá đã đo được đường cơ sở Top-1 76,67%.
+    """
+    return mau.model_dump(mode="json")
+
+
 # ==========================================================================
 # 2. CO SO TRI THUC
 # ==========================================================================
@@ -84,10 +110,11 @@ class KnowledgeBase:
     def __init__(self, kb_dir=KB_DIR, co_so=None):
         """Lập chỉ mục cho cơ sở tri thức.
 
-        ĐƯỜNG BIÊN KIỂU DỮ LIỆU (có chủ đích, xem ghi chú đầu module):
-        tầng ``kb`` nạp và kiểm kiểu bằng Pydantic; tầng suy diễn này nhận lại
-        dạng ``dict`` qua ``model_dump()``. Nhờ đó toàn bộ thuật giải xếp hạng
-        và suy diễn được giữ NGUYÊN VĂN so với bản đã đo Top-1 76,67%.
+        ĐƯỜNG BIÊN KIỂU DỮ LIỆU
+        Tri thức đi suốt tầng này dưới dạng MÔ HÌNH CÓ KIỂU (Pydantic), không
+        còn ``dict``. Chỉ khi TRẢ RA cho người gọi mới chuyển thành ``dict``
+        (xem ``_ra_dict``), vì hình dạng dict là hợp đồng công khai mà giao
+        diện và bộ đánh giá đang đọc.
 
         ``co_so``  : đối tượng CoSoTriThuc đã kiểm kiểu (đường đi chuẩn)
         ``kb_dir`` : chỉ dùng khi không truyền ``co_so`` — tự nạp từ thư mục.
@@ -100,16 +127,13 @@ class KnowledgeBase:
         self.dir = kb_dir
         self.co_so = co_so
 
-        def _bo(tap):
-            return [x.model_dump(mode="json") for x in tap]
-
-        self.concepts = _bo(co_so.khai_niem)      # C
-        self.relations = _bo(co_so.quan_he)       # R
-        self.rules = _bo(co_so.quy_tac)           # Rules
-        self.violations = _bo(co_so.vi_pham)      # F
-        self.keyphrases = _bo(co_so.cum_tu_khoa)  # Keyphrase
-        self.documents = _bo(co_so.van_ban)
-        self.amendments = _bo(co_so.sua_doi)
+        self.concepts = list(co_so.khai_niem)      # C
+        self.relations = list(co_so.quan_he)       # R
+        self.rules = list(co_so.quy_tac)           # Rules
+        self.violations = list(co_so.vi_pham)      # F
+        self.keyphrases = list(co_so.cum_tu_khoa)  # Keyphrase
+        self.documents = list(co_so.van_ban)
+        self.amendments = list(co_so.sua_doi)
         pl = co_so.phan_loai
         self.linh_vuc = pl.linh_vuc
         self.ten_nhom = pl.ten_nhom
@@ -131,39 +155,39 @@ class KnowledgeBase:
         dựng đồ thị quan hệ hai chiều; và dựng các không gian véc-tơ TF-IDF phục vụ
         so khớp ngữ nghĩa ở ba mức: hành vi, khái niệm, quy tắc và nhóm tri thức.
         """
-        self.by_id = {v["id"]: v for v in self.violations}
-        self.concept_by_id = {c["id"]: c for c in self.concepts}
-        self.rule_by_id = {r["id"]: r for r in self.rules}
+        self.by_id = {v.id: v for v in self.violations}
+        self.concept_by_id = {c.id: c for c in self.concepts}
+        self.rule_by_id = {r.id: r for r in self.rules}
 
         self.by_nhom = defaultdict(list)
         self.by_linh_vuc = defaultdict(list)
         self.by_phuong_tien = defaultdict(list)
         self.by_dieu = defaultdict(list)
         for v in self.violations:
-            self.by_nhom[v["nhom"]].append(v)
-            self.by_linh_vuc[v["linh_vuc"]].append(v)
-            for p in v["phuong_tien"]:
+            self.by_nhom[v.nhom].append(v)
+            self.by_linh_vuc[v.linh_vuc].append(v)
+            for p in v.phuong_tien:
                 self.by_phuong_tien[p].append(v)
-            self.by_dieu[(v["can_cu"].get("van_ban"), v["can_cu"].get("dieu"))].append(v)
+            self.by_dieu[(v.can_cu.van_ban, v.can_cu.dieu)].append(v)
 
         # tu dien keyphrase: tra cuu theo ban khong dau, uu tien cum dai
         self.kp_index = {}
         for k in self.keyphrases:
-            self.kp_index.setdefault(k["khong_dau"], k)
-        self.kp_max_words = max((k["so_tu"] for k in self.keyphrases), default=1)
+            self.kp_index.setdefault(k.khong_dau, k)
+        self.kp_max_words = max((k.so_tu for k in self.keyphrases), default=1)
 
         # do thi quan he (dung cho goi y tri thuc lien quan)
         self.rel_out = defaultdict(list)
         for r in self.relations:
-            self.rel_out[r["nguon"]].append(r)
-            self.rel_out[r["dich"]].append(
-                {"ten": r["ten"], "kieu": r["kieu"], "nguon": r["dich"],
-                 "dich": r["nguon"], "mo_ta": r["mo_ta"]})
+            self.rel_out[r.nguon].append(r)
+            self.rel_out[r.dich].append(
+                QuanHe(ten=r.ten, kieu=r.kieu, nguon=r.dich,
+                       dich=r.nguon, mo_ta=r.mo_ta))
 
         # --- khong gian vector cho so khop ngu nghia (TF-IDF char n-gram) ---
-        self.v_corpus = [bo_dau(v["text_search"]) for v in self.violations]
-        self.c_corpus = [bo_dau(c["text_search"]) for c in self.concepts]
-        self.r_corpus = [bo_dau(r["text_search"]) for r in self.rules]
+        self.v_corpus = [bo_dau(v.text_search) for v in self.violations]
+        self.c_corpus = [bo_dau(c.text_search) for c in self.concepts]
+        self.r_corpus = [bo_dau(r.text_search) for r in self.rules]
 
         self.vec_char = TfidfVectorizer(analyzer="char_wb", ngram_range=(3, 5),
                                         min_df=1, sublinear_tf=True)
@@ -186,17 +210,17 @@ class KnowledgeBase:
         for n in self.danh_sach_nhom:
             txt = [self.ten_nhom.get(n, n)]
             for v in self.by_nhom[n]:
-                txt.append(v["hanh_vi"])
-                txt.extend(v.get("keyphrases") or [])
+                txt.append(v.hanh_vi)
+                txt.extend(v.keyphrases or [])
             gom.append(bo_dau(chuan_hoa(" ".join(txt))))
         self.M_nhom_char = self.vec_char.transform(gom)
         self.M_nhom_word = self.vec_word.transform(gom)
 
         # --- khong gian vector chi tren TEN cua khai niem / quy tac ---
         self.M_c_ten = self.vec_char.transform(
-            [bo_dau(chuan_hoa(c["ten"])) for c in self.concepts])
+            [bo_dau(chuan_hoa(c.ten)) for c in self.concepts])
         self.M_r_ten = self.vec_char.transform(
-            [bo_dau(chuan_hoa(r["ten"])) for r in self.rules])
+            [bo_dau(chuan_hoa(r.ten)) for r in self.rules])
 
     # ------------------------------------------------------------ semantic
     def sim(self, query, kind="violation"):
@@ -239,7 +263,8 @@ MAU_KHAI_NIEM = [r"\bla gi\b", r"\bnghia la\b", r"\bdinh nghia\b", r"\bkhai niem
                  r"\bgoi la gi\b", r"\bduoc goi la\b", r"\bgom nhung xe nao\b"]
 MAU_CHE_TAI = [r"\bphat\b", r"\bmuc phat\b", r"\bbao nhieu tien\b", r"\bbi gi\b",
                r"\bxu phat\b", r"\btru.{0,6}diem\b", r"\btuoc\b", r"\btich thu\b",
-               r"\bbao nhieu(?!\s+(diem|tuoi|nguoi|lan|thang|nam))\b", r"\bgiam xe\b", r"\bnop phat\b", r"\bloi\b",
+               r"\bbao nhieu(?!\s+(diem|tuoi|nguoi|lan|thang|nam))\b",
+               r"\bgiam xe\b", r"\bnop phat\b", r"\bloi\b",
                r"\bxu ly (sao|the nao|nhu the nao)\b", r"\bthi sao\b", r"\bbi lam sao\b",
                r"\bcanh cao\b", r"\bbi xu\b"]
 MAU_QUY_DINH = [r"\bquy dinh\b", r"\bco duoc\b", r"\bduoc phep\b", r"\bcam\b",
@@ -287,7 +312,7 @@ class QueryAnalyzer:
                 cand = " ".join(toks[i:i + w])
                 kp = self.kb.kp_index.get(cand)
                 if kp is not None and (w > 1 or len(cand) >= 4):
-                    found.append({"cum_tu": kp["cum_tu"], "vi_tri": (i, i + w), **kp})
+                    found.append({**_ra_dict(kp), "vi_tri": (i, i + w)})
                     i += w
                     matched = True
                     break
@@ -322,7 +347,8 @@ class QueryAnalyzer:
 
     # ---------------------------------------------------------- chu the
     def nhan_dien_chu_the(self, text):
-        """Nhận diện chủ thể của hành vi: người điều khiển, chủ phương tiện, người đi bộ hay hành khách."""
+        """Nhận diện chủ thể của hành vi: người điều khiển, chủ phương tiện,
+        người đi bộ hay hành khách."""
         t = bo_dau(chuan_hoa(text))
         if any(k in t for k in ["nguoi di bo", "di bo", "khach bo hanh"]):
             return "nguoi_di_bo"
@@ -454,7 +480,7 @@ class QueryAnalyzer:
         rang_buoc = self.nhan_dien_rang_buoc(text)
 
         nhom_kp = ({n for k in kps for n in k["nhom"]}
-                   | {self.kb.by_id[h]["nhom"] for k in kps for h in k["hanh_vi"]
+                   | {self.kb.by_id[h].nhom for k in kps for h in k["hanh_vi"]
                       if h in self.kb.by_id})
         nhom_nn = self.kb.nhom_ngu_nghia(text)
         nhom_tap = nhom_kp | ({n for n, _ in nhom_nn} if nhom_kp else
@@ -525,14 +551,14 @@ class InferenceEngine:
 
         ket_qua = []
         for i, v in enumerate(kb.violations):
-            if ung_vien is not None and v["id"] not in ung_vien:
+            if ung_vien is not None and v.id not in ung_vien:
                 continue
 
             # --- diem keyphrase (tri thuc) ---
             s_kp = 0.0
-            if v["id"] in hv_q:
+            if v.id in hv_q:
                 s_kp += 1.0
-            if v["nhom"] in nhom_q:
+            if v.nhom in nhom_q:
                 s_kp += 0.75
             elif nhom_q:
                 s_kp -= 0.30          # lech nhom tri thuc -> ha diem
@@ -540,38 +566,38 @@ class InferenceEngine:
 
             # --- suy dien so hoc: chon dung khung xu phat ---
             if so_thoa:
-                if v["id"] in so_thoa:
+                if v.id in so_thoa:
                     s_kp = 1.0
-                elif v["id"] in co_nguong and v["nhom"] in nhom_q:
+                elif v.id in co_nguong and v.nhom in nhom_q:
                     s_kp -= 1.0       # cung dai luong nhung sai khung -> loai
 
             # --- khong neu gia tri cu the -> uu tien khung thap nhat ---
-            if not so_thoa and v["id"] in co_nguong and v["nhom"] in nhom_q:
-                if all((n.get("can_duoi") or 0) <= 0 for n in kb.numeric.nguong[v["id"]]):
+            if not so_thoa and v.id in co_nguong and v.nhom in nhom_q:
+                if all((n.get("can_duoi") or 0) <= 0 for n in kb.numeric.nguong[v.id]):
                     s_kp += 0.25
                 else:
                     s_kp -= 0.10
 
             # --- heuristic: hanh vi 'khong chap hanh yeu cau kiem tra' ---
-            if ("khong chap hanh yeu cau kiem tra" in bo_dau(v["hanh_vi"])
+            if ("khong chap hanh yeu cau kiem tra" in bo_dau(v.hanh_vi)
                     and not hoi_ve_tu_choi):
                 s_kp -= 0.55
 
             # --- diem khai niem / phuong tien / chu the ---
             s_cx = 0.0
             if pt_q:
-                if pt_q & set(v["phuong_tien"]):
+                if pt_q & set(v.phuong_tien):
                     s_cx += 1.0
                 else:
                     s_cx -= 1.2          # phat nang neu sai phuong tien
             if chu_the_q:
-                s_cx += 0.6 if v["chu_the"] == chu_the_q else -0.6
-            elif v["chu_the"] == "nguoi_dieu_khien":
+                s_cx += 0.6 if v.chu_the == chu_the_q else -0.6
+            elif v.chu_the == "nguoi_dieu_khien":
                 s_cx += 0.15
             s_cx = max(min(s_cx, 1.0), -1.5)
 
             score = self.ALPHA * s_kp + self.BETA * sem[i] + self.GAMMA * s_cx
-            if v["tinh_trang"] == "da_sua_doi":
+            if v.tinh_trang == "da_sua_doi":
                 score += 0.02        # uu tien quy dinh moi nhat
             if score > 0.05:
                 ket_qua.append((score, v, {"keyphrase": s_kp, "ngu_nghia": float(sem[i]),
@@ -588,7 +614,7 @@ class InferenceEngine:
         uu_tien = set(Q["khai_niem"]) if kind == "concept" else set(Q["quy_tac"])
         out = []
         for i, it in enumerate(items):
-            s = self.BETA * sem[i] + (self.ALPHA if it["id"] in uu_tien else 0.0)
+            s = self.BETA * sem[i] + (self.ALPHA if it.id in uu_tien else 0.0)
             if s > 0.03:
                 out.append((s, it))
         out.sort(key=lambda x: -x[0])
@@ -603,22 +629,22 @@ class InferenceEngine:
         seen = set()
         nhom_lq = set()
         for _, v, _ in ket_qua_hanh_vi[:3]:
-            nhom_lq.add("NHOM_%s" % v["nhom"].upper())
+            nhom_lq.add("NHOM_%s" % v.nhom.upper())
         for c_id in Q["khai_niem"]:
-            nhom_lq.update(r["dich"] for r in kb.rel_out.get(c_id, [])
-                           if r["dich"].startswith("NHOM_"))
+            nhom_lq.update(r.dich for r in kb.rel_out.get(c_id, [])
+                           if r.dich.startswith("NHOM_"))
         for node in nhom_lq:
             for r in kb.rel_out.get(node, []):
-                if not r["dich"].startswith("NHOM_"):
+                if not r.dich.startswith("NHOM_"):
                     continue
-                nhom = r["dich"][5:].lower()
+                nhom = r.dich[5:].lower()
                 if nhom in seen or nhom not in kb.by_nhom:
                     continue
                 seen.add(nhom)
                 goi_y.append({"loai": "nhom", "ma": nhom,
                               "ten": kb.ten_nhom.get(nhom, nhom),
                               "so_quy_dinh": len(kb.by_nhom[nhom]),
-                              "quan_he": r["ten"]})
+                              "quan_he": r.ten})
                 if len(goi_y) >= gioi_han:
                     return goi_y
         return goi_y
@@ -659,15 +685,15 @@ class InferenceEngine:
             bs = [(sc, v, d) for sc, v, d in self._xep_hang_hanh_vi(Q, top_k=3)
                   if sc >= NGUONG_BO_SUNG]
             kq["_raw_hv"] = bs
-            kq["hanh_vi"] = [{**v, "diem": round(sc, 4), "chi_tiet_diem": d,
+            kq["hanh_vi"] = [{**_ra_dict(v), "diem": round(sc, 4), "chi_tiet_diem": d,
                               "bo_sung": True} for sc, v, d in bs]
         if not kq["khai_niem"]:
-            kq["khai_niem"] = [{**c, "diem": round(sc, 4), "bo_sung": True}
+            kq["khai_niem"] = [{**_ra_dict(c), "diem": round(sc, 4), "bo_sung": True}
                                for sc, c in self._xep_hang(Q, "concept",
                                                            self.kb.concepts, 2)
                                if sc >= NGUONG_BO_SUNG]
         if not kq["quy_tac"]:
-            kq["quy_tac"] = [{**r, "diem": round(sc, 4), "bo_sung": True}
+            kq["quy_tac"] = [{**_ra_dict(r), "diem": round(sc, 4), "bo_sung": True}
                              for sc, r in self._xep_hang(Q, "rule",
                                                          self.kb.rules, 2)
                              if sc >= NGUONG_BO_SUNG]
@@ -687,7 +713,7 @@ class InferenceEngine:
     def _giai_P1(self, Q, kq, top_k):
         """Giải lớp P1 - tra cứu khái niệm: xếp hạng và trả về các khái niệm phù hợp."""
         for s, c in self._xep_hang(Q, "concept", self.kb.concepts, top_k):
-            kq["khai_niem"].append({**c, "diem": round(s, 4)})
+            kq["khai_niem"].append({**_ra_dict(c), "diem": round(s, 4)})
         if not kq["khai_niem"]:
             self._giai_P7(Q, kq, top_k)
 
@@ -697,21 +723,21 @@ class InferenceEngine:
         khái niệm và một vài chế tài liên quan.
         """
         for s, r in self._xep_hang(Q, "rule", self.kb.rules, top_k):
-            kq["quy_tac"].append({**r, "diem": round(s, 4)})
+            kq["quy_tac"].append({**_ra_dict(r), "diem": round(s, 4)})
         for s, c in self._xep_hang(Q, "concept", self.kb.concepts, 2):
-            kq["khai_niem"].append({**c, "diem": round(s, 4)})
+            kq["khai_niem"].append({**_ra_dict(c), "diem": round(s, 4)})
         hv = self._xep_hang_hanh_vi(Q, top_k=3)
         kq["_raw_hv"] = hv
-        kq["hanh_vi"] = [{**v, "diem": round(s, 4), "chi_tiet_diem": d} for s, v, d in hv]
+        kq["hanh_vi"] = [{**_ra_dict(v), "diem": round(s, 4), "chi_tiet_diem": d} for s, v, d in hv]
 
     # ---------------------------------------------------------------- P3
     def _giai_P3(self, Q, kq, top_k):
         """Giải lớp P3 - tra cứu chế tài: trả về các hành vi vi phạm kèm mức phạt và căn cứ."""
         hv = self._xep_hang_hanh_vi(Q, top_k=top_k)
         kq["_raw_hv"] = hv
-        kq["hanh_vi"] = [{**v, "diem": round(s, 4), "chi_tiet_diem": d} for s, v, d in hv]
+        kq["hanh_vi"] = [{**_ra_dict(v), "diem": round(s, 4), "chi_tiet_diem": d} for s, v, d in hv]
         for s, c in self._xep_hang(Q, "concept", self.kb.concepts, 2):
-            kq["khai_niem"].append({**c, "diem": round(s, 4)})
+            kq["khai_niem"].append({**_ra_dict(c), "diem": round(s, 4)})
 
     # ---------------------------------------------------------------- P4
     def _giai_P4(self, Q, kq, top_k):
@@ -727,13 +753,13 @@ class InferenceEngine:
         loc_nhom = bool(nhom_q) and not rb
         ds = []
         for v in self.kb.violations:
-            if pt_q and not (pt_q & set(v["phuong_tien"])):
+            if pt_q and not (pt_q & set(v.phuong_tien)):
                 continue
-            if loc_nhom and v["nhom"] not in nhom_q:
+            if loc_nhom and v.nhom not in nhom_q:
                 continue
-            if "tru_diem" in rb and (v["tru_diem_gplx"] or 0) != rb["tru_diem"]:
+            if "tru_diem" in rb and (v.tru_diem_gplx or 0) != rb["tru_diem"]:
                 continue
-            mn, mx = v["phat_tien"].get("min"), v["phat_tien"].get("max")
+            mn, mx = v.phat_tien.min, v.phat_tien.max
             if "tien_khoang" in rb:
                 a, b = rb["tien_khoang"]
                 if mn != a or mx != b:
@@ -743,21 +769,21 @@ class InferenceEngine:
             if "tien_max" in rb and (mn is None or mn > rb["tien_max"]):
                 continue
             if "hinh_phat_bo_sung" in rb:
-                bs = bo_dau(" ".join(v["hinh_phat_bo_sung"]))
+                bs = bo_dau(" ".join(v.hinh_phat_bo_sung))
                 if bo_dau(rb["hinh_phat_bo_sung"]) not in bs:
                     continue
             if rb.get("chi_canh_cao") and not (mn in (0, None) and mx in (0, None)):
                 continue
-            if Q["chu_the"] and v["chu_the"] != Q["chu_the"]:
+            if Q["chu_the"] and v.chu_the != Q["chu_the"]:
                 continue
             ds.append(v)
         rev = rb.get("sap_xep", "giam_dan") != "tang_dan"
-        ds.sort(key=lambda v: (v["phat_tien"].get("max") or 0,
-                               v["tru_diem_gplx"] or 0), reverse=rev)
+        ds.sort(key=lambda v: (v.phat_tien.max or 0,
+                               v.tru_diem_gplx or 0), reverse=rev)
         if nhom_q:   # uu tien cac hanh vi dung nhom tri thuc nguoi dung hoi
-            ds.sort(key=lambda v: v["nhom"] not in nhom_q)
+            ds.sort(key=lambda v: v.nhom not in nhom_q)
         gh = 20 if (rb or nhom_q or pt_q) else top_k
-        kq["hanh_vi"] = [{**v, "diem": 1.0} for v in ds[:gh]]
+        kq["hanh_vi"] = [{**_ra_dict(v), "diem": 1.0} for v in ds[:gh]]
         kq["tong_hop"] = {"kieu": "danh_sach", "tong_so": len(ds), "hien_thi": len(kq["hanh_vi"])}
         kq["_raw_hv"] = [(1.0, v, {}) for v in ds[:3]]
 
@@ -770,7 +796,7 @@ class InferenceEngine:
         for nhom in (uu_tien + [n for n in Q["nhom_suy_dien"] if n not in uu_tien]):
             Qn = dict(Q)
             Qn["nhom"] = [nhom]
-            ung_vien = {v["id"] for v in self.kb.by_nhom.get(nhom, [])}
+            ung_vien = {v.id for v in self.kb.by_nhom.get(nhom, [])}
             if not ung_vien:
                 continue
             best = self._xep_hang_hanh_vi(Qn, ung_vien=ung_vien, top_k=1)
@@ -779,19 +805,20 @@ class InferenceEngine:
         if not chon:
             chon = self._xep_hang_hanh_vi(Q, top_k=3)
         kq["_raw_hv"] = chon
-        kq["hanh_vi"] = [{**v, "diem": round(s, 4), "chi_tiet_diem": d} for s, v, d in chon]
+        kq["hanh_vi"] = [{**_ra_dict(v), "diem": round(s, 4), "chi_tiet_diem": d}
+                         for s, v, d in chon]
 
-        tien_min = sum((v["phat_tien"].get("min") or 0) for _, v, _ in chon)
-        tien_max = sum((v["phat_tien"].get("max") or 0) for _, v, _ in chon)
-        diem = sum((v["tru_diem_gplx"] or 0) for _, v, _ in chon)
-        bo_sung = [b for _, v, _ in chon for b in v["hinh_phat_bo_sung"]]
+        tien_min = sum((v.phat_tien.min or 0) for _, v, _ in chon)
+        tien_max = sum((v.phat_tien.max or 0) for _, v, _ in chon)
+        diem = sum((v.tru_diem_gplx or 0) for _, v, _ in chon)
+        bo_sung = [b for _, v, _ in chon for b in v.hinh_phat_bo_sung]
         canh_bao = []
         for _, v, _ in chon:
-            if v["id"] in self.kb.numeric.nguong and not Q.get("gia_tri_so"):
+            if v.id in self.kb.numeric.nguong and not Q.get("gia_tri_so"):
                 canh_bao.append(
                     "Hành vi \"%s\" được phân mức theo giá trị đo được; "
                     "hệ thống đang lấy khung thấp nhất. Nêu rõ giá trị cụ thể "
-                    "để có kết quả chính xác." % v["hanh_vi"][:70])
+                    "để có kết quả chính xác." % v.hanh_vi[:70])
         kq["tong_hop"] = {
             "kieu": "tinh_huong", "so_hanh_vi": len(chon), "canh_bao": canh_bao,
             "tong_phat_tien": {"min": tien_min, "max": tien_max},
@@ -808,23 +835,23 @@ class InferenceEngine:
         cc = Q["can_cu"]
         ds = []
         for v in self.kb.violations:
-            c = v["can_cu"]
-            if c.get("dieu") != cc.get("dieu"):
+            c = v.can_cu
+            if c.dieu != cc.get("dieu"):
                 continue
-            if cc.get("van_ban") and cc["van_ban"] != c.get("van_ban"):
+            if cc.get("van_ban") and cc["van_ban"] != c.van_ban:
                 continue
-            if "khoan" in cc and str(c.get("khoan")) != str(cc["khoan"]):
+            if "khoan" in cc and str(c.khoan) != str(cc["khoan"]):
                 continue
-            if "diem" in cc and str(c.get("diem")) != str(cc["diem"]):
+            if "diem" in cc and str(c.diem) != str(cc["diem"]):
                 continue
             ds.append(v)
-        kq["hanh_vi"] = [{**v, "diem": 1.0} for v in ds[:30]]
+        kq["hanh_vi"] = [{**_ra_dict(v), "diem": 1.0} for v in ds[:30]]
         for r in self.kb.rules:
-            c = r.get("can_cu") or {}
-            if c.get("dieu") == cc.get("dieu") and "Luật" in str(c.get("van_ban", "")):
-                if "khoan" in cc and str(c.get("khoan")) != str(cc["khoan"]):
+            c = r.can_cu
+            if c.dieu == cc.get("dieu") and "Luật" in str(c.van_ban):
+                if "khoan" in cc and str(c.khoan) != str(cc["khoan"]):
                     continue
-                kq["quy_tac"].append({**r, "diem": 1.0})
+                kq["quy_tac"].append({**_ra_dict(r), "diem": 1.0})
         kq["tong_hop"] = {"kieu": "can_cu", "tong_so": len(ds)}
         kq["_raw_hv"] = [(1.0, v, {}) for v in ds[:3]]
 
@@ -835,11 +862,11 @@ class InferenceEngine:
         """
         hv = self._xep_hang_hanh_vi(Q, top_k=top_k)
         kq["_raw_hv"] = hv
-        kq["hanh_vi"] = [{**v, "diem": round(s, 4), "chi_tiet_diem": d} for s, v, d in hv]
+        kq["hanh_vi"] = [{**_ra_dict(v), "diem": round(s, 4), "chi_tiet_diem": d} for s, v, d in hv]
         for s, c in self._xep_hang(Q, "concept", self.kb.concepts, 3):
-            kq["khai_niem"].append({**c, "diem": round(s, 4)})
+            kq["khai_niem"].append({**_ra_dict(c), "diem": round(s, 4)})
         for s, r in self._xep_hang(Q, "rule", self.kb.rules, 3):
-            kq["quy_tac"].append({**r, "diem": round(s, 4)})
+            kq["quy_tac"].append({**_ra_dict(r), "diem": round(s, 4)})
 
 
 # ==========================================================================
