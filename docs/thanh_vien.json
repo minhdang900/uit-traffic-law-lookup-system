@@ -1,0 +1,17 @@
+{
+  "mon_hoc": "CS106 — Trí tuệ nhân tạo",
+  "lop": "CS106.F31.CN2",
+  "nhom": 7,
+  "de_tai": "Đề tài 4 — Xây dựng hệ thống tra cứu kiến thức pháp luật (lĩnh vực giao thông đường bộ)",
+  "giang_vien_huong_dan": "PGS.TS. Nguyễn Đình Hiển",
+  "truong": "Trường Đại học Công nghệ Thông tin, ĐHQG-HCM",
+  "thanh_vien": [
+    { "ho_ten": "Nguyễn Quang Lâm", "mssv": "25210289", "email": "25210289@ms.uit.edu.vn" },
+    { "ho_ten": "Trần Trọng Tấn",   "mssv": "25210334", "email": "25210334@ms.uit.edu.vn" },
+    { "ho_ten": "Lê Quang Thi",     "mssv": "25210337", "email": "25210337@ms.uit.edu.vn" },
+    { "ho_ten": "Vỏ Cẩm Thu",       "mssv": "25210342", "email": "25210342@ms.uit.edu.vn" },
+    { "ho_ten": "Nguyễn Trí Toàn",  "mssv": "26410135", "email": "26410135@ms.uit.edu.vn" },
+    { "ho_ten": "Nguyễn Văn Thái",  "mssv": "26410108", "email": "26410108@ms.uit.edu.vn" },
+    { "ho_ten": "Đỗ Quốc Hoàng",    "mssv": "26410043", "email": "26410043@ms.uit.edu.vn" }
+  ]
+}

@@ -6,6 +6,21 @@ Lớp **CS106.F31.CN2** · **Nhóm 7** · GVHD: **PGS.TS. Nguyễn Đình Hiển
 
 ---
 
+## Thành viên nhóm
+
+| # | Họ tên | MSSV | Email |
+|---|---|---|---|
+| 1 | Nguyễn Quang Lâm | 25210289 | 25210289@ms.uit.edu.vn |
+| 2 | Trần Trọng Tấn | 25210334 | 25210334@ms.uit.edu.vn |
+| 3 | Lê Quang Thi | 25210337 | 25210337@ms.uit.edu.vn |
+| 4 | Vỏ Cẩm Thu | 25210342 | 25210342@ms.uit.edu.vn |
+| 5 | Nguyễn Trí Toàn | 26410135 | 26410135@ms.uit.edu.vn |
+| 6 | Nguyễn Văn Thái | 26410108 | 26410108@ms.uit.edu.vn |
+| 7 | Đỗ Quốc Hoàng | 26410043 | 26410043@ms.uit.edu.vn |
+
+Danh sách đầy đủ: [`docs/thanh_vien.json`](docs/thanh_vien.json) ·
+[`docs/danh_sach_nhom.csv`](docs/danh_sach_nhom.csv) (mở được bằng Excel)
+
 ## Mô hình tri thức
 
 Hệ thống biểu diễn tri thức pháp luật theo mô hình năm thành phần:
