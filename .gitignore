@@ -12,3 +12,7 @@ build/
 .DS_Store
 .omc/
 .impeccable/
+
+# Khung bao cao duoc SINH LAI moi lan chay tao_bao_cao.py.
+# Ban da dien noi dung thi luu ten khac roi commit ban do.
+docs/bao_cao_de_tai_4_khung.docx
