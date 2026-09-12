@@ -115,6 +115,43 @@ def _kiem_van_ban_sua_doi(kb: CoSoTriThuc, kq: KetQuaKiemTra) -> None:
                     f"chưa được mô hình hoá trong documents.json")
 
 
+def _kiem_nhat_quan_sua_doi(kb: CoSoTriThuc, kq: KetQuaKiemTra) -> None:
+    """Dấu hiệu sửa đổi phải nhất quán, có phân biệt BỔ SUNG với SỬA ĐỔI.
+
+    Một văn bản sửa đổi vừa có thể SỬA điều khoản cũ, vừa có thể BỔ SUNG điều
+    khoản mới. Hai trường hợp này có dấu hiệu khác nhau và đều hợp lệ:
+
+    - **Bổ sung**: ``sua_doi_boi`` trỏ tới văn bản đã tạo ra nó, ``tinh_trang``
+      là ``hien_hanh``, KHÔNG có bản trước (vì chưa từng tồn tại).
+    - **Sửa đổi**: ``sua_doi_boi`` trỏ tới văn bản đã sửa nó, ``tinh_trang`` là
+      ``da_sua_doi``, CÓ ``hanh_vi_truoc_sua_doi``.
+
+    Chỉ báo lỗi khi hai dấu hiệu mâu thuẫn thực sự — lúc đó không xác định được
+    bản ghi đang lưu nội dung trước hay sau sửa đổi, dẫn thẳng tới mức phạt sai.
+    """
+    lech: list[str] = []
+    for v in kb.vi_pham:
+        danh_dau_sua = v.tinh_trang == "da_sua_doi"
+        co_ban_cu = bool(v.hanh_vi_truoc_sua_doi)
+        if danh_dau_sua and not co_ban_cu:
+            lech.append(f"{v.id}: đánh dấu da_sua_doi nhưng thiếu hanh_vi_truoc_sua_doi")
+        elif co_ban_cu and not danh_dau_sua:
+            lech.append(f"{v.id}: có hanh_vi_truoc_sua_doi nhưng tinh_trang={v.tinh_trang!r}")
+        elif co_ban_cu and not v.sua_doi_boi:
+            lech.append(f"{v.id}: có bản trước nhưng không khai sua_doi_boi")
+    if lech:
+        kq.loi_("SUA_DOI_KHONG_NHAT_QUAN",
+                f"{len(lech)} điều khoản có dấu hiệu sửa đổi mâu thuẫn: {lech[:10]}")
+
+
+def _kiem_hieu_luc(kb: CoSoTriThuc, kq: KetQuaKiemTra) -> None:
+    """Mọi điều khoản phải có khoảng hiệu lực (chạy scripts/suy_dien_hieu_luc.py)."""
+    thieu = [x.id for tap in (kb.quy_tac, kb.vi_pham) for x in tap if x.hieu_luc is None]
+    if thieu:
+        kq.loi_("THIEU_KHOANG_HIEU_LUC",
+                f"{len(thieu)} điều khoản chưa có khoảng hiệu lực: {thieu[:10]}")
+
+
 def _canh_bao_chat_luong(kb: CoSoTriThuc, kq: KetQuaKiemTra) -> None:
     phi_cau_truc = [
         v.id for v in kb.vi_pham
@@ -145,5 +182,7 @@ def kiem_tra_toan_ven(kb: CoSoTriThuc) -> KetQuaKiemTra:
     _kiem_quan_he(kb, kq)
     _kiem_keyphrase(kb, kq)
     _kiem_van_ban_sua_doi(kb, kq)
+    _kiem_nhat_quan_sua_doi(kb, kq)
+    _kiem_hieu_luc(kb, kq)
     _canh_bao_chat_luong(kb, kq)
     return kq
