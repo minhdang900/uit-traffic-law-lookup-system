@@ -18,12 +18,15 @@ jobs:
       - name: Cài đặt
         run: |
           python -m pip install --upgrade pip
-          pip install -e ".[dev]"
+          # Kem 'bao-cao': python-docx nhe, va thieu no thi mypy coi docx la Any
+          # nen phep kiem kieu tren bao_cao/ chi la hinh thuc. Khong cai 'ui'
+          # va 'dense' vi nang (streamlit, mo hinh ~470 MB); test cua chung tu skip.
+          pip install -e ".[dev,bao-cao]"
 
       - name: Lint
         run: ruff check src tests
 
-      - name: Kiểm tra kiểu (domain + kb, strict)
+      - name: Kiểm tra kiểu (strict)
         run: mypy
 
       - name: Kiểm tra hiệu lực đã suy diễn (idempotent)
