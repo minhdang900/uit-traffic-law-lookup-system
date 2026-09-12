@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tra-cuu-gtdb"
+version = "0.1.0"
+description = "Hệ thống tra cứu kiến thức pháp luật giao thông đường bộ Việt Nam"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+
+dependencies = [
+    "pydantic>=2.9,<3",
+    "numpy>=2.0",
+    "scikit-learn>=1.5",
+]
+
+[project.optional-dependencies]
+ui = ["streamlit>=1.40", "pandas>=2.2"]
+dense = ["sentence-transformers>=3.0"]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=5.0",
+    "mypy>=1.11",
+    "ruff>=0.6",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--strict-markers -ra"
+markers = [
+    "cham: test chậm vì phải nạp toàn bộ cơ sở tri thức",
+    "benchmark: test khoá ngưỡng chỉ số đánh giá",
+]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+files = ["src/tra_cuu_gtdb/domain", "src/tra_cuu_gtdb/kb"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.coverage.run]
+source = ["src/tra_cuu_gtdb"]
