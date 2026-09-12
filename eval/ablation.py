@@ -7,7 +7,7 @@ So sánh hiệu quả của từng thành phần trong giải pháp:
   C. Lai keyphrase + ngữ nghĩa + ngữ cảnh, KHÔNG suy diễn số học
   D. Hệ thống đầy đủ (C + suy diễn số học)
 
-Chạy: python3 tests/ablation.py
+Chạy: python eval/ablation.py
 """
 import json
 import os
