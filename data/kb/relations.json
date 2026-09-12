@@ -1,0 +1,3376 @@
+[
+ {
+  "ten": "la_loai_cua",
+  "kieu": "phan_cap",
+  "nguon": "KN_XE_O_TO",
+  "dich": "KN_XE_CO_GIOI",
+  "mo_ta": "KN_XE_O_TO là một loại của KN_XE_CO_GIOI"
+ },
+ {
+  "ten": "la_loai_cua",
+  "kieu": "phan_cap",
+  "nguon": "KN_XE_MO_TO",
+  "dich": "KN_XE_CO_GIOI",
+  "mo_ta": "KN_XE_MO_TO là một loại của KN_XE_CO_GIOI"
+ },
+ {
+  "ten": "la_loai_cua",
+  "kieu": "phan_cap",
+  "nguon": "KN_XE_GAN_MAY",
+  "dich": "KN_XE_CO_GIOI",
+  "mo_ta": "KN_XE_GAN_MAY là một loại của KN_XE_CO_GIOI"
+ },
+ {
+  "ten": "la_loai_cua",
+  "kieu": "phan_cap",
+  "nguon": "KN_RO_MOOC",
+  "dich": "KN_XE_CO_GIOI",
+  "mo_ta": "KN_RO_MOOC là một loại của KN_XE_CO_GIOI"
+ },
+ {
+  "ten": "la_loai_cua",
+  "kieu": "phan_cap",
+  "nguon": "KN_XE_DAP",
+  "dich": "KN_XE_THO_SO",
+  "mo_ta": "KN_XE_DAP là một loại của KN_XE_THO_SO"
+ },
+ {
+  "ten": "la_loai_cua",
+  "kieu": "phan_cap",
+  "nguon": "KN_XE_DAP_MAY",
+  "dich": "KN_XE_THO_SO",
+  "mo_ta": "KN_XE_DAP_MAY là một loại của KN_XE_THO_SO"
+ },
+ {
+  "ten": "la_loai_cua",
+  "kieu": "phan_cap",
+  "nguon": "KN_XE_XICH_LO",
+  "dich": "KN_XE_THO_SO",
+  "mo_ta": "KN_XE_XICH_LO là một loại của KN_XE_THO_SO"
+ },
+ {
+  "ten": "la_loai_cua",
+  "kieu": "phan_cap",
+  "nguon": "KN_XE_CO_GIOI",
+  "dich": "KN_PHUONG_TIEN_GIAO_THONG_DUONG_BO",
+  "mo_ta": "KN_XE_CO_GIOI là một loại của KN_PHUONG_TIEN_GIAO_THONG_DUONG_BO"
+ },
+ {
+  "ten": "la_loai_cua",
+  "kieu": "phan_cap",
+  "nguon": "KN_XE_THO_SO",
+  "dich": "KN_PHUONG_TIEN_GIAO_THONG_DUONG_BO",
+  "mo_ta": "KN_XE_THO_SO là một loại của KN_PHUONG_TIEN_GIAO_THONG_DUONG_BO"
+ },
+ {
+  "ten": "la_loai_cua",
+  "kieu": "phan_cap",
+  "nguon": "KN_XE_MAY_CHUYEN_DUNG",
+  "dich": "KN_PHUONG_TIEN_GIAO_THONG_DUONG_BO",
+  "mo_ta": "KN_XE_MAY_CHUYEN_DUNG là một loại của KN_PHUONG_TIEN_GIAO_THONG_DUONG_BO"
+ },
+ {
+  "ten": "co_che_tai",
+  "kieu": "khai_niem_che_tai",
+  "nguon": "KN_TOC_DO_VA_KHOANG_CACH_AN_TOAN",
+  "dich": "NHOM_TOC_DO",
+  "mo_ta": "Vi phạm liên quan đến KN_TOC_DO_VA_KHOANG_CACH_AN_TOAN bị xử phạt theo nhóm Tốc độ"
+ },
+ {
+  "ten": "co_che_tai",
+  "kieu": "khai_niem_che_tai",
+  "nguon": "KN_VUOT_XE",
+  "dich": "NHOM_VUOT_XE",
+  "mo_ta": "Vi phạm liên quan đến KN_VUOT_XE bị xử phạt theo nhóm Vượt xe"
+ },
+ {
+  "ten": "co_che_tai",
+  "kieu": "khai_niem_che_tai",
+  "nguon": "KN_NONG_DO_CON",
+  "dich": "NHOM_NONG_DO_CON",
+  "mo_ta": "Vi phạm liên quan đến KN_NONG_DO_CON bị xử phạt theo nhóm Nồng độ cồn"
+ },
+ {
+  "ten": "co_che_tai",
+  "kieu": "khai_niem_che_tai",
+  "nguon": "KN_DEN_TIN_HIEU_GIAO_THONG",
+  "dich": "NHOM_DEN_TIN_HIEU",
+  "mo_ta": "Vi phạm liên quan đến KN_DEN_TIN_HIEU_GIAO_THONG bị xử phạt theo nhóm Đèn tín hiệu giao thông"
+ },
+ {
+  "ten": "co_che_tai",
+  "kieu": "khai_niem_che_tai",
+  "nguon": "KN_HIEU_LUC_GPLX",
+  "dich": "NHOM_GPLX",
+  "mo_ta": "Vi phạm liên quan đến KN_HIEU_LUC_GPLX bị xử phạt theo nhóm Giấy phép lái xe"
+ },
+ {
+  "ten": "co_che_tai",
+  "kieu": "khai_niem_che_tai",
+  "nguon": "KN_THOI_HAN_GPLX",
+  "dich": "NHOM_GPLX",
+  "mo_ta": "Vi phạm liên quan đến KN_THOI_HAN_GPLX bị xử phạt theo nhóm Giấy phép lái xe"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R01",
+  "dich": "NHOM_GPLX",
+  "mo_ta": "Quy tắc R01 được bảo đảm thực hiện bằng chế tài nhóm Giấy phép lái xe"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R02",
+  "dich": "NHOM_NONG_DO_CON",
+  "mo_ta": "Quy tắc R02 được bảo đảm thực hiện bằng chế tài nhóm Nồng độ cồn"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R05",
+  "dich": "NHOM_LANG_LACH",
+  "mo_ta": "Quy tắc R05 được bảo đảm thực hiện bằng chế tài nhóm Lạng lách, đánh võng"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R07",
+  "dich": "NHOM_GIAO_XE",
+  "mo_ta": "Quy tắc R07 được bảo đảm thực hiện bằng chế tài nhóm Giao xe cho người không đủ điều kiện"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R09",
+  "dich": "NHOM_CHO_QUA_SO_NGUOI",
+  "mo_ta": "Quy tắc R09 được bảo đảm thực hiện bằng chế tài nhóm Chở quá số người"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R10",
+  "dich": "NHOM_BIEN_SO",
+  "mo_ta": "Quy tắc R10 được bảo đảm thực hiện bằng chế tài nhóm Biển số xe"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R11",
+  "dich": "NHOM_XE_UU_TIEN",
+  "mo_ta": "Quy tắc R11 được bảo đảm thực hiện bằng chế tài nhóm Xe ưu tiên"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R12",
+  "dich": "NHOM_TAI_NAN",
+  "mo_ta": "Quy tắc R12 được bảo đảm thực hiện bằng chế tài nhóm Tai nạn giao thông"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R13",
+  "dich": "NHOM_LAN_DUONG",
+  "mo_ta": "Quy tắc R13 được bảo đảm thực hiện bằng chế tài nhóm Làn đường, phần đường"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R14",
+  "dich": "NHOM_DAY_AN_TOAN",
+  "mo_ta": "Quy tắc R14 được bảo đảm thực hiện bằng chế tài nhóm Dây đai an toàn"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R16",
+  "dich": "NHOM_BIEN_BAO_HIEU",
+  "mo_ta": "Quy tắc R16 được bảo đảm thực hiện bằng chế tài nhóm Biển báo hiệu đường bộ"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R17",
+  "dich": "NHOM_TOC_DO",
+  "mo_ta": "Quy tắc R17 được bảo đảm thực hiện bằng chế tài nhóm Tốc độ"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R18",
+  "dich": "NHOM_TOC_DO",
+  "mo_ta": "Quy tắc R18 được bảo đảm thực hiện bằng chế tài nhóm Tốc độ"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R21",
+  "dich": "NHOM_TOC_DO",
+  "mo_ta": "Quy tắc R21 được bảo đảm thực hiện bằng chế tài nhóm Tốc độ"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R22",
+  "dich": "NHOM_TOC_DO",
+  "mo_ta": "Quy tắc R22 được bảo đảm thực hiện bằng chế tài nhóm Tốc độ"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R23",
+  "dich": "NHOM_NGUOC_CHIEU",
+  "mo_ta": "Quy tắc R23 được bảo đảm thực hiện bằng chế tài nhóm Đi ngược chiều"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R24",
+  "dich": "NHOM_TOC_DO",
+  "mo_ta": "Quy tắc R24 được bảo đảm thực hiện bằng chế tài nhóm Tốc độ"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R25",
+  "dich": "NHOM_KHOANG_CACH",
+  "mo_ta": "Quy tắc R25 được bảo đảm thực hiện bằng chế tài nhóm Khoảng cách an toàn"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R28",
+  "dich": "NHOM_VUOT_XE",
+  "mo_ta": "Quy tắc R28 được bảo đảm thực hiện bằng chế tài nhóm Vượt xe"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R29",
+  "dich": "NHOM_VUOT_XE",
+  "mo_ta": "Quy tắc R29 được bảo đảm thực hiện bằng chế tài nhóm Vượt xe"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R30",
+  "dich": "NHOM_TOC_DO",
+  "mo_ta": "Quy tắc R30 được bảo đảm thực hiện bằng chế tài nhóm Tốc độ"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R31",
+  "dich": "NHOM_KHOANG_CACH",
+  "mo_ta": "Quy tắc R31 được bảo đảm thực hiện bằng chế tài nhóm Khoảng cách an toàn"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R32",
+  "dich": "NHOM_VUOT_XE",
+  "mo_ta": "Quy tắc R32 được bảo đảm thực hiện bằng chế tài nhóm Vượt xe"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R33",
+  "dich": "NHOM_TOC_DO",
+  "mo_ta": "Quy tắc R33 được bảo đảm thực hiện bằng chế tài nhóm Tốc độ"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R34",
+  "dich": "NHOM_NGUOC_CHIEU",
+  "mo_ta": "Quy tắc R34 được bảo đảm thực hiện bằng chế tài nhóm Đi ngược chiều"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R35",
+  "dich": "NHOM_HIEU_LENH",
+  "mo_ta": "Quy tắc R35 được bảo đảm thực hiện bằng chế tài nhóm Hiệu lệnh của người điều khiển giao thông"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R36",
+  "dich": "NHOM_LUI_XE",
+  "mo_ta": "Quy tắc R36 được bảo đảm thực hiện bằng chế tài nhóm Lùi xe"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R37",
+  "dich": "NHOM_LUI_XE",
+  "mo_ta": "Quy tắc R37 được bảo đảm thực hiện bằng chế tài nhóm Lùi xe"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R38",
+  "dich": "NHOM_NGUOC_CHIEU",
+  "mo_ta": "Quy tắc R38 được bảo đảm thực hiện bằng chế tài nhóm Đi ngược chiều"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R39",
+  "dich": "NHOM_NGUOC_CHIEU",
+  "mo_ta": "Quy tắc R39 được bảo đảm thực hiện bằng chế tài nhóm Đi ngược chiều"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R40",
+  "dich": "NHOM_MO_CUA_XE",
+  "mo_ta": "Quy tắc R40 được bảo đảm thực hiện bằng chế tài nhóm Mở cửa xe"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R42",
+  "dich": "NHOM_DUNG_DO",
+  "mo_ta": "Quy tắc R42 được bảo đảm thực hiện bằng chế tài nhóm Dừng xe, đỗ xe"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R43",
+  "dich": "NHOM_DEN_TIN_HIEU",
+  "mo_ta": "Quy tắc R43 được bảo đảm thực hiện bằng chế tài nhóm Đèn tín hiệu giao thông"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R44",
+  "dich": "NHOM_DUNG_DO",
+  "mo_ta": "Quy tắc R44 được bảo đảm thực hiện bằng chế tài nhóm Dừng xe, đỗ xe"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R45",
+  "dich": "NHOM_DUNG_DO",
+  "mo_ta": "Quy tắc R45 được bảo đảm thực hiện bằng chế tài nhóm Dừng xe, đỗ xe"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R47",
+  "dich": "NHOM_MO_CUA_XE",
+  "mo_ta": "Quy tắc R47 được bảo đảm thực hiện bằng chế tài nhóm Mở cửa xe"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R48",
+  "dich": "NHOM_DEN_CHIEU_SANG",
+  "mo_ta": "Quy tắc R48 được bảo đảm thực hiện bằng chế tài nhóm Đèn chiếu sáng"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R49",
+  "dich": "NHOM_NGUOC_CHIEU",
+  "mo_ta": "Quy tắc R49 được bảo đảm thực hiện bằng chế tài nhóm Đi ngược chiều"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R51",
+  "dich": "NHOM_VUOT_XE",
+  "mo_ta": "Quy tắc R51 được bảo đảm thực hiện bằng chế tài nhóm Vượt xe"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R52",
+  "dich": "NHOM_XE_UU_TIEN",
+  "mo_ta": "Quy tắc R52 được bảo đảm thực hiện bằng chế tài nhóm Xe ưu tiên"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R53",
+  "dich": "NHOM_TOC_DO",
+  "mo_ta": "Quy tắc R53 được bảo đảm thực hiện bằng chế tài nhóm Tốc độ"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R54",
+  "dich": "NHOM_TOC_DO",
+  "mo_ta": "Quy tắc R54 được bảo đảm thực hiện bằng chế tài nhóm Tốc độ"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R55",
+  "dich": "NHOM_TOC_DO",
+  "mo_ta": "Quy tắc R55 được bảo đảm thực hiện bằng chế tài nhóm Tốc độ"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R56",
+  "dich": "NHOM_XE_UU_TIEN",
+  "mo_ta": "Quy tắc R56 được bảo đảm thực hiện bằng chế tài nhóm Xe ưu tiên"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R60",
+  "dich": "NHOM_KHOANG_CACH",
+  "mo_ta": "Quy tắc R60 được bảo đảm thực hiện bằng chế tài nhóm Khoảng cách an toàn"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R61",
+  "dich": "NHOM_DUONG_CAO_TOC",
+  "mo_ta": "Quy tắc R61 được bảo đảm thực hiện bằng chế tài nhóm Đường cao tốc"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R62",
+  "dich": "NHOM_DUONG_CAO_TOC",
+  "mo_ta": "Quy tắc R62 được bảo đảm thực hiện bằng chế tài nhóm Đường cao tốc"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R63",
+  "dich": "NHOM_DUNG_DO",
+  "mo_ta": "Quy tắc R63 được bảo đảm thực hiện bằng chế tài nhóm Dừng xe, đỗ xe"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R64",
+  "dich": "NHOM_TOC_DO",
+  "mo_ta": "Quy tắc R64 được bảo đảm thực hiện bằng chế tài nhóm Tốc độ"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R65",
+  "dich": "NHOM_HAM_DUONG_BO",
+  "mo_ta": "Quy tắc R65 được bảo đảm thực hiện bằng chế tài nhóm Hầm đường bộ"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R66",
+  "dich": "NHOM_DUNG_DO",
+  "mo_ta": "Quy tắc R66 được bảo đảm thực hiện bằng chế tài nhóm Dừng xe, đỗ xe"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R67",
+  "dich": "NHOM_HIEU_LENH",
+  "mo_ta": "Quy tắc R67 được bảo đảm thực hiện bằng chế tài nhóm Hiệu lệnh của người điều khiển giao thông"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R68",
+  "dich": "NHOM_TOC_DO",
+  "mo_ta": "Quy tắc R68 được bảo đảm thực hiện bằng chế tài nhóm Tốc độ"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R72",
+  "dich": "NHOM_VIA_HE",
+  "mo_ta": "Quy tắc R72 được bảo đảm thực hiện bằng chế tài nhóm Vỉa hè"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R77",
+  "dich": "NHOM_MU_BAO_HIEM",
+  "mo_ta": "Quy tắc R77 được bảo đảm thực hiện bằng chế tài nhóm Mũ bảo hiểm"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R79",
+  "dich": "NHOM_CAN_TRO_GIAO_THONG",
+  "mo_ta": "Quy tắc R79 được bảo đảm thực hiện bằng chế tài nhóm Cản trở giao thông"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R82",
+  "dich": "NHOM_MU_BAO_HIEM",
+  "mo_ta": "Quy tắc R82 được bảo đảm thực hiện bằng chế tài nhóm Mũ bảo hiểm"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R83",
+  "dich": "NHOM_KEO_XE",
+  "mo_ta": "Quy tắc R83 được bảo đảm thực hiện bằng chế tài nhóm Kéo, đẩy xe"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R86",
+  "dich": "NHOM_BIEN_SO",
+  "mo_ta": "Quy tắc R86 được bảo đảm thực hiện bằng chế tài nhóm Biển số xe"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R87",
+  "dich": "NHOM_THIET_BI_GIAM_SAT",
+  "mo_ta": "Quy tắc R87 được bảo đảm thực hiện bằng chế tài nhóm Thiết bị giám sát hành trình"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R88",
+  "dich": "NHOM_GPLX",
+  "mo_ta": "Quy tắc R88 được bảo đảm thực hiện bằng chế tài nhóm Giấy phép lái xe"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R89",
+  "dich": "NHOM_GPLX",
+  "mo_ta": "Quy tắc R89 được bảo đảm thực hiện bằng chế tài nhóm Giấy phép lái xe"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R90",
+  "dich": "NHOM_GPLX",
+  "mo_ta": "Quy tắc R90 được bảo đảm thực hiện bằng chế tài nhóm Giấy phép lái xe"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R92",
+  "dich": "NHOM_GPLX",
+  "mo_ta": "Quy tắc R92 được bảo đảm thực hiện bằng chế tài nhóm Giấy phép lái xe"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R93",
+  "dich": "NHOM_GPLX",
+  "mo_ta": "Quy tắc R93 được bảo đảm thực hiện bằng chế tài nhóm Giấy phép lái xe"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R94",
+  "dich": "NHOM_GPLX",
+  "mo_ta": "Quy tắc R94 được bảo đảm thực hiện bằng chế tài nhóm Giấy phép lái xe"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R95",
+  "dich": "NHOM_GPLX",
+  "mo_ta": "Quy tắc R95 được bảo đảm thực hiện bằng chế tài nhóm Giấy phép lái xe"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R97",
+  "dich": "NHOM_GPLX",
+  "mo_ta": "Quy tắc R97 được bảo đảm thực hiện bằng chế tài nhóm Giấy phép lái xe"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R98",
+  "dich": "NHOM_GPLX",
+  "mo_ta": "Quy tắc R98 được bảo đảm thực hiện bằng chế tài nhóm Giấy phép lái xe"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R99",
+  "dich": "NHOM_GPLX",
+  "mo_ta": "Quy tắc R99 được bảo đảm thực hiện bằng chế tài nhóm Giấy phép lái xe"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R100",
+  "dich": "NHOM_GPLX",
+  "mo_ta": "Quy tắc R100 được bảo đảm thực hiện bằng chế tài nhóm Giấy phép lái xe"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R101",
+  "dich": "NHOM_GPLX",
+  "mo_ta": "Quy tắc R101 được bảo đảm thực hiện bằng chế tài nhóm Giấy phép lái xe"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R102",
+  "dich": "NHOM_GPLX",
+  "mo_ta": "Quy tắc R102 được bảo đảm thực hiện bằng chế tài nhóm Giấy phép lái xe"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R103",
+  "dich": "NHOM_GPLX",
+  "mo_ta": "Quy tắc R103 được bảo đảm thực hiện bằng chế tài nhóm Giấy phép lái xe"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R104",
+  "dich": "NHOM_GPLX",
+  "mo_ta": "Quy tắc R104 được bảo đảm thực hiện bằng chế tài nhóm Giấy phép lái xe"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R105",
+  "dich": "NHOM_GPLX",
+  "mo_ta": "Quy tắc R105 được bảo đảm thực hiện bằng chế tài nhóm Giấy phép lái xe"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R106",
+  "dich": "NHOM_GPLX",
+  "mo_ta": "Quy tắc R106 được bảo đảm thực hiện bằng chế tài nhóm Giấy phép lái xe"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R107",
+  "dich": "NHOM_GPLX",
+  "mo_ta": "Quy tắc R107 được bảo đảm thực hiện bằng chế tài nhóm Giấy phép lái xe"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R108",
+  "dich": "NHOM_GPLX",
+  "mo_ta": "Quy tắc R108 được bảo đảm thực hiện bằng chế tài nhóm Giấy phép lái xe"
+ },
+ {
+  "ten": "duoc_bao_dam_boi",
+  "kieu": "quy_tac_che_tai",
+  "nguon": "R109",
+  "dich": "NHOM_GPLX",
+  "mo_ta": "Quy tắc R109 được bảo đảm thực hiện bằng chế tài nhóm Giấy phép lái xe"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DEN_TIN_HIEU",
+  "dich": "NHOM_BIEN_BAO_HIEU",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DEN_TIN_HIEU",
+  "dich": "NHOM_HIEU_LENH",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DEN_TIN_HIEU",
+  "dich": "NHOM_LAN_DUONG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DEN_TIN_HIEU",
+  "dich": "NHOM_NGUOC_CHIEU",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DEN_TIN_HIEU",
+  "dich": "NHOM_TOC_DO",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DEN_TIN_HIEU",
+  "dich": "NHOM_KHOANG_CACH",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DEN_TIN_HIEU",
+  "dich": "NHOM_VUOT_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DEN_TIN_HIEU",
+  "dich": "NHOM_CHUYEN_HUONG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DEN_TIN_HIEU",
+  "dich": "NHOM_QUAY_DAU",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DEN_TIN_HIEU",
+  "dich": "NHOM_LUI_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DEN_TIN_HIEU",
+  "dich": "NHOM_NHUONG_DUONG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DEN_TIN_HIEU",
+  "dich": "NHOM_DUNG_DO",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DEN_TIN_HIEU",
+  "dich": "NHOM_DUONG_CAO_TOC",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DEN_TIN_HIEU",
+  "dich": "NHOM_HAM_DUONG_BO",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DEN_TIN_HIEU",
+  "dich": "NHOM_XE_UU_TIEN",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DEN_TIN_HIEU",
+  "dich": "NHOM_KHU_VUC_CAM",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DEN_TIN_HIEU",
+  "dich": "NHOM_MO_CUA_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DEN_TIN_HIEU",
+  "dich": "NHOM_COI",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DEN_TIN_HIEU",
+  "dich": "NHOM_DEN_CHIEU_SANG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DEN_TIN_HIEU",
+  "dich": "NHOM_KEO_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DEN_TIN_HIEU",
+  "dich": "NHOM_CAN_TRO_GIAO_THONG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DEN_TIN_HIEU",
+  "dich": "NHOM_LONG_DUONG_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DEN_TIN_HIEU",
+  "dich": "NHOM_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_BIEN_BAO_HIEU",
+  "dich": "NHOM_HIEU_LENH",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_BIEN_BAO_HIEU",
+  "dich": "NHOM_LAN_DUONG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_BIEN_BAO_HIEU",
+  "dich": "NHOM_NGUOC_CHIEU",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_BIEN_BAO_HIEU",
+  "dich": "NHOM_TOC_DO",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_BIEN_BAO_HIEU",
+  "dich": "NHOM_KHOANG_CACH",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_BIEN_BAO_HIEU",
+  "dich": "NHOM_VUOT_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_BIEN_BAO_HIEU",
+  "dich": "NHOM_CHUYEN_HUONG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_BIEN_BAO_HIEU",
+  "dich": "NHOM_QUAY_DAU",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_BIEN_BAO_HIEU",
+  "dich": "NHOM_LUI_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_BIEN_BAO_HIEU",
+  "dich": "NHOM_NHUONG_DUONG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_BIEN_BAO_HIEU",
+  "dich": "NHOM_DUNG_DO",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_BIEN_BAO_HIEU",
+  "dich": "NHOM_DUONG_CAO_TOC",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_BIEN_BAO_HIEU",
+  "dich": "NHOM_HAM_DUONG_BO",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_BIEN_BAO_HIEU",
+  "dich": "NHOM_XE_UU_TIEN",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_BIEN_BAO_HIEU",
+  "dich": "NHOM_KHU_VUC_CAM",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_BIEN_BAO_HIEU",
+  "dich": "NHOM_MO_CUA_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_BIEN_BAO_HIEU",
+  "dich": "NHOM_COI",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_BIEN_BAO_HIEU",
+  "dich": "NHOM_DEN_CHIEU_SANG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_BIEN_BAO_HIEU",
+  "dich": "NHOM_KEO_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_BIEN_BAO_HIEU",
+  "dich": "NHOM_CAN_TRO_GIAO_THONG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_BIEN_BAO_HIEU",
+  "dich": "NHOM_LONG_DUONG_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_BIEN_BAO_HIEU",
+  "dich": "NHOM_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_HIEU_LENH",
+  "dich": "NHOM_LAN_DUONG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_HIEU_LENH",
+  "dich": "NHOM_NGUOC_CHIEU",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_HIEU_LENH",
+  "dich": "NHOM_TOC_DO",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_HIEU_LENH",
+  "dich": "NHOM_KHOANG_CACH",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_HIEU_LENH",
+  "dich": "NHOM_VUOT_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_HIEU_LENH",
+  "dich": "NHOM_CHUYEN_HUONG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_HIEU_LENH",
+  "dich": "NHOM_QUAY_DAU",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_HIEU_LENH",
+  "dich": "NHOM_LUI_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_HIEU_LENH",
+  "dich": "NHOM_NHUONG_DUONG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_HIEU_LENH",
+  "dich": "NHOM_DUNG_DO",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_HIEU_LENH",
+  "dich": "NHOM_DUONG_CAO_TOC",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_HIEU_LENH",
+  "dich": "NHOM_HAM_DUONG_BO",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_HIEU_LENH",
+  "dich": "NHOM_XE_UU_TIEN",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_HIEU_LENH",
+  "dich": "NHOM_KHU_VUC_CAM",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_HIEU_LENH",
+  "dich": "NHOM_MO_CUA_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_HIEU_LENH",
+  "dich": "NHOM_COI",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_HIEU_LENH",
+  "dich": "NHOM_DEN_CHIEU_SANG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_HIEU_LENH",
+  "dich": "NHOM_KEO_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_HIEU_LENH",
+  "dich": "NHOM_CAN_TRO_GIAO_THONG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_HIEU_LENH",
+  "dich": "NHOM_LONG_DUONG_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_HIEU_LENH",
+  "dich": "NHOM_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_LAN_DUONG",
+  "dich": "NHOM_NGUOC_CHIEU",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_LAN_DUONG",
+  "dich": "NHOM_TOC_DO",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_LAN_DUONG",
+  "dich": "NHOM_KHOANG_CACH",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_LAN_DUONG",
+  "dich": "NHOM_VUOT_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_LAN_DUONG",
+  "dich": "NHOM_CHUYEN_HUONG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_LAN_DUONG",
+  "dich": "NHOM_QUAY_DAU",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_LAN_DUONG",
+  "dich": "NHOM_LUI_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_LAN_DUONG",
+  "dich": "NHOM_NHUONG_DUONG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_LAN_DUONG",
+  "dich": "NHOM_DUNG_DO",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_LAN_DUONG",
+  "dich": "NHOM_DUONG_CAO_TOC",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_LAN_DUONG",
+  "dich": "NHOM_HAM_DUONG_BO",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_LAN_DUONG",
+  "dich": "NHOM_XE_UU_TIEN",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_LAN_DUONG",
+  "dich": "NHOM_KHU_VUC_CAM",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_LAN_DUONG",
+  "dich": "NHOM_MO_CUA_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_LAN_DUONG",
+  "dich": "NHOM_COI",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_LAN_DUONG",
+  "dich": "NHOM_DEN_CHIEU_SANG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_LAN_DUONG",
+  "dich": "NHOM_KEO_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_LAN_DUONG",
+  "dich": "NHOM_CAN_TRO_GIAO_THONG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_LAN_DUONG",
+  "dich": "NHOM_LONG_DUONG_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_LAN_DUONG",
+  "dich": "NHOM_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NGUOC_CHIEU",
+  "dich": "NHOM_TOC_DO",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NGUOC_CHIEU",
+  "dich": "NHOM_KHOANG_CACH",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NGUOC_CHIEU",
+  "dich": "NHOM_VUOT_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NGUOC_CHIEU",
+  "dich": "NHOM_CHUYEN_HUONG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NGUOC_CHIEU",
+  "dich": "NHOM_QUAY_DAU",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NGUOC_CHIEU",
+  "dich": "NHOM_LUI_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NGUOC_CHIEU",
+  "dich": "NHOM_NHUONG_DUONG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NGUOC_CHIEU",
+  "dich": "NHOM_DUNG_DO",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NGUOC_CHIEU",
+  "dich": "NHOM_DUONG_CAO_TOC",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NGUOC_CHIEU",
+  "dich": "NHOM_HAM_DUONG_BO",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NGUOC_CHIEU",
+  "dich": "NHOM_XE_UU_TIEN",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NGUOC_CHIEU",
+  "dich": "NHOM_KHU_VUC_CAM",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NGUOC_CHIEU",
+  "dich": "NHOM_MO_CUA_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NGUOC_CHIEU",
+  "dich": "NHOM_COI",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NGUOC_CHIEU",
+  "dich": "NHOM_DEN_CHIEU_SANG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NGUOC_CHIEU",
+  "dich": "NHOM_KEO_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NGUOC_CHIEU",
+  "dich": "NHOM_CAN_TRO_GIAO_THONG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NGUOC_CHIEU",
+  "dich": "NHOM_LONG_DUONG_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NGUOC_CHIEU",
+  "dich": "NHOM_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_TOC_DO",
+  "dich": "NHOM_KHOANG_CACH",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_TOC_DO",
+  "dich": "NHOM_VUOT_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_TOC_DO",
+  "dich": "NHOM_CHUYEN_HUONG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_TOC_DO",
+  "dich": "NHOM_QUAY_DAU",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_TOC_DO",
+  "dich": "NHOM_LUI_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_TOC_DO",
+  "dich": "NHOM_NHUONG_DUONG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_TOC_DO",
+  "dich": "NHOM_DUNG_DO",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_TOC_DO",
+  "dich": "NHOM_DUONG_CAO_TOC",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_TOC_DO",
+  "dich": "NHOM_HAM_DUONG_BO",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_TOC_DO",
+  "dich": "NHOM_XE_UU_TIEN",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_TOC_DO",
+  "dich": "NHOM_KHU_VUC_CAM",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_TOC_DO",
+  "dich": "NHOM_MO_CUA_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_TOC_DO",
+  "dich": "NHOM_COI",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_TOC_DO",
+  "dich": "NHOM_DEN_CHIEU_SANG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_TOC_DO",
+  "dich": "NHOM_KEO_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_TOC_DO",
+  "dich": "NHOM_CAN_TRO_GIAO_THONG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_TOC_DO",
+  "dich": "NHOM_LONG_DUONG_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_TOC_DO",
+  "dich": "NHOM_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_KHOANG_CACH",
+  "dich": "NHOM_VUOT_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_KHOANG_CACH",
+  "dich": "NHOM_CHUYEN_HUONG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_KHOANG_CACH",
+  "dich": "NHOM_QUAY_DAU",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_KHOANG_CACH",
+  "dich": "NHOM_LUI_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_KHOANG_CACH",
+  "dich": "NHOM_NHUONG_DUONG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_KHOANG_CACH",
+  "dich": "NHOM_DUNG_DO",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_KHOANG_CACH",
+  "dich": "NHOM_DUONG_CAO_TOC",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_KHOANG_CACH",
+  "dich": "NHOM_HAM_DUONG_BO",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_KHOANG_CACH",
+  "dich": "NHOM_XE_UU_TIEN",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_KHOANG_CACH",
+  "dich": "NHOM_KHU_VUC_CAM",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_KHOANG_CACH",
+  "dich": "NHOM_MO_CUA_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_KHOANG_CACH",
+  "dich": "NHOM_COI",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_KHOANG_CACH",
+  "dich": "NHOM_DEN_CHIEU_SANG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_KHOANG_CACH",
+  "dich": "NHOM_KEO_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_KHOANG_CACH",
+  "dich": "NHOM_CAN_TRO_GIAO_THONG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_KHOANG_CACH",
+  "dich": "NHOM_LONG_DUONG_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_KHOANG_CACH",
+  "dich": "NHOM_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_VUOT_XE",
+  "dich": "NHOM_CHUYEN_HUONG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_VUOT_XE",
+  "dich": "NHOM_QUAY_DAU",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_VUOT_XE",
+  "dich": "NHOM_LUI_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_VUOT_XE",
+  "dich": "NHOM_NHUONG_DUONG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_VUOT_XE",
+  "dich": "NHOM_DUNG_DO",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_VUOT_XE",
+  "dich": "NHOM_DUONG_CAO_TOC",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_VUOT_XE",
+  "dich": "NHOM_HAM_DUONG_BO",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_VUOT_XE",
+  "dich": "NHOM_XE_UU_TIEN",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_VUOT_XE",
+  "dich": "NHOM_KHU_VUC_CAM",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_VUOT_XE",
+  "dich": "NHOM_MO_CUA_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_VUOT_XE",
+  "dich": "NHOM_COI",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_VUOT_XE",
+  "dich": "NHOM_DEN_CHIEU_SANG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_VUOT_XE",
+  "dich": "NHOM_KEO_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_VUOT_XE",
+  "dich": "NHOM_CAN_TRO_GIAO_THONG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_VUOT_XE",
+  "dich": "NHOM_LONG_DUONG_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_VUOT_XE",
+  "dich": "NHOM_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_CHUYEN_HUONG",
+  "dich": "NHOM_QUAY_DAU",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_CHUYEN_HUONG",
+  "dich": "NHOM_LUI_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_CHUYEN_HUONG",
+  "dich": "NHOM_NHUONG_DUONG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_CHUYEN_HUONG",
+  "dich": "NHOM_DUNG_DO",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_CHUYEN_HUONG",
+  "dich": "NHOM_DUONG_CAO_TOC",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_CHUYEN_HUONG",
+  "dich": "NHOM_HAM_DUONG_BO",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_CHUYEN_HUONG",
+  "dich": "NHOM_XE_UU_TIEN",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_CHUYEN_HUONG",
+  "dich": "NHOM_KHU_VUC_CAM",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_CHUYEN_HUONG",
+  "dich": "NHOM_MO_CUA_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_CHUYEN_HUONG",
+  "dich": "NHOM_COI",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_CHUYEN_HUONG",
+  "dich": "NHOM_DEN_CHIEU_SANG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_CHUYEN_HUONG",
+  "dich": "NHOM_KEO_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_CHUYEN_HUONG",
+  "dich": "NHOM_CAN_TRO_GIAO_THONG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_CHUYEN_HUONG",
+  "dich": "NHOM_LONG_DUONG_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_CHUYEN_HUONG",
+  "dich": "NHOM_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_QUAY_DAU",
+  "dich": "NHOM_LUI_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_QUAY_DAU",
+  "dich": "NHOM_NHUONG_DUONG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_QUAY_DAU",
+  "dich": "NHOM_DUNG_DO",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_QUAY_DAU",
+  "dich": "NHOM_DUONG_CAO_TOC",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_QUAY_DAU",
+  "dich": "NHOM_HAM_DUONG_BO",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_QUAY_DAU",
+  "dich": "NHOM_XE_UU_TIEN",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_QUAY_DAU",
+  "dich": "NHOM_KHU_VUC_CAM",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_QUAY_DAU",
+  "dich": "NHOM_MO_CUA_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_QUAY_DAU",
+  "dich": "NHOM_COI",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_QUAY_DAU",
+  "dich": "NHOM_DEN_CHIEU_SANG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_QUAY_DAU",
+  "dich": "NHOM_KEO_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_QUAY_DAU",
+  "dich": "NHOM_CAN_TRO_GIAO_THONG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_QUAY_DAU",
+  "dich": "NHOM_LONG_DUONG_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_QUAY_DAU",
+  "dich": "NHOM_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_LUI_XE",
+  "dich": "NHOM_NHUONG_DUONG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_LUI_XE",
+  "dich": "NHOM_DUNG_DO",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_LUI_XE",
+  "dich": "NHOM_DUONG_CAO_TOC",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_LUI_XE",
+  "dich": "NHOM_HAM_DUONG_BO",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_LUI_XE",
+  "dich": "NHOM_XE_UU_TIEN",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_LUI_XE",
+  "dich": "NHOM_KHU_VUC_CAM",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_LUI_XE",
+  "dich": "NHOM_MO_CUA_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_LUI_XE",
+  "dich": "NHOM_COI",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_LUI_XE",
+  "dich": "NHOM_DEN_CHIEU_SANG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_LUI_XE",
+  "dich": "NHOM_KEO_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_LUI_XE",
+  "dich": "NHOM_CAN_TRO_GIAO_THONG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_LUI_XE",
+  "dich": "NHOM_LONG_DUONG_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_LUI_XE",
+  "dich": "NHOM_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NHUONG_DUONG",
+  "dich": "NHOM_DUNG_DO",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NHUONG_DUONG",
+  "dich": "NHOM_DUONG_CAO_TOC",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NHUONG_DUONG",
+  "dich": "NHOM_HAM_DUONG_BO",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NHUONG_DUONG",
+  "dich": "NHOM_XE_UU_TIEN",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NHUONG_DUONG",
+  "dich": "NHOM_KHU_VUC_CAM",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NHUONG_DUONG",
+  "dich": "NHOM_MO_CUA_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NHUONG_DUONG",
+  "dich": "NHOM_COI",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NHUONG_DUONG",
+  "dich": "NHOM_DEN_CHIEU_SANG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NHUONG_DUONG",
+  "dich": "NHOM_KEO_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NHUONG_DUONG",
+  "dich": "NHOM_CAN_TRO_GIAO_THONG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NHUONG_DUONG",
+  "dich": "NHOM_LONG_DUONG_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NHUONG_DUONG",
+  "dich": "NHOM_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DUNG_DO",
+  "dich": "NHOM_DUONG_CAO_TOC",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DUNG_DO",
+  "dich": "NHOM_HAM_DUONG_BO",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DUNG_DO",
+  "dich": "NHOM_XE_UU_TIEN",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DUNG_DO",
+  "dich": "NHOM_KHU_VUC_CAM",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DUNG_DO",
+  "dich": "NHOM_MO_CUA_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DUNG_DO",
+  "dich": "NHOM_COI",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DUNG_DO",
+  "dich": "NHOM_DEN_CHIEU_SANG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DUNG_DO",
+  "dich": "NHOM_KEO_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DUNG_DO",
+  "dich": "NHOM_CAN_TRO_GIAO_THONG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DUNG_DO",
+  "dich": "NHOM_LONG_DUONG_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DUNG_DO",
+  "dich": "NHOM_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DUONG_CAO_TOC",
+  "dich": "NHOM_HAM_DUONG_BO",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DUONG_CAO_TOC",
+  "dich": "NHOM_XE_UU_TIEN",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DUONG_CAO_TOC",
+  "dich": "NHOM_KHU_VUC_CAM",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DUONG_CAO_TOC",
+  "dich": "NHOM_MO_CUA_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DUONG_CAO_TOC",
+  "dich": "NHOM_COI",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DUONG_CAO_TOC",
+  "dich": "NHOM_DEN_CHIEU_SANG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DUONG_CAO_TOC",
+  "dich": "NHOM_KEO_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DUONG_CAO_TOC",
+  "dich": "NHOM_CAN_TRO_GIAO_THONG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DUONG_CAO_TOC",
+  "dich": "NHOM_LONG_DUONG_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DUONG_CAO_TOC",
+  "dich": "NHOM_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_HAM_DUONG_BO",
+  "dich": "NHOM_XE_UU_TIEN",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_HAM_DUONG_BO",
+  "dich": "NHOM_KHU_VUC_CAM",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_HAM_DUONG_BO",
+  "dich": "NHOM_MO_CUA_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_HAM_DUONG_BO",
+  "dich": "NHOM_COI",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_HAM_DUONG_BO",
+  "dich": "NHOM_DEN_CHIEU_SANG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_HAM_DUONG_BO",
+  "dich": "NHOM_KEO_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_HAM_DUONG_BO",
+  "dich": "NHOM_CAN_TRO_GIAO_THONG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_HAM_DUONG_BO",
+  "dich": "NHOM_LONG_DUONG_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_HAM_DUONG_BO",
+  "dich": "NHOM_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_XE_UU_TIEN",
+  "dich": "NHOM_KHU_VUC_CAM",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_XE_UU_TIEN",
+  "dich": "NHOM_MO_CUA_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_XE_UU_TIEN",
+  "dich": "NHOM_COI",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_XE_UU_TIEN",
+  "dich": "NHOM_DEN_CHIEU_SANG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_XE_UU_TIEN",
+  "dich": "NHOM_KEO_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_XE_UU_TIEN",
+  "dich": "NHOM_CAN_TRO_GIAO_THONG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_XE_UU_TIEN",
+  "dich": "NHOM_LONG_DUONG_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_XE_UU_TIEN",
+  "dich": "NHOM_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_KHU_VUC_CAM",
+  "dich": "NHOM_MO_CUA_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_KHU_VUC_CAM",
+  "dich": "NHOM_COI",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_KHU_VUC_CAM",
+  "dich": "NHOM_DEN_CHIEU_SANG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_KHU_VUC_CAM",
+  "dich": "NHOM_KEO_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_KHU_VUC_CAM",
+  "dich": "NHOM_CAN_TRO_GIAO_THONG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_KHU_VUC_CAM",
+  "dich": "NHOM_LONG_DUONG_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_KHU_VUC_CAM",
+  "dich": "NHOM_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_MO_CUA_XE",
+  "dich": "NHOM_COI",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_MO_CUA_XE",
+  "dich": "NHOM_DEN_CHIEU_SANG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_MO_CUA_XE",
+  "dich": "NHOM_KEO_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_MO_CUA_XE",
+  "dich": "NHOM_CAN_TRO_GIAO_THONG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_MO_CUA_XE",
+  "dich": "NHOM_LONG_DUONG_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_MO_CUA_XE",
+  "dich": "NHOM_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_COI",
+  "dich": "NHOM_DEN_CHIEU_SANG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_COI",
+  "dich": "NHOM_KEO_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_COI",
+  "dich": "NHOM_CAN_TRO_GIAO_THONG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_COI",
+  "dich": "NHOM_LONG_DUONG_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_COI",
+  "dich": "NHOM_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DEN_CHIEU_SANG",
+  "dich": "NHOM_KEO_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DEN_CHIEU_SANG",
+  "dich": "NHOM_CAN_TRO_GIAO_THONG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DEN_CHIEU_SANG",
+  "dich": "NHOM_LONG_DUONG_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DEN_CHIEU_SANG",
+  "dich": "NHOM_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_KEO_XE",
+  "dich": "NHOM_CAN_TRO_GIAO_THONG",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_KEO_XE",
+  "dich": "NHOM_LONG_DUONG_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_KEO_XE",
+  "dich": "NHOM_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_CAN_TRO_GIAO_THONG",
+  "dich": "NHOM_LONG_DUONG_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_CAN_TRO_GIAO_THONG",
+  "dich": "NHOM_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_LONG_DUONG_VIA_HE",
+  "dich": "NHOM_VIA_HE",
+  "mo_ta": "Cùng thuộc lĩnh vực Quy tắc giao thông đường bộ"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NONG_DO_CON",
+  "dich": "NHOM_MA_TUY",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NONG_DO_CON",
+  "dich": "NHOM_MU_BAO_HIEM",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NONG_DO_CON",
+  "dich": "NHOM_DAY_AN_TOAN",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NONG_DO_CON",
+  "dich": "NHOM_AN_TOAN_TRE_EM",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NONG_DO_CON",
+  "dich": "NHOM_DIEN_THOAI",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NONG_DO_CON",
+  "dich": "NHOM_LANG_LACH",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NONG_DO_CON",
+  "dich": "NHOM_CHO_QUA_SO_NGUOI",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NONG_DO_CON",
+  "dich": "NHOM_NGUY_HIEM",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NONG_DO_CON",
+  "dich": "NHOM_TAI_NAN",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NONG_DO_CON",
+  "dich": "NHOM_HANH_KHACH",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_MA_TUY",
+  "dich": "NHOM_MU_BAO_HIEM",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_MA_TUY",
+  "dich": "NHOM_DAY_AN_TOAN",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_MA_TUY",
+  "dich": "NHOM_AN_TOAN_TRE_EM",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_MA_TUY",
+  "dich": "NHOM_DIEN_THOAI",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_MA_TUY",
+  "dich": "NHOM_LANG_LACH",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_MA_TUY",
+  "dich": "NHOM_CHO_QUA_SO_NGUOI",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_MA_TUY",
+  "dich": "NHOM_NGUY_HIEM",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_MA_TUY",
+  "dich": "NHOM_TAI_NAN",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_MA_TUY",
+  "dich": "NHOM_HANH_KHACH",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_MU_BAO_HIEM",
+  "dich": "NHOM_DAY_AN_TOAN",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_MU_BAO_HIEM",
+  "dich": "NHOM_AN_TOAN_TRE_EM",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_MU_BAO_HIEM",
+  "dich": "NHOM_DIEN_THOAI",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_MU_BAO_HIEM",
+  "dich": "NHOM_LANG_LACH",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_MU_BAO_HIEM",
+  "dich": "NHOM_CHO_QUA_SO_NGUOI",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_MU_BAO_HIEM",
+  "dich": "NHOM_NGUY_HIEM",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_MU_BAO_HIEM",
+  "dich": "NHOM_TAI_NAN",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_MU_BAO_HIEM",
+  "dich": "NHOM_HANH_KHACH",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DAY_AN_TOAN",
+  "dich": "NHOM_AN_TOAN_TRE_EM",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DAY_AN_TOAN",
+  "dich": "NHOM_DIEN_THOAI",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DAY_AN_TOAN",
+  "dich": "NHOM_LANG_LACH",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DAY_AN_TOAN",
+  "dich": "NHOM_CHO_QUA_SO_NGUOI",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DAY_AN_TOAN",
+  "dich": "NHOM_NGUY_HIEM",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DAY_AN_TOAN",
+  "dich": "NHOM_TAI_NAN",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DAY_AN_TOAN",
+  "dich": "NHOM_HANH_KHACH",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_AN_TOAN_TRE_EM",
+  "dich": "NHOM_DIEN_THOAI",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_AN_TOAN_TRE_EM",
+  "dich": "NHOM_LANG_LACH",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_AN_TOAN_TRE_EM",
+  "dich": "NHOM_CHO_QUA_SO_NGUOI",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_AN_TOAN_TRE_EM",
+  "dich": "NHOM_NGUY_HIEM",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_AN_TOAN_TRE_EM",
+  "dich": "NHOM_TAI_NAN",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_AN_TOAN_TRE_EM",
+  "dich": "NHOM_HANH_KHACH",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DIEN_THOAI",
+  "dich": "NHOM_LANG_LACH",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DIEN_THOAI",
+  "dich": "NHOM_CHO_QUA_SO_NGUOI",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DIEN_THOAI",
+  "dich": "NHOM_NGUY_HIEM",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DIEN_THOAI",
+  "dich": "NHOM_TAI_NAN",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DIEN_THOAI",
+  "dich": "NHOM_HANH_KHACH",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_LANG_LACH",
+  "dich": "NHOM_CHO_QUA_SO_NGUOI",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_LANG_LACH",
+  "dich": "NHOM_NGUY_HIEM",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_LANG_LACH",
+  "dich": "NHOM_TAI_NAN",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_LANG_LACH",
+  "dich": "NHOM_HANH_KHACH",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_CHO_QUA_SO_NGUOI",
+  "dich": "NHOM_NGUY_HIEM",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_CHO_QUA_SO_NGUOI",
+  "dich": "NHOM_TAI_NAN",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_CHO_QUA_SO_NGUOI",
+  "dich": "NHOM_HANH_KHACH",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NGUY_HIEM",
+  "dich": "NHOM_TAI_NAN",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NGUY_HIEM",
+  "dich": "NHOM_HANH_KHACH",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_TAI_NAN",
+  "dich": "NHOM_HANH_KHACH",
+  "mo_ta": "Cùng thuộc lĩnh vực An toàn của người tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_GPLX",
+  "dich": "NHOM_GIAY_TO",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của người điều khiển phương tiện"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_GPLX",
+  "dich": "NHOM_DO_TUOI",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của người điều khiển phương tiện"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_GPLX",
+  "dich": "NHOM_GIAO_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của người điều khiển phương tiện"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_GPLX",
+  "dich": "NHOM_GIA_MAO",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của người điều khiển phương tiện"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_GPLX",
+  "dich": "NHOM_CHONG_DOI",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của người điều khiển phương tiện"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_GPLX",
+  "dich": "NHOM_BAO_HIEM",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của người điều khiển phương tiện"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_GIAY_TO",
+  "dich": "NHOM_DO_TUOI",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của người điều khiển phương tiện"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_GIAY_TO",
+  "dich": "NHOM_GIAO_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của người điều khiển phương tiện"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_GIAY_TO",
+  "dich": "NHOM_GIA_MAO",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của người điều khiển phương tiện"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_GIAY_TO",
+  "dich": "NHOM_CHONG_DOI",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của người điều khiển phương tiện"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_GIAY_TO",
+  "dich": "NHOM_BAO_HIEM",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của người điều khiển phương tiện"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DO_TUOI",
+  "dich": "NHOM_GIAO_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của người điều khiển phương tiện"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DO_TUOI",
+  "dich": "NHOM_GIA_MAO",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của người điều khiển phương tiện"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DO_TUOI",
+  "dich": "NHOM_CHONG_DOI",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của người điều khiển phương tiện"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DO_TUOI",
+  "dich": "NHOM_BAO_HIEM",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của người điều khiển phương tiện"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_GIAO_XE",
+  "dich": "NHOM_GIA_MAO",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của người điều khiển phương tiện"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_GIAO_XE",
+  "dich": "NHOM_CHONG_DOI",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của người điều khiển phương tiện"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_GIAO_XE",
+  "dich": "NHOM_BAO_HIEM",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của người điều khiển phương tiện"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_GIA_MAO",
+  "dich": "NHOM_CHONG_DOI",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của người điều khiển phương tiện"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_GIA_MAO",
+  "dich": "NHOM_BAO_HIEM",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của người điều khiển phương tiện"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_CHONG_DOI",
+  "dich": "NHOM_BAO_HIEM",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của người điều khiển phương tiện"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_THIET_BI_PHUONG_TIEN",
+  "dich": "NHOM_BIEN_SO",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của phương tiện tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_THIET_BI_PHUONG_TIEN",
+  "dich": "NHOM_CAI_TAO_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của phương tiện tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_THIET_BI_PHUONG_TIEN",
+  "dich": "NHOM_DANG_KIEM",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của phương tiện tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_THIET_BI_PHUONG_TIEN",
+  "dich": "NHOM_NIEN_HAN",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của phương tiện tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_THIET_BI_PHUONG_TIEN",
+  "dich": "NHOM_XE_TU_CHE",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của phương tiện tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_THIET_BI_PHUONG_TIEN",
+  "dich": "NHOM_KHI_THAI_TIENG_ON",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của phương tiện tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_THIET_BI_PHUONG_TIEN",
+  "dich": "NHOM_THIET_BI_GIAM_SAT",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của phương tiện tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_BIEN_SO",
+  "dich": "NHOM_CAI_TAO_XE",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của phương tiện tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_BIEN_SO",
+  "dich": "NHOM_DANG_KIEM",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của phương tiện tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_BIEN_SO",
+  "dich": "NHOM_NIEN_HAN",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của phương tiện tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_BIEN_SO",
+  "dich": "NHOM_XE_TU_CHE",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của phương tiện tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_BIEN_SO",
+  "dich": "NHOM_KHI_THAI_TIENG_ON",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của phương tiện tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_BIEN_SO",
+  "dich": "NHOM_THIET_BI_GIAM_SAT",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của phương tiện tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_CAI_TAO_XE",
+  "dich": "NHOM_DANG_KIEM",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của phương tiện tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_CAI_TAO_XE",
+  "dich": "NHOM_NIEN_HAN",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của phương tiện tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_CAI_TAO_XE",
+  "dich": "NHOM_XE_TU_CHE",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của phương tiện tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_CAI_TAO_XE",
+  "dich": "NHOM_KHI_THAI_TIENG_ON",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của phương tiện tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_CAI_TAO_XE",
+  "dich": "NHOM_THIET_BI_GIAM_SAT",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của phương tiện tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DANG_KIEM",
+  "dich": "NHOM_NIEN_HAN",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của phương tiện tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DANG_KIEM",
+  "dich": "NHOM_XE_TU_CHE",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của phương tiện tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DANG_KIEM",
+  "dich": "NHOM_KHI_THAI_TIENG_ON",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của phương tiện tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_DANG_KIEM",
+  "dich": "NHOM_THIET_BI_GIAM_SAT",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của phương tiện tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NIEN_HAN",
+  "dich": "NHOM_XE_TU_CHE",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của phương tiện tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NIEN_HAN",
+  "dich": "NHOM_KHI_THAI_TIENG_ON",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của phương tiện tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_NIEN_HAN",
+  "dich": "NHOM_THIET_BI_GIAM_SAT",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của phương tiện tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_XE_TU_CHE",
+  "dich": "NHOM_KHI_THAI_TIENG_ON",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của phương tiện tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_XE_TU_CHE",
+  "dich": "NHOM_THIET_BI_GIAM_SAT",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của phương tiện tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_KHI_THAI_TIENG_ON",
+  "dich": "NHOM_THIET_BI_GIAM_SAT",
+  "mo_ta": "Cùng thuộc lĩnh vực Điều kiện của phương tiện tham gia giao thông"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_QUA_TAI",
+  "dich": "NHOM_CONG_KENH",
+  "mo_ta": "Cùng thuộc lĩnh vực Vận tải đường bộ và hàng hoá"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_QUA_TAI",
+  "dich": "NHOM_HANG_NGUY_HIEM",
+  "mo_ta": "Cùng thuộc lĩnh vực Vận tải đường bộ và hàng hoá"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_QUA_TAI",
+  "dich": "NHOM_PHA_HOAI_CONG_TRINH",
+  "mo_ta": "Cùng thuộc lĩnh vực Vận tải đường bộ và hàng hoá"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_CONG_KENH",
+  "dich": "NHOM_HANG_NGUY_HIEM",
+  "mo_ta": "Cùng thuộc lĩnh vực Vận tải đường bộ và hàng hoá"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_CONG_KENH",
+  "dich": "NHOM_PHA_HOAI_CONG_TRINH",
+  "mo_ta": "Cùng thuộc lĩnh vực Vận tải đường bộ và hàng hoá"
+ },
+ {
+  "ten": "cung_linh_vuc",
+  "kieu": "lien_quan",
+  "nguon": "NHOM_HANG_NGUY_HIEM",
+  "dich": "NHOM_PHA_HOAI_CONG_TRINH",
+  "mo_ta": "Cùng thuộc lĩnh vực Vận tải đường bộ và hàng hoá"
+ }
+]

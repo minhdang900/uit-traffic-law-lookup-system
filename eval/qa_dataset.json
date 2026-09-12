@@ -1,0 +1,1604 @@
+[
+ {
+  "id": "Q001",
+  "cau_hoi": "Xe cơ giới là gì?",
+  "lop_bai_toan_dung": "P1_TRA_CUU_KHAI_NIEM",
+  "dap_an_chuan": "Xe cơ giới bao gồm: xe ô tô; rơ moóc; sơ mi rơ moóc; xe chở người bốn bánh có gắn động cơ; xe chở hàng bốn bánh có gắn động cơ; xe mô tô; xe gắn máy; xe tương tự các loại xe quy định tại khoản này.",
+  "id_tri_thuc_dung": [
+   "KN_XE_CO_GIOI"
+  ],
+  "loai_tri_thuc": "concept",
+  "nguon": "Điều 34 khoản 1 Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "de",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q002",
+  "cau_hoi": "Luật định nghĩa xe mô tô như thế nào?",
+  "lop_bai_toan_dung": "P1_TRA_CUU_KHAI_NIEM",
+  "dap_an_chuan": "Xe mô tô gồm: xe có hai hoặc ba bánh chạy bằng động cơ, được thiết kế, sản xuất để hoạt động trên đường bộ, trừ xe gắn máy; đối với xe ba bánh thì khối lượng bản thân không lớn hơn 400 kg.",
+  "id_tri_thuc_dung": [
+   "KN_XE_MO_TO"
+  ],
+  "loai_tri_thuc": "concept",
+  "nguon": "Điều 34 khoản 1 Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "de",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q003",
+  "cau_hoi": "xe gan may la gi vay moi nguoi",
+  "lop_bai_toan_dung": "P1_TRA_CUU_KHAI_NIEM",
+  "dap_an_chuan": "Xe gắn máy là xe có hai hoặc ba bánh chạy bằng động cơ, được thiết kế, sản xuất để hoạt động trên đường bộ, có vận tốc thiết kế không lớn hơn 50 km/h; nếu động cơ dẫn động là động cơ nhiệt thì dung tích làm việc hoặc dung tích tương đương không lớn hơn 50 cm3; nếu động cơ dẫn động là động cơ điện thì công suất của động cơ không lớn hơn 04 kW; xe gắn máy không bao gồm xe đạp máy.",
+  "id_tri_thuc_dung": [
+   "KN_XE_GAN_MAY"
+  ],
+  "loai_tri_thuc": "concept",
+  "nguon": "Điều 34 khoản 1 Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "trung_binh",
+  "ghi_chu": "Câu hỏi viết không dấu, kiểm tra khả năng chuẩn hoá tiếng Việt."
+ },
+ {
+  "id": "Q004",
+  "cau_hoi": "Xe đạp điện có được coi là xe đạp máy không, luật định nghĩa ra sao?",
+  "lop_bai_toan_dung": "P1_TRA_CUU_KHAI_NIEM",
+  "dap_an_chuan": "Xe đạp máy, gồm cả xe đạp điện, là xe đạp có trợ lực từ động cơ, nguồn động lực từ động cơ bị ngắt khi người lái xe dừng đạp hoặc khi xe đạt tới tốc độ 25 km/h.",
+  "id_tri_thuc_dung": [
+   "KN_XE_DAP_MAY"
+  ],
+  "loai_tri_thuc": "concept",
+  "nguon": "Điều 34 khoản 2 Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "trung_binh",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q005",
+  "cau_hoi": "Xe máy chuyên dùng gồm những loại xe nào?",
+  "lop_bai_toan_dung": "P1_TRA_CUU_KHAI_NIEM",
+  "dap_an_chuan": "Xe máy chuyên dùng bao gồm: xe máy thi công; xe máy nông nghiệp, lâm nghiệp; máy kéo; rơ moóc, sơ mi rơ moóc được kéo bởi máy kéo; xe máy thực hiện chức năng, công dụng đặc biệt; các loại xe đặc chủng sử dụng vào mục đích quốc phòng, an ninh có tham gia giao thông đường bộ.",
+  "id_tri_thuc_dung": [
+   "KN_XE_MAY_CHUYEN_DUNG"
+  ],
+  "loai_tri_thuc": "concept",
+  "nguon": "Điều 34 khoản 3 Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "de",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q006",
+  "cau_hoi": "Dừng xe với đỗ xe khác nhau chỗ nào vậy ạ, em hay bị nhầm hai cái này?",
+  "lop_bai_toan_dung": "P1_TRA_CUU_KHAI_NIEM",
+  "dap_an_chuan": "Dừng xe là trạng thái đứng yên tạm thời của xe trong một khoảng thời gian cần thiết đủ để cho người lên xe, xuống xe, xếp dỡ hàng hóa, kiểm tra kỹ thuật xe hoặc hoạt động khác. Đỗ xe là trạng thái đứng yên của xe không giới hạn thời gian.",
+  "id_tri_thuc_dung": [
+   "KN_DUNG_XE",
+   "KN_DO_XE"
+  ],
+  "loai_tri_thuc": "concept",
+  "nguon": "Điều 18 khoản 1 Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH); Điều 18 khoản 2 Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "kho",
+  "ghi_chu": "Câu hỏi so sánh 2 khái niệm, hệ thống phải trả về đủ cả hai."
+ },
+ {
+  "id": "Q007",
+  "cau_hoi": "Thế nào thì được gọi là vượt xe?",
+  "lop_bai_toan_dung": "P1_TRA_CUU_KHAI_NIEM",
+  "dap_an_chuan": "Vượt xe là tình huống giao thông trên đường mà mỗi chiều đường xe chạy chỉ có một làn đường dành cho xe cơ giới, xe đi phía sau di chuyển sang bên trái để di chuyển lên trước xe phía trước.",
+  "id_tri_thuc_dung": [
+   "KN_VUOT_XE"
+  ],
+  "loai_tri_thuc": "concept",
+  "nguon": "Điều 14 khoản 1 Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "trung_binh",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q008",
+  "cau_hoi": "Đường ưu tiên nghĩa là gì?",
+  "lop_bai_toan_dung": "P1_TRA_CUU_KHAI_NIEM",
+  "dap_an_chuan": "Đường ưu tiên là đường mà trên đó phương tiện tham gia giao thông đường bộ được các phương tiện tham gia giao thông đường bộ đến từ hướng khác nhường đường khi qua nơi đường giao nhau, được cắm biển báo hiệu đường ưu tiên.",
+  "id_tri_thuc_dung": [
+   "KN_DUONG_UU_TIEN"
+  ],
+  "loai_tri_thuc": "concept",
+  "nguon": "Điều 2 khoản 4 Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "de",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q009",
+  "cau_hoi": "Làn đường với phần đường xe chạy có phải là một không?",
+  "lop_bai_toan_dung": "P1_TRA_CUU_KHAI_NIEM",
+  "dap_an_chuan": "Làn đường là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có đủ chiều rộng cho xe chạy an toàn. Phần đường xe chạy là phần của đường bộ được sử dụng cho phương tiện giao thông đường bộ đi lại.",
+  "id_tri_thuc_dung": [
+   "KN_LAN_DUONG",
+   "KN_PHAN_DUONG_XE_CHAY"
+  ],
+  "loai_tri_thuc": "concept",
+  "nguon": "Điều 2 khoản 6 Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH); Điều 2 khoản 5 Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "kho",
+  "ghi_chu": "Câu hỏi so sánh 2 khái niệm gần nghĩa."
+ },
+ {
+  "id": "Q010",
+  "cau_hoi": "Vạch kẻ đường là gì?",
+  "lop_bai_toan_dung": "P1_TRA_CUU_KHAI_NIEM",
+  "dap_an_chuan": "Vạch kẻ đường là vạch chỉ sự phân chia làn đường, vị trí hoặc hướng đi, vị trí dừng lại.",
+  "id_tri_thuc_dung": [
+   "KN_VACH_KE_DUONG"
+  ],
+  "loai_tri_thuc": "concept",
+  "nguon": "Điều 11 khoản 6 Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "de",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q011",
+  "cau_hoi": "Đèn giao thông có mấy màu?",
+  "lop_bai_toan_dung": "P1_TRA_CUU_KHAI_NIEM",
+  "dap_an_chuan": "Tín hiệu đèn giao thông có 03 màu, gồm: màu xanh, màu vàng, màu đỏ; có hiển thị thời gian hoặc không hiển thị thời gian.",
+  "id_tri_thuc_dung": [
+   "KN_DEN_TIN_HIEU_GIAO_THONG"
+  ],
+  "loai_tri_thuc": "concept",
+  "nguon": "Điều 11 khoản 4 Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "de",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q012",
+  "cau_hoi": "Báo hiệu đường bộ bao gồm những gì?",
+  "lop_bai_toan_dung": "P1_TRA_CUU_KHAI_NIEM",
+  "dap_an_chuan": "Báo hiệu đường bộ bao gồm: hiệu lệnh của người điều khiển giao thông; đèn tín hiệu giao thông; biển báo hiệu đường bộ; vạch kẻ đường và các dấu hiệu khác trên mặt đường; cọc tiêu, tường bảo vệ, rào chắn, đinh phản quang, tiêu phản quang, cột Km, cọc H; thiết bị âm thanh báo hiệu đường bộ.",
+  "id_tri_thuc_dung": [
+   "KN_BAO_HIEU_DUONG_BO"
+  ],
+  "loai_tri_thuc": "concept",
+  "nguon": "Điều 11 khoản 1 Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "trung_binh",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q013",
+  "cau_hoi": "Bằng lái xe có bao nhiêu điểm và điểm đó để làm gì?",
+  "lop_bai_toan_dung": "P1_TRA_CUU_KHAI_NIEM",
+  "dap_an_chuan": "Điểm của giấy phép lái xe được dùng để quản lý việc chấp hành pháp luật về trật tự, an toàn giao thông đường bộ của người lái xe trên hệ thống cơ sở dữ liệu về trật tự, an toàn giao thông đường bộ, bao gồm 12 điểm. Số điểm trừ mỗi lần vi phạm tùy thuộc tính chất, mức độ của hành vi vi phạm pháp luật về trật tự, an toàn giao thông đường bộ. Dữ liệu về điểm trừ giấy phép lái xe của người vi phạm sẽ được cập nhật vào hệ thống cơ sở dữ liệu ngay sau khi quyết định xử phạt có hiệu lực thi hành và thông báo cho người bị trừ điểm giấy phép lái xe biết.",
+  "id_tri_thuc_dung": [
+   "KN_DIEM_GIAY_PHEP_LAI_XE"
+  ],
+  "loai_tri_thuc": "concept",
+  "nguon": "Điều 58 khoản 1 Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "trung_binh",
+  "ghi_chu": "Dùng từ đời thường 'bằng lái' thay cho 'giấy phép lái xe'."
+ },
+ {
+  "id": "Q014",
+  "cau_hoi": "Phục hồi điểm giấy phép lái xe là sao?",
+  "lop_bai_toan_dung": "P1_TRA_CUU_KHAI_NIEM",
+  "dap_an_chuan": "Giấy phép lái xe chưa bị trừ hết điểm và không bị trừ điểm trong thời hạn 12 tháng từ ngày bị trừ điểm gần nhất thì được phục hồi đủ 12 điểm.",
+  "id_tri_thuc_dung": [
+   "KN_PHUC_HOI_DIEM_GPLX"
+  ],
+  "loai_tri_thuc": "concept",
+  "nguon": "Điều 58 khoản 2 Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "trung_binh",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q015",
+  "cau_hoi": "Bằng A1 chạy được xe gì?",
+  "lop_bai_toan_dung": "P1_TRA_CUU_KHAI_NIEM",
+  "dap_an_chuan": "Hạng A1 cấp cho người lái xe mô tô hai bánh có dung tích xi-lanh đến 125 cm3 hoặc có công suất động cơ điện đến 11 kW.",
+  "id_tri_thuc_dung": [
+   "KN_GPLX_HANG_A1"
+  ],
+  "loai_tri_thuc": "concept",
+  "nguon": "Điều 57 khoản 1 Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "de",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q016",
+  "cau_hoi": "Bằng lái xe có thời hạn bao lâu?",
+  "lop_bai_toan_dung": "P1_TRA_CUU_KHAI_NIEM",
+  "dap_an_chuan": "Thời hạn của giấy phép lái xe được quy định như sau: a) Giấy phép lái xe các hạng A1, A, B1 không thời hạn; b) Giấy phép lái xe hạng B và hạng C1 có thời hạn 10 năm kể từ ngày cấp; c) Giấy phép lái xe các hạng C, D1, D2, D, BE, C1E, CE, D1E, D2E và DE có thời hạn 05 năm kể từ ngày cấp.",
+  "id_tri_thuc_dung": [
+   "KN_THOI_HAN_GPLX"
+  ],
+  "loai_tri_thuc": "concept",
+  "nguon": "Điều 57 khoản 5 Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "trung_binh",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q017",
+  "cau_hoi": "Mấy tuổi thì được chạy xe máy, mấy tuổi mới được lái ô tô?",
+  "lop_bai_toan_dung": "P1_TRA_CUU_KHAI_NIEM",
+  "dap_an_chuan": "Độ tuổi của người lái xe, người điều khiển xe máy chuyên dùng được quy định như sau: a) Người đủ 16 tuổi trở lên được điều khiển xe gắn máy; b) Người đủ 18 tuổi trở lên được cấp giấy phép lái xe hạng A1, A, B1, B, C1, được cấp chứng chỉ bồi dưỡng kiến thức pháp luật về giao thông đường bộ để điều khiển xe máy chuyên dùng tham gia giao thông đường bộ; c) Người đủ 21 tuổi trở lên được cấp giấy phép lái xe hạng C, BE; d) Người đủ 24 tuổi trở lên được cấp giấy phép lái xe hạng D1, D2, C1E, CE; đ) Người đủ 27 tuổi trở lên được cấp giấy phép lái xe hạng D, D1E, D2E, DE; e) Tuổi tối đa của người lái xe ô tô chở người (kể cả xe buýt) trên 29 chỗ (không kể chỗ của người lái xe), xe ô tô chở người giường nằm là đủ 57 tuổi đối với nam, đủ 55 tuổi đối với nữ.",
+  "id_tri_thuc_dung": [
+   "KN_DO_TUOI_NGUOI_LAI_XE"
+  ],
+  "loai_tri_thuc": "concept",
+  "nguon": "Điều 59 khoản 1 Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "trung_binh",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q018",
+  "cau_hoi": "Thế nào là tai nạn giao thông đường bộ?",
+  "lop_bai_toan_dung": "P1_TRA_CUU_KHAI_NIEM",
+  "dap_an_chuan": "Tai nạn giao thông đường bộ là va chạm liên quan đến người, phương tiện khi tham gia giao thông đường bộ, xảy ra ngoài ý muốn của người tham gia giao thông đường bộ, gây thiệt hại đến tính mạng, sức khỏe, tài sản của cá nhân hoặc tài sản của cơ quan, tổ chức.",
+  "id_tri_thuc_dung": [
+   "KN_TAI_NAN_GIAO_THONG_DUONG_BO"
+  ],
+  "loai_tri_thuc": "concept",
+  "nguon": "Điều 2 khoản 12 Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "de",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q019",
+  "cau_hoi": "Những xe nào được gọi là xe ưu tiên?",
+  "lop_bai_toan_dung": "P1_TRA_CUU_KHAI_NIEM",
+  "dap_an_chuan": "Xe ưu tiên gồm xe chữa cháy của Cảnh sát phòng cháy, chữa cháy và cứu nạn, cứu hộ và xe chữa cháy của các lực lượng khác được huy động đi làm nhiệm vụ chữa cháy; xe của lực lượng quân sự, công an và kiểm sát đi làm nhiệm vụ khẩn cấp; đoàn xe có xe Cảnh sát giao thông dẫn đường; xe cứu thương đi làm nhiệm vụ cấp cứu; xe hộ đê đi làm nhiệm vụ; xe đi làm nhiệm vụ cứu nạn, cứu hộ, khắc phục sự cố thiên tai, dịch bệnh hoặc xe đi làm nhiệm vụ trong tình trạng khẩn cấp theo quy định của pháp luật; đoàn xe tang.",
+  "id_tri_thuc_dung": [
+   "KN_XE_UU_TIEN"
+  ],
+  "loai_tri_thuc": "concept",
+  "nguon": "Điều 27 khoản 1 Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "trung_binh",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q020",
+  "cau_hoi": "Mấy cái xe tự chạy không cần người lái ấy, trong luật gọi là gì và định nghĩa ra sao?",
+  "lop_bai_toan_dung": "P1_TRA_CUU_KHAI_NIEM",
+  "dap_an_chuan": "Phương tiện giao thông thông minh là phương tiện giao thông đường bộ mà toàn bộ việc điều khiển, duy trì hoạt động của phương tiện không cần có sự điều khiển trực tiếp của người lái trên phương tiện đó.",
+  "id_tri_thuc_dung": [
+   "KN_PHUONG_TIEN_GIAO_THONG_THONG_MINH"
+  ],
+  "loai_tri_thuc": "concept",
+  "nguon": "Điều 34 khoản 4 Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "kho",
+  "ghi_chu": "Diễn đạt vòng vo, không dùng đúng thuật ngữ 'phương tiện giao thông thông minh'."
+ },
+ {
+  "id": "Q021",
+  "cau_hoi": "Gặp đèn đỏ thì có được đi tiếp không?",
+  "lop_bai_toan_dung": "P2_TRA_CUU_QUY_DINH",
+  "dap_an_chuan": "Tín hiệu đèn màu đỏ là cấm đi.",
+  "id_tri_thuc_dung": [
+   "R19"
+  ],
+  "loai_tri_thuc": "rule",
+  "nguon": "Điều 11 khoản 4 điểm c Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "de",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q022",
+  "cau_hoi": "Đang chạy tới ngã tư mà đèn chuyển sang vàng thì phải làm sao?",
+  "lop_bai_toan_dung": "P2_TRA_CUU_QUY_DINH",
+  "dap_an_chuan": "Tín hiệu đèn màu vàng phải dừng lại trước vạch dừng; trường hợp đang đi trên vạch dừng hoặc đã đi qua vạch dừng mà tín hiệu đèn màu vàng thì được đi tiếp; trường hợp tín hiệu đèn màu vàng nhấp nháy, người điều khiển phương tiện tham gia giao thông đường bộ được đi nhưng phải quan sát, giảm tốc độ hoặc dừng lại nhường đường cho người đi bộ, xe lăn của người khuyết tật qua đường hoặc các phương tiện khác.",
+  "id_tri_thuc_dung": [
+   "R18"
+  ],
+  "loai_tri_thuc": "rule",
+  "nguon": "Điều 11 khoản 4 điểm b Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "trung_binh",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q023",
+  "cau_hoi": "Xe máy được chở tối đa mấy người?",
+  "lop_bai_toan_dung": "P2_TRA_CUU_QUY_DINH",
+  "dap_an_chuan": "Người lái xe mô tô hai bánh, xe gắn máy chỉ được chở một người, trừ những trường hợp sau thì được chở tối đa hai người: a) Chở người bệnh đi cấp cứu; b) Áp giải người có hành vi vi phạm pháp luật; c) Trẻ em dưới 12 tuổi; d) Người già yếu hoặc người khuyết tật.",
+  "id_tri_thuc_dung": [
+   "R81"
+  ],
+  "loai_tri_thuc": "rule",
+  "nguon": "Điều 33 khoản 1 Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "de",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q024",
+  "cau_hoi": "Ngồi sau xe máy có bắt buộc đội nón bảo hiểm không?",
+  "lop_bai_toan_dung": "P2_TRA_CUU_QUY_DINH",
+  "dap_an_chuan": "Người lái xe, người được chở trên xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy phải đội mũ bảo hiểm theo đúng quy chuẩn kỹ thuật quốc gia và cài quai đúng quy cách.",
+  "id_tri_thuc_dung": [
+   "R82"
+  ],
+  "loai_tri_thuc": "rule",
+  "nguon": "Điều 33 khoản 2 Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "de",
+  "ghi_chu": "'nón bảo hiểm' là từ địa phương của 'mũ bảo hiểm'."
+ },
+ {
+  "id": "Q025",
+  "cau_hoi": "Xe đạp chở được mấy người?",
+  "lop_bai_toan_dung": "P2_TRA_CUU_QUY_DINH",
+  "dap_an_chuan": "Người điều khiển xe đạp, xe đạp máy chỉ được chở một người, trừ trường hợp chở thêm một trẻ em dưới 07 tuổi thì được chở tối đa hai người.",
+  "id_tri_thuc_dung": [
+   "R76"
+  ],
+  "loai_tri_thuc": "rule",
+  "nguon": "Điều 31 khoản 1 Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "de",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q026",
+  "cau_hoi": "Những chỗ nào không được dừng xe, đỗ xe?",
+  "lop_bai_toan_dung": "P2_TRA_CUU_QUY_DINH",
+  "dap_an_chuan": "Người điều khiển phương tiện tham gia giao thông đường bộ không được dừng xe, đỗ xe tại các vị trí sau đây: a) Bên trái đường một chiều; b) Trên đoạn đường cong hoặc gần đầu dốc mà tầm nhìn bị che khuất; c) Trên cầu, trừ những trường hợp tổ chức giao thông cho phép; d) Gầm cầu vượt, trừ những nơi cho phép dừng xe, đỗ xe; đ) Song song cùng chiều với một xe khác đang dừng, đỗ trên đường; e) Cách xe ô tô đang đỗ ngược chiều dưới 20 mét trên đường phố hẹp, dưới 40 mét trên đường có một làn xe cơ giới trên một chiều đường; g) Trên phần đường dành cho người đi bộ qua đường; h) Nơi đường giao nhau và trong phạm vi 05 mét tính từ mép đường giao nhau; i) Điểm đón, trả khách; k) Trước cổng và trong phạm vi 05 mét hai bên cổng trụ sở cơ quan, tổ chức có bố trí đường cho xe ra, vào; l) Tại nơi phần đường có chiều rộng chỉ đủ cho một làn xe cơ giới; m) Trong phạm vi an toàn của đường sắt; n) Che khuất biển báo hiệu đường bộ, đèn tín hiệu giao thông; o) Trên đường dành riêng cho xe buýt, trên miệng cống thoát nước, miệng hầm của đường điện thoại, điện cao thế, chỗ dành riêng cho xe chữa cháy lấy nước; trên lòng đường, vỉa hè trái quy định của pháp luật.",
+  "id_tri_thuc_dung": [
+   "R43"
+  ],
+  "loai_tri_thuc": "rule",
+  "nguon": "Điều 18 khoản 4 Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "trung_binh",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q027",
+  "cau_hoi": "Khi nào thì không được vượt xe?",
+  "lop_bai_toan_dung": "P2_TRA_CUU_QUY_DINH",
+  "dap_an_chuan": "Không được vượt xe trong trường hợp sau đây: a) Khi không bảo đảm các điều kiện quy định tại khoản 3 Điều này; b) Trên cầu hẹp có một làn đường; c) Đường cong có tầm nhìn bị hạn chế; d) Trên đường hai chiều tại khu vực đỉnh dốc có tầm nhìn bị hạn chế; đ) Nơi đường giao nhau, đường bộ giao nhau cùng mức với đường sắt; e) Khi điều kiện thời tiết hoặc đường không bảo đảm an toàn cho việc vượt; g) Khi gặp xe ưu tiên; h) Ở phần đường dành cho người đi bộ qua đường; i) Khi có người đi bộ, xe lăn của người khuyết tật qua đường; k) Trong hầm đường bộ.",
+  "id_tri_thuc_dung": [
+   "R32"
+  ],
+  "loai_tri_thuc": "rule",
+  "nguon": "Điều 14 khoản 6 Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "trung_binh",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q028",
+  "cau_hoi": "Buổi tối mấy giờ thì bắt buộc phải bật đèn xe?",
+  "lop_bai_toan_dung": "P2_TRA_CUU_QUY_DINH",
+  "dap_an_chuan": "Người lái xe, người điều khiển xe máy chuyên dùng tham gia giao thông đường bộ phải bật đèn chiếu sáng phía trước trong thời gian từ 18 giờ ngày hôm trước đến 06 giờ ngày hôm sau hoặc khi có sương mù, khói, bụi, trời mưa, thời tiết xấu làm hạn chế tầm nhìn.",
+  "id_tri_thuc_dung": [
+   "R48"
+  ],
+  "loai_tri_thuc": "rule",
+  "nguon": "Điều 20 khoản 1 Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "de",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q029",
+  "cau_hoi": "Ban đêm bấm còi trong khu dân cư có được không?",
+  "lop_bai_toan_dung": "P2_TRA_CUU_QUY_DINH",
+  "dap_an_chuan": "Không sử dụng còi liên tục; không sử dụng còi có âm lượng không đúng quy định; không sử dụng còi trong thời gian từ 22 giờ ngày hôm trước đến 05 giờ ngày hôm sau trong khu đông dân cư, khu vực cơ sở khám bệnh, chữa bệnh, trừ xe ưu tiên.",
+  "id_tri_thuc_dung": [
+   "R52"
+  ],
+  "loai_tri_thuc": "rule",
+  "nguon": "Điều 21 khoản 2 Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "trung_binh",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q030",
+  "cau_hoi": "Tới ngã tư mà không có vòng xuyến thì phải nhường xe nào trước?",
+  "lop_bai_toan_dung": "P2_TRA_CUU_QUY_DINH",
+  "dap_an_chuan": "Tại nơi đường giao nhau không có báo hiệu đi theo vòng xuyến, phải nhường đường cho xe đi đến từ bên phải.",
+  "id_tri_thuc_dung": [
+   "R54"
+  ],
+  "loai_tri_thuc": "rule",
+  "nguon": "Điều 22 khoản 2 Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "trung_binh",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q031",
+  "cau_hoi": "Xe máy có được chạy vào đường cao tốc không?",
+  "lop_bai_toan_dung": "P2_TRA_CUU_QUY_DINH",
+  "dap_an_chuan": "Xe máy chuyên dùng có tốc độ thiết kế nhỏ hơn tốc độ tối thiểu quy định đối với đường cao tốc, xe chở người bốn bánh có gắn động cơ, xe chở hàng bốn bánh có gắn động cơ, xe mô tô, xe gắn máy, các loại xe tương tự xe mô tô, xe gắn máy, xe thô sơ, người đi bộ không được đi trên đường cao tốc, trừ người, phương tiện giao thông đường bộ và thiết bị phục vụ việc quản lý, bảo trì đường cao tốc.",
+  "id_tri_thuc_dung": [
+   "R64"
+  ],
+  "loai_tri_thuc": "rule",
+  "nguon": "Điều 25 khoản 3 Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "trung_binh",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q032",
+  "cau_hoi": "Bằng lái bị trừ hết 12 điểm rồi thì sao, có được chạy xe nữa không, bao lâu mới lấy lại được?",
+  "lop_bai_toan_dung": "P2_TRA_CUU_QUY_DINH",
+  "dap_an_chuan": "Trường hợp giấy phép lái xe bị trừ hết điểm thì người có giấy phép lái xe không được điều khiển phương tiện tham gia giao thông đường bộ theo giấy phép lái xe đó. Sau thời hạn ít nhất là 06 tháng kể từ ngày bị trừ hết điểm, người có giấy phép lái xe được tham gia kiểm tra nội dung kiến thức pháp luật về trật tự, an toàn giao thông đường bộ theo quy định tại khoản 7 Điều 61 của Luật này do lực lượng Cảnh sát giao thông tổ chức, có kết quả đạt yêu cầu thì được phục hồi đủ 12 điểm.",
+  "id_tri_thuc_dung": [
+   "R106"
+  ],
+  "loai_tri_thuc": "rule",
+  "nguon": "Điều 58 khoản 3 Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "kho",
+  "ghi_chu": "Câu hỏi dài, gộp nhiều ý (hệ quả + điều kiện phục hồi)."
+ },
+ {
+  "id": "Q033",
+  "cau_hoi": "Bao lâu thì điểm bằng lái tự động phục hồi lại đủ 12 điểm?",
+  "lop_bai_toan_dung": "P2_TRA_CUU_QUY_DINH",
+  "dap_an_chuan": "Trình tự, thủ tục phục hồi điểm giấy phép lái xe đối với trường hợp giấy phép lái xe chưa bị trừ hết điểm và không bị trừ điểm trong thời hạn 12 tháng từ ngày bị trừ điểm gần nhất a) Khi đủ thời hạn 12 tháng, kể từ ngày bị trừ điểm giấy phép lái xe gần nhất, dữ liệu điểm giấy phép lái xe sẽ được tự động phục hồi đủ 12 điểm (gồm cả giấy phép lái xe đang trong thời hạn bị tước quyền sử dụng) và cập nhật tự động trong Cơ sở dữ liệu về xử lý vi phạm hành chính về trật tự, an toàn giao thông đường bộ; b) Ngay sau khi dữ liệu điểm giấy phép lái xe được phục hồi, Cơ sở dữ liệu về xử lý vi phạm hành chính về trật tự, an toàn giao thông đường bộ sẽ tự động chuyển thông tin thông báo cho người được phục hồi điểm giấy phép lái xe biết việc phục hồi điểm theo quy định tại điểm c khoản này; c) Việc thông báo phục hồi điểm giấy phép lái xe thực hiện bằng phương thức điện tử thông qua tài khoản của công dân đăng ký trên Cổng dịch vụ công, Ứng dụng giao thông trên thiết bị di động; đồng thời cập nhật thông tin về giấy phép lái xe được phục hồi điểm trên Trang thông tin điện tử của Cục Cảnh sát giao thông. Trường hợp giấy phép lái xe được thể hiện dưới hình thức thông điệp dữ liệu thì thực hiện cập nhật trạng thái phục hồi điểm giấy phép lái xe trong căn cước điện tử, tài khoản định danh điện tử trên ứng dụng định danh quốc gia.",
+  "id_tri_thuc_dung": [
+   "R102"
+  ],
+  "loai_tri_thuc": "rule",
+  "nguon": "Điều 51 khoản 2 Nghị định 168/2024/NĐ-CP",
+  "do_kho": "trung_binh",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q034",
+  "cau_hoi": "Ra đường thì phải mang theo những giấy tờ gì?",
+  "lop_bai_toan_dung": "P2_TRA_CUU_QUY_DINH",
+  "dap_an_chuan": "Người lái xe tham gia giao thông đường bộ phải đủ tuổi, sức khỏe theo quy định của pháp luật; có giấy phép lái xe đang còn điểm, còn hiệu lực phù hợp với loại xe đang điều khiển do cơ quan có thẩm quyền cấp, trừ người lái xe gắn máy quy định tại khoản 4 Điều này. Khi tham gia giao thông đường bộ, người lái xe phải mang theo các giấy tờ sau đây: a) Chứng nhận đăng ký xe hoặc bản sao Chứng nhận đăng ký xe có chứng thực kèm bản gốc giấy tờ xác nhận của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài còn hiệu lực trong trường hợp xe đang được thế chấp tại tổ chức tín dụng, chi nhánh ngân hàng nước ngoài; b) Giấy phép lái xe phù hợp với loại xe đang điều khiển; c) Chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường đối với xe cơ giới theo quy định của pháp luật; d) Chứng nhận bảo hiểm bắt buộc trách nhiệm dân sự của chủ xe cơ giới.",
+  "id_tri_thuc_dung": [
+   "R88"
+  ],
+  "loai_tri_thuc": "rule",
+  "nguon": "Điều 56 khoản 1 Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "trung_binh",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q035",
+  "cau_hoi": "Chở con nhỏ trên ô tô thì luật quy định cháu ngồi ở đâu?",
+  "lop_bai_toan_dung": "P2_TRA_CUU_QUY_DINH",
+  "dap_an_chuan": "Khi chở trẻ em dưới 10 tuổi và chiều cao dưới 1,35 mét trên xe ô tô, người lái xe không được cho trẻ em ngồi cùng hàng ghế, trừ xe ô tô chỉ có một hàng ghế; người lái xe phải sử dụng, hướng dẫn sử dụng thiết bị an toàn phù hợp cho trẻ em, trừ xe ô tô kinh doanh vận tải hành khách.",
+  "id_tri_thuc_dung": [
+   "R15"
+  ],
+  "loai_tri_thuc": "rule",
+  "nguon": "Điều 10 khoản 3 Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "trung_binh",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q036",
+  "cau_hoi": "Ngồi ghế sau ô tô có phải thắt dây an toàn không?",
+  "lop_bai_toan_dung": "P2_TRA_CUU_QUY_DINH",
+  "dap_an_chuan": "Người lái xe và người được chở trên xe ô tô phải thắt dây đai an toàn tại những chỗ có trang bị dây đai an toàn khi tham gia giao thông đường bộ.",
+  "id_tri_thuc_dung": [
+   "R14"
+  ],
+  "loai_tri_thuc": "rule",
+  "nguon": "Điều 10 khoản 2 Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "de",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q037",
+  "cau_hoi": "Nghe tiếng còi hú của xe cứu thương phía sau thì tôi phải làm gì?",
+  "lop_bai_toan_dung": "P2_TRA_CUU_QUY_DINH",
+  "dap_an_chuan": "Khi có tín hiệu của xe ưu tiên, người và phương tiện tham gia giao thông đường bộ phải giảm tốc độ, đi sát lề đường bên phải hoặc dừng lại để nhường đường, trạm thu phí phải ưu tiên cho xe ưu tiên qua trạm trong mọi tình huống, không được gây cản trở.",
+  "id_tri_thuc_dung": [
+   "R68"
+  ],
+  "loai_tri_thuc": "rule",
+  "nguon": "Điều 27 khoản 5 Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "trung_binh",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q038",
+  "cau_hoi": "Người đi bộ được phép qua đường ở những chỗ nào?",
+  "lop_bai_toan_dung": "P2_TRA_CUU_QUY_DINH",
+  "dap_an_chuan": "Chỉ được qua đường ở những nơi có đèn tín hiệu, có vạch kẻ đường hoặc có cầu vượt, hầm dành cho người đi bộ và phải tuân thủ tín hiệu chỉ dẫn, báo hiệu đường bộ. Trường hợp không có đèn tín hiệu, vạch kẻ đường, cầu vượt, hầm dành cho người đi bộ thì phải quan sát các xe đang đi tới, chỉ qua đường khi bảo đảm an toàn, khi qua đường phải có tín hiệu bằng tay.",
+  "id_tri_thuc_dung": [
+   "R73"
+  ],
+  "loai_tri_thuc": "rule",
+  "nguon": "Điều 30 khoản 1 điểm b Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "de",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q039",
+  "cau_hoi": "Em họ tôi chưa có bằng lái, tôi cho nó mượn xe máy thì luật có cấm không?",
+  "lop_bai_toan_dung": "P2_TRA_CUU_QUY_DINH",
+  "dap_an_chuan": "Giao xe cơ giới, xe máy chuyên dùng cho người không đủ điều kiện theo quy định của pháp luật để điều khiển xe tham gia giao thông đường bộ.",
+  "id_tri_thuc_dung": [
+   "R07"
+  ],
+  "loai_tri_thuc": "rule",
+  "nguon": "Điều 9 khoản 7 Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "kho",
+  "ghi_chu": "Diễn đạt tình huống nhưng hỏi về quy tắc cấm, không hỏi mức phạt."
+ },
+ {
+  "id": "Q040",
+  "cau_hoi": "Vừa lái xe vừa cầm điện thoại có bị cấm không?",
+  "lop_bai_toan_dung": "P2_TRA_CUU_QUY_DINH",
+  "dap_an_chuan": "Dùng tay cầm và sử dụng điện thoại hoặc thiết bị điện tử khác khi điều khiển phương tiện tham gia giao thông đang di chuyển trên đường bộ.",
+  "id_tri_thuc_dung": [
+   "R06"
+  ],
+  "loai_tri_thuc": "rule",
+  "nguon": "Điều 9 khoản 6 Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "trung_binh",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q041",
+  "cau_hoi": "Đi xe máy mà thổi nồng độ cồn ra 0,2 mg/l khí thở thì phạt bao nhiêu?",
+  "lop_bai_toan_dung": "P3_TRA_CUU_CHE_TAI",
+  "dap_an_chuan": "Phạt tiền từ 2.000.000 đồng đến 3.000.000 đồng, trừ 4 điểm giấy phép lái xe.",
+  "id_tri_thuc_dung": [
+   "VP_MOTO_ND168D7_K6A"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 7 khoản 6 điểm a Nghị định 168/2024/NĐ-CP",
+  "do_kho": "trung_binh",
+  "ghi_chu": "Giá trị số: 0,2 mg/l khí thở -> khung 'chưa vượt quá 0,25 mg/l'."
+ },
+ {
+  "id": "Q042",
+  "cau_hoi": "Lái ô tô, máy đo nồng độ cồn hiện 0,3 mg/1 lít khí thở thì bị phạt thế nào?",
+  "lop_bai_toan_dung": "P3_TRA_CUU_CHE_TAI",
+  "dap_an_chuan": "Phạt tiền từ 18.000.000 đồng đến 20.000.000 đồng, trừ 10 điểm giấy phép lái xe.",
+  "id_tri_thuc_dung": [
+   "VP_OTO_ND168D6_K9A"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 6 khoản 9 điểm a Nghị định 168/2024/NĐ-CP",
+  "do_kho": "trung_binh",
+  "ghi_chu": "Giá trị số: 0,3 mg/l -> khung 'vượt quá 0,25 đến 0,4 mg/l'."
+ },
+ {
+  "id": "Q043",
+  "cau_hoi": "Ô tô mà nồng độ cồn lên tới 0,5 mg/l khí thở thì xử lý sao?",
+  "lop_bai_toan_dung": "P3_TRA_CUU_CHE_TAI",
+  "dap_an_chuan": "Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng, hình phạt bổ sung: tước quyền sử dụng giấy phép lái xe từ 22 tháng đến 24 tháng.",
+  "id_tri_thuc_dung": [
+   "VP_OTO_ND168D6_K11A"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 6 khoản 11 điểm a Nghị định 168/2024/NĐ-CP",
+  "do_kho": "trung_binh",
+  "ghi_chu": "Giá trị số: 0,5 mg/l -> khung cao nhất 'vượt quá 0,4 mg/l'."
+ },
+ {
+  "id": "Q044",
+  "cau_hoi": "Em đi xe máy, xét nghiệm máu ra 70 miligam/100 mililít máu, phạt bao nhiêu ạ?",
+  "lop_bai_toan_dung": "P3_TRA_CUU_CHE_TAI",
+  "dap_an_chuan": "Phạt tiền từ 6.000.000 đồng đến 8.000.000 đồng, trừ 10 điểm giấy phép lái xe.",
+  "id_tri_thuc_dung": [
+   "VP_MOTO_ND168D7_K8B"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 7 khoản 8 điểm b Nghị định 168/2024/NĐ-CP",
+  "do_kho": "kho",
+  "ghi_chu": "Giá trị số theo đơn vị máu (mg/100 ml) chứ không phải khí thở."
+ },
+ {
+  "id": "Q045",
+  "cau_hoi": "Đạp xe đạp mà trong người còn chút cồn khoảng 0,1 mg/l khí thở thì có bị phạt không?",
+  "lop_bai_toan_dung": "P3_TRA_CUU_CHE_TAI",
+  "dap_an_chuan": "Phạt tiền từ 100.000 đồng đến 200.000 đồng.",
+  "id_tri_thuc_dung": [
+   "VP_ND168D9_K1P"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 9 khoản 1 điểm p Nghị định 168/2024/NĐ-CP",
+  "do_kho": "trung_binh",
+  "ghi_chu": "Giá trị số + phương tiện xe đạp (nhiều người tưởng xe đạp không bị phạt)."
+ },
+ {
+  "id": "Q046",
+  "cau_hoi": "xe may nong do con 0,45 mg/l khi tho thi phat bao nhieu tien",
+  "lop_bai_toan_dung": "P3_TRA_CUU_CHE_TAI",
+  "dap_an_chuan": "Phạt tiền từ 8.000.000 đồng đến 10.000.000 đồng, hình phạt bổ sung: tước quyền sử dụng giấy phép lái xe từ 22 tháng đến 24 tháng.",
+  "id_tri_thuc_dung": [
+   "VP_MOTO_ND168D7_K9D"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 7 khoản 9 điểm d Nghị định 168/2024/NĐ-CP",
+  "do_kho": "trung_binh",
+  "ghi_chu": "Viết không dấu + giá trị số vượt quá 0,4 mg/l."
+ },
+ {
+  "id": "Q047",
+  "cau_hoi": "Đi xe đạp mà nồng độ cồn trong máu đo được 90 mg/100ml thì phạt sao?",
+  "lop_bai_toan_dung": "P3_TRA_CUU_CHE_TAI",
+  "dap_an_chuan": "Phạt tiền từ 400.000 đồng đến 600.000 đồng.",
+  "id_tri_thuc_dung": [
+   "VP_ND168D9_K4B"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 9 khoản 4 điểm b Nghị định 168/2024/NĐ-CP",
+  "do_kho": "kho",
+  "ghi_chu": "Giá trị số theo đơn vị máu, phương tiện thô sơ."
+ },
+ {
+  "id": "Q048",
+  "cau_hoi": "Ô tô chạy quá tốc độ 7 km/h thì phạt bao nhiêu?",
+  "lop_bai_toan_dung": "P3_TRA_CUU_CHE_TAI",
+  "dap_an_chuan": "Phạt tiền từ 800.000 đồng đến 1.000.000 đồng.",
+  "id_tri_thuc_dung": [
+   "VP_OTO_ND168D6_K3A"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 6 khoản 3 điểm a Nghị định 168/2024/NĐ-CP",
+  "do_kho": "de",
+  "ghi_chu": "Giá trị số: 7 km/h -> khung 'từ 05 km/h đến dưới 10 km/h'."
+ },
+ {
+  "id": "Q049",
+  "cau_hoi": "Ô tô vượt quá tốc độ 12 km/h thì bị phạt bao nhiêu và trừ mấy điểm?",
+  "lop_bai_toan_dung": "P3_TRA_CUU_CHE_TAI",
+  "dap_an_chuan": "Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng, trừ 2 điểm giấy phép lái xe.",
+  "id_tri_thuc_dung": [
+   "VP_OTO_ND168D6_K5DD"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 6 khoản 5 điểm đ Nghị định 168/2024/NĐ-CP",
+  "do_kho": "trung_binh",
+  "ghi_chu": "Giá trị số: 12 km/h -> khung 'từ 10 km/h đến 20 km/h'."
+ },
+ {
+  "id": "Q050",
+  "cau_hoi": "Xe hơi chạy quá tốc độ 25 km/h thì phạt bao nhiêu?",
+  "lop_bai_toan_dung": "P3_TRA_CUU_CHE_TAI",
+  "dap_an_chuan": "Phạt tiền từ 6.000.000 đồng đến 8.000.000 đồng, trừ 4 điểm giấy phép lái xe.",
+  "id_tri_thuc_dung": [
+   "VP_OTO_ND168D6_K6A"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 6 khoản 6 điểm a Nghị định 168/2024/NĐ-CP",
+  "do_kho": "trung_binh",
+  "ghi_chu": "'xe hơi' = ô tô; giá trị số 25 km/h -> khung 'trên 20 đến 35 km/h'."
+ },
+ {
+  "id": "Q051",
+  "cau_hoi": "Ô tô chạy vượt tốc độ quy định tới 40 km/h thì sao?",
+  "lop_bai_toan_dung": "P3_TRA_CUU_CHE_TAI",
+  "dap_an_chuan": "Phạt tiền từ 12.000.000 đồng đến 14.000.000 đồng, trừ 6 điểm giấy phép lái xe.",
+  "id_tri_thuc_dung": [
+   "VP_OTO_ND168D6_K7A"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 6 khoản 7 điểm a Nghị định 168/2024/NĐ-CP",
+  "do_kho": "trung_binh",
+  "ghi_chu": "Giá trị số: 40 km/h -> khung 'trên 35 km/h'."
+ },
+ {
+  "id": "Q052",
+  "cau_hoi": "Xe máy chạy quá tốc độ 6 km/h bị phạt bao nhiêu?",
+  "lop_bai_toan_dung": "P3_TRA_CUU_CHE_TAI",
+  "dap_an_chuan": "Phạt tiền từ 400.000 đồng đến 600.000 đồng.",
+  "id_tri_thuc_dung": [
+   "VP_MOTO_ND168D7_K2B"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 7 khoản 2 điểm b Nghị định 168/2024/NĐ-CP",
+  "do_kho": "de",
+  "ghi_chu": "Giá trị số: 6 km/h -> khung 'từ 05 km/h đến dưới 10 km/h'."
+ },
+ {
+  "id": "Q053",
+  "cau_hoi": "Xe máy vượt quá tốc độ 15 km/h thì phạt bao nhiêu tiền?",
+  "lop_bai_toan_dung": "P3_TRA_CUU_CHE_TAI",
+  "dap_an_chuan": "Phạt tiền từ 800.000 đồng đến 1.000.000 đồng.",
+  "id_tri_thuc_dung": [
+   "VP_MOTO_ND168D7_K4A"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 7 khoản 4 điểm a Nghị định 168/2024/NĐ-CP",
+  "do_kho": "trung_binh",
+  "ghi_chu": "Giá trị số: 15 km/h -> khung 'từ 10 km/h đến 20 km/h'."
+ },
+ {
+  "id": "Q054",
+  "cau_hoi": "Xe máy chạy quá tốc độ quy định 25 km/h thì phạt và trừ điểm thế nào?",
+  "lop_bai_toan_dung": "P3_TRA_CUU_CHE_TAI",
+  "dap_an_chuan": "Phạt tiền từ 6.000.000 đồng đến 8.000.000 đồng, trừ 4 điểm giấy phép lái xe.",
+  "id_tri_thuc_dung": [
+   "VP_MOTO_ND168D7_K8A"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 7 khoản 8 điểm a Nghị định 168/2024/NĐ-CP",
+  "do_kho": "trung_binh",
+  "ghi_chu": "Giá trị số: 25 km/h -> khung 'trên 20 km/h' của xe mô tô."
+ },
+ {
+  "id": "Q055",
+  "cau_hoi": "Vượt đèn đỏ xe máy bị phạt bao nhiêu tiền?",
+  "lop_bai_toan_dung": "P3_TRA_CUU_CHE_TAI",
+  "dap_an_chuan": "Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng, trừ 4 điểm giấy phép lái xe.",
+  "id_tri_thuc_dung": [
+   "VP_MOTO_ND168D7_K7C"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 7 khoản 7 điểm c Nghị định 168/2024/NĐ-CP",
+  "do_kho": "de",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q056",
+  "cau_hoi": "Ô tô vượt đèn đỏ phạt bao nhiêu?",
+  "lop_bai_toan_dung": "P3_TRA_CUU_CHE_TAI",
+  "dap_an_chuan": "Phạt tiền từ 18.000.000 đồng đến 20.000.000 đồng, trừ 4 điểm giấy phép lái xe.",
+  "id_tri_thuc_dung": [
+   "VP_OTO_ND168D6_K9B"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 6 khoản 9 điểm b Nghị định 168/2024/NĐ-CP",
+  "do_kho": "de",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q057",
+  "cau_hoi": "Đi xe đạp mà vượt đèn đỏ thì có bị phạt không, bao nhiêu?",
+  "lop_bai_toan_dung": "P3_TRA_CUU_CHE_TAI",
+  "dap_an_chuan": "Phạt tiền từ 150.000 đồng đến 250.000 đồng.",
+  "id_tri_thuc_dung": [
+   "VP_ND168D9_K2DD"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 9 khoản 2 điểm đ Nghị định 168/2024/NĐ-CP",
+  "do_kho": "trung_binh",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q058",
+  "cau_hoi": "Người đi bộ băng qua đường lúc đèn đỏ thì có bị phạt không?",
+  "lop_bai_toan_dung": "P3_TRA_CUU_CHE_TAI",
+  "dap_an_chuan": "Phạt tiền từ 150.000 đồng đến 250.000 đồng.",
+  "id_tri_thuc_dung": [
+   "VP_ND168D10_K1B"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 10 khoản 1 điểm b Nghị định 168/2024/NĐ-CP",
+  "do_kho": "trung_binh",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q059",
+  "cau_hoi": "Không đội mũ bảo hiểm bị phạt bao nhiêu?",
+  "lop_bai_toan_dung": "P3_TRA_CUU_CHE_TAI",
+  "dap_an_chuan": "Phạt tiền từ 400.000 đồng đến 600.000 đồng.",
+  "id_tri_thuc_dung": [
+   "VP_MOTO_ND168D7_K2H"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 7 khoản 2 điểm h Nghị định 168/2024/NĐ-CP",
+  "do_kho": "de",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q060",
+  "cau_hoi": "Em ngồi sau xe bạn mà không đội nón bảo hiểm thì em có bị phạt không?",
+  "lop_bai_toan_dung": "P3_TRA_CUU_CHE_TAI",
+  "dap_an_chuan": "Phạt tiền từ 400.000 đồng đến 600.000 đồng.",
+  "id_tri_thuc_dung": [
+   "VP_ND168D12_K5B"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 12 khoản 5 điểm b Nghị định 168/2024/NĐ-CP",
+  "do_kho": "trung_binh",
+  "ghi_chu": "Chủ thể là hành khách (người được chở), không phải người điều khiển."
+ },
+ {
+  "id": "Q061",
+  "cau_hoi": "kep 3 di xe may bi phat bao nhieu tien",
+  "lop_bai_toan_dung": "P3_TRA_CUU_CHE_TAI",
+  "dap_an_chuan": "Phạt tiền từ 400.000 đồng đến 600.000 đồng.",
+  "id_tri_thuc_dung": [
+   "VP_MOTO_ND168D7_K2G"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 7 khoản 2 điểm g Nghị định 168/2024/NĐ-CP",
+  "do_kho": "kho",
+  "ghi_chu": "Viết không dấu + tiếng lóng: 'kẹp 3' là 3 người trên xe, tức người lái chở theo 02 người (Điều 7 khoản 2 điểm g), KHÔNG phải 'chở từ 03 người trở lên' ở khoản 3 điểm b."
+ },
+ {
+  "id": "Q062",
+  "cau_hoi": "Vừa chạy xe máy vừa nghe điện thoại thì bị phạt bao nhiêu?",
+  "lop_bai_toan_dung": "P3_TRA_CUU_CHE_TAI",
+  "dap_an_chuan": "Phạt tiền từ 800.000 đồng đến 1.000.000 đồng, trừ 4 điểm giấy phép lái xe.",
+  "id_tri_thuc_dung": [
+   "VP_MOTO_ND168D7_K4DD"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 7 khoản 4 điểm đ Nghị định 168/2024/NĐ-CP",
+  "do_kho": "de",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q063",
+  "cau_hoi": "Tài xế ô tô cầm điện thoại lúc đang lái thì phạt thế nào?",
+  "lop_bai_toan_dung": "P3_TRA_CUU_CHE_TAI",
+  "dap_an_chuan": "Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng, trừ 4 điểm giấy phép lái xe.",
+  "id_tri_thuc_dung": [
+   "VP_OTO_ND168D6_K5H"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 6 khoản 5 điểm h Nghị định 168/2024/NĐ-CP",
+  "do_kho": "de",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q064",
+  "cau_hoi": "Chạy xe máy 110 phân khối mà chưa có bằng lái thì phạt bao nhiêu?",
+  "lop_bai_toan_dung": "P3_TRA_CUU_CHE_TAI",
+  "dap_an_chuan": "Phạt tiền từ 2.000.000 đồng đến 4.000.000 đồng, hình phạt bổ sung: thu hồi giấy phép lái xe không do cơ quan có thẩm quyền cấp, giấy phép lái xe không hợp lệ, biện pháp khắc phục hậu quả: buộc nộp lại giấy phép lái xe bị tẩy xóa.",
+  "id_tri_thuc_dung": [
+   "VP_ND168D18_K5A"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 18 khoản 5 điểm a Nghị định 168/2024/NĐ-CP",
+  "do_kho": "trung_binh",
+  "ghi_chu": "KB không ghi điều kiện dung tích xi-lanh phân biệt khoản 5 và khoản 7 Điều 18; câu hỏi nêu 110 cm3 để chốt về khoản 5."
+ },
+ {
+  "id": "Q065",
+  "cau_hoi": "Lái ô tô mà không có bằng lái thì bị phạt bao nhiêu?",
+  "lop_bai_toan_dung": "P3_TRA_CUU_CHE_TAI",
+  "dap_an_chuan": "Phạt tiền từ 18.000.000 đồng đến 20.000.000 đồng, hình phạt bổ sung: thu hồi giấy phép lái xe không do cơ quan có thẩm quyền cấp, giấy phép lái xe không hợp lệ, biện pháp khắc phục hậu quả: buộc nộp lại giấy phép lái xe bị tẩy xóa.",
+  "id_tri_thuc_dung": [
+   "VP_ND168D18_K9B"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 18 khoản 9 điểm b Nghị định 168/2024/NĐ-CP",
+  "do_kho": "trung_binh",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q066",
+  "cau_hoi": "Bằng lái ô tô của tôi hết hạn được 3 tháng rồi, nếu bị bắt thì phạt sao?",
+  "lop_bai_toan_dung": "P3_TRA_CUU_CHE_TAI",
+  "dap_an_chuan": "Phạt tiền từ 8.000.000 đồng đến 10.000.000 đồng.",
+  "id_tri_thuc_dung": [
+   "VP_ND168D18_K8A"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 18 khoản 8 điểm a Nghị định 168/2024/NĐ-CP",
+  "do_kho": "kho",
+  "ghi_chu": "Phải suy diễn 3 tháng < 01 năm -> khoản 8 điểm a, không phải khoản 9."
+ },
+ {
+  "id": "Q067",
+  "cau_hoi": "Em chạy xe ôm công nghệ, hôm nay quên mang bằng lái thì bị phạt bao nhiêu?",
+  "lop_bai_toan_dung": "P3_TRA_CUU_CHE_TAI",
+  "dap_an_chuan": "Phạt tiền từ 200.000 đồng đến 300.000 đồng.",
+  "id_tri_thuc_dung": [
+   "VP_ND168D18_K2D"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 18 khoản 2 điểm d Nghị định 168/2024/NĐ-CP",
+  "do_kho": "kho",
+  "ghi_chu": "KB chỉ có lỗi 'không mang theo GPLX' đối với xe kinh doanh vận tải."
+ },
+ {
+  "id": "Q068",
+  "cau_hoi": "Mất cà vẹt xe máy mà vẫn chạy ngoài đường, bị bắt thì phạt bao nhiêu?",
+  "lop_bai_toan_dung": "P3_TRA_CUU_CHE_TAI",
+  "dap_an_chuan": "Phạt tiền từ 2.000.000 đồng đến 3.000.000 đồng, trừ 2 điểm giấy phép lái xe, hình phạt bổ sung: tịch thu phương tiện trong trường hợp không chứng minh được nguồn gốc xuất xứ của phương tiện (không có giấy tờ, chứng nhận nguồn gốc xe, chứng nhận quyền sở hữu hợp pháp).",
+  "id_tri_thuc_dung": [
+   "VP_ND168D14_K2A"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 14 khoản 2 điểm a Nghị định 168/2024/NĐ-CP",
+  "do_kho": "trung_binh",
+  "ghi_chu": "'cà vẹt' = chứng nhận đăng ký xe."
+ },
+ {
+  "id": "Q069",
+  "cau_hoi": "Xe máy không có bảo hiểm thì phạt bao nhiêu?",
+  "lop_bai_toan_dung": "P3_TRA_CUU_CHE_TAI",
+  "dap_an_chuan": "Phạt tiền từ 200.000 đồng đến 300.000 đồng.",
+  "id_tri_thuc_dung": [
+   "VP_ND168D18_K2B"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 18 khoản 2 điểm b Nghị định 168/2024/NĐ-CP",
+  "do_kho": "de",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q070",
+  "cau_hoi": "Ô tô hết hạn đăng kiểm hơn 1 tháng rồi thì bị phạt thế nào?",
+  "lop_bai_toan_dung": "P3_TRA_CUU_CHE_TAI",
+  "dap_an_chuan": "Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng, trừ 2 điểm giấy phép lái xe.",
+  "id_tri_thuc_dung": [
+   "VP_ND168D13_K6B"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 13 khoản 6 điểm b Nghị định 168/2024/NĐ-CP",
+  "do_kho": "trung_binh",
+  "ghi_chu": "Phải phân biệt với khoản 5 điểm a (hết hạn dưới 01 tháng)."
+ },
+ {
+  "id": "Q071",
+  "cau_hoi": "Dán băng keo che biển số xe máy thì bị phạt bao nhiêu?",
+  "lop_bai_toan_dung": "P3_TRA_CUU_CHE_TAI",
+  "dap_an_chuan": "Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng, trừ 6 điểm giấy phép lái xe.",
+  "id_tri_thuc_dung": [
+   "VP_ND168D14_K3B"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 14 khoản 3 điểm b Nghị định 168/2024/NĐ-CP",
+  "do_kho": "trung_binh",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q072",
+  "cau_hoi": "Ba mẹ giao xe máy cho con chưa đủ tuổi chạy thì ba mẹ bị phạt bao nhiêu?",
+  "lop_bai_toan_dung": "P3_TRA_CUU_CHE_TAI",
+  "dap_an_chuan": "Phạt tiền từ 8.000.000 đồng đến 10.000.000 đồng (Tổ chức là chủ phương tiện vi phạm bị phạt tiền từ 16.000.000 đồng đến 20.000.000 đồng).",
+  "id_tri_thuc_dung": [
+   "VP_ND168D32_K10"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 32 khoản 10 Nghị định 168/2024/NĐ-CP",
+  "do_kho": "trung_binh",
+  "ghi_chu": "Chủ thể là chủ phương tiện."
+ },
+ {
+  "id": "Q073",
+  "cau_hoi": "Cháu tôi 17 tuổi mà chạy xe mô tô thì bị xử lý sao?",
+  "lop_bai_toan_dung": "P3_TRA_CUU_CHE_TAI",
+  "dap_an_chuan": "Phạt tiền từ 400.000 đồng đến 600.000 đồng.",
+  "id_tri_thuc_dung": [
+   "VP_ND168D18_K4A"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 18 khoản 4 điểm a Nghị định 168/2024/NĐ-CP",
+  "do_kho": "trung_binh",
+  "ghi_chu": "Phải chọn đúng khung 'từ đủ 16 đến dưới 18 tuổi'."
+ },
+ {
+  "id": "Q074",
+  "cau_hoi": "Đi ngược chiều bằng xe máy phạt bao nhiêu?",
+  "lop_bai_toan_dung": "P3_TRA_CUU_CHE_TAI",
+  "dap_an_chuan": "Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng, trừ 2 điểm giấy phép lái xe.",
+  "id_tri_thuc_dung": [
+   "VP_MOTO_ND168D7_K7A"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 7 khoản 7 điểm a Nghị định 168/2024/NĐ-CP",
+  "do_kho": "de",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q075",
+  "cau_hoi": "Xe máy chạy vào đường cao tốc thì phạt bao nhiêu?",
+  "lop_bai_toan_dung": "P3_TRA_CUU_CHE_TAI",
+  "dap_an_chuan": "Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng, trừ 6 điểm giấy phép lái xe.",
+  "id_tri_thuc_dung": [
+   "VP_MOTO_ND168D7_K7B"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 7 khoản 7 điểm b Nghị định 168/2024/NĐ-CP",
+  "do_kho": "trung_binh",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q076",
+  "cau_hoi": "Lái ô tô mà không thắt dây an toàn thì phạt bao nhiêu?",
+  "lop_bai_toan_dung": "P3_TRA_CUU_CHE_TAI",
+  "dap_an_chuan": "Phạt tiền từ 800.000 đồng đến 1.000.000 đồng.",
+  "id_tri_thuc_dung": [
+   "VP_OTO_ND168D6_K3K"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 6 khoản 3 điểm k Nghị định 168/2024/NĐ-CP",
+  "do_kho": "de",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q077",
+  "cau_hoi": "Cho con 8 tuổi ngồi ghế trước ô tô thì có bị phạt không?",
+  "lop_bai_toan_dung": "P3_TRA_CUU_CHE_TAI",
+  "dap_an_chuan": "Phạt tiền từ 800.000 đồng đến 1.000.000 đồng.",
+  "id_tri_thuc_dung": [
+   "VP_OTO_ND168D6_K3M"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 6 khoản 3 điểm m Nghị định 168/2024/NĐ-CP",
+  "do_kho": "trung_binh",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q078",
+  "cau_hoi": "Xe máy gây tai nạn rồi bỏ chạy luôn thì bị phạt thế nào?",
+  "lop_bai_toan_dung": "P3_TRA_CUU_CHE_TAI",
+  "dap_an_chuan": "Phạt tiền từ 8.000.000 đồng đến 10.000.000 đồng, trừ 6 điểm giấy phép lái xe.",
+  "id_tri_thuc_dung": [
+   "VP_MOTO_ND168D7_K9C"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 7 khoản 9 điểm c Nghị định 168/2024/NĐ-CP",
+  "do_kho": "trung_binh",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q079",
+  "cau_hoi": "Lái ô tô mà test dương tính với ma tuý thì bị xử lý ra sao?",
+  "lop_bai_toan_dung": "P3_TRA_CUU_CHE_TAI",
+  "dap_an_chuan": "Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng, hình phạt bổ sung: tước quyền sử dụng giấy phép lái xe từ 22 tháng đến 24 tháng.",
+  "id_tri_thuc_dung": [
+   "VP_OTO_ND168D6_K11C"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 6 khoản 11 điểm c Nghị định 168/2024/NĐ-CP",
+  "do_kho": "trung_binh",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q080",
+  "cau_hoi": "Không chịu dừng xe khi cảnh sát giao thông ra hiệu kiểm tra thì phạt bao nhiêu?",
+  "lop_bai_toan_dung": "P3_TRA_CUU_CHE_TAI",
+  "dap_an_chuan": "Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng (Tổ chức vi phạm bị phạt tiền từ 8.000.000 đồng đến 12.000.000 đồng).",
+  "id_tri_thuc_dung": [
+   "VP_ND168D12_K10"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 12 khoản 10 Nghị định 168/2024/NĐ-CP",
+  "do_kho": "trung_binh",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q081",
+  "cau_hoi": "Những lỗi nào của xe mô tô, xe máy bị trừ tới 10 điểm giấy phép lái xe?",
+  "lop_bai_toan_dung": "P4_TRA_CUU_NGUOC",
+  "dap_an_chuan": "Có 3 hành vi thoả mãn:\n- VP_MOTO_ND168D7_K8B (Điều 7 khoản 8 điểm b Nghị định 168/2024/NĐ-CP): Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn vượt quá 50 miligam đến 80 miligam/100... Phạt tiền từ 6.000.000 đồng đến 8.000.000 đồng, trừ 10 điểm giấy phép lái xe.\n- VP_MOTO_ND168D7_K10A (Điều 7 khoản 10 điểm a Nghị định 168/2024/NĐ-CP): Điều khiển xe không quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn theo quy định mà gây tai nạn giao... Phạt tiền từ 10.000.000 đồng đến 14.000.000 đồng, trừ 10 điểm giấy phép lái xe.\n- VP_MOTO_ND168D7_K10B (Điều 7 khoản 10 điểm b Nghị định 168/2024/NĐ-CP): Vi phạm quy định tại một trong các điểm, khoản sau của Điều này mà gây tai nạn giao thông: điểm a, điểm d,... Phạt tiền từ 10.000.000 đồng đến 14.000.000 đồng, trừ 10 điểm giấy phép lái xe.",
+  "id_tri_thuc_dung": [
+   "VP_MOTO_ND168D7_K8B",
+   "VP_MOTO_ND168D7_K10A",
+   "VP_MOTO_ND168D7_K10B"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 7 khoản 8 điểm b Nghị định 168/2024/NĐ-CP; Điều 7 khoản 10 điểm a Nghị định 168/2024/NĐ-CP; Điều 7 khoản 10 điểm b Nghị định 168/2024/NĐ-CP",
+  "do_kho": "trung_binh",
+  "ghi_chu": "Tra cứu ngược theo số điểm bị trừ."
+ },
+ {
+  "id": "Q082",
+  "cau_hoi": "Người đi bộ vi phạm lỗi gì thì bị phạt từ 400.000 đến 600.000 đồng?",
+  "lop_bai_toan_dung": "P4_TRA_CUU_NGUOC",
+  "dap_an_chuan": "Có 3 hành vi thoả mãn:\n- VP_ND168D10_K2A (Điều 10 khoản 2 điểm a Nghị định 168/2024/NĐ-CP): Đi vào đường cao tốc, trừ người phục vụ việc quản lý, bảo trì đường cao tốc Phạt tiền từ 400.000 đồng đến 600.000 đồng.\n- VP_ND168D10_K2B (Điều 10 khoản 2 điểm b Nghị định 168/2024/NĐ-CP): Mang, vác vật cồng kềnh gây cản trở giao thông Phạt tiền từ 400.000 đồng đến 600.000 đồng.\n- VP_ND168D10_K2C (Điều 10 khoản 2 điểm c Nghị định 168/2024/NĐ-CP): Đu, bám vào phương tiện giao thông đang chạy Phạt tiền từ 400.000 đồng đến 600.000 đồng.",
+  "id_tri_thuc_dung": [
+   "VP_ND168D10_K2A",
+   "VP_ND168D10_K2B",
+   "VP_ND168D10_K2C"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 10 khoản 2 điểm a Nghị định 168/2024/NĐ-CP; Điều 10 khoản 2 điểm b Nghị định 168/2024/NĐ-CP; Điều 10 khoản 2 điểm c Nghị định 168/2024/NĐ-CP",
+  "do_kho": "trung_binh",
+  "ghi_chu": "Tra cứu ngược theo chủ thể + khoảng tiền phạt."
+ },
+ {
+  "id": "Q083",
+  "cau_hoi": "Vi phạm nào liên quan đến xe ô tô bị phạt tiền cao nhất theo Nghị định 168?",
+  "lop_bai_toan_dung": "P4_TRA_CUU_NGUOC",
+  "dap_an_chuan": "Có 3 hành vi thoả mãn:\n- VP_ND168D32_K16A (Điều 32 khoản 16 điểm a Nghị định 168/2024/NĐ-CP): Giao phương tiện hoặc để cho người làm công, người đại diện điều khiển phương tiện thực hiện hành vi vi phạm... Phạt tiền từ 65.000.000 đồng đến 75.000.000 đồng, trừ 4 điểm giấy phép lái xe, hình phạt bổ sung: tước quyền sử dụng phù hiệu từ 01 tháng đến 03 tháng (nếu có); Việc trừ điểm giấy phép lái xe chỉ áp dụng trong trường hợp chủ phương tiện là người trực tiếp điều khiển phương tiện, biện pháp khắc phục hậu quả: nếu gây hư hại cầu, đường phải khôi phục lại tình trạng ban đầu đã bị thay đổi do vi phạm hành chính gây ra (Tổ chức là chủ phương tiện vi phạm bị phạt tiền từ 130.000.000 đồng đến 150.000.000 đồng).\n- VP_ND168D32_K16B (Điều 32 khoản 16 điểm b Nghị định 168/2024/NĐ-CP): Giao phương tiện hoặc để cho người làm công, người đại diện điều khiển phương tiện thực hiện hành vi vi phạm... Phạt tiền từ 65.000.000 đồng đến 75.000.000 đồng, trừ 10 điểm giấy phép lái xe, hình phạt bổ sung: tước quyền sử dụng giấy chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường và tem kiểm định của phương tiện từ 01 tháng đến 03 tháng (nếu phương tiện có thùng xe, khối lượng hàng hóa cho phép chuyên chở không đúng quy định); tước quyền sử dụng phù hiệu từ 01 tháng đến 03 tháng (nếu có); tịch thu phương tiện khi tái phạm (khoản 17 điểm g Điều 32); Việc trừ điểm giấy phép lái xe chỉ áp dụng trong trường hợp chủ phương tiện là người trực tiếp điều khiển phương tiện, biện pháp khắc phục hậu quả: buộc thực hiện điều chỉnh thùng xe theo đúng quy định hiện hành, đăng kiểm lại và điều chỉnh lại khối lượng hàng hóa cho phép chuyên chở ghi trong giấy chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường theo quy định hiện hành trước khi đưa phương tiện ra tham gia giao thông (nếu thùng xe, khối lượng hàng hóa cho phép chuyên chở không đúng quy định); nếu gây hư hại cầu, đường phải khôi phục lại tình trạng ban đầu đã bị thay đổi do vi phạm hành chính gây ra (Tổ chức là chủ phương tiện vi phạm bị phạt tiền từ 130.000.000 đồng đến 150.000.000 đồng).\n- VP_ND168D32_K16C (Điều 32 khoản 16 điểm c Nghị định 168/2024/NĐ-CP): Tự ý thay đổi tổng thành khung, tổng thành máy (động cơ), hệ thống phanh, hệ thống truyền động (truyền lực),... Phạt tiền từ 65.000.000 đồng đến 75.000.000 đồng, hình phạt bổ sung: tước quyền sử dụng giấy chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường và tem kiểm định của phương tiện từ 01 tháng đến 03 tháng; tước quyền sử dụng phù hiệu từ 01 tháng đến 03 tháng (nếu có), biện pháp khắc phục hậu quả: buộc khôi phục lại hình dáng, kích thước, tình trạng an toàn kỹ thuật ban đầu của xe và đăng kiểm lại trước khi đưa phương tiện ra tham gia giao thông (Tổ chức là chủ phương tiện vi phạm bị phạt tiền từ 130.000.000 đồng đến 150.000.000 đồng).",
+  "id_tri_thuc_dung": [
+   "VP_ND168D32_K16A",
+   "VP_ND168D32_K16B",
+   "VP_ND168D32_K16C"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 32 khoản 16 điểm a Nghị định 168/2024/NĐ-CP; Điều 32 khoản 16 điểm b Nghị định 168/2024/NĐ-CP; Điều 32 khoản 16 điểm c Nghị định 168/2024/NĐ-CP",
+  "do_kho": "trung_binh",
+  "ghi_chu": "Tra cứu ngược kiểu 'kịch khung / nặng nhất'; có 3 hành vi đồng hạng."
+ },
+ {
+  "id": "Q084",
+  "cau_hoi": "Lỗi nồng độ cồn nào của xe máy bị phạt từ 8 đến 10 triệu đồng?",
+  "lop_bai_toan_dung": "P4_TRA_CUU_NGUOC",
+  "dap_an_chuan": "Có 2 hành vi thoả mãn:\n- VP_MOTO_ND168D7_K9D (Điều 7 khoản 9 điểm d Nghị định 168/2024/NĐ-CP): Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn vượt quá 80 miligam/100 mililít máu hoặc... Phạt tiền từ 8.000.000 đồng đến 10.000.000 đồng, hình phạt bổ sung: tước quyền sử dụng giấy phép lái xe từ 22 tháng đến 24 tháng.\n- VP_MOTO_ND168D7_K9DD (Điều 7 khoản 9 điểm đ Nghị định 168/2024/NĐ-CP): Không chấp hành yêu cầu kiểm tra về nồng độ cồn của người thi hành công vụ Phạt tiền từ 8.000.000 đồng đến 10.000.000 đồng, hình phạt bổ sung: tước quyền sử dụng giấy phép lái xe từ 22 tháng đến 24 tháng.",
+  "id_tri_thuc_dung": [
+   "VP_MOTO_ND168D7_K9D",
+   "VP_MOTO_ND168D7_K9DD"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 7 khoản 9 điểm d Nghị định 168/2024/NĐ-CP; Điều 7 khoản 9 điểm đ Nghị định 168/2024/NĐ-CP",
+  "do_kho": "trung_binh",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q085",
+  "cau_hoi": "Đi xe máy thì vi phạm nào bị tịch thu luôn xe?",
+  "lop_bai_toan_dung": "P4_TRA_CUU_NGUOC",
+  "dap_an_chuan": "Có 4 hành vi thoả mãn:\n- VP_MOTO_ND168D7_K11A (Điều 7 khoản 11 điểm a Nghị định 168/2024/NĐ-CP): Buông cả hai tay khi đang điều khiển xe; dùng chân điều khiển xe; ngồi về một bên điều khiển xe; nằm trên yên... hình phạt bổ sung: tịch thu phương tiện; tước quyền sử dụng giấy phép lái xe từ 22 tháng đến 24 tháng.\n- VP_MOTO_ND168D7_K11B (Điều 7 khoản 11 điểm b Nghị định 168/2024/NĐ-CP): Điều khiển xe chạy bằng một bánh đối với xe hai bánh, chạy bằng hai bánh đối với xe ba bánh hình phạt bổ sung: tịch thu phương tiện; tước quyền sử dụng giấy phép lái xe từ 22 tháng đến 24 tháng.\n- VP_MOTO_ND168D7_K11C (Điều 7 khoản 11 điểm c Nghị định 168/2024/NĐ-CP): Tái phạm hành vi điều khiển xe lạng lách, đánh võng quy định tại điểm a khoản 9 Điều này hình phạt bổ sung: tịch thu phương tiện; tước quyền sử dụng giấy phép lái xe từ 22 tháng đến 24 tháng.\n- VP_ND168D14_K4 (Điều 14 khoản 4 Nghị định 168/2024/NĐ-CP): Điều khiển loại xe sản xuất, lắp ráp trái quy định tham gia giao thông Không áp dụng phạt tiền; hình thức xử phạt là tịch thu phương tiện, hình phạt bổ sung: tịch thu phương tiện.",
+  "id_tri_thuc_dung": [
+   "VP_MOTO_ND168D7_K11A",
+   "VP_MOTO_ND168D7_K11B",
+   "VP_MOTO_ND168D7_K11C",
+   "VP_ND168D14_K4"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 7 khoản 11 điểm a Nghị định 168/2024/NĐ-CP; Điều 7 khoản 11 điểm b Nghị định 168/2024/NĐ-CP; Điều 7 khoản 11 điểm c Nghị định 168/2024/NĐ-CP; Điều 14 khoản 4 Nghị định 168/2024/NĐ-CP",
+  "do_kho": "kho",
+  "ghi_chu": "Tra cứu ngược theo hình phạt bổ sung, không theo tiền/điểm."
+ },
+ {
+  "id": "Q086",
+  "cau_hoi": "Đi xe đạp thì lỗi nào bị phạt nặng nhất?",
+  "lop_bai_toan_dung": "P4_TRA_CUU_NGUOC",
+  "dap_an_chuan": "Có 1 hành vi thoả mãn:\n- VP_ND168D9_K5 (Điều 9 khoản 5 Nghị định 168/2024/NĐ-CP): Điều khiển xe đi vào đường cao tốc, trừ phương tiện phục vụ việc quản lý, bảo trì đường cao tốc Phạt tiền từ 800.000 đồng đến 1.200.000 đồng.",
+  "id_tri_thuc_dung": [
+   "VP_ND168D9_K5"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 9 khoản 5 Nghị định 168/2024/NĐ-CP",
+  "do_kho": "trung_binh",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q087",
+  "cau_hoi": "Lỗi tốc độ nào của ô tô bị trừ 6 điểm giấy phép lái xe?",
+  "lop_bai_toan_dung": "P4_TRA_CUU_NGUOC",
+  "dap_an_chuan": "Có 1 hành vi thoả mãn:\n- VP_OTO_ND168D6_K7A (Điều 6 khoản 7 điểm a Nghị định 168/2024/NĐ-CP): Điều khiển xe chạy quá tốc độ quy định trên 35 km/h Phạt tiền từ 12.000.000 đồng đến 14.000.000 đồng, trừ 6 điểm giấy phép lái xe.",
+  "id_tri_thuc_dung": [
+   "VP_OTO_ND168D6_K7A"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 6 khoản 7 điểm a Nghị định 168/2024/NĐ-CP",
+  "do_kho": "trung_binh",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q088",
+  "cau_hoi": "Xe mô tô vi phạm gì thì bị tước bằng lái từ 22 đến 24 tháng?",
+  "lop_bai_toan_dung": "P4_TRA_CUU_NGUOC",
+  "dap_an_chuan": "Có 7 hành vi thoả mãn:\n- VP_MOTO_ND168D7_K9D (Điều 7 khoản 9 điểm d Nghị định 168/2024/NĐ-CP): Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn vượt quá 80 miligam/100 mililít máu hoặc... Phạt tiền từ 8.000.000 đồng đến 10.000.000 đồng, hình phạt bổ sung: tước quyền sử dụng giấy phép lái xe từ 22 tháng đến 24 tháng.\n- VP_MOTO_ND168D7_K9DD (Điều 7 khoản 9 điểm đ Nghị định 168/2024/NĐ-CP): Không chấp hành yêu cầu kiểm tra về nồng độ cồn của người thi hành công vụ Phạt tiền từ 8.000.000 đồng đến 10.000.000 đồng, hình phạt bổ sung: tước quyền sử dụng giấy phép lái xe từ 22 tháng đến 24 tháng.\n- VP_MOTO_ND168D7_K9E (Điều 7 khoản 9 điểm e Nghị định 168/2024/NĐ-CP): Điều khiển xe trên đường mà trong cơ thể có chất ma túy hoặc chất kích thích khác mà pháp luật cấm sử dụng Phạt tiền từ 8.000.000 đồng đến 10.000.000 đồng, hình phạt bổ sung: tước quyền sử dụng giấy phép lái xe từ 22 tháng đến 24 tháng.\n- VP_MOTO_ND168D7_K9G (Điều 7 khoản 9 điểm g Nghị định 168/2024/NĐ-CP): Không chấp hành yêu cầu kiểm tra về chất ma túy hoặc chất kích thích khác mà pháp luật cấm sử dụng của người... Phạt tiền từ 8.000.000 đồng đến 10.000.000 đồng, hình phạt bổ sung: tước quyền sử dụng giấy phép lái xe từ 22 tháng đến 24 tháng.\n- VP_MOTO_ND168D7_K11A (Điều 7 khoản 11 điểm a Nghị định 168/2024/NĐ-CP): Buông cả hai tay khi đang điều khiển xe; dùng chân điều khiển xe; ngồi về một bên điều khiển xe; nằm trên yên... hình phạt bổ sung: tịch thu phương tiện; tước quyền sử dụng giấy phép lái xe từ 22 tháng đến 24 tháng.\n- VP_MOTO_ND168D7_K11B (Điều 7 khoản 11 điểm b Nghị định 168/2024/NĐ-CP): Điều khiển xe chạy bằng một bánh đối với xe hai bánh, chạy bằng hai bánh đối với xe ba bánh hình phạt bổ sung: tịch thu phương tiện; tước quyền sử dụng giấy phép lái xe từ 22 tháng đến 24 tháng.\n- VP_MOTO_ND168D7_K11C (Điều 7 khoản 11 điểm c Nghị định 168/2024/NĐ-CP): Tái phạm hành vi điều khiển xe lạng lách, đánh võng quy định tại điểm a khoản 9 Điều này hình phạt bổ sung: tịch thu phương tiện; tước quyền sử dụng giấy phép lái xe từ 22 tháng đến 24 tháng.",
+  "id_tri_thuc_dung": [
+   "VP_MOTO_ND168D7_K9D",
+   "VP_MOTO_ND168D7_K9DD",
+   "VP_MOTO_ND168D7_K9E",
+   "VP_MOTO_ND168D7_K9G",
+   "VP_MOTO_ND168D7_K11A",
+   "VP_MOTO_ND168D7_K11B",
+   "VP_MOTO_ND168D7_K11C"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 7 khoản 9 điểm d Nghị định 168/2024/NĐ-CP; Điều 7 khoản 9 điểm đ Nghị định 168/2024/NĐ-CP; Điều 7 khoản 9 điểm e Nghị định 168/2024/NĐ-CP; Điều 7 khoản 9 điểm g Nghị định 168/2024/NĐ-CP; Điều 7 khoản 11 điểm a Nghị định 168/2024/NĐ-CP; Điều 7 khoản 11 điểm b Nghị định 168/2024/NĐ-CP; Điều 7 khoản 11 điểm c Nghị định 168/2024/NĐ-CP",
+  "do_kho": "kho",
+  "ghi_chu": "Tra cứu ngược theo thời hạn tước GPLX ghi trong hình phạt bổ sung."
+ },
+ {
+  "id": "Q089",
+  "cau_hoi": "Hành khách đi xe khách vi phạm gì thì bị phạt từ 1.000.000 đến 2.000.000 đồng?",
+  "lop_bai_toan_dung": "P4_TRA_CUU_NGUOC",
+  "dap_an_chuan": "Có 2 hành vi thoả mãn:\n- VP_ND168D33_K2A (Điều 33 khoản 2 điểm a Nghị định 168/2024/NĐ-CP): Mang hóa chất độc hại, chất dễ cháy, nổ, hàng nguy hiểm hoặc hàng cấm lưu thông trên xe chở khách Phạt tiền từ 1.000.000 đồng đến 2.000.000 đồng, hình phạt bổ sung: tịch thu hóa chất độc hại, chất dễ cháy, nổ, hàng nguy hiểm, hàng cấm lưu thông mang theo trên xe chở khách.\n- VP_ND168D33_K2B (Điều 33 khoản 2 điểm b Nghị định 168/2024/NĐ-CP): Đu, bám vào thành xe; đứng, ngồi, nằm trên mui xe, nóc xe, trong khoang chở hành lý; tự ý mở cửa xe hoặc có... Phạt tiền từ 1.000.000 đồng đến 2.000.000 đồng.",
+  "id_tri_thuc_dung": [
+   "VP_ND168D33_K2A",
+   "VP_ND168D33_K2B"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 33 khoản 2 điểm a Nghị định 168/2024/NĐ-CP; Điều 33 khoản 2 điểm b Nghị định 168/2024/NĐ-CP",
+  "do_kho": "trung_binh",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q090",
+  "cau_hoi": "Ô tô có những lỗi nào bị phạt từ 30 đến 40 triệu đồng?",
+  "lop_bai_toan_dung": "P4_TRA_CUU_NGUOC",
+  "dap_an_chuan": "Có 6 hành vi thoả mãn:\n- VP_OTO_ND168D6_K11A (Điều 6 khoản 11 điểm a Nghị định 168/2024/NĐ-CP): Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn vượt quá 80 miligam/100 mililít máu hoặc... Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng, hình phạt bổ sung: tước quyền sử dụng giấy phép lái xe từ 22 tháng đến 24 tháng.\n- VP_OTO_ND168D6_K11B (Điều 6 khoản 11 điểm b Nghị định 168/2024/NĐ-CP): Không chấp hành yêu cầu kiểm tra về nồng độ cồn của người thi hành công vụ Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng, hình phạt bổ sung: tước quyền sử dụng giấy phép lái xe từ 22 tháng đến 24 tháng.\n- VP_OTO_ND168D6_K11C (Điều 6 khoản 11 điểm c Nghị định 168/2024/NĐ-CP): Điều khiển xe trên đường mà trong cơ thể có chất ma túy hoặc chất kích thích khác mà pháp luật cấm sử dụng Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng, hình phạt bổ sung: tước quyền sử dụng giấy phép lái xe từ 22 tháng đến 24 tháng.\n- VP_OTO_ND168D6_K11D (Điều 6 khoản 11 điểm d Nghị định 168/2024/NĐ-CP): Không chấp hành yêu cầu kiểm tra về chất ma túy hoặc chất kích thích khác mà pháp luật cấm sử dụng của người... Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng, hình phạt bổ sung: tước quyền sử dụng giấy phép lái xe từ 22 tháng đến 24 tháng.\n- VP_OTO_ND168D6_K11DD (Điều 6 khoản 11 điểm đ Nghị định 168/2024/NĐ-CP): Điều khiển xe đi ngược chiều trên đường cao tốc, lùi xe trên đường cao tốc, quay đầu xe trên đường cao tốc,... Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng, trừ 10 điểm giấy phép lái xe.\n- VP_ND168D32_K15 (Điều 32 khoản 15 Nghị định 168/2024/NĐ-CP): Giao phương tiện hoặc để cho người làm công, người đại diện điều khiển phương tiện thực hiện hành vi vi phạm... Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng, trừ 8 điểm giấy phép lái xe, hình phạt bổ sung: tước quyền sử dụng giấy chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường và tem kiểm định của phương tiện từ 01 tháng đến 03 tháng (nếu phương tiện có thùng xe, khối lượng hàng hóa cho phép chuyên chở không đúng quy định); tước quyền sử dụng phù hiệu từ 01 tháng đến 03 tháng (nếu có); Việc trừ điểm giấy phép lái xe chỉ áp dụng trong trường hợp chủ phương tiện là người trực tiếp điều khiển phương tiện, biện pháp khắc phục hậu quả: buộc thực hiện điều chỉnh thùng xe theo đúng quy định hiện hành, đăng kiểm lại và điều chỉnh lại khối lượng hàng hóa cho phép chuyên chở ghi trong giấy chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường theo quy định hiện hành trước khi đưa phương tiện ra tham gia giao thông (nếu thùng xe, khối lượng hàng hóa cho phép chuyên chở không đúng quy định); nếu gây hư hại cầu, đường phải khôi phục lại tình trạng ban đầu đã bị thay đổi do vi phạm hành chính gây ra (Tổ chức là chủ phương tiện vi phạm bị phạt tiền từ 60.000.000 đồng đến 80.000.000 đồng).",
+  "id_tri_thuc_dung": [
+   "VP_OTO_ND168D6_K11A",
+   "VP_OTO_ND168D6_K11B",
+   "VP_OTO_ND168D6_K11C",
+   "VP_OTO_ND168D6_K11D",
+   "VP_OTO_ND168D6_K11DD",
+   "VP_ND168D32_K15"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 6 khoản 11 điểm a Nghị định 168/2024/NĐ-CP; Điều 6 khoản 11 điểm b Nghị định 168/2024/NĐ-CP; Điều 6 khoản 11 điểm c Nghị định 168/2024/NĐ-CP; Điều 6 khoản 11 điểm d Nghị định 168/2024/NĐ-CP; Điều 6 khoản 11 điểm đ Nghị định 168/2024/NĐ-CP; Điều 32 khoản 15 Nghị định 168/2024/NĐ-CP",
+  "do_kho": "trung_binh",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q091",
+  "cau_hoi": "Lỗi về đèn tín hiệu giao thông nào bị trừ 4 điểm bằng lái?",
+  "lop_bai_toan_dung": "P4_TRA_CUU_NGUOC",
+  "dap_an_chuan": "Có 2 hành vi thoả mãn:\n- VP_OTO_ND168D6_K9B (Điều 6 khoản 9 điểm b Nghị định 168/2024/NĐ-CP): Không chấp hành hiệu lệnh của đèn tín hiệu giao thông Phạt tiền từ 18.000.000 đồng đến 20.000.000 đồng, trừ 4 điểm giấy phép lái xe.\n- VP_MOTO_ND168D7_K7C (Điều 7 khoản 7 điểm c Nghị định 168/2024/NĐ-CP): Không chấp hành hiệu lệnh của đèn tín hiệu giao thông Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng, trừ 4 điểm giấy phép lái xe.",
+  "id_tri_thuc_dung": [
+   "VP_OTO_ND168D6_K9B",
+   "VP_MOTO_ND168D7_K7C"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 6 khoản 9 điểm b Nghị định 168/2024/NĐ-CP; Điều 7 khoản 7 điểm c Nghị định 168/2024/NĐ-CP",
+  "do_kho": "trung_binh",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q092",
+  "cau_hoi": "Có lỗi nào chỉ bị phạt cảnh cáo mà không phạt tiền không?",
+  "lop_bai_toan_dung": "P4_TRA_CUU_NGUOC",
+  "dap_an_chuan": "Có 1 hành vi thoả mãn:\n- VP_ND168D18_K1 (Điều 18 khoản 1 Nghị định 168/2024/NĐ-CP): Người từ đủ 14 tuổi đến dưới 16 tuổi điều khiển xe mô tô, xe gắn máy, các loại xe tương tự xe mô tô và các... Không áp dụng phạt tiền; hình thức xử phạt là phạt cảnh cáo.",
+  "id_tri_thuc_dung": [
+   "VP_ND168D18_K1"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 18 khoản 1 Nghị định 168/2024/NĐ-CP",
+  "do_kho": "kho",
+  "ghi_chu": "Tra cứu ngược theo hình thức xử phạt (cảnh cáo)."
+ },
+ {
+  "id": "Q093",
+  "cau_hoi": "Tối qua em đi nhậu về, bị CSGT thổi nồng độ cồn ra 0,3 mg/l khí thở, lúc đó em lại không đội mũ bảo hiểm nữa. Em đi xe máy thì tổng cộng bị phạt bao nhiêu?",
+  "lop_bai_toan_dung": "P5_SUY_DIEN_TINH_HUONG",
+  "dap_an_chuan": "Người vi phạm mắc 2 lỗi:\n(1) nồng độ cồn 0,3 mg/l khí thở (vượt quá 0,25 đến 0,4) [VP_MOTO_ND168D7_K8B - Điều 7 khoản 8 điểm b Nghị định 168/2024/NĐ-CP]: Phạt tiền từ 6.000.000 đồng đến 8.000.000 đồng, trừ 10 điểm giấy phép lái xe.\n(2) không đội mũ bảo hiểm [VP_MOTO_ND168D7_K2H - Điều 7 khoản 2 điểm h Nghị định 168/2024/NĐ-CP]: Phạt tiền từ 400.000 đồng đến 600.000 đồng.\nTổng hợp: phạt tiền từ 6.400.000 đồng đến 8.600.000 đồng, trừ tổng cộng 10 điểm giấy phép lái xe.",
+  "id_tri_thuc_dung": [
+   "VP_MOTO_ND168D7_K8B",
+   "VP_MOTO_ND168D7_K2H"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 7 khoản 8 điểm b Nghị định 168/2024/NĐ-CP; Điều 7 khoản 2 điểm h Nghị định 168/2024/NĐ-CP",
+  "do_kho": "kho",
+  "ghi_chu": "Tình huống 2 hành vi, có giá trị số cần suy diễn ngưỡng."
+ },
+ {
+  "id": "Q094",
+  "cau_hoi": "Em chạy xe máy vượt đèn đỏ, bị dừng xe thì mới nhớ là em chưa có bằng lái. Vậy em bị phạt tất cả bao nhiêu?",
+  "lop_bai_toan_dung": "P5_SUY_DIEN_TINH_HUONG",
+  "dap_an_chuan": "Người vi phạm mắc 2 lỗi:\n(1) không chấp hành hiệu lệnh đèn tín hiệu (vượt đèn đỏ) [VP_MOTO_ND168D7_K7C - Điều 7 khoản 7 điểm c Nghị định 168/2024/NĐ-CP]: Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng, trừ 4 điểm giấy phép lái xe.\n(2) không có giấy phép lái xe [VP_ND168D18_K5A - Điều 18 khoản 5 điểm a Nghị định 168/2024/NĐ-CP]: Phạt tiền từ 2.000.000 đồng đến 4.000.000 đồng, hình phạt bổ sung: thu hồi giấy phép lái xe không do cơ quan có thẩm quyền cấp, giấy phép lái xe không hợp lệ, biện pháp khắc phục hậu quả: buộc nộp lại giấy phép lái xe bị tẩy xóa.\nTổng hợp: phạt tiền từ 6.000.000 đồng đến 10.000.000 đồng, trừ tổng cộng 4 điểm giấy phép lái xe.",
+  "id_tri_thuc_dung": [
+   "VP_MOTO_ND168D7_K7C",
+   "VP_ND168D18_K5A"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 7 khoản 7 điểm c Nghị định 168/2024/NĐ-CP; Điều 18 khoản 5 điểm a Nghị định 168/2024/NĐ-CP",
+  "do_kho": "kho",
+  "ghi_chu": "Tình huống 2 hành vi thuộc 2 điều khác nhau (Điều 7 và Điều 18)."
+ },
+ {
+  "id": "Q095",
+  "cau_hoi": "Tôi lái ô tô vượt đèn đỏ và bị bắn tốc độ quá 25 km/h ở cùng một đoạn đường. Tôi bị phạt bao nhiêu và trừ mấy điểm?",
+  "lop_bai_toan_dung": "P5_SUY_DIEN_TINH_HUONG",
+  "dap_an_chuan": "Người vi phạm mắc 2 lỗi:\n(1) vượt đèn đỏ [VP_OTO_ND168D6_K9B - Điều 6 khoản 9 điểm b Nghị định 168/2024/NĐ-CP]: Phạt tiền từ 18.000.000 đồng đến 20.000.000 đồng, trừ 4 điểm giấy phép lái xe.\n(2) chạy quá tốc độ 25 km/h (trên 20 đến 35 km/h) [VP_OTO_ND168D6_K6A - Điều 6 khoản 6 điểm a Nghị định 168/2024/NĐ-CP]: Phạt tiền từ 6.000.000 đồng đến 8.000.000 đồng, trừ 4 điểm giấy phép lái xe.\nTổng hợp: phạt tiền từ 24.000.000 đồng đến 28.000.000 đồng, trừ tổng cộng 8 điểm giấy phép lái xe.",
+  "id_tri_thuc_dung": [
+   "VP_OTO_ND168D6_K9B",
+   "VP_OTO_ND168D6_K6A"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 6 khoản 9 điểm b Nghị định 168/2024/NĐ-CP; Điều 6 khoản 6 điểm a Nghị định 168/2024/NĐ-CP",
+  "do_kho": "kho",
+  "ghi_chu": "Tình huống có giá trị số + cộng dồn điểm trừ."
+ },
+ {
+  "id": "Q096",
+  "cau_hoi": "Nhóm em 4 đứa đi chung một xe máy, không ai đội mũ bảo hiểm, lại còn chạy quá tốc độ 15 km/h. Bị phạt bao nhiêu ạ?",
+  "lop_bai_toan_dung": "P5_SUY_DIEN_TINH_HUONG",
+  "dap_an_chuan": "Người vi phạm mắc 3 lỗi:\n(1) chở theo từ 03 người trở lên trên xe [VP_MOTO_ND168D7_K3B - Điều 7 khoản 3 điểm b Nghị định 168/2024/NĐ-CP]: Phạt tiền từ 600.000 đồng đến 800.000 đồng, trừ 2 điểm giấy phép lái xe.\n(2) không đội mũ bảo hiểm [VP_MOTO_ND168D7_K2H - Điều 7 khoản 2 điểm h Nghị định 168/2024/NĐ-CP]: Phạt tiền từ 400.000 đồng đến 600.000 đồng.\n(3) chạy quá tốc độ 15 km/h (từ 10 đến 20 km/h) [VP_MOTO_ND168D7_K4A - Điều 7 khoản 4 điểm a Nghị định 168/2024/NĐ-CP]: Phạt tiền từ 800.000 đồng đến 1.000.000 đồng.\nTổng hợp: phạt tiền từ 1.800.000 đồng đến 2.400.000 đồng, trừ tổng cộng 2 điểm giấy phép lái xe.",
+  "id_tri_thuc_dung": [
+   "VP_MOTO_ND168D7_K3B",
+   "VP_MOTO_ND168D7_K2H",
+   "VP_MOTO_ND168D7_K4A"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 7 khoản 3 điểm b Nghị định 168/2024/NĐ-CP; Điều 7 khoản 2 điểm h Nghị định 168/2024/NĐ-CP; Điều 7 khoản 4 điểm a Nghị định 168/2024/NĐ-CP",
+  "do_kho": "kho",
+  "ghi_chu": "Tình huống 3 hành vi, có giá trị số."
+ },
+ {
+  "id": "Q097",
+  "cau_hoi": "Anh tôi lái ô tô, đo nồng độ cồn 0,45 mg/l khí thở, lại không thắt dây an toàn. Anh ấy bị xử lý thế nào?",
+  "lop_bai_toan_dung": "P5_SUY_DIEN_TINH_HUONG",
+  "dap_an_chuan": "Người vi phạm mắc 2 lỗi:\n(1) nồng độ cồn 0,45 mg/l khí thở (vượt quá 0,4) [VP_OTO_ND168D6_K11A - Điều 6 khoản 11 điểm a Nghị định 168/2024/NĐ-CP]: Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng, hình phạt bổ sung: tước quyền sử dụng giấy phép lái xe từ 22 tháng đến 24 tháng.\n(2) không thắt dây đai an toàn khi lái xe [VP_OTO_ND168D6_K3K - Điều 6 khoản 3 điểm k Nghị định 168/2024/NĐ-CP]: Phạt tiền từ 800.000 đồng đến 1.000.000 đồng.\nTổng hợp: phạt tiền từ 30.800.000 đồng đến 41.000.000 đồng.",
+  "id_tri_thuc_dung": [
+   "VP_OTO_ND168D6_K11A",
+   "VP_OTO_ND168D6_K3K"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 6 khoản 11 điểm a Nghị định 168/2024/NĐ-CP; Điều 6 khoản 3 điểm k Nghị định 168/2024/NĐ-CP",
+  "do_kho": "kho",
+  "ghi_chu": "Có hình phạt bổ sung tước GPLX 22-24 tháng."
+ },
+ {
+  "id": "Q098",
+  "cau_hoi": "Em đi xe máy ngược chiều đường một chiều, tay thì đang cầm điện thoại. Tổng cộng phạt bao nhiêu?",
+  "lop_bai_toan_dung": "P5_SUY_DIEN_TINH_HUONG",
+  "dap_an_chuan": "Người vi phạm mắc 2 lỗi:\n(1) đi ngược chiều của đường một chiều [VP_MOTO_ND168D7_K7A - Điều 7 khoản 7 điểm a Nghị định 168/2024/NĐ-CP]: Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng, trừ 2 điểm giấy phép lái xe.\n(2) dùng tay cầm và sử dụng điện thoại khi lái xe [VP_MOTO_ND168D7_K4DD - Điều 7 khoản 4 điểm đ Nghị định 168/2024/NĐ-CP]: Phạt tiền từ 800.000 đồng đến 1.000.000 đồng, trừ 4 điểm giấy phép lái xe.\nTổng hợp: phạt tiền từ 4.800.000 đồng đến 7.000.000 đồng, trừ tổng cộng 6 điểm giấy phép lái xe.",
+  "id_tri_thuc_dung": [
+   "VP_MOTO_ND168D7_K7A",
+   "VP_MOTO_ND168D7_K4DD"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 7 khoản 7 điểm a Nghị định 168/2024/NĐ-CP; Điều 7 khoản 4 điểm đ Nghị định 168/2024/NĐ-CP",
+  "do_kho": "trung_binh",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q099",
+  "cau_hoi": "Tôi chạy ô tô vào làn dừng khẩn cấp trên cao tốc cho nhanh, đồng thời vượt quá tốc độ 12 km/h. Bị phạt sao?",
+  "lop_bai_toan_dung": "P5_SUY_DIEN_TINH_HUONG",
+  "dap_an_chuan": "Người vi phạm mắc 2 lỗi:\n(1) chạy ở làn dừng xe khẩn cấp của đường cao tốc [VP_OTO_ND168D6_K5D - Điều 6 khoản 5 điểm d Nghị định 168/2024/NĐ-CP]: Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng, trừ 2 điểm giấy phép lái xe.\n(2) chạy quá tốc độ 12 km/h (từ 10 đến 20 km/h) [VP_OTO_ND168D6_K5DD - Điều 6 khoản 5 điểm đ Nghị định 168/2024/NĐ-CP]: Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng, trừ 2 điểm giấy phép lái xe.\nTổng hợp: phạt tiền từ 8.000.000 đồng đến 12.000.000 đồng, trừ tổng cộng 4 điểm giấy phép lái xe.",
+  "id_tri_thuc_dung": [
+   "VP_OTO_ND168D6_K5D",
+   "VP_OTO_ND168D6_K5DD"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 6 khoản 5 điểm d Nghị định 168/2024/NĐ-CP; Điều 6 khoản 5 điểm đ Nghị định 168/2024/NĐ-CP",
+  "do_kho": "kho",
+  "ghi_chu": "Tình huống trên đường cao tốc, có giá trị số."
+ },
+ {
+  "id": "Q100",
+  "cau_hoi": "Xe máy của em không có gương chiếu hậu bên trái, em cũng không đội mũ bảo hiểm và không có bảo hiểm xe. Bị phạt tổng cộng bao nhiêu?",
+  "lop_bai_toan_dung": "P5_SUY_DIEN_TINH_HUONG",
+  "dap_an_chuan": "Người vi phạm mắc 3 lỗi:\n(1) xe không có gương chiếu hậu bên trái [VP_ND168D14_K1A - Điều 14 khoản 1 điểm a Nghị định 168/2024/NĐ-CP]: Phạt tiền từ 400.000 đồng đến 600.000 đồng.\n(2) không đội mũ bảo hiểm [VP_MOTO_ND168D7_K2H - Điều 7 khoản 2 điểm h Nghị định 168/2024/NĐ-CP]: Phạt tiền từ 400.000 đồng đến 600.000 đồng.\n(3) không có chứng nhận bảo hiểm bắt buộc còn hiệu lực [VP_ND168D18_K2B - Điều 18 khoản 2 điểm b Nghị định 168/2024/NĐ-CP]: Phạt tiền từ 200.000 đồng đến 300.000 đồng.\nTổng hợp: phạt tiền từ 1.000.000 đồng đến 1.500.000 đồng.",
+  "id_tri_thuc_dung": [
+   "VP_ND168D14_K1A",
+   "VP_MOTO_ND168D7_K2H",
+   "VP_ND168D18_K2B"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 14 khoản 1 điểm a Nghị định 168/2024/NĐ-CP; Điều 7 khoản 2 điểm h Nghị định 168/2024/NĐ-CP; Điều 18 khoản 2 điểm b Nghị định 168/2024/NĐ-CP",
+  "do_kho": "kho",
+  "ghi_chu": "Tình huống 3 hành vi thuộc 3 điều khác nhau."
+ },
+ {
+  "id": "Q101",
+  "cau_hoi": "Xe ô tô của tôi bị che mất biển số và cũng đã quá hạn đăng kiểm hơn một tháng. Nếu bị kiểm tra thì phạt thế nào?",
+  "lop_bai_toan_dung": "P5_SUY_DIEN_TINH_HUONG",
+  "dap_an_chuan": "Người vi phạm mắc 2 lỗi:\n(1) gắn biển số bị che lấp, không rõ chữ số [VP_ND168D13_K8B - Điều 13 khoản 8 điểm b Nghị định 168/2024/NĐ-CP]: Phạt tiền từ 20.000.000 đồng đến 26.000.000 đồng, trừ 6 điểm giấy phép lái xe, biện pháp khắc phục hậu quả: buộc lắp đầy đủ thiết bị hoặc thay thế thiết bị đủ tiêu chuẩn, quy chuẩn an toàn kỹ thuật hoặc khôi phục lại tính năng kỹ thuật của thiết bị theo quy định; buộc thực hiện đúng quy định về biển số hoặc khôi phục lại tình trạng ban đầu đã bị thay đổi do vi phạm hành chính gây ra.\n(2) không có/hết hiệu lực giấy chứng nhận kiểm định từ 01 tháng trở lên [VP_ND168D13_K6B - Điều 13 khoản 6 điểm b Nghị định 168/2024/NĐ-CP]: Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng, trừ 2 điểm giấy phép lái xe.\nTổng hợp: phạt tiền từ 24.000.000 đồng đến 32.000.000 đồng, trừ tổng cộng 8 điểm giấy phép lái xe.",
+  "id_tri_thuc_dung": [
+   "VP_ND168D13_K8B",
+   "VP_ND168D13_K6B"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 13 khoản 8 điểm b Nghị định 168/2024/NĐ-CP; Điều 13 khoản 6 điểm b Nghị định 168/2024/NĐ-CP",
+  "do_kho": "kho",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q102",
+  "cau_hoi": "Thanh niên đi xe máy lạng lách đánh võng, đo nồng độ cồn được 0,5 mg/l khí thở thì bị xử lý ra sao?",
+  "lop_bai_toan_dung": "P5_SUY_DIEN_TINH_HUONG",
+  "dap_an_chuan": "Người vi phạm mắc 2 lỗi:\n(1) lạng lách, đánh võng trên đường bộ [VP_MOTO_ND168D7_K9A - Điều 7 khoản 9 điểm a Nghị định 168/2024/NĐ-CP]: Phạt tiền từ 8.000.000 đồng đến 10.000.000 đồng, hình phạt bổ sung: tước quyền sử dụng giấy phép lái xe từ 10 tháng đến 12 tháng.\n(2) nồng độ cồn 0,5 mg/l khí thở (vượt quá 0,4) [VP_MOTO_ND168D7_K9D - Điều 7 khoản 9 điểm d Nghị định 168/2024/NĐ-CP]: Phạt tiền từ 8.000.000 đồng đến 10.000.000 đồng, hình phạt bổ sung: tước quyền sử dụng giấy phép lái xe từ 22 tháng đến 24 tháng.\nTổng hợp: phạt tiền từ 16.000.000 đồng đến 20.000.000 đồng.",
+  "id_tri_thuc_dung": [
+   "VP_MOTO_ND168D7_K9A",
+   "VP_MOTO_ND168D7_K9D"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 7 khoản 9 điểm a Nghị định 168/2024/NĐ-CP; Điều 7 khoản 9 điểm d Nghị định 168/2024/NĐ-CP",
+  "do_kho": "kho",
+  "ghi_chu": "Có giá trị số + hai lần tước GPLX."
+ },
+ {
+  "id": "Q103",
+  "cau_hoi": "Bác em đi xe đạp, vượt đèn đỏ, mà trước đó có uống rượu, thổi ra 0,3 mg/l khí thở. Xe đạp thì có bị phạt không, bao nhiêu?",
+  "lop_bai_toan_dung": "P5_SUY_DIEN_TINH_HUONG",
+  "dap_an_chuan": "Người vi phạm mắc 2 lỗi:\n(1) không chấp hành hiệu lệnh đèn tín hiệu [VP_ND168D9_K2DD - Điều 9 khoản 2 điểm đ Nghị định 168/2024/NĐ-CP]: Phạt tiền từ 150.000 đồng đến 250.000 đồng.\n(2) nồng độ cồn 0,3 mg/l khí thở (vượt quá 0,25 đến 0,4) [VP_ND168D9_K3D - Điều 9 khoản 3 điểm d Nghị định 168/2024/NĐ-CP]: Phạt tiền từ 300.000 đồng đến 400.000 đồng.\nTổng hợp: phạt tiền từ 450.000 đồng đến 650.000 đồng.",
+  "id_tri_thuc_dung": [
+   "VP_ND168D9_K2DD",
+   "VP_ND168D9_K3D"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 9 khoản 2 điểm đ Nghị định 168/2024/NĐ-CP; Điều 9 khoản 3 điểm d Nghị định 168/2024/NĐ-CP",
+  "do_kho": "kho",
+  "ghi_chu": "Tình huống với xe đạp (không có điểm GPLX để trừ)."
+ },
+ {
+  "id": "Q104",
+  "cau_hoi": "Tôi lái ô tô đi ngược chiều, lúc đó có xe cứu thương hú còi phía sau mà tôi không nhường đường. Bị phạt bao nhiêu?",
+  "lop_bai_toan_dung": "P5_SUY_DIEN_TINH_HUONG",
+  "dap_an_chuan": "Người vi phạm mắc 2 lỗi:\n(1) đi ngược chiều của đường một chiều [VP_OTO_ND168D6_K9D - Điều 6 khoản 9 điểm d Nghị định 168/2024/NĐ-CP]: Phạt tiền từ 18.000.000 đồng đến 20.000.000 đồng, trừ 4 điểm giấy phép lái xe.\n(2) không nhường đường cho xe ưu tiên đang làm nhiệm vụ [VP_OTO_ND168D6_K6B - Điều 6 khoản 6 điểm b Nghị định 168/2024/NĐ-CP]: Phạt tiền từ 6.000.000 đồng đến 8.000.000 đồng, trừ 4 điểm giấy phép lái xe.\nTổng hợp: phạt tiền từ 24.000.000 đồng đến 28.000.000 đồng, trừ tổng cộng 8 điểm giấy phép lái xe.",
+  "id_tri_thuc_dung": [
+   "VP_OTO_ND168D6_K9D",
+   "VP_OTO_ND168D6_K6B"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 6 khoản 9 điểm d Nghị định 168/2024/NĐ-CP; Điều 6 khoản 6 điểm b Nghị định 168/2024/NĐ-CP",
+  "do_kho": "trung_binh",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q105",
+  "cau_hoi": "Em đi xe máy gây tai nạn rồi hoảng quá bỏ chạy, lúc đo nồng độ cồn thì ra 0,3 mg/l khí thở. Em bị phạt thế nào?",
+  "lop_bai_toan_dung": "P5_SUY_DIEN_TINH_HUONG",
+  "dap_an_chuan": "Người vi phạm mắc 2 lỗi:\n(1) gây tai nạn giao thông rồi bỏ chạy, không trợ giúp người bị nạn [VP_MOTO_ND168D7_K9C - Điều 7 khoản 9 điểm c Nghị định 168/2024/NĐ-CP]: Phạt tiền từ 8.000.000 đồng đến 10.000.000 đồng, trừ 6 điểm giấy phép lái xe.\n(2) nồng độ cồn 0,3 mg/l khí thở (vượt quá 0,25 đến 0,4) [VP_MOTO_ND168D7_K8B - Điều 7 khoản 8 điểm b Nghị định 168/2024/NĐ-CP]: Phạt tiền từ 6.000.000 đồng đến 8.000.000 đồng, trừ 10 điểm giấy phép lái xe.\nTổng hợp: phạt tiền từ 14.000.000 đồng đến 18.000.000 đồng, trừ tổng cộng 16 điểm giấy phép lái xe.",
+  "id_tri_thuc_dung": [
+   "VP_MOTO_ND168D7_K9C",
+   "VP_MOTO_ND168D7_K8B"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 7 khoản 9 điểm c Nghị định 168/2024/NĐ-CP; Điều 7 khoản 8 điểm b Nghị định 168/2024/NĐ-CP",
+  "do_kho": "kho",
+  "ghi_chu": "Tình huống nghiêm trọng, cộng dồn 16 điểm trừ."
+ },
+ {
+  "id": "Q106",
+  "cau_hoi": "Ô tô của tôi chạy quá tốc độ 40 km/h, lúc đó tôi còn cầm điện thoại trên tay. Tổng mức phạt là bao nhiêu?",
+  "lop_bai_toan_dung": "P5_SUY_DIEN_TINH_HUONG",
+  "dap_an_chuan": "Người vi phạm mắc 2 lỗi:\n(1) chạy quá tốc độ 40 km/h (trên 35 km/h) [VP_OTO_ND168D6_K7A - Điều 6 khoản 7 điểm a Nghị định 168/2024/NĐ-CP]: Phạt tiền từ 12.000.000 đồng đến 14.000.000 đồng, trừ 6 điểm giấy phép lái xe.\n(2) dùng tay cầm và sử dụng điện thoại khi lái xe [VP_OTO_ND168D6_K5H - Điều 6 khoản 5 điểm h Nghị định 168/2024/NĐ-CP]: Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng, trừ 4 điểm giấy phép lái xe.\nTổng hợp: phạt tiền từ 16.000.000 đồng đến 20.000.000 đồng, trừ tổng cộng 10 điểm giấy phép lái xe.",
+  "id_tri_thuc_dung": [
+   "VP_OTO_ND168D6_K7A",
+   "VP_OTO_ND168D6_K5H"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 6 khoản 7 điểm a Nghị định 168/2024/NĐ-CP; Điều 6 khoản 5 điểm h Nghị định 168/2024/NĐ-CP",
+  "do_kho": "trung_binh",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q107",
+  "cau_hoi": "Em trót chạy xe máy vào đường cao tốc, lại không đội mũ bảo hiểm nữa. Vậy tổng cộng em bị phạt bao nhiêu và trừ mấy điểm?",
+  "lop_bai_toan_dung": "P5_SUY_DIEN_TINH_HUONG",
+  "dap_an_chuan": "Người vi phạm mắc 2 lỗi:\n(1) đi vào đường cao tốc [VP_MOTO_ND168D7_K7B - Điều 7 khoản 7 điểm b Nghị định 168/2024/NĐ-CP]: Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng, trừ 6 điểm giấy phép lái xe.\n(2) không đội mũ bảo hiểm [VP_MOTO_ND168D7_K2H - Điều 7 khoản 2 điểm h Nghị định 168/2024/NĐ-CP]: Phạt tiền từ 400.000 đồng đến 600.000 đồng.\nTổng hợp: phạt tiền từ 4.400.000 đồng đến 6.600.000 đồng, trừ tổng cộng 6 điểm giấy phép lái xe.",
+  "id_tri_thuc_dung": [
+   "VP_MOTO_ND168D7_K7B",
+   "VP_MOTO_ND168D7_K2H"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 7 khoản 7 điểm b Nghị định 168/2024/NĐ-CP; Điều 7 khoản 2 điểm h Nghị định 168/2024/NĐ-CP",
+  "do_kho": "trung_binh",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q108",
+  "cau_hoi": "Điều 7 khoản 7 điểm c Nghị định 168/2024/NĐ-CP quy định hành vi gì, phạt bao nhiêu?",
+  "lop_bai_toan_dung": "P6_TRA_CUU_CAN_CU",
+  "dap_an_chuan": "VP_MOTO_ND168D7_K7C - Không chấp hành hiệu lệnh của đèn tín hiệu giao thông: Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng, trừ 4 điểm giấy phép lái xe.",
+  "id_tri_thuc_dung": [
+   "VP_MOTO_ND168D7_K7C"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 7 khoản 7 điểm c Nghị định 168/2024/NĐ-CP",
+  "do_kho": "de",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q109",
+  "cau_hoi": "Điều 6 khoản 9 điểm a Nghị định 168/2024/NĐ-CP nói về lỗi gì?",
+  "lop_bai_toan_dung": "P6_TRA_CUU_CAN_CU",
+  "dap_an_chuan": "VP_OTO_ND168D6_K9A - Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn vượt quá 50 miligam đến 80 miligam/100 mililít máu hoặc vượt quá 0,25 miligam đến...: Phạt tiền từ 18.000.000 đồng đến 20.000.000 đồng, trừ 10 điểm giấy phép lái xe.",
+  "id_tri_thuc_dung": [
+   "VP_OTO_ND168D6_K9A"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 6 khoản 9 điểm a Nghị định 168/2024/NĐ-CP",
+  "do_kho": "de",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q110",
+  "cau_hoi": "Điều 14 khoản 3 điểm a Nghị định 168/2024/NĐ-CP phạt bao nhiêu tiền?",
+  "lop_bai_toan_dung": "P6_TRA_CUU_CAN_CU",
+  "dap_an_chuan": "VP_ND168D14_K3A - Điều khiển xe không gắn biển số (đối với loại xe có quy định phải gắn biển số); gắn biển số không đúng với chứng nhận đăng ký xe hoặc gắn biển số...: Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng, trừ 6 điểm giấy phép lái xe, hình phạt bổ sung: tịch thu biển số xe.",
+  "id_tri_thuc_dung": [
+   "VP_ND168D14_K3A"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 14 khoản 3 điểm a Nghị định 168/2024/NĐ-CP",
+  "do_kho": "de",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q111",
+  "cau_hoi": "Điều 6 khoản 11 điểm a Nghị định 168/2024/NĐ-CP là lỗi gì vậy?",
+  "lop_bai_toan_dung": "P6_TRA_CUU_CAN_CU",
+  "dap_an_chuan": "VP_OTO_ND168D6_K11A - Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn vượt quá 80 miligam/100 mililít máu hoặc vượt quá 0,4 miligam/1 lít khí thở: Phạt tiền từ 30.000.000 đồng đến 40.000.000 đồng, hình phạt bổ sung: tước quyền sử dụng giấy phép lái xe từ 22 tháng đến 24 tháng.",
+  "id_tri_thuc_dung": [
+   "VP_OTO_ND168D6_K11A"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 6 khoản 11 điểm a Nghị định 168/2024/NĐ-CP",
+  "do_kho": "trung_binh",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q112",
+  "cau_hoi": "Điều 18 khoản 4 điểm a Nghị định 168/2024/NĐ-CP xử phạt hành vi nào?",
+  "lop_bai_toan_dung": "P6_TRA_CUU_CAN_CU",
+  "dap_an_chuan": "VP_ND168D18_K4A - Người từ đủ 16 tuổi đến dưới 18 tuổi điều khiển xe mô tô và các loại xe tương tự xe mô tô: Phạt tiền từ 400.000 đồng đến 600.000 đồng.",
+  "id_tri_thuc_dung": [
+   "VP_ND168D18_K4A"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 18 khoản 4 điểm a Nghị định 168/2024/NĐ-CP",
+  "do_kho": "trung_binh",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q113",
+  "cau_hoi": "Điều 12 khoản 10 Nghị định 168/2024/NĐ-CP phạt bao nhiêu?",
+  "lop_bai_toan_dung": "P6_TRA_CUU_CAN_CU",
+  "dap_an_chuan": "VP_ND168D12_K10 - Không chấp hành yêu cầu kiểm tra, kiểm soát của người thi hành công vụ về bảo đảm trật tự, an toàn giao thông đường bộ, trừ các hành vi vi phạm quy...: Phạt tiền từ 4.000.000 đồng đến 6.000.000 đồng (Tổ chức vi phạm bị phạt tiền từ 8.000.000 đồng đến 12.000.000 đồng).",
+  "id_tri_thuc_dung": [
+   "VP_ND168D12_K10"
+  ],
+  "loai_tri_thuc": "violation",
+  "nguon": "Điều 12 khoản 10 Nghị định 168/2024/NĐ-CP",
+  "do_kho": "trung_binh",
+  "ghi_chu": "Căn cứ chỉ có điều - khoản, không có điểm."
+ },
+ {
+  "id": "Q114",
+  "cau_hoi": "Cho tôi xem nội dung Điều 33 khoản 1 Luật Trật tự, an toàn giao thông đường bộ.",
+  "lop_bai_toan_dung": "P6_TRA_CUU_CAN_CU",
+  "dap_an_chuan": "R81 - Số người được chở trên xe mô tô hai bánh, xe gắn máy: Người lái xe mô tô hai bánh, xe gắn máy chỉ được chở một người, trừ những trường hợp sau thì được chở tối đa hai người: a) Chở người bệnh đi cấp cứu; b) Áp giải người có hành vi vi phạm pháp luật; c) Trẻ em dưới 12 tuổi; d) Người già yếu hoặc người khuyết tật.",
+  "id_tri_thuc_dung": [
+   "R81"
+  ],
+  "loai_tri_thuc": "rule",
+  "nguon": "Điều 33 khoản 1 Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "trung_binh",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q115",
+  "cau_hoi": "Điều 11 khoản 4 điểm c Luật 36/2024/QH15 quy định thế nào?",
+  "lop_bai_toan_dung": "P6_TRA_CUU_CAN_CU",
+  "dap_an_chuan": "R19 - Chấp hành tín hiệu đèn màu đỏ: Tín hiệu đèn màu đỏ là cấm đi.",
+  "id_tri_thuc_dung": [
+   "R19"
+  ],
+  "loai_tri_thuc": "rule",
+  "nguon": "Điều 11 khoản 4 điểm c Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "trung_binh",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q116",
+  "cau_hoi": "Tôi muốn tìm hiểu chung về mũ bảo hiểm khi tham gia giao thông.",
+  "lop_bai_toan_dung": "P7_TRA_CUU_LIEN_QUAN",
+  "dap_an_chuan": "Người lái xe, người được chở trên xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy phải đội mũ bảo hiểm theo đúng quy chuẩn kỹ thuật quốc gia và cài quai đúng quy cách.",
+  "id_tri_thuc_dung": [
+   "R82"
+  ],
+  "loai_tri_thuc": "rule",
+  "nguon": "Điều 33 khoản 2 Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "trung_binh",
+  "ghi_chu": "Truy vấn dạng chủ đề, không hỏi mức phạt cũng không hỏi định nghĩa."
+ },
+ {
+  "id": "Q117",
+  "cau_hoi": "Cho tôi thông tin liên quan đến điểm của giấy phép lái xe.",
+  "lop_bai_toan_dung": "P7_TRA_CUU_LIEN_QUAN",
+  "dap_an_chuan": "Điểm của giấy phép lái xe được dùng để quản lý việc chấp hành pháp luật về trật tự, an toàn giao thông đường bộ của người lái xe trên hệ thống cơ sở dữ liệu về trật tự, an toàn giao thông đường bộ, bao gồm 12 điểm. Số điểm trừ mỗi lần vi phạm tùy thuộc tính chất, mức độ của hành vi vi phạm pháp luật về trật tự, an toàn giao thông đường bộ. Dữ liệu về điểm trừ giấy phép lái xe của người vi phạm sẽ được cập nhật vào hệ thống cơ sở dữ liệu ngay sau khi quyết định xử phạt có hiệu lực thi hành và thông báo cho người bị trừ điểm giấy phép lái xe biết.",
+  "id_tri_thuc_dung": [
+   "KN_DIEM_GIAY_PHEP_LAI_XE"
+  ],
+  "loai_tri_thuc": "concept",
+  "nguon": "Điều 58 khoản 1 Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "trung_binh",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q118",
+  "cau_hoi": "Xe ưu tiên.",
+  "lop_bai_toan_dung": "P7_TRA_CUU_LIEN_QUAN",
+  "dap_an_chuan": "Xe ưu tiên gồm xe chữa cháy của Cảnh sát phòng cháy, chữa cháy và cứu nạn, cứu hộ và xe chữa cháy của các lực lượng khác được huy động đi làm nhiệm vụ chữa cháy; xe của lực lượng quân sự, công an và kiểm sát đi làm nhiệm vụ khẩn cấp; đoàn xe có xe Cảnh sát giao thông dẫn đường; xe cứu thương đi làm nhiệm vụ cấp cứu; xe hộ đê đi làm nhiệm vụ; xe đi làm nhiệm vụ cứu nạn, cứu hộ, khắc phục sự cố thiên tai, dịch bệnh hoặc xe đi làm nhiệm vụ trong tình trạng khẩn cấp theo quy định của pháp luật; đoàn xe tang.",
+  "id_tri_thuc_dung": [
+   "KN_XE_UU_TIEN"
+  ],
+  "loai_tri_thuc": "concept",
+  "nguon": "Điều 27 khoản 1 Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "trung_binh",
+  "ghi_chu": "Truy vấn cụt, chỉ có từ khoá."
+ },
+ {
+  "id": "Q119",
+  "cau_hoi": "Trẻ em đi ô tô thì cần lưu ý những gì?",
+  "lop_bai_toan_dung": "P7_TRA_CUU_LIEN_QUAN",
+  "dap_an_chuan": "Khi chở trẻ em dưới 10 tuổi và chiều cao dưới 1,35 mét trên xe ô tô, người lái xe không được cho trẻ em ngồi cùng hàng ghế, trừ xe ô tô chỉ có một hàng ghế; người lái xe phải sử dụng, hướng dẫn sử dụng thiết bị an toàn phù hợp cho trẻ em, trừ xe ô tô kinh doanh vận tải hành khách.",
+  "id_tri_thuc_dung": [
+   "R15"
+  ],
+  "loai_tri_thuc": "rule",
+  "nguon": "Điều 10 khoản 3 Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "trung_binh",
+  "ghi_chu": null
+ },
+ {
+  "id": "Q120",
+  "cau_hoi": "Tôi cần thông tin về việc dẫn dắt vật nuôi trên đường bộ.",
+  "lop_bai_toan_dung": "P7_TRA_CUU_LIEN_QUAN",
+  "dap_an_chuan": "Người điều khiển, dẫn dắt vật nuôi, điều khiển xe vật nuôi kéo đi trên đường bộ phải cho vật nuôi đi sát mép đường bên phải; trường hợp cần cho vật nuôi đi ngang qua đường thì phải quan sát và chỉ được đi qua đường khi có đủ điều kiện an toàn; không được gây cản trở cho người và phương tiện tham gia giao thông đường bộ khác. 2. Không được điều khiển, dẫn dắt vật nuôi, điều khiển xe vật nuôi kéo đi vào làn đường dành cho xe cơ giới. 3. Không được thả vật nuôi trên đường bộ.",
+  "id_tri_thuc_dung": [
+   "R80"
+  ],
+  "loai_tri_thuc": "rule",
+  "nguon": "Điều 32 Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+  "do_kho": "trung_binh",
+  "ghi_chu": null
+ }
+]

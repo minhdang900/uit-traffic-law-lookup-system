@@ -1,0 +1,40 @@
+[
+ {
+  "id": "LUAT_36_2024",
+  "ten": "Luat Trat tu, an toan giao thong duong bo",
+  "ten_vn": "Luật Trật tự, an toàn giao thông đường bộ",
+  "so_hieu": "36/2024/QH15",
+  "ngay_ban_hanh": "2024-06-27",
+  "ngay_hieu_luc": "2025-01-01",
+  "co_quan": "Quốc hội",
+  "hop_nhat": "Văn bản hợp nhất 55/VBHN-VPQH ngày 23/3/2026",
+  "sua_doi_boi": [
+   "Luật 118/2025/QH15 (hiệu lực 01/7/2026)"
+  ],
+  "vai_tro": "van_ban_chinh"
+ },
+ {
+  "id": "ND_168_2024",
+  "ten": "Nghi dinh quy dinh xu phat vi pham hanh chinh ve trat tu, an toan giao thong trong linh vuc giao thong duong bo; tru diem, phuc hoi diem giay phep lai xe",
+  "ten_vn": "Nghị định quy định xử phạt vi phạm hành chính về trật tự, an toàn giao thông trong lĩnh vực giao thông đường bộ; trừ điểm, phục hồi điểm giấy phép lái xe",
+  "so_hieu": "168/2024/NĐ-CP",
+  "ngay_ban_hanh": "2024-12-26",
+  "ngay_hieu_luc": "2025-01-01",
+  "co_quan": "Chính phủ",
+  "sua_doi_boi": [
+   "Nghị định 238/2026/NĐ-CP (hiệu lực 15/8/2026)"
+  ],
+  "vai_tro": "van_ban_che_tai"
+ },
+ {
+  "id": "ND_238_2026",
+  "ten": "Nghi dinh sua doi, bo sung mot so dieu cua Nghi dinh so 168/2024/ND-CP",
+  "ten_vn": "Nghị định sửa đổi, bổ sung một số điều của Nghị định số 168/2024/NĐ-CP",
+  "so_hieu": "238/2026/NĐ-CP",
+  "ngay_ban_hanh": "2026-06-26",
+  "ngay_hieu_luc": "2026-08-15",
+  "co_quan": "Chính phủ",
+  "sua_doi_boi": [],
+  "vai_tro": "van_ban_sua_doi"
+ }
+]
