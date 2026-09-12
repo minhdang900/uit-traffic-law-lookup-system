@@ -372,9 +372,11 @@
   "text_search": "quy tắc chở trẻ em dưới 10 tuổi và cao dưới 1,35 mét trên xe ô tô khi chở trẻ em dưới 10 tuổi và chiều cao dưới 1,35 mét trên xe ô tô, người lái xe không được cho trẻ em ngồi cùng hàng ghế, trừ xe ô tô chỉ có một hàng ghế người lái xe phải sử dụng, hướng dẫn sử dụng thiết bị an toàn phù hợp cho trẻ em, trừ xe ô tô kinh doanh vận tải hành khách. xe ô tô chở trẻ em dưới 10 tuổi và chiều cao dưới 1,35 mét xe có nhiều hơn một hàng ghế không phải xe ô tô kinh doanh vận tải hành khách người lái xe không được cho trẻ em ngồi cùng hàng ghế với người lái xe người lái xe phải sử dụng, hướng dẫn sử dụng thiết bị an toàn phù hợp cho trẻ em",
   "text_search_kd": "quy tac cho tre em duoi 10 tuoi va cao duoi 1,35 met tren xe o to khi cho tre em duoi 10 tuoi va chieu cao duoi 1,35 met tren xe o to, nguoi lai xe khong duoc cho tre em ngoi cung hang ghe, tru xe o to chi co mot hang ghe nguoi lai xe phai su dung, huong dan su dung thiet bi an toan phu hop cho tre em, tru xe o to kinh doanh van tai hanh khach. xe o to cho tre em duoi 10 tuoi va chieu cao duoi 1,35 met xe co nhieu hon mot hang ghe khong phai xe o to kinh doanh van tai hanh khach nguoi lai xe khong duoc cho tre em ngoi cung hang ghe voi nguoi lai xe nguoi lai xe phai su dung, huong dan su dung thiet bi an toan phu hop cho tre em",
   "hieu_luc": {
-   "tu": "2025-01-01",
+   "tu": "2026-07-01",
    "den": null
-  }
+  },
+  "sua_doi_boi": "Luật 118/2025/QH15 Điều 7 khoản 3 (sửa đổi, bổ sung Điều 10 khoản 3), hiệu lực từ 01/7/2026",
+  "ghi_chu": "Nguyên văn đang lưu là bản SAU sửa đổi, lấy từ Văn bản hợp nhất 55/VBHN-VPQH ngày 23/3/2026. Bản trước sửa đổi chưa thu thập nên không lưu nguyen_van_truoc_sua_doi."
  },
  {
   "id": "R16",
@@ -2195,9 +2197,11 @@
   "text_search": "bắt buộc lắp thiết bị giám sát hành trình và thiết bị ghi nhận hình ảnh xe ô tô kinh doanh vận tải hàng hóa, xe ô tô kinh doanh vận tải hành khách dưới 08 chỗ không kể chỗ của người lái xe , xe ô tô đầu kéo, xe cứu thương, xe vận tải nội bộ phải lắp thiết bị giám sát hành trình, thiết bị ghi nhận hình ảnh người lái xe. xe ô tô kinh doanh vận tải hành khách từ 08 chỗ trở lên không kể chỗ của người lái xe phải lắp thiết bị giám sát hành trình, thiết bị ghi nhận hình ảnh người lái xe, thiết bị ghi nhận hình ảnh khoang chở khách. xe ô tô kinh doanh vận tải hàng hóa, xe ô tô kinh doanh vận tải hành khách dưới 08 chỗ không kể chỗ của người lái xe , xe ô tô đầu kéo, xe cứu thương, xe vận tải nội bộ hoặc xe ô tô kinh doanh vận tải hành khách từ 08 chỗ trở lên không kể chỗ của người lái xe nhóm thứ nhất phải lắp thiết bị giám sát hành trình và thiết bị ghi nhận hình ảnh người lái xe nhóm thứ hai phải lắp thiết bị giám sát hành trình, thiết bị ghi nhận hình ảnh người lái xe và thiết bị ghi nhận hình ảnh khoang chở khách",
   "text_search_kd": "bat buoc lap thiet bi giam sat hanh trinh va thiet bi ghi nhan hinh anh xe o to kinh doanh van tai hang hoa, xe o to kinh doanh van tai hanh khach duoi 08 cho khong ke cho cua nguoi lai xe , xe o to dau keo, xe cuu thuong, xe van tai noi bo phai lap thiet bi giam sat hanh trinh, thiet bi ghi nhan hinh anh nguoi lai xe. xe o to kinh doanh van tai hanh khach tu 08 cho tro len khong ke cho cua nguoi lai xe phai lap thiet bi giam sat hanh trinh, thiet bi ghi nhan hinh anh nguoi lai xe, thiet bi ghi nhan hinh anh khoang cho khach. xe o to kinh doanh van tai hang hoa, xe o to kinh doanh van tai hanh khach duoi 08 cho khong ke cho cua nguoi lai xe , xe o to dau keo, xe cuu thuong, xe van tai noi bo hoac xe o to kinh doanh van tai hanh khach tu 08 cho tro len khong ke cho cua nguoi lai xe nhom thu nhat phai lap thiet bi giam sat hanh trinh va thiet bi ghi nhan hinh anh nguoi lai xe nhom thu hai phai lap thiet bi giam sat hanh trinh, thiet bi ghi nhan hinh anh nguoi lai xe va thiet bi ghi nhan hinh anh khoang cho khach",
   "hieu_luc": {
-   "tu": "2025-01-01",
+   "tu": "2026-07-01",
    "den": null
-  }
+  },
+  "sua_doi_boi": "Luật 118/2025/QH15 Điều 7 khoản 6 (sửa đổi, bổ sung Điều 35 khoản 2), hiệu lực từ 01/7/2026",
+  "ghi_chu": "Nguyên văn đang lưu là bản SAU sửa đổi, lấy từ Văn bản hợp nhất 55/VBHN-VPQH ngày 23/3/2026. Bản trước sửa đổi chưa thu thập nên không lưu nguyen_van_truoc_sua_doi."
  },
  {
   "id": "R88",
