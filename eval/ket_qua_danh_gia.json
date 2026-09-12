@@ -10,7 +10,7 @@
   "precision_macro": 0.3375,
   "recall_macro": 0.9306,
   "f1_macro": 0.4401,
-  "thoi_gian_tb_ms": 6.7,
+  "thoi_gian_tb_ms": 6.2,
   "theo_lop_bai_toan": {
    "P1_TRA_CUU_KHAI_NIEM": {
     "n": 20,

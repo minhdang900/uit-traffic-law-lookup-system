@@ -21,6 +21,13 @@ Lớp **CS106.F31.CN2** · **Nhóm 7** · GVHD: **PGS.TS. Nguyễn Đình Hiển
 Danh sách đầy đủ: [`docs/thanh_vien.json`](docs/thanh_vien.json) ·
 [`docs/danh_sach_nhom.csv`](docs/danh_sach_nhom.csv) (mở được bằng Excel)
 
+## Tài liệu
+
+| Tài liệu | Nội dung |
+|---|---|
+| [`docs/doi_chieu_de_tai_4.md`](docs/doi_chieu_de_tai_4.md) | Đối chiếu từng dòng yêu cầu đề bài với bằng chứng đo được |
+| [`docs/thiet_ke_giai_phap.md`](docs/thiet_ke_giai_phap.md) | Mô hình tri thức, kiến trúc, thuật giải B1–B6, hàm điểm lai |
+
 ## Mô hình tri thức
 
 Hệ thống biểu diễn tri thức pháp luật theo mô hình năm thành phần:
