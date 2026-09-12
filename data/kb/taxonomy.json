@@ -1,0 +1,189 @@
+{
+ "linh_vuc": {
+  "LV_QUY_TAC": {
+   "ten": "Quy tắc giao thông đường bộ",
+   "nhom": [
+    "den_tin_hieu",
+    "bien_bao_hieu",
+    "hieu_lenh",
+    "lan_duong",
+    "nguoc_chieu",
+    "toc_do",
+    "khoang_cach",
+    "vuot_xe",
+    "chuyen_huong",
+    "quay_dau",
+    "lui_xe",
+    "nhuong_duong",
+    "dung_do",
+    "duong_cao_toc",
+    "ham_duong_bo",
+    "xe_uu_tien",
+    "khu_vuc_cam",
+    "mo_cua_xe",
+    "coi",
+    "den_chieu_sang",
+    "keo_xe",
+    "can_tro_giao_thong",
+    "long_duong_via_he",
+    "via_he"
+   ]
+  },
+  "LV_AN_TOAN": {
+   "ten": "An toàn của người tham gia giao thông",
+   "nhom": [
+    "nong_do_con",
+    "ma_tuy",
+    "mu_bao_hiem",
+    "day_an_toan",
+    "an_toan_tre_em",
+    "dien_thoai",
+    "lang_lach",
+    "cho_qua_so_nguoi",
+    "nguy_hiem",
+    "tai_nan",
+    "hanh_khach"
+   ]
+  },
+  "LV_NGUOI_LAI": {
+   "ten": "Điều kiện của người điều khiển phương tiện",
+   "nhom": [
+    "gplx",
+    "giay_to",
+    "do_tuoi",
+    "giao_xe",
+    "gia_mao",
+    "chong_doi",
+    "bao_hiem"
+   ]
+  },
+  "LV_PHUONG_TIEN": {
+   "ten": "Điều kiện của phương tiện tham gia giao thông",
+   "nhom": [
+    "thiet_bi_phuong_tien",
+    "bien_so",
+    "cai_tao_xe",
+    "dang_kiem",
+    "nien_han",
+    "xe_tu_che",
+    "khi_thai_tieng_on",
+    "thiet_bi_giam_sat"
+   ]
+  },
+  "LV_VAN_TAI": {
+   "ten": "Vận tải đường bộ và hàng hoá",
+   "nhom": [
+    "qua_tai",
+    "cong_kenh",
+    "hang_nguy_hiem",
+    "pha_hoai_cong_trinh"
+   ]
+  },
+  "LV_KHAC": {
+   "ten": "Nội dung khác",
+   "nhom": [
+    "khac"
+   ]
+  }
+ },
+ "ten_nhom": {
+  "den_tin_hieu": "Đèn tín hiệu giao thông",
+  "bien_bao_hieu": "Biển báo hiệu đường bộ",
+  "hieu_lenh": "Hiệu lệnh của người điều khiển giao thông",
+  "lan_duong": "Làn đường, phần đường",
+  "nguoc_chieu": "Đi ngược chiều",
+  "toc_do": "Tốc độ",
+  "khoang_cach": "Khoảng cách an toàn",
+  "vuot_xe": "Vượt xe",
+  "chuyen_huong": "Chuyển hướng",
+  "quay_dau": "Quay đầu xe",
+  "lui_xe": "Lùi xe",
+  "nhuong_duong": "Nhường đường",
+  "dung_do": "Dừng xe, đỗ xe",
+  "duong_cao_toc": "Đường cao tốc",
+  "ham_duong_bo": "Hầm đường bộ",
+  "xe_uu_tien": "Xe ưu tiên",
+  "khu_vuc_cam": "Khu vực cấm",
+  "mo_cua_xe": "Mở cửa xe",
+  "coi": "Còi xe",
+  "den_chieu_sang": "Đèn chiếu sáng",
+  "keo_xe": "Kéo, đẩy xe",
+  "can_tro_giao_thong": "Cản trở giao thông",
+  "long_duong_via_he": "Lòng đường, vỉa hè",
+  "via_he": "Vỉa hè",
+  "nong_do_con": "Nồng độ cồn",
+  "ma_tuy": "Ma tuý, chất kích thích",
+  "mu_bao_hiem": "Mũ bảo hiểm",
+  "day_an_toan": "Dây đai an toàn",
+  "day_dai_an_toan": "Dây đai an toàn",
+  "an_toan_tre_em": "An toàn cho trẻ em",
+  "dien_thoai": "Sử dụng điện thoại khi lái xe",
+  "lang_lach": "Lạng lách, đánh võng",
+  "cho_qua_so_nguoi": "Chở quá số người",
+  "nguy_hiem": "Hành vi nguy hiểm",
+  "tai_nan": "Tai nạn giao thông",
+  "hanh_khach": "Hành khách đi xe",
+  "gplx": "Giấy phép lái xe",
+  "giay_to": "Giấy tờ của xe và người lái",
+  "do_tuoi": "Độ tuổi lái xe",
+  "giao_xe": "Giao xe cho người không đủ điều kiện",
+  "gia_mao": "Giấy tờ giả mạo",
+  "chong_doi": "Chống đối người thi hành công vụ",
+  "bao_hiem": "Bảo hiểm bắt buộc",
+  "thiet_bi_phuong_tien": "Thiết bị, bộ phận của xe",
+  "bien_so": "Biển số xe",
+  "cai_tao_xe": "Cải tạo, thay đổi kết cấu xe",
+  "dang_kiem": "Đăng kiểm",
+  "nien_han": "Niên hạn sử dụng",
+  "xe_tu_che": "Xe tự chế",
+  "khi_thai_tieng_on": "Khí thải, tiếng ồn",
+  "thiet_bi_giam_sat": "Thiết bị giám sát hành trình",
+  "qua_tai": "Chở quá tải trọng",
+  "qua_kho_qua_tai": "Quá khổ, quá tải",
+  "cong_kenh": "Chở hàng cồng kềnh",
+  "hang_nguy_hiem": "Vận chuyển hàng nguy hiểm",
+  "pha_hoai_cong_trinh": "Phá hoại công trình đường bộ",
+  "khac": "Khác"
+ },
+ "ten_phuong_tien": {
+  "o_to": "Xe ô tô",
+  "mo_to": "Xe mô tô",
+  "xe_gan_may": "Xe gắn máy",
+  "xe_dap": "Xe đạp, xe đạp máy",
+  "xe_tho_so": "Xe thô sơ",
+  "xe_may_chuyen_dung": "Xe máy chuyên dùng",
+  "khong_ap_dung": "Không gắn với phương tiện"
+ },
+ "ten_chu_the": {
+  "nguoi_dieu_khien": "Người điều khiển phương tiện",
+  "chu_phuong_tien": "Chủ phương tiện",
+  "nguoi_di_bo": "Người đi bộ",
+  "hanh_khach": "Hành khách đi xe",
+  "ca_nhan": "Cá nhân, tổ chức"
+ },
+ "dong_nghia": {
+  "xe hơi": "ô tô",
+  "otô": "ô tô",
+  "oto": "ô tô",
+  "4 bánh": "ô tô",
+  "bốn bánh": "ô tô",
+  "xe máy": "mô tô",
+  "xe gắn máy": "mô tô",
+  "honda": "mô tô",
+  "2 bánh": "mô tô",
+  "hai bánh": "mô tô",
+  "xe đạp điện": "xe đạp máy",
+  "xe điện": "xe đạp máy",
+  "cavet": "giấy đăng ký xe",
+  "cà vẹt": "giấy đăng ký xe",
+  "bằng lái": "giấy phép lái xe",
+  "nón bảo hiểm": "mũ bảo hiểm",
+  "chở 3": "chở quá số người",
+  "kẹp 3": "chở quá số người",
+  "kẹp ba": "chở quá số người",
+  "vượt đèn đỏ": "không chấp hành hiệu lệnh của đèn tín hiệu",
+  "phạt bao nhiêu": "mức phạt",
+  "bị phạt thế nào": "mức phạt",
+  "phạt nhiêu": "mức phạt"
+ }
+}

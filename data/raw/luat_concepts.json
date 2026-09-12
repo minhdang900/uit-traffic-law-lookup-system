@@ -1,0 +1,1495 @@
+[
+ {
+  "id": "KN_TRAT_TU_AN_TOAN_GTDB",
+  "ten": "Trật tự, an toàn giao thông đường bộ",
+  "loai": "khai_niem",
+  "dinh_nghia": "Trật tự, an toàn giao thông đường bộ là trạng thái giao thông trên đường bộ có trật tự, bảo đảm an toàn, thông suốt; được hình thành và điều chỉnh bởi các quy tắc, nguyên tắc, quy phạm pháp luật trong lĩnh vực giao thông đường bộ.",
+  "thuoc_tinh": {},
+  "keyphrases": [
+   "trật tự an toàn giao thông đường bộ",
+   "TTATGTĐB",
+   "an toàn giao thông"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 2,
+   "khoan": 1,
+   "diem": null
+  }
+ },
+ {
+  "id": "KN_PHUONG_TIEN_GIAO_THONG_DUONG_BO",
+  "ten": "Phương tiện giao thông đường bộ",
+  "loai": "phuong_tien",
+  "dinh_nghia": "Phương tiện giao thông đường bộ là các loại xe, bao gồm: phương tiện giao thông cơ giới đường bộ (sau đây gọi là xe cơ giới), phương tiện giao thông thô sơ đường bộ (sau đây gọi là xe thô sơ), xe máy chuyên dùng và các loại xe tương tự.",
+  "thuoc_tinh": {
+   "gom": "xe cơ giới; xe thô sơ; xe máy chuyên dùng; các loại xe tương tự"
+  },
+  "keyphrases": [
+   "phương tiện giao thông đường bộ",
+   "các loại xe",
+   "xe cơ giới",
+   "xe thô sơ",
+   "xe máy chuyên dùng"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 2,
+   "khoan": 2,
+   "diem": null
+  }
+ },
+ {
+  "id": "KN_PHUONG_TIEN_THAM_GIA_GTDB",
+  "ten": "Phương tiện tham gia giao thông đường bộ",
+  "loai": "phuong_tien",
+  "dinh_nghia": "Phương tiện tham gia giao thông đường bộ là phương tiện giao thông đường bộ tham gia giao thông trên đường bộ.",
+  "thuoc_tinh": {},
+  "keyphrases": [
+   "phương tiện tham gia giao thông đường bộ"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 2,
+   "khoan": 3,
+   "diem": null
+  }
+ },
+ {
+  "id": "KN_DUONG_UU_TIEN",
+  "ten": "Đường ưu tiên",
+  "loai": "ha_tang",
+  "dinh_nghia": "Đường ưu tiên là đường mà trên đó phương tiện tham gia giao thông đường bộ được các phương tiện tham gia giao thông đường bộ đến từ hướng khác nhường đường khi qua nơi đường giao nhau, được cắm biển báo hiệu đường ưu tiên.",
+  "thuoc_tinh": {},
+  "keyphrases": [
+   "đường ưu tiên",
+   "nhường đường",
+   "biển báo hiệu đường ưu tiên"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 2,
+   "khoan": 4,
+   "diem": null
+  }
+ },
+ {
+  "id": "KN_PHAN_DUONG_XE_CHAY",
+  "ten": "Phần đường xe chạy",
+  "loai": "ha_tang",
+  "dinh_nghia": "Phần đường xe chạy là phần của đường bộ được sử dụng cho phương tiện giao thông đường bộ đi lại.",
+  "thuoc_tinh": {},
+  "keyphrases": [
+   "phần đường xe chạy",
+   "phần đường"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 2,
+   "khoan": 5,
+   "diem": null
+  }
+ },
+ {
+  "id": "KN_LAN_DUONG",
+  "ten": "Làn đường",
+  "loai": "ha_tang",
+  "dinh_nghia": "Làn đường là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có đủ chiều rộng cho xe chạy an toàn.",
+  "thuoc_tinh": {},
+  "keyphrases": [
+   "làn đường",
+   "vạch kẻ phân làn",
+   "chuyển làn"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 2,
+   "khoan": 6,
+   "diem": null
+  }
+ },
+ {
+  "id": "KN_CAI_TAO_XE",
+  "ten": "Cải tạo xe",
+  "loai": "hanh_vi",
+  "dinh_nghia": "Cải tạo xe (sau đây gọi là cải tạo) là việc thay đổi đặc điểm của xe đã được cấp đăng ký xe, biển số xe hoặc xe đã qua sử dụng được nhập khẩu dẫn đến thay đổi về kiểu loại xe theo quy định của cơ quan có thẩm quyền.",
+  "thuoc_tinh": {},
+  "keyphrases": [
+   "cải tạo xe",
+   "thay đổi kiểu loại xe",
+   "độ xe"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 2,
+   "khoan": 7,
+   "diem": null
+  }
+ },
+ {
+  "id": "KN_NGUOI_THAM_GIA_GTDB",
+  "ten": "Người tham gia giao thông đường bộ",
+  "loai": "chu_the",
+  "dinh_nghia": "Người tham gia giao thông đường bộ bao gồm: người điều khiển, người được chở trên phương tiện tham gia giao thông đường bộ; người điều khiển, dẫn dắt vật nuôi trên đường bộ; người đi bộ trên đường bộ.",
+  "thuoc_tinh": {},
+  "keyphrases": [
+   "người tham gia giao thông đường bộ",
+   "người được chở",
+   "người đi bộ"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 2,
+   "khoan": 8,
+   "diem": null
+  }
+ },
+ {
+  "id": "KN_NGUOI_DIEU_KHIEN_PHUONG_TIEN",
+  "ten": "Người điều khiển phương tiện tham gia giao thông đường bộ",
+  "loai": "chu_the",
+  "dinh_nghia": "Người điều khiển phương tiện tham gia giao thông đường bộ bao gồm: người điều khiển xe cơ giới (sau đây gọi là người lái xe), người điều khiển xe thô sơ, người điều khiển xe máy chuyên dùng.",
+  "thuoc_tinh": {
+   "bao_gom": "người lái xe (điều khiển xe cơ giới); người điều khiển xe thô sơ; người điều khiển xe máy chuyên dùng"
+  },
+  "keyphrases": [
+   "người điều khiển phương tiện",
+   "người lái xe",
+   "tài xế"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 2,
+   "khoan": 9,
+   "diem": null
+  }
+ },
+ {
+  "id": "KN_NGUOI_DIEU_KHIEN_GIAO_THONG",
+  "ten": "Người điều khiển giao thông",
+  "loai": "chu_the",
+  "dinh_nghia": "Người điều khiển giao thông đường bộ (sau đây gọi là người điều khiển giao thông) bao gồm: Cảnh sát giao thông và người được giao nhiệm vụ hướng dẫn giao thông trên đường bộ.",
+  "thuoc_tinh": {},
+  "keyphrases": [
+   "người điều khiển giao thông",
+   "cảnh sát giao thông",
+   "hướng dẫn giao thông"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 2,
+   "khoan": 10,
+   "diem": null
+  }
+ },
+ {
+  "id": "KN_UN_TAC_GIAO_THONG",
+  "ten": "Ùn tắc giao thông",
+  "loai": "khai_niem",
+  "dinh_nghia": "Ùn tắc giao thông đường bộ (sau đây gọi là ùn tắc giao thông) là tình trạng người, phương tiện tham gia giao thông đường bộ bị dồn ứ, di chuyển với tốc độ rất chậm hoặc không thể di chuyển được.",
+  "thuoc_tinh": {},
+  "keyphrases": [
+   "ùn tắc giao thông",
+   "kẹt xe",
+   "tắc đường"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 2,
+   "khoan": 11,
+   "diem": null
+  }
+ },
+ {
+  "id": "KN_TAI_NAN_GIAO_THONG_DUONG_BO",
+  "ten": "Tai nạn giao thông đường bộ",
+  "loai": "khai_niem",
+  "dinh_nghia": "Tai nạn giao thông đường bộ là va chạm liên quan đến người, phương tiện khi tham gia giao thông đường bộ, xảy ra ngoài ý muốn của người tham gia giao thông đường bộ, gây thiệt hại đến tính mạng, sức khỏe, tài sản của cá nhân hoặc tài sản của cơ quan, tổ chức.",
+  "thuoc_tinh": {},
+  "keyphrases": [
+   "tai nạn giao thông đường bộ",
+   "va chạm giao thông",
+   "TNGT"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 2,
+   "khoan": 12,
+   "diem": null
+  }
+ },
+ {
+  "id": "KN_THIET_BI_AN_TOAN_TRE_EM",
+  "ten": "Thiết bị an toàn cho trẻ em",
+  "loai": "khai_niem",
+  "dinh_nghia": "Thiết bị an toàn cho trẻ em là thiết bị có đủ khả năng bảo đảm an toàn cho trẻ em ở tư thế ngồi hoặc nằm trên xe ô tô, được thiết kế để giảm nguy cơ chấn thương cho người dùng trong trường hợp xảy ra va chạm hoặc xe ô tô giảm tốc độ đột ngột, bằng cách hạn chế sự di chuyển của cơ thể trẻ em.",
+  "thuoc_tinh": {},
+  "keyphrases": [
+   "thiết bị an toàn cho trẻ em",
+   "ghế trẻ em",
+   "ghế an toàn ô tô"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 2,
+   "khoan": 13,
+   "diem": null
+  }
+ },
+ {
+  "id": "KN_THIET_BI_THONG_MINH_HO_TRO_CHI_HUY",
+  "ten": "Thiết bị thông minh hỗ trợ chỉ huy, điều khiển giao thông đường bộ",
+  "loai": "khai_niem",
+  "dinh_nghia": "Thiết bị thông minh hỗ trợ chỉ huy, điều khiển giao thông đường bộ là thiết bị kỹ thuật công nghệ có khả năng phát hiện, phân tích, đánh giá các tình huống giao thông đường bộ, vi phạm pháp luật trên đường bộ; do lực lượng chức năng sử dụng để hỗ trợ chỉ huy, điều khiển giao thông đường bộ, giải quyết tình huống và xử lý vi phạm pháp luật trên đường bộ.",
+  "thuoc_tinh": {},
+  "keyphrases": [
+   "thiết bị thông minh hỗ trợ chỉ huy điều khiển giao thông",
+   "camera giám sát giao thông"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 2,
+   "khoan": 14,
+   "diem": null
+  }
+ },
+ {
+  "id": "KN_XE_CO_GIOI",
+  "ten": "Xe cơ giới",
+  "loai": "phuong_tien",
+  "dinh_nghia": "Xe cơ giới bao gồm: xe ô tô; rơ moóc; sơ mi rơ moóc; xe chở người bốn bánh có gắn động cơ; xe chở hàng bốn bánh có gắn động cơ; xe mô tô; xe gắn máy; xe tương tự các loại xe quy định tại khoản này.",
+  "thuoc_tinh": {
+   "ghi_chu": "Khoản 1 Điều 34 liệt kê các loại xe cơ giới tại các điểm a, b, c, d, đ, e, g, h"
+  },
+  "keyphrases": [
+   "xe cơ giới",
+   "phân loại xe cơ giới",
+   "ô tô",
+   "mô tô",
+   "xe gắn máy"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 34,
+   "khoan": 1,
+   "diem": null
+  }
+ },
+ {
+  "id": "KN_XE_O_TO",
+  "ten": "Xe ô tô",
+  "loai": "phuong_tien",
+  "dinh_nghia": "Xe ô tô gồm: xe có từ bốn bánh trở lên chạy bằng động cơ, được thiết kế, sản xuất để hoạt động trên đường bộ, không chạy trên đường ray, dùng để chở người, hàng hóa, kéo rơ moóc, kéo sơ mi rơ moóc hoặc được kết cấu để thực hiện chức năng, công dụng đặc biệt, có thể được nối với đường dây dẫn điện; xe ba bánh có khối lượng bản thân lớn hơn 400 kg; xe ô tô không bao gồm xe chở người bốn bánh có gắn động cơ và xe chở hàng bốn bánh có gắn động cơ.",
+  "thuoc_tinh": {
+   "so_banh": "từ bốn bánh trở lên",
+   "xe_ba_banh": "khối lượng bản thân lớn hơn 400 kg",
+   "loai_tru": "xe chở người bốn bánh có gắn động cơ, xe chở hàng bốn bánh có gắn động cơ"
+  },
+  "keyphrases": [
+   "xe ô tô",
+   "ô tô",
+   "xe hơi",
+   "xe bốn bánh"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 34,
+   "khoan": 1,
+   "diem": "a"
+  }
+ },
+ {
+  "id": "KN_RO_MOOC",
+  "ten": "Rơ moóc",
+  "loai": "phuong_tien",
+  "dinh_nghia": "Rơ moóc là xe không có động cơ để di chuyển, được thiết kế, sản xuất để hoạt động trên đường bộ, được kéo bởi xe ô tô; phần chủ yếu của khối lượng toàn bộ rơ moóc không đặt lên xe kéo.",
+  "thuoc_tinh": {},
+  "keyphrases": [
+   "rơ moóc",
+   "xe kéo rơ moóc"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 34,
+   "khoan": 1,
+   "diem": "b"
+  }
+ },
+ {
+  "id": "KN_SO_MI_RO_MOOC",
+  "ten": "Sơ mi rơ moóc",
+  "loai": "phuong_tien",
+  "dinh_nghia": "Sơ mi rơ moóc là xe không có động cơ để di chuyển, được thiết kế, sản xuất để hoạt động trên đường bộ; được kéo bởi xe ô tô đầu kéo và có một phần đáng kể khối lượng toàn bộ đặt lên xe ô tô đầu kéo.",
+  "thuoc_tinh": {},
+  "keyphrases": [
+   "sơ mi rơ moóc",
+   "xe đầu kéo",
+   "container"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 34,
+   "khoan": 1,
+   "diem": "c"
+  }
+ },
+ {
+  "id": "KN_XE_CHO_NGUOI_BON_BANH_CO_GAN_DONG_CO",
+  "ten": "Xe chở người bốn bánh có gắn động cơ",
+  "loai": "phuong_tien",
+  "dinh_nghia": "Xe chở người bốn bánh có gắn động cơ là xe có từ bốn bánh trở lên, chạy bằng động cơ, được thiết kế, sản xuất để hoạt động trên đường bộ, có kết cấu để chở người, vận tốc thiết kế không lớn hơn 30 km/h, số người cho phép chở tối đa 15 người (không kể người lái xe).",
+  "thuoc_tinh": {
+   "van_toc_thiet_ke_toi_da": "30 km/h",
+   "so_nguoi_cho_toi_da": "15 người (không kể người lái xe)"
+  },
+  "keyphrases": [
+   "xe chở người bốn bánh có gắn động cơ",
+   "xe điện chở khách",
+   "xe điện du lịch"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 34,
+   "khoan": 1,
+   "diem": "d"
+  }
+ },
+ {
+  "id": "KN_XE_CHO_HANG_BON_BANH_CO_GAN_DONG_CO",
+  "ten": "Xe chở hàng bốn bánh có gắn động cơ",
+  "loai": "phuong_tien",
+  "dinh_nghia": "Xe chở hàng bốn bánh có gắn động cơ là xe có từ bốn bánh trở lên, chạy bằng động cơ, được thiết kế, sản xuất để hoạt động trên đường bộ, có kết cấu để chở hàng, có phần động cơ và thùng hàng lắp trên cùng một khung xe, có tối đa hai hàng ghế và chở tối đa 05 người (không kể người lái xe), vận tốc thiết kế không lớn hơn 60 km/h và khối lượng bản thân không lớn hơn 550 kg; trường hợp xe sử dụng động cơ điện thì có công suất động cơ không lớn hơn 15 kW.",
+  "thuoc_tinh": {
+   "van_toc_thiet_ke_toi_da": "60 km/h",
+   "khoi_luong_ban_than_toi_da": "550 kg",
+   "cong_suat_dong_co_dien_toi_da": "15 kW"
+  },
+  "keyphrases": [
+   "xe chở hàng bốn bánh có gắn động cơ",
+   "xe ba gác bốn bánh",
+   "xe tải nhỏ bốn bánh"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 34,
+   "khoan": 1,
+   "diem": "đ"
+  }
+ },
+ {
+  "id": "KN_XE_MO_TO",
+  "ten": "Xe mô tô",
+  "loai": "phuong_tien",
+  "dinh_nghia": "Xe mô tô gồm: xe có hai hoặc ba bánh chạy bằng động cơ, được thiết kế, sản xuất để hoạt động trên đường bộ, trừ xe gắn máy; đối với xe ba bánh thì khối lượng bản thân không lớn hơn 400 kg.",
+  "thuoc_tinh": {
+   "so_banh": "hai hoặc ba bánh",
+   "xe_ba_banh": "khối lượng bản thân không lớn hơn 400 kg",
+   "loai_tru": "xe gắn máy"
+  },
+  "keyphrases": [
+   "xe mô tô",
+   "xe máy",
+   "mô tô hai bánh",
+   "mô tô ba bánh"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 34,
+   "khoan": 1,
+   "diem": "e"
+  }
+ },
+ {
+  "id": "KN_XE_GAN_MAY",
+  "ten": "Xe gắn máy",
+  "loai": "phuong_tien",
+  "dinh_nghia": "Xe gắn máy là xe có hai hoặc ba bánh chạy bằng động cơ, được thiết kế, sản xuất để hoạt động trên đường bộ, có vận tốc thiết kế không lớn hơn 50 km/h; nếu động cơ dẫn động là động cơ nhiệt thì dung tích làm việc hoặc dung tích tương đương không lớn hơn 50 cm3; nếu động cơ dẫn động là động cơ điện thì công suất của động cơ không lớn hơn 04 kW; xe gắn máy không bao gồm xe đạp máy.",
+  "thuoc_tinh": {
+   "van_toc_thiet_ke_toi_da": "50 km/h",
+   "dung_tich_toi_da": "50 cm3",
+   "cong_suat_dien_toi_da": "04 kW",
+   "loai_tru": "xe đạp máy"
+  },
+  "keyphrases": [
+   "xe gắn máy",
+   "xe máy điện",
+   "xe dưới 50cc",
+   "xe 50 phân khối"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 34,
+   "khoan": 1,
+   "diem": "g"
+  }
+ },
+ {
+  "id": "KN_XE_THO_SO",
+  "ten": "Xe thô sơ",
+  "loai": "phuong_tien",
+  "dinh_nghia": "Xe thô sơ bao gồm: xe đạp; xe đạp máy, gồm cả xe đạp điện; xe xích lô; xe lăn dùng cho người khuyết tật; xe vật nuôi kéo; xe tương tự các loại xe quy định tại khoản này.",
+  "thuoc_tinh": {
+   "ghi_chu": "Khoản 2 Điều 34 liệt kê các loại xe thô sơ tại các điểm a, b, c, d, đ, e"
+  },
+  "keyphrases": [
+   "xe thô sơ",
+   "xe đạp",
+   "xe xích lô",
+   "xe lăn",
+   "xe vật nuôi kéo"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 34,
+   "khoan": 2,
+   "diem": null
+  }
+ },
+ {
+  "id": "KN_XE_DAP",
+  "ten": "Xe đạp",
+  "loai": "phuong_tien",
+  "dinh_nghia": "Xe đạp là xe có ít nhất hai bánh và vận hành do sức người thông qua bàn đạp hoặc tay quay.",
+  "thuoc_tinh": {},
+  "keyphrases": [
+   "xe đạp",
+   "bàn đạp",
+   "tay quay"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 34,
+   "khoan": 2,
+   "diem": "a"
+  }
+ },
+ {
+  "id": "KN_XE_DAP_MAY",
+  "ten": "Xe đạp máy (gồm cả xe đạp điện)",
+  "loai": "phuong_tien",
+  "dinh_nghia": "Xe đạp máy, gồm cả xe đạp điện, là xe đạp có trợ lực từ động cơ, nguồn động lực từ động cơ bị ngắt khi người lái xe dừng đạp hoặc khi xe đạt tới tốc độ 25 km/h.",
+  "thuoc_tinh": {
+   "toc_do_ngat_tro_luc": "25 km/h"
+  },
+  "keyphrases": [
+   "xe đạp máy",
+   "xe đạp điện",
+   "trợ lực điện"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 34,
+   "khoan": 2,
+   "diem": "b"
+  }
+ },
+ {
+  "id": "KN_XE_XICH_LO",
+  "ten": "Xe xích lô",
+  "loai": "phuong_tien",
+  "dinh_nghia": "Xe xích lô.",
+  "thuoc_tinh": {},
+  "keyphrases": [
+   "xe xích lô",
+   "xích lô"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 34,
+   "khoan": 2,
+   "diem": "c"
+  }
+ },
+ {
+  "id": "KN_XE_LAN_NGUOI_KHUYET_TAT",
+  "ten": "Xe lăn dùng cho người khuyết tật",
+  "loai": "phuong_tien",
+  "dinh_nghia": "Xe lăn dùng cho người khuyết tật.",
+  "thuoc_tinh": {},
+  "keyphrases": [
+   "xe lăn",
+   "người khuyết tật"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 34,
+   "khoan": 2,
+   "diem": "d"
+  }
+ },
+ {
+  "id": "KN_XE_VAT_NUOI_KEO",
+  "ten": "Xe vật nuôi kéo",
+  "loai": "phuong_tien",
+  "dinh_nghia": "Xe vật nuôi kéo.",
+  "thuoc_tinh": {},
+  "keyphrases": [
+   "xe vật nuôi kéo",
+   "xe bò kéo",
+   "xe ngựa kéo"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 34,
+   "khoan": 2,
+   "diem": "đ"
+  }
+ },
+ {
+  "id": "KN_XE_MAY_CHUYEN_DUNG",
+  "ten": "Xe máy chuyên dùng",
+  "loai": "phuong_tien",
+  "dinh_nghia": "Xe máy chuyên dùng bao gồm: xe máy thi công; xe máy nông nghiệp, lâm nghiệp; máy kéo; rơ moóc, sơ mi rơ moóc được kéo bởi máy kéo; xe máy thực hiện chức năng, công dụng đặc biệt; các loại xe đặc chủng sử dụng vào mục đích quốc phòng, an ninh có tham gia giao thông đường bộ.",
+  "thuoc_tinh": {
+   "ghi_chu": "Khoản 3 Điều 34 liệt kê tại các điểm a, b, c, d, đ, e"
+  },
+  "keyphrases": [
+   "xe máy chuyên dùng",
+   "máy kéo",
+   "xe máy thi công",
+   "xe nông nghiệp"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 34,
+   "khoan": 3,
+   "diem": null
+  }
+ },
+ {
+  "id": "KN_PHUONG_TIEN_GIAO_THONG_THONG_MINH",
+  "ten": "Phương tiện giao thông thông minh",
+  "loai": "phuong_tien",
+  "dinh_nghia": "Phương tiện giao thông thông minh là phương tiện giao thông đường bộ mà toàn bộ việc điều khiển, duy trì hoạt động của phương tiện không cần có sự điều khiển trực tiếp của người lái trên phương tiện đó.",
+  "thuoc_tinh": {},
+  "keyphrases": [
+   "phương tiện giao thông thông minh",
+   "xe tự lái",
+   "xe tự hành"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 34,
+   "khoan": 4,
+   "diem": null
+  }
+ },
+ {
+  "id": "KN_DIEU_KIEN_PHUONG_TIEN_THAM_GIA_GT",
+  "ten": "Điều kiện phương tiện tham gia giao thông đường bộ",
+  "loai": "khai_niem",
+  "dinh_nghia": "Xe cơ giới, xe máy chuyên dùng tham gia giao thông đường bộ phải đáp ứng các điều kiện sau đây: a) Được cấp chứng nhận đăng ký xe và gắn biển số xe theo quy định của pháp luật; b) Bảo đảm chất lượng an toàn kỹ thuật và bảo vệ môi trường theo quy định của pháp luật.",
+  "thuoc_tinh": {},
+  "keyphrases": [
+   "điều kiện phương tiện",
+   "đăng ký xe",
+   "biển số xe",
+   "đăng kiểm",
+   "an toàn kỹ thuật"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 35,
+   "khoan": 1,
+   "diem": null
+  }
+ },
+ {
+  "id": "KN_GIAY_PHEP_LAI_XE",
+  "ten": "Giấy phép lái xe",
+  "loai": "giay_to",
+  "dinh_nghia": null,
+  "thuoc_tinh": {
+   "cac_hang": "A1, A, B1, B, C1, C, D1, D2, D, BE, C1E, CE, D1E, D2E, DE",
+   "ghi_chu": "Luật không đưa ra định nghĩa riêng cho giấy phép lái xe; Điều 57 quy định các hạng, thời hạn, hiệu lực và giá trị sử dụng"
+  },
+  "keyphrases": [
+   "giấy phép lái xe",
+   "GPLX",
+   "bằng lái xe",
+   "hạng giấy phép lái xe"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 57,
+   "khoan": null,
+   "diem": null
+  }
+ },
+ {
+  "id": "KN_GPLX_HANG_A1",
+  "ten": "Giấy phép lái xe hạng A1",
+  "loai": "giay_to",
+  "dinh_nghia": "Hạng A1 cấp cho người lái xe mô tô hai bánh có dung tích xi-lanh đến 125 cm3 hoặc có công suất động cơ điện đến 11 kW.",
+  "thuoc_tinh": {
+   "hang": "A1"
+  },
+  "keyphrases": [
+   "hạng A1",
+   "mô tô hai bánh đến 125 cm3",
+   "11 kW",
+   "giấy phép lái xe",
+   "bằng lái"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 57,
+   "khoan": 1,
+   "diem": "a"
+  }
+ },
+ {
+  "id": "KN_GPLX_HANG_A",
+  "ten": "Giấy phép lái xe hạng A",
+  "loai": "giay_to",
+  "dinh_nghia": "Hạng A cấp cho người lái xe mô tô hai bánh có dung tích xi-lanh trên 125 cm3 hoặc có công suất động cơ điện trên 11 kW và các loại xe quy định cho giấy phép lái xe hạng A1.",
+  "thuoc_tinh": {
+   "hang": "A"
+  },
+  "keyphrases": [
+   "hạng A",
+   "mô tô trên 125 cm3",
+   "xe phân khối lớn",
+   "giấy phép lái xe",
+   "bằng lái"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 57,
+   "khoan": 1,
+   "diem": "b"
+  }
+ },
+ {
+  "id": "KN_GPLX_HANG_B1",
+  "ten": "Giấy phép lái xe hạng B1",
+  "loai": "giay_to",
+  "dinh_nghia": "Hạng B1 cấp cho người lái xe mô tô ba bánh và các loại xe quy định cho giấy phép lái xe hạng A1.",
+  "thuoc_tinh": {
+   "hang": "B1"
+  },
+  "keyphrases": [
+   "hạng B1",
+   "mô tô ba bánh",
+   "giấy phép lái xe",
+   "bằng lái"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 57,
+   "khoan": 1,
+   "diem": "c"
+  }
+ },
+ {
+  "id": "KN_GPLX_HANG_B",
+  "ten": "Giấy phép lái xe hạng B",
+  "loai": "giay_to",
+  "dinh_nghia": "Hạng B cấp cho người lái xe ô tô chở người đến 08 chỗ (không kể chỗ của người lái xe); xe ô tô tải và ô tô chuyên dùng có khối lượng toàn bộ theo thiết kế đến 3.500 kg; các loại xe ô tô quy định cho giấy phép lái xe hạng B kéo rơ moóc có khối lượng toàn bộ theo thiết kế đến 750 kg.",
+  "thuoc_tinh": {
+   "hang": "B"
+  },
+  "keyphrases": [
+   "hạng B",
+   "ô tô đến 08 chỗ",
+   "ô tô tải đến 3.500 kg",
+   "giấy phép lái xe",
+   "bằng lái"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 57,
+   "khoan": 1,
+   "diem": "d"
+  }
+ },
+ {
+  "id": "KN_GPLX_HANG_C1",
+  "ten": "Giấy phép lái xe hạng C1",
+  "loai": "giay_to",
+  "dinh_nghia": "Hạng C1 cấp cho người lái xe ô tô tải và ô tô chuyên dùng có khối lượng toàn bộ theo thiết kế trên 3.500 kg đến 7.500 kg; các loại xe ô tô tải quy định cho giấy phép lái xe hạng C1 kéo rơ moóc có khối lượng toàn bộ theo thiết kế đến 750 kg; các loại xe quy định cho giấy phép lái xe hạng B.",
+  "thuoc_tinh": {
+   "hang": "C1"
+  },
+  "keyphrases": [
+   "hạng C1",
+   "ô tô tải trên 3.500 kg đến 7.500 kg",
+   "giấy phép lái xe",
+   "bằng lái"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 57,
+   "khoan": 1,
+   "diem": "đ"
+  }
+ },
+ {
+  "id": "KN_GPLX_HANG_C",
+  "ten": "Giấy phép lái xe hạng C",
+  "loai": "giay_to",
+  "dinh_nghia": "Hạng C cấp cho người lái xe ô tô tải và ô tô chuyên dùng có khối lượng toàn bộ theo thiết kế trên 7.500 kg; các loại xe ô tô tải quy định cho giấy phép lái xe hạng C kéo rơ moóc có khối lượng toàn bộ theo thiết kế đến 750 kg; các loại xe quy định cho giấy phép lái xe hạng B và hạng C1.",
+  "thuoc_tinh": {
+   "hang": "C"
+  },
+  "keyphrases": [
+   "hạng C",
+   "ô tô tải trên 7.500 kg",
+   "giấy phép lái xe",
+   "bằng lái"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 57,
+   "khoan": 1,
+   "diem": "e"
+  }
+ },
+ {
+  "id": "KN_GPLX_HANG_D1",
+  "ten": "Giấy phép lái xe hạng D1",
+  "loai": "giay_to",
+  "dinh_nghia": "Hạng D1 cấp cho người lái xe ô tô chở người trên 08 chỗ (không kể chỗ của người lái xe) đến 16 chỗ (không kể chỗ của người lái xe); các loại xe ô tô chở người quy định cho giấy phép lái xe hạng D1 kéo rơ moóc có khối lượng toàn bộ theo thiết kế đến 750 kg; các loại xe quy định cho giấy phép lái xe các hạng B, C1, C.",
+  "thuoc_tinh": {
+   "hang": "D1"
+  },
+  "keyphrases": [
+   "hạng D1",
+   "ô tô chở người trên 08 chỗ đến 16 chỗ",
+   "giấy phép lái xe",
+   "bằng lái"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 57,
+   "khoan": 1,
+   "diem": "g"
+  }
+ },
+ {
+  "id": "KN_GPLX_HANG_D2",
+  "ten": "Giấy phép lái xe hạng D2",
+  "loai": "giay_to",
+  "dinh_nghia": "Hạng D2 cấp cho người lái xe ô tô chở người (kể cả xe buýt) trên 16 chỗ (không kể chỗ của người lái xe) đến 29 chỗ (không kể chỗ của người lái xe); các loại xe ô tô chở người quy định cho giấy phép lái xe hạng D2 kéo rơ moóc có khối lượng toàn bộ theo thiết kế đến 750 kg; các loại xe quy định cho giấy phép lái xe các hạng B, C1, C, D1.",
+  "thuoc_tinh": {
+   "hang": "D2"
+  },
+  "keyphrases": [
+   "hạng D2",
+   "xe buýt trên 16 chỗ đến 29 chỗ",
+   "giấy phép lái xe",
+   "bằng lái"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 57,
+   "khoan": 1,
+   "diem": "h"
+  }
+ },
+ {
+  "id": "KN_GPLX_HANG_D",
+  "ten": "Giấy phép lái xe hạng D",
+  "loai": "giay_to",
+  "dinh_nghia": "Hạng D cấp cho người lái xe ô tô chở người (kể cả xe buýt) trên 29 chỗ (không kể chỗ của người lái xe); xe ô tô chở người giường nằm; các loại xe ô tô chở người quy định cho giấy phép lái xe hạng D kéo rơ moóc có khối lượng toàn bộ theo thiết kế đến 750 kg; các loại xe quy định cho giấy phép lái xe các hạng B, C1, C, D1, D2.",
+  "thuoc_tinh": {
+   "hang": "D"
+  },
+  "keyphrases": [
+   "hạng D",
+   "xe khách trên 29 chỗ",
+   "xe giường nằm",
+   "giấy phép lái xe",
+   "bằng lái"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 57,
+   "khoan": 1,
+   "diem": "i"
+  }
+ },
+ {
+  "id": "KN_GPLX_HANG_BE",
+  "ten": "Giấy phép lái xe hạng BE",
+  "loai": "giay_to",
+  "dinh_nghia": "Hạng BE cấp cho người lái các loại xe ô tô quy định cho giấy phép lái xe hạng B kéo rơ moóc có khối lượng toàn bộ theo thiết kế trên 750 kg.",
+  "thuoc_tinh": {
+   "hang": "BE"
+  },
+  "keyphrases": [
+   "hạng BE",
+   "kéo rơ moóc trên 750 kg",
+   "giấy phép lái xe",
+   "bằng lái"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 57,
+   "khoan": 1,
+   "diem": "k"
+  }
+ },
+ {
+  "id": "KN_GPLX_HANG_C1E",
+  "ten": "Giấy phép lái xe hạng C1E",
+  "loai": "giay_to",
+  "dinh_nghia": "Hạng C1E cấp cho người lái các loại xe ô tô quy định cho giấy phép lái xe hạng C1 kéo rơ moóc có khối lượng toàn bộ theo thiết kế trên 750 kg.",
+  "thuoc_tinh": {
+   "hang": "C1E"
+  },
+  "keyphrases": [
+   "hạng C1E",
+   "giấy phép lái xe",
+   "bằng lái"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 57,
+   "khoan": 1,
+   "diem": "l"
+  }
+ },
+ {
+  "id": "KN_GPLX_HANG_CE",
+  "ten": "Giấy phép lái xe hạng CE",
+  "loai": "giay_to",
+  "dinh_nghia": "Hạng CE cấp cho người lái các loại xe ô tô quy định cho giấy phép lái xe hạng C kéo rơ moóc có khối lượng toàn bộ theo thiết kế trên 750 kg; xe ô tô đầu kéo kéo sơ mi rơ moóc.",
+  "thuoc_tinh": {
+   "hang": "CE"
+  },
+  "keyphrases": [
+   "hạng CE",
+   "đầu kéo sơ mi rơ moóc",
+   "xe container",
+   "giấy phép lái xe",
+   "bằng lái"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 57,
+   "khoan": 1,
+   "diem": "m"
+  }
+ },
+ {
+  "id": "KN_GPLX_HANG_D1E",
+  "ten": "Giấy phép lái xe hạng D1E",
+  "loai": "giay_to",
+  "dinh_nghia": "Hạng D1E cấp cho người lái các loại xe ô tô quy định cho giấy phép lái xe hạng D1 kéo rơ moóc có khối lượng toàn bộ theo thiết kế trên 750 kg.",
+  "thuoc_tinh": {
+   "hang": "D1E"
+  },
+  "keyphrases": [
+   "hạng D1E",
+   "giấy phép lái xe",
+   "bằng lái"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 57,
+   "khoan": 1,
+   "diem": "n"
+  }
+ },
+ {
+  "id": "KN_GPLX_HANG_D2E",
+  "ten": "Giấy phép lái xe hạng D2E",
+  "loai": "giay_to",
+  "dinh_nghia": "Hạng D2E cấp cho người lái các loại xe ô tô quy định cho giấy phép lái xe hạng D2 kéo rơ moóc có khối lượng toàn bộ theo thiết kế trên 750 kg.",
+  "thuoc_tinh": {
+   "hang": "D2E"
+  },
+  "keyphrases": [
+   "hạng D2E",
+   "giấy phép lái xe",
+   "bằng lái"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 57,
+   "khoan": 1,
+   "diem": "o"
+  }
+ },
+ {
+  "id": "KN_GPLX_HANG_DE",
+  "ten": "Giấy phép lái xe hạng DE",
+  "loai": "giay_to",
+  "dinh_nghia": "Hạng DE cấp cho người lái các loại xe ô tô quy định cho giấy phép lái xe hạng D kéo rơ moóc có khối lượng toàn bộ theo thiết kế trên 750 kg; xe ô tô chở khách nối toa.",
+  "thuoc_tinh": {
+   "hang": "DE"
+  },
+  "keyphrases": [
+   "hạng DE",
+   "xe khách nối toa",
+   "giấy phép lái xe",
+   "bằng lái"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 57,
+   "khoan": 1,
+   "diem": "p"
+  }
+ },
+ {
+  "id": "KN_THOI_HAN_GPLX",
+  "ten": "Thời hạn của giấy phép lái xe",
+  "loai": "khai_niem",
+  "dinh_nghia": "Thời hạn của giấy phép lái xe được quy định như sau: a) Giấy phép lái xe các hạng A1, A, B1 không thời hạn; b) Giấy phép lái xe hạng B và hạng C1 có thời hạn 10 năm kể từ ngày cấp; c) Giấy phép lái xe các hạng C, D1, D2, D, BE, C1E, CE, D1E, D2E và DE có thời hạn 05 năm kể từ ngày cấp.",
+  "thuoc_tinh": {
+   "khong_thoi_han": "A1, A, B1",
+   "muoi_nam": "B, C1",
+   "nam_nam": "C, D1, D2, D, BE, C1E, CE, D1E, D2E, DE"
+  },
+  "keyphrases": [
+   "thời hạn giấy phép lái xe",
+   "bằng lái hết hạn",
+   "10 năm",
+   "05 năm"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 57,
+   "khoan": 5,
+   "diem": null
+  }
+ },
+ {
+  "id": "KN_HIEU_LUC_GPLX",
+  "ten": "Trường hợp giấy phép lái xe không có hiệu lực",
+  "loai": "khai_niem",
+  "dinh_nghia": "Giấy phép lái xe không có hiệu lực trong các trường hợp sau đây: a) Giấy phép lái xe hết thời hạn sử dụng; b) Giấy phép lái xe bị thu hồi theo quy định tại khoản 5 Điều 62 của Luật này.",
+  "thuoc_tinh": {},
+  "keyphrases": [
+   "giấy phép lái xe không có hiệu lực",
+   "bằng lái hết hạn",
+   "thu hồi giấy phép lái xe"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 57,
+   "khoan": 7,
+   "diem": null
+  }
+ },
+ {
+  "id": "KN_GPLX_QUOC_TE",
+  "ten": "Giấy phép lái xe quốc tế",
+  "loai": "giay_to",
+  "dinh_nghia": "Giấy phép lái xe quốc tế là giấy phép lái xe do cơ quan nhà nước có thẩm quyền của quốc gia là thành viên của Công ước Viên cấp theo một mẫu thống nhất; có thời hạn không quá 03 năm kể từ ngày cấp và phải phù hợp với thời hạn còn hiệu lực của giấy phép lái xe quốc gia.",
+  "thuoc_tinh": {
+   "thoi_han_toi_da": "03 năm"
+  },
+  "keyphrases": [
+   "giấy phép lái xe quốc tế",
+   "IDP",
+   "Công ước Viên"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 57,
+   "khoan": 8,
+   "diem": "a"
+  }
+ },
+ {
+  "id": "KN_DIEM_GIAY_PHEP_LAI_XE",
+  "ten": "Điểm của giấy phép lái xe",
+  "loai": "khai_niem",
+  "dinh_nghia": "Điểm của giấy phép lái xe được dùng để quản lý việc chấp hành pháp luật về trật tự, an toàn giao thông đường bộ của người lái xe trên hệ thống cơ sở dữ liệu về trật tự, an toàn giao thông đường bộ, bao gồm 12 điểm. Số điểm trừ mỗi lần vi phạm tùy thuộc tính chất, mức độ của hành vi vi phạm pháp luật về trật tự, an toàn giao thông đường bộ. Dữ liệu về điểm trừ giấy phép lái xe của người vi phạm sẽ được cập nhật vào hệ thống cơ sở dữ liệu ngay sau khi quyết định xử phạt có hiệu lực thi hành và thông báo cho người bị trừ điểm giấy phép lái xe biết.",
+  "thuoc_tinh": {
+   "tong_diem": "12 điểm"
+  },
+  "keyphrases": [
+   "điểm giấy phép lái xe",
+   "trừ điểm bằng lái",
+   "12 điểm"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 58,
+   "khoan": 1,
+   "diem": null
+  }
+ },
+ {
+  "id": "KN_PHUC_HOI_DIEM_GPLX",
+  "ten": "Phục hồi điểm giấy phép lái xe",
+  "loai": "khai_niem",
+  "dinh_nghia": "Giấy phép lái xe chưa bị trừ hết điểm và không bị trừ điểm trong thời hạn 12 tháng từ ngày bị trừ điểm gần nhất thì được phục hồi đủ 12 điểm.",
+  "thuoc_tinh": {
+   "dieu_kien_tu_dong": "không bị trừ điểm trong 12 tháng kể từ ngày bị trừ điểm gần nhất",
+   "truong_hop_bi_tru_het_diem": "sau ít nhất 06 tháng kể từ ngày bị trừ hết điểm, kiểm tra đạt yêu cầu thì được phục hồi đủ 12 điểm (khoản 3 Điều 58)"
+  },
+  "keyphrases": [
+   "phục hồi điểm giấy phép lái xe",
+   "12 tháng",
+   "trừ hết điểm",
+   "kiểm tra kiến thức pháp luật"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 58,
+   "khoan": 2,
+   "diem": null
+  }
+ },
+ {
+  "id": "KN_DO_TUOI_NGUOI_LAI_XE",
+  "ten": "Độ tuổi của người lái xe, người điều khiển xe máy chuyên dùng",
+  "loai": "khai_niem",
+  "dinh_nghia": "Độ tuổi của người lái xe, người điều khiển xe máy chuyên dùng được quy định như sau: a) Người đủ 16 tuổi trở lên được điều khiển xe gắn máy; b) Người đủ 18 tuổi trở lên được cấp giấy phép lái xe hạng A1, A, B1, B, C1, được cấp chứng chỉ bồi dưỡng kiến thức pháp luật về giao thông đường bộ để điều khiển xe máy chuyên dùng tham gia giao thông đường bộ; c) Người đủ 21 tuổi trở lên được cấp giấy phép lái xe hạng C, BE; d) Người đủ 24 tuổi trở lên được cấp giấy phép lái xe hạng D1, D2, C1E, CE; đ) Người đủ 27 tuổi trở lên được cấp giấy phép lái xe hạng D, D1E, D2E, DE; e) Tuổi tối đa của người lái xe ô tô chở người (kể cả xe buýt) trên 29 chỗ (không kể chỗ của người lái xe), xe ô tô chở người giường nằm là đủ 57 tuổi đối với nam, đủ 55 tuổi đối với nữ.",
+  "thuoc_tinh": {
+   "16_tuoi": "xe gắn máy",
+   "18_tuoi": "A1, A, B1, B, C1",
+   "21_tuoi": "C, BE",
+   "24_tuoi": "D1, D2, C1E, CE",
+   "27_tuoi": "D, D1E, D2E, DE",
+   "tuoi_toi_da": "đủ 57 tuổi đối với nam, đủ 55 tuổi đối với nữ (xe chở người trên 29 chỗ, xe giường nằm)"
+  },
+  "keyphrases": [
+   "tuổi lái xe",
+   "đủ 16 tuổi",
+   "đủ 18 tuổi",
+   "đủ 21 tuổi",
+   "tuổi tối đa lái xe khách"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 59,
+   "khoan": 1,
+   "diem": null
+  }
+ },
+ {
+  "id": "KN_SUC_KHOE_NGUOI_LAI_XE",
+  "ten": "Sức khỏe của người điều khiển phương tiện",
+  "loai": "khai_niem",
+  "dinh_nghia": "Người điều khiển phương tiện tham gia giao thông đường bộ phải bảo đảm điều kiện sức khỏe phù hợp với từng loại phương tiện được phép điều khiển.",
+  "thuoc_tinh": {
+   "co_quan_quy_dinh": "Bộ trưởng Bộ Y tế quy định tiêu chuẩn sức khỏe, việc khám sức khỏe đối với người lái xe, người điều khiển xe máy chuyên dùng"
+  },
+  "keyphrases": [
+   "sức khỏe người lái xe",
+   "khám sức khỏe lái xe",
+   "tiêu chuẩn sức khỏe"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 59,
+   "khoan": 2,
+   "diem": null
+  }
+ },
+ {
+  "id": "KN_BAO_HIEU_DUONG_BO",
+  "ten": "Báo hiệu đường bộ",
+  "loai": "ha_tang",
+  "dinh_nghia": "Báo hiệu đường bộ bao gồm: hiệu lệnh của người điều khiển giao thông; đèn tín hiệu giao thông; biển báo hiệu đường bộ; vạch kẻ đường và các dấu hiệu khác trên mặt đường; cọc tiêu, tường bảo vệ, rào chắn, đinh phản quang, tiêu phản quang, cột Km, cọc H; thiết bị âm thanh báo hiệu đường bộ.",
+  "thuoc_tinh": {
+   "thu_tu_uu_tien": "1) hiệu lệnh của người điều khiển giao thông; 2) tín hiệu đèn giao thông; 3) biển báo hiệu đường bộ; 4) vạch kẻ đường và các dấu hiệu khác trên mặt đường; 5) cọc tiêu, tường bảo vệ, rào chắn, đinh phản quang, tiêu phản quang, cột Km, cọc H; 6) thiết bị âm thanh báo hiệu đường bộ (khoản 2 Điều 11)"
+  },
+  "keyphrases": [
+   "báo hiệu đường bộ",
+   "thứ tự ưu tiên báo hiệu",
+   "biển báo",
+   "đèn tín hiệu",
+   "vạch kẻ đường"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 11,
+   "khoan": 1,
+   "diem": null
+  }
+ },
+ {
+  "id": "KN_HIEU_LENH_NGUOI_DIEU_KHIEN_GT",
+  "ten": "Hiệu lệnh của người điều khiển giao thông",
+  "loai": "khai_niem",
+  "dinh_nghia": "Hiệu lệnh của người điều khiển giao thông được quy định như sau: a) Tay bên phải giơ thẳng đứng để báo hiệu cho người tham gia giao thông đường bộ ở tất cả các hướng phải dừng lại; b) Hai tay hoặc một tay dang ngang để báo hiệu cho người tham gia giao thông đường bộ ở phía trước và ở phía sau người điều khiển giao thông phải dừng lại; người tham gia giao thông đường bộ ở phía bên phải và bên trái người điều khiển giao thông được đi; c) Tay bên phải giơ về phía trước để báo hiệu cho người tham gia giao thông đường bộ ở phía sau và bên phải người điều khiển giao thông phải dừng lại; người tham gia giao thông đường bộ ở phía trước người điều khiển giao thông được rẽ phải; người tham gia giao thông đường bộ ở phía bên trái người điểu khiển giao thông được đi tất cả các hướng; người đi bộ qua đường phải đi sau lưng người điều khiển giao thông.",
+  "thuoc_tinh": {
+   "vi_tri_uu_tien": "cao nhất trong thứ tự chấp hành báo hiệu đường bộ"
+  },
+  "keyphrases": [
+   "hiệu lệnh của người điều khiển giao thông",
+   "cảnh sát giao thông giơ tay",
+   "hiệu lệnh tay"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 11,
+   "khoan": 3,
+   "diem": null
+  }
+ },
+ {
+  "id": "KN_DEN_TIN_HIEU_GIAO_THONG",
+  "ten": "Đèn tín hiệu giao thông",
+  "loai": "ha_tang",
+  "dinh_nghia": "Tín hiệu đèn giao thông có 03 màu, gồm: màu xanh, màu vàng, màu đỏ; có hiển thị thời gian hoặc không hiển thị thời gian.",
+  "thuoc_tinh": {
+   "den_xanh": "Tín hiệu đèn màu xanh là được đi; trường hợp người đi bộ, xe lăn của người khuyết tật đang đi ở lòng đường, người điều khiển phương tiện tham gia giao thông đường bộ phải giảm tốc độ hoặc dừng lại nhường đường cho người đi bộ, xe lăn của người khuyết tật qua đường",
+   "den_vang": "Tín hiệu đèn màu vàng phải dừng lại trước vạch dừng; trường hợp đang đi trên vạch dừng hoặc đã đi qua vạch dừng mà tín hiệu đèn màu vàng thì được đi tiếp; trường hợp tín hiệu đèn màu vàng nhấp nháy, người điều khiển phương tiện tham gia giao thông đường bộ được đi nhưng phải quan sát, giảm tốc độ hoặc dừng lại nhường đường cho người đi bộ, xe lăn của người khuyết tật qua đường hoặc các phương tiện khác",
+   "den_do": "Tín hiệu đèn màu đỏ là cấm đi"
+  },
+  "keyphrases": [
+   "đèn tín hiệu giao thông",
+   "đèn giao thông",
+   "đèn đỏ",
+   "đèn vàng",
+   "đèn xanh",
+   "vượt đèn đỏ"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 11,
+   "khoan": 4,
+   "diem": null
+  }
+ },
+ {
+  "id": "KN_BIEN_BAO_HIEU_DUONG_BO",
+  "ten": "Biển báo hiệu đường bộ",
+  "loai": "ha_tang",
+  "dinh_nghia": "Báo hiệu của biển báo hiệu đường bộ được quy định như sau: a) Biển báo cấm để biểu thị các điều cấm; b) Biển báo nguy hiểm để cảnh báo các tình huống nguy hiểm có thể xảy ra; c) Biển hiệu lệnh để báo hiệu lệnh phải thi hành; d) Biển chỉ dẫn để chỉ dẫn hướng đi hoặc các điều cần biết; đ) Biển phụ để thuyết minh bổ sung cho biển báo cấm, biển báo nguy hiểm, biển hiệu lệnh và biển chỉ dẫn.",
+  "thuoc_tinh": {
+   "nhom_bien": "biển báo cấm; biển báo nguy hiểm; biển hiệu lệnh; biển chỉ dẫn; biển phụ",
+   "bien_tam_thoi": "Khi ở một vị trí vừa có biển báo hiệu đặt cố định vừa có biển báo hiệu tạm thời mà hai biển có ý nghĩa khác nhau thì phải chấp hành hiệu lệnh của biển báo hiệu tạm thời (khoản 12 Điều 11)"
+  },
+  "keyphrases": [
+   "biển báo hiệu đường bộ",
+   "biển báo cấm",
+   "biển báo nguy hiểm",
+   "biển hiệu lệnh",
+   "biển chỉ dẫn",
+   "biển phụ"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 11,
+   "khoan": 5,
+   "diem": null
+  }
+ },
+ {
+  "id": "KN_VACH_KE_DUONG",
+  "ten": "Vạch kẻ đường",
+  "loai": "ha_tang",
+  "dinh_nghia": "Vạch kẻ đường là vạch chỉ sự phân chia làn đường, vị trí hoặc hướng đi, vị trí dừng lại.",
+  "thuoc_tinh": {},
+  "keyphrases": [
+   "vạch kẻ đường",
+   "vạch dừng",
+   "vạch phân làn"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 11,
+   "khoan": 6,
+   "diem": null
+  }
+ },
+ {
+  "id": "KN_COC_TIEU_TUONG_BAO_VE",
+  "ten": "Cọc tiêu, tường bảo vệ",
+  "loai": "ha_tang",
+  "dinh_nghia": "Cọc tiêu, tường bảo vệ để hướng dẫn cho người tham gia giao thông đường bộ biết phạm vi an toàn của nền đường và hướng đi của đường.",
+  "thuoc_tinh": {},
+  "keyphrases": [
+   "cọc tiêu",
+   "tường bảo vệ"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 11,
+   "khoan": 7,
+   "diem": null
+  }
+ },
+ {
+  "id": "KN_TOC_DO_VA_KHOANG_CACH_AN_TOAN",
+  "ten": "Tốc độ và khoảng cách an toàn giữa các xe",
+  "loai": "khai_niem",
+  "dinh_nghia": null,
+  "thuoc_tinh": {
+   "nghia_vu": "Người lái xe, người điều khiển xe máy chuyên dùng phải chấp hành quy định về tốc độ, khoảng cách an toàn tối thiểu với xe phía trước cùng làn đường hoặc phần đường (khoản 1 Điều 12)",
+   "co_quan_quy_dinh_chi_tiet": "Bộ trưởng Bộ Xây dựng quy định chi tiết về tốc độ và khoảng cách an toàn của xe cơ giới, xe máy chuyên dùng tham gia giao thông đường bộ (khoản 4 Điều 12)",
+   "ghi_chu": "Luật không quy định trị số tốc độ cụ thể; trị số do văn bản dưới luật quy định"
+  },
+  "keyphrases": [
+   "tốc độ",
+   "khoảng cách an toàn",
+   "chạy quá tốc độ",
+   "giữ khoảng cách"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 12,
+   "khoan": 1,
+   "diem": null
+  }
+ },
+ {
+  "id": "KN_NONG_DO_CON",
+  "ten": "Nồng độ cồn",
+  "loai": "khai_niem",
+  "dinh_nghia": null,
+  "thuoc_tinh": {
+   "quy_dinh_lien_quan": "Nghiêm cấm điều khiển phương tiện tham gia giao thông đường bộ mà trong máu hoặc hơi thở có nồng độ cồn (khoản 2 Điều 9)",
+   "nguong": "Luật cấm tuyệt đối, không quy định ngưỡng cho phép",
+   "ghi_chu": "Luật không có định nghĩa riêng về nồng độ cồn"
+  },
+  "keyphrases": [
+   "nồng độ cồn",
+   "rượu bia",
+   "hơi thở có cồn",
+   "máu có cồn",
+   "uống rượu lái xe"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 9,
+   "khoan": 2,
+   "diem": null
+  }
+ },
+ {
+  "id": "KN_CHAT_MA_TUY_CHAT_KICH_THICH",
+  "ten": "Chất ma túy, chất kích thích khác mà pháp luật cấm sử dụng",
+  "loai": "khai_niem",
+  "dinh_nghia": null,
+  "thuoc_tinh": {
+   "quy_dinh_lien_quan": "Nghiêm cấm điều khiển phương tiện tham gia giao thông đường bộ mà trong cơ thể có chất ma túy hoặc chất kích thích khác mà pháp luật cấm sử dụng (khoản 3 Điều 9)",
+   "ghi_chu": "Luật không có định nghĩa riêng"
+  },
+  "keyphrases": [
+   "ma túy",
+   "chất kích thích",
+   "dương tính ma túy",
+   "doping"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 9,
+   "khoan": 3,
+   "diem": null
+  }
+ },
+ {
+  "id": "KN_MU_BAO_HIEM",
+  "ten": "Mũ bảo hiểm",
+  "loai": "khai_niem",
+  "dinh_nghia": null,
+  "thuoc_tinh": {
+   "nghia_vu_mo_to_xe_gan_may": "Người lái xe, người được chở trên xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy phải đội mũ bảo hiểm theo đúng quy chuẩn kỹ thuật quốc gia và cài quai đúng quy cách (khoản 2 Điều 33)",
+   "nghia_vu_xe_dap_may": "Người điều khiển, người được chở trên xe đạp máy phải đội mũ bảo hiểm theo đúng quy chuẩn kỹ thuật quốc gia và cài quai đúng quy cách (khoản 3 Điều 31)",
+   "ghi_chu": "Luật không có định nghĩa riêng về mũ bảo hiểm"
+  },
+  "keyphrases": [
+   "mũ bảo hiểm",
+   "đội mũ bảo hiểm",
+   "cài quai đúng quy cách",
+   "quy chuẩn kỹ thuật quốc gia"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 33,
+   "khoan": 2,
+   "diem": null
+  }
+ },
+ {
+  "id": "KN_DAY_DAI_AN_TOAN",
+  "ten": "Dây đai an toàn",
+  "loai": "khai_niem",
+  "dinh_nghia": null,
+  "thuoc_tinh": {
+   "nghia_vu": "Người lái xe và người được chở trên xe ô tô phải thắt dây đai an toàn tại những chỗ có trang bị dây đai an toàn khi tham gia giao thông đường bộ (khoản 2 Điều 10)",
+   "ghi_chu": "Luật không có định nghĩa riêng về dây đai an toàn"
+  },
+  "keyphrases": [
+   "dây đai an toàn",
+   "thắt dây an toàn",
+   "dây an toàn ô tô"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 10,
+   "khoan": 2,
+   "diem": null
+  }
+ },
+ {
+  "id": "KN_VUOT_XE",
+  "ten": "Vượt xe",
+  "loai": "hanh_vi",
+  "dinh_nghia": "Vượt xe là tình huống giao thông trên đường mà mỗi chiều đường xe chạy chỉ có một làn đường dành cho xe cơ giới, xe đi phía sau di chuyển sang bên trái để di chuyển lên trước xe phía trước.",
+  "thuoc_tinh": {
+   "luu_y": "Trên đường có từ hai làn đường dành cho xe cơ giới cùng chiều trở lên được phân biệt bằng vạch kẻ đường, xe đi phía sau di chuyển lên trước xe phía trước thì áp dụng quy tắc sử dụng làn đường quy định tại Điều 13"
+  },
+  "keyphrases": [
+   "vượt xe",
+   "xin vượt",
+   "vượt bên trái",
+   "vượt phải"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 14,
+   "khoan": 1,
+   "diem": null
+  }
+ },
+ {
+  "id": "KN_CHUYEN_HUONG_XE",
+  "ten": "Chuyển hướng xe",
+  "loai": "hanh_vi",
+  "dinh_nghia": "Chuyển hướng xe là tình huống giao thông mà xe rẽ trái hoặc rẽ phải hoặc quay đầu xe.",
+  "thuoc_tinh": {},
+  "keyphrases": [
+   "chuyển hướng xe",
+   "rẽ trái",
+   "rẽ phải",
+   "quay đầu xe"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 15,
+   "khoan": 1,
+   "diem": null
+  }
+ },
+ {
+  "id": "KN_DUNG_XE",
+  "ten": "Dừng xe",
+  "loai": "hanh_vi",
+  "dinh_nghia": "Dừng xe là trạng thái đứng yên tạm thời của xe trong một khoảng thời gian cần thiết đủ để cho người lên xe, xuống xe, xếp dỡ hàng hóa, kiểm tra kỹ thuật xe hoặc hoạt động khác.",
+  "thuoc_tinh": {
+   "nghia_vu": "Khi dừng xe không được tắt máy và không được rời khỏi vị trí lái, trừ trường hợp rời khỏi vị trí lái để đóng, mở cửa xe, xếp dỡ hàng hóa, kiểm tra kỹ thuật xe nhưng phải sử dụng phanh đỗ xe hoặc thực hiện biện pháp an toàn khác"
+  },
+  "keyphrases": [
+   "dừng xe",
+   "dừng đỗ",
+   "đứng yên tạm thời"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 18,
+   "khoan": 1,
+   "diem": null
+  }
+ },
+ {
+  "id": "KN_DO_XE",
+  "ten": "Đỗ xe",
+  "loai": "hanh_vi",
+  "dinh_nghia": "Đỗ xe là trạng thái đứng yên của xe không giới hạn thời gian.",
+  "thuoc_tinh": {
+   "nghia_vu": "Khi đỗ xe, người điều khiển phương tiện tham gia giao thông đường bộ chỉ được rời khỏi xe khi đã sử dụng phanh đỗ xe hoặc thực hiện biện pháp an toàn khác. Xe đỗ trên đoạn đường dốc phải đánh lái về phía lề đường, chèn bánh"
+  },
+  "keyphrases": [
+   "đỗ xe",
+   "đậu xe",
+   "phanh đỗ xe",
+   "chèn bánh"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 18,
+   "khoan": 2,
+   "diem": null
+  }
+ },
+ {
+  "id": "KN_XE_UU_TIEN",
+  "ten": "Xe ưu tiên",
+  "loai": "phuong_tien",
+  "dinh_nghia": "Xe ưu tiên gồm xe chữa cháy của Cảnh sát phòng cháy, chữa cháy và cứu nạn, cứu hộ và xe chữa cháy của các lực lượng khác được huy động đi làm nhiệm vụ chữa cháy; xe của lực lượng quân sự, công an và kiểm sát đi làm nhiệm vụ khẩn cấp; đoàn xe có xe Cảnh sát giao thông dẫn đường; xe cứu thương đi làm nhiệm vụ cấp cứu; xe hộ đê đi làm nhiệm vụ; xe đi làm nhiệm vụ cứu nạn, cứu hộ, khắc phục sự cố thiên tai, dịch bệnh hoặc xe đi làm nhiệm vụ trong tình trạng khẩn cấp theo quy định của pháp luật; đoàn xe tang.",
+  "thuoc_tinh": {
+   "thu_tu_uu_tien": "a) xe chữa cháy; b) xe quân sự, công an, kiểm sát đi làm nhiệm vụ khẩn cấp và đoàn xe có xe Cảnh sát giao thông dẫn đường; c) xe cứu thương đi làm nhiệm vụ cấp cứu; d) xe hộ đê, xe cứu nạn cứu hộ, khắc phục sự cố thiên tai, dịch bệnh, xe làm nhiệm vụ trong tình trạng khẩn cấp; đ) đoàn xe tang (khoản 2 Điều 27)"
+  },
+  "keyphrases": [
+   "xe ưu tiên",
+   "xe cứu hỏa",
+   "xe cứu thương",
+   "xe công an",
+   "đoàn xe tang",
+   "nhường đường xe ưu tiên"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 27,
+   "khoan": 1,
+   "diem": null
+  }
+ },
+ {
+  "id": "KN_DUONG_CAO_TOC",
+  "ten": "Đường cao tốc",
+  "loai": "ha_tang",
+  "dinh_nghia": null,
+  "thuoc_tinh": {
+   "ghi_chu": "Luật Trật tự, an toàn giao thông đường bộ không định nghĩa đường cao tốc; Điều 25 quy định quy tắc giao thông trên đường cao tốc",
+   "phuong_tien_khong_duoc_di": "xe máy chuyên dùng có tốc độ thiết kế nhỏ hơn tốc độ tối thiểu quy định đối với đường cao tốc, xe chở người bốn bánh có gắn động cơ, xe chở hàng bốn bánh có gắn động cơ, xe mô tô, xe gắn máy, các loại xe tương tự xe mô tô, xe gắn máy, xe thô sơ, người đi bộ (khoản 3 Điều 25)"
+  },
+  "keyphrases": [
+   "đường cao tốc",
+   "cao tốc",
+   "làn dừng khẩn cấp",
+   "làn tăng tốc",
+   "làn giảm tốc"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 25,
+   "khoan": null,
+   "diem": null
+  }
+ },
+ {
+  "id": "KN_NGUOI_DI_BO",
+  "ten": "Người đi bộ",
+  "loai": "chu_the",
+  "dinh_nghia": null,
+  "thuoc_tinh": {
+   "nghia_vu": "Phải đi trên vỉa hè, lề đường, đường dành riêng cho người đi bộ; trường hợp đường không có vỉa hè, lề đường, đường dành riêng cho người đi bộ thì người đi bộ phải đi sát mép đường bên phải theo chiều đi của mình (điểm a khoản 1 Điều 30)",
+   "ghi_chu": "Luật không có định nghĩa riêng về người đi bộ; Điều 30 quy định nghĩa vụ của người đi bộ"
+  },
+  "keyphrases": [
+   "người đi bộ",
+   "vỉa hè",
+   "qua đường",
+   "vạch kẻ đường cho người đi bộ"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 30,
+   "khoan": 1,
+   "diem": null
+  }
+ },
+ {
+  "id": "KN_HANH_VI_BI_NGHIEM_CAM",
+  "ten": "Các hành vi bị nghiêm cấm",
+  "loai": "hanh_vi",
+  "dinh_nghia": null,
+  "thuoc_tinh": {
+   "so_khoan": "28 khoản (Điều 9), trong đó có khoản 18a được bổ sung bởi Luật 118/2025/QH15",
+   "nhom_chinh": "không có giấy phép lái xe; nồng độ cồn; ma túy, chất kích thích; chống người thi hành công vụ; đua xe, lạng lách, đánh võng; dùng tay cầm điện thoại khi lái xe; giao xe cho người không đủ điều kiện; chở quá tải, quá số người; bỏ trốn sau khi gây tai nạn"
+  },
+  "keyphrases": [
+   "hành vi bị nghiêm cấm",
+   "điều cấm",
+   "Điều 9"
+  ],
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 9,
+   "khoan": null,
+   "diem": null
+  }
+ }
+]

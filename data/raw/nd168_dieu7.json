@@ -1,0 +1,2134 @@
+[
+ {
+  "id": "VP_MOTO_ND168D7_K1A",
+  "hanh_vi": "Không chấp hành hiệu lệnh, chỉ dẫn của biển báo hiệu, vạch kẻ đường, trừ các hành vi vi phạm quy định tại điểm b, điểm d, điểm e khoản 2; điểm a, điểm c, điểm d, điểm h khoản 3; điểm a, điểm b, điểm c, điểm d khoản 4; điểm b, điểm d khoản 6; điểm a, điểm b, điểm c khoản 7; điểm a khoản 8; điểm b khoản 9; điểm a khoản 10 Điều này",
+  "nhom": "bien_bao_hieu",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 200000,
+   "max": 400000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 1,
+   "diem": "a"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "không chấp hành biển báo xe máy",
+   "đi sai vạch kẻ đường xe máy",
+   "lỗi biển báo hiệu mô tô",
+   "không tuân thủ chỉ dẫn biển báo"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K1B",
+  "hanh_vi": "Không có tín hiệu trước khi vượt hoặc có tín hiệu vượt xe nhưng không sử dụng trong suốt quá trình vượt xe",
+  "nhom": "vuot_xe",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 200000,
+   "max": 400000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 1,
+   "diem": "b"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "vượt xe không xi nhan",
+   "không bật xi nhan khi vượt",
+   "vượt xe máy không tín hiệu"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K1C",
+  "hanh_vi": "Lùi xe mô tô ba bánh không quan sát hai bên, phía sau xe hoặc không có tín hiệu lùi xe",
+  "nhom": "lui_xe",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 200000,
+   "max": 400000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 1,
+   "diem": "c"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "lùi xe ba bánh không quan sát",
+   "xe ba gác lùi không tín hiệu",
+   "lùi xe mô tô ba bánh"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K1D",
+  "hanh_vi": "Chở người ngồi trên xe sử dụng ô (dù)",
+  "nhom": "khac",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 200000,
+   "max": 400000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 1,
+   "diem": "d"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "che ô khi ngồi sau xe máy",
+   "cầm dù khi đi xe máy",
+   "chở người dùng ô trên xe máy"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K1DD",
+  "hanh_vi": "Không tuân thủ các quy định về nhường đường tại nơi đường giao nhau, trừ các hành vi vi phạm quy định tại điểm c, điểm d khoản 6 Điều này",
+  "nhom": "nhuong_duong",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 200000,
+   "max": 400000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 1,
+   "diem": "đ"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "không nhường đường ở ngã tư",
+   "lỗi nhường đường xe máy",
+   "không nhường đường nơi giao nhau"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K1E",
+  "hanh_vi": "Chuyển làn đường không đúng nơi cho phép hoặc không có tín hiệu báo trước hoặc chuyển làn đường không đúng quy định \"mỗi lần chuyển làn đường chỉ được phép chuyển sang một làn đường liền kề\"",
+  "nhom": "lan_duong",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 200000,
+   "max": 400000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 1,
+   "diem": "e"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "chuyển làn không xi nhan",
+   "chuyển làn sai quy định xe máy",
+   "đổi làn đường không báo trước"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K1G",
+  "hanh_vi": "Không sử dụng đèn chiếu sáng trong thời gian từ 18 giờ ngày hôm trước đến 06 giờ ngày hôm sau hoặc khi có sương mù, khói, bụi, trời mưa, thời tiết xấu làm hạn chế tầm nhìn",
+  "nhom": "den_chieu_sang",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 200000,
+   "max": 400000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 1,
+   "diem": "g"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "không bật đèn xe máy buổi tối",
+   "đi xe máy không bật đèn",
+   "quên bật đèn ban đêm",
+   "lỗi không bật đèn chiếu sáng"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K1H",
+  "hanh_vi": "Tránh xe không đúng quy định; sử dụng đèn chiếu xa khi gặp người đi bộ qua đường hoặc khi đi trên đoạn đường qua khu dân cư có hệ thống chiếu sáng đang hoạt động hoặc khi gặp xe đi ngược chiều (trừ trường hợp dải phân cách có khả năng chống chói) hoặc khi chuyển hướng xe tại nơi đường giao nhau; không nhường đường cho xe đi ngược chiều theo quy định tại nơi đường hẹp, đường dốc, nơi có chướng ngại vật",
+  "nhom": "den_chieu_sang",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 200000,
+   "max": 400000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 1,
+   "diem": "h"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "bật đèn pha trong thành phố",
+   "dùng đèn chiếu xa khu dân cư",
+   "đèn pha xe máy bị phạt",
+   "tránh xe không đúng quy định"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K1I",
+  "hanh_vi": "Sử dụng còi trong thời gian từ 22 giờ ngày hôm trước đến 05 giờ ngày hôm sau trong khu đông dân cư, khu vực cơ sở khám bệnh, chữa bệnh, trừ các xe ưu tiên đang đi làm nhiệm vụ theo quy định",
+  "nhom": "coi",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 200000,
+   "max": 400000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 1,
+   "diem": "i"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "bấm còi ban đêm",
+   "bóp còi trong khu dân cư ban đêm",
+   "còi xe máy sau 22 giờ"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K1K",
+  "hanh_vi": "Điều khiển xe chạy dưới tốc độ tối thiểu trên đoạn đường bộ có quy định tốc độ tối thiểu cho phép",
+  "nhom": "toc_do",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 200000,
+   "max": 400000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 1,
+   "diem": "k"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "chạy dưới tốc độ tối thiểu",
+   "đi quá chậm bị phạt",
+   "xe máy chạy chậm hơn quy định"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K2A",
+  "hanh_vi": "Dừng xe, đỗ xe trên phần đường xe chạy ở đoạn đường ngoài đô thị nơi có lề đường",
+  "nhom": "dung_do",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 400000,
+   "max": 600000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 2,
+   "diem": "a"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "đỗ xe máy dưới lòng đường ngoài đô thị",
+   "dừng xe trên phần đường xe chạy",
+   "đỗ xe không vào lề đường"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K2B",
+  "hanh_vi": "Điều khiển xe chạy quá tốc độ quy định từ 05 km/h đến dưới 10 km/h",
+  "nhom": "toc_do",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 400000,
+   "max": 600000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 2,
+   "diem": "b"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "chạy quá tốc độ 5 đến 10 km/h",
+   "vượt quá tốc độ xe máy mức nhẹ",
+   "phạt tốc độ xe máy 5-10km/h"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K2C",
+  "hanh_vi": "Điều khiển xe chạy tốc độ thấp mà không đi bên phải phần đường xe chạy gây cản trở giao thông",
+  "nhom": "lan_duong",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 400000,
+   "max": 600000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 2,
+   "diem": "c"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "đi chậm không đi sát lề phải",
+   "chạy chậm cản trở giao thông",
+   "xe máy đi chậm giữa đường"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K2D",
+  "hanh_vi": "Dừng xe, đỗ xe ở lòng đường gây cản trở giao thông; tụ tập từ 03 xe trở lên ở lòng đường, trong hầm đường bộ; đỗ, để xe ở lòng đường, vỉa hè trái phép",
+  "nhom": "dung_do",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 400000,
+   "max": 600000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 2,
+   "diem": "d"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "đỗ xe máy trên vỉa hè",
+   "để xe dưới lòng đường",
+   "tụ tập xe máy dưới lòng đường",
+   "dựng xe máy trái phép"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K2DD",
+  "hanh_vi": "Xe không được quyền ưu tiên lắp đặt, sử dụng thiết bị phát tín hiệu của xe được quyền ưu tiên",
+  "nhom": "xe_uu_tien",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 400000,
+   "max": 600000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [
+   "tịch thu thiết bị phát tín hiệu ưu tiên lắp đặt, sử dụng trái quy định"
+  ],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 2,
+   "diem": "đ"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "lắp còi hú xe máy",
+   "gắn đèn ưu tiên trái phép",
+   "dùng tín hiệu ưu tiên khi không được phép"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K2E",
+  "hanh_vi": "Dừng xe, đỗ xe trên điểm đón, trả khách, nơi đường bộ giao nhau, trên phần đường dành cho người đi bộ qua đường; dừng xe nơi có biển \"Cấm dừng xe và đỗ xe\"; đỗ xe tại nơi có biển \"Cấm đỗ xe\" hoặc biển \"Cấm dừng xe và đỗ xe\"; không tuân thủ các quy định về dừng xe, đỗ xe tại nơi đường bộ giao nhau cùng mức với đường sắt; dừng xe, đỗ xe trong phạm vi hành lang an toàn giao thông đường sắt",
+  "nhom": "dung_do",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 400000,
+   "max": 600000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 2,
+   "diem": "e"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "dừng xe nơi có biển cấm dừng",
+   "đỗ xe trên vạch người đi bộ",
+   "đỗ xe ở điểm dừng xe buýt",
+   "dừng xe gần đường sắt"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K2G",
+  "hanh_vi": "Chở theo 02 người trên xe, trừ trường hợp chở người bệnh đi cấp cứu, trẻ em dưới 12 tuổi, người già yếu hoặc người khuyết tật, áp giải người có hành vi vi phạm pháp luật",
+  "nhom": "cho_qua_so_nguoi",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 400000,
+   "max": 600000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 2,
+   "diem": "g"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "kẹp 3",
+   "chở 2 người trên xe máy",
+   "chở quá số người quy định",
+   "đi xe máy 3 người"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K2H",
+  "hanh_vi": "Không đội \"mũ bảo hiểm cho người đi mô tô, xe máy\" hoặc đội \"mũ bảo hiểm cho người đi mô tô, xe máy\" không cài quai đúng quy cách khi điều khiển xe tham gia giao thông trên đường bộ",
+  "nhom": "mu_bao_hiem",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 400000,
+   "max": 600000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 2,
+   "diem": "h"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "không đội mũ bảo hiểm",
+   "quên đội mũ bảo hiểm",
+   "không cài quai mũ bảo hiểm",
+   "phạt không đội mũ bảo hiểm"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K2I",
+  "hanh_vi": "Chở người ngồi trên xe không đội \"mũ bảo hiểm cho người đi mô tô, xe máy\" hoặc đội \"mũ bảo hiểm cho người đi mô tô, xe máy\" không cài quai đúng quy cách, trừ trường hợp chở người bệnh đi cấp cứu, trẻ em dưới 06 tuổi, áp giải người có hành vi vi phạm pháp luật",
+  "nhom": "mu_bao_hiem",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 400000,
+   "max": 600000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 2,
+   "diem": "i"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "người ngồi sau không đội mũ bảo hiểm",
+   "chở người không đội mũ bảo hiểm",
+   "trẻ em không đội mũ bảo hiểm"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K2K",
+  "hanh_vi": "Quay đầu xe tại nơi không được quay đầu xe, trừ hành vi vi phạm quy định tại điểm d khoản 4 Điều này",
+  "nhom": "quay_dau",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 400000,
+   "max": 600000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 2,
+   "diem": "k"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "quay đầu xe nơi cấm quay đầu",
+   "quay đầu xe máy sai quy định",
+   "lỗi quay đầu xe"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K3A",
+  "hanh_vi": "Chuyển hướng không quan sát hoặc không bảo đảm khoảng cách an toàn với xe phía sau hoặc không giảm tốc độ hoặc không có tín hiệu báo hướng rẽ hoặc có tín hiệu báo hướng rẽ nhưng không sử dụng liên tục trong quá trình chuyển hướng (trừ trường hợp điều khiển xe đi theo hướng cong của đoạn đường bộ ở nơi đường không giao nhau cùng mức); điều khiển xe rẽ trái tại nơi có biển báo hiệu có nội dung cấm rẽ trái đối với loại phương tiện đang điều khiển; điều khiển xe rẽ phải tại nơi có biển báo hiệu có nội dung cấm rẽ phải đối với loại phương tiện đang điều khiển",
+  "nhom": "chuyen_huong",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 600000,
+   "max": 800000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 3,
+   "diem": "a"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "rẽ không xi nhan",
+   "chuyển hướng không quan sát",
+   "rẽ trái nơi cấm rẽ trái",
+   "không bật xi nhan khi rẽ"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K3B",
+  "hanh_vi": "Chở theo từ 03 người trở lên trên xe",
+  "nhom": "cho_qua_so_nguoi",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 600000,
+   "max": 800000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 2,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 3,
+   "diem": "b"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "kẹp 4",
+   "chở 3 người trở lên xe máy",
+   "chở quá số người",
+   "đi xe máy 4 người"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K3C",
+  "hanh_vi": "Dừng xe, đỗ xe trên cầu",
+  "nhom": "dung_do",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 600000,
+   "max": 800000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 3,
+   "diem": "c"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "dừng xe trên cầu",
+   "đỗ xe máy trên cầu",
+   "đứng lại trên cầu"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K3D",
+  "hanh_vi": "Điều khiển xe không đi bên phải theo chiều đi của mình; đi không đúng phần đường, làn đường quy định (làn cùng chiều hoặc làn ngược chiều); điều khiển xe đi qua dải phân cách cố định ở giữa hai phần đường xe chạy",
+  "nhom": "lan_duong",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 600000,
+   "max": 800000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 3,
+   "diem": "d"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "đi sai làn đường xe máy",
+   "đi không đúng phần đường",
+   "leo qua dải phân cách",
+   "xe máy đi vào làn ô tô"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K3DD",
+  "hanh_vi": "Vượt bên phải trong trường hợp không được phép",
+  "nhom": "vuot_xe",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 600000,
+   "max": 800000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 3,
+   "diem": "đ"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "vượt phải xe máy",
+   "vượt bên phải không được phép",
+   "lỗi vượt phải"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K3E",
+  "hanh_vi": "Người đang điều khiển xe hoặc chở người ngồi trên xe bám, kéo, đẩy xe khác, vật khác, dẫn dắt vật nuôi, mang vác vật cồng kềnh; chở người đứng trên yên, giá đèo hàng hoặc ngồi trên tay lái của xe",
+  "nhom": "khac",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 600000,
+   "max": 800000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 3,
+   "diem": "e"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "chở hàng cồng kềnh xe máy",
+   "dắt chó khi đi xe máy",
+   "đứng trên yên xe máy",
+   "kéo đẩy xe khác"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K3G",
+  "hanh_vi": "Điều khiển xe kéo theo xe khác, vật khác",
+  "nhom": "keo_xe",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 600000,
+   "max": 800000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 3,
+   "diem": "g"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "xe máy kéo xe khác",
+   "kéo theo vật khác",
+   "lôi kéo xe máy"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K3H",
+  "hanh_vi": "Chạy trong hầm đường bộ không sử dụng đèn chiếu sáng gần",
+  "nhom": "den_chieu_sang",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 600000,
+   "max": 800000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 3,
+   "diem": "h"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "không bật đèn trong hầm",
+   "đi hầm đường bộ không bật đèn",
+   "hầm chui không bật đèn"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K3I",
+  "hanh_vi": "Không giữ khoảng cách an toàn để xảy ra va chạm với xe chạy liền trước hoặc không giữ khoảng cách theo quy định của biển báo hiệu \"Cự ly tối thiểu giữa hai xe\"",
+  "nhom": "khoang_cach",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 600000,
+   "max": 800000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 3,
+   "diem": "i"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "không giữ khoảng cách an toàn",
+   "tông vào xe phía trước",
+   "bám đuôi xe trước"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K3K",
+  "hanh_vi": "Điều khiển xe chạy dàn hàng ngang từ 03 xe trở lên",
+  "nhom": "lan_duong",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 600000,
+   "max": 800000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 3,
+   "diem": "k"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "dàn hàng ngang xe máy",
+   "đi hàng 3 xe máy",
+   "chạy song song nhiều xe"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K3L",
+  "hanh_vi": "Xe được quyền ưu tiên lắp đặt, sử dụng thiết bị phát tín hiệu ưu tiên không đúng quy định hoặc sử dụng thiết bị phát tín hiệu ưu tiên mà không có giấy phép của cơ quan có thẩm quyền cấp hoặc có giấy phép của cơ quan có thẩm quyền cấp nhưng không còn giá trị sử dụng theo quy định",
+  "nhom": "xe_uu_tien",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 600000,
+   "max": 800000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 3,
+   "diem": "l"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "dùng còi ưu tiên sai quy định",
+   "thiết bị ưu tiên không có giấy phép",
+   "xe ưu tiên dùng tín hiệu sai"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K4A",
+  "hanh_vi": "Điều khiển xe chạy quá tốc độ quy định từ 10 km/h đến 20 km/h",
+  "nhom": "toc_do",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 800000,
+   "max": 1000000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 4,
+   "diem": "a"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "chạy quá tốc độ 10 đến 20 km/h",
+   "vượt quá tốc độ xe máy",
+   "phạt tốc độ xe máy 10-20km/h"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K4B",
+  "hanh_vi": "Dừng xe, đỗ xe trong hầm đường bộ không đúng nơi quy định",
+  "nhom": "dung_do",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 800000,
+   "max": 1000000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 4,
+   "diem": "b"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "dừng xe trong hầm đường bộ",
+   "đỗ xe trong hầm",
+   "dừng đỗ sai chỗ trong hầm"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K4C",
+  "hanh_vi": "Vượt xe trong những trường hợp không được vượt, vượt xe tại đoạn đường có biển báo hiệu có nội dung cấm vượt đối với loại phương tiện đang điều khiển, trừ các hành vi vi phạm quy định tại điểm đ khoản 3 Điều này",
+  "nhom": "vuot_xe",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 800000,
+   "max": 1000000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 4,
+   "diem": "c"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "vượt xe nơi cấm vượt",
+   "vượt ẩu xe máy",
+   "vượt xe trái quy định"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K4D",
+  "hanh_vi": "Quay đầu xe trong hầm đường bộ",
+  "nhom": "quay_dau",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 800000,
+   "max": 1000000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 4,
+   "diem": "d"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "quay đầu xe trong hầm",
+   "quay đầu trong hầm đường bộ",
+   "quay xe trong hầm chui"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K4DD",
+  "hanh_vi": "Người đang điều khiển xe sử dụng ô (dù), thiết bị âm thanh (trừ thiết bị trợ thính), dùng tay cầm và sử dụng điện thoại hoặc các thiết bị điện tử khác",
+  "nhom": "dien_thoai",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 800000,
+   "max": 1000000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 4,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 4,
+   "diem": "đ"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "dùng điện thoại khi lái xe máy",
+   "vừa đi xe vừa nghe điện thoại",
+   "đeo tai nghe khi đi xe máy",
+   "cầm ô khi lái xe máy"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K5A",
+  "hanh_vi": "Điều khiển xe có liên quan trực tiếp đến vụ tai nạn giao thông mà không dừng ngay phương tiện, không giữ nguyên hiện trường, không trợ giúp người bị nạn, trừ hành vi vi phạm quy định tại điểm c khoản 9 Điều này",
+  "nhom": "tai_nan",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 1000000,
+   "max": 2000000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 2,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 5,
+   "diem": "a"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "liên quan tai nạn không dừng lại",
+   "không cứu giúp người bị nạn",
+   "không giữ nguyên hiện trường tai nạn"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K5B",
+  "hanh_vi": "Chuyển hướng không nhường quyền đi trước cho: người đi bộ, xe lăn của người khuyết tật qua đường tại nơi có vạch kẻ đường dành cho người đi bộ; xe thô sơ đang đi trên phần đường dành cho xe thô sơ",
+  "nhom": "nhuong_duong",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 1000000,
+   "max": 2000000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 2,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 5,
+   "diem": "b"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "không nhường đường cho người đi bộ",
+   "không nhường người khuyết tật qua đường",
+   "cán vạch người đi bộ"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K5C",
+  "hanh_vi": "Chuyển hướng không nhường đường cho: các xe đi ngược chiều; người đi bộ, xe thô sơ đang qua đường tại nơi không có vạch kẻ đường cho người đi bộ",
+  "nhom": "nhuong_duong",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 1000000,
+   "max": 2000000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 2,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 5,
+   "diem": "c"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "chuyển hướng không nhường xe ngược chiều",
+   "không nhường đường khi rẽ",
+   "rẽ không nhường người đi bộ"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K6A",
+  "hanh_vi": "Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn nhưng chưa vượt quá 50 miligam/100 mililít máu hoặc chưa vượt quá 0,25 miligam/1 lít khí thở",
+  "nhom": "nong_do_con",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 2000000,
+   "max": 3000000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 4,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 6,
+   "diem": "a"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "nồng độ cồn xe máy",
+   "uống rượu bia lái xe máy",
+   "nồng độ cồn mức 1",
+   "chưa vượt quá 0,25 miligam/1 lít khí thở"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K6B",
+  "hanh_vi": "Đi vào khu vực cấm, đường có biển báo hiệu có nội dung cấm đi vào đối với loại phương tiện đang điều khiển, trừ các hành vi vi phạm quy định tại điểm a, điểm b khoản 7 Điều này và các trường hợp xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định",
+  "nhom": "khu_vuc_cam",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 2000000,
+   "max": 3000000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 2,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 6,
+   "diem": "b"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "đi vào đường cấm xe máy",
+   "vào khu vực cấm",
+   "đi vào đường có biển cấm"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K6C",
+  "hanh_vi": "Không giảm tốc độ (hoặc dừng lại) và nhường đường khi điều khiển xe đi từ đường không ưu tiên ra đường ưu tiên, từ đường nhánh ra đường chính",
+  "nhom": "nhuong_duong",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 2000000,
+   "max": 3000000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 2,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 6,
+   "diem": "c"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "từ đường nhánh ra đường chính không nhường",
+   "không nhường đường ưu tiên",
+   "ra đường lớn không giảm tốc"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K6D",
+  "hanh_vi": "Không giảm tốc độ và nhường đường cho xe đi đến từ bên phải tại nơi đường giao nhau không có báo hiệu đi theo vòng xuyến; không giảm tốc độ và nhường đường cho xe đi đến từ bên trái tại nơi đường giao nhau có báo hiệu đi theo vòng xuyến",
+  "nhom": "nhuong_duong",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 2000000,
+   "max": 3000000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 2,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 6,
+   "diem": "d"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "không nhường đường ở vòng xuyến",
+   "vào vòng xuyến không nhường",
+   "không nhường xe bên phải ngã tư"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K7A",
+  "hanh_vi": "Đi ngược chiều của đường một chiều, đi ngược chiều trên đường có biển \"Cấm đi ngược chiều\", trừ hành vi vi phạm quy định tại điểm b khoản này và các trường hợp xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định; điều khiển xe đi trên vỉa hè, trừ trường hợp điều khiển xe đi qua vỉa hè để vào nhà, cơ quan",
+  "nhom": "nguoc_chieu",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 4000000,
+   "max": 6000000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 2,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 7,
+   "diem": "a"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "đi ngược chiều",
+   "đi ngược chiều xe máy",
+   "chạy xe máy trên vỉa hè",
+   "leo lề đi xe máy"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K7B",
+  "hanh_vi": "Điều khiển xe đi vào đường cao tốc, trừ xe phục vụ việc quản lý, bảo trì đường cao tốc",
+  "nhom": "duong_cao_toc",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 4000000,
+   "max": 6000000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 6,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 7,
+   "diem": "b"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "xe máy đi vào cao tốc",
+   "chạy xe máy trên đường cao tốc",
+   "mô tô vào cao tốc"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K7C",
+  "hanh_vi": "Không chấp hành hiệu lệnh của đèn tín hiệu giao thông",
+  "nhom": "den_tin_hieu",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 4000000,
+   "max": 6000000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 4,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 7,
+   "diem": "c"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "vượt đèn đỏ xe máy",
+   "không chấp hành đèn tín hiệu",
+   "vượt đèn vàng",
+   "phạt vượt đèn đỏ"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K7D",
+  "hanh_vi": "Không chấp hành hiệu lệnh, hướng dẫn của người điều khiển giao thông hoặc người kiểm soát giao thông",
+  "nhom": "hieu_lenh",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 4000000,
+   "max": 6000000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 4,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 7,
+   "diem": "d"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "không chấp hành hiệu lệnh csgt",
+   "không dừng xe khi cảnh sát ra hiệu",
+   "chống lệnh người điều khiển giao thông"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K7DD",
+  "hanh_vi": "Không nhường đường hoặc gây cản trở xe được quyền ưu tiên đang phát tín hiệu ưu tiên đi làm nhiệm vụ",
+  "nhom": "xe_uu_tien",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 4000000,
+   "max": 6000000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 4,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 7,
+   "diem": "đ"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "không nhường đường xe cứu thương",
+   "cản trở xe ưu tiên",
+   "không nhường xe cứu hỏa"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K8A",
+  "hanh_vi": "Điều khiển xe chạy quá tốc độ quy định trên 20 km/h",
+  "nhom": "toc_do",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 6000000,
+   "max": 8000000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 4,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 8,
+   "diem": "a"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "chạy quá tốc độ trên 20 km/h",
+   "phóng nhanh xe máy",
+   "vượt quá tốc độ nặng xe máy"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K8B",
+  "hanh_vi": "Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn vượt quá 50 miligam đến 80 miligam/100 mililít máu hoặc vượt quá 0,25 miligam đến 0,4 miligam/1 lít khí thở",
+  "nhom": "nong_do_con",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 6000000,
+   "max": 8000000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 10,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 8,
+   "diem": "b"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "nồng độ cồn mức 2 xe máy",
+   "vượt quá 0,25 đến 0,4 miligam/1 lít khí thở",
+   "uống bia lái xe máy bị phạt",
+   "nồng độ cồn xe máy"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K9A",
+  "hanh_vi": "Điều khiển xe lạng lách, đánh võng trên đường bộ; sử dụng chân chống hoặc vật khác quệt xuống đường khi xe đang chạy",
+  "nhom": "lang_lach",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 8000000,
+   "max": 10000000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [
+   "tước quyền sử dụng giấy phép lái xe từ 10 tháng đến 12 tháng"
+  ],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 9,
+   "diem": "a"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "lạng lách đánh võng",
+   "rê chân chống xuống đường",
+   "đánh võng xe máy",
+   "quẹt chân chống tóe lửa"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K9B",
+  "hanh_vi": "Điều khiển xe thành nhóm từ 02 xe trở lên chạy quá tốc độ quy định",
+  "nhom": "toc_do",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 8000000,
+   "max": 10000000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [
+   "tước quyền sử dụng giấy phép lái xe từ 10 tháng đến 12 tháng"
+  ],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 9,
+   "diem": "b"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "đua xe theo nhóm",
+   "chạy nhóm quá tốc độ",
+   "tổ chức chạy nhanh nhiều xe"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K9C",
+  "hanh_vi": "Gây tai nạn giao thông không dừng ngay phương tiện, không giữ nguyên hiện trường, không trợ giúp người bị nạn, không ở lại hiện trường hoặc không đến trình báo ngay với cơ quan công an, Ủy ban nhân dân nơi gần nhất",
+  "nhom": "tai_nan",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 8000000,
+   "max": 10000000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 6,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 9,
+   "diem": "c"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "gây tai nạn rồi bỏ chạy",
+   "tông người rồi bỏ đi",
+   "không trình báo sau tai nạn"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K9D",
+  "hanh_vi": "Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn vượt quá 80 miligam/100 mililít máu hoặc vượt quá 0,4 miligam/1 lít khí thở",
+  "nhom": "nong_do_con",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 8000000,
+   "max": 10000000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [
+   "tước quyền sử dụng giấy phép lái xe từ 22 tháng đến 24 tháng"
+  ],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 9,
+   "diem": "d"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "nồng độ cồn mức 3 xe máy",
+   "vượt quá 0,4 miligam/1 lít khí thở",
+   "say rượu lái xe máy",
+   "nồng độ cồn kịch khung xe máy"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K9DD",
+  "hanh_vi": "Không chấp hành yêu cầu kiểm tra về nồng độ cồn của người thi hành công vụ",
+  "nhom": "nong_do_con",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 8000000,
+   "max": 10000000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [
+   "tước quyền sử dụng giấy phép lái xe từ 22 tháng đến 24 tháng"
+  ],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 9,
+   "diem": "đ"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "không thổi nồng độ cồn",
+   "từ chối đo nồng độ cồn",
+   "không chấp hành kiểm tra cồn"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K9E",
+  "hanh_vi": "Điều khiển xe trên đường mà trong cơ thể có chất ma túy hoặc chất kích thích khác mà pháp luật cấm sử dụng",
+  "nhom": "ma_tuy",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 8000000,
+   "max": 10000000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [
+   "tước quyền sử dụng giấy phép lái xe từ 22 tháng đến 24 tháng"
+  ],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 9,
+   "diem": "e"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "dương tính ma túy khi lái xe",
+   "sử dụng ma túy lái xe máy",
+   "chất kích thích khi lái xe"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K9G",
+  "hanh_vi": "Không chấp hành yêu cầu kiểm tra về chất ma túy hoặc chất kích thích khác mà pháp luật cấm sử dụng của người thi hành công vụ",
+  "nhom": "ma_tuy",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 8000000,
+   "max": 10000000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [
+   "tước quyền sử dụng giấy phép lái xe từ 22 tháng đến 24 tháng"
+  ],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 9,
+   "diem": "g"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "không chấp hành kiểm tra ma túy",
+   "từ chối test ma túy",
+   "không hợp tác xét nghiệm ma túy"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K9H",
+  "hanh_vi": "Ngồi phía sau vòng tay qua người ngồi trước để điều khiển xe, trừ trường hợp chở trẻ em dưới 06 tuổi ngồi phía trước",
+  "nhom": "khac",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 8000000,
+   "max": 10000000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [
+   "tước quyền sử dụng giấy phép lái xe từ 10 tháng đến 12 tháng"
+  ],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 9,
+   "diem": "h"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "ngồi sau vòng tay lái xe",
+   "lái xe từ phía sau",
+   "vòng tay qua người ngồi trước"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K9I",
+  "hanh_vi": "Điều khiển xe thành đoàn gây cản trở giao thông, trừ trường hợp được cơ quan có thẩm quyền cấp phép",
+  "nhom": "khac",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 8000000,
+   "max": 10000000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [
+   "tước quyền sử dụng giấy phép lái xe từ 10 tháng đến 12 tháng"
+  ],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 9,
+   "diem": "i"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "đi thành đoàn gây cản trở",
+   "diễu hành xe máy",
+   "chạy đoàn xe máy cản trở giao thông"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K9K",
+  "hanh_vi": "Sử dụng còi, rú ga (nẹt pô) liên tục trong khu đông dân cư, khu vực cơ sở khám bệnh, chữa bệnh, trừ các xe ưu tiên đang đi làm nhiệm vụ theo quy định",
+  "nhom": "coi",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 8000000,
+   "max": 10000000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [
+   "tước quyền sử dụng giấy phép lái xe từ 10 tháng đến 12 tháng"
+  ],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 9,
+   "diem": "k"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "nẹt pô",
+   "rú ga trong khu dân cư",
+   "bấm còi liên tục",
+   "nẹt pô xe máy bị phạt"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K10A",
+  "hanh_vi": "Điều khiển xe không quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn theo quy định mà gây tai nạn giao thông; điều khiển xe chạy quá tốc độ quy định gây tai nạn giao thông; đi vào đường cao tốc, dừng xe, đỗ xe, quay đầu xe, lùi xe, vượt xe, chuyển hướng, chuyển làn đường không đúng quy định gây tai nạn giao thông; không đi đúng phần đường, làn đường, không giữ khoảng cách an toàn giữa hai xe theo quy định gây tai nạn giao thông hoặc đi vào đường có biển báo hiệu có nội dung cấm đi vào đối với loại phương tiện đang điều khiển, đi ngược chiều của đường một chiều, đi ngược chiều trên đường có biển \"Cấm đi ngược chiều\" gây tai nạn giao thông",
+  "nhom": "tai_nan",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 10000000,
+   "max": 14000000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 10,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 10,
+   "diem": "a"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "gây tai nạn giao thông xe máy",
+   "không quan sát gây tai nạn",
+   "chạy quá tốc độ gây tai nạn",
+   "đi ngược chiều gây tai nạn"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K10B",
+  "hanh_vi": "Vi phạm quy định tại một trong các điểm, khoản sau của Điều này mà gây tai nạn giao thông: điểm a, điểm d, điểm đ, điểm g, điểm h, điểm i, điểm k khoản 1; điểm c, điểm đ, điểm g khoản 2; điểm b, điểm e, điểm g, điểm h, điểm k khoản 3; điểm đ khoản 4; điểm c, điểm d khoản 6; điểm c, điểm d, điểm đ khoản 7; điểm a, điểm b, điểm h, điểm k khoản 9 Điều này",
+  "nhom": "tai_nan",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": 10000000,
+   "max": 14000000,
+   "don_vi": "VND",
+   "ghi_chu": null
+  },
+  "hinh_phat_bo_sung": [],
+  "tru_diem_gplx": 10,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 10,
+   "diem": "b"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "vi phạm gây tai nạn giao thông",
+   "gây tai nạn khi vi phạm quy tắc",
+   "trừ 10 điểm gây tai nạn"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K11A",
+  "hanh_vi": "Buông cả hai tay khi đang điều khiển xe; dùng chân điều khiển xe; ngồi về một bên điều khiển xe; nằm trên yên xe điều khiển xe; thay người điều khiển khi xe đang chạy; quay người về phía sau để điều khiển xe hoặc bịt mắt điều khiển xe",
+  "nhom": "lang_lach",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": null,
+   "max": null,
+   "don_vi": "VND",
+   "ghi_chu": "Không áp dụng phạt tiền; áp dụng hình thức xử phạt tịch thu phương tiện theo khoản 11 Điều 7"
+  },
+  "hinh_phat_bo_sung": [
+   "tịch thu phương tiện",
+   "tước quyền sử dụng giấy phép lái xe từ 22 tháng đến 24 tháng"
+  ],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 11,
+   "diem": "a"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "buông hai tay khi lái xe",
+   "thả tay lái xe máy",
+   "dùng chân lái xe máy",
+   "bịt mắt lái xe",
+   "tịch thu xe máy"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K11B",
+  "hanh_vi": "Điều khiển xe chạy bằng một bánh đối với xe hai bánh, chạy bằng hai bánh đối với xe ba bánh",
+  "nhom": "lang_lach",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": null,
+   "max": null,
+   "don_vi": "VND",
+   "ghi_chu": "Không áp dụng phạt tiền; áp dụng hình thức xử phạt tịch thu phương tiện theo khoản 11 Điều 7"
+  },
+  "hinh_phat_bo_sung": [
+   "tịch thu phương tiện",
+   "tước quyền sử dụng giấy phép lái xe từ 22 tháng đến 24 tháng"
+  ],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 11,
+   "diem": "b"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "bốc đầu",
+   "bốc đầu xe máy bị tịch thu xe",
+   "chạy bằng một bánh",
+   "đi xe một bánh"
+  ]
+ },
+ {
+  "id": "VP_MOTO_ND168D7_K11C",
+  "hanh_vi": "Tái phạm hành vi điều khiển xe lạng lách, đánh võng quy định tại điểm a khoản 9 Điều này",
+  "nhom": "lang_lach",
+  "chu_the": "nguoi_dieu_khien",
+  "phuong_tien": [
+   "mo_to",
+   "xe_gan_may"
+  ],
+  "phat_tien": {
+   "min": null,
+   "max": null,
+   "don_vi": "VND",
+   "ghi_chu": "Không áp dụng phạt tiền; áp dụng hình thức xử phạt tịch thu phương tiện theo khoản 11 Điều 7"
+  },
+  "hinh_phat_bo_sung": [
+   "tịch thu phương tiện",
+   "tước quyền sử dụng giấy phép lái xe từ 22 tháng đến 24 tháng"
+  ],
+  "tru_diem_gplx": 0,
+  "bien_phap_khac_phuc": [],
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 7,
+   "khoan": 11,
+   "diem": "c"
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "keyphrases": [
+   "tái phạm lạng lách đánh võng",
+   "tái phạm đánh võng bị thu xe",
+   "tịch thu xe do tái phạm lạng lách"
+  ]
+ }
+]

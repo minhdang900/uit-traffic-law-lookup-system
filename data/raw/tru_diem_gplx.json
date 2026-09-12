@@ -1,0 +1,306 @@
+[
+ {
+  "id": "R97",
+  "ten": "Dữ liệu về điểm, trừ điểm, phục hồi điểm giấy phép lái xe được quản lý trên môi trường điện tử",
+  "dieu_kien": [
+   "Cần xác định nơi quản lý, lưu trữ dữ liệu về điểm, trừ điểm, phục hồi điểm giấy phép lái xe"
+  ],
+  "ket_luan": [
+   "Dữ liệu được quản lý, lưu trữ trên môi trường điện tử",
+   "Dữ liệu nằm trong Cơ sở dữ liệu về xử lý vi phạm hành chính về trật tự, an toàn giao thông đường bộ",
+   "Bộ Công an là cơ quan xây dựng, quản lý, vận hành cơ sở dữ liệu này"
+  ],
+  "nguyen_van": "Dữ liệu về điểm, trừ điểm, phục hồi điểm giấy phép lái xe được quản lý, lưu trữ trên môi trường điện tử, trong Cơ sở dữ liệu về xử lý vi phạm hành chính về trật tự, an toàn giao thông đường bộ do Bộ Công an xây dựng, quản lý, vận hành.",
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 49,
+   "khoan": null,
+   "diem": null
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "ghi_chu": "Điều 49 không chia thành khoản; toàn văn Điều 49 là một đoạn duy nhất.",
+  "nguon": "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-dinh-168-2024-nd-cp-quy-dinh-xu-phat-vi-pham-hanh-chinh-ve-trat-tu-atgt-duong-bo-119241231164556785.htm"
+ },
+ {
+  "id": "R98",
+  "ten": "Nguyên tắc trừ điểm giấy phép lái xe",
+  "dieu_kien": [
+   "Người vi phạm bị xử phạt vi phạm hành chính về hành vi mà Nghị định 168/2024/NĐ-CP quy định bị trừ điểm giấy phép lái xe",
+   "Quyết định xử phạt vi phạm hành chính đã có hiệu lực thi hành"
+  ],
+  "ket_luan": [
+   "Việc trừ điểm được thực hiện ngay sau khi quyết định xử phạt có hiệu lực thi hành",
+   "Nếu bị xử phạt cùng một lần về từ 02 hành vi trở lên đều bị trừ điểm thì chỉ trừ điểm đối với hành vi bị trừ nhiều điểm nhất",
+   "Nếu số điểm còn lại ít hơn số điểm bị trừ thì trừ hết số điểm còn lại",
+   "Với giấy phép lái xe tích hợp: trừ điểm giấy phép lái xe không thời hạn khi điều khiển xe mô tô, xe tương tự xe mô tô; trừ điểm giấy phép lái xe có thời hạn khi điều khiển xe ô tô, xe tương tự xe ô tô, xe chở người bốn bánh có gắn động cơ, xe chở hàng bốn bánh có gắn động cơ",
+   "Không trừ điểm khi giấy phép lái xe, giấy phép lái xe quốc tế đó đang trong thời hạn bị tước quyền sử dụng"
+  ],
+  "nguyen_van": "1. Nguyên tắc trừ điểm giấy phép lái xe\na) Việc trừ điểm giấy phép lái xe được thực hiện ngay sau khi quyết định xử phạt vi phạm hành chính đối với hành vi vi phạm mà theo quy định của Nghị định này bị trừ điểm giấy phép lái xe có hiệu lực thi hành;\nb) Trường hợp cá nhân thực hiện nhiều hành vi vi phạm hành chính hoặc vi phạm hành chính nhiều lần mà bị xử phạt trong cùng một lần, nếu có từ 02 hành vi vi phạm trở lên theo quy định bị trừ điểm giấy phép lái xe thì chỉ áp dụng trừ điểm đối với hành vi vi phạm bị trừ nhiều điểm nhất;\nc) Trường hợp số điểm còn lại của giấy phép lái xe ít hơn số điểm bị trừ thì áp dụng trừ hết số điểm còn lại của giấy phép lái xe đó;\nd) Trường hợp giấy phép lái xe tích hợp giấy phép lái xe không thời hạn (xe mô tô, xe tương tự xe mô tô) và giấy phép lái xe có thời hạn (xe ô tô, xe tương tự xe ô tô, xe chở người bốn bánh có gắn động cơ, xe chở hàng bốn bánh có gắn động cơ) thì người có thẩm quyền xử phạt thực hiện trừ điểm đối với giấy phép lái xe không thời hạn khi người điều khiển xe mô tô, xe tương tự xe mô tô hoặc trừ điểm giấy phép lái xe có thời hạn khi người điều khiển xe ô tô, xe tương tự xe ô tô, xe chở người bốn bánh có gắn động cơ, xe chở hàng bốn bánh có gắn động cơ thực hiện hành vi vi phạm hành chính có quy định bị trừ điểm giấy phép lái xe;\nđ) Không trừ điểm giấy phép lái xe khi giấy phép lái xe đó đang trong thời hạn bị tước quyền sử dụng giấy phép lái xe, giấy phép lái xe quốc tế.",
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 50,
+   "khoan": 1,
+   "diem": null
+  },
+  "tinh_trang": "da_sua_doi",
+  "sua_doi_boi": "Nghị định 238/2026/NĐ-CP Điều 17 khoản 1 (sửa đổi điểm đ), hiệu lực từ 15/8/2026",
+  "nguyen_van_truoc_sua_doi": "đ) Không trừ điểm giấy phép lái xe khi giấy phép lái xe đó đang trong thời hạn bị tước quyền sử dụng giấy phép lái xe.",
+  "ghi_chu": "nguyen_van là văn bản HIỆN HÀNH (đã hợp nhất sửa đổi của Nghị định 238/2026/NĐ-CP có hiệu lực từ 15/8/2026). Chỉ điểm đ được sửa; các điểm a, b, c, d giữ nguyên theo bản gốc Nghị định 168/2024/NĐ-CP.",
+  "nguon": "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-dinh-168-2024-nd-cp-quy-dinh-xu-phat-vi-pham-hanh-chinh-ve-trat-tu-atgt-duong-bo-119241231164556785.htm"
+ },
+ {
+  "id": "R99",
+  "ten": "Thẩm quyền trừ điểm giấy phép lái xe",
+  "dieu_kien": [
+   "Người có thẩm quyền áp dụng hình thức xử phạt tước quyền sử dụng giấy phép, chứng chỉ hành nghề có thời hạn hoặc đình chỉ hoạt động có thời hạn theo Chương II Phần thứ hai Luật Xử lý vi phạm hành chính và Mục 1 Chương III Nghị định 168/2024/NĐ-CP",
+   "Người đó đồng thời có thẩm quyền xử phạt vi phạm hành chính đối với hành vi vi phạm có quy định trừ điểm giấy phép lái xe"
+  ],
+  "ket_luan": [
+   "Người đó có thẩm quyền trừ điểm giấy phép lái xe đối với hành vi vi phạm đó"
+  ],
+  "nguyen_van": "2. Thẩm quyền trừ điểm giấy phép lái xe\nNgười có thẩm quyền áp dụng hình thức xử phạt tước quyền sử dụng giấy phép, chứng chỉ hành nghề có thời hạn hoặc đình chỉ hoạt động có thời hạn quy định tại Chương II Phần thứ hai của Luật Xử lý vi phạm hành chính, Mục 1 Chương III của Nghị định này và có thẩm quyền xử phạt vi phạm hành chính đối với hành vi vi phạm có quy định trừ điểm giấy phép lái xe thì có thẩm quyền trừ điểm giấy phép lái xe đối với hành vi vi phạm đó.",
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 50,
+   "khoan": 2,
+   "diem": null
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "nguon": "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-dinh-168-2024-nd-cp-quy-dinh-xu-phat-vi-pham-hanh-chinh-ve-trat-tu-atgt-duong-bo-119241231164556785.htm"
+ },
+ {
+  "id": "R100",
+  "ten": "Trình tự, thủ tục trừ điểm giấy phép lái xe",
+  "dieu_kien": [
+   "Quyết định xử phạt vi phạm hành chính đối với hành vi vi phạm có trừ điểm giấy phép lái xe đã có hiệu lực thi hành"
+  ],
+  "ket_luan": [
+   "Dữ liệu trừ điểm được cập nhật tự động vào Cơ sở dữ liệu về xử lý vi phạm hành chính về trật tự, an toàn giao thông đường bộ",
+   "Người có thẩm quyền trừ điểm thông báo cho người bị trừ điểm biết việc trừ điểm",
+   "Trường hợp Chủ tịch Ủy ban nhân dân cấp xã, cấp tỉnh ra quyết định xử phạt thì Trưởng phòng Cảnh sát giao thông Công an cấp tỉnh có trách nhiệm cập nhật dữ liệu trừ điểm",
+   "Thông báo trừ điểm thực hiện bằng văn bản theo mẫu của Bộ trưởng Bộ Công an, giao trực tiếp hoặc qua dịch vụ bưu chính hoặc bằng phương thức điện tử qua tài khoản trên Cổng dịch vụ công, Ứng dụng giao thông trên thiết bị di động",
+   "Đồng thời cập nhật thông tin trên Trang thông tin điện tử của Cục Cảnh sát giao thông; nếu giấy phép lái xe là thông điệp dữ liệu thì cập nhật trạng thái trừ điểm trong căn cước điện tử, tài khoản định danh điện tử trên ứng dụng định danh quốc gia"
+  ],
+  "nguyen_van": "3. Trình tự, thủ tục trừ điểm giấy phép lái xe\na) Ngay sau khi quyết định xử phạt vi phạm hành chính có hiệu lực thi hành, dữ liệu trừ điểm giấy phép lái xe của người bị xử phạt sẽ được cập nhật tự động vào Cơ sở dữ liệu về xử lý vi phạm hành chính về trật tự, an toàn giao thông đường bộ, người có thẩm quyền trừ điểm giấy phép lái xe thông báo cho người bị trừ điểm giấy phép lái xe biết việc trừ điểm.\nTrường hợp Chủ tịch Ủy ban nhân dân cấp xã, Chủ tịch Ủy ban nhân dân cấp tỉnh ra quyết định xử phạt vi phạm hành chính đối với hành vi vi phạm có trừ điểm giấy phép lái xe thì Trưởng phòng Cảnh sát giao thông Công an cấp tỉnh có trách nhiệm cập nhật dữ liệu trừ điểm giấy phép lái xe vào Cơ sở dữ liệu về xử lý vi phạm hành chính về trật tự, an toàn giao thông đường bộ;\nb) Việc thông báo trừ điểm giấy phép lái xe thực hiện bằng văn bản theo mẫu quy định của Bộ trưởng Bộ Công an và được giao trực tiếp hoặc gửi qua dịch vụ bưu chính hoặc thực hiện thông báo bằng phương thức điện tử thông qua tài khoản của công dân đăng ký trên Cổng dịch vụ công, Ứng dụng giao thông trên thiết bị di động khi đáp ứng điều kiện về cơ sở hạ tầng, kỹ thuật, thông tin; đồng thời cập nhật thông tin về giấy phép lái xe bị trừ điểm trên Trang thông tin điện tử của Cục Cảnh sát giao thông. Trường hợp giấy phép lái xe được thể hiện dưới hình thức thông điệp dữ liệu thì cơ quan, người có thẩm quyền thực hiện cập nhật trạng thái trừ điểm giấy phép lái xe trong căn cước điện tử, tài khoản định danh điện tử trên ứng dụng định danh quốc gia.",
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 50,
+   "khoan": 3,
+   "diem": null
+  },
+  "tinh_trang": "da_sua_doi",
+  "sua_doi_boi": "Nghị định 238/2026/NĐ-CP Điều 17 khoản 2 (sửa đổi đoạn thứ hai điểm a), hiệu lực từ 15/8/2026",
+  "nguyen_van_truoc_sua_doi": "Trường hợp Chủ tịch Ủy ban nhân dân cấp huyện, Chủ tịch Ủy ban nhân dân cấp tỉnh ra quyết định xử phạt vi phạm hành chính đối với hành vi vi phạm có trừ điểm giấy phép lái xe thì Trưởng Công an cấp huyện hoặc Trưởng phòng Cảnh sát giao thông Công an cấp tỉnh có trách nhiệm cập nhật dữ liệu trừ điểm giấy phép lái xe vào Cơ sở dữ liệu về xử lý vi phạm hành chính về trật tự, an toàn giao thông đường bộ;",
+  "ghi_chu": "nguyen_van là văn bản HIỆN HÀNH (đã hợp nhất sửa đổi của Nghị định 238/2026/NĐ-CP có hiệu lực từ 15/8/2026). Chỉ đoạn thứ hai của điểm a được sửa; điểm b giữ nguyên.",
+  "nguon": "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-dinh-168-2024-nd-cp-quy-dinh-xu-phat-vi-pham-hanh-chinh-ve-trat-tu-atgt-duong-bo-119241231164556785.htm"
+ },
+ {
+  "id": "R101",
+  "ten": "Thẩm quyền phục hồi điểm giấy phép lái xe",
+  "dieu_kien": [
+   "Cần xác định người có thẩm quyền phục hồi điểm giấy phép lái xe"
+  ],
+  "ket_luan": [
+   "Cục trưởng Cục Cảnh sát giao thông quản lý, vận hành Cơ sở dữ liệu để thực hiện cập nhật, tự động phục hồi điểm đối với trường hợp quy định tại khoản 2 Điều 51",
+   "Cục trưởng Cục Cảnh sát giao thông, Trưởng phòng Cảnh sát giao thông nơi tổ chức kiểm tra kiến thức pháp luật về trật tự, an toàn giao thông đường bộ có thẩm quyền phục hồi điểm đối với trường hợp quy định tại khoản 3 Điều 51"
+  ],
+  "nguyen_van": "1. Thẩm quyền phục hồi điểm giấy phép lái xe\na) Cục trưởng Cục Cảnh sát giao thông có trách nhiệm quản lý, vận hành Cơ sở dữ liệu về xử lý vi phạm hành chính về trật tự, an toàn giao thông đường bộ để thực hiện cập nhật, tự động phục hồi điểm giấy phép lái xe đối với trường hợp quy định tại khoản 2 Điều này;\nb) Cục trưởng Cục Cảnh sát giao thông, Trưởng phòng Cảnh sát giao thông nơi tổ chức kiểm tra kiến thức pháp luật về trật tự, an toàn giao thông đường bộ có thẩm quyền phục hồi điểm cho giấy phép lái xe đối với trường hợp quy định tại khoản 3 Điều này.",
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 51,
+   "khoan": 1,
+   "diem": null
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "nguon": "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-dinh-168-2024-nd-cp-quy-dinh-xu-phat-vi-pham-hanh-chinh-ve-trat-tu-atgt-duong-bo-119241231164556785.htm"
+ },
+ {
+  "id": "R102",
+  "ten": "Phục hồi tự động đủ 12 điểm sau 12 tháng không bị trừ điểm",
+  "dieu_kien": [
+   "Giấy phép lái xe chưa bị trừ hết điểm",
+   "Không bị trừ điểm trong thời hạn 12 tháng kể từ ngày bị trừ điểm gần nhất"
+  ],
+  "ket_luan": [
+   "Khi đủ thời hạn 12 tháng kể từ ngày bị trừ điểm gần nhất, dữ liệu điểm giấy phép lái xe được TỰ ĐỘNG phục hồi đủ 12 điểm",
+   "Áp dụng cho cả giấy phép lái xe đang trong thời hạn bị tước quyền sử dụng",
+   "Dữ liệu được cập nhật tự động trong Cơ sở dữ liệu về xử lý vi phạm hành chính về trật tự, an toàn giao thông đường bộ",
+   "Cơ sở dữ liệu tự động chuyển thông tin thông báo cho người được phục hồi điểm",
+   "Thông báo thực hiện bằng phương thức điện tử qua tài khoản trên Cổng dịch vụ công, Ứng dụng giao thông trên thiết bị di động và cập nhật trên Trang thông tin điện tử của Cục Cảnh sát giao thông"
+  ],
+  "nguyen_van": "2. Trình tự, thủ tục phục hồi điểm giấy phép lái xe đối với trường hợp giấy phép lái xe chưa bị trừ hết điểm và không bị trừ điểm trong thời hạn 12 tháng từ ngày bị trừ điểm gần nhất\na) Khi đủ thời hạn 12 tháng, kể từ ngày bị trừ điểm giấy phép lái xe gần nhất, dữ liệu điểm giấy phép lái xe sẽ được tự động phục hồi đủ 12 điểm (gồm cả giấy phép lái xe đang trong thời hạn bị tước quyền sử dụng) và cập nhật tự động trong Cơ sở dữ liệu về xử lý vi phạm hành chính về trật tự, an toàn giao thông đường bộ;\nb) Ngay sau khi dữ liệu điểm giấy phép lái xe được phục hồi, Cơ sở dữ liệu về xử lý vi phạm hành chính về trật tự, an toàn giao thông đường bộ sẽ tự động chuyển thông tin thông báo cho người được phục hồi điểm giấy phép lái xe biết việc phục hồi điểm theo quy định tại điểm c khoản này;\nc) Việc thông báo phục hồi điểm giấy phép lái xe thực hiện bằng phương thức điện tử thông qua tài khoản của công dân đăng ký trên Cổng dịch vụ công, Ứng dụng giao thông trên thiết bị di động; đồng thời cập nhật thông tin về giấy phép lái xe được phục hồi điểm trên Trang thông tin điện tử của Cục Cảnh sát giao thông. Trường hợp giấy phép lái xe được thể hiện dưới hình thức thông điệp dữ liệu thì thực hiện cập nhật trạng thái phục hồi điểm giấy phép lái xe trong căn cước điện tử, tài khoản định danh điện tử trên ứng dụng định danh quốc gia.",
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 51,
+   "khoan": 2,
+   "diem": null
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "nguon": "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-dinh-168-2024-nd-cp-quy-dinh-xu-phat-vi-pham-hanh-chinh-ve-trat-tu-atgt-duong-bo-119241231164556785.htm"
+ },
+ {
+  "id": "R103",
+  "ten": "Phục hồi đủ 12 điểm sau khi kiểm tra kiến thức pháp luật đạt yêu cầu (giấy phép lái xe bị trừ hết điểm)",
+  "dieu_kien": [
+   "Giấy phép lái xe bị trừ hết điểm",
+   "Người có giấy phép lái xe tham gia kiểm tra nội dung kiến thức pháp luật về trật tự, an toàn giao thông đường bộ",
+   "Kết quả kiểm tra đạt yêu cầu"
+  ],
+  "ket_luan": [
+   "Kết quả kiểm tra được cập nhật vào phần mềm kiểm tra kiến thức pháp luật và đồng bộ với Cơ sở dữ liệu về xử lý vi phạm hành chính về trật tự, an toàn giao thông đường bộ",
+   "Dữ liệu điểm giấy phép lái xe được phục hồi đủ 12 điểm và cập nhật tự động trong Cơ sở dữ liệu",
+   "Người có thẩm quyền quy định tại điểm b khoản 1 Điều 51 thông báo cho người được phục hồi điểm",
+   "Thông báo bằng văn bản theo mẫu của Bộ trưởng Bộ Công an, giao trực tiếp hoặc qua dịch vụ bưu chính hoặc bằng phương thức điện tử"
+  ],
+  "nguyen_van": "3. Trình tự, thủ tục phục hồi điểm giấy phép lái xe đối với trường hợp giấy phép lái xe bị trừ hết điểm\na) Sau khi người có giấy phép lái xe bị trừ hết điểm tham gia kiểm tra nội dung kiến thức pháp luật về trật tự, an toàn giao thông đường bộ và đạt yêu cầu, kết quả kiểm tra được cập nhật vào phần mềm kiểm tra kiến thức pháp luật về trật tự, an toàn giao thông đường bộ và đồng bộ dữ liệu với Cơ sở dữ liệu về xử lý vi phạm hành chính về trật tự, an toàn giao thông đường bộ, dữ liệu điểm giấy phép lái xe sẽ được phục hồi đủ 12 điểm và cập nhật tự động trong Cơ sở dữ liệu về xử lý vi phạm hành chính về trật tự, an toàn giao thông đường bộ;\nb) Ngay sau khi dữ liệu điểm giấy phép lái xe được phục hồi đủ 12 điểm thì người có thẩm quyền quy định tại điểm b khoản 1 Điều này thông báo cho người được phục hồi điểm giấy phép lái xe biết việc phục hồi điểm;\nc) Việc thông báo phục hồi điểm giấy phép lái xe thực hiện bằng văn bản theo mẫu quy định của Bộ trưởng Bộ Công an và được giao trực tiếp hoặc gửi qua dịch vụ bưu chính hoặc thực hiện thông báo bằng phương thức điện tử thông qua tài khoản của công dân đăng ký trên Cổng dịch vụ công, Ứng dụng giao thông trên thiết bị di động; đồng thời cập nhật thông tin về giấy phép lái xe được phục hồi điểm trên Trang thông tin điện tử của Cục Cảnh sát giao thông. Trường hợp giấy phép lái xe được thể hiện dưới hình thức thông điệp dữ liệu thì cơ quan, người có thẩm quyền thực hiện cập nhật trạng thái phục hồi điểm giấy phép lái xe trong căn cước điện tử, tài khoản định danh điện tử trên ứng dụng định danh quốc gia.",
+  "can_cu": {
+   "van_ban": "Nghị định 168/2024/NĐ-CP",
+   "dieu": 51,
+   "khoan": 3,
+   "diem": null
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "nguon": "https://xaydungchinhsach.chinhphu.vn/toan-van-nghi-dinh-168-2024-nd-cp-quy-dinh-xu-phat-vi-pham-hanh-chinh-ve-trat-tu-atgt-duong-bo-119241231164556785.htm"
+ },
+ {
+  "id": "R104",
+  "ten": "Giấy phép lái xe có 12 điểm",
+  "dieu_kien": [
+   "Xác định số điểm của một giấy phép lái xe"
+  ],
+  "ket_luan": [
+   "Điểm của giấy phép lái xe được dùng để quản lý việc chấp hành pháp luật về trật tự, an toàn giao thông đường bộ của người lái xe",
+   "Mỗi giấy phép lái xe bao gồm 12 điểm",
+   "Số điểm trừ mỗi lần vi phạm tùy thuộc tính chất, mức độ của hành vi vi phạm",
+   "Dữ liệu về điểm trừ được cập nhật vào hệ thống cơ sở dữ liệu ngay sau khi quyết định xử phạt có hiệu lực thi hành và thông báo cho người bị trừ điểm biết"
+  ],
+  "nguyen_van": "1. Điểm của giấy phép lái xe được dùng để quản lý việc chấp hành pháp luật về trật tự, an toàn giao thông đường bộ của người lái xe trên hệ thống cơ sở dữ liệu về trật tự, an toàn giao thông đường bộ, bao gồm 12 điểm. Số điểm trừ mỗi lần vi phạm tùy thuộc tính chất, mức độ của hành vi vi phạm pháp luật về trật tự, an toàn giao thông đường bộ. Dữ liệu về điểm trừ giấy phép lái xe của người vi phạm sẽ được cập nhật vào hệ thống cơ sở dữ liệu ngay sau khi quyết định xử phạt có hiệu lực thi hành và thông báo cho người bị trừ điểm giấy phép lái xe biết.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 58,
+   "khoan": 1,
+   "diem": null
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "nguon": "https://xaydungchinhsach.chinhphu.vn/toan-van-luat-trat-tu-an-toan-giao-thong-duong-bo-119240909105718285.htm ; đối chiếu bản hợp nhất: https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/3/55-vbhn-vpqh.pdf",
+  "ghi_chu": "Đã đối chiếu với Văn bản hợp nhất 55/VBHN-VPQH (bản hợp nhất Luật 36/2024/QH15 và Luật 118/2025/QH15): Điều 58 KHÔNG bị sửa đổi bởi Luật 118/2025/QH15, nguyên văn giữ nguyên như bản gốc."
+ },
+ {
+  "id": "R105",
+  "ten": "Phục hồi đủ 12 điểm sau 12 tháng không bị trừ điểm (quy định của Luật)",
+  "dieu_kien": [
+   "Giấy phép lái xe chưa bị trừ hết điểm",
+   "Không bị trừ điểm trong thời hạn 12 tháng từ ngày bị trừ điểm gần nhất"
+  ],
+  "ket_luan": [
+   "Giấy phép lái xe được phục hồi đủ 12 điểm"
+  ],
+  "nguyen_van": "2. Giấy phép lái xe chưa bị trừ hết điểm và không bị trừ điểm trong thời hạn 12 tháng từ ngày bị trừ điểm gần nhất thì được phục hồi đủ 12 điểm.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 58,
+   "khoan": 2,
+   "diem": null
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "ghi_chu": "Trình tự, thủ tục phục hồi tự động được quy định chi tiết tại khoản 2 Điều 51 Nghị định 168/2024/NĐ-CP. Đã đối chiếu với Văn bản hợp nhất 55/VBHN-VPQH (bản hợp nhất Luật 36/2024/QH15 và Luật 118/2025/QH15): Điều 58 KHÔNG bị sửa đổi bởi Luật 118/2025/QH15, nguyên văn giữ nguyên như bản gốc.",
+  "nguon": "https://xaydungchinhsach.chinhphu.vn/toan-van-luat-trat-tu-an-toan-giao-thong-duong-bo-119240909105718285.htm ; đối chiếu bản hợp nhất: https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/3/55-vbhn-vpqh.pdf"
+ },
+ {
+  "id": "R106",
+  "ten": "Hệ quả khi giấy phép lái xe bị trừ hết điểm và điều kiện phục hồi",
+  "dieu_kien": [
+   "Giấy phép lái xe bị trừ hết điểm (hết 12 điểm)"
+  ],
+  "ket_luan": [
+   "Người có giấy phép lái xe KHÔNG được điều khiển phương tiện tham gia giao thông đường bộ theo giấy phép lái xe đó",
+   "Sau thời hạn ít nhất là 06 tháng kể từ ngày bị trừ hết điểm, người có giấy phép lái xe được tham gia kiểm tra nội dung kiến thức pháp luật về trật tự, an toàn giao thông đường bộ do lực lượng Cảnh sát giao thông tổ chức",
+   "Có kết quả kiểm tra đạt yêu cầu thì được phục hồi đủ 12 điểm"
+  ],
+  "nguyen_van": "3. Trường hợp giấy phép lái xe bị trừ hết điểm thì người có giấy phép lái xe không được điều khiển phương tiện tham gia giao thông đường bộ theo giấy phép lái xe đó. Sau thời hạn ít nhất là 06 tháng kể từ ngày bị trừ hết điểm, người có giấy phép lái xe được tham gia kiểm tra nội dung kiến thức pháp luật về trật tự, an toàn giao thông đường bộ theo quy định tại khoản 7 Điều 61 của Luật này do lực lượng Cảnh sát giao thông tổ chức, có kết quả đạt yêu cầu thì được phục hồi đủ 12 điểm.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 58,
+   "khoan": 3,
+   "diem": null
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "ghi_chu": "Trình tự, thủ tục phục hồi điểm sau khi kiểm tra kiến thức đạt yêu cầu được quy định chi tiết tại khoản 3 Điều 51 Nghị định 168/2024/NĐ-CP. Đã đối chiếu với Văn bản hợp nhất 55/VBHN-VPQH (bản hợp nhất Luật 36/2024/QH15 và Luật 118/2025/QH15): Điều 58 KHÔNG bị sửa đổi bởi Luật 118/2025/QH15, nguyên văn giữ nguyên như bản gốc.",
+  "nguon": "https://xaydungchinhsach.chinhphu.vn/toan-van-luat-trat-tu-an-toan-giao-thong-duong-bo-119240909105718285.htm ; đối chiếu bản hợp nhất: https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/3/55-vbhn-vpqh.pdf"
+ },
+ {
+  "id": "R107",
+  "ten": "Giữ nguyên số điểm khi đổi, cấp lại, nâng hạng giấy phép lái xe",
+  "dieu_kien": [
+   "Giấy phép lái xe được đổi, cấp lại hoặc nâng hạng"
+  ],
+  "ket_luan": [
+   "Giấy phép lái xe sau khi đổi, cấp lại, nâng hạng được giữ nguyên số điểm của giấy phép lái xe trước đó",
+   "Không thể xóa điểm bị trừ bằng cách đổi hoặc cấp lại giấy phép lái xe"
+  ],
+  "nguyen_van": "4. Giấy phép lái xe sau khi đổi, cấp lại, nâng hạng được giữ nguyên số điểm của giấy phép lái xe trước khi đổi, cấp lại, nâng hạng.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 58,
+   "khoan": 4,
+   "diem": null
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "nguon": "https://xaydungchinhsach.chinhphu.vn/toan-van-luat-trat-tu-an-toan-giao-thong-duong-bo-119240909105718285.htm ; đối chiếu bản hợp nhất: https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/3/55-vbhn-vpqh.pdf",
+  "ghi_chu": "Đã đối chiếu với Văn bản hợp nhất 55/VBHN-VPQH (bản hợp nhất Luật 36/2024/QH15 và Luật 118/2025/QH15): Điều 58 KHÔNG bị sửa đổi bởi Luật 118/2025/QH15, nguyên văn giữ nguyên như bản gốc."
+ },
+ {
+  "id": "R108",
+  "ten": "Người có thẩm quyền xử phạt vi phạm hành chính có thẩm quyền trừ điểm giấy phép lái xe",
+  "dieu_kien": [
+   "Người có thẩm quyền xử phạt vi phạm hành chính"
+  ],
+  "ket_luan": [
+   "Người đó có thẩm quyền trừ điểm giấy phép lái xe"
+  ],
+  "nguyen_van": "5. Người có thẩm quyền xử phạt vi phạm hành chính có thẩm quyền trừ điểm giấy phép lái xe.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 58,
+   "khoan": 5,
+   "diem": null
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "ghi_chu": "Được quy định chi tiết tại khoản 2 Điều 50 Nghị định 168/2024/NĐ-CP. Đã đối chiếu với Văn bản hợp nhất 55/VBHN-VPQH (bản hợp nhất Luật 36/2024/QH15 và Luật 118/2025/QH15): Điều 58 KHÔNG bị sửa đổi bởi Luật 118/2025/QH15, nguyên văn giữ nguyên như bản gốc.",
+  "nguon": "https://xaydungchinhsach.chinhphu.vn/toan-van-luat-trat-tu-an-toan-giao-thong-duong-bo-119240909105718285.htm ; đối chiếu bản hợp nhất: https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/3/55-vbhn-vpqh.pdf"
+ },
+ {
+  "id": "R109",
+  "ten": "Giao Chính phủ, Bộ trưởng Bộ Công an quy định chi tiết về điểm giấy phép lái xe",
+  "dieu_kien": [
+   "Cần quy định chi tiết về điểm, trừ điểm, phục hồi điểm giấy phép lái xe"
+  ],
+  "ket_luan": [
+   "Chính phủ quy định chi tiết khoản 1 Điều 58",
+   "Chính phủ quy định trình tự, thủ tục, thẩm quyền trừ điểm, phục hồi điểm giấy phép lái xe",
+   "Chính phủ quy định lộ trình thực hiện Điều 58",
+   "Bộ trưởng Bộ Công an quy định chi tiết khoản 3 Điều 58"
+  ],
+  "nguyen_van": "6. Chính phủ quy định chi tiết khoản 1 Điều này; quy định trình tự, thủ tục, thẩm quyền trừ điểm, phục hồi điểm giấy phép lái xe; quy định lộ trình thực hiện Điều này. Bộ trưởng Bộ Công an quy định chi tiết khoản 3 Điều này.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 58,
+   "khoan": 6,
+   "diem": null
+  },
+  "tinh_trang": "hien_hanh",
+  "sua_doi_boi": null,
+  "ghi_chu": "Đây là căn cứ pháp lý để Chính phủ ban hành Mục 3 Chương III (Điều 49, 50, 51) Nghị định 168/2024/NĐ-CP. Đã đối chiếu với Văn bản hợp nhất 55/VBHN-VPQH (bản hợp nhất Luật 36/2024/QH15 và Luật 118/2025/QH15): Điều 58 KHÔNG bị sửa đổi bởi Luật 118/2025/QH15, nguyên văn giữ nguyên như bản gốc.",
+  "nguon": "https://xaydungchinhsach.chinhphu.vn/toan-van-luat-trat-tu-an-toan-giao-thong-duong-bo-119240909105718285.htm ; đối chiếu bản hợp nhất: https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/3/55-vbhn-vpqh.pdf"
+ }
+]

@@ -1,0 +1,1768 @@
+[
+ {
+  "id": "R01",
+  "ten": "Cấm điều khiển xe cơ giới khi không có giấy phép lái xe",
+  "dieu_kien": [
+   "Chủ thể là người điều khiển xe cơ giới tham gia giao thông đường bộ",
+   "Người đó không có giấy phép lái xe theo quy định của pháp luật"
+  ],
+  "ket_luan": [
+   "Hành vi bị nghiêm cấm"
+  ],
+  "nguyen_van": "Điều khiển xe cơ giới tham gia giao thông đường bộ không có giấy phép lái xe theo quy định của pháp luật; điều khiển xe máy chuyên dùng tham gia giao thông đường bộ không có giấy phép lái xe hoặc chứng chỉ bồi dưỡng kiến thức pháp luật về giao thông đường bộ, bằng hoặc chứng chỉ điều khiển xe máy chuyên dùng.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 9,
+   "khoan": 1,
+   "diem": null
+  }
+ },
+ {
+  "id": "R02",
+  "ten": "Cấm điều khiển phương tiện khi trong máu hoặc hơi thở có nồng độ cồn",
+  "dieu_kien": [
+   "Chủ thể điều khiển phương tiện tham gia giao thông đường bộ",
+   "Trong máu hoặc hơi thở của người đó có nồng độ cồn (bất kể mức nào)"
+  ],
+  "ket_luan": [
+   "Hành vi bị nghiêm cấm"
+  ],
+  "nguyen_van": "Điều khiển phương tiện tham gia giao thông đường bộ mà trong máu hoặc hơi thở có nồng độ cồn.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 9,
+   "khoan": 2,
+   "diem": null
+  }
+ },
+ {
+  "id": "R03",
+  "ten": "Cấm điều khiển phương tiện khi trong cơ thể có ma túy hoặc chất kích thích bị cấm",
+  "dieu_kien": [
+   "Chủ thể điều khiển phương tiện tham gia giao thông đường bộ",
+   "Trong cơ thể có chất ma túy hoặc chất kích thích khác mà pháp luật cấm sử dụng"
+  ],
+  "ket_luan": [
+   "Hành vi bị nghiêm cấm"
+  ],
+  "nguyen_van": "Điều khiển phương tiện tham gia giao thông đường bộ mà trong cơ thể có chất ma túy hoặc chất kích thích khác mà pháp luật cấm sử dụng.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 9,
+   "khoan": 3,
+   "diem": null
+  }
+ },
+ {
+  "id": "R04",
+  "ten": "Cấm chống đối, không chấp hành hiệu lệnh của người thi hành công vụ",
+  "dieu_kien": [
+   "Có hiệu lệnh, hướng dẫn, yêu cầu kiểm tra, kiểm soát của người thi hành công vụ về bảo đảm trật tự, an toàn giao thông đường bộ"
+  ],
+  "ket_luan": [
+   "Nghiêm cấm xúc phạm, đe dọa, cản trở, chống đối hoặc không chấp hành"
+  ],
+  "nguyen_van": "Xúc phạm, đe dọa, cản trở, chống đối hoặc không chấp hành hiệu lệnh, hướng dẫn, yêu cầu kiểm tra, kiểm soát của người thi hành công vụ về bảo đảm trật tự, an toàn giao thông đường bộ.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 9,
+   "khoan": 4,
+   "diem": null
+  }
+ },
+ {
+  "id": "R05",
+  "ten": "Cấm đua xe trái phép, lạng lách, đánh võng, rú ga liên tục",
+  "dieu_kien": [
+   "Chủ thể đua xe, tổ chức đua xe, xúi giục, giúp sức, cổ vũ đua xe trái phép",
+   "Hoặc điều khiển phương tiện lạng lách, đánh võng, rú ga liên tục"
+  ],
+  "ket_luan": [
+   "Hành vi bị nghiêm cấm"
+  ],
+  "nguyen_van": "Đua xe, tổ chức đua xe, xúi giục, giúp sức, cổ vũ đua xe trái phép; điều khiển phương tiện tham gia giao thông đường bộ lạng lách, đánh võng, rú ga liên tục.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 9,
+   "khoan": 5,
+   "diem": null
+  }
+ },
+ {
+  "id": "R06",
+  "ten": "Cấm dùng tay cầm và sử dụng điện thoại khi đang điều khiển phương tiện di chuyển",
+  "dieu_kien": [
+   "Phương tiện đang di chuyển trên đường bộ",
+   "Người điều khiển dùng tay cầm và sử dụng điện thoại hoặc thiết bị điện tử khác"
+  ],
+  "ket_luan": [
+   "Hành vi bị nghiêm cấm"
+  ],
+  "nguyen_van": "Dùng tay cầm và sử dụng điện thoại hoặc thiết bị điện tử khác khi điều khiển phương tiện tham gia giao thông đang di chuyển trên đường bộ.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 9,
+   "khoan": 6,
+   "diem": null
+  }
+ },
+ {
+  "id": "R07",
+  "ten": "Cấm giao xe cho người không đủ điều kiện điều khiển",
+  "dieu_kien": [
+   "Chủ thể giao xe cơ giới hoặc xe máy chuyên dùng cho người khác",
+   "Người được giao không đủ điều kiện theo quy định của pháp luật để điều khiển xe tham gia giao thông đường bộ"
+  ],
+  "ket_luan": [
+   "Hành vi bị nghiêm cấm"
+  ],
+  "nguyen_van": "Giao xe cơ giới, xe máy chuyên dùng cho người không đủ điều kiện theo quy định của pháp luật để điều khiển xe tham gia giao thông đường bộ.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 9,
+   "khoan": 7,
+   "diem": null
+  }
+ },
+ {
+  "id": "R08",
+  "ten": "Cấm đưa phương tiện không đủ điều kiện an toàn kỹ thuật tham gia giao thông",
+  "dieu_kien": [
+   "Xe cơ giới, xe máy chuyên dùng không bảo đảm quy định của pháp luật về an toàn kỹ thuật và bảo vệ môi trường, hoặc phương tiện khác không đủ điều kiện theo quy định"
+  ],
+  "ket_luan": [
+   "Nghiêm cấm đưa phương tiện đó tham gia giao thông đường bộ"
+  ],
+  "nguyen_van": "Đưa xe cơ giới, xe máy chuyên dùng không bảo đảm quy định của pháp luật về an toàn kỹ thuật và bảo vệ môi trường, phương tiện khác không đủ điều kiện theo quy định của pháp luật để tham gia giao thông đường bộ.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 9,
+   "khoan": 8,
+   "diem": null
+  }
+ },
+ {
+  "id": "R09",
+  "ten": "Cấm chở quá tải, quá khổ, không chằng buộc hàng hóa, chở quá số người",
+  "dieu_kien": [
+   "Chở hàng hóa vượt quá khối lượng toàn bộ, tải trọng trục, kích thước cho phép của xe hoặc vượt quá tải trọng, kích thước giới hạn cho phép của đường bộ khi chưa được cấp phép",
+   "Hoặc chở hàng phải chằng buộc mà không chằng buộc hoặc chằng buộc không đúng quy định",
+   "Hoặc chở quá số người theo quy định của pháp luật"
+  ],
+  "ket_luan": [
+   "Hành vi bị nghiêm cấm"
+  ],
+  "nguyen_van": "Chở hàng hóa vượt quá khối lượng toàn bộ, tải trọng trục, kích thước cho phép của xe hoặc vượt quá tải trọng, kích thước giới hạn cho phép của đường bộ khi chưa được cơ quan quản lý cấp phép hoặc không bảo đảm yêu cầu theo quy định của Luật này; chở hàng hóa trên xe có quy định phải chằng buộc nhưng không chằng buộc hoặc chằng buộc không đúng quy định của pháp luật; chở quá số người theo quy định của pháp luật.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 9,
+   "khoan": 13,
+   "diem": null
+  }
+ },
+ {
+  "id": "R10",
+  "ten": "Cấm che lấp, làm sai lệch biển số xe; gắn biển số không do cơ quan có thẩm quyền cấp",
+  "dieu_kien": [
+   "Chủ thể điều khiển xe cơ giới, xe máy chuyên dùng",
+   "Xe gắn biển số không do cơ quan nhà nước có thẩm quyền cấp, gắn không đúng vị trí, bị bẻ cong, che lấp hoặc bị thay đổi chữ, số, màu sắc, hình dạng, kích thước"
+  ],
+  "ket_luan": [
+   "Hành vi bị nghiêm cấm"
+  ],
+  "nguyen_van": "Sản xuất, sử dụng, mua, bán trái phép biển số xe; điều khiển xe cơ giới, xe máy chuyên dùng gắn biển số xe không do cơ quan nhà nước có thẩm quyền cấp, gắn biển số xe không đúng vị trí; bẻ cong, che lấp biển số xe; làm thay đổi chữ, số, màu sắc, hình dạng, kích thước của biển số xe.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 9,
+   "khoan": 17,
+   "diem": null
+  }
+ },
+ {
+  "id": "R11",
+  "ten": "Cấm sử dụng quyền của xe ưu tiên khi không làm nhiệm vụ",
+  "dieu_kien": [
+   "Xe có quyền ưu tiên nhưng không thực hiện nhiệm vụ theo quy định của pháp luật",
+   "Hoặc lắp đặt, sử dụng thiết bị phát tín hiệu ưu tiên không đúng quy định"
+  ],
+  "ket_luan": [
+   "Hành vi bị nghiêm cấm"
+  ],
+  "nguyen_van": "Sử dụng quyền của xe ưu tiên khi không thực hiện nhiệm vụ theo quy định của pháp luật; lắp đặt, sử dụng thiết bị phát tín hiệu ưu tiên không đúng quy định của pháp luật.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 9,
+   "khoan": 24,
+   "diem": null
+  }
+ },
+ {
+  "id": "R12",
+  "ten": "Cấm bỏ trốn sau khi gây tai nạn, cố ý không cứu giúp người bị nạn",
+  "dieu_kien": [
+   "Đã xảy ra tai nạn giao thông đường bộ",
+   "Người gây tai nạn bỏ trốn để trốn tránh trách nhiệm, hoặc có điều kiện mà cố ý không cứu giúp người bị tai nạn"
+  ],
+  "ket_luan": [
+   "Hành vi bị nghiêm cấm"
+  ],
+  "nguyen_van": "Bỏ trốn sau khi gây tai nạn giao thông đường bộ để trốn tránh trách nhiệm; khi có điều kiện mà cố ý không cứu giúp người bị tai nạn giao thông đường bộ; xâm phạm tính mạng, sức khỏe, tài sản của người bị nạn, người gây tai nạn giao thông đường bộ hoặc người giúp đỡ, cứu chữa, đưa người bị nạn đi cấp cứu; lợi dụng việc xảy ra tai nạn giao thông đường bộ để hành hung, đe dọa, xúi giục, gây sức ép, làm mất trật tự, cản trở việc xử lý tai nạn giao thông đường bộ.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 9,
+   "khoan": 26,
+   "diem": null
+  }
+ },
+ {
+  "id": "R13",
+  "ten": "Quy tắc chung: đi bên phải, đúng làn đường, phần đường, chấp hành báo hiệu",
+  "dieu_kien": [
+   "Chủ thể là người tham gia giao thông đường bộ"
+  ],
+  "ket_luan": [
+   "Phải đi bên phải theo chiều đi của mình",
+   "Phải đi đúng làn đường, phần đường quy định",
+   "Phải chấp hành báo hiệu đường bộ và các quy tắc giao thông đường bộ khác"
+  ],
+  "nguyen_van": "Người tham gia giao thông đường bộ phải đi bên phải theo chiều đi của mình, đi đúng làn đường, phần đường quy định, chấp hành báo hiệu đường bộ và các quy tắc giao thông đường bộ khác.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 10,
+   "khoan": 1,
+   "diem": null
+  }
+ },
+ {
+  "id": "R14",
+  "ten": "Bắt buộc thắt dây đai an toàn trên xe ô tô",
+  "dieu_kien": [
+   "Chủ thể là người lái xe hoặc người được chở trên xe ô tô",
+   "Vị trí ngồi có trang bị dây đai an toàn"
+  ],
+  "ket_luan": [
+   "Phải thắt dây đai an toàn khi tham gia giao thông đường bộ"
+  ],
+  "nguyen_van": "Người lái xe và người được chở trên xe ô tô phải thắt dây đai an toàn tại những chỗ có trang bị dây đai an toàn khi tham gia giao thông đường bộ.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 10,
+   "khoan": 2,
+   "diem": null
+  }
+ },
+ {
+  "id": "R15",
+  "ten": "Quy tắc chở trẻ em dưới 10 tuổi và cao dưới 1,35 mét trên xe ô tô",
+  "dieu_kien": [
+   "Xe ô tô chở trẻ em dưới 10 tuổi và chiều cao dưới 1,35 mét",
+   "Xe có nhiều hơn một hàng ghế",
+   "Không phải xe ô tô kinh doanh vận tải hành khách"
+  ],
+  "ket_luan": [
+   "Người lái xe không được cho trẻ em ngồi cùng hàng ghế với người lái xe",
+   "Người lái xe phải sử dụng, hướng dẫn sử dụng thiết bị an toàn phù hợp cho trẻ em"
+  ],
+  "nguyen_van": "Khi chở trẻ em dưới 10 tuổi và chiều cao dưới 1,35 mét trên xe ô tô, người lái xe không được cho trẻ em ngồi cùng hàng ghế, trừ xe ô tô chỉ có một hàng ghế; người lái xe phải sử dụng, hướng dẫn sử dụng thiết bị an toàn phù hợp cho trẻ em, trừ xe ô tô kinh doanh vận tải hành khách.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 10,
+   "khoan": 3,
+   "diem": null
+  }
+ },
+ {
+  "id": "R16",
+  "ten": "Thứ tự ưu tiên chấp hành báo hiệu đường bộ",
+  "dieu_kien": [
+   "Tại một vị trí có nhiều loại báo hiệu đường bộ khác nhau"
+  ],
+  "ket_luan": [
+   "Phải chấp hành theo thứ tự: hiệu lệnh của người điều khiển giao thông; tín hiệu đèn giao thông; biển báo hiệu đường bộ; vạch kẻ đường và các dấu hiệu khác trên mặt đường; cọc tiêu, tường bảo vệ, rào chắn, đinh phản quang, tiêu phản quang, cột Km, cọc H; thiết bị âm thanh báo hiệu đường bộ"
+  ],
+  "nguyen_van": "Người tham gia giao thông đường bộ phải chấp hành báo hiệu đường bộ theo thứ tự ưu tiên từ trên xuống dưới như sau: a) Hiệu lệnh của người điều khiển giao thông; b) Tín hiệu đèn giao thông; c) Biển báo hiệu đường bộ; d) Vạch kẻ đường và các dấu hiệu khác trên mặt đường; đ) Cọc tiêu, tường bảo vệ, rào chắn, đinh phản quang, tiêu phản quang, cột Km, cọc H; e) Thiết bị âm thanh báo hiệu đường bộ.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 11,
+   "khoan": 2,
+   "diem": null
+  }
+ },
+ {
+  "id": "R17",
+  "ten": "Chấp hành tín hiệu đèn màu xanh",
+  "dieu_kien": [
+   "Tín hiệu đèn giao thông màu xanh"
+  ],
+  "ket_luan": [
+   "Được đi",
+   "Nếu người đi bộ, xe lăn của người khuyết tật đang đi ở lòng đường thì phải giảm tốc độ hoặc dừng lại nhường đường"
+  ],
+  "nguyen_van": "Tín hiệu đèn màu xanh là được đi; trường hợp người đi bộ, xe lăn của người khuyết tật đang đi ở lòng đường, người điều khiển phương tiện tham gia giao thông đường bộ phải giảm tốc độ hoặc dừng lại nhường đường cho người đi bộ, xe lăn của người khuyết tật qua đường.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 11,
+   "khoan": 4,
+   "diem": "a"
+  }
+ },
+ {
+  "id": "R18",
+  "ten": "Chấp hành tín hiệu đèn màu vàng",
+  "dieu_kien": [
+   "Tín hiệu đèn giao thông màu vàng"
+  ],
+  "ket_luan": [
+   "Phải dừng lại trước vạch dừng",
+   "Nếu đang đi trên vạch dừng hoặc đã đi qua vạch dừng khi đèn chuyển vàng thì được đi tiếp",
+   "Nếu đèn vàng nhấp nháy thì được đi nhưng phải quan sát, giảm tốc độ hoặc dừng lại nhường đường cho người đi bộ, xe lăn của người khuyết tật hoặc phương tiện khác"
+  ],
+  "nguyen_van": "Tín hiệu đèn màu vàng phải dừng lại trước vạch dừng; trường hợp đang đi trên vạch dừng hoặc đã đi qua vạch dừng mà tín hiệu đèn màu vàng thì được đi tiếp; trường hợp tín hiệu đèn màu vàng nhấp nháy, người điều khiển phương tiện tham gia giao thông đường bộ được đi nhưng phải quan sát, giảm tốc độ hoặc dừng lại nhường đường cho người đi bộ, xe lăn của người khuyết tật qua đường hoặc các phương tiện khác.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 11,
+   "khoan": 4,
+   "diem": "b"
+  }
+ },
+ {
+  "id": "R19",
+  "ten": "Chấp hành tín hiệu đèn màu đỏ",
+  "dieu_kien": [
+   "Tín hiệu đèn giao thông màu đỏ"
+  ],
+  "ket_luan": [
+   "Cấm đi"
+  ],
+  "nguyen_van": "Tín hiệu đèn màu đỏ là cấm đi.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 11,
+   "khoan": 4,
+   "diem": "c"
+  }
+ },
+ {
+  "id": "R20",
+  "ten": "Ưu tiên biển báo hiệu tạm thời so với biển báo hiệu cố định",
+  "dieu_kien": [
+   "Tại một vị trí vừa có biển báo hiệu đặt cố định vừa có biển báo hiệu tạm thời",
+   "Hai biển có ý nghĩa khác nhau"
+  ],
+  "ket_luan": [
+   "Phải chấp hành hiệu lệnh của biển báo hiệu tạm thời"
+  ],
+  "nguyen_van": "Khi ở một vị trí vừa có biển báo hiệu đặt cố định vừa có biển báo hiệu tạm thời mà hai biển có ý nghĩa khác nhau, người tham gia giao thông đường bộ phải chấp hành hiệu lệnh của biển báo hiệu tạm thời.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 11,
+   "khoan": 12,
+   "diem": null
+  }
+ },
+ {
+  "id": "R21",
+  "ten": "Chấp hành quy định về tốc độ và khoảng cách an toàn tối thiểu",
+  "dieu_kien": [
+   "Chủ thể là người lái xe hoặc người điều khiển xe máy chuyên dùng"
+  ],
+  "ket_luan": [
+   "Phải chấp hành quy định về tốc độ",
+   "Phải giữ khoảng cách an toàn tối thiểu với xe phía trước cùng làn đường hoặc phần đường"
+  ],
+  "nguyen_van": "Người lái xe, người điều khiển xe máy chuyên dùng phải chấp hành quy định về tốc độ, khoảng cách an toàn tối thiểu với xe phía trước cùng làn đường hoặc phần đường.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 12,
+   "khoan": 1,
+   "diem": null
+  }
+ },
+ {
+  "id": "R22",
+  "ten": "Bảo đảm tốc độ phù hợp với điều kiện thực tế",
+  "dieu_kien": [
+   "Chủ thể điều khiển phương tiện tham gia giao thông đường bộ"
+  ],
+  "ket_luan": [
+   "Phải bảo đảm tốc độ phù hợp điều kiện của cầu, đường, mật độ giao thông, địa hình, thời tiết và các yếu tố ảnh hưởng khác để bảo đảm an toàn"
+  ],
+  "nguyen_van": "Người điều khiển phương tiện tham gia giao thông đường bộ phải bảo đảm tốc độ phù hợp điều kiện của cầu, đường, mật độ giao thông, địa hình, thời tiết và các yếu tố ảnh hưởng khác để bảo đảm an toàn.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 12,
+   "khoan": 2,
+   "diem": null
+  }
+ },
+ {
+  "id": "R23",
+  "ten": "Phải quan sát, giảm tốc độ hoặc dừng lại trong các trường hợp nguy hiểm",
+  "dieu_kien": [
+   "Gặp một trong các tình huống: nơi có vạch kẻ đường hoặc báo hiệu dành cho người đi bộ hoặc nơi người đi bộ, xe lăn của người khuyết tật đang qua đường; có báo hiệu cảnh báo nguy hiểm hoặc chướng ngại vật; chuyển hướng xe chạy hoặc tầm nhìn bị hạn chế; nơi đường giao nhau cùng mức với đường bộ hoặc đường sắt, đường hẹp, đường vòng, quanh co, đèo, dốc; nơi cầu, cống hẹp, đập tràn, đường ngầm, hầm chui, hầm đường bộ; khu vực trường học, bệnh viện, bến xe, công trình công cộng đông người, khu đông dân cư, chợ, khu vực đang thi công, hiện trường tai nạn; có vật nuôi đi trên đường hoặc chăn thả ven đường; tránh xe ngược chiều hoặc cho xe phía sau vượt, khi có tín hiệu xin đường, tín hiệu khẩn cấp của xe cùng chiều phía trước; điểm dừng, đỗ có khách đang lên xuống; gặp xe chở hàng siêu trường, siêu trọng, hàng nguy hiểm, đoàn người đi bộ; gặp xe ưu tiên; trời mưa, gió, sương, khói, bụi, mặt đường trơn trượt, lầy lội, nhiều đất đá, vật liệu rơi vãi; khu vực đang tổ chức kiểm soát giao thông"
+  ],
+  "ket_luan": [
+   "Phải quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn"
+  ],
+  "nguyen_van": "Người điều khiển phương tiện tham gia giao thông đường bộ phải quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn trong các trường hợp sau đây: a) Tại nơi có vạch kẻ đường hoặc báo hiệu khác dành cho người đi bộ hoặc tại nơi mà người đi bộ, xe lăn của người khuyết tật đang qua đường; b) Có báo hiệu cảnh báo nguy hiểm hoặc có chướng ngại vật trên đường; c) Chuyển hướng xe chạy hoặc tầm nhìn bị hạn chế; d) Nơi đường bộ giao nhau cùng mức với đường bộ, đường bộ giao nhau cùng mức với đường sắt; đường hẹp, đường vòng, đường quanh co, đường đèo, dốc; đ) Nơi cầu, cống hẹp, đập tràn, đường ngầm, hầm chui, hầm đường bộ; e) Khu vực có trường học, bệnh viện, bến xe, công trình công cộng tập trung đông người, khu vực đông dân cư, chợ, khu vực đang thi công trên đường bộ, hiện trường vụ tai nạn giao thông đường bộ; g) Có vật nuôi đi trên đường hoặc chăn thả ở ven đường; h) Tránh xe đi ngược chiều hoặc khi cho xe đi phía sau vượt; khi có tín hiệu xin đường, tín hiệu khẩn cấp của xe đi cùng chiều phía trước; i) Điểm dừng xe, đỗ xe trên đường bộ có khách đang lên, xuống xe; k) Gặp xe vận chuyển hàng siêu trường, siêu trọng, hàng hóa nguy hiểm; đoàn người đi bộ; l) Gặp xe ưu tiên; m) Điều kiện trời mưa, gió, sương, khói, bụi, mặt đường trơn trượt, lầy lội, có nhiều đất đá, vật liệu rơi vãi ảnh hưởng đến an toàn giao thông đường bộ; n) Khu vực đang tổ chức kiểm soát giao thông đường bộ.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 12,
+   "khoan": 3,
+   "diem": null
+  }
+ },
+ {
+  "id": "R24",
+  "ten": "Xe chạy chậm hơn phải đi về bên phải",
+  "dieu_kien": [
+   "Phương tiện di chuyển với tốc độ thấp hơn các phương tiện khác"
+  ],
+  "ket_luan": [
+   "Phải đi về bên phải theo chiều đi của mình"
+  ],
+  "nguyen_van": "Phương tiện tham gia giao thông đường bộ di chuyển với tốc độ thấp hơn phải đi về bên phải theo chiều đi của mình.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 13,
+   "khoan": 1,
+   "diem": null
+  }
+ },
+ {
+  "id": "R25",
+  "ten": "Quy tắc đi trong một làn đường và chuyển làn đường",
+  "dieu_kien": [
+   "Đường có nhiều làn đường cho xe đi cùng chiều được phân biệt bằng vạch kẻ phân làn đường"
+  ],
+  "ket_luan": [
+   "Phải cho xe đi trong một làn đường",
+   "Chỉ được chuyển làn ở những nơi cho phép",
+   "Mỗi lần chuyển làn chỉ được chuyển sang một làn đường liền kề",
+   "Khi chuyển làn phải có tín hiệu báo trước và phải quan sát bảo đảm khoảng cách an toàn với xe phía trước, phía sau và hai bên"
+  ],
+  "nguyen_van": "Trên đường có nhiều làn đường cho xe đi cùng chiều được phân biệt bằng vạch kẻ phân làn đường, người điều khiển phương tiện tham gia giao thông đường bộ phải cho xe đi trong một làn đường và chỉ được chuyển làn đường ở những nơi cho phép; mỗi lần chuyển làn đường chỉ được phép chuyển sang một làn đường liền kề; khi chuyển làn đường phải có tín hiệu báo trước; phải quan sát bảo đảm khoảng cách an toàn với xe phía trước, phía sau và hai bên mới được chuyển làn.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 13,
+   "khoan": 2,
+   "diem": null
+  }
+ },
+ {
+  "id": "R26",
+  "ten": "Phân bố làn đường giữa xe thô sơ và xe cơ giới",
+  "dieu_kien": [
+   "Một chiều đường có vạch kẻ phân làn đường"
+  ],
+  "ket_luan": [
+   "Xe thô sơ phải đi trên làn đường bên phải trong cùng",
+   "Xe cơ giới, xe máy chuyên dùng đi trên làn đường bên trái"
+  ],
+  "nguyen_van": "Trên một chiều đường có vạch kẻ phân làn đường, xe thô sơ phải đi trên làn đường bên phải trong cùng, xe cơ giới, xe máy chuyên dùng đi trên làn đường bên trái.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 13,
+   "khoan": 3,
+   "diem": null
+  }
+ },
+ {
+  "id": "R27",
+  "ten": "Cấm đi vào làn đường dành riêng cho loại phương tiện khác",
+  "dieu_kien": [
+   "Có làn đường dành riêng cho một loại phương tiện hoặc một nhóm loại phương tiện",
+   "Người điều khiển thuộc loại phương tiện khác"
+  ],
+  "ket_luan": [
+   "Không được đi vào làn đường đó"
+  ],
+  "nguyen_van": "Trên làn đường dành riêng cho một loại phương tiện hoặc một nhóm loại phương tiện, người điều khiển loại phương tiện khác không được đi vào làn đường đó.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 13,
+   "khoan": 4,
+   "diem": null
+  }
+ },
+ {
+  "id": "R28",
+  "ten": "Nguyên tắc vượt xe bên trái và ngoại lệ được vượt bên phải",
+  "dieu_kien": [
+   "Thực hiện hành vi vượt xe"
+  ],
+  "ket_luan": [
+   "Phải vượt về bên trái",
+   "Được vượt về bên phải khi xe phía trước có tín hiệu rẽ trái hoặc đang rẽ trái, hoặc khi xe chuyên dùng đang làm việc trên đường mà không thể vượt bên trái"
+  ],
+  "nguyen_van": "Khi vượt các xe phải vượt bên trái; trường hợp khi xe phía trước có tín hiệu rẽ trái hoặc đang rẽ trái hoặc khi xe chuyên dùng đang làm việc trên đường mà không thể vượt bên trái thì được vượt về bên phải.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 14,
+   "khoan": 2,
+   "diem": null
+  }
+ },
+ {
+  "id": "R29",
+  "ten": "Điều kiện được vượt xe",
+  "dieu_kien": [
+   "Không có chướng ngại vật phía trước",
+   "Không có xe chạy ngược chiều trong đoạn đường định vượt",
+   "Xe chạy trước không có tín hiệu vượt xe khác, đã có tín hiệu rẽ phải và tránh về bên phải"
+  ],
+  "ket_luan": [
+   "Xe xin vượt được phép vượt"
+  ],
+  "nguyen_van": "Xe xin vượt chỉ được vượt khi không có chướng ngại vật phía trước, không có xe chạy ngược chiều trong đoạn đường định vượt, xe chạy trước không có tín hiệu vượt xe khác, đã có tín hiệu rẽ phải và tránh về bên phải.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 14,
+   "khoan": 3,
+   "diem": null
+  }
+ },
+ {
+  "id": "R30",
+  "ten": "Nghĩa vụ nhường đường cho xe xin vượt",
+  "dieu_kien": [
+   "Có xe phía sau xin vượt"
+  ],
+  "ket_luan": [
+   "Người điều khiển phương tiện phía trước phải quan sát phần đường phía trước",
+   "Nếu đủ điều kiện an toàn thì phải giảm tốc độ, có tín hiệu rẽ phải và đi sát về bên phải phần đường xe chạy cho đến khi xe sau đã vượt qua, không được cản trở xe xin vượt",
+   "Nếu có chướng ngại vật hoặc không đủ điều kiện an toàn thì phải có tín hiệu rẽ trái để báo hiệu chưa được vượt"
+  ],
+  "nguyen_van": "Khi có xe xin vượt, người điều khiển phương tiện tham gia giao thông đường bộ phía trước phải quan sát phần đường phía trước, nếu đủ điều kiện an toàn thì phải giảm tốc độ, có tín hiệu rẽ phải để báo hiệu cho người điều khiển phương tiện tham gia giao thông đường bộ phía sau biết được vượt và đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua, không được cản trở đối với xe xin vượt. Trường hợp có chướng ngại vật hoặc không đủ điều kiện an toàn thì người điều khiển phương tiện tham gia giao thông đường bộ phía trước có tín hiệu rẽ trái để báo hiệu cho người điều khiển phương tiện tham gia giao thông đường bộ phía sau biết là chưa được vượt.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 14,
+   "khoan": 4,
+   "diem": null
+  }
+ },
+ {
+  "id": "R31",
+  "ten": "Báo hiệu khi xin vượt và khi vượt xe",
+  "dieu_kien": [
+   "Xe xin vượt (trừ xe thô sơ không có đèn chiếu sáng và còi)"
+  ],
+  "ket_luan": [
+   "Phải có báo hiệu nhấp nháy bằng đèn chiếu sáng phía trước hoặc còi",
+   "Khi vượt phải có tín hiệu báo hướng chuyển và bảo đảm khoảng cách an toàn với xe phía trước và phía sau trong suốt quá trình vượt",
+   "Trong đô thị và khu đông dân cư, từ 22 giờ ngày hôm trước đến 05 giờ ngày hôm sau chỉ được báo hiệu xin vượt bằng đèn"
+  ],
+  "nguyen_van": "Xe xin vượt phải có báo hiệu nhấp nháy bằng đèn chiếu sáng phía trước hoặc còi, trừ loại xe thô sơ không có đèn chiếu sáng và còi, khi vượt xe phải có tín hiệu báo hướng chuyển, tín hiệu báo hướng chuyển được sử dụng, bảo đảm khoảng cách an toàn với xe phía trước và phía sau trong suốt quá trình vượt xe; trong đô thị và khu đông dân cư trong thời gian từ 22 giờ ngày hôm trước đến 05 giờ ngày hôm sau chỉ được báo hiệu xin vượt bằng đèn.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 14,
+   "khoan": 5,
+   "diem": null
+  }
+ },
+ {
+  "id": "R32",
+  "ten": "Các trường hợp không được vượt xe",
+  "dieu_kien": [
+   "Thuộc một trong các trường hợp: không bảo đảm điều kiện vượt tại khoản 3 Điều 14; trên cầu hẹp có một làn đường; đường cong có tầm nhìn bị hạn chế; trên đường hai chiều tại khu vực đỉnh dốc có tầm nhìn bị hạn chế; nơi đường giao nhau, đường bộ giao nhau cùng mức với đường sắt; điều kiện thời tiết hoặc đường không bảo đảm an toàn cho việc vượt; gặp xe ưu tiên; ở phần đường dành cho người đi bộ qua đường; có người đi bộ, xe lăn của người khuyết tật qua đường; trong hầm đường bộ"
+  ],
+  "ket_luan": [
+   "Không được vượt xe"
+  ],
+  "nguyen_van": "Không được vượt xe trong trường hợp sau đây: a) Khi không bảo đảm các điều kiện quy định tại khoản 3 Điều này; b) Trên cầu hẹp có một làn đường; c) Đường cong có tầm nhìn bị hạn chế; d) Trên đường hai chiều tại khu vực đỉnh dốc có tầm nhìn bị hạn chế; đ) Nơi đường giao nhau, đường bộ giao nhau cùng mức với đường sắt; e) Khi điều kiện thời tiết hoặc đường không bảo đảm an toàn cho việc vượt; g) Khi gặp xe ưu tiên; h) Ở phần đường dành cho người đi bộ qua đường; i) Khi có người đi bộ, xe lăn của người khuyết tật qua đường; k) Trong hầm đường bộ.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 14,
+   "khoan": 6,
+   "diem": null
+  }
+ },
+ {
+  "id": "R33",
+  "ten": "Nghĩa vụ trước và trong khi chuyển hướng xe",
+  "dieu_kien": [
+   "Người điều khiển phương tiện chuẩn bị chuyển hướng (rẽ trái, rẽ phải hoặc quay đầu xe)"
+  ],
+  "ket_luan": [
+   "Phải quan sát, bảo đảm khoảng cách an toàn với xe phía sau, giảm tốc độ",
+   "Phải có tín hiệu báo hướng rẽ, hoặc tín hiệu bằng tay đối với xe thô sơ không có đèn báo hướng rẽ",
+   "Phải chuyển dần sang làn gần nhất với hướng rẽ và duy trì tín hiệu liên tục trong quá trình chuyển hướng",
+   "Chỉ được chuyển hướng khi bảo đảm an toàn, không gây trở ngại cho người và phương tiện khác"
+  ],
+  "nguyen_van": "Trước khi chuyển hướng, người điều khiển phương tiện tham gia giao thông đường bộ phải quan sát, bảo đảm khoảng cách an toàn với xe phía sau, giảm tốc độ và có tín hiệu báo hướng rẽ hoặc có tín hiệu bằng tay theo hướng rẽ đối với xe thô sơ không có đèn báo hướng rẽ, chuyển dần sang làn gần nhất với hướng rẽ. Tín hiệu báo hướng rẽ hoặc tín hiệu bằng tay phải sử dụng liên tục trong quá trình chuyển hướng. Khi bảo đảm an toàn, không gây trở ngại cho người và phương tiện khác mới được chuyển hướng.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 15,
+   "khoan": 2,
+   "diem": null
+  }
+ },
+ {
+  "id": "R34",
+  "ten": "Nhường đường khi chuyển hướng",
+  "dieu_kien": [
+   "Người lái xe hoặc người điều khiển xe máy chuyên dùng đang chuyển hướng"
+  ],
+  "ket_luan": [
+   "Phải nhường đường cho người đi bộ, xe thô sơ, xe đi ngược chiều",
+   "Chỉ chuyển hướng khi không gây trở ngại hoặc nguy hiểm cho người, phương tiện khác"
+  ],
+  "nguyen_van": "Khi chuyển hướng, người lái xe, người điều khiển xe máy chuyên dùng phải nhường đường cho người đi bộ, xe thô sơ, xe đi ngược chiều và chỉ chuyển hướng khi không gây trở ngại hoặc nguy hiểm cho người, phương tiện khác.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 15,
+   "khoan": 3,
+   "diem": null
+  }
+ },
+ {
+  "id": "R35",
+  "ten": "Các vị trí không được quay đầu xe",
+  "dieu_kien": [
+   "Vị trí thuộc một trong các nơi: phần đường dành cho người đi bộ qua đường; trên cầu, đầu cầu, gầm cầu vượt, ngầm; nơi đường bộ giao nhau cùng mức với đường sắt; đường hẹp, đường dốc, đoạn đường cong tầm nhìn bị che khuất; trên đường cao tốc; trong hầm đường bộ; trên đường một chiều",
+   "Không có hiệu lệnh của người điều khiển giao thông hoặc chỉ dẫn của biển báo hiệu tạm thời cho phép"
+  ],
+  "ket_luan": [
+   "Không được quay đầu xe"
+  ],
+  "nguyen_van": "Không được quay đầu xe ở phần đường dành cho người đi bộ qua đường, trên cầu, đầu cầu, gầm cầu vượt, ngầm, tại nơi đường bộ giao nhau cùng mức với đường sắt, đường hẹp, đường dốc, đoạn đường cong tầm nhìn bị che khuất, trên đường cao tốc, trong hầm đường bộ, trên đường một chiều, trừ khi có hiệu lệnh của người điều khiển giao thông hoặc chỉ dẫn của biển báo hiệu tạm thời.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 15,
+   "khoan": 4,
+   "diem": null
+  }
+ },
+ {
+  "id": "R36",
+  "ten": "Nghĩa vụ khi lùi xe",
+  "dieu_kien": [
+   "Người điều khiển phương tiện thực hiện việc lùi xe"
+  ],
+  "ket_luan": [
+   "Phải quan sát hai bên và phía sau xe",
+   "Phải có tín hiệu lùi",
+   "Chỉ lùi xe khi bảo đảm an toàn"
+  ],
+  "nguyen_van": "Khi lùi xe, người điều khiển phương tiện tham gia giao thông đường bộ phải quan sát hai bên và phía sau xe, có tín hiệu lùi và chỉ lùi xe khi bảo đảm an toàn.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 16,
+   "khoan": 1,
+   "diem": null
+  }
+ },
+ {
+  "id": "R37",
+  "ten": "Các nơi không được lùi xe",
+  "dieu_kien": [
+   "Vị trí thuộc một trong các nơi: đường một chiều; khu vực cấm dừng; phần đường dành cho người đi bộ qua đường; nơi đường bộ giao nhau; đường bộ giao nhau cùng mức với đường sắt; nơi tầm nhìn bị che khuất; trong hầm đường bộ; trên đường cao tốc"
+  ],
+  "ket_luan": [
+   "Không được lùi xe"
+  ],
+  "nguyen_van": "Không được lùi xe ở đường một chiều, khu vực cấm dừng, trên phần đường dành cho người đi bộ qua đường, nơi đường bộ giao nhau, đường bộ giao nhau cùng mức với đường sắt, nơi tầm nhìn bị che khuất, trong hầm đường bộ, trên đường cao tốc.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 16,
+   "khoan": 2,
+   "diem": null
+  }
+ },
+ {
+  "id": "R38",
+  "ten": "Quy tắc tránh xe đi ngược chiều",
+  "dieu_kien": [
+   "Đường không phân chia thành hai chiều xe chạy riêng biệt",
+   "Hai xe đi ngược chiều tránh nhau"
+  ],
+  "ket_luan": [
+   "Phải giảm tốc độ",
+   "Phải cho xe đi về bên phải theo chiều xe chạy của mình"
+  ],
+  "nguyen_van": "Trên đường không phân chia thành hai chiều xe chạy riêng biệt, hai xe đi ngược chiều tránh nhau, người điều khiển phương tiện tham gia giao thông đường bộ phải giảm tốc độ và cho xe đi về bên phải theo chiều xe chạy của mình.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 17,
+   "khoan": 1,
+   "diem": null
+  }
+ },
+ {
+  "id": "R39",
+  "ten": "Các trường hợp nhường đường khi tránh nhau",
+  "dieu_kien": [
+   "Nơi đường hẹp chỉ đủ cho một xe chạy và có chỗ tránh xe; hoặc xe lên dốc và xe xuống dốc gặp nhau; hoặc một xe có chướng ngại vật phía trước"
+  ],
+  "ket_luan": [
+   "Xe ở gần chỗ tránh hơn phải vào vị trí tránh, nhường đường cho xe đi ngược chiều",
+   "Xe xuống dốc phải nhường đường cho xe lên dốc",
+   "Xe có chướng ngại vật phía trước phải nhường đường cho xe không có chướng ngại vật phía trước"
+  ],
+  "nguyen_van": "Các trường hợp nhường đường khi tránh nhau bao gồm: a) Nơi đường hẹp chỉ đủ cho một xe chạy và có chỗ tránh xe thì xe nào ở gần chỗ tránh hơn phải vào vị trí tránh, nhường đường cho xe đi ngược chiều; b) Xe xuống dốc phải nhường đường cho xe lên dốc; c) Xe có chướng ngại vật phía trước phải nhường đường cho xe không có chướng ngại vật phía trước.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 17,
+   "khoan": 2,
+   "diem": null
+  }
+ },
+ {
+  "id": "R40",
+  "ten": "Nghĩa vụ khi dừng xe",
+  "dieu_kien": [
+   "Xe ở trạng thái dừng (đứng yên tạm thời để người lên xuống, xếp dỡ hàng hóa, kiểm tra kỹ thuật xe hoặc hoạt động khác)"
+  ],
+  "ket_luan": [
+   "Không được tắt máy và không được rời khỏi vị trí lái",
+   "Được rời khỏi vị trí lái để đóng, mở cửa xe, xếp dỡ hàng hóa, kiểm tra kỹ thuật xe nhưng phải sử dụng phanh đỗ xe hoặc thực hiện biện pháp an toàn khác"
+  ],
+  "nguyen_van": "Dừng xe là trạng thái đứng yên tạm thời của xe trong một khoảng thời gian cần thiết đủ để cho người lên xe, xuống xe, xếp dỡ hàng hóa, kiểm tra kỹ thuật xe hoặc hoạt động khác. Khi dừng xe không được tắt máy và không được rời khỏi vị trí lái, trừ trường hợp rời khỏi vị trí lái để đóng, mở cửa xe, xếp dỡ hàng hóa, kiểm tra kỹ thuật xe nhưng phải sử dụng phanh đỗ xe hoặc thực hiện biện pháp an toàn khác.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 18,
+   "khoan": 1,
+   "diem": null
+  }
+ },
+ {
+  "id": "R41",
+  "ten": "Nghĩa vụ khi đỗ xe",
+  "dieu_kien": [
+   "Xe ở trạng thái đỗ (đứng yên không giới hạn thời gian)"
+  ],
+  "ket_luan": [
+   "Chỉ được rời khỏi xe khi đã sử dụng phanh đỗ xe hoặc thực hiện biện pháp an toàn khác",
+   "Nếu đỗ trên đoạn đường dốc thì phải đánh lái về phía lề đường và chèn bánh"
+  ],
+  "nguyen_van": "Đỗ xe là trạng thái đứng yên của xe không giới hạn thời gian. Khi đỗ xe, người điều khiển phương tiện tham gia giao thông đường bộ chỉ được rời khỏi xe khi đã sử dụng phanh đỗ xe hoặc thực hiện biện pháp an toàn khác. Xe đỗ trên đoạn đường dốc phải đánh lái về phía lề đường, chèn bánh.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 18,
+   "khoan": 2,
+   "diem": null
+  }
+ },
+ {
+  "id": "R42",
+  "ten": "Nghĩa vụ báo hiệu khi ra, vào vị trí dừng xe, đỗ xe",
+  "dieu_kien": [
+   "Người điều khiển phương tiện dừng xe hoặc đỗ xe trên đường"
+  ],
+  "ket_luan": [
+   "Phải có tín hiệu báo cho người điều khiển phương tiện khác biết khi ra, vào vị trí dừng xe, đỗ xe",
+   "Không được làm ảnh hưởng đến người đi bộ và các phương tiện tham gia giao thông đường bộ"
+  ],
+  "nguyen_van": "Người điều khiển phương tiện tham gia giao thông đường bộ khi dừng xe, đỗ xe trên đường phải thực hiện các quy định sau đây: a) Có tín hiệu báo cho người điều khiển phương tiện tham gia giao thông đường bộ khác biết khi ra, vào vị trí dừng xe, đỗ xe; b) Không làm ảnh hưởng đến người đi bộ và các phương tiện tham gia giao thông đường bộ.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 18,
+   "khoan": 3,
+   "diem": null
+  }
+ },
+ {
+  "id": "R43",
+  "ten": "Các vị trí không được dừng xe, đỗ xe",
+  "dieu_kien": [
+   "Vị trí thuộc một trong các trường hợp: bên trái đường một chiều; trên đoạn đường cong hoặc gần đầu dốc mà tầm nhìn bị che khuất; trên cầu (trừ nơi tổ chức giao thông cho phép); gầm cầu vượt (trừ nơi cho phép); song song cùng chiều với một xe khác đang dừng, đỗ; cách xe ô tô đang đỗ ngược chiều dưới 20 mét trên đường phố hẹp, dưới 40 mét trên đường có một làn xe cơ giới trên một chiều đường; trên phần đường dành cho người đi bộ qua đường; nơi đường giao nhau và trong phạm vi 05 mét tính từ mép đường giao nhau; điểm đón, trả khách; trước cổng và trong phạm vi 05 mét hai bên cổng trụ sở cơ quan, tổ chức có bố trí đường cho xe ra vào; nơi phần đường chỉ đủ cho một làn xe cơ giới; trong phạm vi an toàn của đường sắt; che khuất biển báo hiệu đường bộ, đèn tín hiệu giao thông; trên đường dành riêng cho xe buýt, trên miệng cống thoát nước, miệng hầm của đường điện thoại, điện cao thế, chỗ dành riêng cho xe chữa cháy lấy nước; trên lòng đường, vỉa hè trái quy định của pháp luật"
+  ],
+  "ket_luan": [
+   "Không được dừng xe, đỗ xe"
+  ],
+  "nguyen_van": "Người điều khiển phương tiện tham gia giao thông đường bộ không được dừng xe, đỗ xe tại các vị trí sau đây: a) Bên trái đường một chiều; b) Trên đoạn đường cong hoặc gần đầu dốc mà tầm nhìn bị che khuất; c) Trên cầu, trừ những trường hợp tổ chức giao thông cho phép; d) Gầm cầu vượt, trừ những nơi cho phép dừng xe, đỗ xe; đ) Song song cùng chiều với một xe khác đang dừng, đỗ trên đường; e) Cách xe ô tô đang đỗ ngược chiều dưới 20 mét trên đường phố hẹp, dưới 40 mét trên đường có một làn xe cơ giới trên một chiều đường; g) Trên phần đường dành cho người đi bộ qua đường; h) Nơi đường giao nhau và trong phạm vi 05 mét tính từ mép đường giao nhau; i) Điểm đón, trả khách; k) Trước cổng và trong phạm vi 05 mét hai bên cổng trụ sở cơ quan, tổ chức có bố trí đường cho xe ra, vào; l) Tại nơi phần đường có chiều rộng chỉ đủ cho một làn xe cơ giới; m) Trong phạm vi an toàn của đường sắt; n) Che khuất biển báo hiệu đường bộ, đèn tín hiệu giao thông; o) Trên đường dành riêng cho xe buýt, trên miệng cống thoát nước, miệng hầm của đường điện thoại, điện cao thế, chỗ dành riêng cho xe chữa cháy lấy nước; trên lòng đường, vỉa hè trái quy định của pháp luật.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 18,
+   "khoan": 4,
+   "diem": null
+  }
+ },
+ {
+  "id": "R44",
+  "ten": "Vị trí được dừng xe, đỗ xe trên đường bộ",
+  "dieu_kien": [
+   "Dừng xe, đỗ xe trên đường bộ"
+  ],
+  "ket_luan": [
+   "Chỉ được dừng, đỗ ở nơi có lề đường rộng hoặc khu đất ở bên ngoài phần đường xe chạy",
+   "Nếu lề đường hẹp hoặc không có lề đường thì chỉ được dừng, đỗ sát mép đường phía bên phải theo chiều đi của mình"
+  ],
+  "nguyen_van": "Trên đường bộ, người điều khiển phương tiện tham gia giao thông đường bộ chỉ được dừng xe, đỗ xe ở nơi có lề đường rộng hoặc khu đất ở bên ngoài phần đường xe chạy; trường hợp lề đường hẹp hoặc không có lề đường thì chỉ được dừng xe, đỗ xe sát mép đường phía bên phải theo chiều đi của mình.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 18,
+   "khoan": 5,
+   "diem": null
+  }
+ },
+ {
+  "id": "R45",
+  "ten": "Vị trí được dừng xe, đỗ xe trên đường phố",
+  "dieu_kien": [
+   "Dừng xe, đỗ xe trên đường phố"
+  ],
+  "ket_luan": [
+   "Chỉ được dừng, đỗ sát theo lề đường, vỉa hè phía bên phải theo chiều đi của mình",
+   "Bánh xe gần nhất không được cách xa lề đường, vỉa hè quá 0,25 mét",
+   "Không được gây cản trở, nguy hiểm cho người và phương tiện tham gia giao thông đường bộ"
+  ],
+  "nguyen_van": "Trên đường phố, người điều khiển phương tiện tham gia giao thông đường bộ chỉ được dừng xe, đỗ xe sát theo lề đường, vỉa hè phía bên phải theo chiều đi của mình; bánh xe gần nhất không được cách xa lề đường, vỉa hè quá 0,25 mét và không gây cản trở, nguy hiểm cho người và phương tiện tham gia giao thông đường bộ.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 18,
+   "khoan": 6,
+   "diem": null
+  }
+ },
+ {
+  "id": "R46",
+  "ten": "Báo hiệu khi buộc phải đỗ xe do sự cố kỹ thuật hoặc bất khả kháng",
+  "dieu_kien": [
+   "Gặp sự cố kỹ thuật hoặc bất khả kháng khác buộc phải đỗ xe",
+   "Việc đỗ xe chiếm một phần đường xe chạy hoặc tại nơi không được phép đỗ"
+  ],
+  "ket_luan": [
+   "Phải có báo hiệu bằng đèn khẩn cấp hoặc đặt biển cảnh báo về phía sau xe"
+  ],
+  "nguyen_van": "Trong trường hợp gặp sự cố kỹ thuật hoặc bất khả kháng khác buộc phải đỗ xe, khi đỗ xe chiếm một phần đường xe chạy hoặc tại nơi không được phép đỗ, phải có báo hiệu bằng đèn khẩn cấp hoặc đặt biển cảnh báo về phía sau xe để người điều khiển phương tiện tham gia giao thông đường bộ khác biết.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 18,
+   "khoan": 7,
+   "diem": null
+  }
+ },
+ {
+  "id": "R47",
+  "ten": "Quy tắc mở cửa xe",
+  "dieu_kien": [
+   "Xe đã dừng hoặc đỗ"
+  ],
+  "ket_luan": [
+   "Chỉ được mở cửa xe khi xe đã dừng, đỗ",
+   "Trước khi mở cửa phải quan sát phía trước, phía sau và bên phía mở cửa, khi thấy an toàn mới được mở cửa và ra khỏi xe",
+   "Không để cửa xe mở nếu không bảo đảm an toàn"
+  ],
+  "nguyen_van": "1. Chỉ được mở cửa xe khi xe đã dừng, đỗ. 2. Trước khi mở cửa xe, người mở cửa phải quan sát phía trước, phía sau và bên phía mở cửa xe, khi thấy an toàn mới được mở cửa xe, ra khỏi xe; không để cửa xe mở nếu không bảo đảm an toàn.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 19,
+   "khoan": null,
+   "diem": null
+  }
+ },
+ {
+  "id": "R48",
+  "ten": "Bắt buộc bật đèn chiếu sáng phía trước từ 18 giờ đến 06 giờ hoặc khi tầm nhìn hạn chế",
+  "dieu_kien": [
+   "Chủ thể là người lái xe hoặc người điều khiển xe máy chuyên dùng",
+   "Thời gian từ 18 giờ ngày hôm trước đến 06 giờ ngày hôm sau, hoặc có sương mù, khói, bụi, trời mưa, thời tiết xấu làm hạn chế tầm nhìn"
+  ],
+  "ket_luan": [
+   "Phải bật đèn chiếu sáng phía trước"
+  ],
+  "nguyen_van": "Người lái xe, người điều khiển xe máy chuyên dùng tham gia giao thông đường bộ phải bật đèn chiếu sáng phía trước trong thời gian từ 18 giờ ngày hôm trước đến 06 giờ ngày hôm sau hoặc khi có sương mù, khói, bụi, trời mưa, thời tiết xấu làm hạn chế tầm nhìn.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 20,
+   "khoan": 1,
+   "diem": null
+  }
+ },
+ {
+  "id": "R49",
+  "ten": "Bắt buộc tắt đèn chiếu xa, bật đèn chiếu gần trong các trường hợp cụ thể",
+  "dieu_kien": [
+   "Gặp người đi bộ qua đường; hoặc đi trên đoạn đường qua khu đông dân cư có hệ thống chiếu sáng đang hoạt động; hoặc gặp xe đi ngược chiều (trừ trường hợp dải phân cách có khả năng chống chói); hoặc chuyển hướng xe tại nơi đường giao nhau"
+  ],
+  "ket_luan": [
+   "Phải tắt đèn chiếu xa, bật đèn chiếu gần"
+  ],
+  "nguyen_van": "Người lái xe, người điều khiển xe máy chuyên dùng phải tắt đèn chiếu xa, bật đèn chiếu gần trong các trường hợp sau đây: a) Khi gặp người đi bộ qua đường; b) Khi đi trên các đoạn đường qua khu đông dân cư có hệ thống chiếu sáng đang hoạt động; c) Khi gặp xe đi ngược chiều, trừ trường hợp dải phân cách có khả năng chống chói; d) Khi chuyển hướng xe tại nơi đường giao nhau.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 20,
+   "khoan": 2,
+   "diem": null
+  }
+ },
+ {
+  "id": "R50",
+  "ten": "Bật đèn cảnh báo màu vàng khi thực hiện công việc trên đường bộ",
+  "dieu_kien": [
+   "Người lái xe, người điều khiển xe máy chuyên dùng thực hiện công việc trên đường bộ"
+  ],
+  "ket_luan": [
+   "Phải bật sáng đèn cảnh báo màu vàng"
+  ],
+  "nguyen_van": "Người lái xe, người điều khiển xe máy chuyên dùng khi thực hiện công việc trên đường bộ phải bật sáng đèn cảnh báo màu vàng.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 20,
+   "khoan": 3,
+   "diem": null
+  }
+ },
+ {
+  "id": "R51",
+  "ten": "Các trường hợp được sử dụng còi",
+  "dieu_kien": [
+   "Xuất hiện tình huống có thể mất an toàn giao thông cần báo hiệu cho người tham gia giao thông; hoặc chuẩn bị vượt xe"
+  ],
+  "ket_luan": [
+   "Chỉ trong hai trường hợp này mới được sử dụng tín hiệu còi"
+  ],
+  "nguyen_van": "Chỉ được sử dụng tín hiệu còi của phương tiện tham gia giao thông đường bộ trong các trường hợp sau đây: a) Báo hiệu cho người tham gia giao thông đường bộ khi xuất hiện tình huống có thể mất an toàn giao thông; b) Báo hiệu chuẩn bị vượt xe.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 21,
+   "khoan": 1,
+   "diem": null
+  }
+ },
+ {
+  "id": "R52",
+  "ten": "Cấm sử dụng còi liên tục, còi sai âm lượng và còi ban đêm trong khu đông dân cư",
+  "dieu_kien": [
+   "Sử dụng còi liên tục; hoặc còi có âm lượng không đúng quy định",
+   "Hoặc sử dụng còi trong thời gian từ 22 giờ ngày hôm trước đến 05 giờ ngày hôm sau trong khu đông dân cư, khu vực cơ sở khám bệnh, chữa bệnh",
+   "Phương tiện không phải là xe ưu tiên"
+  ],
+  "ket_luan": [
+   "Không được sử dụng còi"
+  ],
+  "nguyen_van": "Không sử dụng còi liên tục; không sử dụng còi có âm lượng không đúng quy định; không sử dụng còi trong thời gian từ 22 giờ ngày hôm trước đến 05 giờ ngày hôm sau trong khu đông dân cư, khu vực cơ sở khám bệnh, chữa bệnh, trừ xe ưu tiên.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 21,
+   "khoan": 2,
+   "diem": null
+  }
+ },
+ {
+  "id": "R53",
+  "ten": "Nhường đường cho xe trên đường ưu tiên, đường chính",
+  "dieu_kien": [
+   "Nơi đường giao nhau giữa đường không ưu tiên với đường ưu tiên, hoặc giữa đường nhánh với đường chính",
+   "Xe đi từ đường không ưu tiên hoặc đường nhánh"
+  ],
+  "ket_luan": [
+   "Phải quan sát, giảm tốc độ và nhường đường cho xe đi trên đường ưu tiên hoặc đường chính từ bất kỳ hướng nào tới"
+  ],
+  "nguyen_van": "Khi đến gần đường giao nhau, người điều khiển phương tiện tham gia giao thông đường bộ phải quan sát, giảm tốc độ và nhường đường theo quy định sau đây: 1. Tại nơi đường giao nhau giữa đường không ưu tiên với đường ưu tiên hoặc giữa đường nhánh với đường chính thì xe đi từ đường không ưu tiên hoặc đường nhánh phải nhường đường cho xe đi trên đường ưu tiên hoặc đường chính từ bất kỳ hướng nào tới.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 22,
+   "khoan": 1,
+   "diem": null
+  }
+ },
+ {
+  "id": "R54",
+  "ten": "Nhường đường cho xe đến từ bên phải tại nơi giao nhau không có vòng xuyến",
+  "dieu_kien": [
+   "Nơi đường giao nhau không có báo hiệu đi theo vòng xuyến"
+  ],
+  "ket_luan": [
+   "Phải quan sát, giảm tốc độ và nhường đường cho xe đi đến từ bên phải"
+  ],
+  "nguyen_van": "Tại nơi đường giao nhau không có báo hiệu đi theo vòng xuyến, phải nhường đường cho xe đi đến từ bên phải.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 22,
+   "khoan": 2,
+   "diem": null
+  }
+ },
+ {
+  "id": "R55",
+  "ten": "Nhường đường cho xe đến từ bên trái tại nơi giao nhau có vòng xuyến",
+  "dieu_kien": [
+   "Nơi đường giao nhau có báo hiệu đi theo vòng xuyến"
+  ],
+  "ket_luan": [
+   "Phải quan sát, giảm tốc độ và nhường đường cho xe đi đến từ bên trái"
+  ],
+  "nguyen_van": "Tại nơi đường giao nhau có báo hiệu đi theo vòng xuyến, phải nhường đường cho xe đi đến từ bên trái.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 22,
+   "khoan": 3,
+   "diem": null
+  }
+ },
+ {
+  "id": "R56",
+  "ten": "Thứ tự ưu tiên qua phà, cầu phao",
+  "dieu_kien": [
+   "Các xe cùng đến bến phà, cầu phao"
+  ],
+  "ket_luan": [
+   "Thứ tự ưu tiên: xe ưu tiên; xe chở thư báo; xe chở thực phẩm tươi sống; xe chở khách công cộng",
+   "Nếu cùng thứ tự ưu tiên thì xe nào đến trước được qua trước"
+  ],
+  "nguyen_van": "Các xe qua phà, qua cầu phao theo thứ tự ưu tiên từ trên xuống dưới như sau: a) Xe ưu tiên; b) Xe chở thư báo; c) Xe chở thực phẩm tươi sống; d) Xe chở khách công cộng. Trong trường hợp các xe cùng thứ tự ưu tiên đến bến phà, cầu phao thì xe nào đến trước được qua trước.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 23,
+   "khoan": 2,
+   "diem": null
+  }
+ },
+ {
+  "id": "R57",
+  "ten": "Không được ở trên xe khi xe xuống phà, ở trên phà và khi lên bến",
+  "dieu_kien": [
+   "Xe đang xuống phà, đang ở trên phà hoặc đang lên bến",
+   "Người không thuộc diện được ở lại trên xe (không phải người lái xe, người điều khiển xe máy chuyên dùng, trẻ em, phụ nữ mang thai, người già yếu, người khuyết tật, người bệnh)"
+  ],
+  "ket_luan": [
+   "Mọi người không được ở trên xe"
+  ],
+  "nguyen_van": "Khi xe xuống phà, đang ở trên phà và khi lên bến, mọi người không được ở trên xe, trừ người lái xe, người điều khiển xe máy chuyên dùng, trẻ em, phụ nữ mang thai, người già yếu, người khuyết tật, người bệnh.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 23,
+   "khoan": 3,
+   "diem": "a"
+  }
+ },
+ {
+  "id": "R58",
+  "ten": "Dừng lại khi có tín hiệu tại đường ngang đường sắt",
+  "dieu_kien": [
+   "Có hiệu lệnh của nhân viên gác chắn, đèn đỏ sáng nhấp nháy, chuông kêu, chắn đường bộ đang dịch chuyển hoặc đã đóng"
+  ],
+  "ket_luan": [
+   "Phải dừng lại về bên phải đường của mình, trước vạch dừng xe"
+  ],
+  "nguyen_van": "Khi có hiệu lệnh của nhân viên gác chắn, đèn đỏ sáng nhấp nháy, chuông kêu, chắn đường bộ đang dịch chuyển hoặc đã đóng, người tham gia giao thông đường bộ phải dừng lại về bên phải đường của mình, trước vạch dừng xe.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 24,
+   "khoan": 1,
+   "diem": null
+  }
+ },
+ {
+  "id": "R59",
+  "ten": "Quy tắc qua đường ngang không có người gác",
+  "dieu_kien": [
+   "Đường ngang không có người gác, chắn đường bộ, chuông, đèn tín hiệu"
+  ],
+  "ket_luan": [
+   "Phải dừng lại về bên phải đường của mình, trước vạch dừng xe",
+   "Phải quan sát hai phía, chỉ được đi qua khi không có phương tiện giao thông đường sắt tới"
+  ],
+  "nguyen_van": "Khi tới đường ngang không có người gác, chắn đường bộ, chuông, đèn tín hiệu, người tham gia giao thông đường bộ phải dừng lại về bên phải đường của mình, trước vạch dừng xe và quan sát hai phía, khi không có phương tiện giao thông đường sắt tới mới được đi qua.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 24,
+   "khoan": 2,
+   "diem": null
+  }
+ },
+ {
+  "id": "R60",
+  "ten": "Quy tắc nhập vào làn đường của đường cao tốc",
+  "dieu_kien": [
+   "Xe chuẩn bị nhập vào làn đường của đường cao tốc"
+  ],
+  "ket_luan": [
+   "Phải có tín hiệu xin vào và nhường đường cho xe đang chạy trên đường",
+   "Phải quan sát xe phía sau, bảo đảm khoảng cách an toàn mới cho xe nhập vào làn đường sát bên phải",
+   "Nếu có làn đường tăng tốc thì phải cho xe chạy trên làn đường đó trước khi nhập vào làn đường của đường cao tốc"
+  ],
+  "nguyen_van": "Trước khi nhập vào làn đường của đường cao tốc phải có tín hiệu xin vào và phải nhường đường cho xe đang chạy trên đường, quan sát xe phía sau bảo đảm khoảng cách an toàn mới cho xe nhập vào làn đường sát bên phải, nếu có làn đường tăng tốc thì phải cho xe chạy trên làn đường đó trước khi nhập vào làn đường của đường cao tốc.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 25,
+   "khoan": 1,
+   "diem": "a"
+  }
+ },
+ {
+  "id": "R61",
+  "ten": "Quy tắc ra khỏi đường cao tốc",
+  "dieu_kien": [
+   "Xe chuẩn bị ra khỏi đường cao tốc"
+  ],
+  "ket_luan": [
+   "Phải quan sát biển báo hiệu chỉ dẫn và chuyển dần sang làn đường sát bên phải",
+   "Nếu có làn đường giảm tốc thì phải cho xe di chuyển trên làn đường đó trước khi ra khỏi đường cao tốc"
+  ],
+  "nguyen_van": "Khi chuẩn bị ra khỏi đường cao tốc phải quan sát biển báo hiệu chỉ dẫn, thực hiện chuyển dần sang làn đường sát bên phải, nếu có làn đường giảm tốc thì phải cho xe di chuyển trên làn đường đó trước khi ra khỏi đường cao tốc.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 25,
+   "khoan": 1,
+   "diem": "b"
+  }
+ },
+ {
+  "id": "R62",
+  "ten": "Cấm chạy xe ở làn dừng xe khẩn cấp và phần lề đường của đường cao tốc",
+  "dieu_kien": [
+   "Xe đang chạy trên đường cao tốc"
+  ],
+  "ket_luan": [
+   "Không được cho xe chạy ở làn dừng xe khẩn cấp và phần lề đường"
+  ],
+  "nguyen_van": "Không được cho xe chạy ở làn dừng xe khẩn cấp và phần lề đường.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 25,
+   "khoan": 1,
+   "diem": "c"
+  }
+ },
+ {
+  "id": "R63",
+  "ten": "Quy tắc dừng xe, đỗ xe trên đường cao tốc",
+  "dieu_kien": [
+   "Xe trên đường cao tốc",
+   "Gặp sự cố kỹ thuật hoặc bất khả kháng khác buộc phải dừng xe, đỗ xe"
+  ],
+  "ket_luan": [
+   "Chỉ được dừng xe, đỗ xe ở nơi quy định",
+   "Trường hợp bất khả kháng thì được dừng, đỗ ở làn dừng khẩn cấp cùng chiều xe chạy và phải có báo hiệu bằng đèn khẩn cấp",
+   "Nếu không thể di chuyển vào làn dừng khẩn cấp thì phải có báo hiệu bằng đèn khẩn cấp và đặt biển hoặc đèn cảnh báo về phía sau xe khoảng cách tối thiểu 150 mét, nhanh chóng báo cho cơ quan Cảnh sát giao thông hoặc cơ quan quản lý đường cao tốc"
+  ],
+  "nguyen_van": "Chỉ được dừng xe, đỗ xe ở nơi quy định; trường hợp gặp sự cố kỹ thuật hoặc bất khả kháng khác buộc phải dừng xe, đỗ xe thì được dừng xe, đỗ xe ở làn dừng khẩn cấp cùng chiều xe chạy và phải có báo hiệu bằng đèn khẩn cấp; trường hợp xe không thể di chuyển được vào làn dừng khẩn cấp, phải có báo hiệu bằng đèn khẩn cấp và đặt biển hoặc đèn cảnh báo về phía sau xe khoảng cách tối thiểu 150 mét, nhanh chóng báo cho cơ quan Cảnh sát giao thông thực hiện nhiệm vụ bảo đảm trật tự, an toàn giao thông trên tuyến hoặc cơ quan quản lý đường cao tốc.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 25,
+   "khoan": 2,
+   "diem": null
+  }
+ },
+ {
+  "id": "R64",
+  "ten": "Các đối tượng không được đi trên đường cao tốc",
+  "dieu_kien": [
+   "Là xe máy chuyên dùng có tốc độ thiết kế nhỏ hơn tốc độ tối thiểu quy định đối với đường cao tốc, xe chở người bốn bánh có gắn động cơ, xe chở hàng bốn bánh có gắn động cơ, xe mô tô, xe gắn máy, các loại xe tương tự xe mô tô, xe gắn máy, xe thô sơ hoặc người đi bộ",
+   "Không phải là người, phương tiện và thiết bị phục vụ việc quản lý, bảo trì đường cao tốc"
+  ],
+  "ket_luan": [
+   "Không được đi trên đường cao tốc"
+  ],
+  "nguyen_van": "Xe máy chuyên dùng có tốc độ thiết kế nhỏ hơn tốc độ tối thiểu quy định đối với đường cao tốc, xe chở người bốn bánh có gắn động cơ, xe chở hàng bốn bánh có gắn động cơ, xe mô tô, xe gắn máy, các loại xe tương tự xe mô tô, xe gắn máy, xe thô sơ, người đi bộ không được đi trên đường cao tốc, trừ người, phương tiện giao thông đường bộ và thiết bị phục vụ việc quản lý, bảo trì đường cao tốc.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 25,
+   "khoan": 3,
+   "diem": null
+  }
+ },
+ {
+  "id": "R65",
+  "ten": "Bắt buộc bật đèn khi đi trong hầm đường bộ",
+  "dieu_kien": [
+   "Phương tiện đang đi trong hầm đường bộ"
+  ],
+  "ket_luan": [
+   "Xe cơ giới, xe máy chuyên dùng phải bật đèn chiếu gần",
+   "Xe thô sơ phải bật đèn hoặc có vật phát sáng báo hiệu"
+  ],
+  "nguyen_van": "Xe cơ giới, xe máy chuyên dùng phải bật đèn chiếu gần; xe thô sơ phải bật đèn hoặc có vật phát sáng báo hiệu.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 26,
+   "khoan": 1,
+   "diem": null
+  }
+ },
+ {
+  "id": "R66",
+  "ten": "Cấm dừng xe, đỗ xe trong hầm đường bộ",
+  "dieu_kien": [
+   "Phương tiện đang ở trong hầm đường bộ",
+   "Không có sự cố kỹ thuật hoặc bất khả kháng"
+  ],
+  "ket_luan": [
+   "Không được dừng xe, đỗ xe trong hầm đường bộ",
+   "Nếu buộc phải dừng, đỗ thì phải đưa xe vào vị trí dừng xe, đỗ xe khẩn cấp; nếu không di chuyển được thì phải có báo hiệu bằng đèn khẩn cấp, đặt biển hoặc đèn cảnh báo về phía sau xe và báo ngay cho cơ quan Cảnh sát giao thông hoặc cơ quan quản lý hầm đường bộ"
+  ],
+  "nguyen_van": "Không dừng xe, đỗ xe trong hầm đường bộ; trường hợp gặp sự cố kỹ thuật hoặc bất khả kháng khác buộc phải dừng xe, đỗ xe, người lái xe, người điều khiển xe máy chuyên dùng phải đưa xe vào vị trí dừng xe, đỗ xe khẩn cấp, nếu không di chuyển được, phải có báo hiệu bằng đèn khẩn cấp và đặt biển hoặc đèn cảnh báo về phía sau xe khoảng cách bảo đảm an toàn, nhanh chóng báo cho cơ quan Cảnh sát giao thông thực hiện nhiệm vụ bảo đảm trật tự, an toàn giao thông trên tuyến hoặc cơ quan quản lý hầm đường bộ.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 26,
+   "khoan": 2,
+   "diem": null
+  }
+ },
+ {
+  "id": "R67",
+  "ten": "Quyền của xe ưu tiên khi đi làm nhiệm vụ",
+  "dieu_kien": [
+   "Là xe ưu tiên quy định tại các điểm a, b, c và d khoản 2 Điều 27",
+   "Có tín hiệu ưu tiên theo quy định của pháp luật"
+  ],
+  "ket_luan": [
+   "Không bị hạn chế tốc độ",
+   "Được phép đi không phụ thuộc vào tín hiệu đèn giao thông, đi vào đường ngược chiều, các đường khác có thể đi được",
+   "Trên đường cao tốc chỉ được đi ngược chiều trên làn dừng xe khẩn cấp",
+   "Vẫn phải tuân theo hiệu lệnh của người điều khiển giao thông và biển báo hiệu tạm thời"
+  ],
+  "nguyen_van": "Xe ưu tiên quy định tại các điểm a, b, c và d khoản 2 Điều này không bị hạn chế tốc độ; được phép đi không phụ thuộc vào tín hiệu đèn giao thông, đi vào đường ngược chiều, các đường khác có thể đi được; riêng đối với đường cao tốc, chỉ được đi ngược chiều trên làn dừng xe khẩn cấp; phải tuân theo hiệu lệnh của người điều khiển giao thông, biển báo hiệu tạm thời.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 27,
+   "khoan": 4,
+   "diem": null
+  }
+ },
+ {
+  "id": "R68",
+  "ten": "Nghĩa vụ nhường đường cho xe ưu tiên",
+  "dieu_kien": [
+   "Có tín hiệu của xe ưu tiên"
+  ],
+  "ket_luan": [
+   "Người và phương tiện tham gia giao thông đường bộ phải giảm tốc độ, đi sát lề đường bên phải hoặc dừng lại để nhường đường",
+   "Trạm thu phí phải ưu tiên cho xe ưu tiên qua trạm trong mọi tình huống, không được gây cản trở"
+  ],
+  "nguyen_van": "Khi có tín hiệu của xe ưu tiên, người và phương tiện tham gia giao thông đường bộ phải giảm tốc độ, đi sát lề đường bên phải hoặc dừng lại để nhường đường, trạm thu phí phải ưu tiên cho xe ưu tiên qua trạm trong mọi tình huống, không được gây cản trở.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 27,
+   "khoan": 5,
+   "diem": null
+  }
+ },
+ {
+  "id": "R69",
+  "ten": "Các trường hợp được chở người trên thùng xe ô tô chở hàng",
+  "dieu_kien": [
+   "Thuộc một trong các trường hợp: chở người đi làm nhiệm vụ cứu nạn, cứu hộ, phòng chống thiên tai, dịch bệnh hoặc nhiệm vụ khẩn cấp; chở người bị nạn đi cấp cứu; đưa người ra khỏi khu vực nguy hiểm hoặc trường hợp khẩn cấp khác; chở người thuộc lực lượng vũ trang nhân dân đi làm nhiệm vụ khẩn cấp; chở người đi thực hành lái xe trên xe tập lái, người dự sát hạch trên xe sát hạch, chở công nhân đang duy tu, bảo dưỡng đường bộ; chở người diễu hành theo đoàn khi được cơ quan có thẩm quyền cho phép"
+  ],
+  "ket_luan": [
+   "Được chở người trên thùng xe ô tô chở hàng",
+   "Phải bảo đảm an toàn khi tham gia giao thông đường bộ",
+   "Ngoài các trường hợp này thì không được chở người trên thùng xe ô tô chở hàng"
+  ],
+  "nguyen_van": "1. Chỉ được chở người trên thùng xe ô tô chở hàng trong trường hợp sau đây: a) Chở người đi làm nhiệm vụ cứu nạn, cứu hộ, phòng, chống thiên tai, dịch bệnh hoặc thực hiện nhiệm vụ khẩn cấp; chở người bị nạn đi cấp cứu; đưa người ra khỏi khu vực nguy hiểm hoặc trong trường hợp khẩn cấp khác theo quy định của pháp luật; b) Chở người thuộc lực lượng vũ trang nhân dân đi làm nhiệm vụ khẩn cấp; c) Chở người đi thực hành lái xe trên xe tập lái; chở người dự sát hạch lái xe trên xe sát hạch; chở công nhân đang làm nhiệm vụ duy tu, bảo dưỡng đường bộ; d) Chở người diễu hành theo đoàn khi được cơ quan có thẩm quyền cho phép. 2. Xe ô tô chở hàng mà chở người trong các trường hợp quy định tại khoản 1 Điều này phải bảo đảm an toàn khi tham gia giao thông đường bộ.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 28,
+   "khoan": 1,
+   "diem": null
+  }
+ },
+ {
+  "id": "R70",
+  "ten": "Điều kiện xe ô tô kéo xe khác",
+  "dieu_kien": [
+   "Xe ô tô kéo theo một xe ô tô hoặc xe máy chuyên dùng khác",
+   "Xe được kéo không tự chạy được"
+  ],
+  "ket_luan": [
+   "Chỉ được kéo theo một xe",
+   "Xe được kéo phải có người điều khiển và hệ thống lái còn hiệu lực",
+   "Việc nối xe kéo với xe được kéo phải chắc chắn, an toàn; nếu hệ thống hãm của xe được kéo không còn hiệu lực thì phải nối bằng thanh nối cứng",
+   "Phía trước xe kéo và phía sau xe được kéo phải có biển báo hiệu, có đèn cảnh báo nhấp nháy màu vàng"
+  ],
+  "nguyen_van": "Một xe ô tô chỉ được kéo theo một xe ô tô hoặc xe máy chuyên dùng khác khi xe được kéo không tự chạy được, trừ trường hợp quy định tại khoản 3 Điều 53 của Luật này và phải bảo đảm các quy định sau đây: a) Xe được kéo phải có người điều khiển và hệ thống lái của xe đó phải còn hiệu lực; b) Việc nối xe kéo với xe được kéo phải bảo đảm chắc chắn, an toàn; trường hợp hệ thống hãm của xe được kéo không còn hiệu lực thì xe kéo nhau phải nối bằng thanh nối cứng; c) Phía trước của xe kéo và phía sau của xe được kéo phải có biển báo hiệu, có đèn cảnh báo nhấp nháy màu vàng.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 29,
+   "khoan": 1,
+   "diem": null
+  }
+ },
+ {
+  "id": "R71",
+  "ten": "Cấm chở người trên xe được kéo và cấm kéo thêm rơ moóc",
+  "dieu_kien": [
+   "Xe đang được kéo, hoặc xe kéo rơ moóc, xe ô tô đầu kéo kéo sơ mi rơ moóc"
+  ],
+  "ket_luan": [
+   "Không được chở người trên xe được kéo, trừ người điều khiển",
+   "Xe kéo rơ moóc, xe ô tô đầu kéo kéo sơ mi rơ moóc không được kéo thêm rơ moóc, sơ mi rơ moóc hoặc xe khác"
+  ],
+  "nguyen_van": "Không được chở người trên xe được kéo, trừ người điều khiển; xe kéo rơ moóc, xe ô tô đầu kéo kéo sơ mi rơ moóc không được kéo thêm rơ moóc, sơ mi rơ moóc hoặc xe khác.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 29,
+   "khoan": 3,
+   "diem": null
+  }
+ },
+ {
+  "id": "R72",
+  "ten": "Vị trí đi của người đi bộ",
+  "dieu_kien": [
+   "Chủ thể là người đi bộ tham gia giao thông đường bộ"
+  ],
+  "ket_luan": [
+   "Phải đi trên vỉa hè, lề đường, đường dành riêng cho người đi bộ",
+   "Nếu đường không có vỉa hè, lề đường, đường dành riêng thì phải đi sát mép đường bên phải theo chiều đi của mình"
+  ],
+  "nguyen_van": "Phải đi trên vỉa hè, lề đường, đường dành riêng cho người đi bộ; trường hợp đường không có vỉa hè, lề đường, đường dành riêng cho người đi bộ thì người đi bộ phải đi sát mép đường bên phải theo chiều đi của mình.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 30,
+   "khoan": 1,
+   "diem": "a"
+  }
+ },
+ {
+  "id": "R73",
+  "ten": "Quy tắc người đi bộ qua đường",
+  "dieu_kien": [
+   "Người đi bộ qua đường"
+  ],
+  "ket_luan": [
+   "Chỉ được qua đường ở nơi có đèn tín hiệu, có vạch kẻ đường hoặc có cầu vượt, hầm dành cho người đi bộ và phải tuân thủ tín hiệu chỉ dẫn, báo hiệu đường bộ",
+   "Nếu không có các công trình đó thì phải quan sát các xe đang đi tới, chỉ qua đường khi bảo đảm an toàn và phải có tín hiệu bằng tay"
+  ],
+  "nguyen_van": "Chỉ được qua đường ở những nơi có đèn tín hiệu, có vạch kẻ đường hoặc có cầu vượt, hầm dành cho người đi bộ và phải tuân thủ tín hiệu chỉ dẫn, báo hiệu đường bộ. Trường hợp không có đèn tín hiệu, vạch kẻ đường, cầu vượt, hầm dành cho người đi bộ thì phải quan sát các xe đang đi tới, chỉ qua đường khi bảo đảm an toàn, khi qua đường phải có tín hiệu bằng tay.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 30,
+   "khoan": 1,
+   "diem": "b"
+  }
+ },
+ {
+  "id": "R74",
+  "ten": "Cấm người đi bộ vượt dải phân cách, đu bám phương tiện đang di chuyển",
+  "dieu_kien": [
+   "Chủ thể là người đi bộ"
+  ],
+  "ket_luan": [
+   "Không được vượt qua dải phân cách, đu, bám vào phương tiện giao thông đường bộ đang di chuyển",
+   "Khi mang, vác vật cồng kềnh phải bảo đảm an toàn và không gây trở ngại cho người và phương tiện tham gia giao thông đường bộ"
+  ],
+  "nguyen_van": "Không được vượt qua dải phân cách, đu, bám vào phương tiện giao thông đường bộ đang di chuyển; khi mang, vác vật cồng kềnh phải bảo đảm an toàn và không gây trở ngại cho người và phương tiện tham gia giao thông đường bộ.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 30,
+   "khoan": 1,
+   "diem": "c"
+  }
+ },
+ {
+  "id": "R75",
+  "ten": "Trẻ em dưới 07 tuổi qua đường phải có người lớn dẫn dắt",
+  "dieu_kien": [
+   "Trẻ em dưới 07 tuổi đi qua đường"
+  ],
+  "ket_luan": [
+   "Phải có người lớn dẫn dắt"
+  ],
+  "nguyen_van": "Trẻ em dưới 07 tuổi khi đi qua đường phải có người lớn dẫn dắt.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 30,
+   "khoan": 2,
+   "diem": "a"
+  }
+ },
+ {
+  "id": "R76",
+  "ten": "Số người được chở trên xe đạp, xe đạp máy",
+  "dieu_kien": [
+   "Người điều khiển xe đạp hoặc xe đạp máy"
+  ],
+  "ket_luan": [
+   "Chỉ được chở một người",
+   "Được chở tối đa hai người nếu chở thêm một trẻ em dưới 07 tuổi"
+  ],
+  "nguyen_van": "Người điều khiển xe đạp, xe đạp máy chỉ được chở một người, trừ trường hợp chở thêm một trẻ em dưới 07 tuổi thì được chở tối đa hai người.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 31,
+   "khoan": 1,
+   "diem": null
+  }
+ },
+ {
+  "id": "R77",
+  "ten": "Bắt buộc đội mũ bảo hiểm khi đi xe đạp máy",
+  "dieu_kien": [
+   "Người điều khiển hoặc người được chở trên xe đạp máy (gồm cả xe đạp điện)"
+  ],
+  "ket_luan": [
+   "Phải đội mũ bảo hiểm theo đúng quy chuẩn kỹ thuật quốc gia và cài quai đúng quy cách"
+  ],
+  "nguyen_van": "Người điều khiển, người được chở trên xe đạp máy phải đội mũ bảo hiểm theo đúng quy chuẩn kỹ thuật quốc gia và cài quai đúng quy cách.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 31,
+   "khoan": 3,
+   "diem": null
+  }
+ },
+ {
+  "id": "R78",
+  "ten": "Quy tắc đi và chiếu sáng đối với xe thô sơ",
+  "dieu_kien": [
+   "Người điều khiển xe thô sơ tham gia giao thông đường bộ"
+  ],
+  "ket_luan": [
+   "Chỉ được cho xe đi hàng một",
+   "Nơi có phần đường dành cho xe thô sơ thì phải đi đúng phần đường quy định",
+   "Trong thời gian từ 18 giờ ngày hôm trước đến 06 giờ ngày hôm sau phải sử dụng đèn hoặc có báo hiệu ở phía trước và phía sau xe"
+  ],
+  "nguyen_van": "Người điều khiển xe thô sơ chỉ được cho xe đi hàng một, nơi có phần đường dành cho xe thô sơ thì phải đi đúng phần đường quy định; khi tham gia giao thông đường bộ trong thời gian từ 18 giờ ngày hôm trước đến 06 giờ ngày hôm sau phải sử dụng đèn hoặc có báo hiệu ở phía trước và phía sau xe.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 31,
+   "khoan": 4,
+   "diem": null
+  }
+ },
+ {
+  "id": "R79",
+  "ten": "Giới hạn xếp hàng hóa trên xe thô sơ",
+  "dieu_kien": [
+   "Xếp hàng hóa trên xe thô sơ"
+  ],
+  "ket_luan": [
+   "Hàng hóa phải bảo đảm an toàn, không gây cản trở giao thông và che khuất tầm nhìn của người điều khiển",
+   "Không vượt quá 1/3 chiều dài thân xe",
+   "Không vượt quá 01 mét phía trước và phía sau xe",
+   "Không vượt quá 0,4 mét mỗi bên bánh xe"
+  ],
+  "nguyen_van": "Hàng hóa xếp trên xe thô sơ phải bảo đảm an toàn, không gây cản trở giao thông và che khuất tầm nhìn của người điều khiển. Hàng hóa xếp trên xe không vượt quá 1/3 chiều dài thân xe và không vượt quá 01 mét phía trước và phía sau xe; không vượt quá 0,4 mét mỗi bên bánh xe.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 31,
+   "khoan": 5,
+   "diem": null
+  }
+ },
+ {
+  "id": "R80",
+  "ten": "Quy tắc điều khiển, dẫn dắt vật nuôi trên đường bộ",
+  "dieu_kien": [
+   "Người điều khiển, dẫn dắt vật nuôi hoặc điều khiển xe vật nuôi kéo đi trên đường bộ"
+  ],
+  "ket_luan": [
+   "Phải cho vật nuôi đi sát mép đường bên phải",
+   "Khi cần cho vật nuôi đi ngang qua đường phải quan sát và chỉ được đi qua khi có đủ điều kiện an toàn",
+   "Không được gây cản trở cho người và phương tiện tham gia giao thông đường bộ khác",
+   "Không được điều khiển, dẫn dắt vật nuôi, điều khiển xe vật nuôi kéo đi vào làn đường dành cho xe cơ giới",
+   "Không được thả vật nuôi trên đường bộ"
+  ],
+  "nguyen_van": "1. Người điều khiển, dẫn dắt vật nuôi, điều khiển xe vật nuôi kéo đi trên đường bộ phải cho vật nuôi đi sát mép đường bên phải; trường hợp cần cho vật nuôi đi ngang qua đường thì phải quan sát và chỉ được đi qua đường khi có đủ điều kiện an toàn; không được gây cản trở cho người và phương tiện tham gia giao thông đường bộ khác. 2. Không được điều khiển, dẫn dắt vật nuôi, điều khiển xe vật nuôi kéo đi vào làn đường dành cho xe cơ giới. 3. Không được thả vật nuôi trên đường bộ.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 32,
+   "khoan": null,
+   "diem": null
+  }
+ },
+ {
+  "id": "R81",
+  "ten": "Số người được chở trên xe mô tô hai bánh, xe gắn máy",
+  "dieu_kien": [
+   "Người lái xe mô tô hai bánh hoặc xe gắn máy"
+  ],
+  "ket_luan": [
+   "Chỉ được chở một người",
+   "Được chở tối đa hai người trong các trường hợp: chở người bệnh đi cấp cứu; áp giải người có hành vi vi phạm pháp luật; trẻ em dưới 12 tuổi; người già yếu hoặc người khuyết tật"
+  ],
+  "nguyen_van": "Người lái xe mô tô hai bánh, xe gắn máy chỉ được chở một người, trừ những trường hợp sau thì được chở tối đa hai người: a) Chở người bệnh đi cấp cứu; b) Áp giải người có hành vi vi phạm pháp luật; c) Trẻ em dưới 12 tuổi; d) Người già yếu hoặc người khuyết tật.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 33,
+   "khoan": 1,
+   "diem": null
+  }
+ },
+ {
+  "id": "R82",
+  "ten": "Bắt buộc đội mũ bảo hiểm khi đi xe mô tô, xe gắn máy",
+  "dieu_kien": [
+   "Người lái xe hoặc người được chở trên xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy"
+  ],
+  "ket_luan": [
+   "Phải đội mũ bảo hiểm theo đúng quy chuẩn kỹ thuật quốc gia và cài quai đúng quy cách"
+  ],
+  "nguyen_van": "Người lái xe, người được chở trên xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy phải đội mũ bảo hiểm theo đúng quy chuẩn kỹ thuật quốc gia và cài quai đúng quy cách.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 33,
+   "khoan": 2,
+   "diem": null
+  }
+ },
+ {
+  "id": "R83",
+  "ten": "Các hành vi người lái xe mô tô, xe gắn máy không được thực hiện",
+  "dieu_kien": [
+   "Chủ thể là người lái xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy"
+  ],
+  "ket_luan": [
+   "Không được đi xe dàn hàng ngang",
+   "Không được đi xe vào phần đường dành cho người đi bộ và phương tiện khác",
+   "Không được sử dụng ô, thiết bị âm thanh, trừ thiết bị trợ thính",
+   "Không được buông cả hai tay; đi xe bằng một bánh đối với xe hai bánh; đi xe bằng hai bánh đối với xe ba bánh",
+   "Không được sử dụng xe để kéo, đẩy xe khác, vật khác, dẫn dắt vật nuôi, mang, vác và chở vật cồng kềnh; chở người đứng trên xe, giá đèo hàng hoặc ngồi trên tay lái; xếp hàng hóa trên xe quá giới hạn quy định",
+   "Không được ngồi về một bên điều khiển xe; đứng, nằm trên xe điều khiển xe; thay người lái xe khi xe đang chạy; quay người về phía sau để điều khiển xe hoặc bịt mắt điều khiển xe; sử dụng chân chống hoặc vật khác quệt xuống đường khi xe đang chạy",
+   "Không được thực hiện hành vi khác gây mất trật tự, an toàn giao thông đường bộ"
+  ],
+  "nguyen_van": "Người lái xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy không được thực hiện các hành vi sau đây: a) Đi xe dàn hàng ngang; b) Đi xe vào phần đường dành cho người đi bộ và phương tiện khác; c) Sử dụng ô, thiết bị âm thanh, trừ thiết bị trợ thính; d) Buông cả hai tay; đi xe bằng một bánh đối với xe mô tô, xe gắn máy hai bánh; đi xe bằng hai bánh đối với xe mô tô, xe gắn máy ba bánh; đ) Sử dụng xe để kéo, đẩy xe khác, vật khác, dẫn dắt vật nuôi, mang, vác và chở vật cồng kềnh; chở người đứng trên xe, giá đèo hàng hoặc ngồi trên tay lái; xếp hàng hóa trên xe quá giới hạn quy định; e) Ngồi về một bên điều khiển xe; đứng, nằm trên xe điều khiển xe; thay người lái xe khi xe đang chạy; quay người về phía sau để điều khiển xe hoặc bịt mắt điều khiển xe; sử dụng chân chống hoặc vật khác quệt xuống đường khi xe đang chạy; g) Hành vi khác gây mất trật tự, an toàn giao thông đường bộ.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 33,
+   "khoan": 3,
+   "diem": null
+  }
+ },
+ {
+  "id": "R84",
+  "ten": "Các hành vi người được chở trên xe mô tô, xe gắn máy không được thực hiện",
+  "dieu_kien": [
+   "Chủ thể là người được chở trên xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy"
+  ],
+  "ket_luan": [
+   "Không được mang, vác vật cồng kềnh",
+   "Không được sử dụng ô",
+   "Không được bám, kéo hoặc đẩy các phương tiện khác",
+   "Không được đứng trên yên, giá đèo hàng hoặc ngồi trên tay lái",
+   "Không được thực hiện hành vi khác gây mất trật tự, an toàn giao thông đường bộ"
+  ],
+  "nguyen_van": "Người được chở trên xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy khi tham gia giao thông đường bộ không được thực hiện các hành vi sau đây: a) Mang, vác vật cồng kềnh; b) Sử dụng ô; c) Bám, kéo hoặc đẩy các phương tiện khác; d) Đứng trên yên, giá đèo hàng hoặc ngồi trên tay lái; đ) Hành vi khác gây mất trật tự, an toàn giao thông đường bộ.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 33,
+   "khoan": 4,
+   "diem": null
+  }
+ },
+ {
+  "id": "R85",
+  "ten": "Giới hạn xếp hàng hóa trên xe mô tô, xe gắn máy",
+  "dieu_kien": [
+   "Xếp hàng hóa trên xe mô tô, xe gắn máy"
+  ],
+  "ket_luan": [
+   "Không được vượt quá chiều rộng giá đèo hàng về mỗi bên 0,3 mét",
+   "Không được vượt quá về phía sau giá đèo hàng 0,5 mét theo thiết kế của nhà sản xuất",
+   "Chiều cao xếp hàng hóa tính từ mặt đường xe chạy không vượt quá 02 mét"
+  ],
+  "nguyen_van": "Xe mô tô, xe gắn máy không được xếp hàng hóa vượt quá chiều rộng giá đèo hàng về mỗi bên 0,3 mét, vượt quá về phía sau giá đèo hàng 0,5 mét theo thiết kế của nhà sản xuất; chiều cao xếp hàng hóa tính từ mặt đường xe chạy không vượt quá 02 mét.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 33,
+   "khoan": 5,
+   "diem": null
+  }
+ },
+ {
+  "id": "R86",
+  "ten": "Điều kiện của xe cơ giới, xe máy chuyên dùng tham gia giao thông đường bộ",
+  "dieu_kien": [
+   "Xe cơ giới hoặc xe máy chuyên dùng tham gia giao thông đường bộ"
+  ],
+  "ket_luan": [
+   "Phải được cấp chứng nhận đăng ký xe và gắn biển số xe theo quy định của pháp luật",
+   "Phải bảo đảm chất lượng an toàn kỹ thuật và bảo vệ môi trường theo quy định của pháp luật"
+  ],
+  "nguyen_van": "Xe cơ giới, xe máy chuyên dùng tham gia giao thông đường bộ phải đáp ứng các điều kiện sau đây: a) Được cấp chứng nhận đăng ký xe và gắn biển số xe theo quy định của pháp luật; b) Bảo đảm chất lượng an toàn kỹ thuật và bảo vệ môi trường theo quy định của pháp luật.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 35,
+   "khoan": 1,
+   "diem": null
+  }
+ },
+ {
+  "id": "R87",
+  "ten": "Bắt buộc lắp thiết bị giám sát hành trình và thiết bị ghi nhận hình ảnh",
+  "dieu_kien": [
+   "Xe ô tô kinh doanh vận tải hàng hóa, xe ô tô kinh doanh vận tải hành khách dưới 08 chỗ (không kể chỗ của người lái xe), xe ô tô đầu kéo, xe cứu thương, xe vận tải nội bộ",
+   "Hoặc xe ô tô kinh doanh vận tải hành khách từ 08 chỗ trở lên (không kể chỗ của người lái xe)"
+  ],
+  "ket_luan": [
+   "Nhóm thứ nhất phải lắp thiết bị giám sát hành trình và thiết bị ghi nhận hình ảnh người lái xe",
+   "Nhóm thứ hai phải lắp thiết bị giám sát hành trình, thiết bị ghi nhận hình ảnh người lái xe và thiết bị ghi nhận hình ảnh khoang chở khách"
+  ],
+  "nguyen_van": "Xe ô tô kinh doanh vận tải hàng hóa, xe ô tô kinh doanh vận tải hành khách dưới 08 chỗ (không kể chỗ của người lái xe), xe ô tô đầu kéo, xe cứu thương, xe vận tải nội bộ phải lắp thiết bị giám sát hành trình, thiết bị ghi nhận hình ảnh người lái xe. Xe ô tô kinh doanh vận tải hành khách từ 08 chỗ trở lên (không kể chỗ của người lái xe) phải lắp thiết bị giám sát hành trình, thiết bị ghi nhận hình ảnh người lái xe, thiết bị ghi nhận hình ảnh khoang chở khách.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 35,
+   "khoan": 2,
+   "diem": null
+  }
+ },
+ {
+  "id": "R88",
+  "ten": "Điều kiện của người lái xe và giấy tờ phải mang theo",
+  "dieu_kien": [
+   "Chủ thể là người lái xe tham gia giao thông đường bộ",
+   "Không thuộc trường hợp người lái xe gắn máy quy định tại khoản 4 Điều 56"
+  ],
+  "ket_luan": [
+   "Phải đủ tuổi, sức khỏe theo quy định của pháp luật",
+   "Phải có giấy phép lái xe đang còn điểm, còn hiệu lực, phù hợp với loại xe đang điều khiển do cơ quan có thẩm quyền cấp",
+   "Phải mang theo: chứng nhận đăng ký xe (hoặc bản sao có chứng thực kèm bản gốc giấy tờ xác nhận của tổ chức tín dụng khi xe đang thế chấp); giấy phép lái xe phù hợp; chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường; chứng nhận bảo hiểm bắt buộc trách nhiệm dân sự của chủ xe cơ giới",
+   "Trường hợp giấy tờ đã được tích hợp vào tài khoản định danh điện tử thì việc xuất trình, kiểm tra có thể thực hiện thông qua tài khoản định danh điện tử"
+  ],
+  "nguyen_van": "Người lái xe tham gia giao thông đường bộ phải đủ tuổi, sức khỏe theo quy định của pháp luật; có giấy phép lái xe đang còn điểm, còn hiệu lực phù hợp với loại xe đang điều khiển do cơ quan có thẩm quyền cấp, trừ người lái xe gắn máy quy định tại khoản 4 Điều này. Khi tham gia giao thông đường bộ, người lái xe phải mang theo các giấy tờ sau đây: a) Chứng nhận đăng ký xe hoặc bản sao Chứng nhận đăng ký xe có chứng thực kèm bản gốc giấy tờ xác nhận của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài còn hiệu lực trong trường hợp xe đang được thế chấp tại tổ chức tín dụng, chi nhánh ngân hàng nước ngoài; b) Giấy phép lái xe phù hợp với loại xe đang điều khiển; c) Chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường đối với xe cơ giới theo quy định của pháp luật; d) Chứng nhận bảo hiểm bắt buộc trách nhiệm dân sự của chủ xe cơ giới.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 56,
+   "khoan": 1,
+   "diem": null
+  }
+ },
+ {
+  "id": "R89",
+  "ten": "Điều kiện của người điều khiển xe máy chuyên dùng và giấy tờ phải mang theo",
+  "dieu_kien": [
+   "Chủ thể là người điều khiển xe máy chuyên dùng tham gia giao thông đường bộ"
+  ],
+  "ket_luan": [
+   "Phải đủ tuổi, sức khỏe theo quy định của pháp luật",
+   "Phải có bằng hoặc chứng chỉ điều khiển xe máy chuyên dùng phù hợp loại xe đang điều khiển",
+   "Phải có giấy phép lái xe đang còn điểm, còn hiệu lực hoặc chứng chỉ bồi dưỡng kiến thức pháp luật về giao thông đường bộ",
+   "Phải mang theo: chứng nhận đăng ký xe; bằng hoặc chứng chỉ điều khiển xe máy chuyên dùng; giấy phép lái xe hoặc chứng chỉ bồi dưỡng kiến thức pháp luật về giao thông đường bộ; chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường; chứng nhận bảo hiểm bắt buộc trách nhiệm dân sự"
+  ],
+  "nguyen_van": "Người điều khiển xe máy chuyên dùng tham gia giao thông đường bộ phải đủ tuổi, sức khỏe theo quy định của pháp luật; có bằng hoặc chứng chỉ điều khiển xe máy chuyên dùng phù hợp loại xe máy chuyên dùng đang điều khiển; có giấy phép lái xe đang còn điểm, còn hiệu lực hoặc chứng chỉ bồi dưỡng kiến thức pháp luật về giao thông đường bộ. Khi tham gia giao thông đường bộ, người điều khiển xe máy chuyên dùng phải mang theo các loại giấy tờ sau đây: a) Chứng nhận đăng ký xe hoặc bản sao Chứng nhận đăng ký xe có chứng thực kèm bản gốc Giấy biên nhận còn hiệu lực của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài trong trường hợp xe đang được thế chấp tại tổ chức tín dụng, chi nhánh ngân hàng nước ngoài; b) Bằng hoặc chứng chỉ điều khiển xe máy chuyên dùng; c) Giấy phép lái xe hoặc chứng chỉ bồi dưỡng kiến thức pháp luật về giao thông đường bộ; d) Chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường đối với xe máy chuyên dùng theo quy định của pháp luật; đ) Chứng nhận bảo hiểm bắt buộc trách nhiệm dân sự theo quy định của pháp luật.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 56,
+   "khoan": 2,
+   "diem": null
+  }
+ },
+ {
+  "id": "R90",
+  "ten": "Điều kiện của người lái xe gắn máy",
+  "dieu_kien": [
+   "Chủ thể là người lái xe gắn máy tham gia giao thông đường bộ"
+  ],
+  "ket_luan": [
+   "Phải hiểu biết quy tắc giao thông đường bộ và có kỹ năng điều khiển phương tiện",
+   "Phải đủ điều kiện về độ tuổi (đủ 16 tuổi trở lên) và sức khỏe theo quy định tại điểm a khoản 1 và khoản 2 Điều 59",
+   "Không bắt buộc phải có giấy phép lái xe"
+  ],
+  "nguyen_van": "Người lái xe gắn máy tham gia giao thông đường bộ phải hiểu biết quy tắc giao thông đường bộ, có kỹ năng điều khiển phương tiện; đủ điều kiện về độ tuổi, sức khỏe theo quy định tại điểm a khoản 1 và khoản 2 Điều 59 của Luật này.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 56,
+   "khoan": 4,
+   "diem": null
+  }
+ },
+ {
+  "id": "R91",
+  "ten": "Điều kiện đối với người tập lái xe ô tô, người dự sát hạch lái xe ô tô",
+  "dieu_kien": [
+   "Chủ thể là người tập lái xe ô tô hoặc người dự sát hạch lái xe ô tô tham gia giao thông đường bộ"
+  ],
+  "ket_luan": [
+   "Phải thực hành trên xe tập lái, xe sát hạch",
+   "Phải đi trên tuyến đường tập lái, tuyến đường sát hạch",
+   "Phải có giáo viên dạy lái hoặc sát hạch viên bảo trợ tay lái",
+   "Giáo viên dạy lái, sát hạch viên phải mang theo các loại giấy tờ quy định tại khoản 1 Điều 56"
+  ],
+  "nguyen_van": "Người tập lái xe ô tô, người dự sát hạch lái xe ô tô khi tham gia giao thông đường bộ phải thực hành trên xe tập lái, xe sát hạch trên tuyến đường tập lái, tuyến đường sát hạch, có giáo viên dạy lái hoặc sát hạch viên bảo trợ tay lái. Giáo viên dạy lái, sát hạch viên phải mang theo các loại giấy tờ quy định tại khoản 1 Điều này.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 56,
+   "khoan": 5,
+   "diem": null
+  }
+ },
+ {
+  "id": "R92",
+  "ten": "Các trường hợp giấy phép lái xe không có hiệu lực",
+  "dieu_kien": [
+   "Giấy phép lái xe hết thời hạn sử dụng",
+   "Hoặc giấy phép lái xe bị thu hồi theo quy định tại khoản 5 Điều 62 của Luật này"
+  ],
+  "ket_luan": [
+   "Giấy phép lái xe không có hiệu lực",
+   "Người lái xe không đáp ứng điều kiện có giấy phép lái xe còn hiệu lực theo khoản 1 Điều 56"
+  ],
+  "nguyen_van": "Giấy phép lái xe không có hiệu lực trong các trường hợp sau đây: a) Giấy phép lái xe hết thời hạn sử dụng; b) Giấy phép lái xe bị thu hồi theo quy định tại khoản 5 Điều 62 của Luật này.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 57,
+   "khoan": 7,
+   "diem": null
+  }
+ },
+ {
+  "id": "R93",
+  "ten": "Hệ quả khi giấy phép lái xe bị trừ hết điểm",
+  "dieu_kien": [
+   "Giấy phép lái xe bị trừ hết 12 điểm"
+  ],
+  "ket_luan": [
+   "Người có giấy phép lái xe không được điều khiển phương tiện tham gia giao thông đường bộ theo giấy phép lái xe đó",
+   "Sau ít nhất 06 tháng kể từ ngày bị trừ hết điểm, được tham gia kiểm tra nội dung kiến thức pháp luật về trật tự, an toàn giao thông đường bộ do lực lượng Cảnh sát giao thông tổ chức",
+   "Có kết quả đạt yêu cầu thì được phục hồi đủ 12 điểm"
+  ],
+  "nguyen_van": "Trường hợp giấy phép lái xe bị trừ hết điểm thì người có giấy phép lái xe không được điều khiển phương tiện tham gia giao thông đường bộ theo giấy phép lái xe đó. Sau thời hạn ít nhất là 06 tháng kể từ ngày bị trừ hết điểm, người có giấy phép lái xe được tham gia kiểm tra nội dung kiến thức pháp luật về trật tự, an toàn giao thông đường bộ theo quy định tại khoản 7 Điều 61 của Luật này do lực lượng Cảnh sát giao thông tổ chức, có kết quả đạt yêu cầu thì được phục hồi đủ 12 điểm.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 58,
+   "khoan": 3,
+   "diem": null
+  }
+ },
+ {
+  "id": "R94",
+  "ten": "Phục hồi điểm giấy phép lái xe sau 12 tháng không bị trừ điểm",
+  "dieu_kien": [
+   "Giấy phép lái xe chưa bị trừ hết điểm",
+   "Không bị trừ điểm trong thời hạn 12 tháng kể từ ngày bị trừ điểm gần nhất"
+  ],
+  "ket_luan": [
+   "Được phục hồi đủ 12 điểm"
+  ],
+  "nguyen_van": "Giấy phép lái xe chưa bị trừ hết điểm và không bị trừ điểm trong thời hạn 12 tháng từ ngày bị trừ điểm gần nhất thì được phục hồi đủ 12 điểm.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 58,
+   "khoan": 2,
+   "diem": null
+  }
+ },
+ {
+  "id": "R95",
+  "ten": "Độ tuổi của người lái xe, người điều khiển xe máy chuyên dùng",
+  "dieu_kien": [
+   "Xác định độ tuổi của người lái xe hoặc người điều khiển xe máy chuyên dùng"
+  ],
+  "ket_luan": [
+   "Người đủ 16 tuổi trở lên được điều khiển xe gắn máy",
+   "Người đủ 18 tuổi trở lên được cấp giấy phép lái xe hạng A1, A, B1, B, C1 và được cấp chứng chỉ bồi dưỡng kiến thức pháp luật về giao thông đường bộ để điều khiển xe máy chuyên dùng",
+   "Người đủ 21 tuổi trở lên được cấp giấy phép lái xe hạng C, BE",
+   "Người đủ 24 tuổi trở lên được cấp giấy phép lái xe hạng D1, D2, C1E, CE",
+   "Người đủ 27 tuổi trở lên được cấp giấy phép lái xe hạng D, D1E, D2E, DE",
+   "Tuổi tối đa của người lái xe ô tô chở người trên 29 chỗ (không kể chỗ của người lái xe) và xe ô tô chở người giường nằm là đủ 57 tuổi đối với nam, đủ 55 tuổi đối với nữ"
+  ],
+  "nguyen_van": "Độ tuổi của người lái xe, người điều khiển xe máy chuyên dùng được quy định như sau: a) Người đủ 16 tuổi trở lên được điều khiển xe gắn máy; b) Người đủ 18 tuổi trở lên được cấp giấy phép lái xe hạng A1, A, B1, B, C1, được cấp chứng chỉ bồi dưỡng kiến thức pháp luật về giao thông đường bộ để điều khiển xe máy chuyên dùng tham gia giao thông đường bộ; c) Người đủ 21 tuổi trở lên được cấp giấy phép lái xe hạng C, BE; d) Người đủ 24 tuổi trở lên được cấp giấy phép lái xe hạng D1, D2, C1E, CE; đ) Người đủ 27 tuổi trở lên được cấp giấy phép lái xe hạng D, D1E, D2E, DE; e) Tuổi tối đa của người lái xe ô tô chở người (kể cả xe buýt) trên 29 chỗ (không kể chỗ của người lái xe), xe ô tô chở người giường nằm là đủ 57 tuổi đối với nam, đủ 55 tuổi đối với nữ.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 59,
+   "khoan": 1,
+   "diem": null
+  }
+ },
+ {
+  "id": "R96",
+  "ten": "Điều kiện sức khỏe của người điều khiển phương tiện",
+  "dieu_kien": [
+   "Chủ thể điều khiển phương tiện tham gia giao thông đường bộ"
+  ],
+  "ket_luan": [
+   "Phải bảo đảm điều kiện sức khỏe phù hợp với từng loại phương tiện được phép điều khiển"
+  ],
+  "nguyen_van": "Người điều khiển phương tiện tham gia giao thông đường bộ phải bảo đảm điều kiện sức khỏe phù hợp với từng loại phương tiện được phép điều khiển. Bộ trưởng Bộ Y tế quy định về tiêu chuẩn sức khỏe, việc khám sức khỏe đối với người lái xe, người điều khiển xe máy chuyên dùng; việc khám sức khỏe định kỳ đối với người hành nghề lái xe ô tô; xây dựng cơ sở dữ liệu về sức khỏe của người lái xe, người điều khiển xe máy chuyên dùng.",
+  "can_cu": {
+   "van_ban": "Luật 36/2024/QH15 (hợp nhất tại Văn bản hợp nhất 55/VBHN-VPQH)",
+   "dieu": 59,
+   "khoan": 2,
+   "diem": null
+  }
+ }
+]
