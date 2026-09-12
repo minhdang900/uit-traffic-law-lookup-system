@@ -10,3 +10,5 @@ htmlcov/
 dist/
 build/
 .DS_Store
+.omc/
+.impeccable/
