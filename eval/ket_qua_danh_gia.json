@@ -1,0 +1,228 @@
+{
+ "tong_hop": {
+  "so_cau_hoi": 120,
+  "top_k": 5,
+  "do_chinh_xac_phan_lop": 0.9583,
+  "top1": 0.7667,
+  "top3": 0.9083,
+  "top5": 0.95,
+  "mrr": 0.8384,
+  "precision_macro": 0.3375,
+  "recall_macro": 0.9306,
+  "f1_macro": 0.4401,
+  "thoi_gian_tb_ms": 10.6,
+  "theo_lop_bai_toan": {
+   "P1_TRA_CUU_KHAI_NIEM": {
+    "n": 20,
+    "acc_phan_lop": 0.95,
+    "top1": 0.85,
+    "top5": 0.95
+   },
+   "P2_TRA_CUU_QUY_DINH": {
+    "n": 20,
+    "acc_phan_lop": 0.95,
+    "top1": 0.55,
+    "top5": 0.85
+   },
+   "P3_TRA_CUU_CHE_TAI": {
+    "n": 40,
+    "acc_phan_lop": 0.975,
+    "top1": 0.85,
+    "top5": 0.975
+   },
+   "P4_TRA_CUU_NGUOC": {
+    "n": 12,
+    "acc_phan_lop": 1.0,
+    "top1": 0.6667,
+    "top5": 1.0
+   },
+   "P5_SUY_DIEN_TINH_HUONG": {
+    "n": 15,
+    "acc_phan_lop": 0.8667,
+    "top1": 0.8667,
+    "top5": 0.9333
+   },
+   "P6_TRA_CUU_CAN_CU": {
+    "n": 8,
+    "acc_phan_lop": 1.0,
+    "top1": 0.875,
+    "top5": 1.0
+   },
+   "P7_TRA_CUU_LIEN_QUAN": {
+    "n": 5,
+    "acc_phan_lop": 1.0,
+    "top1": 0.4,
+    "top5": 1.0
+   }
+  },
+  "theo_do_kho": {
+   "de": {
+    "n": 28,
+    "top5": 0.9643
+   },
+   "kho": {
+    "n": 24,
+    "top5": 0.875
+   },
+   "trung_binh": {
+    "n": 68,
+    "top5": 0.9706
+   }
+  },
+  "so_cau_sai": 9
+ },
+ "cau_sai": [
+  {
+   "id": "Q011",
+   "cau_hoi": "Đèn giao thông có mấy màu?",
+   "lop_dung": "P1_TRA_CUU_KHAI_NIEM",
+   "lop_he_thong": "P7_TRA_CUU_LIEN_QUAN",
+   "tri_thuc_dung": [
+    "KN_DEN_TIN_HIEU_GIAO_THONG"
+   ],
+   "tri_thuc_tra_ve": [
+    "KN_DEN_TIN_HIEU_GIAO_THONG",
+    "KN_PHUONG_TIEN_GIAO_THONG_DUONG_BO",
+    "KN_NGUOI_DIEU_KHIEN_GIAO_THONG"
+   ],
+   "sai_lop": true,
+   "sai_truy_hoi": false
+  },
+  {
+   "id": "Q020",
+   "cau_hoi": "Mấy cái xe tự chạy không cần người lái ấy, trong luật gọi là gì và định nghĩa ra sao?",
+   "lop_dung": "P1_TRA_CUU_KHAI_NIEM",
+   "lop_he_thong": "P1_TRA_CUU_KHAI_NIEM",
+   "tri_thuc_dung": [
+    "KN_PHUONG_TIEN_GIAO_THONG_THONG_MINH"
+   ],
+   "tri_thuc_tra_ve": [
+    "KN_CAI_TAO_XE",
+    "KN_NGUOI_DIEU_KHIEN_PHUONG_TIEN",
+    "KN_NGUOI_DIEU_KHIEN_GIAO_THONG",
+    "KN_PHAN_DUONG_XE_CHAY",
+    "KN_DO_TUOI_NGUOI_LAI_XE"
+   ],
+   "sai_lop": false,
+   "sai_truy_hoi": true
+  },
+  {
+   "id": "Q021",
+   "cau_hoi": "Gặp đèn đỏ thì có được đi tiếp không?",
+   "lop_dung": "P2_TRA_CUU_QUY_DINH",
+   "lop_he_thong": "P2_TRA_CUU_QUY_DINH",
+   "tri_thuc_dung": [
+    "R19"
+   ],
+   "tri_thuc_tra_ve": [
+    "R18",
+    "R44",
+    "R64",
+    "R32",
+    "R49"
+   ],
+   "sai_lop": false,
+   "sai_truy_hoi": true
+  },
+  {
+   "id": "Q032",
+   "cau_hoi": "Bằng lái bị trừ hết 12 điểm rồi thì sao, có được chạy xe nữa không, bao lâu mới lấy lại được?",
+   "lop_dung": "P2_TRA_CUU_QUY_DINH",
+   "lop_he_thong": "P4_TRA_CUU_NGUOC",
+   "tri_thuc_dung": [
+    "R106"
+   ],
+   "tri_thuc_tra_ve": [],
+   "sai_lop": true,
+   "sai_truy_hoi": true
+  },
+  {
+   "id": "Q035",
+   "cau_hoi": "Chở con nhỏ trên ô tô thì luật quy định cháu ngồi ở đâu?",
+   "lop_dung": "P2_TRA_CUU_QUY_DINH",
+   "lop_he_thong": "P2_TRA_CUU_QUY_DINH",
+   "tri_thuc_dung": [
+    "R15"
+   ],
+   "tri_thuc_tra_ve": [
+    "R35",
+    "R69",
+    "R105",
+    "R81",
+    "R84"
+   ],
+   "sai_lop": false,
+   "sai_truy_hoi": true
+  },
+  {
+   "id": "Q080",
+   "cau_hoi": "Không chịu dừng xe khi cảnh sát giao thông ra hiệu kiểm tra thì phạt bao nhiêu?",
+   "lop_dung": "P3_TRA_CUU_CHE_TAI",
+   "lop_he_thong": "P5_SUY_DIEN_TINH_HUONG",
+   "tri_thuc_dung": [
+    "VP_ND168D12_K10"
+   ],
+   "tri_thuc_tra_ve": [
+    "VP_ND168D12_K14A",
+    "VP_MOTO_ND168D7_K7D"
+   ],
+   "sai_lop": true,
+   "sai_truy_hoi": true
+  },
+  {
+   "id": "Q096",
+   "cau_hoi": "Nhóm em 4 đứa đi chung một xe máy, không ai đội mũ bảo hiểm, lại còn chạy quá tốc độ 15 km/h. Bị phạt bao nhiêu ạ?",
+   "lop_dung": "P5_SUY_DIEN_TINH_HUONG",
+   "lop_he_thong": "P3_TRA_CUU_CHE_TAI",
+   "tri_thuc_dung": [
+    "VP_MOTO_ND168D7_K3B",
+    "VP_MOTO_ND168D7_K2H",
+    "VP_MOTO_ND168D7_K4A"
+   ],
+   "tri_thuc_tra_ve": [
+    "VP_MOTO_ND168D7_K4A",
+    "VP_MOTO_ND168D7_K9B",
+    "VP_MOTO_ND168D7_K1K",
+    "VP_OTO_ND168D6_K3O",
+    "VP_MOTO_ND168D7_K2H"
+   ],
+   "sai_lop": true,
+   "sai_truy_hoi": false
+  },
+  {
+   "id": "Q101",
+   "cau_hoi": "Xe ô tô của tôi bị che mất biển số và cũng đã quá hạn đăng kiểm hơn một tháng. Nếu bị kiểm tra thì phạt thế nào?",
+   "lop_dung": "P5_SUY_DIEN_TINH_HUONG",
+   "lop_he_thong": "P5_SUY_DIEN_TINH_HUONG",
+   "tri_thuc_dung": [
+    "VP_ND168D13_K8B",
+    "VP_ND168D13_K6B"
+   ],
+   "tri_thuc_tra_ve": [
+    "VP_ND168D32_K12C",
+    "VP_ND168D13_K5A"
+   ],
+   "sai_lop": false,
+   "sai_truy_hoi": true
+  },
+  {
+   "id": "Q104",
+   "cau_hoi": "Tôi lái ô tô đi ngược chiều, lúc đó có xe cứu thương hú còi phía sau mà tôi không nhường đường. Bị phạt bao nhiêu?",
+   "lop_dung": "P5_SUY_DIEN_TINH_HUONG",
+   "lop_he_thong": "P3_TRA_CUU_CHE_TAI",
+   "tri_thuc_dung": [
+    "VP_OTO_ND168D6_K9D",
+    "VP_OTO_ND168D6_K6B"
+   ],
+   "tri_thuc_tra_ve": [
+    "VP_OTO_ND168D6_K6B",
+    "VP_OTO_ND168D6_K5E",
+    "VP_OTO_ND168D6_K4H",
+    "VP_MOTO_ND168D7_K7DD",
+    "VP_MOTO_ND168D7_K2DD"
+   ],
+   "sai_lop": true,
+   "sai_truy_hoi": false
+  }
+ ]
+}

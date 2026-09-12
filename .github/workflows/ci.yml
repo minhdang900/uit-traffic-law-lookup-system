@@ -32,6 +32,5 @@ jobs:
       - name: Kiểm thử + độ phủ
         run: pytest --cov --cov-report=term-missing --cov-fail-under=80
 
-      # Cổng chỉ số: bật lại từ PR #4 khi engine đã được port.
-      # - name: Cổng đánh giá (Top-1 >= 0.7667)
-      #   run: python eval/evaluate.py --gate-top1 0.7667
+      - name: Cổng đánh giá — Top-1 không được tụt dưới đường cơ sở
+        run: python eval/evaluate.py --gate-top1 0.7667
