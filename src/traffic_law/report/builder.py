@@ -99,8 +99,8 @@ def _cover_page(tl: Document, thanh_vien: list[dict[str, str]]) -> None:
 
     table = tl.add_table(rows=1, cols=3)
     table.style = "Table Grid"
-    for o, nhan in zip(table.rows[0].cells, ("STT", "Họ và tên", "MSSV"), strict=True):
-        o.paragraphs[0].add_run(nhan).bold = True
+    for o, label in zip(table.rows[0].cells, ("STT", "Họ và tên", "MSSV"), strict=True):
+        o.paragraphs[0].add_run(label).bold = True
     for i, nguoi in enumerate(thanh_vien, 1):
         h = table.add_row().cells
         h[0].text, h[1].text, h[2].text = str(i), nguoi["ho_ten"], nguoi["mssv"]
@@ -111,11 +111,11 @@ def _cover_page(tl: Document, thanh_vien: list[dict[str, str]]) -> None:
     tl.add_page_break()  # type: ignore[no-untyped-call]
 
 
-def _table(tl: Document, tieu_de: list[str], row: list[list[str]]) -> None:
-    b = tl.add_table(rows=1, cols=len(tieu_de))
+def _table(tl: Document, title: list[str], row: list[list[str]]) -> None:
+    b = tl.add_table(rows=1, cols=len(title))
     b.style = "Table Grid"
-    for o, nhan in zip(b.rows[0].cells, tieu_de, strict=True):
-        o.paragraphs[0].add_run(nhan).bold = True
+    for o, label in zip(b.rows[0].cells, title, strict=True):
+        o.paragraphs[0].add_run(label).bold = True
     for d in row:
         for o, gt in zip(b.add_row().cells, d, strict=True):
             o.text = gt

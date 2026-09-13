@@ -204,7 +204,7 @@ class IndexedKnowledgeBase:
         self.M_r_char = self.vec_char.transform(self.r_corpus)
         self.M_r_word = self.vec_word.transform(self.r_corpus)
 
-        # --- khong gian vector muc NHOM tri thuc (nhan dien nhom theo ngu nghia) ---
+        # --- khong gian vector muc NHOM tri thuc (label dien nhom theo ngu nghia) ---
         self.danh_sach_nhom = sorted(self.by_nhom)
         gom = []
         for n in self.danh_sach_nhom:
@@ -698,7 +698,7 @@ class InferenceEngine:
                                                          self.kb.rules, 2)
                              if sc >= SUPPLEMENT_THRESHOLD]
 
-        # Khong con tri thuc nao vuot nguong -> he thong thua nhan khong tra duoc,
+        # Khong con tri thuc nao vuot nguong -> he thong thua label khong tra duoc,
         # thay vi tra ve mot danh sach hanh vi vi pham khong lien quan.
         kq["not_found"] = not (kq["concepts"] or kq["rules"] or kq["violations"])
 

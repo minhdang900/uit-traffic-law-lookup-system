@@ -16,14 +16,13 @@ ENV PATH="/opt/venv/bin:$PATH"
 # Chep truoc phan khai bao phu thuoc de tan dung bo nho dem tang khi chi doi ma nguon
 COPY pyproject.toml README.md ./
 COPY src/ ./src/
-RUN pip install --no-cache-dir -e ".[ui]"
+RUN pip install --no-cache-dir -e ".[web]"
 
 FROM python:3.12-slim AS chay
 ENV PATH="/opt/venv/bin:$PATH" \
     PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1 \
-    STREAMLIT_SERVER_HEADLESS=true \
-    STREAMLIT_BROWSER_GATHER_USAGE_STATS=false
+    PORT=8000
 WORKDIR /app
 COPY --from=xay /opt/venv /opt/venv
 
@@ -36,9 +35,8 @@ COPY --chown=tracuu:tracuu scripts/ ./scripts/
 COPY --chown=tracuu:tracuu pyproject.toml README.md ./
 USER tracuu
 
-EXPOSE 8501
+EXPOSE 8000
 HEALTHCHECK --interval=15s --timeout=5s --start-period=90s --retries=5 \
-  CMD python -c "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://localhost:8501/_stcore/health',timeout=4).status==200 else 1)"
+  CMD python -c "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://localhost:8000/api/docs',timeout=4).status==200 else 1)"
 
-CMD ["streamlit", "run", "src/traffic_law/api/app.py", \
-     "--server.port=8501", "--server.address=0.0.0.0"]
+CMD ["uvicorn", "traffic_law.api.web:app", "--host", "0.0.0.0", "--port", "8000"]

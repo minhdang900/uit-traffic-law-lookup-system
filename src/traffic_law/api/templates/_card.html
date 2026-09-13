@@ -1,0 +1,51 @@
+{% import "_icons.html" as ic %}
+{%- macro conf_class(m) -%}
+{%- if m == "cao" %}cao{% elif m == "trung bình" %}tb{% else %}thap{% endif -%}
+{%- endmacro -%}
+
+{% macro lead(t) %}
+<article class="card lead">
+  <div class="top">
+    <span class="label" style="color:var(--color-accent-700)">{{ t.kind_name }}</span>
+    {% for pt in t.vehicles[:2] %}<span class="tag green">{{ pt|replace("_"," ") }}</span>{% endfor %}
+    {% if t.supplementary %}<span class="tag grey">Tri thức bổ sung</span>{% endif %}
+    <span class="conf {{ conf_class(t.confidence) }}"><i class="dot"></i>
+      độ tin cậy {{ t.confidence }}{% if t.score %} · {{ "%.2f"|format(t.score)|replace(".",",") }}{% endif %}</span>
+  </div>
+  <p class="body" style="margin:0">{{ t.title }}</p>
+  {% if t.kind == "violations" %}
+  <div class="stats">
+    <div class="stat fine"><span class="label">Phạt tiền</span>
+      <span class="num">{{ t.fine_text }}</span></div>
+    {% if t.licence_points %}
+    <div class="stat pts"><span class="label">Trừ điểm GPLX</span>
+      <span class="num">{{ t.licence_points }} điểm</span></div>
+    {% endif %}
+  </div>
+  {% else %}
+    {% for d in t.lines %}<p class="muted" style="margin:0">{{ d }}</p>{% endfor %}
+  {% endif %}
+  <footer>
+    <span>Căn cứ: {{ t.citation }}</span>
+    {% if t.id %}<a href="/dieu-khoan/{{ t.id }}">Xem điều khoản →</a>{% endif %}
+  </footer>
+</article>
+{% endmacro %}
+
+{% macro small(t) %}
+<article class="card{% if t.kind == 'concepts' %} concept{% endif %}">
+  <div class="top">
+    <span class="label"{% if t.kind == 'concepts' %} style="color:var(--color-accent-2-700)"{% endif %}>{{ t.kind_name }}</span>
+    {% for pt in t.vehicles[:1] %}<span class="tag grey">{{ pt|replace("_"," ") }}</span>{% endfor %}
+    <span class="conf {{ conf_class(t.confidence) }}"><i class="dot"></i>{{ t.confidence }}</span>
+  </div>
+  <p style="margin:0;font-size:15px">{{ t.title }}</p>
+  {% if t.kind == "violations" %}
+    <div><span class="fine-inline">{{ t.fine_text }}</span>
+      {% if t.licence_points %}<span class="muted"> · trừ {{ t.licence_points }} điểm giấy phép lái xe</span>{% endif %}</div>
+  {% else %}
+    {% for d in t.lines[:2] %}<p class="muted" style="margin:0">{{ d }}</p>{% endfor %}
+  {% endif %}
+  <div style="font-size:12px;color:var(--color-neutral-700)">Căn cứ: {{ t.citation }}</div>
+</article>
+{% endmacro %}

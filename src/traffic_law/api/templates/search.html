@@ -1,0 +1,28 @@
+{% extends "base.html" %}{% import "_card.html" as c %}{% import "_search.html" as s %}
+{% block content %}
+{{ s.searchbar(q) }}
+{% if not kq %}
+  <div class="wrap-640" style="margin-top:var(--space-8)">
+    <h2 class="screen">Tra cứu quy định giao thông đường bộ</h2>
+    <p class="lede">Hỏi bằng tiếng Việt tự nhiên. Hệ thống phân câu hỏi vào một trong bảy lớp
+      bài toán, truy hồi tri thức phù hợp và trả lời <strong>kèm căn cứ pháp lý</strong>.</p>
+    <div class="card" style="margin-top:var(--space-4)">
+      <div class="label">Thử hỏi theo cách này</div>
+      <div class="chips">
+        {% for v in VI_DU %}<a class="chip" href="/?q={{ v|urlencode }}">{{ v }}</a>{% endfor %}
+      </div>
+    </div>
+    <p class="disclaim">{{ MIEN_TRU }}</p>
+  </div>
+{% elif kq.not_found %}
+  {% include "_empty.html" %}
+{% else %}
+  {{ s.classify(kq) }}
+  <div class="results">
+    <div class="col">
+      {% for t in kq.cards %}{{ c.lead(t) if loop.first else c.small(t) }}{% endfor %}
+    </div>
+    {{ s.side_panels(kq) }}
+  </div>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}Hiệu lực theo thời gian · Tra cứu GTĐB{% endblock %}
+{% block content %}
+<div class="wrap-960">
+  <h2 class="screen">Hiệu lực theo thời gian</h2>
+  <p class="lede">Sửa đổi được lưu như <strong>dữ liệu</strong>, không hợp nhất lúc dựng cơ sở
+    tri thức. Nhờ vậy trả lời được “mức phạt tại ngày X là bao nhiêu”, chứ không chỉ biết bản
+    hiện hành.</p>
+
+  <div class="chips" style="margin-top:var(--space-4)">
+    {% for nhan, ngay in [("01/01/2025", "Nghị định 168/2024 có hiệu lực"),
+                          ("01/07/2026", "Luật 118/2025 có hiệu lực"),
+                          ("15/08/2026", "Nghị định 238/2026 có hiệu lực")] %}
+    <span class="chip{% if loop.last %} on{% endif %}">{{ nhan }}</span>
+    {% endfor %}
+  </div>
+
+  <div class="scroll-x" style="margin-top:var(--space-6)">
+    <table>
+      <thead><tr><th>Điều khoản</th><th>Hành vi</th><th>Phạt tiền</th><th>Sửa bởi</th></tr></thead>
+      <tbody>
+      {% for v in sua %}<tr>
+        <td style="white-space:nowrap">{{ v.citation_text }}</td>
+        <td>{{ v.behavior[:70] }}{% if v.behavior|length > 70 %}…{% endif %}</td>
+        <td style="white-space:nowrap">{{ fine_text(v.fine.model_dump()) }}</td>
+        <td>{{ v.amended_by }}</td></tr>{% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% if not sua %}<p class="muted" style="margin-top:var(--space-4)">Chưa có điều khoản nào
+    được đánh dấu sửa đổi trong cơ sở tri thức.</p>{% endif %}
+  <p class="disclaim">{{ MIEN_TRU }}</p>
+</div>
+{% endblock %}
