@@ -78,11 +78,12 @@ Trên bộ 120 câu hỏi tự xây dựng có đáp án chuẩn, **toàn bộ 1
 | Truy hồi đúng Top-3 | 90,83% |
 | Truy hồi đúng Top-5 | 95,00% |
 | MRR | 0,8384 |
-| Thời gian trả lời trung bình | ~25 ms |
+| Thời gian trả lời trung bình | ~6 ms |
 
-> Precision (macro) 0,3375 phản ánh đặc tính của truy hồi **top-k** (trả về 5 kết quả
-> trong khi đáp án chuẩn thường chỉ có 1 mẩu tri thức, nên precision tối đa là 0,20/câu),
-> **không** phải khiếm khuyết thiết kế.
+> Precision (macro) 0,3373 phản ánh đặc tính của truy hồi **top-k** (trả về 5 kết quả
+> trong khi đáp án chuẩn thường chỉ có 1 mẩu tri thức, nên với câu 1 đáp án precision tối
+> đa là 0,20; con số macro cao hơn vì câu tra cứu ngược và câu nhiều đáp án), **không**
+> phải khiếm khuyết thiết kế.
 
 ## Cài đặt
 

@@ -429,7 +429,11 @@ def create_app() -> FastAPI:
 
         # Xem tại mốc trước khi phiên bản hiện hành có hiệu lực: hiện câu chữ lúc ấy.
         truoc_hieu_luc = moc < start
-        if truoc_hieu_luc and v.behavior_before_amendment:
+        het_hieu_luc = v.validity is not None and v.validity.end is not None \
+            and moc > v.validity.end
+        if het_hieu_luc:
+            tieu_de, tinh_trang = v.behavior, ("Hết hiệu lực", "neutral")
+        elif truoc_hieu_luc and v.behavior_before_amendment:
             tieu_de, tinh_trang = v.behavior_before_amendment, ("Câu chữ trước sửa đổi", "neutral")
         elif truoc_hieu_luc:
             tieu_de, tinh_trang = v.behavior, ("Chưa có hiệu lực", "neutral")
@@ -446,6 +450,8 @@ def create_app() -> FastAPI:
             request, "provision.html", "/tra-cuu", q=q,
             v=v, row=_hang_vi_pham(v), timeline=timeline, title=tieu_de,
             viewing_past=truoc_hieu_luc, valid_from=f"{start:%d/%m/%Y}",
+            expired=het_hieu_luc,
+            valid_until=f"{v.validity.end:%d/%m/%Y}" if v.validity and v.validity.end else "",
             status=tinh_trang,
             position=position_label(v.citation.model_dump()),
             field_name=_ten_linh_vuc(v.field), group_name=v.group_name or _ten_nhom(v.group),

@@ -56,8 +56,8 @@ Hai sơ đồ cần vẽ (draw.io hoặc PowerPoint rồi chèn ảnh):
   một đáp án duy nhất — chỉ số Top-1 không phản ánh đúng chất lượng ở lớp này.
 - **9/120 câu sai hoàn toàn**: danh sách trong `so_lieu/ket_qua_danh_gia.json`,
   khoá `cau_sai`.
-- **Precision 0,3375 không phải khiếm khuyết**: trả k=5 kết quả cho đáp án 1 mẩu
-  → trần precision toán học là 0,20/câu. Con số 0,3375 đã **cao hơn** mức đó.
+- **Precision 0,3373 không phải khiếm khuyết**: trả k=5 kết quả cho đáp án 1 mẩu
+  → trần precision toán học là 0,20/câu. Con số 0,3373 đã **cao hơn** mức đó.
 
 **Đoạn đáng viết nhất** — từ `so_lieu/ket_qua_ablation.json`:
 

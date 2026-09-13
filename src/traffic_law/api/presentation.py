@@ -373,7 +373,7 @@ def validity_timeline(start: date, end: date | None, origin: date, origin_doc: s
         mocs = [m(start, f"{origin_doc} có hiệu lực")]
 
     if end is not None:
-        mocs.append(m(end, "Hết hiệu lực"))
+        mocs.append(m(end, "Hết hiệu lực" + (" — " + "; ".join(touching) if touching else "")))
     elif moc < start:
         mocs.append(Milestone(
             "Chưa có mốc kết thúc",

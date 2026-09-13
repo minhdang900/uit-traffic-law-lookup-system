@@ -6,7 +6,15 @@ bản nguồn, và mỗi văn bản có ``ngay_hieu_luc``. Quy tắc suy diễn:
     hieu_luc.tu   = ngày hiệu lực của văn bản nguồn
                     (hoặc của văn bản SỬA ĐỔI, nếu điều khoản đã bị sửa —
                      vì bản ghi hiện lưu chính là nội dung SAU sửa đổi)
-    hieu_luc.den  = None (còn hiệu lực)
+    hieu_luc.den  = ngày TRƯỚC ngày văn bản sửa đổi có hiệu lực, nếu điều khoản bị
+                    văn bản đó BÃI BỎ (đọc từ amendments.json); còn lại None
+
+Hai ngoại lệ đều lấy từ chính văn bản pháp luật, không phải phỏng đoán:
+
+- "Bãi bỏ điểm d, điểm đ… khoản 17 Điều 32" chấm dứt hiệu lực các điểm đó.
+  "Bỏ cụm từ…" thì KHÔNG — đó chỉ là sửa câu chữ, điều khoản vẫn còn.
+- Điều khoản có ngày hiệu lực riêng do văn bản quy định (``HIEU_LUC_RIENG``),
+  mỗi dòng bắt buộc kèm căn cứ.
 
 Script tất định và idempotent: chạy nhiều lần cho kết quả giống hệt nhau.
 
@@ -18,7 +26,7 @@ import argparse
 import json
 import re
 import sys
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -36,6 +44,31 @@ def _ghi(name: str, data: list[dict]) -> None:
         f.write("\n")
 
 
+#: Điều khoản mà văn bản quy định ngày hiệu lực RIÊNG, khác ngày của văn bản chứa nó.
+HIEU_LUC_RIENG: dict[str, tuple[str, str]] = {
+    "VP_BS_SD_31_2": ("2028-01-01",
+                      "khoản 3 Điều 53 Nghị định 168/2024/NĐ-CP: điểm b khoản 9a Điều 32 "
+                      "(xe vận tải nội bộ) có hiệu lực thi hành từ 01/01/2028"),
+}
+
+#: "Bãi bỏ điểm d, điểm đ, điểm e, điểm g khoản 17 Điều 32."
+_BAI_BO = re.compile(r"Bãi bỏ ((?:điểm [a-zđ]+(?:, )?)+) khoản (\d+[a-z]?) Điều (\d+)")
+VAN_BAN_BI_SUA = "168/2024/NĐ-CP"
+
+
+def _ban_do_bai_bo(amendments: list[dict], ban_do: dict[str, date]) -> dict[tuple, date]:
+    """(điều, khoản, điểm) của Nghị định 168 bị bãi bỏ → ngày cuối còn hiệu lực."""
+    ra: dict[tuple, date] = {}
+    for a in amendments:
+        m = _BAI_BO.search(a.get("noi_dung_moi") or "") if a.get("loai") == "bai_bo" else None
+        sh = _tim_so_hieu(str(a.get("can_cu", {}).get("van_ban", "")), ban_do) if m else None
+        if not (m and sh):
+            continue
+        for diem in re.findall(r"điểm ([a-zđ]+)", m.group(1)):
+            ra[(int(m.group(3)), m.group(2), diem)] = ban_do[sh] - timedelta(days=1)
+    return ra
+
+
 def _ban_do_hieu_luc(documents: list[dict]) -> dict[str, date]:
     """Ánh xạ số hiệu văn bản → ngày hiệu lực."""
     return {v["so_hieu"]: date.fromisoformat(v["ngay_hieu_luc"]) for v in documents}
@@ -51,8 +84,23 @@ def _tim_so_hieu(chuoi: str, ban_do: dict[str, date]) -> str | None:
     return m.group(0) if m and m.group(0) in ban_do else None
 
 
-def infer(ban_ghi: dict, ban_do: dict[str, date]) -> dict | None:
+def infer(ban_ghi: dict, ban_do: dict[str, date],
+          bai_bo: dict[tuple, date] | None = None) -> dict | None:
     """Trả về khoảng hiệu lực cho một bản ghi, hoặc None nếu không suy được."""
+    kq = _infer_bat_dau(ban_ghi, ban_do)
+    if kq is None:
+        return None
+    if ban_ghi.get("id") in HIEU_LUC_RIENG:
+        kq["tu"] = HIEU_LUC_RIENG[ban_ghi["id"]][0]
+    cc = ban_ghi.get("can_cu") or {}
+    if bai_bo and VAN_BAN_BI_SUA in str(cc.get("van_ban", "")):
+        het = bai_bo.get((cc.get("dieu"), str(cc.get("khoan")), cc.get("diem")))
+        if het is not None:
+            kq["den"] = het.isoformat()
+    return kq
+
+
+def _infer_bat_dau(ban_ghi: dict, ban_do: dict[str, date]) -> dict | None:
     amended_by = ban_ghi.get("sua_doi_boi")
     if amended_by:
         sh = _tim_so_hieu(str(amended_by), ban_do)
@@ -66,13 +114,14 @@ def infer(ban_ghi: dict, ban_do: dict[str, date]) -> dict | None:
 
 def chay(kiem_tra: bool = False) -> int:
     ban_do = _ban_do_hieu_luc(_nap("documents.json"))
+    bai_bo = _ban_do_bai_bo(_nap("amendments.json"), ban_do)
     tong_doi = tong_thieu = 0
 
     for name in ("violations.json", "rules.json"):
         data = _nap(name)
         doi = missing = 0
         for r in data:
-            moi = infer(r, ban_do)
+            moi = infer(r, ban_do, bai_bo)
             if moi is None:
                 missing += 1
                 continue
