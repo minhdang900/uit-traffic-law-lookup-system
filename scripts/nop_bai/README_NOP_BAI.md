@@ -56,7 +56,7 @@ cd ma_nguon
 python -m venv .venv && source .venv/bin/activate
 pip install -e '.[dev,web,bao-cao]'
 
-pytest -q                                    # 179 passed, 6 xfailed
+pytest -q                                    # 259 passed, 6 xfailed
 python eval/evaluate.py --gate-top1 0.7667   # cổng chỉ số
 python eval/kich_ban.py --chi-tiet           # 12 ca nghiệm thu
 uvicorn traffic_law.api.web:app --reload     # giao diện
@@ -72,7 +72,7 @@ uvicorn traffic_law.api.web:app --reload     # giao diện
 | Top-1 · Top-5 | 76,67% · 95,00% |
 | MRR | 0,8384 |
 | Thời gian trả lời | 6,2 ms |
-| Kiểm thử tự động | 179 đạt · 6 xfail có số đo · phủ 90% |
+| Kiểm thử tự động | 259 đạt · 6 xfail có số đo · phủ 91% |
 | Ca nghiệm thu | 12/12 đạt |
 
 Cơ sở tri thức `K = (C, R, Rules, F, Keyphrase)`: 73 khái niệm · 482 quan hệ ·

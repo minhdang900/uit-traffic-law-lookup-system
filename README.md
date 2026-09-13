@@ -132,8 +132,8 @@ python eval/kich_ban.py --markdown     # dán thẳng vào báo cáo
 Không cần cài Python hay phụ thuộc nào:
 
 ```bash
-docker compose up giao-dien              # http://localhost:8501
-PORT=8502 docker compose up giao-dien    # đổi cổng nếu 8501 đã bận
+docker compose up giao-dien              # http://localhost:8000
+PORT=8080 docker compose up giao-dien    # đổi cổng nếu 8000 đã bận
 
 docker compose run --rm kich-ban         # 12 ca nghiệm thu
 docker compose run --rm danh-gia         # đo chỉ số + cổng Top-1
