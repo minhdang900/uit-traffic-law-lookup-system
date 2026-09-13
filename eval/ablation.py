@@ -18,7 +18,7 @@ sys.path.insert(0, os.path.join(BASE, "src"))
 sys.path.insert(0, os.path.join(BASE, "tests"))
 from evaluate import lay_id_tra_ve  # noqa: E402
 
-from tra_cuu_gtdb.reasoning.engine import InferenceEngine, TraCuuPhapLuat  # noqa: E402
+from traffic_law.reasoning.engine import InferenceEngine, LawLookup  # noqa: E402
 
 DATASET = os.path.join(BASE, "eval", "qa_dataset.json")
 
@@ -44,9 +44,9 @@ def chay(ht, ds, cfg, k=5):
     mrr = 0.0
     try:
         for m in ds:
-            kq = ht.hoi(m["cau_hoi"], top_k=k)
+            kq = ht.ask(m["cau_hoi"], top_k=k)
             toan_bo = lay_id_tra_ve(kq, m["loai_tri_thuc"])
-            la_ds = (kq.get("tong_hop") or {}).get("kieu") in ("danh_sach", "can_cu")
+            la_ds = (kq.get("summary") or {}).get("kind") in ("danh_sach", "citation")
             tra_ve = toan_bo if la_ds else toan_bo[:k]
             vang = set(m["id_tri_thuc_dung"])
             top1 += bool(tra_ve[:1]) and tra_ve[0] in vang
@@ -63,7 +63,7 @@ def chay(ht, ds, cfg, k=5):
 
 def main():
     """Chạy lần lượt bốn cấu hình, in bảng so sánh và ghi kết quả ra tệp JSON."""
-    ht = TraCuuPhapLuat()
+    ht = LawLookup()
     with open(DATASET, encoding="utf-8") as f:
         ds = json.load(f)
     # rieng nhom cau hoi co gia tri so, de thay ro tac dung cua suy dien so hoc
@@ -75,24 +75,24 @@ def main():
     print("=" * 78)
     print("%-44s %8s %8s %8s" % ("CAU HINH", "TOP-1", "TOP-5", "MRR"))
     print("-" * 78)
-    ket_qua = {}
-    for ten, cfg in CAU_HINH:
+    results = {}
+    for name, cfg in CAU_HINH:
         r = chay(ht, ds, cfg)
-        ket_qua[ten] = r
-        print("%-44s %7.1f%% %7.1f%% %8.4f" % (ten, r["top1"], r["topk"], r["mrr"]))
+        results[name] = r
+        print("%-44s %7.1f%% %7.1f%% %8.4f" % (name, r["top1"], r["topk"], r["mrr"]))
 
     print("\n" + "-" * 78)
     print("Rieng %d cau hoi CO GIA TRI SO (nong do con / muc vuot toc do):" % len(ds_so))
     print("-" * 78)
     kq_so = {}
-    for ten, cfg in CAU_HINH[2:]:
+    for name, cfg in CAU_HINH[2:]:
         r = chay(ht, ds_so, cfg)
-        kq_so[ten] = r
-        print("%-44s %7.1f%% %7.1f%% %8.4f" % (ten, r["top1"], r["topk"], r["mrr"]))
+        kq_so[name] = r
+        print("%-44s %7.1f%% %7.1f%% %8.4f" % (name, r["top1"], r["topk"], r["mrr"]))
 
     out = os.path.join(BASE, "eval", "ket_qua_ablation.json")
     with open(out, "w", encoding="utf-8") as f:
-        json.dump({"toan_bo": ket_qua, "cau_hoi_co_gia_tri_so": kq_so,
+        json.dump({"toan_bo": results, "cau_hoi_co_gia_tri_so": kq_so,
                    "so_cau_hoi": len(ds), "so_cau_hoi_co_so": len(ds_so)},
                   f, ensure_ascii=False, indent=1)
     print("\n-> Da ghi: %s" % out)

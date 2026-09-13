@@ -103,7 +103,7 @@ Giao diện tra cứu (cần gói tuỳ chọn `ui`):
 
 ```bash
 pip install -e '.[ui]'
-streamlit run src/tra_cuu_gtdb/api/app.py
+streamlit run src/traffic_law/api/app.py
 ```
 
 Bộ kịch bản nghiệm thu — 12 ca, mỗi ca nêu kỳ vọng kiểm chứng được bằng văn bản luật:
@@ -133,13 +133,13 @@ Sinh khung báo cáo Word đúng định dạng đề bài (cần gói tuỳ ch�
 
 ```bash
 pip install -e '.[bao-cao]'
-python -m tra_cuu_gtdb.bao_cao.tao_bao_cao   # -> docs/bao_cao_de_tai_4_khung.docx
+python -m traffic_law.report.builder   # -> docs/bao_cao_de_tai_4_khung.docx
 ```
 
 ## Cấu trúc
 
 ```
-src/tra_cuu_gtdb/
+src/traffic_law/
   domain/      Mô hình dữ liệu thuần (Pydantic), không I/O
   kb/          Nạp, kiểm tra toàn vẹn, lập chỉ mục cơ sở tri thức
   retrieval/   Các làn truy hồi (từ khoá + TF-IDF, tuỳ chọn dense)

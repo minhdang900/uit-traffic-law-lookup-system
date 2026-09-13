@@ -1,0 +1,1133 @@
+{
+ "xe cơ giới là gì": {
+  "problem_class": "P1_TRA_CUU_KHAI_NIEM",
+  "not_found": false,
+  "concepts": [
+   {
+    "id": "KN_XE_CO_GIOI",
+    "score": 0.85,
+    "supplementary": false
+   },
+   {
+    "id": "KN_PHUONG_TIEN_GIAO_THONG_DUONG_BO",
+    "score": 0.6544,
+    "supplementary": false
+   },
+   {
+    "id": "KN_DO_XE",
+    "score": 0.0784,
+    "supplementary": false
+   },
+   {
+    "id": "KN_NGUOI_DIEU_KHIEN_PHUONG_TIEN",
+    "score": 0.075,
+    "supplementary": false
+   },
+   {
+    "id": "KN_VUOT_XE",
+    "score": 0.0569,
+    "supplementary": false
+   }
+  ],
+  "rules": [],
+  "violations": [],
+  "violation_fields": [],
+  "concept_fields": [
+   "amended_by",
+   "attributes",
+   "citation",
+   "citation_text",
+   "definition",
+   "id",
+   "keyphrases",
+   "kind",
+   "name",
+   "note",
+   "score",
+   "text_search",
+   "text_search_kd"
+  ]
+ },
+ "nồng độ cồn là gì": {
+  "problem_class": "P1_TRA_CUU_KHAI_NIEM",
+  "not_found": false,
+  "concepts": [
+   {
+    "id": "KN_NONG_DO_CON",
+    "score": 0.85,
+    "supplementary": false
+   },
+   {
+    "id": "KN_DO_XE",
+    "score": 0.062,
+    "supplementary": false
+   },
+   {
+    "id": "KN_XE_MAY_CHUYEN_DUNG",
+    "score": 0.0349,
+    "supplementary": false
+   }
+  ],
+  "rules": [],
+  "violations": [
+   {
+    "id": "VP_OTO_ND168D6_K6C",
+    "score": 0.8968,
+    "supplementary": true
+   },
+   {
+    "id": "VP_MOTO_ND168D7_K6A",
+    "score": 0.7529,
+    "supplementary": true
+   },
+   {
+    "id": "VP_ND168D9_K1P",
+    "score": 0.7525,
+    "supplementary": true
+   }
+  ],
+  "violation_fields": [
+   "amended_by",
+   "amendment_note",
+   "behavior",
+   "behavior_before_amendment",
+   "citation",
+   "citation_text",
+   "extra_penalties",
+   "field",
+   "fine",
+   "group",
+   "group_name",
+   "id",
+   "keyphrases",
+   "licence_points",
+   "remedies",
+   "score",
+   "score_detail",
+   "status",
+   "subject",
+   "supplementary",
+   "text_search",
+   "text_search_kd",
+   "validity",
+   "vehicles"
+  ],
+  "concept_fields": [
+   "amended_by",
+   "attributes",
+   "citation",
+   "citation_text",
+   "definition",
+   "id",
+   "keyphrases",
+   "kind",
+   "name",
+   "note",
+   "score",
+   "text_search",
+   "text_search_kd"
+  ]
+ },
+ "người lái xe phải mang theo giấy tờ gì": {
+  "problem_class": "P2_TRA_CUU_QUY_DINH",
+  "not_found": false,
+  "concepts": [
+   {
+    "id": "KN_NGUOI_DIEU_KHIEN_PHUONG_TIEN",
+    "score": 0.7221,
+    "supplementary": false
+   },
+   {
+    "id": "KN_GIAY_PHEP_LAI_XE",
+    "score": 0.3,
+    "supplementary": false
+   }
+  ],
+  "rules": [
+   {
+    "id": "R88",
+    "score": 0.3,
+    "supplementary": false
+   },
+   {
+    "id": "R89",
+    "score": 0.2457,
+    "supplementary": false
+   },
+   {
+    "id": "R91",
+    "score": 0.1493,
+    "supplementary": false
+   },
+   {
+    "id": "R90",
+    "score": 0.1313,
+    "supplementary": false
+   },
+   {
+    "id": "R92",
+    "score": 0.1237,
+    "supplementary": false
+   }
+  ],
+  "violations": [
+   {
+    "id": "VP_ND168D18_K2D",
+    "score": 0.3225,
+    "supplementary": false
+   },
+   {
+    "id": "VP_ND168D18_K3A",
+    "score": 0.2885,
+    "supplementary": false
+   },
+   {
+    "id": "VP_ND168D18_K3C",
+    "score": 0.2444,
+    "supplementary": false
+   }
+  ],
+  "violation_fields": [
+   "amended_by",
+   "amendment_note",
+   "behavior",
+   "behavior_before_amendment",
+   "citation",
+   "citation_text",
+   "extra_penalties",
+   "field",
+   "fine",
+   "group",
+   "group_name",
+   "id",
+   "keyphrases",
+   "licence_points",
+   "remedies",
+   "score",
+   "score_detail",
+   "status",
+   "subject",
+   "text_search",
+   "text_search_kd",
+   "validity",
+   "vehicles"
+  ],
+  "concept_fields": [
+   "amended_by",
+   "attributes",
+   "citation",
+   "citation_text",
+   "definition",
+   "id",
+   "keyphrases",
+   "kind",
+   "name",
+   "note",
+   "score",
+   "text_search",
+   "text_search_kd"
+  ]
+ },
+ "quy tắc nhường đường tại nơi giao nhau": {
+  "problem_class": "P2_TRA_CUU_QUY_DINH",
+  "not_found": false,
+  "concepts": [
+   {
+    "id": "KN_DUONG_UU_TIEN",
+    "score": 0.8139,
+    "supplementary": false
+   },
+   {
+    "id": "KN_UN_TAC_GIAO_THONG",
+    "score": 0.3,
+    "supplementary": false
+   }
+  ],
+  "rules": [
+   {
+    "id": "R54",
+    "score": 0.3,
+    "supplementary": false
+   },
+   {
+    "id": "R55",
+    "score": 0.2959,
+    "supplementary": false
+   },
+   {
+    "id": "R39",
+    "score": 0.212,
+    "supplementary": false
+   },
+   {
+    "id": "R53",
+    "score": 0.1928,
+    "supplementary": false
+   },
+   {
+    "id": "R73",
+    "score": 0.1628,
+    "supplementary": false
+   }
+  ],
+  "violations": [
+   {
+    "id": "VP_OTO_ND168D6_K2C",
+    "score": 0.735,
+    "supplementary": false
+   },
+   {
+    "id": "VP_MOTO_ND168D7_K1DD",
+    "score": 0.7303,
+    "supplementary": false
+   },
+   {
+    "id": "VP_MOTO_ND168D7_K6D",
+    "score": 0.6129,
+    "supplementary": false
+   }
+  ],
+  "violation_fields": [
+   "amended_by",
+   "amendment_note",
+   "behavior",
+   "behavior_before_amendment",
+   "citation",
+   "citation_text",
+   "extra_penalties",
+   "field",
+   "fine",
+   "group",
+   "group_name",
+   "id",
+   "keyphrases",
+   "licence_points",
+   "remedies",
+   "score",
+   "score_detail",
+   "status",
+   "subject",
+   "text_search",
+   "text_search_kd",
+   "validity",
+   "vehicles"
+  ],
+  "concept_fields": [
+   "amended_by",
+   "attributes",
+   "citation",
+   "citation_text",
+   "definition",
+   "id",
+   "keyphrases",
+   "kind",
+   "name",
+   "note",
+   "score",
+   "text_search",
+   "text_search_kd"
+  ]
+ },
+ "vượt đèn đỏ xe máy phạt bao nhiêu": {
+  "problem_class": "P3_TRA_CUU_CHE_TAI",
+  "not_found": false,
+  "concepts": [
+   {
+    "id": "KN_VUOT_XE",
+    "score": 0.3,
+    "supplementary": false
+   },
+   {
+    "id": "KN_DEN_TIN_HIEU_GIAO_THONG",
+    "score": 0.1944,
+    "supplementary": false
+   }
+  ],
+  "rules": [],
+  "violations": [
+   {
+    "id": "VP_MOTO_ND168D7_K7C",
+    "score": 0.9816,
+    "supplementary": false
+   },
+   {
+    "id": "VP_ND168D9_K2DD",
+    "score": 0.555,
+    "supplementary": false
+   },
+   {
+    "id": "VP_OTO_ND168D6_K9B",
+    "score": 0.497,
+    "supplementary": false
+   },
+   {
+    "id": "VP_ND168D10_K1B",
+    "score": 0.3535,
+    "supplementary": false
+   },
+   {
+    "id": "VP_MOTO_ND168D7_K4A",
+    "score": 0.143,
+    "supplementary": false
+   }
+  ],
+  "violation_fields": [
+   "amended_by",
+   "amendment_note",
+   "behavior",
+   "behavior_before_amendment",
+   "citation",
+   "citation_text",
+   "extra_penalties",
+   "field",
+   "fine",
+   "group",
+   "group_name",
+   "id",
+   "keyphrases",
+   "licence_points",
+   "remedies",
+   "score",
+   "score_detail",
+   "status",
+   "subject",
+   "text_search",
+   "text_search_kd",
+   "validity",
+   "vehicles"
+  ],
+  "concept_fields": [
+   "amended_by",
+   "attributes",
+   "citation",
+   "citation_text",
+   "definition",
+   "id",
+   "keyphrases",
+   "kind",
+   "name",
+   "note",
+   "score",
+   "text_search",
+   "text_search_kd"
+  ]
+ },
+ "không đội mũ bảo hiểm phạt bao nhiêu": {
+  "problem_class": "P3_TRA_CUU_CHE_TAI",
+  "not_found": false,
+  "concepts": [
+   {
+    "id": "KN_MU_BAO_HIEM",
+    "score": 0.3,
+    "supplementary": false
+   },
+   {
+    "id": "KN_BAO_HIEU_DUONG_BO",
+    "score": 0.1204,
+    "supplementary": false
+   }
+  ],
+  "rules": [],
+  "violations": [
+   {
+    "id": "VP_MOTO_ND168D7_K2H",
+    "score": 0.8725,
+    "supplementary": false
+   },
+   {
+    "id": "VP_ND168D9_K4D",
+    "score": 0.672,
+    "supplementary": false
+   },
+   {
+    "id": "VP_ND168D12_K5B",
+    "score": 0.6627,
+    "supplementary": false
+   },
+   {
+    "id": "VP_MOTO_ND168D7_K2I",
+    "score": 0.6602,
+    "supplementary": false
+   },
+   {
+    "id": "VP_ND168D9_K4DD",
+    "score": 0.643,
+    "supplementary": false
+   }
+  ],
+  "violation_fields": [
+   "amended_by",
+   "amendment_note",
+   "behavior",
+   "behavior_before_amendment",
+   "citation",
+   "citation_text",
+   "extra_penalties",
+   "field",
+   "fine",
+   "group",
+   "group_name",
+   "id",
+   "keyphrases",
+   "licence_points",
+   "remedies",
+   "score",
+   "score_detail",
+   "status",
+   "subject",
+   "text_search",
+   "text_search_kd",
+   "validity",
+   "vehicles"
+  ],
+  "concept_fields": [
+   "amended_by",
+   "attributes",
+   "citation",
+   "citation_text",
+   "definition",
+   "id",
+   "keyphrases",
+   "kind",
+   "name",
+   "note",
+   "score",
+   "text_search",
+   "text_search_kd"
+  ]
+ },
+ "nồng độ cồn 0,3 mg/l phạt thế nào": {
+  "problem_class": "P3_TRA_CUU_CHE_TAI",
+  "not_found": false,
+  "concepts": [
+   {
+    "id": "KN_NONG_DO_CON",
+    "score": 0.85,
+    "supplementary": false
+   },
+   {
+    "id": "KN_DO_XE",
+    "score": 0.0501,
+    "supplementary": false
+   }
+  ],
+  "rules": [],
+  "violations": [
+   {
+    "id": "VP_ND168D9_K3D",
+    "score": 0.835,
+    "supplementary": false
+   },
+   {
+    "id": "VP_MOTO_ND168D7_K8B",
+    "score": 0.7759,
+    "supplementary": false
+   },
+   {
+    "id": "VP_OTO_ND168D6_K9A",
+    "score": 0.7637,
+    "supplementary": false
+   },
+   {
+    "id": "VP_OTO_ND168D6_K11B",
+    "score": 0.4325,
+    "supplementary": false
+   },
+   {
+    "id": "VP_ND168D9_K4C",
+    "score": 0.4156,
+    "supplementary": false
+   }
+  ],
+  "violation_fields": [
+   "amended_by",
+   "amendment_note",
+   "behavior",
+   "behavior_before_amendment",
+   "citation",
+   "citation_text",
+   "extra_penalties",
+   "field",
+   "fine",
+   "group",
+   "group_name",
+   "id",
+   "keyphrases",
+   "licence_points",
+   "remedies",
+   "score",
+   "score_detail",
+   "status",
+   "subject",
+   "text_search",
+   "text_search_kd",
+   "validity",
+   "vehicles"
+  ],
+  "concept_fields": [
+   "amended_by",
+   "attributes",
+   "citation",
+   "citation_text",
+   "definition",
+   "id",
+   "keyphrases",
+   "kind",
+   "name",
+   "note",
+   "score",
+   "text_search",
+   "text_search_kd"
+  ]
+ },
+ "lỗi nào bị trừ 10 điểm giấy phép lái xe": {
+  "problem_class": "P4_TRA_CUU_NGUOC",
+  "not_found": false,
+  "concepts": [
+   {
+    "id": "KN_DIEM_GIAY_PHEP_LAI_XE",
+    "score": 0.8271,
+    "supplementary": true
+   }
+  ],
+  "rules": [],
+  "violations": [
+   {
+    "id": "VP_ND168D32_K16B",
+    "score": 1.0,
+    "supplementary": false
+   },
+   {
+    "id": "VP_OTO_ND168D6_K11DD",
+    "score": 1.0,
+    "supplementary": false
+   },
+   {
+    "id": "VP_ND168D13_K8A",
+    "score": 1.0,
+    "supplementary": false
+   },
+   {
+    "id": "VP_ND168D32_K13D",
+    "score": 1.0,
+    "supplementary": false
+   },
+   {
+    "id": "VP_OTO_ND168D6_K10A",
+    "score": 1.0,
+    "supplementary": false
+   },
+   {
+    "id": "VP_OTO_ND168D6_K10B",
+    "score": 1.0,
+    "supplementary": false
+   },
+   {
+    "id": "VP_OTO_ND168D6_K9A",
+    "score": 1.0,
+    "supplementary": false
+   },
+   {
+    "id": "VP_MOTO_ND168D7_K10A",
+    "score": 1.0,
+    "supplementary": false
+   },
+   {
+    "id": "VP_MOTO_ND168D7_K10B",
+    "score": 1.0,
+    "supplementary": false
+   },
+   {
+    "id": "VP_MOTO_ND168D7_K8B",
+    "score": 1.0,
+    "supplementary": false
+   }
+  ],
+  "violation_fields": [
+   "amended_by",
+   "amendment_note",
+   "behavior",
+   "behavior_before_amendment",
+   "citation",
+   "citation_text",
+   "extra_penalties",
+   "field",
+   "fine",
+   "group",
+   "group_name",
+   "id",
+   "keyphrases",
+   "licence_points",
+   "remedies",
+   "score",
+   "status",
+   "subject",
+   "text_search",
+   "text_search_kd",
+   "validity",
+   "vehicles"
+  ],
+  "concept_fields": [
+   "amended_by",
+   "attributes",
+   "citation",
+   "citation_text",
+   "definition",
+   "id",
+   "keyphrases",
+   "kind",
+   "name",
+   "note",
+   "score",
+   "supplementary",
+   "text_search",
+   "text_search_kd"
+  ]
+ },
+ "những lỗi nào bị phạt trên 30 triệu đồng": {
+  "problem_class": "P4_TRA_CUU_NGUOC",
+  "not_found": false,
+  "concepts": [],
+  "rules": [],
+  "violations": [
+   {
+    "id": "VP_ND168D32_K16B",
+    "score": 1.0,
+    "supplementary": false
+   },
+   {
+    "id": "VP_ND168D32_K16A",
+    "score": 1.0,
+    "supplementary": false
+   },
+   {
+    "id": "VP_ND168D32_K16C",
+    "score": 1.0,
+    "supplementary": false
+   },
+   {
+    "id": "VP_OTO_ND168D6_K13",
+    "score": 1.0,
+    "supplementary": false
+   },
+   {
+    "id": "VP_OTO_ND168D6_K12",
+    "score": 1.0,
+    "supplementary": false
+   },
+   {
+    "id": "VP_OTO_ND168D6_K11DD",
+    "score": 1.0,
+    "supplementary": false
+   },
+   {
+    "id": "VP_ND168D32_K15",
+    "score": 1.0,
+    "supplementary": false
+   },
+   {
+    "id": "VP_OTO_ND168D6_K11A",
+    "score": 1.0,
+    "supplementary": false
+   },
+   {
+    "id": "VP_OTO_ND168D6_K11B",
+    "score": 1.0,
+    "supplementary": false
+   },
+   {
+    "id": "VP_OTO_ND168D6_K11C",
+    "score": 1.0,
+    "supplementary": false
+   },
+   {
+    "id": "VP_OTO_ND168D6_K11D",
+    "score": 1.0,
+    "supplementary": false
+   },
+   {
+    "id": "VP_ND168D12_K14A",
+    "score": 1.0,
+    "supplementary": false
+   },
+   {
+    "id": "VP_ND168D12_K14B",
+    "score": 1.0,
+    "supplementary": false
+   },
+   {
+    "id": "VP_ND168D12_K13",
+    "score": 1.0,
+    "supplementary": false
+   },
+   {
+    "id": "VP_ND168D32_K14A",
+    "score": 1.0,
+    "supplementary": false
+   },
+   {
+    "id": "VP_ND168D32_K14B",
+    "score": 1.0,
+    "supplementary": false
+   },
+   {
+    "id": "VP_ND168D32_K14C",
+    "score": 1.0,
+    "supplementary": false
+   },
+   {
+    "id": "VP_ND168D32_K14D",
+    "score": 1.0,
+    "supplementary": false
+   },
+   {
+    "id": "VP_ND168D32_K14E",
+    "score": 1.0,
+    "supplementary": false
+   },
+   {
+    "id": "VP_ND168D32_K14G",
+    "score": 1.0,
+    "supplementary": false
+   }
+  ],
+  "violation_fields": [
+   "amended_by",
+   "amendment_note",
+   "behavior",
+   "behavior_before_amendment",
+   "citation",
+   "citation_text",
+   "extra_penalties",
+   "field",
+   "fine",
+   "group",
+   "group_name",
+   "id",
+   "keyphrases",
+   "licence_points",
+   "remedies",
+   "score",
+   "status",
+   "subject",
+   "text_search",
+   "text_search_kd",
+   "validity",
+   "vehicles"
+  ],
+  "concept_fields": []
+ },
+ "Điều 6 khoản 9 điểm a Nghị định 168/2024/NĐ-CP nói về lỗi gì?": {
+  "problem_class": "P6_TRA_CUU_CAN_CU",
+  "not_found": false,
+  "concepts": [],
+  "rules": [],
+  "violations": [
+   {
+    "id": "VP_OTO_ND168D6_K9A",
+    "score": 1.0,
+    "supplementary": false
+   }
+  ],
+  "violation_fields": [
+   "amended_by",
+   "amendment_note",
+   "behavior",
+   "behavior_before_amendment",
+   "citation",
+   "citation_text",
+   "extra_penalties",
+   "field",
+   "fine",
+   "group",
+   "group_name",
+   "id",
+   "keyphrases",
+   "licence_points",
+   "remedies",
+   "score",
+   "status",
+   "subject",
+   "text_search",
+   "text_search_kd",
+   "validity",
+   "vehicles"
+  ],
+  "concept_fields": []
+ },
+ "tôi vừa vượt đèn đỏ vừa không có giấy phép lái xe thì bị phạt bao nhiêu": {
+  "problem_class": "P5_SUY_DIEN_TINH_HUONG",
+  "not_found": false,
+  "concepts": [
+   {
+    "id": "KN_DEN_TIN_HIEU_GIAO_THONG",
+    "score": 0.7244,
+    "supplementary": true
+   }
+  ],
+  "rules": [],
+  "violations": [
+   {
+    "id": "VP_OTO_ND168D6_K9B",
+    "score": 0.8214,
+    "supplementary": false
+   },
+   {
+    "id": "VP_ND168D18_K5A",
+    "score": 0.7999,
+    "supplementary": false
+   }
+  ],
+  "violation_fields": [
+   "amended_by",
+   "amendment_note",
+   "behavior",
+   "behavior_before_amendment",
+   "citation",
+   "citation_text",
+   "extra_penalties",
+   "field",
+   "fine",
+   "group",
+   "group_name",
+   "id",
+   "keyphrases",
+   "licence_points",
+   "remedies",
+   "score",
+   "score_detail",
+   "status",
+   "subject",
+   "text_search",
+   "text_search_kd",
+   "validity",
+   "vehicles"
+  ],
+  "concept_fields": [
+   "amended_by",
+   "attributes",
+   "citation",
+   "citation_text",
+   "definition",
+   "id",
+   "keyphrases",
+   "kind",
+   "name",
+   "note",
+   "score",
+   "supplementary",
+   "text_search",
+   "text_search_kd"
+  ]
+ },
+ "Xe ưu tiên.": {
+  "problem_class": "P7_TRA_CUU_LIEN_QUAN",
+  "not_found": false,
+  "concepts": [
+   {
+    "id": "KN_DUONG_UU_TIEN",
+    "score": 0.3,
+    "supplementary": false
+   },
+   {
+    "id": "KN_XE_UU_TIEN",
+    "score": 0.2494,
+    "supplementary": false
+   },
+   {
+    "id": "KN_SUC_KHOE_NGUOI_LAI_XE",
+    "score": 0.0855,
+    "supplementary": false
+   }
+  ],
+  "rules": [
+   {
+    "id": "R68",
+    "score": 0.3,
+    "supplementary": false
+   },
+   {
+    "id": "R11",
+    "score": 0.2918,
+    "supplementary": false
+   },
+   {
+    "id": "R67",
+    "score": 0.2514,
+    "supplementary": false
+   }
+  ],
+  "violations": [
+   {
+    "id": "VP_OTO_ND168D6_K5E",
+    "score": 0.3225,
+    "supplementary": false
+   },
+   {
+    "id": "VP_MOTO_ND168D7_K7DD",
+    "score": 0.3124,
+    "supplementary": false
+   },
+   {
+    "id": "VP_OTO_ND168D6_K6B",
+    "score": 0.3011,
+    "supplementary": false
+   },
+   {
+    "id": "VP_MOTO_ND168D7_K2DD",
+    "score": 0.2921,
+    "supplementary": false
+   },
+   {
+    "id": "VP_OTO_ND168D6_K4H",
+    "score": 0.2613,
+    "supplementary": false
+   }
+  ],
+  "violation_fields": [
+   "amended_by",
+   "amendment_note",
+   "behavior",
+   "behavior_before_amendment",
+   "citation",
+   "citation_text",
+   "extra_penalties",
+   "field",
+   "fine",
+   "group",
+   "group_name",
+   "id",
+   "keyphrases",
+   "licence_points",
+   "remedies",
+   "score",
+   "score_detail",
+   "status",
+   "subject",
+   "text_search",
+   "text_search_kd",
+   "validity",
+   "vehicles"
+  ],
+  "concept_fields": [
+   "amended_by",
+   "attributes",
+   "citation",
+   "citation_text",
+   "definition",
+   "id",
+   "keyphrases",
+   "kind",
+   "name",
+   "note",
+   "score",
+   "text_search",
+   "text_search_kd"
+  ]
+ },
+ "cách nấu phở bò": {
+  "problem_class": "P7_TRA_CUU_LIEN_QUAN",
+  "not_found": false,
+  "concepts": [
+   {
+    "id": "KN_TOC_DO_VA_KHOANG_CACH_AN_TOAN",
+    "score": 0.3,
+    "supplementary": false
+   },
+   {
+    "id": "KN_NGUOI_DI_BO",
+    "score": 0.1407,
+    "supplementary": false
+   },
+   {
+    "id": "KN_VACH_KE_DUONG",
+    "score": 0.0953,
+    "supplementary": false
+   }
+  ],
+  "rules": [
+   {
+    "id": "R45",
+    "score": 0.3,
+    "supplementary": false
+   },
+   {
+    "id": "R21",
+    "score": 0.1508,
+    "supplementary": false
+   },
+   {
+    "id": "R74",
+    "score": 0.1239,
+    "supplementary": false
+   }
+  ],
+  "violations": [
+   {
+    "id": "VP_OTO_ND168D6_K3DD",
+    "score": 0.3225,
+    "supplementary": false
+   },
+   {
+    "id": "VP_MOTO_ND168D7_K3I",
+    "score": 0.3017,
+    "supplementary": false
+   },
+   {
+    "id": "VP_OTO_ND168D6_K3B",
+    "score": 0.2952,
+    "supplementary": false
+   },
+   {
+    "id": "VP_MOTO_ND168D7_K1H",
+    "score": 0.2867,
+    "supplementary": false
+   },
+   {
+    "id": "VP_ND168D10_K1A",
+    "score": 0.28,
+    "supplementary": false
+   }
+  ],
+  "violation_fields": [
+   "amended_by",
+   "amendment_note",
+   "behavior",
+   "behavior_before_amendment",
+   "citation",
+   "citation_text",
+   "extra_penalties",
+   "field",
+   "fine",
+   "group",
+   "group_name",
+   "id",
+   "keyphrases",
+   "licence_points",
+   "remedies",
+   "score",
+   "score_detail",
+   "status",
+   "subject",
+   "text_search",
+   "text_search_kd",
+   "validity",
+   "vehicles"
+  ],
+  "concept_fields": [
+   "amended_by",
+   "attributes",
+   "citation",
+   "citation_text",
+   "definition",
+   "id",
+   "keyphrases",
+   "kind",
+   "name",
+   "note",
+   "score",
+   "text_search",
+   "text_search_kd"
+  ]
+ }
+}

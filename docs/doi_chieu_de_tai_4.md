@@ -48,8 +48,8 @@ trỏ tới khái niệm / quy tắc / hành vi.
 | Hành vi vi phạm (F) | 345 | `data/kb/violations.json` |
 | Keyphrase | 1.674 | `data/kb/keyphrases.json` |
 
-- `src/tra_cuu_gtdb/domain/models.py` — ràng buộc kiểu, cấm trường lạ
-- `src/tra_cuu_gtdb/kb/validator.py` — kiểm toàn vẹn liên tệp: định danh trùng, quan hệ treo, thiếu căn cứ
+- `src/traffic_law/domain/models.py` — ràng buộc kiểu, cấm trường lạ
+- `src/traffic_law/kb/validator.py` — kiểm toàn vẹn liên tệp: định danh trùng, quan hệ treo, thiếu căn cứ
 - 100% mục tri thức có căn cứ pháp lý truy nguyên được
 
 ### “Thu thập các câu hỏi, truy vấn trong lĩnh vực + câu trả lời.”
@@ -129,7 +129,7 @@ Xếp theo mức độ ảnh hưởng tới điểm.
 | Mức | Hạng mục | Vì sao |
 |---|---|---|
 | **Nặng** | Báo cáo Word | Không có tệp `.docx` nào trong kho. Đề ấn định ngày báo cáo là Buổi 10, kèm 7 ảnh hướng dẫn định dạng → bản Word có khung chấm riêng. Sinh khung bằng `scripts/tao_bao_cao.py`. |
-| **Nặng** | Giao diện demo | `src/tra_cuu_gtdb/api/` từng rỗng. Buổi báo cáo cần demo chạy được. |
+| **Nặng** | Giao diện demo | `src/traffic_law/api/` từng rỗng. Buổi báo cáo cần demo chạy được. |
 | Vừa | Tài liệu thiết kế | Đề yêu cầu tường minh *“Thiết kế giải pháp để trả lời”*. |
 | Vừa | Giải trình “01 văn bản” | Xem mục a) ở trên. |
 | Nhẹ | Sáu hạn chế đã đo | Đưa vào mục “Hạn chế và hướng phát triển” của báo cáo sẽ thành điểm cộng. |

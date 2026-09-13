@@ -19,25 +19,25 @@ from collections import defaultdict
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(BASE, "src"))
-from tra_cuu_gtdb.reasoning.engine import TraCuuPhapLuat  # noqa: E402
+from traffic_law.reasoning.engine import LawLookup  # noqa: E402
 
 DATASET = os.path.join(BASE, "eval", "qa_dataset.json")
 
 
-def lay_id_tra_ve(kq, loai):
+def lay_id_tra_ve(kq, kind):
     """Lấy danh sách định danh tri thức hệ thống trả về, theo đúng loại cần đánh giá."""
-    if loai == "concept":
-        return [c["id"] for c in kq["khai_niem"]]
-    if loai == "rule":
-        return [r["id"] for r in kq["quy_tac"]]
-    return [v["id"] for v in kq["hanh_vi"]]
+    if kind == "concept":
+        return [c["id"] for c in kq["concepts"]]
+    if kind == "rule":
+        return [r["id"] for r in kq["rules"]]
+    return [v["id"] for v in kq["violations"]]
 
 
 def danh_gia(k=5, chi_tiet=False):
     """Chạy toàn bộ bộ câu hỏi kiểm thử, tính các chỉ số đánh giá và trả về
     (bảng chỉ số tổng hợp, danh sách câu trả lời chưa đúng).
     """
-    ht = TraCuuPhapLuat()
+    ht = LawLookup()
     with open(DATASET, encoding="utf-8") as f:
         ds = json.load(f)
 
@@ -49,21 +49,21 @@ def danh_gia(k=5, chi_tiet=False):
     thoi_gian = []
     theo_lop = defaultdict(lambda: {"n": 0, "lop": 0, "top1": 0, "topk": 0})
     theo_do_kho = defaultdict(lambda: {"n": 0, "topk": 0})
-    loi = []
+    errors = []
 
     for m in ds:
         t0 = time.time()
-        kq = ht.hoi(m["cau_hoi"], top_k=k)
+        kq = ht.ask(m["cau_hoi"], top_k=k)
         thoi_gian.append(time.time() - t0)
 
-        lop_dung = kq["lop_bai_toan"] == m["lop_bai_toan_dung"]
+        lop_dung = kq["problem_class"] == m["lop_bai_toan_dung"]
         dung_lop += lop_dung
 
         vang = list(dict.fromkeys(m["id_tri_thuc_dung"]))
         toan_bo = lay_id_tra_ve(kq, m["loai_tri_thuc"])
         # Cau hoi dang DANH SACH (P4): he thong tra ve tron ven mot TAP hop
         # thoa rang buoc -> danh gia tren toan bo tap, khong cat theo top-k.
-        la_danh_sach = (kq.get("tong_hop") or {}).get("kieu") in ("danh_sach", "can_cu")
+        la_danh_sach = (kq.get("summary") or {}).get("kind") in ("danh_sach", "citation")
         tra_ve = toan_bo if la_danh_sach else toan_bo[:k]
         tap_vang, tap_tra = set(vang), set(tra_ve)
 
@@ -99,9 +99,9 @@ def danh_gia(k=5, chi_tiet=False):
         d["topk"] += hitk
 
         if not hitk or not lop_dung:
-            loi.append({"id": m["id"], "cau_hoi": m["cau_hoi"],
+            errors.append({"id": m["id"], "question": m["cau_hoi"],
                         "lop_dung": m["lop_bai_toan_dung"],
-                        "lop_he_thong": kq["lop_bai_toan"],
+                        "lop_he_thong": kq["problem_class"],
                         "tri_thuc_dung": vang, "tri_thuc_tra_ve": tra_ve,
                         "sai_lop": not lop_dung, "sai_truy_hoi": not hitk})
 
@@ -122,7 +122,7 @@ def danh_gia(k=5, chi_tiet=False):
                               for kk, v in sorted(theo_lop.items())},
         "theo_do_kho": {kk: {"n": v["n"], "top%d" % k: round(v["topk"] / v["n"], 4)}
                         for kk, v in sorted(theo_do_kho.items())},
-        "so_cau_sai": len(loi),
+        "so_cau_sai": len(errors),
     }
 
     print("=" * 74)
@@ -152,18 +152,18 @@ def danh_gia(k=5, chi_tiet=False):
     for kk, v in kq_tong["theo_do_kho"].items():
         print("%-28s %5d %11.1f%%" % (kk, v["n"], 100 * v["top%d" % k]))
 
-    if chi_tiet and loi:
+    if chi_tiet and errors:
         print("\n" + "-" * 74)
-        print("CAC CAU TRA LOI CHUA DUNG (%d)" % len(loi))
+        print("CAC CAU TRA LOI CHUA DUNG (%d)" % len(errors))
         print("-" * 74)
-        for e in loi:
-            print("\n[%s] %s" % (e["id"], e["cau_hoi"]))
+        for e in errors:
+            print("\n[%s] %s" % (e["id"], e["question"]))
             if e["sai_lop"]:
                 print("   lop: dung=%s  he_thong=%s" % (e["lop_dung"], e["lop_he_thong"]))
             if e["sai_truy_hoi"]:
                 print("   vang: %s" % e["tri_thuc_dung"])
                 print("   tra ve: %s" % e["tri_thuc_tra_ve"])
-    return kq_tong, loi
+    return kq_tong, errors
 
 
 if __name__ == "__main__":
@@ -174,9 +174,9 @@ if __name__ == "__main__":
     ap.add_argument("--chi-tiet", action="store_true")
     ap.add_argument("--out", default=os.path.join(BASE, "eval", "ket_qua_danh_gia.json"))
     a = ap.parse_args()
-    tong, loi = danh_gia(a.k, a.chi_tiet)
+    tong, errors = danh_gia(a.k, a.chi_tiet)
     with open(a.out, "w", encoding="utf-8") as f:
-        json.dump({"tong_hop": tong, "cau_sai": loi}, f, ensure_ascii=False, indent=1)
+        json.dump({"summary": tong, "cau_sai": errors}, f, ensure_ascii=False, indent=1)
     print("\n-> Da ghi ket qua: %s" % a.out)
 
     if a.gate_top1 is not None:

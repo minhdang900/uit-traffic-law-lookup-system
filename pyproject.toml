@@ -3,7 +3,7 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "tra-cuu-gtdb"
+name = "traffic-law"
 version = "0.1.0"
 description = "Hệ thống tra cứu kiến thức pháp luật giao thông đường bộ Việt Nam"
 readme = "README.md"
@@ -41,7 +41,7 @@ markers = [
 [tool.mypy]
 python_version = "3.12"
 strict = true
-files = ["src/tra_cuu_gtdb/domain", "src/tra_cuu_gtdb/kb", "src/tra_cuu_gtdb/retrieval", "src/tra_cuu_gtdb/api/trinh_bay.py", "src/tra_cuu_gtdb/bao_cao", "src/tra_cuu_gtdb/kiem_thu"]
+files = ["src/traffic_law/domain", "src/traffic_law/kb", "src/traffic_law/retrieval", "src/traffic_law/api/presentation.py", "src/traffic_law/report", "src/traffic_law/acceptance"]
 
 # scikit-learn khong phat hanh stub kieu; chi bo qua dung hai module nay.
 [[tool.mypy.overrides]]
@@ -59,9 +59,9 @@ select = ["E", "F", "I", "UP", "B"]
 # Sau buoc chuyen sang mo hinh co kieu, 5/6 nhom canh bao bi chan truoc day da
 # tu het: chi con UP031 (dinh dang kieu %). Doi sang f-string la thay doi thuan
 # hinh thuc tren ~44 cho, de rieng mot PR khac cho de soat.
-"src/tra_cuu_gtdb/reasoning/engine.py" = ["UP031"]
-"src/tra_cuu_gtdb/reasoning/numeric.py" = ["UP031"]
+"src/traffic_law/reasoning/engine.py" = ["UP031"]
+"src/traffic_law/reasoning/numeric.py" = ["UP031"]
 "eval/*.py" = ["E501", "UP031", "B007"]
 
 [tool.coverage.run]
-source = ["src/tra_cuu_gtdb"]
+source = ["src/traffic_law"]
