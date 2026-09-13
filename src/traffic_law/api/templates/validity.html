@@ -1,34 +1,73 @@
 {% extends "base.html" %}
+{% import "_icons.html" as ic %}
 {% block title %}Hiệu lực theo thời gian · Tra cứu GTĐB{% endblock %}
 {% block content %}
-<div class="wrap-960">
-  <h2 class="screen">Hiệu lực theo thời gian</h2>
-  <p class="lede">Sửa đổi được lưu như <strong>dữ liệu</strong>, không hợp nhất lúc dựng cơ sở
-    tri thức. Nhờ vậy trả lời được “mức phạt tại ngày X là bao nhiêu”, chứ không chỉ biết bản
-    hiện hành.</p>
+<div class="wrap wrap--960">
+  <h2 class="screen-title">Hiệu lực theo thời gian</h2>
+  <p class="lede only-desktop">Sửa đổi được lưu như dữ liệu, không hợp nhất lúc dựng cơ sở tri thức. Nhờ đó tra được mức phạt tại một thời điểm bất kỳ, không chỉ bản hiện hành.</p>
 
-  <div class="chips" style="margin-top:var(--space-4)">
-    {% for nhan, ngay in [("01/01/2025", "Nghị định 168/2024 có hiệu lực"),
-                          ("01/07/2026", "Luật 118/2025 có hiệu lực"),
-                          ("15/08/2026", "Nghị định 238/2026 có hiệu lực")] %}
-    <span class="chip{% if loop.last %} on{% endif %}">{{ nhan }}</span>
-    {% endfor %}
+  <div class="moment" role="group" aria-label="Xem hệ thống tại thời điểm">
+    <span class="moment__label only-desktop">Xem hệ thống tại thời điểm</span>
+    {%- for o in moc_options %}
+    <a class="moment__opt{% if o.on %} is-on{% endif %}" href="{{ o.href }}"{% if o.on %} aria-current="date"{% endif %}>{{ o.text }}</a>
+    {%- endfor %}
   </div>
 
-  <div class="scroll-x" style="margin-top:var(--space-6)">
-    <table>
-      <thead><tr><th>Điều khoản</th><th>Hành vi</th><th>Phạt tiền</th><th>Sửa bởi</th></tr></thead>
+  {% if compare %}
+  <article class="compare" id="so-sanh">
+    <div class="pills">
+      <span class="pill pill--accent">{{ compare.citation }}</span>
+      <span class="pill pill--{{ compare.status[1] }}">{{ "Đã sửa đổi" if compare.status[0] == "Sửa đổi" else compare.status[0] }}</span>
+    </div>
+    <div class="compare__cols">
+      <div class="version version--before{{ ' is-active' if not compare.after_active }}">
+        <div class="version__label">{{ compare.before_label }}{% if not compare.after_active %} · đang áp dụng{% endif %}</div>
+        {% if compare.diff %}
+        <p class="version__text">{{ compare.diff.prefix }}{% if compare.diff.before %}<mark class="diff diff--before">{{ compare.diff.before }}</mark>{% endif %}{{ compare.diff.suffix }}</p>
+        {% else %}
+        <p class="version__text version__text--empty">Chưa có quy định này — điều khoản được bổ sung bởi {{ amending_doc }}.</p>
+        {% endif %}
+      </div>
+      <div class="compare__arrow only-mobile" aria-hidden="true">{{ ic.icon("arrow-down") }}</div>
+      <div class="version version--after{{ ' is-active' if compare.after_active }}">
+        <div class="version__label">{{ compare.after_label }} · {{ "đang áp dụng" if compare.after_active else "chưa có hiệu lực" }}</div>
+        {% if compare.diff %}
+        <p class="version__text">{{ compare.diff.prefix }}{% if compare.diff.after %}<mark class="diff diff--after">{{ compare.diff.after }}</mark>{% endif %}{{ compare.diff.suffix }}</p>
+        {% else %}
+        <p class="version__text"><mark class="diff diff--after">{{ compare.text }}</mark></p>
+        {% endif %}
+      </div>
+    </div>
+    <dl class="compare__foot">
+      <div><dt>Phạt tiền</dt><dd>{{ compare.fine }}</dd></div>
+      <div><dt>Trừ điểm<span class="only-desktop"> GPLX</span></dt><dd>{{ compare.points }}</dd></div>
+      <div><dt>Sửa bởi</dt><dd>{{ compare.amended_by }}</dd></div>
+    </dl>
+  </article>
+  {% endif %}
+
+  <h3 class="section-title section-title--gap">{{ amending_doc }} sửa đổi, bổ sung {{ rows|length }} hành vi vi phạm trong cơ sở tri thức</h3>
+  <div class="table-wrap only-desktop">
+    <table class="table">
+      <thead><tr><th>Điều khoản NĐ 168</th><th>Loại</th><th>Nội dung</th><th>Phạt tiền</th></tr></thead>
       <tbody>
-      {% for v in sua %}<tr>
-        <td style="white-space:nowrap">{{ v.citation_text }}</td>
-        <td>{{ v.behavior[:70] }}{% if v.behavior|length > 70 %}…{% endif %}</td>
-        <td style="white-space:nowrap">{{ fine_text(v.fine.model_dump()) }}</td>
-        <td>{{ v.amended_by }}</td></tr>{% endfor %}
+      {%- for r in rows %}
+        <tr class="{{ 'is-selected' if r.selected }}{{ ' is-future' if not r.in_force }}">
+          <td class="nowrap"><a href="{{ r.href }}"{% if r.selected %} aria-current="true"{% endif %}>{{ r.short_citation }}</a></td>
+          <td><span class="pill pill--{{ r.kind[1] }}">{{ r.kind[0] }}</span></td>
+          <td class="muted"><span class="clamp">{{ r.behavior }}</span>{% if not r.in_force %}<span class="future-note">Chưa có hiệu lực tại {{ moc_text }}</span>{% endif %}</td>
+          <td class="nowrap">{{ r.fine_text|giu_don_vi }}</td>
+        </tr>
+      {%- endfor %}
       </tbody>
     </table>
   </div>
-  {% if not sua %}<p class="muted" style="margin-top:var(--space-4)">Chưa có điều khoản nào
-    được đánh dấu sửa đổi trong cơ sở tri thức.</p>{% endif %}
-  <p class="disclaim">{{ MIEN_TRU }}</p>
+  <ul class="mlist only-mobile">
+    {%- for r in rows %}
+    <li><a href="{{ r.href }}"{% if r.selected %} aria-current="true"{% endif %}><span class="mlist__main">{{ r.short_citation }} <span class="pill pill--{{ r.kind[1] }}">{{ r.kind[0] }}</span></span><span class="mlist__v">{{ r.fine_text|giu_don_vi }}</span>{{ ic.icon("chevron-right", "mlist__chev") }}</a></li>
+    {%- endfor %}
+  </ul>
+  {% for n in notes %}<p class="footnote">{{ n }}</p>{% endfor %}
+  <p class="disclaimer disclaimer--gap">{{ MIEN_TRU }}</p>
 </div>
 {% endblock %}

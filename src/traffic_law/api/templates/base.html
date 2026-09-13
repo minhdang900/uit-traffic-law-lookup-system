@@ -2,7 +2,7 @@
 <html lang="vi">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{% block title %}Tra cứu pháp luật giao thông đường bộ{% endblock %}</title>
 {#- Baloo 2 + Be Vietnam Pro: cặp thay cho Caprasimo/Figtree của hệ Organic,
     vì hai phông gốc không có glyph tiếng Việt. -#}
@@ -15,40 +15,73 @@
 <body>
 <div class="shell">
   <aside class="sidebar">
-    <div class="brand"><span class="dot">{{ ic.icon("search") }}</span><b>Tra cứu GTĐB</b></div>
+    <a class="brand" href="{{ href('/tra-cuu') }}">
+      <span class="brand__dot">{{ ic.icon("search") }}</span>
+      <span class="brand__name">Tra cứu GTĐB</span>
+    </a>
 
-    <nav class="nav">
-      {% for href, ten, bieu_tuong in NAV %}
-      <a href="{{ href }}"{% if duong_dan == href %} aria-current="page"{% endif %}>
-        {{ ic.icon(bieu_tuong) }}{{ ten }}</a>
-      {% endfor %}
+    <nav class="nav" aria-label="Điều hướng chính">
+      {%- for item in NAV %}
+      <a href="{{ href(item.href) }}"{% if section == item.href %} aria-current="page"{% endif %}>{{ ic.icon(item.icon) }}<span class="nav__label">{{ item.label }}</span><span class="nav__short" aria-hidden="true">{{ item.short }}</span></a>
+      {%- endfor %}
     </nav>
 
-    <div>
-      <div class="label">Bộ lọc phương tiện</div>
-      <div class="chips">
-        {% for pt in ["Xe máy", "Ô tô", "Xe đạp", "Người đi bộ"] %}
-        <button type="button" class="chip" aria-pressed="false">{{ pt }}</button>
-        {% endfor %}
+    <div class="filters">
+      <div>
+        <div class="eyebrow">Phương tiện</div>
+        <div class="chips">
+          {%- for chip in chips %}
+          <a class="chip{% if chip.on %} is-on{% endif %}" href="{{ chip.href }}" {% if chip.on %} aria-current="true"{% endif %}>{{ chip.label }}<span class="sr-only">{{ " (đang lọc, bấm để bỏ)" if chip.on else " (bấm để lọc)" }}</span></a>
+          {%- endfor %}
+        </div>
+      </div>
+      <div>
+        <div class="eyebrow">Thời điểm tra cứu</div>
+        <form class="date-pill" method="get" action="{{ request.url.path }}">
+          {%- for k, val in hidden_params %}<input type="hidden" name="{{ k }}" value="{{ val }}">{% endfor %}
+          {{ ic.icon("calendar") }}<span>{{ moc_text }}</span>
+          <input class="date-pill__input" type="date" name="ngay" value="{{ moc.isoformat() }}"
+                 aria-label="Thời điểm tra cứu" onclick="try{this.showPicker()}catch(e){}"
+                 onchange="if (/^(19|20)\d\d-/.test(this.value)) this.form.submit()">
+          <noscript><button type="submit">Áp dụng</button></noscript>
+        </form>
+        <div class="date-note">{{ "Đã áp dụng" if amendment_applied else "Chưa áp dụng" }} {{ amending_doc }}</div>
       </div>
     </div>
 
-    <div>
-      <div class="label">Thời điểm tra cứu</div>
-      <div style="margin-top:var(--space-2)">
-        <span class="pill-date">{{ ic.icon("calendar") }}{{ hom_nay.strftime("%d/%m/%Y") }}</span>
-      </div>
-      <div class="label" style="margin-top:6px;text-transform:none;letter-spacing:0">
-        Đã áp dụng Nghị định 238/2026/NĐ-CP</div>
+    <div class="sidebar__foot">
+      <p class="kb-stats">{{ stats.concepts }} khái niệm · {{ stats.relations }} quan hệ · {{ stats.rules }} quy tắc<br>{{ stats.violations }} hành vi vi phạm · {{ stats.keyphrase }} cụm từ khoá</p>
+      {%- if team %}
+      <section class="team" aria-label="Nhóm thực hiện">
+        <div class="eyebrow">Nhóm {{ team.nhom }} · {{ team.lop }}</div>
+        <p class="team__meta">{{ team.mon_hoc }}<br>GVHD: {{ team.giang_vien_huong_dan }}</p>
+        <ul class="team__list">
+          {%- for tv in team.thanh_vien %}
+          <li><a href="mailto:{{ tv.email }}" title="{{ tv.email }}">{{ tv.ho_ten }}</a><span>{{ tv.mssv }}</span></li>
+          {%- endfor %}
+        </ul>
+      </section>
+      {%- endif %}
     </div>
-
-    <footer>
-      73 khái niệm · 482 quan hệ · 109 quy tắc<br>
-      345 hành vi vi phạm · 1.674 cụm từ khoá
-    </footer>
   </aside>
 
-  <main class="content">{% block content %}{% endblock %}</main>
+  <div class="page">
+    <main class="main">
+      {% if custom_date %}
+      <p class="m-date only-mobile">{{ ic.icon("calendar") }}<span>Đang xem tại <strong>{{ moc_text }}</strong> · {{ "đã" if amendment_applied else "chưa" }} áp dụng {{ amending_doc }}</span><a href="{{ request.url.path }}">Về hôm nay</a></p>
+      {% endif %}
+      {% block content %}{% endblock %}
+    </main>
+
+    <div class="dock">
+      {% block dock %}{% endblock %}
+      <nav class="tabbar" aria-label="Điều hướng">
+        {%- for item in TABS %}
+        <a href="{{ href(item.href) }}"{% if section == item.href %} aria-current="page"{% endif %}>{{ ic.icon(item.icon) }}<span>{{ item.short }}</span></a>
+        {%- endfor %}
+      </nav>
+    </div>
+  </div>
 </div>
 </body>
 </html>

@@ -32,6 +32,8 @@ COPY --chown=tracuu:tracuu src/ ./src/
 COPY --chown=tracuu:tracuu data/ ./data/
 COPY --chown=tracuu:tracuu eval/ ./eval/
 COPY --chown=tracuu:tracuu scripts/ ./scripts/
+# Danh sách thành viên hiện ở chân thanh bên giao diện web.
+COPY --chown=tracuu:tracuu docs/thanh_vien.json ./docs/thanh_vien.json
 COPY --chown=tracuu:tracuu pyproject.toml README.md ./
 USER tracuu
 

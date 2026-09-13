@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% import "_icons.html" as ic %}
+{% block title %}{{ heading }} · Tra cứu GTĐB{% endblock %}
+{% block content %}
+<section class="empty">
+  <span class="empty__ring">{{ ic.icon("search-alert") }}</span>
+  <h2 class="empty__title">{{ heading }}</h2>
+  <p class="empty__text">{{ message }}</p>
+  <div class="suggest__chips">
+    <a class="qchip" href="{{ href('/tra-cuu') }}">Về trang tra cứu</a>
+    <a class="qchip" href="{{ href('/chu-de') }}">Duyệt theo chủ đề</a>
+  </div>
+</section>
+{% endblock %}

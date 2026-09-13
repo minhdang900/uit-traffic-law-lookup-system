@@ -1,39 +1,20 @@
 {% import "_icons.html" as ic %}
-{% macro searchbar(q="") %}
-<form class="search" method="get" action="/">
-  {{ ic.icon("search") }}
-  <input name="q" value="{{ q }}" placeholder="Hỏi bằng tiếng Việt tự nhiên — ví dụ: vượt đèn đỏ xe máy phạt bao nhiêu?"
+{#- Ô tìm kiếm: bản desktop (nút chữ) và bản ghim đáy mobile (nút tròn 38px). -#}
+{% macro searchbar(q, keep_params, dock=False) %}
+<form class="search{{ ' search--dock' if dock }}" method="get" action="/tra-cuu" role="search">
+  {%- for k, v in keep_params %}<input type="hidden" name="{{ k }}" value="{{ v }}">{% endfor %}
+  {% if not dock %}{{ ic.icon("search", "search__icon") }}{% endif %}
+  <input class="search__input" name="q" value="{{ q }}" autocomplete="off" enterkeyhint="search"
+         placeholder="{{ 'Hỏi về luật giao thông…' if dock else 'Hỏi bằng tiếng Việt tự nhiên — ví dụ: vượt đèn đỏ xe máy phạt bao nhiêu?' }}"
          aria-label="Câu hỏi tra cứu">
+  {% if dock %}
+  <button class="search__round" type="submit" aria-label="Tra cứu">{{ ic.icon("search") }}</button>
+  {% else %}
   <button class="btn" type="submit">Tra cứu</button>
+  {% endif %}
 </form>
 {% endmacro %}
 
-{% macro classify(kq) %}
-<div class="classify">
-  <span class="tag">{{ kq.problem_class[:2] }} · {{ kq.problem_class_name }}</span>
-  <span class="muted">{{ (kq.violations|length) + (kq.rules|length) + (kq.concepts|length) }} mẩu tri thức</span>
-</div>
-{% endmacro %}
-
-{% macro side_panels(kq) %}
-<div class="col">
-  <section class="panel">
-    <div class="label">Hệ thống hiểu câu hỏi</div>
-    <dl>
-      <div><dt>Cụm từ khoá</dt><dd>{{ kq.analysis.keyphrase|map(attribute="phrase")|join(", ") or "—" }}</dd></div>
-      <div><dt>Phương tiện nhận diện</dt><dd>{{ kq.analysis.vehicles|join(", ")|replace("_"," ") or "—" }}</dd></div>
-      <div><dt>Nhóm</dt><dd>{{ kq.analysis.group|join(", ")|replace("_"," ") or "—" }}</dd></div>
-      <div><dt>Chủ thể</dt><dd>{{ (kq.analysis.subject or "—")|replace("_"," ") }}</dd></div>
-    </dl>
-  </section>
-  {% if kq.related %}
-  <section class="panel">
-    <div class="label">Kiến thức liên quan</div>
-    <ul class="linklist">
-      {% for g in kq.related %}<li>{{ g.name }}<span>{{ g.so_quy_dinh }}</span></li>{% endfor %}
-    </ul>
-  </section>
-  {% endif %}
-  <p class="disclaim">{{ MIEN_TRU }}</p>
-</div>
+{% macro mobile_brand() %}
+<div class="m-brand only-mobile"><span class="brand__dot">{{ ic.icon("search") }}</span><span class="brand__name">Tra cứu GTĐB</span></div>
 {% endmacro %}

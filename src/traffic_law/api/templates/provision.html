@@ -1,69 +1,102 @@
 {% extends "base.html" %}
-{% block title %}{{ v.behavior[:48] }} · Tra cứu GTĐB{% endblock %}
+{% import "_icons.html" as ic %}
+{% block title %}{{ v.behavior|truncate(56) }} · Tra cứu GTĐB{% endblock %}
 {% block content %}
-<div class="wrap-860">
-  <a href="/" style="font-size:13px;color:var(--color-accent-700);text-decoration:none">← Quay lại kết quả</a>
-  <div class="classify" style="border:0;margin-bottom:var(--space-3)">
-    <span class="tag">{{ v.citation.documents }}</span>
-    <span class="tag grey">Điều {{ v.citation.article }}{% if v.citation.clause %} · khoản {{ v.citation.clause }}{% endif %}{% if v.citation.point %} · điểm {{ v.citation.point }}{% endif %}</span>
-    {% if v.amended_by %}<span class="tag grey">Đã sửa đổi</span>
-    {% else %}<span class="tag green">Hiện hành</span>{% endif %}
-  </div>
-  <h2 class="screen">{{ v.behavior }}</h2>
-
-  <div class="metrics" style="margin-top:var(--space-4)">
-    <div class="metric dark"><span class="label">Phạt tiền</span>
-      <span class="num" style="font-size:26px">{{ fine_text(v.fine.model_dump()) }}</span></div>
-    <div class="metric green"><span class="label">Trừ điểm GPLX</span>
-      <span class="num" style="font-size:26px">{{ v.licence_points or 0 }} điểm</span></div>
-    <div class="metric" style="background:var(--color-surface)"><span class="label">Hình phạt bổ sung</span>
-      <span style="font-size:14px">{{ v.extra_penalties|join("; ") or "Không có" }}</span></div>
+<article class="detail">
+  <a class="back only-desktop" href="{{ href('/tra-cuu', q=q) }}">← Quay lại kết quả</a>
+  <div class="m-back only-mobile">
+    <a class="m-back__btn" href="{{ href('/tra-cuu', q=q) }}" aria-label="Quay lại kết quả">{{ ic.icon("chevron-left") }}</a>
+    <span>{{ position }}</span>
   </div>
 
-  <div class="results" style="margin-top:var(--space-6);grid-template-columns:repeat(auto-fit,minmax(260px,1fr))">
-    <section class="panel">
-      <div class="label">Phạm vi áp dụng</div>
-      <dl>
-        <div><dt>Phương tiện</dt><dd>{{ v.vehicles|join(", ")|replace("_"," ") or "—" }}</dd></div>
-        <div><dt>Chủ thể</dt><dd>{{ v.subject|replace("_"," ") or "—" }}</dd></div>
-        <div><dt>Lĩnh vực</dt><dd>{{ kb.field.get(v.field, {}).get("ten", v.field) }}</dd></div>
-        <div><dt>Nhóm</dt><dd>{{ v.group_name or v.group|replace("_"," ") }}</dd></div>
-        <div><dt>Mã tri thức</dt><dd style="font-family:ui-monospace,monospace">{{ v.id }}</dd></div>
+  <div class="pills">
+    <span class="pill pill--accent">{{ v.citation.documents }}</span>
+    <span class="pill pill--light only-desktop">{{ position }}</span>
+    <span class="pill pill--{{ status[1] }}">{{ "Đã sửa đổi" if status[0] == "Sửa đổi" else status[0] }}</span>
+  </div>
+
+  <h2 class="screen-title detail__title">{{ title }}</h2>
+  {% if viewing_past %}
+  <p class="notice" role="note">{{ ic.icon("alert-circle") }}<span>Đang xem tại {{ moc_text }}. {% if v.behavior_before_amendment %}Câu chữ trên là bản trước sửa đổi; từ {{ valid_from }} điều khoản áp dụng câu chữ mới.{% else %}Điều khoản này chỉ có hiệu lực từ {{ valid_from }}.{% endif %}</span></p>
+  {% endif %}
+
+  <div class="figures">
+    <div class="figure figure--fine">
+      <div class="stat__label">Phạt tiền</div>
+      <div class="figure__num">{{ row.fine_text|giu_don_vi }}</div>
+    </div>
+    <div class="figure figure--points">
+      <div class="stat__label">Trừ điểm<span class="only-desktop"> GPLX</span></div>
+      <div class="figure__num">{{ row.points if row.points != "—" else "Không trừ" }}</div>
+    </div>
+    <div class="figure figure--extra">
+      <div class="stat__label"><span class="only-desktop">Hình phạt bổ sung</span><span class="only-mobile">Bổ sung</span></div>
+      <div class="figure__num{{ ' figure__num--text' if v.extra_penalties }}">{{ extra }}</div>
+    </div>
+  </div>
+  {% if v.fine.note %}<p class="footnote">{{ v.fine.note }}</p>{% endif %}
+
+  <div class="detail__cols">
+    <section>
+      <h3 class="section-title">Phạm vi áp dụng</h3>
+      <dl class="scope">
+        <div><dt>Phương tiện</dt><dd>{{ scope_vehicles }}</dd></div>
+        <div><dt>Chủ thể</dt><dd>{{ subject }}</dd></div>
+        <div class="only-desktop"><dt>Lĩnh vực</dt><dd>{{ field_name }}</dd></div>
+        <div><dt>Nhóm</dt><dd>{{ group_name }}</dd></div>
+        <div><dt>Mã tri thức</dt><dd class="mono">{{ v.id }}</dd></div>
       </dl>
     </section>
-    <section class="panel">
-      <div class="label">Hiệu lực</div>
-      <div class="timeline">
-        <div class="tl"><div class="mark"><i class="d"></i><i class="line"></i></div>
-          <div><b>{{ v.validity.start.strftime("%d/%m/%Y") if v.validity else "—" }}</b>
-            <div class="muted">Bắt đầu có hiệu lực</div></div></div>
-        <div class="tl"><div class="mark"><i class="d open"></i></div>
-          <div><b>{{ v.validity.end.strftime("%d/%m/%Y") if v.validity and v.validity.end else "Đang hiệu lực" }}</b>
-            <div class="muted">{{ v.amended_by or "Chưa có văn bản sửa đổi" }}</div></div></div>
-      </div>
+
+    <section>
+      <h3 class="section-title">Hiệu lực</h3>
+      <ol class="timeline">
+        {%- for m in timeline %}
+        <li class="timeline__item{{ ' is-reached' if m.reached }}">
+          <span class="timeline__dot" aria-hidden="true"></span><span class="sr-only">{{ "Đã tới mốc: " if m.reached else "Chưa tới mốc: " }}</span>
+          <div class="timeline__date">{{ m.date_text }}</div>
+          <div class="timeline__caption">{{ m.caption }}</div>
+        </li>
+        {%- endfor %}
+      </ol>
+      {% if v.amended_by %}
+      <a class="inline-link" href="{{ href('/hieu-luc', dk=v.id) }}#so-sanh">So sánh câu chữ trước và sau sửa đổi →</a>
+      {% endif %}
     </section>
   </div>
 
-  {% if v.keyphrases %}
-  <div style="margin-top:var(--space-6)">
-    <div class="label">Cụm từ khoá đã lập chỉ mục</div>
-    <div class="chips">{% for k in v.keyphrases[:14] %}<span class="chip">{{ k }}</span>{% endfor %}</div>
-  </div>
+  {% if v.remedies %}
+  <h3 class="section-title section-title--gap">Biện pháp khắc phục hậu quả</h3>
+  <ul class="plain-list">{% for x in v.remedies %}<li>{{ x }}</li>{% endfor %}</ul>
   {% endif %}
 
-  {% if cung_hanh_vi %}
-  <div style="margin-top:var(--space-6)">
-    <div class="label">Cùng hành vi, phương tiện khác</div>
-    <div class="scroll-x"><table>
-      <thead><tr><th>Phương tiện</th><th>Phạt tiền</th><th class="n">Trừ điểm</th><th>Căn cứ</th></tr></thead>
-      <tbody>{% for x in cung_hanh_vi %}<tr>
-        <td>{{ x.vehicles|join(", ")|replace("_"," ") }}</td>
-        <td>{{ fine_text(x.fine.model_dump()) }}</td>
-        <td class="n">{{ x.licence_points or "—" }}</td>
-        <td>{{ x.citation_text }}</td></tr>{% endfor %}</tbody>
-    </table></div>
-  </div>
+  {% if v.keyphrases %}
+  <h3 class="section-title section-title--gap only-desktop">Cụm từ khoá đã lập chỉ mục</h3>
+  <div class="tags only-desktop">{% for k in v.keyphrases %}<span class="tag">{{ k }}</span>{% endfor %}</div>
   {% endif %}
-  <p class="disclaim">{{ MIEN_TRU }}</p>
-</div>
+
+  {% if same_behaviour %}
+  <h3 class="section-title section-title--gap">Cùng hành vi, phương tiện khác</h3>
+  <div class="table-wrap only-desktop">
+    <table class="table">
+      <thead><tr><th>Phương tiện</th><th>Phạt tiền</th><th>Trừ điểm</th><th>Căn cứ</th></tr></thead>
+      <tbody>
+      {%- for r in same_behaviour %}
+        <tr{% if r.current %} class="is-current"{% endif %}>
+          <td>{% if r.current %}{{ r.vehicle_label }} <span class="muted">(đang xem)</span>{% else %}<a href="{{ href('/dieu-khoan/' ~ r.id) }}">{{ r.vehicle_label }}</a>{% endif %}</td>
+          <td class="nowrap">{{ r.fine_text|giu_don_vi }}</td><td>{{ r.points }}</td><td class="muted">{{ r.short_citation }}</td>
+        </tr>
+      {%- endfor %}
+      </tbody>
+    </table>
+  </div>
+  <ul class="mlist only-mobile">
+    {%- for r in same_behaviour if not r.current %}
+    <li><a href="{{ href('/dieu-khoan/' ~ r.id) }}"><span class="mlist__main">{{ r.vehicle_label }}</span><span class="mlist__v">{{ r.fine_text|giu_don_vi }}</span>{{ ic.icon("chevron-right", "mlist__chev") }}</a></li>
+    {%- endfor %}
+  </ul>
+  {% endif %}
+
+  <p class="disclaimer disclaimer--gap">{{ MIEN_TRU }}</p>
+</article>
 {% endblock %}

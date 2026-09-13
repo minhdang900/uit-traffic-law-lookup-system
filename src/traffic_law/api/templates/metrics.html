@@ -1,53 +1,49 @@
 {% extends "base.html" %}
 {% block title %}Chỉ số đánh giá · Tra cứu GTĐB{% endblock %}
-{% macro pc(x) %}{{ ("%.2f"|format(x * 100))|replace(".", ",") }}%{% endmacro %}
 {% block content %}
-<div class="wrap-1000">
-  <h2 class="screen">Chỉ số đánh giá</h2>
-  <p class="lede">Đo trên {{ dg.so_cau_hoi }} câu hỏi chuẩn có đáp án và căn cứ pháp lý,
-    k = {{ dg.top_k }}. Nguồn: <code>eval/ket_qua_danh_gia.json</code>.</p>
+<div class="wrap wrap--1000">
+  <h2 class="screen-title">Chỉ số đánh giá</h2>
+  <p class="lede only-desktop">Đo trên bộ {{ dg.so_cau_hoi }} câu hỏi tự xây dựng có đáp án chuẩn, top-k = {{ dg.top_k }}. Toàn bộ {{ dg.so_cau_hoi }}/{{ dg.so_cau_hoi }} câu đều chấm được: mọi đáp án chuẩn đều giải được về tri thức có thật trong cơ sở tri thức.</p>
+  <p class="lede only-mobile">{{ dg.so_cau_hoi }} câu hỏi tự xây dựng có đáp án chuẩn, top-k = {{ dg.top_k }}.</p>
 
-  <div class="metrics" style="margin-top:var(--space-4)">
-    <div class="metric dark"><span class="label">Phân lớp bài toán</span>
-      <span class="num">{{ pc(dg.do_chinh_xac_phan_lop) }}</span></div>
-    <div class="metric"><span class="label">Top-1</span><span class="num">{{ pc(dg.top1) }}</span></div>
-    <div class="metric"><span class="label">Top-5</span><span class="num">{{ pc(dg.top5) }}</span></div>
-    <div class="metric green"><span class="label">MRR</span>
-      <span class="num">{{ ("%.4f"|format(dg.mrr))|replace(".", ",") }}</span></div>
-    <div class="metric"><span class="label">Thời gian trả lời</span>
-      <span class="num">{{ ("%.1f"|format(dg.thoi_gian_tb_ms))|replace(".", ",") }} ms</span></div>
-  </div>
-
-  <div style="margin-top:var(--space-6)">
-    <div class="label">Theo từng lớp bài toán</div>
-    <div class="scroll-x"><table>
-      <thead><tr><th>Lớp bài toán</th><th class="n">Số câu</th><th class="n">Phân lớp</th>
-        <th class="n">Top-1</th><th class="n">Top-5</th></tr></thead>
-      <tbody>{% for lop, g in dg.theo_lop_bai_toan.items() %}<tr>
-        <td>{{ lop|replace("_", " ") }}</td><td class="n">{{ g.n }}</td>
-        <td class="n">{{ pc(g.acc_phan_lop) }}</td><td class="n">{{ pc(g.top1) }}</td>
-        <td class="n">{{ pc(g.top5) }}</td></tr>{% endfor %}</tbody>
-    </table></div>
-  </div>
-
-  {% if ab %}
-  <div style="margin-top:var(--space-6)">
-    <div class="label">Thí nghiệm loại bỏ thành phần — Top-1</div>
-    <div class="bars" style="margin-top:var(--space-3)">
-      {% for ten, g in ab.toan_bo.items() %}
-      <div class="bar">
-        <span class="k">{{ ten }}</span>
-        <span class="track"><i class="fill" style="width:{{ g.top1|round(1) }}%"></i></span>
-        <span class="v">{{ ("%.1f"|format(g.top1))|replace(".", ",") }}%</span>
-      </div>
-      {% endfor %}
+  <div class="metrics">
+    {%- for label, short, value, tone in boxes %}
+    <div class="metric{{ ' metric--' ~ tone if tone }}">
+      <div class="metric__label"><span class="only-desktop">{{ label }}</span><span class="only-mobile">{{ short }}</span></div>
+      <div class="metric__num">{{ value }}</div>
     </div>
+    {%- endfor %}
+  </div>
+
+  <h3 class="section-title only-desktop">Theo bảy lớp bài toán</h3>
+  <div class="table-wrap only-desktop">
+    <table class="table">
+      <thead><tr><th>Lớp bài toán</th><th class="num">Số câu</th><th class="num">Phân lớp</th><th class="num">Top-1</th><th class="num">Top-5</th></tr></thead>
+      <tbody>
+      {%- for r in classes %}
+        <tr><td>{{ r.label }}</td><td class="num muted">{{ r.n }}</td><td class="num">{{ r.pl }}</td><td class="num">{{ r.t1 }}</td><td class="num">{{ r.t5 }}</td></tr>
+      {%- endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="eyebrow only-mobile m-gap">Top-5 theo lớp bài toán</div>
+  <div class="bars bars--sm only-mobile">
+    {%- for r in classes %}
+    <div class="bar"><span class="bar__label">{{ r.short }}</span><span class="bar__track"><span class="bar__fill" style="width:{{ r.t5_width }}%"></span></span><span class="bar__value">{{ r.t5_short }}</span></div>
+    {%- endfor %}
+  </div>
+
+  {% if ablation %}
+  <h3 class="section-title section-title--gap">Thí nghiệm loại bỏ thành phần</h3>
+  <p class="lede lede--sm">Top-1 trên toàn bộ {{ dg.so_cau_hoi }} câu.{% if numeric %} {% if numeric_gain %}Thêm suy diễn số học (bước cuối) nâng Top-1 thêm {{ numeric_gain }} điểm phần trăm; {% endif %}riêng trên {{ numeric.n }} câu có giá trị số, Top-1 tăng từ {{ numeric.before }}% lên {{ numeric.after }}%.{% endif %}</p>
+  <div class="bars">
+    {%- for a in ablation %}
+    <div class="bar"><span class="bar__label">{{ a.label }}</span><span class="bar__track"><span class="bar__fill" style="width:{{ a.width }}%"></span></span><span class="bar__value">{{ a.value }}</span></div>
+    {%- endfor %}
   </div>
   {% endif %}
 
-  <p class="muted" style="margin-top:var(--space-6)">Precision macro
-    {{ ("%.4f"|format(dg.precision_macro))|replace(".", ",") }} thấp là <strong>đặc tính của
-    truy hồi top-k</strong>, không phải khiếm khuyết: bộ đánh giá trả 5 kết quả trong khi đáp án
-    chuẩn thường chỉ có 1 mẩu, nên trần precision mỗi câu là 0,20.</p>
+  <p class="footnote footnote--body">Precision (macro) {{ precision }} phản ánh đặc tính của truy hồi top-k: hệ trả về {{ dg.top_k }} kết quả trong khi đáp án chuẩn thường chỉ có 1 mẩu tri thức, nên với câu chỉ có 1 đáp án chuẩn, precision tối đa là {{ precision_cap }}. Con số macro cao hơn mức này vì câu tra cứu ngược (P4) và câu nhiều đáp án được chấm trên cả tập kết quả.</p>
 </div>
 {% endblock %}

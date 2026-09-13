@@ -20,12 +20,13 @@ Script tự nạp ảnh, khởi động, đợi sẵn sàng rồi mở trình du
 Cổng 8000 bận thì đổi: `PORT=8080 ./chay_demo.sh`
 Dừng lại: `./chay_demo.sh dung`
 
-### Bảy màn hình
+### Các màn hình
+
+Thu hẹp cửa sổ dưới 720px để xem bản mobile (thanh tab đáy) — cùng các đường dẫn.
 
 | Đường dẫn | Nội dung |
 |---|---|
-| `/` | Tra cứu — gõ câu hỏi tiếng Việt tự nhiên |
-| `/khong-tim-thay` | Trạng thái không tìm thấy |
+| `/tra-cuu` | Tra cứu — gõ câu hỏi tiếng Việt tự nhiên (gồm trạng thái không tìm thấy) |
 | `/dieu-khoan/{id}` | Chi tiết điều khoản |
 | `/hieu-luc` | Hiệu lực theo thời gian |
 | `/chu-de` | Duyệt chủ đề |
