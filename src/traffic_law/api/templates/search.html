@@ -1,28 +1,89 @@
-{% extends "base.html" %}{% import "_card.html" as c %}{% import "_search.html" as s %}
+{% extends "base.html" %}
+{% import "_icons.html" as ic %}{% import "_cards.html" as c with context %}{% import "_search.html" as s %}
+{% block title %}{% if q %}{{ q }} · {% endif %}Tra cứu GTĐB{% endblock %}
+
 {% block content %}
-{{ s.searchbar(q) }}
+{{ s.mobile_brand() }}
+<div class="only-desktop">{{ s.searchbar(q, keep_params) }}</div>
+
 {% if not kq %}
-  <div class="wrap-640" style="margin-top:var(--space-8)">
-    <h2 class="screen">Tra cứu quy định giao thông đường bộ</h2>
-    <p class="lede">Hỏi bằng tiếng Việt tự nhiên. Hệ thống phân câu hỏi vào một trong bảy lớp
-      bài toán, truy hồi tri thức phù hợp và trả lời <strong>kèm căn cứ pháp lý</strong>.</p>
-    <div class="card" style="margin-top:var(--space-4)">
-      <div class="label">Thử hỏi theo cách này</div>
-      <div class="chips">
-        {% for v in VI_DU %}<a class="chip" href="/?q={{ v|urlencode }}">{{ v }}</a>{% endfor %}
-      </div>
+<section class="intro">
+  <h2 class="screen-title">Tra cứu quy định giao thông đường bộ</h2>
+  <p class="lede">Hỏi bằng tiếng Việt tự nhiên. Hệ thống phân câu hỏi vào một trong bảy lớp bài toán, truy hồi tri thức phù hợp và trả lời <strong>kèm căn cứ pháp lý</strong>.</p>
+  <div class="suggest">
+    <div class="eyebrow">Thử hỏi theo cách này</div>
+    <div class="suggest__chips">
+      {%- for v in VI_DU %}<a class="qchip" href="{{ href('/tra-cuu', q=v) }}">{{ v }}</a>{% endfor %}
+      <a class="qchip" href="{{ href('/chu-de') }}">Duyệt theo chủ đề · {{ stats.violations }} hành vi</a>
     </div>
-    <p class="disclaim">{{ MIEN_TRU }}</p>
   </div>
+</section>
+
 {% elif kq.not_found %}
-  {% include "_empty.html" %}
-{% else %}
-  {{ s.classify(kq) }}
-  <div class="results">
-    <div class="col">
-      {% for t in kq.cards %}{{ c.lead(t) if loop.first else c.small(t) }}{% endfor %}
+<section class="empty" aria-live="polite">
+  <span class="empty__ring">{{ ic.icon("search-alert") }}</span>
+  <h2 class="empty__title"><span class="only-desktop">Không tìm thấy quy định phù hợp trong cơ sở tri thức</span><span class="only-mobile">Không tìm thấy quy định phù hợp</span></h2>
+  <p class="empty__text">Điểm tương đồng cao nhất là {{ view.best_score }} — dưới ngưỡng {{ view.threshold }} nên hệ thống không trả về tri thức bổ sung.<span class="only-desktop"> Thử diễn đạt lại câu hỏi hoặc nêu rõ loại phương tiện.</span></p>
+  <div class="suggest">
+    <div class="eyebrow">Thử hỏi theo cách này</div>
+    <div class="suggest__chips">
+      {%- for v in VI_DU %}<a class="qchip" href="{{ href('/tra-cuu', q=v) }}">{{ v }}</a>{% endfor %}
+      <a class="qchip" href="{{ href('/chu-de') }}">Duyệt theo chủ đề · {{ stats.violations }} hành vi</a>
     </div>
-    {{ s.side_panels(kq) }}
   </div>
+  <p class="empty__scope only-desktop">Cơ sở tri thức chỉ phủ lĩnh vực giao thông đường bộ theo Luật 36/2024/QH15, Nghị định 168/2024/NĐ-CP và các sửa đổi của Nghị định 238/2026/NĐ-CP. Khi không mẩu tri thức nào đạt ngưỡng, hệ thống trả kết quả rỗng thay vì đoán — đó là hành vi có chủ đích, không phải lỗi.</p>
+  <p class="disclaimer">{{ MIEN_TRU }}</p>
+</section>
+
+{% elif kq.filtered_out %}
+<section class="empty">
+  <span class="empty__ring">{{ ic.icon("search-alert") }}</span>
+  <h2 class="empty__title">Không còn kết quả sau khi lọc</h2>
+  <p class="empty__text">Hệ thống tìm được tri thức cho câu hỏi này, nhưng không mẩu nào khớp phương tiện đã chọn hoặc có hiệu lực tại {{ moc_text }}.</p>
+  <div class="suggest__chips"><a class="qchip" href="/tra-cuu?{{ {'q': q}|urlencode }}">Bỏ bộ lọc và tra lại</a></div>
+  <p class="disclaimer">{{ MIEN_TRU }}</p>
+</section>
+
+{% else %}
+<div class="strip">
+  <span class="pill pill--accent strip__class"><span class="only-desktop">{{ view.class_label }}</span><span class="only-mobile">{{ view.class_short }}</span></span>
+  <span class="strip__count">{{ kq.knowledge_count }} mẩu tri thức<span class="only-mobile"> · {{ view.elapsed }}</span></span>
+  <span class="strip__time only-desktop">{{ view.elapsed }}</span>
+</div>
+
+{% if view.low_confidence %}
+<p class="notice" role="note">{{ ic.icon("alert-circle") }}<span>Độ tin cậy thấp — câu hỏi có thể nằm ngoài phạm vi cơ sở tri thức. Hãy đối chiếu căn cứ trước khi dùng.</span></p>
+{% endif %}
+
+<div class="results">
+  <div class="results__cards">
+    {%- for t in view.cards %}
+      {%- if loop.first %}{{ c.lead(t) }}
+      {%- elif t.kind == "violations" %}{{ c.secondary(t) }}
+      {%- else %}{{ c.knowledge(t) }}{% endif %}
+    {%- endfor %}
+    <p class="disclaimer only-mobile">{{ MIEN_TRU }}</p>
+  </div>
+
+  <aside class="results__side">
+    <section class="panel">
+      <div class="eyebrow">Hệ thống hiểu câu hỏi</div>
+      <dl class="panel__dl">
+        {%- for k, val in view.analysis %}<div><dt>{{ k }}</dt><dd>{{ val }}</dd></div>{% endfor %}
+      </dl>
+    </section>
+    {% if view.related %}
+    <section class="panel">
+      <div class="eyebrow">Kiến thức liên quan</div>
+      <ul class="related">
+        {%- for g in view.related %}<li><a href="{{ g.href }}"><span>{{ g.name }}</span><span class="related__n">{{ g.count }}</span></a></li>{% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+    <p class="disclaimer">{{ MIEN_TRU }}</p>
+  </aside>
+</div>
 {% endif %}
 {% endblock %}
+
+{% block dock %}{{ s.searchbar(q, keep_params, dock=True) }}{% endblock %}

@@ -99,7 +99,7 @@ python eval/evaluate.py      # đo lại các chỉ số
 python eval/ablation.py      # thí nghiệm loại bỏ thành phần
 ```
 
-Giao diện web — 7 màn hình, dựng theo bản bàn giao thiết kế (cần gói `web`):
+Giao diện web — dựng theo bản bàn giao thiết kế (6 màn desktop + 6 màn mobile, cần gói `web`):
 
 ```bash
 pip install -e '.[web]'
@@ -108,13 +108,16 @@ uvicorn traffic_law.api.web:app --reload      # http://localhost:8000
 
 | Đường dẫn | Màn hình |
 |---|---|
-| `/` | Tra cứu (và trạng thái không tìm thấy) |
-| `/dieu-khoan/{id}` | Chi tiết điều khoản |
-| `/hieu-luc` | Hiệu lực theo thời gian |
-| `/chu-de` | Duyệt chủ đề |
+| `/tra-cuu?q=` | Tra cứu — gồm cả trạng thái không tìm thấy (`/` chuyển về đây) |
+| `/dieu-khoan/{id}` | Chi tiết điều khoản (màn con của Tra cứu) |
+| `/hieu-luc?dk=` | Hiệu lực theo thời gian — so sánh câu chữ trước/sau sửa đổi |
+| `/chu-de?linh_vuc=&nhom=` | Duyệt chủ đề |
 | `/chi-so` | Chỉ số đánh giá |
-| `/mobile` | Bản mobile |
 | `/api/ask` · `/api/docs` | API JSON và tài liệu OpenAPI |
+
+Bộ lọc dùng chung trên mọi màn hình: `ngay=YYYY-MM-DD` (xem cơ sở tri thức tại một
+thời điểm) và `pt=mo_to|o_to|xe_dap|di_bo` (lặp lại được). Dưới 720px thanh bên
+được thay bằng thanh tab đáy — cùng các đường dẫn trên, không có trang mobile riêng.
 
 Bộ kịch bản nghiệm thu — 12 ca, mỗi ca nêu kỳ vọng kiểm chứng được bằng văn bản luật:
 
@@ -138,6 +141,15 @@ docker compose run --rm kiem-thu         # toàn bộ kiểm thử + độ phủ
 
 Bốn dịch vụ dùng **chung một ảnh**, chỉ khác lệnh chạy — nên số liệu in ra chắc
 chắn đến từ đúng mã nguồn đang phục vụ giao diện.
+
+Đóng gói bộ nộp bài (mã nguồn + ảnh Docker + khung báo cáo + số liệu):
+
+```bash
+./scripts/dong_goi_nop_bai.sh          # -> ../nop_bai_CS106_Nhom7 (~148 MB)
+```
+
+Người chấm chỉ cần Docker Desktop, rồi chạy `docker/chay_demo.sh`
+(hoặc `chay_demo.bat` trên Windows) — không cần cài Python.
 
 Sinh khung báo cáo Word đúng định dạng đề bài (cần gói tuỳ chọn `bao-cao`):
 

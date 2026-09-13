@@ -1,29 +1,46 @@
 {% extends "base.html" %}
+{% import "_icons.html" as ic %}{% import "_cards.html" as c with context %}
 {% block title %}Duyệt chủ đề · Tra cứu GTĐB{% endblock %}
 {% block content %}
-<div class="wrap-1000">
-  <h2 class="screen">Duyệt chủ đề</h2>
-  <p class="lede">{{ dem_lv.values()|sum }} hành vi vi phạm, chia theo {{ dem_lv|length }} lĩnh vực
-    và {{ nhom_theo_lv.values()|map("length")|sum }} nhóm tri thức.</p>
+<div class="wrap wrap--1000">
+  <h2 class="screen-title"><span class="only-desktop">Duyệt theo chủ đề</span><span class="only-mobile">Duyệt chủ đề</span></h2>
+  <p class="lede only-desktop">{{ total }} hành vi vi phạm được phân về {{ fields|length }} lĩnh vực và {{ total_groups }} nhóm. Chọn một nhóm để xem toàn bộ chế tài thuộc nhóm đó.</p>
+  <p class="lede only-mobile">{{ total }} hành vi vi phạm · {{ fields|length }} lĩnh vực · {{ total_groups }} nhóm</p>
 
-  <div class="topics" style="margin-top:var(--space-4)">
-    {% for lv, n in dem_lv.most_common() %}
-    <a class="topic{% if lv == chon %} on{% endif %}" href="/chu-de?linh_vuc={{ lv|urlencode }}">
-      <span class="num">{{ n }}</span>
-      <span style="font-size:14px">{{ kb.field.get(lv, {}).get("ten", lv) }}</span>
-      <span class="muted" style="font-size:12px">{{ nhom_theo_lv[lv]|length }} nhóm</span>
+  <div class="fields only-desktop">
+    {%- for f in fields %}
+    <a class="field{% if f.on %} is-on{% endif %}" href="{{ f.href }}"{% if f.on %} aria-current="true"{% endif %}>
+      <span class="field__num">{{ f.count }}</span>
+      <span class="field__name">{{ f.name }}</span>
+      <span class="field__groups">{{ f.groups }} nhóm</span>
     </a>
-    {% endfor %}
+    {%- endfor %}
+  </div>
+  <div class="field-chips only-mobile">
+    {%- for f in fields %}<a class="fchip{% if f.on %} is-on{% endif %}" href="{{ f.href }}"{% if f.on %} aria-current="true"{% endif %}>{{ f.short }} · {{ f.count }}</a>{% endfor %}
   </div>
 
-  <div style="margin-top:var(--space-6)">
-    <div class="label">Nhóm thuộc “{{ kb.field.get(chon, {}).get("ten", chon) }}”</div>
-    <div class="chips">
-      {% for nh, n in nhom_theo_lv[chon].most_common() %}
-      <span class="chip">{{ kb.group_name.get(nh, nh)|replace("_"," ") }}
-        <b style="margin-left:6px;font-size:11px">{{ n }}</b></span>
-      {% endfor %}
-    </div>
+  <h3 class="section-title only-desktop">{{ field.name }} · {{ field.groups }} nhóm</h3>
+  <div class="group-chips only-desktop">
+    {%- for g in groups %}
+    <a class="gchip{% if g.on %} is-on{% endif %}" href="{{ g.href }}"{% if g.on %} aria-current="true"{% endif %}>{{ g.name }}<span class="gchip__n">{{ g.count }}</span></a>
+    {%- endfor %}
   </div>
+  <ul class="grows only-mobile">
+    {%- for g in groups %}
+    <li><a class="grow{% if g.on %} is-on{% endif %}" href="{{ g.href }}"><span class="grow__name">{{ g.name }}</span><span class="grow__n">{{ g.count }}</span>{{ ic.icon("chevron-right", "grow__chev") }}</a></li>
+    {%- endfor %}
+  </ul>
+
+  {% if group %}
+  <section class="group-list" id="nhom">
+    <h3 class="section-title section-title--gap">Nhóm “{{ group_name }}” · {{ group_total }} quy định</h3>
+    {% if violations|length != group_total %}<p class="footnote">Đang hiện {{ violations|length }}/{{ group_total }} theo bộ lọc phương tiện và thời điểm {{ moc_text }}.</p>{% endif %}
+    <div class="vlist">
+      {%- for r in violations %}{{ c.vrow(r) }}{% endfor %}
+    </div>
+    <p class="disclaimer disclaimer--gap">{{ MIEN_TRU }}</p>
+  </section>
+  {% endif %}
 </div>
 {% endblock %}

@@ -1,0 +1,101 @@
+{#- Thẻ kết quả. Mỗi thẻ là MỘT khối markup; khác biệt desktop/mobile nằm ở CSS,
+    chỉ vài dòng chữ viết gọn cho mobile mới tách bằng .only-desktop/.only-mobile. -#}
+{% macro conf(t, full=False) %}
+{%- if t.score_text %}
+<span class="conf conf--{{ {'cao': 'high', 'trung bình': 'mid'}.get(t.confidence, 'low') }}" title="Điểm khớp {{ t.score_text }}">
+  <i class="conf__dot"></i><span class="sr-only">Độ tin cậy {{ t.confidence }}: </span><span>{% if full %}<span class="only-desktop">độ tin cậy {{ t.confidence }} · </span>{% endif %}{{ t.score_text }}</span>
+</span>
+{%- endif %}
+{% endmacro %}
+
+{% macro before_note(t) %}
+{%- if t.before_amendment %}<span class="pill pill--neutral">Câu chữ trước sửa đổi</span>{% endif %}
+{%- if t.supplementary %}<span class="pill pill--outline">Tri thức bổ sung</span>{% endif %}
+{% endmacro %}
+
+{% macro lead(t) %}
+<article class="card card--lead" data-vehicles="{{ t.vehicles|join(' ') }}">
+  <div class="card__top">
+    {% if t.kind == "violations" %}
+    <span class="eyebrow eyebrow--accent only-desktop">Hành vi vi phạm</span>
+    {% if t.vehicle_label %}<span class="pill pill--green only-desktop">{{ t.vehicle_label }}</span>
+    <span class="eyebrow eyebrow--accent only-mobile">{{ t.vehicle_label }}</span>{% endif %}
+    {% else %}
+    <span class="eyebrow eyebrow--accent">{{ t.kind_name }}</span>
+    {% endif %}
+    {{ before_note(t) }}
+    {{ conf(t, full=True) }}
+  </div>
+  {% if t.kind == "violations" %}
+  <p class="card__behavior">{{ t.title }}</p>
+  <div class="stats">
+    <div class="stat stat--fine">
+      <div class="stat__label">Phạt tiền</div>
+      <div class="stat__num">{{ t.fine_text|giu_don_vi }}</div>
+    </div>
+    {% if t.licence_points %}
+    <div class="stat stat--points">
+      <div class="stat__label">Trừ điểm GPLX</div>
+      <div class="stat__num">{{ t.licence_points }} điểm</div>
+    </div>
+    {% endif %}
+  </div>
+  {% if t.fine_note %}<p class="card__note">{{ t.fine_note }}</p>{% endif %}
+  <div class="card__foot">
+    <span>{{ t.citation }}</span>
+    {% if t.valid_from %}<span>Hiệu lực từ {{ t.valid_from }}</span>{% endif %}
+    {% if not t.licence_points %}<span>Không trừ điểm</span>{% endif %}
+    <a class="card__link" href="{{ t.href }}">Xem điều khoản →</a>
+  </div>
+  {% else %}
+  <h3 class="card__title">{{ t.title }}</h3>
+  {% if t.body %}<p class="card__text">{{ t.body }}</p>{% endif %}
+  {% if not t.body and t.attributes %}<dl class="attrs">{% for k, val in t.attributes %}<div><dt>{{ k|replace("_", " ")|capitalize }}</dt><dd>{{ val }}</dd></div>{% endfor %}</dl>{% endif %}
+  <div class="card__foot"><span>{{ t.citation }}</span></div>
+  {% endif %}
+</article>
+{% endmacro %}
+
+{% macro secondary(t) %}
+<article class="card card--side" data-vehicles="{{ t.vehicles|join(' ') }}">
+  <div class="card__top">
+    <span class="eyebrow eyebrow--accent only-desktop">Hành vi vi phạm</span>
+    {% if t.vehicle_label %}<span class="pill pill--light only-desktop">{{ t.vehicle_label }}</span>
+    <span class="eyebrow eyebrow--accent only-mobile">{{ t.vehicle_label }}</span>{% endif %}
+    {{ before_note(t) }}
+    <span class="only-desktop conf-wrap">{{ conf(t) }}</span>
+  </div>
+  <p class="card__behavior card__behavior--sm">{{ t.title }}</p>
+  <div class="card__fine-line">
+    <span class="card__fine">{{ t.fine_text|giu_don_vi }}</span>
+    <span class="card__tail only-desktop">· {{ t.points_tail }}</span>
+  </div>
+  {% if t.fine_note %}<p class="card__note">{{ t.fine_note }}</p>{% endif %}
+  <div class="card__cite only-desktop">{{ t.citation }}</div>
+  <div class="card__cite only-mobile">{{ "Trừ %s điểm"|format(t.licence_points) if t.licence_points else "Không trừ điểm" }} · {{ t.short_citation }}</div>
+  <a class="card__cover" href="{{ t.href }}" aria-label="Xem điều khoản: {{ t.title|truncate(60) }}"></a>
+</article>
+{% endmacro %}
+
+{% macro knowledge(t) %}
+<article class="card card--{{ 'concept' if t.kind == 'concepts' else 'rule' }}" data-vehicles="">
+  <div class="card__top">
+    <span class="eyebrow">{{ t.kind_name }}</span>
+    {{ before_note(t) }}
+  </div>
+  <h3 class="card__title">{{ t.title }}</h3>
+  {% if t.body %}<p class="card__text">{{ t.body }}</p>{% endif %}
+  {% if not t.body and t.attributes %}<dl class="attrs">{% for k, val in t.attributes %}<div><dt>{{ k|replace("_", " ")|capitalize }}</dt><dd>{{ val }}</dd></div>{% endfor %}</dl>{% endif %}
+  <div class="card__cite">{{ t.citation }}</div>
+</article>
+{% endmacro %}
+
+{% macro vrow(r) %}
+<a class="vrow" href="{{ href('/dieu-khoan/' ~ r.id) }}" data-vehicles="{{ r.vehicles|join(' ') }}">
+  <span class="vrow__main">
+    <span class="vrow__behavior">{{ r.behavior }}</span>
+    <span class="vrow__meta">{% if r.vehicle_label %}<span class="pill pill--neutral">{{ r.vehicle_label }}</span>{% endif %}<span>{{ r.short_citation }}</span></span>
+  </span>
+  <span class="vrow__fine">{{ r.fine_text|giu_don_vi }}{% if r.points != "—" %}<small>trừ {{ r.points }}</small>{% endif %}</span>
+</a>
+{% endmacro %}
