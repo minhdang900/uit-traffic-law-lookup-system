@@ -1,0 +1,17 @@
+{% import "_icons.html" as ic %}
+<div class="empty wrap-640">
+  <div class="ring">{{ ic.icon("alert-circle") }}</div>
+  <h2>Không tìm thấy quy định phù hợp trong cơ sở tri thức</h2>
+  <p class="lede">Không mẩu tri thức nào vượt ngưỡng bổ sung 0,40, nên hệ thống thừa nhận
+    không trả lời được thay vì trả về một danh sách hành vi không liên quan.</p>
+  <div class="card">
+    <div class="label">Thử hỏi theo cách này</div>
+    <div class="chips">
+      {% for v in VI_DU %}<a class="chip" href="/?q={{ v|urlencode }}">{{ v }}</a>{% endfor %}
+    </div>
+  </div>
+  <p class="muted">Cơ sở tri thức chỉ phủ <strong>giao thông đường bộ</strong> — Luật
+    36/2024/QH15 và Nghị định 168/2024/NĐ-CP. Truy vấn ngoài lĩnh vực cho kết quả rỗng là
+    <strong>có chủ đích</strong>, không phải lỗi.</p>
+  <p class="disclaim">{{ MIEN_TRU }}</p>
+</div>

@@ -1,9 +1,9 @@
 # Chay he thong tra cuu phap luat giao thong duong bo.
 #
-#   docker compose up giao-dien          -> giao dien web tai http://localhost:8501
+#   docker compose up giao-dien          -> giao dien web tai http://localhost:8000
 #
 # Cong may chu doi duoc: PORT=8502 docker compose up giao-dien
-# (8501 la cong mac dinh cua Streamlit nen de dung voi du an khac tren cung may)
+# (8000 de dung voi du an khac tren cung may)
 #   docker compose run --rm kich-ban     -> 12 ca nghiem thu
 #   docker compose run --rm danh-gia     -> do lai chi so tren 120 cau + cong Top-1
 #   docker compose run --rm kiem-thu     -> toan bo bo kiem thu + do phu
@@ -22,7 +22,7 @@ services:
     <<: *chung
     container_name: traffic-law-web
     ports:
-      - "${PORT:-8501}:8501"
+      - "${PORT:-8000}:8000"
     restart: unless-stopped
 
   # --- cac dich vu chay mot lan roi thoat ---

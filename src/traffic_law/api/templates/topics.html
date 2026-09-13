@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Duyệt chủ đề · Tra cứu GTĐB{% endblock %}
+{% block content %}
+<div class="wrap-1000">
+  <h2 class="screen">Duyệt chủ đề</h2>
+  <p class="lede">{{ dem_lv.values()|sum }} hành vi vi phạm, chia theo {{ dem_lv|length }} lĩnh vực
+    và {{ nhom_theo_lv.values()|map("length")|sum }} nhóm tri thức.</p>
+
+  <div class="topics" style="margin-top:var(--space-4)">
+    {% for lv, n in dem_lv.most_common() %}
+    <a class="topic{% if lv == chon %} on{% endif %}" href="/chu-de?linh_vuc={{ lv|urlencode }}">
+      <span class="num">{{ n }}</span>
+      <span style="font-size:14px">{{ kb.field.get(lv, lv)|replace("_"," ") }}</span>
+      <span class="muted" style="font-size:12px">{{ nhom_theo_lv[lv]|length }} nhóm</span>
+    </a>
+    {% endfor %}
+  </div>
+
+  <div style="margin-top:var(--space-6)">
+    <div class="label">Nhóm thuộc “{{ kb.field.get(chon, chon)|replace("_"," ") }}”</div>
+    <div class="chips">
+      {% for nh, n in nhom_theo_lv[chon].most_common() %}
+      <span class="chip">{{ kb.group_name.get(nh, nh)|replace("_"," ") }}
+        <b style="margin-left:6px;font-size:11px">{{ n }}</b></span>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endblock %}

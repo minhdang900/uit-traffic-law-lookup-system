@@ -1,0 +1,3 @@
+{% extends "base.html" %}{% import "_search.html" as s %}
+{% block title %}Không tìm thấy · Tra cứu GTĐB{% endblock %}
+{% block content %}{{ s.searchbar(q) }}{% include "_empty.html" %}{% endblock %}

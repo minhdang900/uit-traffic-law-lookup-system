@@ -11,6 +11,7 @@ import pytest
 
 from traffic_law.api.presentation import (
     confidence,
+    fine_text,
     penalty_lines,
     result_cards,
     summary_line,
@@ -78,7 +79,12 @@ class TestResultCards:
     def test_every_card_has_a_legal_citation(self, system):
         """Không có căn cứ thì người dùng không kiểm chứng được — vô dụng."""
         for t in result_cards(system.ask("xe cơ giới là gì", top_k=3)):
-            assert t.citation.strip(), f"Thẻ {t.tieu_de!r} thiếu căn cứ"
+            assert t.citation.strip(), f"Thẻ {t.title!r} thiếu căn cứ"
+
+    def test_card_carries_the_knowledge_id(self, system):
+        """Bản thiết kế có link "Xem điều khoản →" nên thẻ phải mang định danh."""
+        for t in result_cards(system.ask("vượt đèn đỏ xe máy phạt bao nhiêu", top_k=2)):
+            assert t.id_, f"Thẻ {t.title!r} không mang id"
 
     def test_marks_supplementary_knowledge(self, system):
         """Người dùng cần biết mẩu nào là trả lời chính, mẩu nào chỉ gợi thêm."""
@@ -97,3 +103,19 @@ class TestSummaryLine:
         kq = {"not_found": True, "problem_class_name": "Tra cứu kiến thức liên quan",
               "concepts": [], "rules": [], "violations": []}
         assert "không tìm thấy" in summary_line(kq).lower()
+
+
+class TestFineText:
+    """Bản thiết kế rút hậu tố thành "đ" và dùng en dash cho khoảng."""
+
+    def test_khoang_dung_en_dash_va_hau_to_ngan(self):
+        assert fine_text({"min": 4_000_000, "max": 6_000_000}) == "4.000.000 – 6.000.000 đ"
+
+    def test_muc_co_dinh_chi_mot_so(self):
+        assert fine_text({"min": 1_500_000, "max": 1_500_000}) == "1.500.000 đ"
+
+    def test_bang_khong_la_canh_cao_chu_khong_phai_0_dong(self):
+        assert fine_text({"min": 0, "max": 0}) == "Không phạt tiền (cảnh cáo hoặc hình thức khác)"
+
+    def test_khong_quy_dinh_phat_tien(self):
+        assert fine_text({"min": None, "max": None}) == "Không quy định phạt tiền"

@@ -32,15 +32,17 @@ class Card:
     """Một thẻ kết quả đã sẵn sàng để vẽ."""
 
     kind: str
-    tieu_de: str
+    #: Định danh tri thức — giao diện cần nó để trỏ tới màn Chi tiết điều khoản.
+    id_: str
+    title: str
     lines: list[str] = field(default_factory=list)
     citation: str = ""
-    point: float | None = None
+    score: float | None = None
     supplementary: bool = False
 
     @property
     def confidence(self) -> str:
-        return confidence(self.point)
+        return confidence(self.score)
 
 
 def format_money(n: int | None) -> str:
@@ -87,16 +89,16 @@ def penalty_lines(v: dict[str, Any]) -> list[str]:
 
 def _card_from_item(kind: str, m: dict[str, Any]) -> Card:
     if kind == "violations":
-        tieu_de, lines = m.get("behavior", ""), penalty_lines(m)
+        title, lines = m.get("behavior", ""), penalty_lines(m)
     elif kind == "rules":
-        tieu_de = m.get("name", "")
+        title = m.get("name", "")
         lines = [m["text"]] if m.get("text") else []
     else:
-        tieu_de = m.get("name", "")
+        title = m.get("name", "")
         lines = [m["definition"]] if m.get("definition") else [
             f"{k}: {gt}" for k, gt in list((m.get("attributes") or {}).items())[:6]]
-    return Card(kind=kind, tieu_de=tieu_de, lines=lines,
-               citation=m.get("citation_text", ""), point=m.get("score"),
+    return Card(kind=kind, id_=m.get("id", ""), title=title, lines=lines,
+               citation=m.get("citation_text", ""), score=m.get("score"),
                supplementary=bool(m.get("supplementary")))
 
 
@@ -112,3 +114,21 @@ def summary_line(kq: dict[str, Any]) -> str:
                 "Thử diễn đạt lại câu hỏi hoặc nêu rõ loại phương tiện.")
     so = sum(len(kq.get(kind) or []) for kind in KIND_ORDER)
     return f"{kq.get('problem_class_name', 'Tra cứu')} · {so} mẩu tri thức"
+
+
+def fine_text(fine: dict[str, Any] | None) -> str:
+    """Khung phạt tiền viết gọn cho giao diện web.
+
+    Khác ``penalty_lines``: bản thiết kế rút hậu tố "đồng" thành "đ" và dùng
+    en dash cho khoảng, để số liệu vừa trong ô chỉ rộng 210px.
+    """
+    fine = fine or {}
+    lo, hi = fine.get("min"), fine.get("max")
+    if lo is None and hi is None:
+        return "Không quy định phạt tiền"
+    if lo == hi == 0:
+        return "Không phạt tiền (cảnh cáo hoặc hình thức khác)"
+    if lo == hi:
+        return f"{format_money(lo)}".replace(" đồng", "") + " đ"
+    return (f"{format_money(lo)}".replace(" đồng", "") + " – "
+            + f"{format_money(hi)}".replace(" đồng", "") + " đ")

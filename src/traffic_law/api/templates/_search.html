@@ -1,0 +1,39 @@
+{% import "_icons.html" as ic %}
+{% macro searchbar(q="") %}
+<form class="search" method="get" action="/">
+  {{ ic.icon("search") }}
+  <input name="q" value="{{ q }}" placeholder="Hỏi bằng tiếng Việt tự nhiên — ví dụ: vượt đèn đỏ xe máy phạt bao nhiêu?"
+         aria-label="Câu hỏi tra cứu">
+  <button class="btn" type="submit">Tra cứu</button>
+</form>
+{% endmacro %}
+
+{% macro classify(kq) %}
+<div class="classify">
+  <span class="tag">{{ kq.problem_class[:2] }} · {{ kq.problem_class_name }}</span>
+  <span class="muted">{{ (kq.violations|length) + (kq.rules|length) + (kq.concepts|length) }} mẩu tri thức</span>
+</div>
+{% endmacro %}
+
+{% macro side_panels(kq) %}
+<div class="col">
+  <section class="panel">
+    <div class="label">Hệ thống hiểu câu hỏi</div>
+    <dl>
+      <div><dt>Cụm từ khoá</dt><dd>{{ kq.analysis.keyphrase|map(attribute="phrase")|join(", ") or "—" }}</dd></div>
+      <div><dt>Phương tiện nhận diện</dt><dd>{{ kq.analysis.vehicles|join(", ")|replace("_"," ") or "—" }}</dd></div>
+      <div><dt>Nhóm</dt><dd>{{ kq.analysis.group|join(", ")|replace("_"," ") or "—" }}</dd></div>
+      <div><dt>Chủ thể</dt><dd>{{ (kq.analysis.subject or "—")|replace("_"," ") }}</dd></div>
+    </dl>
+  </section>
+  {% if kq.related %}
+  <section class="panel">
+    <div class="label">Kiến thức liên quan</div>
+    <ul class="linklist">
+      {% for g in kq.related %}<li>{{ g.name }}<span>{{ g.so_quy_dinh }}</span></li>{% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+  <p class="disclaim">{{ MIEN_TRU }}</p>
+</div>
+{% endmacro %}

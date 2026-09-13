@@ -99,12 +99,22 @@ python eval/evaluate.py      # đo lại các chỉ số
 python eval/ablation.py      # thí nghiệm loại bỏ thành phần
 ```
 
-Giao diện tra cứu (cần gói tuỳ chọn `ui`):
+Giao diện web — 7 màn hình, dựng theo bản bàn giao thiết kế (cần gói `web`):
 
 ```bash
-pip install -e '.[ui]'
-streamlit run src/traffic_law/api/app.py
+pip install -e '.[web]'
+uvicorn traffic_law.api.web:app --reload      # http://localhost:8000
 ```
+
+| Đường dẫn | Màn hình |
+|---|---|
+| `/` | Tra cứu (và trạng thái không tìm thấy) |
+| `/dieu-khoan/{id}` | Chi tiết điều khoản |
+| `/hieu-luc` | Hiệu lực theo thời gian |
+| `/chu-de` | Duyệt chủ đề |
+| `/chi-so` | Chỉ số đánh giá |
+| `/mobile` | Bản mobile |
+| `/api/ask` · `/api/docs` | API JSON và tài liệu OpenAPI |
 
 Bộ kịch bản nghiệm thu — 12 ca, mỗi ca nêu kỳ vọng kiểm chứng được bằng văn bản luật:
 
