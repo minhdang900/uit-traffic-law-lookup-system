@@ -1,0 +1,14 @@
+{
+  "lenh": "pytest -q --cov",
+  "python": "3.12",
+  "so_test_dat": 256,
+  "so_xfail": 5,
+  "so_skip": 4,
+  "ghi_chu_skip": "4 test cần gói tuỳ chọn 'dense' (sentence-transformers, ~470 MB). Cài thêm gói này thì 1 trong 4 test chuyển thành xfail có số đo, tổng 6 hạn chế đã đo.",
+  "so_cau_lenh": 1749,
+  "so_cau_lenh_chua_phu": 179,
+  "do_phu_phan_tram": 90,
+  "nguong_do_phu_ci": 80,
+  "ca_nghiem_thu_dat": 12,
+  "ca_nghiem_thu_tong": 12
+}

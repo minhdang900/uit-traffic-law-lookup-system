@@ -29,30 +29,73 @@ if [ -e "$DICH" ]; then
 fi
 
 echo "==> Thu muc dich: $DICH"
-mkdir -p "$DICH"/ma_nguon "$DICH"/docker "$DICH"/bao_cao "$DICH"/so_lieu
+mkdir -p "$DICH"/ma_nguon "$DICH"/docker "$DICH"/bao_cao/hinh "$DICH"/so_lieu "$DICH"/slide
 
-echo "==> [1/6] Ma nguon (ban sach theo git — khong kem .venv hay cache)"
+echo "==> [1/8] Ma nguon (ban sach theo git — khong kem .venv hay cache)"
 git -C "$GOC" archive --format=tar HEAD | tar -x -C "$DICH/ma_nguon"
+# `git archive` chi lay tep DA COMMIT. Bo sung nhung tep sinh ra ma bo nop van
+# can de dung lai duoc bao cao/slide, ke ca khi chua kip commit.
+for T in scripts/ve_so_do.py scripts/tao_bao_cao_day_du.py scripts/lam_slide.js \
+         eval/ket_qua_kiem_thu.json eval/kich_ban_nghiem_thu.md; do
+  [ -f "$GOC/$T" ] && { mkdir -p "$DICH/ma_nguon/$(dirname "$T")"; cp "$GOC/$T" "$DICH/ma_nguon/$T"; }
+done
+mkdir -p "$DICH/ma_nguon/docs/so_do" && cp "$GOC"/docs/so_do/*.png "$DICH/ma_nguon/docs/so_do/" 2>/dev/null || true
 echo "    $(find "$DICH/ma_nguon" -type f | wc -l | tr -d ' ') tep"
 
-echo "==> [2/6] Anh Docker — buoc nay lau nhat"
-if ! docker image inspect "$ANH" >/dev/null 2>&1; then
-  echo "    Chua co anh $ANH, dang build..."
-  docker build -t "$ANH" "$GOC"
+echo "==> [2/8] Anh Docker — buoc nay lau nhat"
+# Khong co docker CLI (vi du dang chay trong mot shell han che) thi van dong goi
+# duoc: dung lai anh da xuat o lan truoc neu tim thay. Dat ANH_CU= de tro thang
+# toi mot tep .tar.gz cu the.
+TEP_ANH="$DICH/docker/traffic-law-image.tar.gz"
+if command -v docker >/dev/null 2>&1; then
+  if ! docker image inspect "$ANH" >/dev/null 2>&1; then
+    echo "    Chua co anh $ANH, dang build..."
+    docker build -t "$ANH" "$GOC"
+  fi
+  docker save "$ANH" | gzip -1 > "$TEP_ANH"
+  echo "    $(du -h "$TEP_ANH" | cut -f1)"
+else
+  CU="${ANH_CU:-}"
+  if [ -z "$CU" ]; then
+    CU="$(ls -t "$(dirname "$DICH")"/nop_bai_CS106_Nhom7*/docker/traffic-law-image.tar.gz \
+          2>/dev/null | head -1 || true)"
+  fi
+  if [ -n "$CU" ] && [ -f "$CU" ]; then
+    cp "$CU" "$TEP_ANH"
+    echo "    khong co docker CLI — dung lai anh da xuat: $CU ($(du -h "$TEP_ANH" | cut -f1))"
+  else
+    echo "    CANH BAO: khong co docker CLI va khong tim thay anh cu." >&2
+    echo "    Bo nop se THIEU docker/traffic-law-image.tar.gz — chay lai tren may co" >&2
+    echo "    Docker truoc khi nop." >&2
+  fi
 fi
-docker save "$ANH" | gzip -1 > "$DICH/docker/traffic-law-image.tar.gz"
-echo "    $(du -h "$DICH/docker/traffic-law-image.tar.gz" | cut -f1)"
 
-echo "==> [3/6] So lieu danh gia"
+echo "==> [3/8] So lieu danh gia"
 cp "$GOC"/eval/ket_qua_danh_gia.json \
    "$GOC"/eval/ket_qua_ablation.json \
    "$GOC"/eval/ket_qua_phat_hien_mien.json \
+   "$GOC"/eval/ket_qua_kiem_thu.json \
    "$GOC"/eval/qa_dataset.json \
    "$GOC"/eval/truy_van_ngoai_mien.json "$DICH/so_lieu/"
-( cd "$GOC" && "$PY" eval/kich_ban.py --markdown ) > "$DICH/so_lieu/kich_ban_nghiem_thu.md"
-echo "    5 tep JSON + bang 12 ca nghiem thu (Markdown)"
+# Bang 12 ca nghiem thu: sinh lai neu chay duoc, khong thi dung ban da luu trong eval/.
+if ( cd "$GOC" && "$PY" eval/kich_ban.py --markdown ) > "$DICH/so_lieu/kich_ban_nghiem_thu.md" 2>/dev/null; then
+  cp "$DICH/so_lieu/kich_ban_nghiem_thu.md" "$GOC/eval/kich_ban_nghiem_thu.md"
+else
+  cp "$GOC/eval/kich_ban_nghiem_thu.md" "$DICH/so_lieu/"
+  echo "    (dung ban kich_ban_nghiem_thu.md da luu — khong chay lai duoc)" >&2
+fi
+echo "    6 tep JSON + bang 12 ca nghiem thu (Markdown)"
 
-echo "==> [4/6] Khung bao cao Word"
+echo "==> [4/8] Hai so do cho bao cao va slide"
+if ( cd "$GOC" && "$PY" scripts/ve_so_do.py ) >/dev/null 2>&1; then
+  echo "    da ve lai tu ma"
+else
+  echo "    BO QUA ve lai (thieu matplotlib) — dung ban da luu trong docs/so_do/" >&2
+fi
+cp "$GOC"/docs/so_do/*.png "$DICH/bao_cao/hinh/"
+echo "    $(ls "$DICH/bao_cao/hinh" | wc -l | tr -d ' ') so do"
+
+echo "==> [5/8] Khung bao cao Word"
 if ( cd "$GOC" && PYTHONPATH=src "$PY" -m traffic_law.report.builder ) >/dev/null 2>&1; then
   cp "$GOC/docs/bao_cao_de_tai_4_khung.docx" "$DICH/bao_cao/"
   echo "    bao_cao_de_tai_4_khung.docx"
@@ -63,13 +106,23 @@ cp "$GOC"/docs/doi_chieu_de_tai_4.md "$GOC"/docs/thiet_ke_giai_phap.md \
    "$GOC"/docs/kien_truc.md "$GOC"/docs/bao_cao_du_lieu.md "$DICH/bao_cao/"
 # ADR di kem: nguoi cham co the muon biet vi sao chon nhu vay
 mkdir -p "$DICH/bao_cao/adr" && cp "$GOC"/docs/adr/*.md "$DICH/bao_cao/adr/"
-mkdir -p "$DICH/slide" && cp "$GOC"/docs/slide/index.html "$DICH/slide/"
+cp "$GOC"/docs/slide/index.html "$DICH/slide/"
 
-echo "==> [5/6] Script khoi dong demo"
+echo "==> [6/8] Bao cao hoan chinh + slide trinh chieu"
+# Sinh lai neu moi truong cho phep; khong thi dung ban da luu trong docs/.
+( cd "$GOC" && "$PY" scripts/tao_bao_cao_day_du.py ) >/dev/null 2>&1 \
+  || echo "    BO QUA sinh lai .docx (thieu python-docx) — dung ban da luu" >&2
+( cd "$GOC" && node scripts/lam_slide.js ) >/dev/null 2>&1 \
+  || echo "    BO QUA sinh lai .pptx (thieu node/pptxgenjs) — dung ban da luu" >&2
+cp "$GOC/docs/BaoCao_Nhom7_CS106.docx" "$DICH/bao_cao/"
+cp "$GOC/docs/Slide_Nhom7_CS106.pptx" "$DICH/slide/"
+echo "    BaoCao_Nhom7_CS106.docx + Slide_Nhom7_CS106.pptx"
+
+echo "==> [7/8] Script khoi dong demo"
 cp "$GOC"/scripts/nop_bai/chay_demo.sh "$GOC"/scripts/nop_bai/chay_demo.bat "$DICH/docker/"
 chmod +x "$DICH/docker/chay_demo.sh"
 
-echo "==> [6/6] Tai lieu huong dan"
+echo "==> [8/8] Tai lieu huong dan"
 cp "$GOC"/scripts/nop_bai/README_NOP_BAI.md "$DICH/README.md"
 cp "$GOC"/scripts/nop_bai/HUONG_DAN_BAO_CAO.md "$DICH/"
 cp "$GOC"/scripts/nop_bai/KICH_BAN_DEMO.md "$DICH/"
