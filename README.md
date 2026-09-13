@@ -106,6 +106,29 @@ pip install -e '.[ui]'
 streamlit run src/tra_cuu_gtdb/api/app.py
 ```
 
+Bộ kịch bản nghiệm thu — 12 ca, mỗi ca nêu kỳ vọng kiểm chứng được bằng văn bản luật:
+
+```bash
+python eval/kich_ban.py --chi-tiet     # bảng cho người đọc
+python eval/kich_ban.py --markdown     # dán thẳng vào báo cáo
+```
+
+### Chạy bằng Docker
+
+Không cần cài Python hay phụ thuộc nào:
+
+```bash
+docker compose up giao-dien              # http://localhost:8501
+PORT=8502 docker compose up giao-dien    # đổi cổng nếu 8501 đã bận
+
+docker compose run --rm kich-ban         # 12 ca nghiệm thu
+docker compose run --rm danh-gia         # đo chỉ số + cổng Top-1
+docker compose run --rm kiem-thu         # toàn bộ kiểm thử + độ phủ
+```
+
+Bốn dịch vụ dùng **chung một ảnh**, chỉ khác lệnh chạy — nên số liệu in ra chắc
+chắn đến từ đúng mã nguồn đang phục vụ giao diện.
+
 Sinh khung báo cáo Word đúng định dạng đề bài (cần gói tuỳ chọn `bao-cao`):
 
 ```bash
