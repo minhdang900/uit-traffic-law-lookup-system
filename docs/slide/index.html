@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tra cứu pháp luật giao thông đường bộ — CS106 Nhóm 7</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap">
+<style>
+/* Token Organic — CHÉP từ src/traffic_law/api/static/tokens.css để slide
+   tự chứa: mở bằng file:// hay chép đi đâu cũng hiển thị đúng. */
+:root {
+  --color-bg: #f5ead8;
+  --color-surface: #ebddc5;
+  --color-text: #201e1d;
+  --color-accent: #c67139;
+  --color-accent-2: #7a8a5e;
+  --color-divider: color-mix(in srgb, #201e1d 16%, transparent);
+
+  --color-neutral-100: #f9f4ed; --color-neutral-200: #eee7db;
+  --color-neutral-300: #dcd3c4; --color-neutral-400: #c0b6a5;
+  --color-neutral-500: #a19786; --color-neutral-600: #82796a;
+  --color-neutral-700: #645c50; --color-neutral-800: #474238;
+  --color-neutral-900: #2e2b25;
+
+  --color-accent-100: #fff2eb; --color-accent-200: #ffe1d0;
+  --color-accent-300: #ffc6a5; --color-accent-400: #f6a06b;
+  --color-accent-500: #d67f48; --color-accent-600: #b2622d;
+  --color-accent-700: #8c491a; --color-accent-800: #643312;
+  --color-accent-900: #402310;
+
+  --color-accent-2-100: #f0fae1; --color-accent-2-200: #e1eecc;
+  --color-accent-2-300: #ccdbb2; --color-accent-2-400: #aebf92;
+  --color-accent-2-500: #8fa073; --color-accent-2-600: #728157;
+  --color-accent-2-700: #56633f; --color-accent-2-800: #3d472b;
+  --color-accent-2-900: #272e1b;
+
+  --font-heading: "Baloo 2", system-ui, sans-serif;
+  --font-body: "Be Vietnam Pro", system-ui, sans-serif;
+
+  --space-1: 4.4px; --space-2: 8.8px; --space-3: 13.2px;
+  --space-4: 17.6px; --space-6: 26.4px; --space-8: 35.2px;
+
+  --radius-sm: 8px; --radius-md: 16px; --radius-lg: 28px;
+
+  --shadow-sm: 0 1px 2px color-mix(in srgb, #2e2b25 14%, transparent);
+  --shadow-md: 0 3px 10px color-mix(in srgb, #2e2b25 16%, transparent);
+  --shadow-lg: 0 12px 32px color-mix(in srgb, #2e2b25 22%, transparent);
+}
+
+/* Slide dùng CHUNG token với giao diện web (tokens.css) — cùng bảng màu Organic,
+   cùng cặp phông Baloo 2 + Be Vietnam Pro. */
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--color-neutral-900);color:var(--color-text);
+     font-family:var(--font-body);overflow:hidden}
+h1,h2,h3,.num{font-family:var(--font-heading);font-weight:600;margin:0}
+
+.deck{height:100vh;overflow-y:scroll;scroll-snap-type:y mandatory;scroll-behavior:smooth}
+.slide{height:100vh;scroll-snap-align:start;display:flex;flex-direction:column;
+       justify-content:center;padding:clamp(24px,5vw,80px);background:var(--color-bg);
+       border-bottom:1px solid var(--color-divider);position:relative}
+.slide.dark{background:var(--color-accent-800);color:var(--color-neutral-100)}
+.slide.olive{background:var(--color-accent-2-100)}
+
+.eyebrow{font-size:clamp(11px,1.1vw,13px);letter-spacing:.1em;text-transform:uppercase;
+         color:var(--color-neutral-600);margin-bottom:var(--space-3)}
+.dark .eyebrow{color:var(--color-accent-300)}
+h1{font-size:clamp(32px,5.6vw,68px);line-height:1.08;letter-spacing:-.015em;text-wrap:balance}
+h2{font-size:clamp(24px,3.6vw,44px);line-height:1.14;text-wrap:balance;margin-bottom:var(--space-4)}
+p.lede{font-size:clamp(15px,1.7vw,21px);line-height:1.55;max-width:60ch;
+       color:var(--color-neutral-700);margin:var(--space-3) 0 0}
+.dark p.lede{color:var(--color-accent-200)}
+ul{margin:var(--space-4) 0 0;padding-left:1.1em;max-width:62ch}
+li{font-size:clamp(14px,1.55vw,19px);line-height:1.5;margin-bottom:var(--space-2)}
+strong{font-weight:600}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.88em;
+     background:var(--color-neutral-200);padding:.08em .38em;border-radius:4px}
+.dark code{background:var(--color-accent-900);color:var(--color-accent-200)}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+      gap:var(--space-3);margin-top:var(--space-6)}
+.stat{background:var(--color-neutral-100);border-radius:var(--radius-lg);
+      padding:var(--space-4);display:flex;flex-direction:column;gap:2px}
+.stat .num{font-size:clamp(26px,3.6vw,44px);line-height:1}
+.stat .cap{font-size:clamp(11px,1.1vw,13px);color:var(--color-neutral-600)}
+.stat.hi{background:var(--color-accent-800);color:var(--color-neutral-100)}
+.stat.hi .cap{color:var(--color-accent-300)}
+.stat.gr{background:var(--color-accent-2-100)}
+.stat.gr .num{color:var(--color-accent-2-900)}
+
+.bars{margin-top:var(--space-6);display:flex;flex-direction:column;gap:var(--space-3)}
+.bar{display:flex;align-items:center;gap:var(--space-3)}
+.bar .k{flex:0 0 clamp(140px,22vw,300px);font-size:clamp(12px,1.35vw,16px)}
+.bar .track{flex:1;height:clamp(20px,2.6vw,30px);background:var(--color-surface);
+            border-radius:999px;overflow:hidden}
+.bar .fill{display:block;height:100%;background:var(--color-accent);border-radius:999px}
+.bar .fill.win{background:var(--color-accent-2-600)}
+.bar .v{flex:0 0 64px;text-align:right;font-family:var(--font-heading);
+        font-size:clamp(13px,1.5vw,18px);font-variant-numeric:tabular-nums}
+
+.quote{font-family:var(--font-heading);font-size:clamp(22px,3.2vw,40px);line-height:1.2;
+       color:var(--color-accent-700);max-width:22ch}
+.arrow{font-size:clamp(20px,2.6vw,32px);color:var(--color-neutral-500);margin:var(--space-3) 0}
+.answer{background:var(--color-neutral-100);border:2px solid var(--color-accent);
+        border-radius:var(--radius-lg);padding:var(--space-4);max-width:60ch;
+        margin-top:var(--space-4)}
+.answer .big{font-family:var(--font-heading);font-size:clamp(22px,3vw,34px);
+             color:var(--color-accent-800)}
+.answer .src{font-size:clamp(11px,1.15vw,13px);color:var(--color-neutral-600);
+             margin-top:var(--space-2)}
+
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+     gap:var(--space-4);margin-top:var(--space-4)}
+.card{background:var(--color-neutral-100);border-radius:var(--radius-lg);padding:var(--space-4)}
+.card h3{font-size:clamp(15px,1.7vw,20px);margin-bottom:var(--space-2)}
+.card.warn{background:var(--color-accent-100)}
+.pill{display:inline-block;background:var(--color-accent-2-100);color:var(--color-accent-2-800);
+      border-radius:999px;padding:4px 14px;font-size:clamp(11px,1.15vw,13px);
+      margin:0 6px 6px 0}
+
+.no{position:fixed;right:clamp(12px,2vw,28px);bottom:clamp(12px,2vw,24px);
+    font-family:var(--font-heading);font-size:13px;color:var(--color-neutral-500);
+    background:var(--color-neutral-100);border-radius:999px;padding:5px 14px;
+    box-shadow:var(--shadow-sm);z-index:9}
+.hint{position:fixed;left:50%;transform:translateX(-50%);bottom:14px;font-size:12px;
+      color:var(--color-neutral-500);z-index:9}
+@media print{.no,.hint{display:none}.slide{height:auto;page-break-after:always}}
+</style>
+</head>
+<body>
+<div class="deck" id="deck">
+
+<section class="slide">
+  <div class="eyebrow">CS106 · Trí tuệ nhân tạo · Đề tài 4 · Nhóm 7</div>
+  <h1>Hệ thống tra cứu kiến thức pháp luật giao thông đường bộ</h1>
+  <p class="lede">Hỏi bằng tiếng Việt tự nhiên — trả lời kèm <strong>căn cứ pháp lý</strong>
+    và <strong>đúng mốc thời gian</strong>.</p>
+  <p class="lede" style="margin-top:var(--space-6);font-size:15px">
+    Lớp CS106.F31.CN2 · GVHD: PGS.TS. Nguyễn Đình Hiển</p>
+</section>
+
+<section class="slide">
+  <div class="eyebrow">Vấn đề</div>
+  <h2>Tra được mức phạt, nhưng không kiểm chứng được</h2>
+  <ul>
+    <li>Nghị định 168/2024 thay Nghị định 100/2019 từ 01/01/2025 — nhiều mức phạt tăng gấp nhiều lần</li>
+    <li>Bài tổng hợp trên mạng <strong>không dẫn căn cứ</strong>, thường đã lỗi thời</li>
+    <li>Mức phạt nồng độ cồn chênh từ <strong>100.000 đ tới 40.000.000 đ</strong> tuỳ khung và tuỳ phương tiện</li>
+    <li>Sai một con số là thiệt hại thật cho người đọc</li>
+  </ul>
+</section>
+
+<section class="slide olive">
+  <div class="eyebrow">Mô hình tri thức</div>
+  <h2>K = (C, R, Rules, F, Keyphrase)</h2>
+  <div class="grid">
+    <div class="stat"><span class="num">73</span><span class="cap">Khái niệm</span></div>
+    <div class="stat"><span class="num">482</span><span class="cap">Quan hệ</span></div>
+    <div class="stat"><span class="num">109</span><span class="cap">Quy tắc</span></div>
+    <div class="stat"><span class="num">345</span><span class="cap">Hành vi vi phạm</span></div>
+    <div class="stat"><span class="num">1.674</span><span class="cap">Cụm từ khoá</span></div>
+  </div>
+  <p class="lede">Mỗi mẩu tri thức mang <strong>căn cứ điều — khoản — điểm</strong> và
+    <strong>khoảng hiệu lực</strong>. Đối chiếu Văn bản hợp nhất 55/VBHN-VPQH ngày 23/3/2026.</p>
+</section>
+
+<section class="slide">
+  <div class="eyebrow">Demo 1 · Câu chuẩn</div>
+  <p class="quote">“Vượt đèn đỏ xe máy phạt bao nhiêu?”</p>
+  <div class="arrow">↓</div>
+  <div class="answer">
+    <div class="big">4.000.000 – 6.000.000 đ · trừ 4 điểm</div>
+    <div class="src">Căn cứ: Điều 7 khoản 7 điểm c Nghị định 168/2024/NĐ-CP</div>
+  </div>
+</section>
+
+<section class="slide">
+  <div class="eyebrow">Demo 2 · Ngữ nghĩa</div>
+  <p class="quote">“nhậu xong lái xe máy bị phạt nhiêu tiền”</p>
+  <div class="arrow">↓ đúng khung nồng độ cồn</div>
+  <p class="lede">Chữ <strong>“nhậu”</strong> không xuất hiện trong <strong>bất kỳ văn bản
+    luật nào</strong>. Đây chính là yêu cầu <em>“tra cứu theo ngữ nghĩa đơn giản”</em> của đề bài.</p>
+  <div style="margin-top:var(--space-4)">
+    <span class="pill">TF-IDF char n-gram</span><span class="pill">chịu lỗi chính tả</span>
+    <span class="pill">chịu truy vấn không dấu</span>
+  </div>
+</section>
+
+<section class="slide olive">
+  <div class="eyebrow">Demo 3 · Suy diễn số học</div>
+  <h2>Cùng câu hỏi, giá trị khác nhau → khung phạt khác nhau</h2>
+  <div class="grid">
+    <div class="stat"><span class="cap">0,2 mg/l</span><span class="num">100–200k</span></div>
+    <div class="stat"><span class="cap">0,3 mg/l</span><span class="num">300–400k</span></div>
+    <div class="stat"><span class="cap">0,5 mg/l</span><span class="num">400–600k</span></div>
+  </div>
+  <p class="lede">Ngưỡng rút từ <strong>chính nguyên văn điều khoản</strong>, không viết cứng
+    trong mã. Riêng 22 câu có giá trị số: Top-1 <strong>40,9% → 95,5%</strong>.</p>
+</section>
+
+<section class="slide dark">
+  <div class="eyebrow">Kết quả · 120 câu hỏi chuẩn</div>
+  <h2>Chỉ số đánh giá</h2>
+  <div class="grid">
+    <div class="stat gr"><span class="num">95,83%</span><span class="cap">Phân lớp bài toán</span></div>
+    <div class="stat"><span class="num">76,67%</span><span class="cap">Top-1</span></div>
+    <div class="stat"><span class="num">95,00%</span><span class="cap">Top-5</span></div>
+    <div class="stat"><span class="num">0,8384</span><span class="cap">MRR</span></div>
+    <div class="stat"><span class="num">6,2 ms</span><span class="cap">Thời gian trả lời</span></div>
+  </div>
+</section>
+
+<section class="slide">
+  <div class="eyebrow">Thí nghiệm loại bỏ thành phần</div>
+  <h2>Từng thành phần đóng góp bao nhiêu?</h2>
+  <div class="bars">
+    <div class="bar"><span class="k">A · Chỉ TF-IDF</span>
+      <span class="track"><i class="fill" style="width:58.3%"></i></span><span class="v">58,3%</span></div>
+    <div class="bar"><span class="k">B · Chỉ keyphrase</span>
+      <span class="track"><i class="fill" style="width:35.8%"></i></span><span class="v">35,8%</span></div>
+    <div class="bar"><span class="k">C · Lai ba thành phần</span>
+      <span class="track"><i class="fill" style="width:66.7%"></i></span><span class="v">66,7%</span></div>
+    <div class="bar"><span class="k">D · Đầy đủ + suy diễn số học</span>
+      <span class="track"><i class="fill win" style="width:76.7%"></i></span><span class="v">76,7%</span></div>
+  </div>
+  <p class="lede">Keyphrase đứng riêng <strong>yếu hơn</strong> TF-IDF — nhưng vẫn xứng trọng số
+    cao nhất 0,55: nó thua về <strong>độ phủ</strong>, không thua về <strong>độ chính xác</strong>.</p>
+</section>
+
+<section class="slide">
+  <div class="eyebrow">Hiệu lực theo thời gian</div>
+  <h2>Sửa đổi lưu như <em>dữ liệu</em>, không hợp nhất</h2>
+  <ul>
+    <li>Mỗi điều khoản mang khoảng hiệu lực <code>[từ, đến]</code></li>
+    <li>Trả lời được <strong>“mức phạt tại ngày X là bao nhiêu”</strong>, không chỉ bản hiện hành</li>
+    <li>Ví dụ: R15 (chở trẻ em dưới 10 tuổi) hiệu lực từ <strong>01/7/2026</strong> theo
+        Luật 118/2025 — không phải 01/01/2025</li>
+  </ul>
+</section>
+
+<section class="slide warn" style="background:var(--color-accent-100)">
+  <div class="eyebrow">Hạn chế — đã đo, không giấu</div>
+  <h2>Ba điều hệ thống chưa làm được</h2>
+  <div class="two">
+    <div class="card">
+      <h3>Truy vấn ngoài lĩnh vực</h3>
+      <p style="font-size:15px;margin:0">Hỏi “cách nấu phở bò” vẫn trả kết quả. Dense embedding
+        nâng AUC <strong>0,8746 → 0,9958</strong>, loại 92,5% rác — nhưng hai phân bố vẫn chồng lấn.</p>
+    </div>
+    <div class="card">
+      <h3>Không nêu phương tiện</h3>
+      <p style="font-size:15px;margin:0">Hỏi nồng độ cồn không nêu xe → trả khung <strong>xe đạp</strong>.
+        Hệ thống không bịa phương tiện người dùng chưa nói.</p>
+    </div>
+    <div class="card">
+      <h3>Không sinh ngôn ngữ</h3>
+      <p style="font-size:15px;margin:0">Câu trả lời ghép từ nguyên văn điều khoản.
+        <strong>Có chủ đích</strong> — hệ tra cứu pháp luật không được diễn giải lại lời luật.</p>
+    </div>
+  </div>
+  <p class="lede" style="font-size:16px">Kết quả <strong>âm</strong> cũng ghi lại: phủ từ vựng KB
+    là tín hiệu vô dụng (AUC 0,72) — đã thử và đã bác bỏ.</p>
+</section>
+
+<section class="slide dark">
+  <div class="eyebrow">Chất lượng kỹ thuật</div>
+  <h2>Kiểm thử và chốt chặn</h2>
+  <div class="grid">
+    <div class="stat gr"><span class="num">259</span><span class="cap">Test đạt</span></div>
+    <div class="stat"><span class="num">91%</span><span class="cap">Độ phủ</span></div>
+    <div class="stat"><span class="num">12/12</span><span class="cap">Ca nghiệm thu</span></div>
+    <div class="stat"><span class="num">6</span><span class="cap">xfail có số đo</span></div>
+  </div>
+  <p class="lede">Cổng chỉ số trong CI chặn mọi thay đổi làm Top-1 tụt dưới 76,67%.
+    Kỳ vọng của 12 ca nghiệm thu lấy <strong>từ văn bản luật</strong>, không phải chép lại
+    kết quả hệ thống in ra.</p>
+</section>
+
+<section class="slide">
+  <div class="eyebrow">Kết luận</div>
+  <h2>Đóng góp của nhóm</h2>
+  <ul>
+    <li><strong>Hiệu lực theo thời gian</strong> — trả lời được “mức phạt tại ngày X”</li>
+    <li><strong>Suy diễn số học</strong> — chọn đúng khung theo giá trị đo, 40,9% → 95,5%</li>
+    <li><strong>Đo và ghi lại hạn chế</strong> bằng test xfail có số đo, kể cả kết quả âm</li>
+  </ul>
+  <p class="lede" style="margin-top:var(--space-6)">Kết quả tra cứu mang tính tham khảo,
+    không thay thế ý kiến của cơ quan có thẩm quyền.</p>
+</section>
+
+</div>
+<div class="no" id="no">1 / 12</div>
+<div class="hint">← → hoặc cuộn để chuyển slide · F fullscreen · P in ra PDF</div>
+<script>
+const deck = document.getElementById('deck');
+const slides = [...document.querySelectorAll('.slide')];
+const badge = document.getElementById('no');
+const go = i => slides[Math.max(0, Math.min(slides.length - 1, i))]
+  .scrollIntoView({behavior: 'smooth'});
+const current = () => Math.round(deck.scrollTop / window.innerHeight);
+deck.addEventListener('scroll', () => {
+  badge.textContent = `${current() + 1} / ${slides.length}`;
+}, {passive: true});
+addEventListener('keydown', e => {
+  if (['ArrowRight', 'PageDown', ' '].includes(e.key)) { e.preventDefault(); go(current() + 1); }
+  if (['ArrowLeft', 'PageUp'].includes(e.key)) { e.preventDefault(); go(current() - 1); }
+  if (e.key === 'Home') go(0);
+  if (e.key === 'End') go(slides.length - 1);
+  if (e.key.toLowerCase() === 'f') document.documentElement.requestFullscreen?.();
+  if (e.key.toLowerCase() === 'p') window.print();
+});
+</script>
+</body>
+</html>
