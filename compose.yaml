@@ -1,0 +1,48 @@
+# Chay he thong tra cuu phap luat giao thong duong bo.
+#
+#   docker compose up giao-dien          -> giao dien web tai http://localhost:8501
+#
+# Cong may chu doi duoc: PORT=8502 docker compose up giao-dien
+# (8501 la cong mac dinh cua Streamlit nen de dung voi du an khac tren cung may)
+#   docker compose run --rm kich-ban     -> 12 ca nghiem thu
+#   docker compose run --rm danh-gia     -> do lai chi so tren 120 cau + cong Top-1
+#   docker compose run --rm kiem-thu     -> toan bo bo kiem thu + do phu
+#
+# Ba dich vu duoi dung CHUNG mot anh; chung chi khac lenh chay. Nho vay so lieu
+# in ra chac chan den tu dung ma nguon dang phuc vu giao dien.
+
+x-chung: &chung
+  build:
+    context: .
+    dockerfile: Dockerfile
+  image: tra-cuu-gtdb:moi-nhat
+
+services:
+  giao-dien:
+    <<: *chung
+    container_name: tra-cuu-gtdb-giao-dien
+    ports:
+      - "${PORT:-8501}:8501"
+    restart: unless-stopped
+
+  # --- cac dich vu chay mot lan roi thoat ---
+  kich-ban:
+    <<: *chung
+    profiles: ["cong-cu"]
+    command: ["python", "eval/kich_ban.py", "--chi-tiet"]
+
+  danh-gia:
+    <<: *chung
+    profiles: ["cong-cu"]
+    command: ["python", "eval/evaluate.py", "--gate-top1", "0.7667"]
+
+  kiem-thu:
+    <<: *chung
+    profiles: ["cong-cu"]
+    # Bo kiem thu can goi 'dev' va thu muc tests/ — ca hai deu khong nam trong
+    # anh chay, nen cai them ngay luc chay thay vi phinh anh phuc vu giao dien.
+    volumes:
+      - ./tests:/app/tests:ro
+    command: >
+      sh -c "pip install --quiet --no-cache-dir pytest pytest-cov &&
+             python -m pytest -q --cov --cov-fail-under=80"
