@@ -41,8 +41,11 @@ services:
     profiles: ["cong-cu"]
     # Bo kiem thu can goi 'dev' va thu muc tests/ — ca hai deu khong nam trong
     # anh chay, nen cai them ngay luc chay thay vi phinh anh phuc vu giao dien.
+    # Anh chay bang user khong phai root (tracuu) nen pip khong ghi duoc vao
+    # /opt/venv. Dich vu nay chay mot lan roi thoat, chi no moi chay bang root.
+    user: "0:0"
     volumes:
       - ./tests:/app/tests:ro
     command: >
-      sh -c "pip install --quiet --no-cache-dir pytest pytest-cov &&
+      sh -c "pip install --quiet --no-cache-dir pytest pytest-cov httpx &&
              python -m pytest -q --cov --cov-fail-under=80"
