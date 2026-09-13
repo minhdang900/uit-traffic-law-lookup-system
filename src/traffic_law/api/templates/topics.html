@@ -10,14 +10,14 @@
     {% for lv, n in dem_lv.most_common() %}
     <a class="topic{% if lv == chon %} on{% endif %}" href="/chu-de?linh_vuc={{ lv|urlencode }}">
       <span class="num">{{ n }}</span>
-      <span style="font-size:14px">{{ kb.field.get(lv, lv)|replace("_"," ") }}</span>
+      <span style="font-size:14px">{{ kb.field.get(lv, {}).get("ten", lv) }}</span>
       <span class="muted" style="font-size:12px">{{ nhom_theo_lv[lv]|length }} nhóm</span>
     </a>
     {% endfor %}
   </div>
 
   <div style="margin-top:var(--space-6)">
-    <div class="label">Nhóm thuộc “{{ kb.field.get(chon, chon)|replace("_"," ") }}”</div>
+    <div class="label">Nhóm thuộc “{{ kb.field.get(chon, {}).get("ten", chon) }}”</div>
     <div class="chips">
       {% for nh, n in nhom_theo_lv[chon].most_common() %}
       <span class="chip">{{ kb.group_name.get(nh, nh)|replace("_"," ") }}
