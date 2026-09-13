@@ -40,7 +40,8 @@ Thu hẹp cửa sổ dưới 720px để xem bản mobile (thanh tab đáy) — 
 ```
 ma_nguon/     mã nguồn đầy đủ (bản sạch theo git)
 docker/       ảnh Docker + script khởi động
-bao_cao/      khung báo cáo Word + 2 tài liệu nội dung
+bao_cao/      khung báo cáo Word + 3 tài liệu nội dung
+slide/        slide trình bày (mở bằng trình duyệt, F để fullscreen)
 so_lieu/      số liệu đo được, dán thẳng vào báo cáo
 ```
 

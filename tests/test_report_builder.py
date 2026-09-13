@@ -103,3 +103,37 @@ class TestFiguresFromRealResults:
                  ).read_text(encoding="utf-8")
         for so in ["76,67", "0,8384", "95,83"]:
             assert so not in source, f"Chỉ số {so} bị gõ cứng trong mã nguồn"
+
+
+class TestContentIsComplete:
+    """Báo cáo phải viết xong, không còn chỗ trống nào."""
+
+    def _text(self, document):
+        return "\n".join(p.text for p in document.paragraphs)
+
+    def test_no_placeholder_left(self, document):
+        """Checklist nộp bài yêu cầu tìm Ctrl+F không còn '[Cần viết thêm]'."""
+        assert "[Cần viết thêm]" not in self._text(document)
+
+    def test_explains_why_four_documents_not_one(self, document):
+        """Đề ghi '01 văn bản' — không giải trình là dễ bị đọc thành làm sai đề."""
+        t = self._text(document)
+        assert "168/2024" in t and "36/2024" in t
+        assert "mức phạt" in t, "Phải nêu lý do: luật quy định hành vi, nghị định quy định mức phạt"
+
+    def test_analyses_the_two_weak_classes(self, document):
+        """P2 55% và P7 40% là chỗ hội đồng sẽ hỏi đầu tiên."""
+        t = self._text(document)
+        assert "P2" in t and "P7" in t
+
+    def test_defends_precision_figure(self, document):
+        """0,3375 trông tệ nhưng là đặc tính top-k, phải nói rõ."""
+        assert "0,20" in self._text(document), "Phải nêu trần precision toán học"
+
+    def test_cites_the_consolidated_document(self, document):
+        assert "55/VBHN-VPQH" in self._text(document)
+
+    def test_states_measured_limitations(self, document):
+        """Mục hạn chế là điểm cộng — phải có số đo, không nói chung chung."""
+        t = self._text(document)
+        assert "0,9958" in t or "92,5" in t

@@ -59,7 +59,9 @@ if ( cd "$GOC" && PYTHONPATH=src "$PY" -m traffic_law.report.builder ) >/dev/nul
 else
   echo "    BO QUA: thieu goi 'bao-cao' (pip install -e '.[bao-cao]')" >&2
 fi
-cp "$GOC"/docs/doi_chieu_de_tai_4.md "$GOC"/docs/thiet_ke_giai_phap.md "$DICH/bao_cao/"
+cp "$GOC"/docs/doi_chieu_de_tai_4.md "$GOC"/docs/thiet_ke_giai_phap.md \
+   "$GOC"/docs/kien_truc.md "$DICH/bao_cao/"
+mkdir -p "$DICH/slide" && cp "$GOC"/docs/slide/index.html "$DICH/slide/"
 
 echo "==> [5/6] Script khoi dong demo"
 cp "$GOC"/scripts/nop_bai/chay_demo.sh "$GOC"/scripts/nop_bai/chay_demo.bat "$DICH/docker/"

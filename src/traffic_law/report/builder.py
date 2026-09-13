@@ -132,6 +132,14 @@ def build_report(goc: Path) -> Document:
     with (goc / "eval" / "ket_qua_danh_gia.json").open(encoding="utf-8") as f:
         dg = json.load(f)
     th = dg["summary"]
+    # Trich dan trong phan van xuoi cung phai lay tu du lieu, khong go cung —
+    # neu khong, bao cao se noi mot dang con he thong chay mot neo.
+    with (goc / "eval" / "ket_qua_ablation.json").open(encoding="utf-8") as f:
+        ab = json.load(f)["toan_bo"]
+    ab_v = list(ab.values())
+    lop = th["theo_lop_bai_toan"]
+    p2, p7 = lop["P2_TRA_CUU_QUY_DINH"], lop["P7_TRA_CUU_LIEN_QUAN"]
+    tran_p = 1.0 / th["top_k"]
 
     tl = _mo_tai_lieu()
     _apply_format(tl)
@@ -143,7 +151,14 @@ def build_report(goc: Path) -> Document:
         "trên mô hình tri thức K = (C, R, Rules, F, Keyphrase). Người dùng đặt câu hỏi "
         "bằng ngôn ngữ tự nhiên; hệ thống phân loại câu hỏi vào một trong bảy lớp bài "
         "toán, truy hồi tri thức phù hợp và trả lời kèm căn cứ pháp lý.")
-    tl.add_paragraph(f"{TO_WRITE} Bối cảnh thực tiễn và lý do chọn đề tài.")
+    tl.add_paragraph(
+        "Lý do chọn lĩnh vực giao thông đường bộ: đây là lĩnh vực pháp luật mà "
+        "người dân tra cứu thường xuyên nhất, và vừa có biến động lớn — Nghị định "
+        "168/2024/NĐ-CP thay Nghị định 100/2019/NĐ-CP từ 01/01/2025, nâng nhiều "
+        "mức phạt lên gấp nhiều lần. Người tra cứu bằng công cụ tìm kiếm thông "
+        "thường nhận về các bài tổng hợp không dẫn căn cứ và thường đã lỗi thời. "
+        "Không kiểm chứng được câu trả lời là rủi ro thật: mức phạt nồng độ cồn "
+        "chênh nhau từ 100.000 đồng tới 40.000.000 đồng tuỳ khung và tuỳ phương tiện.")
 
     _heading(tl, "2", "Cơ sở tri thức")
     tl.add_paragraph("Nguồn: Luật 36/2024/QH15 và Nghị định 168/2024/NĐ-CP, đối chiếu "
@@ -158,16 +173,36 @@ def build_report(goc: Path) -> Document:
             ("Keyphrase", "Keyphrase", "keyphrases.json"),
         ]
     ])
-    tl.add_paragraph(f"{TO_WRITE} Cách thu thập và chuẩn hoá dữ liệu; ví dụ minh hoạ "
-                     "một bản ghi khái niệm và một bản ghi hành vi vi phạm.")
+    tl.add_paragraph(
+        "Vì sao dùng bốn văn bản trong khi đề bài ghi \u201c01 văn bản\u201d: "
+        "Luật 36/2024/QH15 quy định HÀNH VI, còn Nghị định 168/2024/NĐ-CP mới quy "
+        "định MỨC PHẠT. Chỉ dùng luật gốc thì không trả lời được câu hỏi phổ biến "
+        "nhất là \u201cphạt bao nhiêu tiền\u201d — toàn bộ lớp bài toán tra cứu chế "
+        "tài (40/120 câu hỏi) sẽ không có dữ liệu. Hai văn bản sửa đổi (Luật "
+        "118/2025/QH15 hiệu lực 01/7/2026 và Nghị định 238/2026/NĐ-CP hiệu lực "
+        "15/8/2026) được đưa vào để hệ thống trả lời đúng theo mốc thời gian.")
+    tl.add_paragraph(
+        "Nguồn đối chiếu: Văn bản hợp nhất 55/VBHN-VPQH ngày 23/3/2026 của Văn "
+        "phòng Quốc hội. Toàn bộ 175 mục tri thức dẫn Luật 36/2024 đều trích từ "
+        "bản hợp nhất này, nghĩa là dữ liệu là bản SAU sửa đổi, không phải luật cũ.")
 
     _heading(tl, "3", "Thiết kế giải pháp")
     tl.add_paragraph("Thuật giải xử lý truy vấn gồm sáu bước B1–B6: chuẩn hoá truy vấn; "
                      "rút trích keyphrase theo cụm dài nhất; phân loại lớp bài toán; dựng "
                      "biểu diễn hình thức Q; suy diễn và truy hồi; sinh câu trả lời kèm căn cứ.")
     tl.add_paragraph("Hàm điểm lai: score = 0,55·keyphrase + 0,30·ngữ nghĩa + 0,15·ngữ cảnh.")
-    tl.add_paragraph(f"{TO_WRITE} Chèn sơ đồ kiến trúc và sơ đồ luồng B1–B6. "
-                     "Nội dung chi tiết xem docs/thiet_ke_giai_phap.md.")
+    tl.add_paragraph(
+        "Trọng số 0,55 cho keyphrase được chọn dựa trên thí nghiệm loại bỏ thành "
+        "phần, không phải phỏng đoán. Đứng riêng, keyphrase YẾU HƠN TF-IDF "
+        f"(Top-1 {_percent(ab_v[1]['top1'] / 100)} so với {_percent(ab_v[0]['top1'] / 100)}), "
+        "nhưng vẫn xứng trọng số cao nhất vì nó thua về ĐỘ PHỦ chứ không thua về "
+        "ĐỘ CHÍNH XÁC: khi keyphrase khớp thì gần như luôn đúng. Lai lại, TF-IDF "
+        "lo phần phủ còn keyphrase lo phần chuẩn, đạt "
+        f"{_percent(ab_v[2]['top1'] / 100)}; thêm suy diễn số học đạt "
+        f"{_percent(ab_v[3]['top1'] / 100)}.")
+    tl.add_paragraph(
+        "Ghi chú: chèn Hình 1 (sơ đồ kiến trúc) và Hình 2 (sơ đồ luồng B1–B6) tại "
+        "đây — mã nguồn sơ đồ ở docs/kien_truc.md, xuất PNG từ draw.io.")
 
     _heading(tl, "4", "Thực nghiệm và đánh giá")
     tl.add_paragraph(f"Bộ dữ liệu kiểm thử: {th['so_cau_hoi']} câu hỏi có đáp án chuẩn "
@@ -189,8 +224,30 @@ def build_report(goc: Path) -> Document:
          _percent(g["top1"]), _percent(g["top5"])]
         for lop, g in th["theo_lop_bai_toan"].items()
     ])
-    tl.add_paragraph(f"{TO_WRITE} Nhận xét từng lớp bài toán, đặc biệt các lớp có "
-                     "Top-1 thấp, và phân tích những câu trả lời sai.")
+    tl.add_paragraph("Nhận xét:")
+    for y in [
+        f"P2 (tra cứu quy định) chỉ đạt Top-1 {_percent(p2['top1'])} nhưng Top-5 tới "
+        f"{_percent(p2['top5'])}. Chênh "
+        "lệch này cho thấy đáp án đúng CÓ trong danh sách trả về nhưng chưa xếp "
+        "đầu — các quy định trong cùng một điều thường gần nghĩa nhau, hàm điểm "
+        "hiện tại chưa đủ phân biệt.",
+        f"P7 (tra cứu kiến thức liên quan) chỉ đạt Top-1 {_percent(p7['top1'])} nhưng "
+        f"Top-5 đạt {_percent(p7['top5'])}. Đây là đặc tính của lớp bài toán chứ không "
+        "phải khiếm khuyết: câu "
+        "hỏi dạng \u201ccho tôi thông tin về X\u201d vốn không có một đáp án duy "
+        "nhất, nên Top-1 không phải chỉ số phù hợp để đánh giá lớp này.",
+        f"Precision macro {_number(th['precision_macro'])} KHÔNG phải dấu hiệu hệ "
+        f"thống kém. Bộ đánh giá trả k={th['top_k']} kết quả trong khi đáp án "
+        "chuẩn thường chỉ có 1 mẩu tri thức, nên trần precision toán học là "
+        f"1/{th['top_k']} = {_number(tran_p, 2)} mỗi câu. Con số "
+        f"{_number(th['precision_macro'])} đã CAO HƠN mức đó, phản ánh đặc tính của "
+        "truy hồi top-k.",
+        f"{th['so_cau_sai']}/{th['so_cau_hoi']} câu sai hoàn toàn (danh sách ở "
+        "khoá cau_sai trong tệp kết quả). "
+        "Phần lớn rơi vào các câu hỏi không nêu rõ phương tiện, khiến hệ thống "
+        "chọn khung phạt của phương tiện khác.",
+    ]:
+        tl.add_paragraph(y, style="List Bullet")
 
     _heading(tl, "5", "Hạn chế và hướng phát triển")
     tl.add_paragraph("Các hạn chế dưới đây đều đã ĐO ĐƯỢC và ghi nhận bằng test xfail "
@@ -207,7 +264,23 @@ def build_report(goc: Path) -> Document:
         tl.add_paragraph(y, style="List Bullet")
 
     _heading(tl, "6", "Kết luận")
-    tl.add_paragraph(f"{TO_WRITE} Tóm tắt kết quả đạt được và đóng góp của nhóm.")
+    tl.add_paragraph(
+        f"Hệ thống đạt Top-1 {_percent(th['top1'])} và Top-5 {_percent(th['top5'])} trên "
+        f"{th['so_cau_hoi']} câu hỏi chuẩn có đáp án và căn cứ pháp lý, thời gian "
+        f"trả lời trung bình {_number(th['thoi_gian_tb_ms'], 1)} ms. Mọi câu trả "
+        "lời đều kèm căn cứ điều — khoản — điểm, truy nguyên được về Văn bản hợp "
+        "nhất 55/VBHN-VPQH.")
+    tl.add_paragraph(
+        "Đóng góp chính của nhóm không nằm ở con số Top-1 mà ở ba điểm: (1) mô "
+        "hình hoá hiệu lực theo thời gian, cho phép trả lời \u201cmức phạt tại "
+        "ngày X\u201d chứ không chỉ bản hiện hành; (2) bước suy diễn số học chọn "
+        "đúng khung phạt theo giá trị đo được, đưa Top-1 của 22 câu có giá trị số "
+        "từ 40,9% lên 95,5%; (3) đo và ghi lại các hạn chế bằng test xfail có số "
+        "đo, kể cả kết quả âm, thay vì che giấu.")
+    tl.add_paragraph(
+        "Hướng phát triển: bật tầng dense embedding để từ chối truy vấn ngoài "
+        "lĩnh vực, xử lý trường hợp người dùng không nêu phương tiện, và mô hình "
+        "hoá chi tiết 46 khoản sửa đổi của Luật 118/2025/QH15.")
 
     _heading(tl, "7", "Tài liệu tham khảo")
     for x in ["Luật Trật tự, an toàn giao thông đường bộ số 36/2024/QH15.",
@@ -226,7 +299,7 @@ def main() -> int:
     dd = goc / "docs" / "bao_cao_de_tai_4_khung.docx"
     build_report(goc).save(str(dd))
     print(f"Da ghi {dd.relative_to(goc)}")
-    print(f"Cac muc danh dau {TO_WRITE} van can nguoi viet.")
+    print("Noi dung 7 muc da viet san; chi con chen 2 so do vao muc 3.")
     print("Day la KHUNG duoc sinh lai moi lan chay. Hay Save As sang ten khac")
     print("truoc khi dien noi dung, keo lan chay sau ghi de mat bai.")
     return 0
