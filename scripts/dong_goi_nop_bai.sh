@@ -60,7 +60,9 @@ else
   echo "    BO QUA: thieu goi 'bao-cao' (pip install -e '.[bao-cao]')" >&2
 fi
 cp "$GOC"/docs/doi_chieu_de_tai_4.md "$GOC"/docs/thiet_ke_giai_phap.md \
-   "$GOC"/docs/kien_truc.md "$DICH/bao_cao/"
+   "$GOC"/docs/kien_truc.md "$GOC"/docs/bao_cao_du_lieu.md "$DICH/bao_cao/"
+# ADR di kem: nguoi cham co the muon biet vi sao chon nhu vay
+mkdir -p "$DICH/bao_cao/adr" && cp "$GOC"/docs/adr/*.md "$DICH/bao_cao/adr/"
 mkdir -p "$DICH/slide" && cp "$GOC"/docs/slide/index.html "$DICH/slide/"
 
 echo "==> [5/6] Script khoi dong demo"
