@@ -280,3 +280,12 @@ def test_clean_citation_text_drops_missing_parts():
     assert clean_citation_text("Nghị định 238/2026/NĐ-CP Điều 3 khoản None") == \
         "Nghị định 238/2026/NĐ-CP Điều 3"
     assert clean_citation_text("NĐ 238 Điều 19 khoản 10") == "NĐ 238 Điều 19 khoản 10"
+
+
+def test_end_milestone_says_why_the_provision_ended():
+    t = validity_timeline(start=date(2025, 1, 1), end=date(2026, 8, 14), origin=date(2025, 1, 1),
+                          origin_doc="Nghị định 168/2024/NĐ-CP", amended_by=None, has_before=False,
+                          amending_docs=[], moc=date(2026, 9, 13),
+                          touching=["Bãi bỏ: BÃI BỎ điểm d khoản 17 Điều 32"])
+    assert (t[-1].date_text, t[-1].reached) == ("14/08/2026", True)
+    assert t[-1].caption == "Hết hiệu lực — Bãi bỏ: BÃI BỎ điểm d khoản 17 Điều 32"

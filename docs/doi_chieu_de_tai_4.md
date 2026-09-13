@@ -104,7 +104,7 @@ Từ `eval/ket_qua_danh_gia.json` · 120 câu hỏi · k = 5.
 | Top-1 | 76,67% | cổng chỉ số CI chặn mọi PR làm tụt dưới mức này |
 | Top-3 · Top-5 | 90,83% · 95,00% | 9/120 câu sai hoàn toàn |
 | MRR | 0,8384 | đáp án đúng thường ở vị trí 1–2 |
-| Precision · Recall · F1 | 0,3375 · 0,9306 · 0,4401 | trả 5 kết quả cho đáp án 1 mẩu → trần precision 0,20 mỗi câu |
+| Precision · Recall · F1 | 0,3373 · 0,9306 · 0,4399 | trả 5 kết quả cho đáp án 1 mẩu → trần precision 0,20 mỗi câu |
 | Thời gian trung bình | 6,2 ms | dao động 6,1–6,3 ms giữa các lần chạy |
 | Độ phủ kiểm thử | 88% | ngưỡng CI là 80% |
 

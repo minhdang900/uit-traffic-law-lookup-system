@@ -14592,7 +14592,7 @@
   "text_search_kd": "tai pham hanh vi quy dinh tai khoan 5 dieu nay trong truong hop cho vuot tren 100% so nguoi quy dinh duoc phep cho cua phuong tien cho qua so nguoi xe o to xe mo to xe gan may xe may chuyen dung tai pham cho qua so nguoi nhoi nhet khach tai pham tai pham nhoi nhet khach bi tich thu xe",
   "hieu_luc": {
    "tu": "2025-01-01",
-   "den": null
+   "den": "2026-08-14"
   }
  },
  {
@@ -14637,7 +14637,7 @@
   "text_search_kd": "tai pham hanh vi quy dinh tai khoan 6 dieu nay trong truong hop cho vuot tren 100% so nguoi quy dinh duoc phep cho cua phuong tien cho qua so nguoi xe o to xe mo to xe gan may xe may chuyen dung tai pham cho vuot 100% so nguoi xe khach nhoi nhet tai pham tai pham cho qua nguoi bi tich thu xe",
   "hieu_luc": {
    "tu": "2025-01-01",
-   "den": null
+   "den": "2026-08-14"
   }
  },
  {
@@ -14682,7 +14682,7 @@
   "text_search_kd": "tai pham hanh vi quy dinh tai diem h khoan 14 dieu nay cai tao, thay doi ket cau xe xe o to xe mo to xe gan may xe may chuyen dung tai pham coi noi thung xe thung xe sai kich thuoc tai pham tai pham thung xe sai kich thuoc",
   "hieu_luc": {
    "tu": "2025-01-01",
-   "den": null
+   "den": "2026-08-14"
   }
  },
  {
@@ -14727,7 +14727,7 @@
   "text_search_kd": "tai pham hanh vi quy dinh tai diem b khoan 16 dieu nay cho qua tai trong xe o to xe mo to xe gan may xe may chuyen dung tai pham cho qua tai dac biet nang tai pham qua tai tai pham cho qua tai bi tich thu xe",
   "hieu_luc": {
    "tu": "2025-01-01",
-   "den": null
+   "den": "2026-08-14"
   }
  },
  {
@@ -14959,7 +14959,7 @@
    "ghi_chu": null
   },
   "hinh_phat_bo_sung": [],
-  "tru_diem_gplx": 0,
+  "tru_diem_gplx": 6,
   "bien_phap_khac_phuc": [],
   "can_cu": {
    "van_ban": "Nghị định 168/2024/NĐ-CP",
@@ -14997,7 +14997,7 @@
    "ghi_chu": null
   },
   "hinh_phat_bo_sung": [],
-  "tru_diem_gplx": 0,
+  "tru_diem_gplx": 2,
   "bien_phap_khac_phuc": [],
   "can_cu": {
    "van_ban": "Nghị định 168/2024/NĐ-CP",
@@ -15035,7 +15035,7 @@
    "ghi_chu": null
   },
   "hinh_phat_bo_sung": [],
-  "tru_diem_gplx": 0,
+  "tru_diem_gplx": 2,
   "bien_phap_khac_phuc": [],
   "can_cu": {
    "van_ban": "Nghị định 168/2024/NĐ-CP",
@@ -15062,7 +15062,7 @@
   "id": "VP_BS_SD_31_1",
   "hanh_vi": "Đưa xe không lắp thiết bị giám sát hành trình của xe hoặc có lắp thiết bị giám sát hành trình nhưng không hoạt động, không đúng quy chuẩn theo quy định hoặc làm sai lệch dữ liệu của thiết bị giám sát hành trình của xe ô tô",
   "nhom": "khac",
-  "chu_the": "nguoi_dieu_khien",
+  "chu_the": "chu_phuong_tien",
   "phuong_tien": [
    "o_to"
   ],
@@ -15100,7 +15100,7 @@
   "id": "VP_BS_SD_31_2",
   "hanh_vi": "Đưa xe không lắp thiết bị ghi nhận hình ảnh người lái xe hoặc có lắp thiết bị ghi nhận hình ảnh người lái xe nhưng không ghi, không lưu trữ được dữ liệu theo quy định hoặc làm sai lệch dữ liệu của thiết bị ghi nhận hình ảnh người lái xe lắp trên xe ô tô",
   "nhom": "khac",
-  "chu_the": "nguoi_dieu_khien",
+  "chu_the": "chu_phuong_tien",
   "phuong_tien": [
    "o_to"
   ],
@@ -15130,7 +15130,7 @@
   "text_search": "đưa xe không lắp thiết bị ghi nhận hình ảnh người lái xe hoặc có lắp thiết bị ghi nhận hình ảnh người lái xe nhưng không ghi, không lưu trữ được dữ liệu theo quy định hoặc làm sai lệch dữ liệu của thiết bị ghi nhận hình ảnh người lái xe lắp trên xe ô tô khác xe ô tô",
   "text_search_kd": "dua xe khong lap thiet bi ghi nhan hinh anh nguoi lai xe hoac co lap thiet bi ghi nhan hinh anh nguoi lai xe nhung khong ghi, khong luu tru duoc du lieu theo quy dinh hoac lam sai lech du lieu cua thiet bi ghi nhan hinh anh nguoi lai xe lap tren xe o to khac xe o to",
   "hieu_luc": {
-   "tu": "2026-08-15",
+   "tu": "2028-01-01",
    "den": null
   }
  }

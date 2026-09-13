@@ -150,7 +150,9 @@ class TestProvisionTruthfulness:
         """SD_63 bãi bỏ điểm d–g khoản 17 Điều 32 bằng bản ghi cấp khoản."""
         html = client.get("/dieu-khoan/VP_ND168D32_K17D").text
         assert "không sửa điều khoản này" not in html
-        assert "Bãi bỏ" in html
+        assert "Bãi bỏ" in html and "Hết hiệu lực" in html
+        truoc = client.get("/dieu-khoan/VP_ND168D32_K17D?ngay=2026-01-01").text
+        assert "Hết hiệu lực từ" not in truoc, "Trước ngày bãi bỏ điều khoản vẫn còn hiệu lực"
 
     def test_amending_citation_has_no_none(self, client):
         assert "khoản None" not in client.get("/dieu-khoan/VP_ND168D13_K8B").text

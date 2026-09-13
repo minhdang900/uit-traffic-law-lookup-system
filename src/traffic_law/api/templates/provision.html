@@ -16,6 +16,9 @@
   </div>
 
   <h2 class="screen-title detail__title">{{ title }}</h2>
+  {% if expired %}
+  <p class="notice" role="note">{{ ic.icon("alert-circle") }}<span>Hết hiệu lực từ sau ngày {{ valid_until }} — không còn áp dụng tại {{ moc_text }}. Xem mốc hiệu lực bên dưới để biết văn bản chấm dứt.</span></p>
+  {% endif %}
   {% if viewing_past %}
   <p class="notice" role="note">{{ ic.icon("alert-circle") }}<span>Đang xem tại {{ moc_text }}. {% if v.behavior_before_amendment %}Câu chữ trên là bản trước sửa đổi; từ {{ valid_from }} điều khoản áp dụng câu chữ mới.{% else %}Điều khoản này chỉ có hiệu lực từ {{ valid_from }}.{% endif %}</span></p>
   {% endif %}

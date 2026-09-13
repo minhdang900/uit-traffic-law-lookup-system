@@ -7,9 +7,9 @@
   "top3": 0.9083,
   "top5": 0.95,
   "mrr": 0.8384,
-  "precision_macro": 0.3375,
+  "precision_macro": 0.3373,
   "recall_macro": 0.9306,
-  "f1_macro": 0.4401,
+  "f1_macro": 0.4399,
   "thoi_gian_tb_ms": 6.1,
   "theo_lop_bai_toan": {
    "P1_TRA_CUU_KHAI_NIEM": {

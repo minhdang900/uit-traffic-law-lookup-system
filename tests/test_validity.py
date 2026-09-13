@@ -52,7 +52,11 @@ class TestValidityInference:
         assert all(v.validity and v.validity.start == HL_ND168 for v in goc)
 
     def test_provisions_created_by_decree238_start_2026_08_15(self, kb):
-        sua = [v for v in kb.violations if v.amended_by]
+        """Trừ điều khoản mà văn bản quy định ngày hiệu lực riêng (có căn cứ)."""
+        import sys
+        sys.path.insert(0, "scripts")
+        from suy_dien_hieu_luc import HIEU_LUC_RIENG
+        sua = [v for v in kb.violations if v.amended_by and v.id not in HIEU_LUC_RIENG]
         assert sua, "Không có điều khoản nào liên quan Nghị định 238"
         assert all(v.validity and v.validity.start == HL_ND238 for v in sua)
 
@@ -72,9 +76,13 @@ class TestLookupAtPointInTime:
         assert all(not v.amended_by for v in k.violations), (
             "Điều khoản của Nghị định 238 xuất hiện trước ngày 15/8/2026")
 
-    def test_after_2026_08_15_everything_applies(self, kb):
+    def test_after_2026_08_15_only_repealed_and_deferred_are_excluded(self, kb):
+        """Sau 15/8/2026 mọi điều khoản đều áp dụng, TRỪ điểm bị Nghị định 238 bãi
+        bỏ và điều khoản có ngày hiệu lực riêng về sau (xem test_amendment_consistency)."""
         k = kb.as_of(date(2026, 9, 1))
-        assert len(k.violations) == len(kb.violations)
+        vang = {v.id for v in kb.violations} - {v.id for v in k.violations}
+        assert vang == {"VP_ND168D32_K17D", "VP_ND168D32_K17DD", "VP_ND168D32_K17E",
+                        "VP_ND168D32_K17G", "VP_BS_SD_31_2"}
 
     def test_applies_on_the_effective_date_itself(self, kb):
         """Biên: điều khoản có hiệu lực NGAY trong ngày 15/8/2026."""
