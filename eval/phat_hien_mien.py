@@ -24,11 +24,11 @@ from pathlib import Path
 
 import numpy as np
 
-GOC = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(GOC / "src"))
+ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / "src"))
 
-from tra_cuu_gtdb.kb.text import bo_dau, chuan_hoa  # noqa: E402
-from tra_cuu_gtdb.reasoning.engine import TraCuuPhapLuat  # noqa: E402
+from traffic_law.kb.text import normalise, strip_accents  # noqa: E402
+from traffic_law.reasoning.engine import LawLookup  # noqa: E402
 
 TU_DUNG = set("la gi cua va co khong the nao bao nhieu duoc mot cac nhung khi thi "
               "o tai ra vao cho de tu den voi".split())
@@ -59,9 +59,9 @@ def oan_khi_loai_het_rac(trong: list[float], ngoai: list[float]) -> tuple[float,
 
 
 def nap_du_lieu() -> tuple[list[str], list[str]]:
-    with (GOC / "eval" / "qa_dataset.json").open(encoding="utf-8") as f:
+    with (ROOT / "eval" / "qa_dataset.json").open(encoding="utf-8") as f:
         trong = [m["cau_hoi"] for m in json.load(f)]
-    with (GOC / "eval" / "truy_van_ngoai_mien.json").open(encoding="utf-8") as f:
+    with (ROOT / "eval" / "truy_van_ngoai_mien.json").open(encoding="utf-8") as f:
         ngoai = [t["cau_hoi"] for t in json.load(f)["truy_van"]]
     return trong, ngoai
 
@@ -73,7 +73,7 @@ def main() -> int:
     tham_so = bd.parse_args()
 
     trong, ngoai = nap_du_lieu()
-    ht = TraCuuPhapLuat()
+    ht = LawLookup()
     kb = ht.kb
     print(f"{len(trong)} câu trong miền · {len(ngoai)} truy vấn ngoài miền\n")
 
@@ -84,46 +84,46 @@ def main() -> int:
     def tfidf_tho(q: str) -> float:
         return max(float(kb.sim(q, k).max()) for k in ("violation", "concept", "rule"))
 
-    def so_keyphrase(q: str) -> float:
-        return float(len(ht.engine.analyzer.rut_trich_keyphrase(q)))
+    def keyphrase_count(q: str) -> float:
+        return float(len(ht.engine.analyzer.extract_keyphrases(q)))
 
     def phu_tu_vung(q: str) -> float:
-        toks = [t for t in bo_dau(chuan_hoa(q)).split()
+        toks = [t for t in strip_accents(normalise(q)).split()
                 if t not in TU_DUNG and len(t) > 1]
         return sum(t in tu_vung for t in toks) / len(toks) if toks else 0.0
 
     tin_hieu: list[tuple[str, object]] = [
         ("TF-IDF thô", tfidf_tho),
-        ("số keyphrase", so_keyphrase),
+        ("số keyphrase", keyphrase_count),
         ("phủ từ vựng KB", phu_tu_vung),
     ]
     if tham_so.dense:
-        from tra_cuu_gtdb.retrieval.dense import BoLocMien, dense_kha_dung
-        if not dense_kha_dung():
+        from traffic_law.retrieval.dense import DomainFilter, dense_available
+        if not dense_available():
             print("Thiếu gói 'dense' — bỏ qua. Cài: pip install -e '.[dense]'")
         else:
-            tin_hieu.append(("dense", BoLocMien(kb).diem_mien))
+            tin_hieu.append(("dense", DomainFilter(kb).domain_score))
 
-    bang = []
+    table = []
     print(f"{'tín hiệu':<16} {'AUC':>8} {'loại rác @0 oan':>17} {'oan @loại hết rác':>19}")
     print("-" * 64)
-    for ten, ham in tin_hieu:
+    for name, ham in tin_hieu:
         p = [ham(q) for q in trong]      # type: ignore[operator]
         n = [ham(q) for q in ngoai]      # type: ignore[operator]
         a = auc(p, n)
-        loai, san = loai_rac_khi_khong_oan(p, n)
+        kind, san = loai_rac_khi_khong_oan(p, n)
         oan, tran = oan_khi_loai_het_rac(p, n)
-        print(f"{ten:<16} {a:>8.4f} {loai:>16.1%} {oan:>18.1%}")
-        bang.append({"tin_hieu": ten, "auc": round(a, 4),
-                     "loai_rac_khi_0_oan": round(loai, 4), "san_trong_mien": round(san, 4),
+        print(f"{name:<16} {a:>8.4f} {kind:>16.1%} {oan:>18.1%}")
+        table.append({"tin_hieu": name, "auc": round(a, 4),
+                     "loai_rac_khi_0_oan": round(kind, 4), "san_trong_mien": round(san, 4),
                      "oan_khi_loai_het_rac": round(oan, 4), "tran_ngoai_mien": round(tran, 4)})
 
     if tham_so.ghi:
-        dd = GOC / "eval" / "ket_qua_phat_hien_mien.json"
+        dd = ROOT / "eval" / "ket_qua_phat_hien_mien.json"
         with dd.open("w", encoding="utf-8") as f:
             json.dump({"so_cau_trong_mien": len(trong), "so_cau_ngoai_mien": len(ngoai),
-                       "ket_qua": bang}, f, ensure_ascii=False, indent=1)
-        print(f"\nĐã ghi {dd.relative_to(GOC)}")
+                       "results": table}, f, ensure_ascii=False, indent=1)
+        print(f"\nĐã ghi {dd.relative_to(ROOT)}")
     return 0
 
 

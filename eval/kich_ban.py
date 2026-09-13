@@ -13,11 +13,11 @@ import sys
 import time
 from pathlib import Path
 
-GOC = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(GOC / "src"))
+ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / "src"))
 
-from tra_cuu_gtdb.kiem_thu.kich_ban import KICH_BAN, kiem_mot_ca  # noqa: E402
-from tra_cuu_gtdb.reasoning.engine import TraCuuPhapLuat  # noqa: E402
+from traffic_law.acceptance.scenarios import SCENARIOS, check_scenario  # noqa: E402
+from traffic_law.reasoning.engine import LawLookup  # noqa: E402
 
 
 def main() -> int:
@@ -26,32 +26,32 @@ def main() -> int:
     bd.add_argument("--chi-tiet", action="store_true", help="in kết quả thực tế")
     ts = bd.parse_args()
 
-    ht = TraCuuPhapLuat()
+    ht = LawLookup()
     ket: list[tuple[object, list[str], float]] = []
-    for ca in KICH_BAN:
+    for ca in SCENARIOS:
         t0 = time.perf_counter()
-        loi = kiem_mot_ca(ht.hoi(ca.cau_hoi, top_k=5), ca)
-        ket.append((ca, loi, (time.perf_counter() - t0) * 1000))
+        errors = check_scenario(ht.ask(ca.question, top_k=5), ca)
+        ket.append((ca, errors, (time.perf_counter() - t0) * 1000))
 
-    so_dat = sum(1 for _, loi, _ in ket if not loi)
+    so_dat = sum(1 for _, errors, _ in ket if not errors)
 
     if ts.markdown:
         print("| Mã | Nhóm | Câu hỏi | Kỳ vọng | Kết quả |")
         print("|---|---|---|---|---|")
-        for ca, loi, _ in ket:
-            ky_vong = ca.ghi_chu or ca.lop or "—"
-            print(f"| {ca.ma} | {ca.nhom} | {ca.cau_hoi} | {ky_vong} | "
-                  f"{'ĐẠT' if not loi else 'KHÔNG ĐẠT — ' + '; '.join(loi)} |")
+        for ca, errors, _ in ket:
+            expectation = ca.note or ca.lop or "—"
+            print(f"| {ca.code} | {ca.group} | {ca.question} | {expectation} | "
+                  f"{'ĐẠT' if not errors else 'KHÔNG ĐẠT — ' + '; '.join(errors)} |")
     else:
         nhom_hien = None
-        for ca, loi, ms in ket:
-            if ca.nhom != nhom_hien:
-                nhom_hien = ca.nhom
+        for ca, errors, ms in ket:
+            if ca.group != nhom_hien:
+                nhom_hien = ca.group
                 print(f"\n── {nhom_hien} " + "─" * (58 - len(nhom_hien)))
-            print(f"  {'DAT ' if not loi else 'HONG'} {ca.ma}  {ca.cau_hoi[:52]:<52} {ms:5.1f} ms")
-            if ca.ghi_chu and ts.chi_tiet:
-                print(f"         ky vong: {ca.ghi_chu}")
-            for x in loi:
+            print(f"  {'DAT ' if not errors else 'HONG'} {ca.code}  {ca.question[:52]:<52} {ms:5.1f} ms")
+            if ca.note and ts.chi_tiet:
+                print(f"         ky vong: {ca.note}")
+            for x in errors:
                 print(f"         -> {x}")
 
     print(f"\n{so_dat}/{len(ket)} ca ĐẠT")

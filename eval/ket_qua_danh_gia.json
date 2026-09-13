@@ -1,5 +1,5 @@
 {
- "tong_hop": {
+ "summary": {
   "so_cau_hoi": 120,
   "top_k": 5,
   "do_chinh_xac_phan_lop": 0.9583,
@@ -74,7 +74,7 @@
  "cau_sai": [
   {
    "id": "Q011",
-   "cau_hoi": "Đèn giao thông có mấy màu?",
+   "question": "Đèn giao thông có mấy màu?",
    "lop_dung": "P1_TRA_CUU_KHAI_NIEM",
    "lop_he_thong": "P7_TRA_CUU_LIEN_QUAN",
    "tri_thuc_dung": [
@@ -90,7 +90,7 @@
   },
   {
    "id": "Q020",
-   "cau_hoi": "Mấy cái xe tự chạy không cần người lái ấy, trong luật gọi là gì và định nghĩa ra sao?",
+   "question": "Mấy cái xe tự chạy không cần người lái ấy, trong luật gọi là gì và định nghĩa ra sao?",
    "lop_dung": "P1_TRA_CUU_KHAI_NIEM",
    "lop_he_thong": "P1_TRA_CUU_KHAI_NIEM",
    "tri_thuc_dung": [
@@ -108,7 +108,7 @@
   },
   {
    "id": "Q021",
-   "cau_hoi": "Gặp đèn đỏ thì có được đi tiếp không?",
+   "question": "Gặp đèn đỏ thì có được đi tiếp không?",
    "lop_dung": "P2_TRA_CUU_QUY_DINH",
    "lop_he_thong": "P2_TRA_CUU_QUY_DINH",
    "tri_thuc_dung": [
@@ -126,7 +126,7 @@
   },
   {
    "id": "Q032",
-   "cau_hoi": "Bằng lái bị trừ hết 12 điểm rồi thì sao, có được chạy xe nữa không, bao lâu mới lấy lại được?",
+   "question": "Bằng lái bị trừ hết 12 điểm rồi thì sao, có được chạy xe nữa không, bao lâu mới lấy lại được?",
    "lop_dung": "P2_TRA_CUU_QUY_DINH",
    "lop_he_thong": "P4_TRA_CUU_NGUOC",
    "tri_thuc_dung": [
@@ -138,7 +138,7 @@
   },
   {
    "id": "Q035",
-   "cau_hoi": "Chở con nhỏ trên ô tô thì luật quy định cháu ngồi ở đâu?",
+   "question": "Chở con nhỏ trên ô tô thì luật quy định cháu ngồi ở đâu?",
    "lop_dung": "P2_TRA_CUU_QUY_DINH",
    "lop_he_thong": "P2_TRA_CUU_QUY_DINH",
    "tri_thuc_dung": [
@@ -156,7 +156,7 @@
   },
   {
    "id": "Q080",
-   "cau_hoi": "Không chịu dừng xe khi cảnh sát giao thông ra hiệu kiểm tra thì phạt bao nhiêu?",
+   "question": "Không chịu dừng xe khi cảnh sát giao thông ra hiệu kiểm tra thì phạt bao nhiêu?",
    "lop_dung": "P3_TRA_CUU_CHE_TAI",
    "lop_he_thong": "P5_SUY_DIEN_TINH_HUONG",
    "tri_thuc_dung": [
@@ -171,7 +171,7 @@
   },
   {
    "id": "Q096",
-   "cau_hoi": "Nhóm em 4 đứa đi chung một xe máy, không ai đội mũ bảo hiểm, lại còn chạy quá tốc độ 15 km/h. Bị phạt bao nhiêu ạ?",
+   "question": "Nhóm em 4 đứa đi chung một xe máy, không ai đội mũ bảo hiểm, lại còn chạy quá tốc độ 15 km/h. Bị phạt bao nhiêu ạ?",
    "lop_dung": "P5_SUY_DIEN_TINH_HUONG",
    "lop_he_thong": "P3_TRA_CUU_CHE_TAI",
    "tri_thuc_dung": [
@@ -191,7 +191,7 @@
   },
   {
    "id": "Q101",
-   "cau_hoi": "Xe ô tô của tôi bị che mất biển số và cũng đã quá hạn đăng kiểm hơn một tháng. Nếu bị kiểm tra thì phạt thế nào?",
+   "question": "Xe ô tô của tôi bị che mất biển số và cũng đã quá hạn đăng kiểm hơn một tháng. Nếu bị kiểm tra thì phạt thế nào?",
    "lop_dung": "P5_SUY_DIEN_TINH_HUONG",
    "lop_he_thong": "P5_SUY_DIEN_TINH_HUONG",
    "tri_thuc_dung": [
@@ -207,7 +207,7 @@
   },
   {
    "id": "Q104",
-   "cau_hoi": "Tôi lái ô tô đi ngược chiều, lúc đó có xe cứu thương hú còi phía sau mà tôi không nhường đường. Bị phạt bao nhiêu?",
+   "question": "Tôi lái ô tô đi ngược chiều, lúc đó có xe cứu thương hú còi phía sau mà tôi không nhường đường. Bị phạt bao nhiêu?",
    "lop_dung": "P5_SUY_DIEN_TINH_HUONG",
    "lop_he_thong": "P3_TRA_CUU_CHE_TAI",
    "tri_thuc_dung": [

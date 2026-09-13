@@ -15,12 +15,12 @@ x-chung: &chung
   build:
     context: .
     dockerfile: Dockerfile
-  image: tra-cuu-gtdb:moi-nhat
+  image: traffic-law:latest
 
 services:
   giao-dien:
     <<: *chung
-    container_name: tra-cuu-gtdb-giao-dien
+    container_name: traffic-law-web
     ports:
       - "${PORT:-8501}:8501"
     restart: unless-stopped

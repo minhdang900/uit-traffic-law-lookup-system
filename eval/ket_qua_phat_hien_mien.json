@@ -1,7 +1,7 @@
 {
  "so_cau_trong_mien": 120,
  "so_cau_ngoai_mien": 40,
- "ket_qua": [
+ "results": [
   {
    "tin_hieu": "TF-IDF thô",
    "auc": 0.8746,
