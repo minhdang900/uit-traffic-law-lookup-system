@@ -109,14 +109,24 @@ mkdir -p "$DICH/bao_cao/adr" && cp "$GOC"/docs/adr/*.md "$DICH/bao_cao/adr/"
 cp "$GOC"/docs/slide/index.html "$DICH/slide/"
 
 echo "==> [6/8] Bao cao hoan chinh + slide trinh chieu"
-# Sinh lai neu moi truong cho phep; khong thi dung ban da luu trong docs/.
-( cd "$GOC" && "$PY" scripts/tao_bao_cao_day_du.py ) >/dev/null 2>&1 \
-  || echo "    BO QUA sinh lai .docx (thieu python-docx) — dung ban da luu" >&2
-( cd "$GOC" && node scripts/lam_slide.js ) >/dev/null 2>&1 \
-  || echo "    BO QUA sinh lai .pptx (thieu node/pptxgenjs) — dung ban da luu" >&2
-cp "$GOC/docs/BaoCao_Nhom7_CS106.docx" "$DICH/bao_cao/"
-cp "$GOC/docs/Slide_Nhom7_CS106.pptx" "$DICH/slide/"
-echo "    BaoCao_Nhom7_CS106.docx + Slide_Nhom7_CS106.pptx"
+# Sinh THANG vao thu muc dich, KHONG ghi de ban trong docs/. Ly do: tep .docx va
+# .pptx nhung dau thoi gian nen moi lan dung lai ra byte khac du noi dung y het —
+# ghi de vao docs/ se lam git ban sau moi lan dong goi. Ban trong docs/ dong vai
+# tro ban luu du phong, chi cap nhat khi ai do chay thang bo sinh khong doi so.
+if ( cd "$GOC" && "$PY" scripts/tao_bao_cao_day_du.py "$GOC" "$GOC/docs/so_do" \
+     "$DICH/bao_cao/BaoCao_Nhom7_CS106.docx" ) >/dev/null 2>&1; then
+  echo "    BaoCao_Nhom7_CS106.docx — sinh lai tu ma"
+else
+  cp "$GOC/docs/BaoCao_Nhom7_CS106.docx" "$DICH/bao_cao/"
+  echo "    BaoCao_Nhom7_CS106.docx — dung ban da luu (thieu python-docx)" >&2
+fi
+if ( cd "$GOC" && node scripts/lam_slide.js "$GOC" "$GOC/docs/so_do" \
+     "$DICH/slide/Slide_Nhom7_CS106.pptx" ) >/dev/null 2>&1; then
+  echo "    Slide_Nhom7_CS106.pptx — sinh lai tu ma"
+else
+  cp "$GOC/docs/Slide_Nhom7_CS106.pptx" "$DICH/slide/"
+  echo "    Slide_Nhom7_CS106.pptx — dung ban da luu (thieu node/pptxgenjs)" >&2
+fi
 
 echo "==> [7/8] Script khoi dong demo"
 cp "$GOC"/scripts/nop_bai/chay_demo.sh "$GOC"/scripts/nop_bai/chay_demo.bat "$DICH/docker/"
