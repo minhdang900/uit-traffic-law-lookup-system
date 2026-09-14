@@ -49,10 +49,12 @@ echo "==> [2/9] Anh Docker — buoc nay lau nhat"
 # toi mot tep .tar.gz cu the.
 TEP_ANH="$DICH/docker/traffic-law-image.tar.gz"
 if command -v docker >/dev/null 2>&1; then
-  if ! docker image inspect "$ANH" >/dev/null 2>&1; then
-    echo "    Chua co anh $ANH, dang build..."
-    docker build -t "$ANH" "$GOC"
-  fi
+  # LUON build lai: truoc day chi build khi chua co anh, nen mot anh cu tren may
+  # bi xuat lai lang le va demo khong khop ma nguon. Cache cua Docker giu cho lan
+  # build khong doi van nhanh.
+  echo "    dang build $ANH tu ma nguon hien tai..."
+  docker build -q -t "$ANH" "$GOC" >/dev/null
+  echo "    anh tao luc $(docker image inspect "$ANH" --format '{{.Created}}')"
   docker save "$ANH" | gzip -1 > "$TEP_ANH"
   echo "    $(du -h "$TEP_ANH" | cut -f1)"
 else
