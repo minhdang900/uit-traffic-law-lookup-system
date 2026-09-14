@@ -173,9 +173,9 @@ nên hiệu lực từ **01/7/2026**, không phải 01/01/2025.
 | Lớp bảo vệ | Cơ chế |
 |---|---|
 | Toàn vẹn dữ liệu | `kb/validator.py` — định danh trùng, quan hệ treo, thiếu căn cứ, văn bản sửa đổi thiếu |
-| Hành vi đầu ra | ảnh chụp vàng `tests/test_hop_dong_dau_ra.py` — 13 truy vấn, khoá cả bộ trường dict trả về |
+| Hành vi đầu ra | ảnh chụp vàng `tests/test_output_contract.py` — 13 truy vấn, khoá cả bộ trường dict trả về |
 | Chất lượng truy hồi | `eval/evaluate.py --gate-top1 0.7667` — CI đỏ nếu Top-1 tụt |
-| Độ phủ | `pytest --cov-fail-under=80` (hiện đạt 88%) |
+| Độ phủ | `pytest --cov-fail-under=80` (hiện đạt 90% trên 256 test đạt · 5 xfail) |
 | Kiểu và định dạng | `mypy` (strict trên `domain`, `kb`, `retrieval`) và `ruff` |
 
 ---
@@ -186,7 +186,8 @@ Ghi lại để không ai tưởng hệ thống làm được nhiều hơn thự
 
 - **Không tách được truy vấn ngoài lĩnh vực ở cấu hình mặc định.** Đã đo: đặc trưng TF-IDF
   quá yếu, 56/120 câu hợp lệ chấm điểm thấp hơn hoặc bằng truy vấn rác. Dense embedding
-  nâng AUC lên 0,9958 và loại 92,5% rác, nhưng hai phân bố vẫn chồng lấn.
+  nâng AUC lên 0,9958 — riêng điểm dense loại được 77,5% rác khi ép buộc 0 câu hợp lệ bị
+  oan, bộ lọc kết hợp keyphrase + dense loại được 92,5% — nhưng hai phân bố vẫn chồng lấn.
 - **Không sinh ngôn ngữ tự nhiên.** Câu trả lời ghép từ nguyên văn điều khoản, cố ý như vậy:
   một hệ tra cứu pháp luật không được diễn giải lại lời của luật.
 - **Không suy luận đa bước.** P5 cộng dồn nhiều hành vi độc lập, không suy diễn dây chuyền.

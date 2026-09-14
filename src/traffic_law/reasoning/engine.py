@@ -283,6 +283,72 @@ MAU_TRA_CUU_NGUOC = [r"\b(loi|hanh vi|vi pham)\s+(nao|gi)\b", r"\bnhung loi\b",
                      r"\bnao bi\b", r"\bnao thi bi\b", r"\bco loi nao\b",
                      r"\bnhung hanh vi\b", r"\bnao chi bi\b"]
 MAU_CAN_CU = [r"\bđiều\s+\d+", r"\bkhoản\s+\d+", r"\bđiểm\s+[a-zđ]\b\s*khoản"]
+# Mẫu của hai bộ nhận dạng cấu trúc (căn cứ, ràng buộc số), theo hai cách gõ.
+# Không bỏ dấu cả câu rồi dùng chung một bộ mẫu được: mất dấu thì "đèn" và "đến"
+# cùng thành "den", "tự" và "từ" cùng thành "tu". Vì vậy nhánh không dấu chỉ bật
+# khi CẢ câu không có dấu, và mẫu của nó chặt hơn ("den"/"tu" phải đứng trước số).
+MAU_CAU_TRUC = {
+    True: {  # co dau
+        "dieu": r"điều\s+(\d+)", "khoan": r"khoản\s+(\d+[a-zđ]?)",
+        "diem": r"điểm\s+([a-zđ])\b", "luat": r"luật",
+        "tru_diem": r"trừ\s*(?:tới|đến|tận|hết)?\s*(\d+)\s*điểm",
+        "tien_khoang": r"từ\s*([\d.,]+)\s*(triệu|nghìn|ngàn|đồng)?\s*(?:đồng)?\s*"
+                       r"(?:đến|tới|-)\s*([\d.,]+)\s*(triệu|nghìn|ngàn|đồng)(?!\s*tháng)",
+        "tien_min": r"\b(trên|hơn|lớn hơn|từ)\b",
+        "tien_max": r"\b(dưới|nhỏ hơn|không quá|đến)\b",
+        "tich_thu": r"tịch thu",
+        "tuoc_khoang": r"tước.{0,20}?(\d+)\s*(?:tháng)?\s*(?:đến|tới|-)\s*(\d+)\s*tháng",
+        "tuoc": r"\btước\b", "canh_cao": r"cảnh cáo",
+        "giam_dan": r"\b(cao nhất|nặng nhất|lớn nhất|kịch khung)\b",
+        "tang_dan": r"\b(thấp nhất|nhẹ nhất|nhỏ nhất)\b",
+    },
+    False: {  # khong dau
+        "dieu": r"\bdieu\s+(\d+)", "khoan": r"\bkhoan\s+(\d+[a-z]?)",
+        "diem": r"\bdiem\s+(dd|[a-z])\b", "luat": r"\bluat\b",
+        "tru_diem": r"\btru\s*(?:toi|den|tan|het)?\s*(\d+)\s*diem",
+        "tien_khoang": r"\btu\s*([\d.,]+)\s*(trieu|nghin|ngan|dong)?\s*(?:dong)?\s*"
+                       r"(?:den|toi|-)\s*([\d.,]+)\s*(trieu|nghin|ngan|dong)(?!\s*thang)",
+        # "hon" (hỗn), "duoi" (đuổi), "khong qua" (không qua) cũng trùng mặt chữ
+        "tien_min": r"\b(tren|lon hon)\b|\bhon\s*\d|\btu\s*\d",
+        "tien_max": r"\bnho hon\b|\b(duoi|khong qua)\s*\d|\bden\s*\d",
+        "tich_thu": r"\btich thu\b",
+        "tuoc_khoang": r"\btuoc.{0,20}?(\d+)\s*(?:thang)?\s*(?:den|toi|-)\s*(\d+)\s*thang",
+        "tuoc": r"\btuoc\b", "canh_cao": r"\bcanh cao\b",
+        "giam_dan": r"\b(cao nhat|nang nhat|lon nhat|kich khung)\b",
+        "tang_dan": r"\b(thap nhat|nhe nhat|nho nhat)\b",
+    },
+}
+# parse_money chỉ hiểu đơn vị có dấu; câu không dấu được phục dấu riêng phần đơn vị.
+_DON_VI_KHONG_DAU = {"trieu": "triệu", "nghin": "nghìn", "ngan": "ngàn", "dong": "đồng",
+                     "ty": "tỷ", "ti": "tỉ"}
+
+
+def _mau_cau_truc(t):
+    """Chọn bộ mẫu theo cách gõ: câu không có dấu nào thì dùng bộ mẫu không dấu."""
+    return MAU_CAU_TRUC[strip_accents(t) != t]
+
+
+# Các mẫu luôn có số đi kèm nên thử lại bản không dấu cũng không gặp chuyện trùng
+# mặt chữ "den"/"tu"; dùng cho câu lẫn dấu (gõ không dấu nhưng dán "NĐ-CP").
+_KHOA_THU_LAI_KHONG_DAU = {"dieu", "khoan", "diem", "luat", "tru_diem"}
+
+
+def _tim_mau(khoa, t):
+    """Dò một mẫu cấu trúc. Câu có dấu mà không khớp thì thử lại bản không dấu
+    (chỉ với các khoá an toàn), để câu lẫn dấu không bị trượt cả trường."""
+    mau = _mau_cau_truc(t)
+    m = re.search(mau[khoa], t)
+    if m is None and mau is MAU_CAU_TRUC[True] and khoa in _KHOA_THU_LAI_KHONG_DAU:
+        m = re.search(MAU_CAU_TRUC[False][khoa], strip_accents(t))
+    return m
+
+
+def _phuc_dau_don_vi(t):
+    """Đổi đơn vị tiền không dấu đứng ngay sau một con số về bản có dấu."""
+    return re.sub(r"(\d)\s*(trieu|nghin|ngan|dong|ty|ti)\b",
+                  lambda m: m.group(1) + " " + _DON_VI_KHONG_DAU[m.group(2)], t)
+
+
 MAU_TINH_HUONG = [r"\btoi\b", r"\bem\b", r"\bminh\b", r"\bcsgt\b", r"\bcanh sat\b",
                   r"\bvua\b.{0,25}\bvua\b", r"\bdong thoi\b", r"\bbi bat\b",
                   r"\bhom qua\b", r"\btoi qua\b", r"\bva lai\b", r"\blai con\b",
@@ -365,18 +431,19 @@ class QueryAnalyzer:
         """
         t = normalise(text)
         cc = {}
-        m = re.search(r"điều\s+(\d+)", t)
+        m = _tim_mau("dieu", t)
         if m:
             cc["article"] = int(m.group(1))
-        m = re.search(r"khoản\s+(\d+[a-zđ]?)", t)
+        m = _tim_mau("khoan", t)
         if m:
             cc["clause"] = m.group(1)
-        m = re.search(r"điểm\s+([a-zđ])\b", t)
+        m = _tim_mau("diem", t)
         if m:
-            cc["point"] = m.group(1)
+            # go khong dau, diem "đ" viet la "dd" (Telex)
+            cc["point"] = "đ" if m.group(1) == "dd" else m.group(1)
         if "168" in t:
             cc["documents"] = "Nghị định 168/2024/NĐ-CP"
-        elif "36/2024" in t or "luật" in t:
+        elif "36/2024" in t or _tim_mau("luat", t):
             cc["documents"] = "Luật 36/2024/QH15"
         return cc if "article" in cc else None
 
@@ -387,39 +454,41 @@ class QueryAnalyzer:
         và yêu cầu sắp xếp (cao nhất, thấp nhất).
         """
         t = normalise(text)
+        mau = _mau_cau_truc(t)
+        dv_tien = t if mau is MAU_CAU_TRUC[True] else _phuc_dau_don_vi(t)
         rb = {}
-        m = re.search(r"trừ\s*(?:tới|đến|tận|hết)?\s*(\d+)\s*điểm", t)
+        m = _tim_mau("tru_diem", t)
         if m:
             rb["tru_diem"] = int(m.group(1))
         # khoang tien "tu X den Y"
-        m = re.search(r"từ\s*([\d.,]+)\s*(triệu|nghìn|ngàn|đồng)?\s*(?:đồng)?\s*"
-                      r"(?:đến|tới|-)\s*([\d.,]+)\s*(triệu|nghìn|ngàn|đồng)"
-                      r"(?!\s*tháng)", t)
+        m = re.search(mau["tien_khoang"], t)
         if m:
-            dv = m.group(2) or m.group(4) or "đồng"
+            def don_vi(x):
+                return _DON_VI_KHONG_DAU.get(x, x) if x else x
+            dv = don_vi(m.group(2)) or don_vi(m.group(4)) or "đồng"
             a = parse_money("%s %s" % (m.group(1), dv))
-            b = parse_money("%s %s" % (m.group(3), m.group(4) or dv))
+            b = parse_money("%s %s" % (m.group(3), don_vi(m.group(4)) or dv))
             if a and b:
                 rb["tien_khoang"] = (a[0], b[0])
         else:
-            tien = parse_money(t)
+            tien = parse_money(dv_tien)
             if tien:
-                if re.search(r"\b(trên|hơn|lớn hơn|từ)\b", t):
+                if re.search(mau["tien_min"], t):
                     rb["tien_min"] = max(tien)
-                if re.search(r"\b(dưới|nhỏ hơn|không quá|đến)\b", t):
+                if re.search(mau["tien_max"], t):
                     rb["tien_max"] = max(tien)
-        if re.search(r"tịch thu", t):
+        if re.search(mau["tich_thu"], t):
             rb["extra_penalties"] = "tịch thu"
-        m = re.search(r"tước.{0,20}?(\d+)\s*(?:tháng)?\s*(?:đến|tới|-)\s*(\d+)\s*tháng", t)
+        m = re.search(mau["tuoc_khoang"], t)
         if m:
             rb["extra_penalties"] = "%s tháng đến %s tháng" % (m.group(1), m.group(2))
-        elif re.search(r"\btước\b", t):
+        elif re.search(mau["tuoc"], t):
             rb["extra_penalties"] = "tước"
-        if re.search(r"cảnh cáo", t):
+        if re.search(mau["canh_cao"], t):
             rb["chi_canh_cao"] = True
-        if re.search(r"\b(cao nhất|nặng nhất|lớn nhất|kịch khung)\b", t):
+        if re.search(mau["giam_dan"], t):
             rb["sap_xep"] = "giam_dan"
-        if re.search(r"\b(thấp nhất|nhẹ nhất|nhỏ nhất)\b", t):
+        if re.search(mau["tang_dan"], t):
             rb["sap_xep"] = "tang_dan"
         return rb
 

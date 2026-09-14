@@ -62,7 +62,8 @@ hệ thống vẫn đưa ra hành vi vi phạm.
 > Đây là hạn chế **đã đo và ghi lại**, không phải chưa biết. Với đặc trưng
 > TF-IDF, 56/120 câu hợp lệ chấm điểm thấp hơn hoặc bằng truy vấn rác — không
 > ngưỡng nào tách được. Nhóm đã thử dense embedding: AUC tăng 0,8746 → 0,9958 và
-> loại được 92,5% truy vấn rác mà không từ chối oan câu nào. Nhưng hai phân bố
+> riêng điểm dense loại được **77,5%** truy vấn rác mà không từ chối oan câu nào,
+> còn bộ lọc kết hợp keyphrase + dense loại được **92,5%**. Nhưng hai phân bố
 > **vẫn chồng lấn** — trần điểm của rác 0,516 nằm trên sàn 0,464 của câu hợp lệ
 > không có keyphrase. Muốn loại 100% rác phải chấp nhận làm oan 3/120 câu, nên
 > nhóm từ chối đánh đổi đó và giữ tầng dense ở dạng tuỳ chọn.
@@ -82,5 +83,6 @@ vấn đề trải nghiệm đang tồn tại. Nêu rõ *"xe máy"* thì ra đú
 | Docker hỏng hoàn toàn | Chạy từ mã nguồn: `uvicorn traffic_law.api.web:app` |
 | Mạng chập chờn | Không sao — hệ thống chạy hoàn toàn offline |
 
-Phương án dự phòng cuối: mở sẵn `so_lieu/kich_ban_nghiem_thu.md` — bảng 12 ca
+Phương án dự phòng cuối: mở sẵn `slide/Slide_Nhom7_CS106.pptx` (trang 9 tóm tắt
+đúng năm bước này) hoặc `so_lieu/kich_ban_nghiem_thu.md` — bảng 12 ca
 nghiệm thu với kết quả thật, trình bày được mà không cần chạy gì.

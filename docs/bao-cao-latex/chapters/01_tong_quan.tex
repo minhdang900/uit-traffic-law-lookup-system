@@ -1,0 +1,104 @@
+% ============================================================================
+%  1. TỔNG QUAN
+% ============================================================================
+\section{Tổng quan}
+\label{sec:tong-quan}
+
+\subsection{Bối cảnh và động lực}
+
+Luật Trật tự, an toàn giao thông đường bộ số 36/2024/QH15~\cite{luat36} và Nghị định
+168/2024/NĐ-CP~\cite{nd168} cùng có hiệu lực từ ngày 01 tháng 01 năm 2025, thay thế toàn bộ
+khung pháp lý cũ và nâng mạnh mức xử phạt ở nhiều nhóm hành vi. Chỉ trong hơn một năm sau
+đó, khung này tiếp tục được sửa đổi hai lần: Luật 118/2025/QH15~\cite{luat118} (hiệu lực
+01/7/2026) và Nghị định 238/2026/NĐ-CP~\cite{nd238} (hiệu lực 15/8/2026). Người tham gia giao
+thông vì vậy đứng trước một khối văn bản vừa mới, vừa phân tán, vừa liên tục thay đổi.
+
+Khó khăn thực tế không nằm ở chỗ thiếu thông tin mà ở chỗ thông tin bị \emph{tách rời}.
+Luật quy định hành vi nào bị nghiêm cấm; nghị định mới quy định hành vi đó bị phạt bao
+nhiêu tiền và bị trừ mấy điểm giấy phép lái xe. Câu hỏi thường gặp nhất của người dân ---
+\emph{``vượt đèn đỏ phạt bao nhiêu''} --- do đó không thể trả lời nếu chỉ đọc một văn bản.
+Các công cụ tìm kiếm phổ thông trả về toàn văn điều khoản, buộc người hỏi tự đối chiếu;
+còn các trợ lý sinh ngôn ngữ tự nhiên thì có nguy cơ diễn giải sai lời của luật mà không
+nêu được căn cứ.
+
+Một câu trả lời sai trong tra cứu pháp luật không phải là ``kết quả kém hơn một chút'' mà
+là thông tin dẫn người dân tới hành vi sai. Ba đặc điểm của lĩnh vực giao thông đường bộ
+khiến nó đặc biệt phù hợp với hướng \textbf{tri thức tường minh}:
+\begin{itemize}
+  \item văn bản có cấu trúc chặt (điều -- khoản -- điểm) nên mô hình hoá được;
+  \item tri thức mang tính \emph{suy diễn số} (ngưỡng nồng độ cồn, mức vượt tốc độ, điểm
+        trừ cộng dồn) nên so khớp văn bản đơn thuần là không đủ;
+  \item mọi câu trả lời đều phải truy nguyên được về một căn cứ pháp lý cụ thể.
+\end{itemize}
+
+\subsection{Phát biểu bài toán}
+\label{sec:phat-bieu}
+
+Cho cơ sở tri thức
+\begin{equation}
+  K = (C,\; R,\; \mathit{Rules},\; F,\; \mathit{Keyphrase})
+  \label{eq:K}
+\end{equation}
+trong đó $C$ là tập khái niệm pháp lý, $R \subseteq C \times C$ là tập quan hệ hai ngôi,
+$\mathit{Rules}$ là tập quy tắc giao thông, $F$ là tập sự kiện ``hành vi vi phạm -- chế
+tài'', và $\mathit{Keyphrase}$ là từ điển cụm từ khoá ánh xạ ngôn ngữ người dùng vào định
+danh tri thức. Mỗi phần tử tri thức $x$ mang một khối căn cứ
+$cc(x) = (\text{văn bản}, \text{điều}, \text{khoản}, \text{điểm})$ và một khoảng hiệu lực
+$hl(x) = [t_{\text{bắt đầu}},\, t_{\text{kết thúc}})$.
+
+\begin{table}[H]
+\centering
+\caption{Định nghĩa hình thức đầu vào -- đầu ra của bài toán}
+\label{tab:io}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\textwidth}{@{}>{\bfseries}p{2.7cm} L@{}}
+\toprule
+Thành phần & \textbf{Định nghĩa} \\
+\midrule
+Đầu vào & Truy vấn $q$ là chuỗi tiếng Việt tự nhiên (có dấu hoặc không dấu), kèm tuỳ chọn
+mốc thời gian $t$ (mặc định: ngày hiện tại) và bộ lọc phương tiện. \\
+Đầu ra & Bộ ba $A(q,t) = (p, T, E)$: $p \in \{P1,\dots,P7\}$ là lớp bài toán được nhận
+diện; $T \subseteq C \cup \mathit{Rules} \cup F$ là danh sách tối đa $k$ mẩu tri thức đã
+xếp hạng, mọi $x \in T$ đều thoả $t \in hl(x)$; $E$ là phần giải trình gồm nguyên văn điều
+khoản và căn cứ $cc(x)$ của từng $x \in T$. \\
+Ràng buộc & Hệ thống \emph{không} sinh ngôn ngữ tự nhiên: mọi câu chữ trong $E$ đều là
+trích nguyên văn từ văn bản nguồn. Nếu không có $x$ nào thoả, hệ trả về tập rỗng kèm lý do
+chứ không suy đoán. \\
+Mục tiêu & Cực đại hoá xác suất đáp án chuẩn nằm ở hạng 1 của $T$ (Top-1) và nằm trong $T$
+(Top-$k$), đồng thời giữ độ chính xác phân lớp $p$ và bảo đảm 100\% phần tử trả về truy
+nguyên được căn cứ. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Phát biểu này tách bạch hai việc thường bị gộp làm một trong các hệ hỏi đáp: \textbf{tìm
+đúng} mẩu tri thức ($T$) và \textbf{giải trình được} vì sao ($E$). Hệ thống bị ràng buộc
+phải làm được cả hai, và chính ràng buộc ``không sinh ngôn ngữ'' là thứ phân biệt đồ án với
+hướng RAG/LLM trình bày ở mục~\ref{sec:lien-quan}.
+
+\subsection{Đóng góp của nhóm}
+
+\begin{enumerate}
+  \item \textbf{Cơ sở tri thức mở} cho lĩnh vực giao thông đường bộ theo khung pháp lý
+        2024--2026: 73 khái niệm, 482 quan hệ, 109 quy tắc, 345 hành vi vi phạm và 1.674
+        cụm từ khoá; 100\% mục có căn cứ pháp lý ở mức điều -- khoản -- điểm và có khoảng
+        hiệu lực.
+  \item \textbf{Mô hình hoá hiệu lực theo thời gian ở mức khoản}: sửa đổi được lưu như dữ
+        liệu (63 bản ghi) chứ không hợp nhất cứng, nhờ đó trả lời được câu hỏi ``tại thời
+        điểm $t$ thì áp dụng quy định nào''.
+  \item \textbf{Thuật giải xử lý truy vấn sáu bước} với hàm điểm lai ba thành phần và bộ
+        suy diễn số học cho các điều khoản phân khung theo ngưỡng; thí nghiệm loại bỏ thành
+        phần chứng minh từng thành phần đều đóng góp thực chất.
+  \item \textbf{Bộ dữ liệu đánh giá} 120 câu hỏi có đáp án chuẩn gán tới mức định danh tri
+        thức, 40 truy vấn ngoài lĩnh vực, cùng toàn bộ kết quả đo, kiểm định thống kê và
+        phân tích lỗi tái lập được bằng một lệnh chạy.
+\end{enumerate}
+
+\subsection{Cấu trúc báo cáo}
+
+Mục~\ref{sec:lien-quan} khảo sát các công trình liên quan và xác định khoảng trống.
+Mục~\ref{sec:du-lieu} trình bày cách xây dựng và phân tích bộ dữ liệu.
+Mục~\ref{sec:phuong-phap} mô tả kiến trúc, thuật giải và thiết lập thực nghiệm.
+Mục~\ref{sec:ket-qua} báo cáo kết quả, kiểm định thống kê và phân tích lỗi.
+Mục~\ref{sec:ket-luan} trình bày ứng dụng, hạn chế, hướng phát triển và kết luận.
+Phụ lục~A ghi phân công công việc; Phụ lục~B liệt kê các lệnh kiểm chứng lại số liệu.

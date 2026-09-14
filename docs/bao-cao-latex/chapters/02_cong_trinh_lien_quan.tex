@@ -1,0 +1,113 @@
+% ============================================================================
+%  2. CÁC CÔNG TRÌNH LIÊN QUAN
+% ============================================================================
+\section{Các công trình liên quan}
+\label{sec:lien-quan}
+
+\subsection{Khảo sát các hướng tiếp cận hiện tại}
+
+Các công trình về hỏi đáp và truy hồi văn bản pháp luật có thể xếp vào bốn hướng, khác
+nhau ở chỗ \emph{tri thức pháp lý nằm ở đâu}.
+
+\subsubsection{Hướng 1 --- Truy hồi ngữ nghĩa bằng mạng nơ-ron}
+
+Tri thức nằm trong tham số của mô hình ngôn ngữ. PhoBERT~\cite{phobert} là xương sống cho
+phần lớn hệ truy hồi luật tiếng Việt; Pham và cộng sự~\cite{phamMultistage} đề xuất truy
+hồi nhiều giai đoạn cho văn bản luật tiếng Việt; Tiên và cộng sự~\cite{tienSynthetic} dùng
+dữ liệu tổng hợp do mô hình lớn sinh ra để khắc phục khan hiếm nhãn. Ở quy mô quốc tế,
+LEGAL-BERT~\cite{legalbert} cho thấy tiếp tục tiền huấn luyện theo miền pháp luật cải thiện
+rõ các tác vụ pháp lý, còn Nguyen và cộng sự~\cite{nguyenAttentive} đưa kiến trúc chú ý
+phân cấp cho văn bản luật dài. Điểm chung: đầu ra là một \emph{đoạn văn bản} được xếp hạng,
+không phải tri thức có cấu trúc, nên hệ thống không giải thích được vì sao điều khoản đó áp
+dụng và không tính được mức phạt.
+
+\subsubsection{Hướng 2 --- Ontology và đồ thị tri thức pháp luật}
+
+Tri thức được mô hình hoá tường minh. Legal-Onto~\cite{legalonto} đề xuất mô hình tri thức
+gồm khái niệm có cấu trúc, ba loại quan hệ, luật suy diễn và đồ thị cụm từ khoá, áp dụng
+cho Luật Đất đai; đây chính là dòng nghiên cứu mà mô hình $K$ của đồ án kế thừa, cùng với
+nền tảng Rela-model~\cite{relamodel} và COKB~\cite{cokb}. Các mở rộng sau đó phủ thêm luật
+lao động~\cite{phamLabor,phamLegalOntoUpdate}, tích hợp ontology với đồ thị tri thức cho
+truy vấn pháp lý~\cite{phamOntoKG}, và gần đây là kiến trúc ontology ba tầng đa
+miền~\cite{phamUnified}. Đáng chú ý nhất với đồ án là Dang và cộng sự~\cite{dangKG} ---
+công trình đồ thị tri thức cho chính luật giao thông đường bộ Việt Nam, nhưng dựa trên Luật
+23/2008/QH12 đã hết hiệu lực.
+
+\subsubsection{Hướng 3 --- RAG và mô hình ngôn ngữ lớn cho miền pháp luật}
+
+Đây là hướng phổ biến nhất hiện nay, và cũng là hướng nhóm \emph{chủ động không chọn}. Dahl
+và cộng sự~\cite{dahl} đo được LLM đa dụng bịa căn cứ pháp lý một cách có hệ thống; Magesh
+và cộng sự~\cite{magesh} đánh giá tiền đăng ký các công cụ RAG pháp lý thương mại và ghi
+nhận tỉ lệ ảo giác 17--33\% dù nhà cung cấp quảng cáo ``hallucination-free''; benchmark
+ALCE~\cite{alce} cho thấy trích dẫn do mô hình sinh thường không trung thực với nguồn. Ngay
+cả các hệ kết hợp đồ thị tri thức với RAG cho luật Việt Nam~\cite{phamKGRAG,laura} vẫn giữ
+mô hình sinh ở khâu cuối, nên vẫn thừa hưởng rủi ro này.
+
+\subsubsection{Hướng 4 --- Hiệu lực theo thời gian của quy phạm}
+
+Lý thuyết đã tương đối đầy đủ ở quốc tế: Governatori và cộng sự~\cite{governatori} hình
+thức hoá ba loại sửa đổi (thay thế, bãi bỏ một phần, huỷ bỏ hồi tố) bằng logic khả bác có
+gắn thời gian; Palmirani và cộng sự~\cite{palmirani} quản lý tiến hoá văn bản theo ba chiều
+hiệu lực; chuẩn LegalRuleML~\cite{legalruleml} đưa toán tử nghĩa vụ cùng chiều thời gian vào
+biểu diễn; de Martim~\cite{demartim} tách tác phẩm trừu tượng khỏi biểu hiện có phiên bản để
+trả lời tất định câu hỏi ``văn bản tại thời điểm $t$''. Phía Việt Nam, Pham và cộng
+sự~\cite{phamLegalOntoUpdate} mới dừng ở đối sánh hai phiên bản Luật Đất đai 2013 và 2024
+--- tức phát hiện thay đổi, chưa phải truy vấn theo mốc thời gian.
+
+\subsection{Các bộ dữ liệu đã có}
+
+\begin{table}[H]
+\centering
+\caption{Các bộ dữ liệu hỏi đáp và truy hồi pháp luật tiêu biểu}
+\label{tab:datasets}
+\small
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.1cm} >{\raggedright\arraybackslash}p{3.0cm} L L@{}}
+\toprule
+\textbf{Bộ dữ liệu} & \textbf{Ngôn ngữ · miền} & \textbf{Quy mô} & \textbf{Nhiệm vụ} \\
+\midrule
+VLQA / DRILL~\cite{vlqa,drill} & Tiếng Việt · 27 lĩnh vực & 3.129 câu hỏi · 59.636 điều luật của 2.162 văn bản & Truy hồi điều luật và sinh câu trả lời có trích dẫn \\
+MLQA-TSR, VLSP 2025~\cite{mlqatsr} & Tiếng Việt · biển báo GTĐB & 776 câu hỏi · 402 điều · 498 ảnh biển báo & Truy hồi và hỏi đáp đa phương thức ảnh -- văn bản \\
+ALQAC~\cite{alqac} & Tiếng Việt (và tiếng Thái) & Chưa kiểm chứng từ nguồn chính thức & Truy hồi văn bản luật, suy luận kéo theo, hỏi đáp \\
+Zalo AI Challenge 2021~\cite{zalo} & Tiếng Việt · văn bản luật & Chưa kiểm chứng từ nguồn chính thức & Truy hồi văn bản luật (Acc@1) \\
+COLIEE~\cite{coliee} & Tiếng Nhật / Anh · dân sự, án lệ & 768 điều Bộ luật Dân sự Nhật (Task 3--4) & Truy hồi luật thành văn và kiểm tra kéo theo \\
+\midrule
+\textbf{Bộ dữ liệu của nhóm} & Tiếng Việt · GTĐB 2024--2026 & 120 câu hỏi · 345 hành vi · 109 quy tắc · 73 khái niệm & Tra cứu tri thức 7 lớp, gán nhãn tới \emph{định danh} tri thức \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Bảng~\ref{tab:datasets} chỉ ghi con số khi kiểm chứng được từ bài báo hoặc trang chính thức;
+các ô ``chưa kiểm chứng'' được để nguyên thay vì điền số ước đoán. Điểm cần lưu ý là
+\textbf{đơn vị gán nhãn}: các bộ dữ liệu hiện có gán nhãn ở mức điều luật, trong khi bộ dữ
+liệu của nhóm gán tới định danh của từng mẩu tri thức (một khái niệm, một quy tắc, một hành
+vi kèm chế tài) --- nhờ vậy mới đo được Top-1 ở mức tri thức chứ không chỉ mức văn bản.
+
+\subsection{Khoảng trống và chỗ đứng của đồ án}
+
+Đối chiếu bốn hướng trên với yêu cầu Đề tài 4, nhóm xác định năm khoảng trống --- và đây
+chính là chỗ đồ án đứng vào:
+
+\begin{enumerate}
+  \item \textbf{Chưa có hệ tra cứu tri thức cho GTĐB Việt Nam theo khung pháp lý 2024--2026.}
+        Công trình đồ thị tri thức cùng miền gần nhất~\cite{dangKG} dựa trên Luật 23/2008 đã
+        hết hiệu lực; MLQA-TSR~\cite{mlqatsr} tuy đúng khung luật mới nhưng giải bài toán
+        nhận dạng biển báo đa phương thức, không phải tra cứu tri thức pháp lý.
+  \item \textbf{Đầu ra là đoạn văn bản, không phải tri thức có cấu trúc.}
+        VLQA/DRILL~\cite{vlqa,drill}, Zalo~\cite{zalo} và COLIEE Task~3~\cite{coliee} đều
+        chấm ở mức ``xếp hạng điều luật đúng''; không nhiệm vụ nào yêu cầu trả về khái niệm,
+        quan hệ và quy tắc suy diễn --- nên không đo được khả năng giải trình.
+  \item \textbf{Chưa có công trình tiếng Việt kết hợp mô hình tri thức kiểu $K$ với suy diễn
+        số học theo luật.} Legal-Onto~\cite{legalonto} và các mở
+        rộng~\cite{phamLabor,phamLegalOntoUpdate,phamUnified} dừng ở tra cứu thuật ngữ và thủ
+        tục, trong khi GTĐB đòi hỏi tính ra mức phạt tiền, thời hạn tước giấy phép và điểm
+        trừ theo điều kiện phương tiện -- hành vi -- tình tiết.
+  \item \textbf{Chưa mô hình hoá hiệu lực theo thời gian cho pháp luật Việt Nam.} Lý thuyết
+        đã có~\cite{governatori,palmirani,legalruleml,demartim} nhưng phía Việt Nam mới dừng ở
+        phát hiện thay đổi giữa hai phiên bản~\cite{phamLegalOntoUpdate}. Miền GTĐB thay đổi
+        rất nhanh nên đây là khoảng trống có giá trị thực tiễn cao.
+  \item \textbf{Hướng RAG/LLM chưa bảo đảm trung thực căn cứ} ở mức chấp nhận được cho tra
+        cứu pháp luật~\cite{dahl,magesh,alce}. Đồ án chọn loại bỏ hoàn toàn khâu sinh, đổi độ
+        ``mượt'' của câu trả lời lấy khả năng truy vết 100\% căn cứ --- một đánh đổi có chủ
+        đích chứ không phải hạn chế kỹ thuật.
+\end{enumerate}

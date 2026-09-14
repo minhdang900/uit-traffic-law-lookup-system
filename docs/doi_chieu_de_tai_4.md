@@ -6,8 +6,9 @@ Soát từng dòng yêu cầu trong đề bài với bằng chứng đo được
 - **Lớp**: CS106.F31.CN2 · **Nhóm 7** · GVHD: PGS.TS. Nguyễn Đình Hiển
 - **Hạn báo cáo**: Buổi 10
 
-> **Kết luận**: 7/7 mục yêu cầu chuyên môn đã đạt. Cái còn thiếu là **sản phẩm nộp** —
-> báo cáo Word và demo — chứ không phải phần kỹ thuật.
+> **Kết luận**: 7/7 mục yêu cầu chuyên môn đã đạt. Sản phẩm nộp cũng đã đủ:
+> báo cáo hoàn chỉnh biên dịch từ LaTeX (`docs/BaoCao_Nhom7_CS106.pdf`, nguồn `docs/bao-cao-latex/`), slide trình chiếu
+> (`docs/Slide_Nhom7_CS106.pptx`) và demo chạy được bằng Docker.
 
 ---
 
@@ -33,7 +34,7 @@ Chỉ dùng luật gốc thì không trả lời được câu hỏi phổ biế
 **Đạt.** **1.674** keyphrase trong `data/kb/keyphrases.json`, mỗi cụm có bản không dấu và số từ,
 trỏ tới khái niệm / quy tắc / hành vi.
 
-- Khớp cụm dài nhất, chịu được truy vấn không dấu — `tests/test_keyphrase.py`
+- Khớp cụm dài nhất, chịu được truy vấn không dấu — `tests/test_keyphrases.py`
 - Đã kiểm: không có keyphrase treo (trỏ tới định danh không tồn tại)
 
 ### “Đặc tả: các thành phần về khái niệm, dạng luật trong các quy định.”
@@ -105,8 +106,9 @@ Từ `eval/ket_qua_danh_gia.json` · 120 câu hỏi · k = 5.
 | Top-3 · Top-5 | 90,83% · 95,00% | 9/120 câu sai hoàn toàn |
 | MRR | 0,8384 | đáp án đúng thường ở vị trí 1–2 |
 | Precision · Recall · F1 | 0,3373 · 0,9306 · 0,4399 | trả 5 kết quả cho đáp án 1 mẩu → trần precision 0,20 mỗi câu |
-| Thời gian trung bình | 6,2 ms | dao động 6,1–6,3 ms giữa các lần chạy |
-| Độ phủ kiểm thử | 88% | ngưỡng CI là 80% |
+| Thời gian trung bình | 6,2 ms | đo trên máy cá nhân; phụ thuộc phần cứng |
+| Độ phủ kiểm thử | 90% | ngưỡng CI là 80% |
+| Kiểm thử tự động | 256 đạt · 5 xfail · 4 bỏ qua | 4 test bỏ qua cần gói tuỳ chọn `dense` |
 
 Theo từng lớp bài toán:
 
@@ -122,30 +124,35 @@ Theo từng lớp bài toán:
 
 ---
 
-## Còn thiếu
+## Sản phẩm nộp
 
-Xếp theo mức độ ảnh hưởng tới điểm.
-
-| Mức | Hạng mục | Vì sao |
+| Hạng mục | Trạng thái | Tệp |
 |---|---|---|
-| **Nặng** | Báo cáo Word | Không có tệp `.docx` nào trong kho. Đề ấn định ngày báo cáo là Buổi 10, kèm 7 ảnh hướng dẫn định dạng → bản Word có khung chấm riêng. Sinh khung bằng `scripts/tao_bao_cao.py`. |
-| **Nặng** | Giao diện demo | `src/traffic_law/api/` từng rỗng. Buổi báo cáo cần demo chạy được. |
-| Vừa | Tài liệu thiết kế | Đề yêu cầu tường minh *“Thiết kế giải pháp để trả lời”*. |
-| Vừa | Giải trình “01 văn bản” | Xem mục a) ở trên. |
-| Nhẹ | Sáu hạn chế đã đo | Đưa vào mục “Hạn chế và hướng phát triển” của báo cáo sẽ thành điểm cộng. |
+| Báo cáo (LaTeX) | **xong** — 46 trang, 6 mục, 2 phụ lục, 19 bảng, 9 hình, đúng 4 thiết lập định dạng | `docs/BaoCao_Nhom7_CS106.pdf` |
+| Slide trình chiếu | **xong** — 21 trang, bám hệ thiết kế Organic của giao diện | `docs/Slide_Nhom7_CS106.pptx` |
+| Hai sơ đồ | **xong** — kiến trúc và luồng B1–B6 | `docs/so_do/` |
+| Giao diện demo | **xong** — 6 màn hình, chạy bằng Docker một lệnh | `src/traffic_law/api/` |
+| Tài liệu thiết kế | **xong** | `docs/thiet_ke_giai_phap.md` |
+| Giải trình “01 văn bản” | **xong** — mục 3.1 của báo cáo | xem mục a) ở trên |
+| Hạn chế đã đo | **xong** — mục 6.2 của báo cáo | `eval/*.json` |
+
+Mọi tệp đều dựng lại được bằng lệnh — `scripts/ve_so_do.py`, `scripts/thong_ke_du_lieu.py`
+(hình), `latexmk -xelatex main.tex` trong `docs/bao-cao-latex/` (báo cáo, mục lục tự
+cập nhật) và `scripts/lam_slide.js` (slide).
 
 ---
 
 ## Hạn chế đã đo
 
-Sáu `xfail(strict=True)` — nếu ngày nào chúng bất ngờ đạt, CI báo lỗi và buộc cập nhật tài liệu.
+`xfail(strict=True)` — nếu ngày nào chúng bất ngờ đạt, CI báo lỗi và buộc cập nhật tài liệu.
+Năm test xfail ở cấu hình mặc định; cài thêm gói tuỳ chọn `dense` thì có test thứ sáu.
 
 | Số | Tệp | Nội dung |
 |---:|---|---|
-| 3 | `tests/test_nguong_tin_cay.py` | Cấu hình mặc định không từ chối được truy vấn ngoài lĩnh vực: trên độ tương đồng thô, 56/120 câu hợp lệ chấm điểm thấp hơn hoặc bằng truy vấn rác. |
-| 1 | `tests/test_phat_hien_mien.py` | Dense embedding nâng AUC 0,8746 → 0,9958 và loại 92,5% truy vấn rác mà không từ chối oan câu nào, nhưng trần điểm của rác (0,516) vẫn trên sàn câu hợp lệ không keyphrase (0,464). |
-| 1 | `tests/test_nguong_tin_cay.py` | 12/120 câu hợp lệ không rút được keyphrase nào. |
+| 3 | `tests/test_confidence_threshold.py` | Cấu hình mặc định không từ chối được truy vấn ngoài lĩnh vực: trên độ tương đồng thô, 56/120 câu hợp lệ chấm điểm thấp hơn hoặc bằng truy vấn rác. |
+| 1 | `tests/test_confidence_threshold.py` | 12/120 câu hợp lệ không rút được keyphrase nào. |
 | 1 | `tests/test_kb_validator.py` | 46 chú thích sửa đổi của Luật 118/2025 chưa mô hình hoá — mô hình `SuaDoi` đóng khung theo NĐ 168. |
+| 1* | `tests/test_domain_detection.py` | *(cần gói `dense`)* Dense embedding nâng AUC 0,8746 → 0,9958; riêng điểm dense loại được **77,5%** truy vấn rác khi ép buộc 0 câu hợp lệ bị oan, bộ lọc kết hợp keyphrase + dense loại được **92,5%**. Nhưng trần điểm của rác (0,516) vẫn trên sàn câu hợp lệ không keyphrase (0,464). |
 
 ---
 
@@ -154,8 +161,10 @@ Sáu `xfail(strict=True)` — nếu ngày nào chúng bất ngờ đạt, CI bá
 Mọi con số trong tài liệu này sinh ra từ các lệnh sau, chạy tại gốc kho:
 
 ```bash
-pytest -q --cov                              # 111 passed, 6 xfailed · phủ 88%
+pytest -q --cov                              # 256 passed · 5 xfailed · 4 skipped · phủ 90%
 python eval/evaluate.py --gate-top1 0.7667   # cổng chỉ số Top-1
+python eval/ablation.py                      # thí nghiệm loại bỏ thành phần
+python eval/kich_ban.py --chi-tiet           # 12/12 ca nghiệm thu
 python eval/phat_hien_mien.py --dense --ghi  # bảng AUC tách miền
 python scripts/suy_dien_hieu_luc.py --kiem-tra
 ruff check . && mypy
