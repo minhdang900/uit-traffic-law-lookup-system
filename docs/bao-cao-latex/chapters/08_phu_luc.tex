@@ -1,0 +1,55 @@
+% ============================================================================
+%  PHỤ LỤC
+% ============================================================================
+\clearpage
+\appendix
+\renewcommand{\thesection}{\Alph{section}}
+\titleformat{\section}{\normalfont\Large\bfseries}{Phụ lục \thesection.}{0.6em}{}
+
+\section{Phân công công việc}
+
+\begin{table}[H]
+\centering
+\caption{Phân công bảy thành viên Nhóm 7}
+\label{tab:phan-cong}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\textwidth}{@{}l c L@{}}
+\toprule
+\textbf{Họ và tên} & \textbf{MSSV} & \textbf{Nội dung phụ trách} \\
+\midrule
+Nguyễn Quang Lâm & 25210289 & Mục 1 --- tổng quan, phát biểu bài toán; trang bìa và định dạng toàn bài \\
+Trần Trọng Tấn   & 25210334 & Mục 2 --- khảo sát công trình liên quan, bộ dữ liệu đã có và phân tích khoảng trống \\
+Lê Quang Thi     & 25210337 & Mục 3 --- nguồn văn bản, quy trình lấy và chuẩn hoá dữ liệu \\
+Vỏ Cẩm Thu       & 25210342 & Mục 3 --- thống kê và phân tích bộ dữ liệu, ba biểu đồ phân bố \\
+Nguyễn Trí Toàn  & 26410135 & Mục 4 --- kiến trúc, thuật giải B1--B6, hàm điểm lai và cấu hình siêu tham số \\
+Nguyễn Văn Thái  & 26410108 & Mục 5 --- bảng chỉ số, kiểm định thống kê và thí nghiệm loại bỏ thành phần \\
+Đỗ Quốc Hoàng    & 26410043 & Mục 5 --- phân tích lỗi sâu; mục 6 --- ứng dụng, hạn chế và demo \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section{Cách kiểm chứng lại số liệu}
+
+Mọi con số trong báo cáo này sinh ra từ các lệnh sau, chạy tại thư mục mã nguồn của đồ án
+(\code{ma\_nguon/}):
+
+\begin{lstlisting}
+pip install -e '.[dev,web,bao-cao]'
+pytest -q --cov                        # 286 passed · 5 xfailed · 4 skipped · phủ 90%
+python eval/evaluate.py --gate-top1 0.7667   # Bảng 10, 11
+python eval/ablation.py                # Bảng 12, 13
+python eval/kiem_dinh.py --ghi         # KTC 95%, McNemar, trần precision, bỏ dấu
+python eval/phan_tich_loi.py           # Bảng 14, 15 và Hình 6
+python scripts/thong_ke_du_lieu.py     # Hình 1, 2, 3
+python eval/kich_ban.py --chi-tiet     # 12/12 ca nghiệm thu (Bảng 16)
+python eval/phat_hien_mien.py --dense --ghi  # Bảng 18
+\end{lstlisting}
+
+Báo cáo này được biên dịch bằng \code{latexmk -xelatex main.tex} từ thư mục
+\code{bao\_cao/bao-cao-latex/}. Ba ảnh chụp giao diện (Hình~\ref{fig:ui-tra-cuu}--\ref{fig:ui-hieu-luc})
+chụp trực tiếp từ ứng dụng chạy bằng lệnh \code{uvicorn traffic\_law.api.web:app}.
+
+\vspace{1.5em}
+\begin{center}
+\small\itshape Kết quả tra cứu của hệ thống mang tính tham khảo, không thay thế ý kiến của cơ quan có thẩm quyền.
+\end{center}

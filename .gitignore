@@ -19,3 +19,15 @@ docs/bao_cao_de_tai_4_khung.docx
 
 # Bien moi truong cuc bo — CHUA BI MAT, khong bao gio commit.
 .env
+
+# LaTeX: chi giu ma nguon, bo tep trung gian khi bien dich
+docs/bao-cao-latex/*.aux
+docs/bao-cao-latex/*.fdb_latexmk
+docs/bao-cao-latex/*.fls
+docs/bao-cao-latex/*.log
+docs/bao-cao-latex/*.lof
+docs/bao-cao-latex/*.lot
+docs/bao-cao-latex/*.out
+docs/bao-cao-latex/*.toc
+docs/bao-cao-latex/*.xdv
+docs/bao-cao-latex/main.pdf

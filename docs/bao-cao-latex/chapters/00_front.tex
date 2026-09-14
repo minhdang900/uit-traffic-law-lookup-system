@@ -1,0 +1,96 @@
+% ============================================================================
+%  PHẦN ĐẦU: Lời cảm ơn · Tóm tắt · Mục lục · Danh sách hình/bảng · Từ viết tắt
+% ============================================================================
+
+\section*{Lời cảm ơn}
+\addcontentsline{toc}{section}{Lời cảm ơn}
+
+Nhóm 7 xin gửi lời cảm ơn chân thành đến PGS.TS. Nguyễn Đình Hiển, giảng viên môn
+\emph{Trí tuệ nhân tạo} (CS106), đã giới thiệu các phương pháp biểu diễn tri thức và suy
+diễn làm nền tảng cho đồ án, cũng như dòng nghiên cứu mô hình tri thức cho văn bản pháp
+luật mà hệ thống của nhóm kế thừa.
+
+Nhóm cũng cảm ơn cộng đồng mã nguồn mở Python, scikit-learn, FastAPI và Pydantic đã cung
+cấp hạ tầng để một nhóm sinh viên có thể xây dựng, kiểm thử và đóng gói trọn vẹn một hệ
+tra cứu pháp luật chạy được trên máy tính cá nhân.
+
+\vspace{1em}
+\hfill Thành phố Hồ Chí Minh, tháng 9 năm 2026
+
+\hfill Nhóm 7
+
+\clearpage
+% ----------------------------------------------------------------------------
+\section*{Tóm tắt}
+\addcontentsline{toc}{section}{Tóm tắt}
+
+Đồ án xây dựng một \textbf{hệ thống tra cứu kiến thức pháp luật giao thông đường bộ}
+theo khung pháp lý 2024--2026, gồm Luật Trật tự, an toàn giao thông đường bộ số
+36/2024/QH15, Nghị định 168/2024/NĐ-CP và hai văn bản sửa đổi là Luật 118/2025/QH15 và
+Nghị định 238/2026/NĐ-CP. Khác với hướng truy hồi văn bản hay sinh câu trả lời bằng mô
+hình ngôn ngữ lớn, hệ thống biểu diễn tri thức \emph{tường minh} bằng mô hình
+$K = (C, R, \mathit{Rules}, F, \mathit{Keyphrase})$ và \emph{không sinh ngôn ngữ tự
+nhiên}: mọi câu trả lời đều là nguyên văn điều khoản kèm căn cứ tới mức điều -- khoản --
+điểm.
+
+Cơ sở tri thức gồm 73 khái niệm, 482 quan hệ, 109 quy tắc, 345 hành vi vi phạm và 1.674
+cụm từ khoá; 100\% mục tri thức có căn cứ pháp lý và khoảng hiệu lực, 63 sửa đổi được lưu
+như dữ liệu để trả lời được câu hỏi ``tại thời điểm $t$ thì áp dụng quy định nào''. Thuật
+giải xử lý truy vấn sáu bước (B1--B6) phân loại câu hỏi vào bảy lớp bài toán, xếp hạng tri
+thức bằng hàm điểm lai ba thành phần (keyphrase, ngữ nghĩa TF-IDF, ngữ cảnh) và dùng bộ
+suy diễn số học để chọn đúng khung phạt theo ngưỡng nồng độ cồn, tốc độ.
+
+Trên bộ đánh giá 120 câu hỏi có đáp án chuẩn gán tới định danh tri thức, hệ thống đạt độ
+chính xác phân lớp \textbf{95,83\%}, \textbf{Top-1 76,67\%} (khoảng tin cậy 95\%:
+68,3--83,3\%), Top-5 95,00\% và MRR 0,8384, với thời gian trả lời trung bình 6,2~ms. Thí
+nghiệm loại bỏ thành phần cho thấy suy diễn số học nâng Top-1 của nhóm câu có giá trị số
+từ 40,9\% lên 95,5\%, và kiểm định McNemar ($p = 0{,}000488$) khẳng định cải thiện này có ý
+nghĩa thống kê. Mọi hạn chế --- trong đó có việc cấu hình mặc định chưa từ chối được truy
+vấn ngoài lĩnh vực --- đều được đo và khoá lại bằng kiểm thử. Toàn bộ số liệu tái lập được
+bằng một lệnh chạy.
+
+\vspace{0.6em}
+\noindent\textbf{Từ khoá:} biểu diễn tri thức, hệ tra cứu pháp luật, giao thông đường bộ,
+keyphrase, suy diễn số học, hiệu lực theo thời gian, tiếng Việt.
+
+\clearpage
+% ----------------------------------------------------------------------------
+{\setstretch{1.05}
+\tableofcontents
+\clearpage
+\listoffigures
+\addcontentsline{toc}{section}{Danh sách hình}
+\vspace{1.2em}
+\listoftables
+\addcontentsline{toc}{section}{Danh sách bảng}
+}
+
+\clearpage
+% ----------------------------------------------------------------------------
+\section*{Danh mục từ viết tắt}
+\addcontentsline{toc}{section}{Danh mục từ viết tắt}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\textwidth}{@{}l L@{}}
+\toprule
+\textbf{Viết tắt} & \textbf{Ý nghĩa} \\
+\midrule
+GTĐB      & Giao thông đường bộ \\
+GPLX      & Giấy phép lái xe \\
+NĐ-CP     & Nghị định của Chính phủ \\
+QH        & Luật do Quốc hội ban hành \\
+VBHN-VPQH & Văn bản hợp nhất của Văn phòng Quốc hội \\
+KB        & Knowledge Base --- cơ sở tri thức \\
+TF-IDF    & Term Frequency -- Inverse Document Frequency \\
+MRR       & Mean Reciprocal Rank --- hạng nghịch đảo trung bình \\
+KTC       & Khoảng tin cậy \\
+AUC       & Area Under the ROC Curve --- diện tích dưới đường cong ROC \\
+RAG       & Retrieval-Augmented Generation --- sinh văn bản có truy hồi \\
+LLM       & Large Language Model --- mô hình ngôn ngữ lớn \\
+API       & Application Programming Interface \\
+CI        & Continuous Integration --- tích hợp liên tục \\
+xfail     & Kiểm thử được đánh dấu ``dự kiến thất bại'' kèm số đo hạn chế \\
+\bottomrule
+\end{tabularx}
+\end{center}
