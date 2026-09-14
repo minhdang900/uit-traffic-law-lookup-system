@@ -31,18 +31,19 @@ fi
 echo "==> Thu muc dich: $DICH"
 mkdir -p "$DICH"/ma_nguon "$DICH"/docker "$DICH"/bao_cao/hinh "$DICH"/so_lieu "$DICH"/slide
 
-echo "==> [1/8] Ma nguon (ban sach theo git — khong kem .venv hay cache)"
+echo "==> [1/9] Ma nguon (ban sach theo git — khong kem .venv hay cache)"
 git -C "$GOC" archive --format=tar HEAD | tar -x -C "$DICH/ma_nguon"
 # `git archive` chi lay tep DA COMMIT. Bo sung nhung tep sinh ra ma bo nop van
 # can de dung lai duoc bao cao/slide, ke ca khi chua kip commit.
 for T in scripts/ve_so_do.py scripts/tao_bao_cao_day_du.py scripts/lam_slide.js \
+         scripts/thong_ke_du_lieu.py eval/phan_tich_loi.py \
          eval/ket_qua_kiem_thu.json eval/kich_ban_nghiem_thu.md; do
   [ -f "$GOC/$T" ] && { mkdir -p "$DICH/ma_nguon/$(dirname "$T")"; cp "$GOC/$T" "$DICH/ma_nguon/$T"; }
 done
 mkdir -p "$DICH/ma_nguon/docs/so_do" && cp "$GOC"/docs/so_do/*.png "$DICH/ma_nguon/docs/so_do/" 2>/dev/null || true
 echo "    $(find "$DICH/ma_nguon" -type f | wc -l | tr -d ' ') tep"
 
-echo "==> [2/8] Anh Docker — buoc nay lau nhat"
+echo "==> [2/9] Anh Docker — buoc nay lau nhat"
 # Khong co docker CLI (vi du dang chay trong mot shell han che) thi van dong goi
 # duoc: dung lai anh da xuat o lan truoc neu tim thay. Dat ANH_CU= de tro thang
 # toi mot tep .tar.gz cu the.
@@ -70,11 +71,14 @@ else
   fi
 fi
 
-echo "==> [3/8] So lieu danh gia"
+echo "==> [3/9] So lieu danh gia"
 cp "$GOC"/eval/ket_qua_danh_gia.json \
    "$GOC"/eval/ket_qua_ablation.json \
    "$GOC"/eval/ket_qua_phat_hien_mien.json \
    "$GOC"/eval/ket_qua_kiem_thu.json \
+   "$GOC"/eval/ket_qua_kiem_dinh.json \
+   "$GOC"/eval/ket_qua_phan_tich_loi.json \
+   "$GOC"/eval/thong_ke_du_lieu.json \
    "$GOC"/eval/qa_dataset.json \
    "$GOC"/eval/truy_van_ngoai_mien.json "$DICH/so_lieu/"
 # Bang 12 ca nghiem thu: sinh lai neu chay duoc, khong thi dung ban da luu trong eval/.
@@ -84,18 +88,24 @@ else
   cp "$GOC/eval/kich_ban_nghiem_thu.md" "$DICH/so_lieu/"
   echo "    (dung ban kich_ban_nghiem_thu.md da luu — khong chay lai duoc)" >&2
 fi
-echo "    6 tep JSON + bang 12 ca nghiem thu (Markdown)"
+echo "    $(ls "$DICH"/so_lieu/*.json | wc -l | tr -d ' ') tep JSON + bang 12 ca nghiem thu (Markdown)"
 
-echo "==> [4/8] Hai so do cho bao cao va slide"
-if ( cd "$GOC" && "$PY" scripts/ve_so_do.py ) >/dev/null 2>&1; then
-  echo "    da ve lai tu ma"
-else
-  echo "    BO QUA ve lai (thieu matplotlib) — dung ban da luu trong docs/so_do/" >&2
-fi
+echo "==> [4/9] So do va bieu do cho bao cao va slide"
+# ve_so_do.py: so do kien truc + luong B1-B6.
+# thong_ke_du_lieu.py: bieu do phan bo do dai / nhan / chu de + phan tich loi.
+VE_LAI=0
+for S in scripts/ve_so_do.py scripts/thong_ke_du_lieu.py; do
+  if ( cd "$GOC" && "$PY" "$S" ) >/dev/null 2>&1; then
+    VE_LAI=$((VE_LAI + 1))
+  else
+    echo "    BO QUA $S (thieu matplotlib) — dung ban da luu trong docs/so_do/" >&2
+  fi
+done
+[ "$VE_LAI" -gt 0 ] && echo "    da ve lai tu ma ($VE_LAI/2 bo sinh)"
 cp "$GOC"/docs/so_do/*.png "$DICH/bao_cao/hinh/"
 echo "    $(ls "$DICH/bao_cao/hinh" | wc -l | tr -d ' ') so do"
 
-echo "==> [5/8] Khung bao cao Word"
+echo "==> [5/9] Khung bao cao Word"
 if ( cd "$GOC" && PYTHONPATH=src "$PY" -m traffic_law.report.builder ) >/dev/null 2>&1; then
   cp "$GOC/docs/bao_cao_de_tai_4_khung.docx" "$DICH/bao_cao/"
   echo "    bao_cao_de_tai_4_khung.docx"
@@ -108,7 +118,7 @@ cp "$GOC"/docs/doi_chieu_de_tai_4.md "$GOC"/docs/thiet_ke_giai_phap.md \
 mkdir -p "$DICH/bao_cao/adr" && cp "$GOC"/docs/adr/*.md "$DICH/bao_cao/adr/"
 cp "$GOC"/docs/slide/index.html "$DICH/slide/"
 
-echo "==> [6/8] Bao cao hoan chinh + slide trinh chieu"
+echo "==> [6/9] Bao cao hoan chinh + slide trinh chieu"
 # Sinh THANG vao thu muc dich, KHONG ghi de ban trong docs/. Ly do: tep .docx va
 # .pptx nhung dau thoi gian nen moi lan dung lai ra byte khac du noi dung y het —
 # ghi de vao docs/ se lam git ban sau moi lan dong goi. Ban trong docs/ dong vai
@@ -128,11 +138,23 @@ else
   echo "    Slide_Nhom7_CS106.pptx — dung ban da luu (thieu node/pptxgenjs)" >&2
 fi
 
-echo "==> [7/8] Script khoi dong demo"
+echo "==> [7/9] Xuat PDF (co cap nhat muc luc)"
+# Nguoi cham thuong mo PDF truoc. Dung scripts/xuat_pdf.py chu khong phai
+# `soffice --convert-to` vi lenh do KHONG cap nhat truong TOC — PDF se co trang
+# muc luc trong. Thieu LibreOffice thi bo qua, bo nop van du .docx/.pptx.
+if "$PY" "$GOC/scripts/xuat_pdf.py" \
+     "$DICH/bao_cao/BaoCao_Nhom7_CS106.docx" \
+     "$DICH/slide/Slide_Nhom7_CS106.pptx"; then
+  :
+else
+  echo "    Bo qua PDF — xem canh bao o tren" >&2
+fi
+
+echo "==> [8/9] Script khoi dong demo"
 cp "$GOC"/scripts/nop_bai/chay_demo.sh "$GOC"/scripts/nop_bai/chay_demo.bat "$DICH/docker/"
 chmod +x "$DICH/docker/chay_demo.sh"
 
-echo "==> [8/8] Tai lieu huong dan"
+echo "==> [9/9] Tai lieu huong dan"
 cp "$GOC"/scripts/nop_bai/README_NOP_BAI.md "$DICH/README.md"
 cp "$GOC"/scripts/nop_bai/HUONG_DAN_BAO_CAO.md "$DICH/"
 cp "$GOC"/scripts/nop_bai/KICH_BAN_DEMO.md "$DICH/"

@@ -143,8 +143,6 @@ hop(ax, 0.55, Y - 6.72, 4.55, 1.20, "sinh_van_ban",
     nen=SURFACE, vien=N300, co_td=13.5)
 pill(ax, 0.73, Y - 5.88, 0.72, 0.30, "B6", nen=ACCENT2)
 
-ax.text(9.45, 0.28, "Hình 1. Kiến trúc hệ thống", ha="right", va="bottom",
-        fontsize=9.5, color=N600, style="italic")
 fig.savefig(str(RA / "hinh1_kien_truc.png"), dpi=300,
             bbox_inches="tight", facecolor=BG, pad_inches=0.22)
 plt.close(fig)
@@ -215,8 +213,6 @@ ax.text(0.28, Y - 4.45,
         "B5 vẫn tìm đúng khung phạt nhờ thành phần ngữ nghĩa TF-IDF.",
         fontsize=9.3, color=N700, style="italic", va="center")
 
-ax.text(9.72, 0.10, "Hình 2. Luồng xử lý truy vấn B1 – B6", ha="right", va="bottom",
-        fontsize=9.5, color=N600, style="italic")
 fig.savefig(str(RA / "hinh2_luong_b1_b6.png"), dpi=300,
             bbox_inches="tight", facecolor=BG, pad_inches=0.22)
 plt.close(fig)

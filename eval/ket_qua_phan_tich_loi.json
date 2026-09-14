@@ -1,0 +1,1091 @@
+{
+ "so_cau_hoi": 120,
+ "so_ca_chua_toi_uu": 31,
+ "so_ca_ngoai_top1": 28,
+ "so_ca_ngoai_top_k": 6,
+ "ten_nguyen_nhan": {
+  "L1": "Định tuyến sai lớp bài toán",
+  "L2": "Trượt hẳn ngoài Top-k",
+  "L3": "Thứ tự trong tập trả về (P4/P6/P7)",
+  "L4": "Câu nhiều đáp án chuẩn",
+  "L5": "Khoảng trống từ vựng làm tụt hạng",
+  "L6": "Khác"
+ },
+ "theo_nguyen_nhan": {
+  "L5": 15,
+  "L1": 5,
+  "L3": 5,
+  "L2": 4,
+  "L4": 1,
+  "L6": 1
+ },
+ "theo_nguyen_nhan_ngoai_top1": {
+  "L5": 15,
+  "L3": 5,
+  "L2": 4,
+  "L1": 2,
+  "L4": 1,
+  "L6": 1
+ },
+ "theo_lop": {
+  "P1_TRA_CUU_KHAI_NIEM": {
+   "L5": 2,
+   "L1": 1,
+   "L2": 1
+  },
+  "P2_TRA_CUU_QUY_DINH": {
+   "L5": 6,
+   "L2": 2,
+   "L1": 1
+  },
+  "P3_TRA_CUU_CHE_TAI": {
+   "L5": 5,
+   "L1": 1
+  },
+  "P4_TRA_CUU_NGUOC": {
+   "L3": 4
+  },
+  "P5_SUY_DIEN_TINH_HUONG": {
+   "L1": 2,
+   "L2": 1,
+   "L4": 1
+  },
+  "P6_TRA_CUU_CAN_CU": {
+   "L3": 1
+  },
+  "P7_TRA_CUU_LIEN_QUAN": {
+   "L5": 2,
+   "L6": 1
+  }
+ },
+ "theo_do_kho": {
+  "de": {
+   "L5": 3,
+   "L1": 1,
+   "L2": 1
+  },
+  "kho": {
+   "L3": 3,
+   "L2": 2,
+   "L1": 2,
+   "L5": 1,
+   "L4": 1
+  },
+  "trung_binh": {
+   "L5": 11,
+   "L1": 2,
+   "L3": 2,
+   "L2": 1,
+   "L6": 1
+  }
+ },
+ "hang_dap_an": {
+  "2": 13,
+  "None": 6,
+  "3": 4,
+  "1": 3,
+  "8": 2,
+  "4": 1,
+  "9": 1,
+  "6": 1
+ },
+ "theo_muc_do": {
+  "vua": 16,
+  "nang": 9,
+  "nhe": 6
+ },
+ "so_ca_trong_top_k_nhung_khong_hang_1": 22,
+ "so_ca_khong_co_cum_tu_khoa": 27,
+ "do_dai_ca_sai_tb": 14.81,
+ "ca": [
+  {
+   "id": "Q011",
+   "cau_hoi": "Đèn giao thông có mấy màu?",
+   "lop_dung": "P1_TRA_CUU_KHAI_NIEM",
+   "lop_he_thong": "P7_TRA_CUU_LIEN_QUAN",
+   "do_kho": "de",
+   "loai_tri_thuc": "concept",
+   "so_dap_an": 1,
+   "so_tu": 6,
+   "hang_dap_an": 1,
+   "trong_top_k": true,
+   "tra_nguyen_tap": false,
+   "so_ket_qua_tra_ve": 3,
+   "sai_lop": true,
+   "co_cum_tu_khoa": true,
+   "nhom_dap_an": [],
+   "nhom_ket_qua_dau": null,
+   "tri_thuc_dung": [
+    "KN_DEN_TIN_HIEU_GIAO_THONG"
+   ],
+   "tri_thuc_tra_ve": [
+    "KN_DEN_TIN_HIEU_GIAO_THONG",
+    "KN_PHUONG_TIEN_GIAO_THONG_DUONG_BO",
+    "KN_NGUOI_DIEU_KHIEN_GIAO_THONG"
+   ],
+   "nguyen_nhan": "L1",
+   "ten_nguyen_nhan": "Định tuyến sai lớp bài toán",
+   "muc_do": "nang"
+  },
+  {
+   "id": "Q013",
+   "cau_hoi": "Bằng lái xe có bao nhiêu điểm và điểm đó để làm gì?",
+   "lop_dung": "P1_TRA_CUU_KHAI_NIEM",
+   "lop_he_thong": "P1_TRA_CUU_KHAI_NIEM",
+   "do_kho": "trung_binh",
+   "loai_tri_thuc": "concept",
+   "so_dap_an": 1,
+   "so_tu": 13,
+   "hang_dap_an": 2,
+   "trong_top_k": true,
+   "tra_nguyen_tap": false,
+   "so_ket_qua_tra_ve": 5,
+   "sai_lop": false,
+   "co_cum_tu_khoa": false,
+   "nhom_dap_an": [],
+   "nhom_ket_qua_dau": null,
+   "tri_thuc_dung": [
+    "KN_DIEM_GIAY_PHEP_LAI_XE"
+   ],
+   "tri_thuc_tra_ve": [
+    "KN_GIAY_PHEP_LAI_XE",
+    "KN_DIEM_GIAY_PHEP_LAI_XE",
+    "KN_PHUC_HOI_DIEM_GPLX",
+    "KN_GPLX_HANG_DE",
+    "KN_BIEN_BAO_HIEU_DUONG_BO"
+   ],
+   "nguyen_nhan": "L5",
+   "ten_nguyen_nhan": "Khoảng trống từ vựng làm tụt hạng",
+   "muc_do": "vua"
+  },
+  {
+   "id": "Q016",
+   "cau_hoi": "Bằng lái xe có thời hạn bao lâu?",
+   "lop_dung": "P1_TRA_CUU_KHAI_NIEM",
+   "lop_he_thong": "P1_TRA_CUU_KHAI_NIEM",
+   "do_kho": "trung_binh",
+   "loai_tri_thuc": "concept",
+   "so_dap_an": 1,
+   "so_tu": 8,
+   "hang_dap_an": 2,
+   "trong_top_k": true,
+   "tra_nguyen_tap": false,
+   "so_ket_qua_tra_ve": 5,
+   "sai_lop": false,
+   "co_cum_tu_khoa": false,
+   "nhom_dap_an": [],
+   "nhom_ket_qua_dau": null,
+   "tri_thuc_dung": [
+    "KN_THOI_HAN_GPLX"
+   ],
+   "tri_thuc_tra_ve": [
+    "KN_GIAY_PHEP_LAI_XE",
+    "KN_THOI_HAN_GPLX",
+    "KN_HIEU_LUC_GPLX",
+    "KN_GPLX_HANG_DE",
+    "KN_GPLX_HANG_A"
+   ],
+   "nguyen_nhan": "L5",
+   "ten_nguyen_nhan": "Khoảng trống từ vựng làm tụt hạng",
+   "muc_do": "vua"
+  },
+  {
+   "id": "Q020",
+   "cau_hoi": "Mấy cái xe tự chạy không cần người lái ấy, trong luật gọi là gì và định nghĩa ra sao?",
+   "lop_dung": "P1_TRA_CUU_KHAI_NIEM",
+   "lop_he_thong": "P1_TRA_CUU_KHAI_NIEM",
+   "do_kho": "kho",
+   "loai_tri_thuc": "concept",
+   "so_dap_an": 1,
+   "so_tu": 20,
+   "hang_dap_an": null,
+   "trong_top_k": false,
+   "tra_nguyen_tap": false,
+   "so_ket_qua_tra_ve": 5,
+   "sai_lop": false,
+   "co_cum_tu_khoa": false,
+   "nhom_dap_an": [],
+   "nhom_ket_qua_dau": null,
+   "tri_thuc_dung": [
+    "KN_PHUONG_TIEN_GIAO_THONG_THONG_MINH"
+   ],
+   "tri_thuc_tra_ve": [
+    "KN_CAI_TAO_XE",
+    "KN_NGUOI_DIEU_KHIEN_PHUONG_TIEN",
+    "KN_NGUOI_DIEU_KHIEN_GIAO_THONG",
+    "KN_PHAN_DUONG_XE_CHAY",
+    "KN_DO_TUOI_NGUOI_LAI_XE"
+   ],
+   "nguyen_nhan": "L2",
+   "ten_nguyen_nhan": "Trượt hẳn ngoài Top-k",
+   "muc_do": "nang"
+  },
+  {
+   "id": "Q021",
+   "cau_hoi": "Gặp đèn đỏ thì có được đi tiếp không?",
+   "lop_dung": "P2_TRA_CUU_QUY_DINH",
+   "lop_he_thong": "P2_TRA_CUU_QUY_DINH",
+   "do_kho": "de",
+   "loai_tri_thuc": "rule",
+   "so_dap_an": 1,
+   "so_tu": 9,
+   "hang_dap_an": null,
+   "trong_top_k": false,
+   "tra_nguyen_tap": false,
+   "so_ket_qua_tra_ve": 5,
+   "sai_lop": false,
+   "co_cum_tu_khoa": false,
+   "nhom_dap_an": [],
+   "nhom_ket_qua_dau": null,
+   "tri_thuc_dung": [
+    "R19"
+   ],
+   "tri_thuc_tra_ve": [
+    "R18",
+    "R44",
+    "R64",
+    "R32",
+    "R49"
+   ],
+   "nguyen_nhan": "L2",
+   "ten_nguyen_nhan": "Trượt hẳn ngoài Top-k",
+   "muc_do": "nang"
+  },
+  {
+   "id": "Q023",
+   "cau_hoi": "Xe máy được chở tối đa mấy người?",
+   "lop_dung": "P2_TRA_CUU_QUY_DINH",
+   "lop_he_thong": "P2_TRA_CUU_QUY_DINH",
+   "do_kho": "de",
+   "loai_tri_thuc": "rule",
+   "so_dap_an": 1,
+   "so_tu": 8,
+   "hang_dap_an": 2,
+   "trong_top_k": true,
+   "tra_nguyen_tap": false,
+   "so_ket_qua_tra_ve": 5,
+   "sai_lop": false,
+   "co_cum_tu_khoa": false,
+   "nhom_dap_an": [],
+   "nhom_ket_qua_dau": null,
+   "tri_thuc_dung": [
+    "R81"
+   ],
+   "tri_thuc_tra_ve": [
+    "R76",
+    "R81",
+    "R84",
+    "R95",
+    "R69"
+   ],
+   "nguyen_nhan": "L5",
+   "ten_nguyen_nhan": "Khoảng trống từ vựng làm tụt hạng",
+   "muc_do": "vua"
+  },
+  {
+   "id": "Q024",
+   "cau_hoi": "Ngồi sau xe máy có bắt buộc đội nón bảo hiểm không?",
+   "lop_dung": "P2_TRA_CUU_QUY_DINH",
+   "lop_he_thong": "P2_TRA_CUU_QUY_DINH",
+   "do_kho": "de",
+   "loai_tri_thuc": "rule",
+   "so_dap_an": 1,
+   "so_tu": 12,
+   "hang_dap_an": 2,
+   "trong_top_k": true,
+   "tra_nguyen_tap": false,
+   "so_ket_qua_tra_ve": 5,
+   "sai_lop": false,
+   "co_cum_tu_khoa": false,
+   "nhom_dap_an": [],
+   "nhom_ket_qua_dau": null,
+   "tri_thuc_dung": [
+    "R82"
+   ],
+   "tri_thuc_tra_ve": [
+    "R77",
+    "R82",
+    "R65",
+    "R46",
+    "R14"
+   ],
+   "nguyen_nhan": "L5",
+   "ten_nguyen_nhan": "Khoảng trống từ vựng làm tụt hạng",
+   "muc_do": "vua"
+  },
+  {
+   "id": "Q027",
+   "cau_hoi": "Khi nào thì không được vượt xe?",
+   "lop_dung": "P2_TRA_CUU_QUY_DINH",
+   "lop_he_thong": "P2_TRA_CUU_QUY_DINH",
+   "do_kho": "trung_binh",
+   "loai_tri_thuc": "rule",
+   "so_dap_an": 1,
+   "so_tu": 7,
+   "hang_dap_an": 2,
+   "trong_top_k": true,
+   "tra_nguyen_tap": false,
+   "so_ket_qua_tra_ve": 5,
+   "sai_lop": false,
+   "co_cum_tu_khoa": false,
+   "nhom_dap_an": [],
+   "nhom_ket_qua_dau": null,
+   "tri_thuc_dung": [
+    "R32"
+   ],
+   "tri_thuc_tra_ve": [
+    "R29",
+    "R32",
+    "R31",
+    "R28",
+    "R30"
+   ],
+   "nguyen_nhan": "L5",
+   "ten_nguyen_nhan": "Khoảng trống từ vựng làm tụt hạng",
+   "muc_do": "vua"
+  },
+  {
+   "id": "Q028",
+   "cau_hoi": "Buổi tối mấy giờ thì bắt buộc phải bật đèn xe?",
+   "lop_dung": "P2_TRA_CUU_QUY_DINH",
+   "lop_he_thong": "P2_TRA_CUU_QUY_DINH",
+   "do_kho": "de",
+   "loai_tri_thuc": "rule",
+   "so_dap_an": 1,
+   "so_tu": 11,
+   "hang_dap_an": 2,
+   "trong_top_k": true,
+   "tra_nguyen_tap": false,
+   "so_ket_qua_tra_ve": 5,
+   "sai_lop": false,
+   "co_cum_tu_khoa": false,
+   "nhom_dap_an": [],
+   "nhom_ket_qua_dau": null,
+   "tri_thuc_dung": [
+    "R48"
+   ],
+   "tri_thuc_tra_ve": [
+    "R65",
+    "R48",
+    "R46",
+    "R77",
+    "R82"
+   ],
+   "nguyen_nhan": "L5",
+   "ten_nguyen_nhan": "Khoảng trống từ vựng làm tụt hạng",
+   "muc_do": "vua"
+  },
+  {
+   "id": "Q031",
+   "cau_hoi": "Xe máy có được chạy vào đường cao tốc không?",
+   "lop_dung": "P2_TRA_CUU_QUY_DINH",
+   "lop_he_thong": "P2_TRA_CUU_QUY_DINH",
+   "do_kho": "trung_binh",
+   "loai_tri_thuc": "rule",
+   "so_dap_an": 1,
+   "so_tu": 10,
+   "hang_dap_an": 3,
+   "trong_top_k": true,
+   "tra_nguyen_tap": false,
+   "so_ket_qua_tra_ve": 5,
+   "sai_lop": false,
+   "co_cum_tu_khoa": false,
+   "nhom_dap_an": [],
+   "nhom_ket_qua_dau": null,
+   "tri_thuc_dung": [
+    "R64"
+   ],
+   "tri_thuc_tra_ve": [
+    "R62",
+    "R60",
+    "R64",
+    "R61",
+    "R63"
+   ],
+   "nguyen_nhan": "L5",
+   "ten_nguyen_nhan": "Khoảng trống từ vựng làm tụt hạng",
+   "muc_do": "vua"
+  },
+  {
+   "id": "Q032",
+   "cau_hoi": "Bằng lái bị trừ hết 12 điểm rồi thì sao, có được chạy xe nữa không, bao lâu mới lấy lại được?",
+   "lop_dung": "P2_TRA_CUU_QUY_DINH",
+   "lop_he_thong": "P4_TRA_CUU_NGUOC",
+   "do_kho": "kho",
+   "loai_tri_thuc": "rule",
+   "so_dap_an": 1,
+   "so_tu": 22,
+   "hang_dap_an": null,
+   "trong_top_k": false,
+   "tra_nguyen_tap": true,
+   "so_ket_qua_tra_ve": 0,
+   "sai_lop": true,
+   "co_cum_tu_khoa": false,
+   "nhom_dap_an": [],
+   "nhom_ket_qua_dau": null,
+   "tri_thuc_dung": [
+    "R106"
+   ],
+   "tri_thuc_tra_ve": [],
+   "nguyen_nhan": "L1",
+   "ten_nguyen_nhan": "Định tuyến sai lớp bài toán",
+   "muc_do": "nang"
+  },
+  {
+   "id": "Q035",
+   "cau_hoi": "Chở con nhỏ trên ô tô thì luật quy định cháu ngồi ở đâu?",
+   "lop_dung": "P2_TRA_CUU_QUY_DINH",
+   "lop_he_thong": "P2_TRA_CUU_QUY_DINH",
+   "do_kho": "trung_binh",
+   "loai_tri_thuc": "rule",
+   "so_dap_an": 1,
+   "so_tu": 14,
+   "hang_dap_an": null,
+   "trong_top_k": false,
+   "tra_nguyen_tap": false,
+   "so_ket_qua_tra_ve": 5,
+   "sai_lop": false,
+   "co_cum_tu_khoa": false,
+   "nhom_dap_an": [],
+   "nhom_ket_qua_dau": null,
+   "tri_thuc_dung": [
+    "R15"
+   ],
+   "tri_thuc_tra_ve": [
+    "R35",
+    "R69",
+    "R105",
+    "R81",
+    "R84"
+   ],
+   "nguyen_nhan": "L2",
+   "ten_nguyen_nhan": "Trượt hẳn ngoài Top-k",
+   "muc_do": "nang"
+  },
+  {
+   "id": "Q039",
+   "cau_hoi": "Em họ tôi chưa có bằng lái, tôi cho nó mượn xe máy thì luật có cấm không?",
+   "lop_dung": "P2_TRA_CUU_QUY_DINH",
+   "lop_he_thong": "P2_TRA_CUU_QUY_DINH",
+   "do_kho": "kho",
+   "loai_tri_thuc": "rule",
+   "so_dap_an": 1,
+   "so_tu": 18,
+   "hang_dap_an": 2,
+   "trong_top_k": true,
+   "tra_nguyen_tap": false,
+   "so_ket_qua_tra_ve": 5,
+   "sai_lop": false,
+   "co_cum_tu_khoa": false,
+   "nhom_dap_an": [],
+   "nhom_ket_qua_dau": null,
+   "tri_thuc_dung": [
+    "R07"
+   ],
+   "tri_thuc_tra_ve": [
+    "R01",
+    "R07",
+    "R21",
+    "R81",
+    "R09"
+   ],
+   "nguyen_nhan": "L5",
+   "ten_nguyen_nhan": "Khoảng trống từ vựng làm tụt hạng",
+   "muc_do": "vua"
+  },
+  {
+   "id": "Q060",
+   "cau_hoi": "Em ngồi sau xe bạn mà không đội nón bảo hiểm thì em có bị phạt không?",
+   "lop_dung": "P3_TRA_CUU_CHE_TAI",
+   "lop_he_thong": "P3_TRA_CUU_CHE_TAI",
+   "do_kho": "trung_binh",
+   "loai_tri_thuc": "violation",
+   "so_dap_an": 1,
+   "so_tu": 17,
+   "hang_dap_an": 2,
+   "trong_top_k": true,
+   "tra_nguyen_tap": false,
+   "so_ket_qua_tra_ve": 5,
+   "sai_lop": false,
+   "co_cum_tu_khoa": false,
+   "nhom_dap_an": [
+    "mu_bao_hiem"
+   ],
+   "nhom_ket_qua_dau": "mu_bao_hiem",
+   "tri_thuc_dung": [
+    "VP_ND168D12_K5B"
+   ],
+   "tri_thuc_tra_ve": [
+    "VP_MOTO_ND168D7_K2I",
+    "VP_ND168D12_K5B",
+    "VP_ND168D9_K4DD",
+    "VP_MOTO_ND168D7_K2H",
+    "VP_ND168D9_K4D"
+   ],
+   "nguyen_nhan": "L5",
+   "ten_nguyen_nhan": "Khoảng trống từ vựng làm tụt hạng",
+   "muc_do": "vua"
+  },
+  {
+   "id": "Q064",
+   "cau_hoi": "Chạy xe máy 110 phân khối mà chưa có bằng lái thì phạt bao nhiêu?",
+   "lop_dung": "P3_TRA_CUU_CHE_TAI",
+   "lop_he_thong": "P3_TRA_CUU_CHE_TAI",
+   "do_kho": "trung_binh",
+   "loai_tri_thuc": "violation",
+   "so_dap_an": 1,
+   "so_tu": 15,
+   "hang_dap_an": 2,
+   "trong_top_k": true,
+   "tra_nguyen_tap": false,
+   "so_ket_qua_tra_ve": 5,
+   "sai_lop": false,
+   "co_cum_tu_khoa": false,
+   "nhom_dap_an": [
+    "gplx"
+   ],
+   "nhom_ket_qua_dau": "gplx",
+   "tri_thuc_dung": [
+    "VP_ND168D18_K5A"
+   ],
+   "tri_thuc_tra_ve": [
+    "VP_ND168D18_K7A",
+    "VP_ND168D18_K5A",
+    "VP_ND168D18_K7B",
+    "VP_ND168D18_K7C",
+    "VP_ND168D18_K5C"
+   ],
+   "nguyen_nhan": "L5",
+   "ten_nguyen_nhan": "Khoảng trống từ vựng làm tụt hạng",
+   "muc_do": "vua"
+  },
+  {
+   "id": "Q070",
+   "cau_hoi": "Ô tô hết hạn đăng kiểm hơn 1 tháng rồi thì bị phạt thế nào?",
+   "lop_dung": "P3_TRA_CUU_CHE_TAI",
+   "lop_he_thong": "P3_TRA_CUU_CHE_TAI",
+   "do_kho": "trung_binh",
+   "loai_tri_thuc": "violation",
+   "so_dap_an": 1,
+   "so_tu": 15,
+   "hang_dap_an": 3,
+   "trong_top_k": true,
+   "tra_nguyen_tap": false,
+   "so_ket_qua_tra_ve": 5,
+   "sai_lop": false,
+   "co_cum_tu_khoa": false,
+   "nhom_dap_an": [
+    "dang_kiem"
+   ],
+   "nhom_ket_qua_dau": "dang_kiem",
+   "tri_thuc_dung": [
+    "VP_ND168D13_K6B"
+   ],
+   "tri_thuc_tra_ve": [
+    "VP_ND168D13_K5A",
+    "VP_ND168D32_K9B",
+    "VP_ND168D13_K6B",
+    "VP_ND168D32_K11A",
+    "VP_ND168D32_K9A"
+   ],
+   "nguyen_nhan": "L5",
+   "ten_nguyen_nhan": "Khoảng trống từ vựng làm tụt hạng",
+   "muc_do": "vua"
+  },
+  {
+   "id": "Q072",
+   "cau_hoi": "Ba mẹ giao xe máy cho con chưa đủ tuổi chạy thì ba mẹ bị phạt bao nhiêu?",
+   "lop_dung": "P3_TRA_CUU_CHE_TAI",
+   "lop_he_thong": "P3_TRA_CUU_CHE_TAI",
+   "do_kho": "trung_binh",
+   "loai_tri_thuc": "violation",
+   "so_dap_an": 1,
+   "so_tu": 18,
+   "hang_dap_an": 4,
+   "trong_top_k": true,
+   "tra_nguyen_tap": false,
+   "so_ket_qua_tra_ve": 5,
+   "sai_lop": false,
+   "co_cum_tu_khoa": false,
+   "nhom_dap_an": [
+    "giao_xe"
+   ],
+   "nhom_ket_qua_dau": "do_tuoi",
+   "tri_thuc_dung": [
+    "VP_ND168D32_K10"
+   ],
+   "tri_thuc_tra_ve": [
+    "VP_ND168D18_K4A",
+    "VP_ND168D18_K1",
+    "VP_ND168D18_K6",
+    "VP_ND168D32_K10",
+    "VP_MOTO_ND168D7_K1K"
+   ],
+   "nguyen_nhan": "L5",
+   "ten_nguyen_nhan": "Khoảng trống từ vựng làm tụt hạng",
+   "muc_do": "vua"
+  },
+  {
+   "id": "Q073",
+   "cau_hoi": "Cháu tôi 17 tuổi mà chạy xe mô tô thì bị xử lý sao?",
+   "lop_dung": "P3_TRA_CUU_CHE_TAI",
+   "lop_he_thong": "P3_TRA_CUU_CHE_TAI",
+   "do_kho": "trung_binh",
+   "loai_tri_thuc": "violation",
+   "so_dap_an": 1,
+   "so_tu": 14,
+   "hang_dap_an": 3,
+   "trong_top_k": true,
+   "tra_nguyen_tap": false,
+   "so_ket_qua_tra_ve": 5,
+   "sai_lop": false,
+   "co_cum_tu_khoa": false,
+   "nhom_dap_an": [
+    "do_tuoi"
+   ],
+   "nhom_ket_qua_dau": "toc_do",
+   "tri_thuc_dung": [
+    "VP_ND168D18_K4A"
+   ],
+   "tri_thuc_tra_ve": [
+    "VP_MOTO_ND168D7_K1K",
+    "VP_OTO_ND168D6_K3O",
+    "VP_ND168D18_K4A",
+    "VP_ND168D18_K1",
+    "VP_ND168D18_K6"
+   ],
+   "nguyen_nhan": "L5",
+   "ten_nguyen_nhan": "Khoảng trống từ vựng làm tụt hạng",
+   "muc_do": "vua"
+  },
+  {
+   "id": "Q080",
+   "cau_hoi": "Không chịu dừng xe khi cảnh sát giao thông ra hiệu kiểm tra thì phạt bao nhiêu?",
+   "lop_dung": "P3_TRA_CUU_CHE_TAI",
+   "lop_he_thong": "P5_SUY_DIEN_TINH_HUONG",
+   "do_kho": "trung_binh",
+   "loai_tri_thuc": "violation",
+   "so_dap_an": 1,
+   "so_tu": 17,
+   "hang_dap_an": null,
+   "trong_top_k": false,
+   "tra_nguyen_tap": false,
+   "so_ket_qua_tra_ve": 2,
+   "sai_lop": true,
+   "co_cum_tu_khoa": false,
+   "nhom_dap_an": [
+    "chong_doi"
+   ],
+   "nhom_ket_qua_dau": "chong_doi",
+   "tri_thuc_dung": [
+    "VP_ND168D12_K10"
+   ],
+   "tri_thuc_tra_ve": [
+    "VP_ND168D12_K14A",
+    "VP_MOTO_ND168D7_K7D"
+   ],
+   "nguyen_nhan": "L1",
+   "ten_nguyen_nhan": "Định tuyến sai lớp bài toán",
+   "muc_do": "nang"
+  },
+  {
+   "id": "Q081",
+   "cau_hoi": "Những lỗi nào của xe mô tô, xe máy bị trừ tới 10 điểm giấy phép lái xe?",
+   "lop_dung": "P4_TRA_CUU_NGUOC",
+   "lop_he_thong": "P4_TRA_CUU_NGUOC",
+   "do_kho": "trung_binh",
+   "loai_tri_thuc": "violation",
+   "so_dap_an": 3,
+   "so_tu": 18,
+   "hang_dap_an": 8,
+   "trong_top_k": true,
+   "tra_nguyen_tap": true,
+   "so_ket_qua_tra_ve": 10,
+   "sai_lop": false,
+   "co_cum_tu_khoa": false,
+   "nhom_dap_an": [
+    "nong_do_con",
+    "tai_nan"
+   ],
+   "nhom_ket_qua_dau": "qua_tai",
+   "tri_thuc_dung": [
+    "VP_MOTO_ND168D7_K8B",
+    "VP_MOTO_ND168D7_K10A",
+    "VP_MOTO_ND168D7_K10B"
+   ],
+   "tri_thuc_tra_ve": [
+    "VP_ND168D32_K16B",
+    "VP_OTO_ND168D6_K11DD",
+    "VP_ND168D13_K8A",
+    "VP_ND168D32_K13D",
+    "VP_OTO_ND168D6_K10A"
+   ],
+   "nguyen_nhan": "L3",
+   "ten_nguyen_nhan": "Thứ tự trong tập trả về (P4/P6/P7)",
+   "muc_do": "nhe"
+  },
+  {
+   "id": "Q085",
+   "cau_hoi": "Đi xe máy thì vi phạm nào bị tịch thu luôn xe?",
+   "lop_dung": "P4_TRA_CUU_NGUOC",
+   "lop_he_thong": "P4_TRA_CUU_NGUOC",
+   "do_kho": "kho",
+   "loai_tri_thuc": "violation",
+   "so_dap_an": 4,
+   "so_tu": 12,
+   "hang_dap_an": 9,
+   "trong_top_k": true,
+   "tra_nguyen_tap": true,
+   "so_ket_qua_tra_ve": 12,
+   "sai_lop": false,
+   "co_cum_tu_khoa": false,
+   "nhom_dap_an": [
+    "lang_lach",
+    "xe_tu_che"
+   ],
+   "nhom_ket_qua_dau": "bien_so",
+   "tri_thuc_dung": [
+    "VP_MOTO_ND168D7_K11A",
+    "VP_MOTO_ND168D7_K11B",
+    "VP_MOTO_ND168D7_K11C",
+    "VP_ND168D14_K4"
+   ],
+   "tri_thuc_tra_ve": [
+    "VP_ND168D14_K3A",
+    "VP_ND168D32_K8H",
+    "VP_ND168D32_K8DD",
+    "VP_ND168D32_K8E",
+    "VP_ND168D32_K8G"
+   ],
+   "nguyen_nhan": "L3",
+   "ten_nguyen_nhan": "Thứ tự trong tập trả về (P4/P6/P7)",
+   "muc_do": "nhe"
+  },
+  {
+   "id": "Q088",
+   "cau_hoi": "Xe mô tô vi phạm gì thì bị tước bằng lái từ 22 đến 24 tháng?",
+   "lop_dung": "P4_TRA_CUU_NGUOC",
+   "lop_he_thong": "P4_TRA_CUU_NGUOC",
+   "do_kho": "kho",
+   "loai_tri_thuc": "violation",
+   "so_dap_an": 7,
+   "so_tu": 16,
+   "hang_dap_an": 6,
+   "trong_top_k": true,
+   "tra_nguyen_tap": true,
+   "so_ket_qua_tra_ve": 13,
+   "sai_lop": false,
+   "co_cum_tu_khoa": false,
+   "nhom_dap_an": [
+    "lang_lach",
+    "ma_tuy",
+    "nong_do_con"
+   ],
+   "nhom_ket_qua_dau": "lang_lach",
+   "tri_thuc_dung": [
+    "VP_MOTO_ND168D7_K9D",
+    "VP_MOTO_ND168D7_K9DD",
+    "VP_MOTO_ND168D7_K9E",
+    "VP_MOTO_ND168D7_K9G",
+    "VP_MOTO_ND168D7_K11A",
+    "VP_MOTO_ND168D7_K11B",
+    "VP_MOTO_ND168D7_K11C"
+   ],
+   "tri_thuc_tra_ve": [
+    "VP_OTO_ND168D6_K13",
+    "VP_OTO_ND168D6_K11A",
+    "VP_OTO_ND168D6_K11B",
+    "VP_OTO_ND168D6_K11C",
+    "VP_OTO_ND168D6_K11D"
+   ],
+   "nguyen_nhan": "L3",
+   "ten_nguyen_nhan": "Thứ tự trong tập trả về (P4/P6/P7)",
+   "muc_do": "nhe"
+  },
+  {
+   "id": "Q092",
+   "cau_hoi": "Có lỗi nào chỉ bị phạt cảnh cáo mà không phạt tiền không?",
+   "lop_dung": "P4_TRA_CUU_NGUOC",
+   "lop_he_thong": "P4_TRA_CUU_NGUOC",
+   "do_kho": "kho",
+   "loai_tri_thuc": "violation",
+   "so_dap_an": 1,
+   "so_tu": 13,
+   "hang_dap_an": 8,
+   "trong_top_k": true,
+   "tra_nguyen_tap": true,
+   "so_ket_qua_tra_ve": 15,
+   "sai_lop": false,
+   "co_cum_tu_khoa": false,
+   "nhom_dap_an": [
+    "do_tuoi"
+   ],
+   "nhom_ket_qua_dau": "lang_lach",
+   "tri_thuc_dung": [
+    "VP_ND168D18_K1"
+   ],
+   "tri_thuc_tra_ve": [
+    "VP_OTO_ND168D6_K14",
+    "VP_MOTO_ND168D7_K11A",
+    "VP_MOTO_ND168D7_K11B",
+    "VP_MOTO_ND168D7_K11C",
+    "VP_ND168D13_K9A"
+   ],
+   "nguyen_nhan": "L3",
+   "ten_nguyen_nhan": "Thứ tự trong tập trả về (P4/P6/P7)",
+   "muc_do": "nhe"
+  },
+  {
+   "id": "Q096",
+   "cau_hoi": "Nhóm em 4 đứa đi chung một xe máy, không ai đội mũ bảo hiểm, lại còn chạy quá tốc độ 15 km/h. Bị phạt bao nhiêu ạ?",
+   "lop_dung": "P5_SUY_DIEN_TINH_HUONG",
+   "lop_he_thong": "P3_TRA_CUU_CHE_TAI",
+   "do_kho": "kho",
+   "loai_tri_thuc": "violation",
+   "so_dap_an": 3,
+   "so_tu": 28,
+   "hang_dap_an": 1,
+   "trong_top_k": true,
+   "tra_nguyen_tap": false,
+   "so_ket_qua_tra_ve": 5,
+   "sai_lop": true,
+   "co_cum_tu_khoa": false,
+   "nhom_dap_an": [
+    "cho_qua_so_nguoi",
+    "mu_bao_hiem",
+    "toc_do"
+   ],
+   "nhom_ket_qua_dau": "toc_do",
+   "tri_thuc_dung": [
+    "VP_MOTO_ND168D7_K3B",
+    "VP_MOTO_ND168D7_K2H",
+    "VP_MOTO_ND168D7_K4A"
+   ],
+   "tri_thuc_tra_ve": [
+    "VP_MOTO_ND168D7_K4A",
+    "VP_MOTO_ND168D7_K9B",
+    "VP_MOTO_ND168D7_K1K",
+    "VP_OTO_ND168D6_K3O",
+    "VP_MOTO_ND168D7_K2H"
+   ],
+   "nguyen_nhan": "L1",
+   "ten_nguyen_nhan": "Định tuyến sai lớp bài toán",
+   "muc_do": "nang"
+  },
+  {
+   "id": "Q101",
+   "cau_hoi": "Xe ô tô của tôi bị che mất biển số và cũng đã quá hạn đăng kiểm hơn một tháng. Nếu bị kiểm tra thì phạt thế nào?",
+   "lop_dung": "P5_SUY_DIEN_TINH_HUONG",
+   "lop_he_thong": "P5_SUY_DIEN_TINH_HUONG",
+   "do_kho": "kho",
+   "loai_tri_thuc": "violation",
+   "so_dap_an": 2,
+   "so_tu": 28,
+   "hang_dap_an": null,
+   "trong_top_k": false,
+   "tra_nguyen_tap": false,
+   "so_ket_qua_tra_ve": 2,
+   "sai_lop": false,
+   "co_cum_tu_khoa": false,
+   "nhom_dap_an": [
+    "bien_so",
+    "dang_kiem"
+   ],
+   "nhom_ket_qua_dau": "bien_so",
+   "tri_thuc_dung": [
+    "VP_ND168D13_K8B",
+    "VP_ND168D13_K6B"
+   ],
+   "tri_thuc_tra_ve": [
+    "VP_ND168D32_K12C",
+    "VP_ND168D13_K5A"
+   ],
+   "nguyen_nhan": "L2",
+   "ten_nguyen_nhan": "Trượt hẳn ngoài Top-k",
+   "muc_do": "nang"
+  },
+  {
+   "id": "Q102",
+   "cau_hoi": "Thanh niên đi xe máy lạng lách đánh võng, đo nồng độ cồn được 0,5 mg/l khí thở thì bị xử lý ra sao?",
+   "lop_dung": "P5_SUY_DIEN_TINH_HUONG",
+   "lop_he_thong": "P5_SUY_DIEN_TINH_HUONG",
+   "do_kho": "kho",
+   "loai_tri_thuc": "violation",
+   "so_dap_an": 2,
+   "so_tu": 24,
+   "hang_dap_an": 2,
+   "trong_top_k": true,
+   "tra_nguyen_tap": false,
+   "so_ket_qua_tra_ve": 2,
+   "sai_lop": false,
+   "co_cum_tu_khoa": true,
+   "nhom_dap_an": [
+    "lang_lach",
+    "nong_do_con"
+   ],
+   "nhom_ket_qua_dau": "lang_lach",
+   "tri_thuc_dung": [
+    "VP_MOTO_ND168D7_K9A",
+    "VP_MOTO_ND168D7_K9D"
+   ],
+   "tri_thuc_tra_ve": [
+    "VP_MOTO_ND168D7_K11C",
+    "VP_MOTO_ND168D7_K9D"
+   ],
+   "nguyen_nhan": "L4",
+   "ten_nguyen_nhan": "Câu nhiều đáp án chuẩn",
+   "muc_do": "nhe"
+  },
+  {
+   "id": "Q104",
+   "cau_hoi": "Tôi lái ô tô đi ngược chiều, lúc đó có xe cứu thương hú còi phía sau mà tôi không nhường đường. Bị phạt bao nhiêu?",
+   "lop_dung": "P5_SUY_DIEN_TINH_HUONG",
+   "lop_he_thong": "P3_TRA_CUU_CHE_TAI",
+   "do_kho": "trung_binh",
+   "loai_tri_thuc": "violation",
+   "so_dap_an": 2,
+   "so_tu": 26,
+   "hang_dap_an": 1,
+   "trong_top_k": true,
+   "tra_nguyen_tap": false,
+   "so_ket_qua_tra_ve": 5,
+   "sai_lop": true,
+   "co_cum_tu_khoa": true,
+   "nhom_dap_an": [
+    "nguoc_chieu",
+    "xe_uu_tien"
+   ],
+   "nhom_ket_qua_dau": "xe_uu_tien",
+   "tri_thuc_dung": [
+    "VP_OTO_ND168D6_K9D",
+    "VP_OTO_ND168D6_K6B"
+   ],
+   "tri_thuc_tra_ve": [
+    "VP_OTO_ND168D6_K6B",
+    "VP_OTO_ND168D6_K5E",
+    "VP_OTO_ND168D6_K4H",
+    "VP_MOTO_ND168D7_K7DD",
+    "VP_MOTO_ND168D7_K2DD"
+   ],
+   "nguyen_nhan": "L1",
+   "ten_nguyen_nhan": "Định tuyến sai lớp bài toán",
+   "muc_do": "nang"
+  },
+  {
+   "id": "Q115",
+   "cau_hoi": "Điều 11 khoản 4 điểm c Luật 36/2024/QH15 quy định thế nào?",
+   "lop_dung": "P6_TRA_CUU_CAN_CU",
+   "lop_he_thong": "P6_TRA_CUU_CAN_CU",
+   "do_kho": "trung_binh",
+   "loai_tri_thuc": "rule",
+   "so_dap_an": 1,
+   "so_tu": 12,
+   "hang_dap_an": 3,
+   "trong_top_k": true,
+   "tra_nguyen_tap": true,
+   "so_ket_qua_tra_ve": 3,
+   "sai_lop": false,
+   "co_cum_tu_khoa": false,
+   "nhom_dap_an": [],
+   "nhom_ket_qua_dau": null,
+   "tri_thuc_dung": [
+    "R19"
+   ],
+   "tri_thuc_tra_ve": [
+    "R17",
+    "R18",
+    "R19"
+   ],
+   "nguyen_nhan": "L3",
+   "ten_nguyen_nhan": "Thứ tự trong tập trả về (P4/P6/P7)",
+   "muc_do": "nhe"
+  },
+  {
+   "id": "Q116",
+   "cau_hoi": "Tôi muốn tìm hiểu chung về mũ bảo hiểm khi tham gia giao thông.",
+   "lop_dung": "P7_TRA_CUU_LIEN_QUAN",
+   "lop_he_thong": "P7_TRA_CUU_LIEN_QUAN",
+   "do_kho": "trung_binh",
+   "loai_tri_thuc": "rule",
+   "so_dap_an": 1,
+   "so_tu": 14,
+   "hang_dap_an": 2,
+   "trong_top_k": true,
+   "tra_nguyen_tap": false,
+   "so_ket_qua_tra_ve": 3,
+   "sai_lop": false,
+   "co_cum_tu_khoa": false,
+   "nhom_dap_an": [],
+   "nhom_ket_qua_dau": null,
+   "tri_thuc_dung": [
+    "R82"
+   ],
+   "tri_thuc_tra_ve": [
+    "R77",
+    "R82",
+    "R86"
+   ],
+   "nguyen_nhan": "L5",
+   "ten_nguyen_nhan": "Khoảng trống từ vựng làm tụt hạng",
+   "muc_do": "vua"
+  },
+  {
+   "id": "Q118",
+   "cau_hoi": "Xe ưu tiên.",
+   "lop_dung": "P7_TRA_CUU_LIEN_QUAN",
+   "lop_he_thong": "P7_TRA_CUU_LIEN_QUAN",
+   "do_kho": "trung_binh",
+   "loai_tri_thuc": "concept",
+   "so_dap_an": 1,
+   "so_tu": 3,
+   "hang_dap_an": 2,
+   "trong_top_k": true,
+   "tra_nguyen_tap": false,
+   "so_ket_qua_tra_ve": 3,
+   "sai_lop": false,
+   "co_cum_tu_khoa": true,
+   "nhom_dap_an": [],
+   "nhom_ket_qua_dau": null,
+   "tri_thuc_dung": [
+    "KN_XE_UU_TIEN"
+   ],
+   "tri_thuc_tra_ve": [
+    "KN_DUONG_UU_TIEN",
+    "KN_XE_UU_TIEN",
+    "KN_SUC_KHOE_NGUOI_LAI_XE"
+   ],
+   "nguyen_nhan": "L6",
+   "ten_nguyen_nhan": "Khác",
+   "muc_do": "vua"
+  },
+  {
+   "id": "Q119",
+   "cau_hoi": "Trẻ em đi ô tô thì cần lưu ý những gì?",
+   "lop_dung": "P7_TRA_CUU_LIEN_QUAN",
+   "lop_he_thong": "P7_TRA_CUU_LIEN_QUAN",
+   "do_kho": "trung_binh",
+   "loai_tri_thuc": "rule",
+   "so_dap_an": 1,
+   "so_tu": 11,
+   "hang_dap_an": 2,
+   "trong_top_k": true,
+   "tra_nguyen_tap": false,
+   "so_ket_qua_tra_ve": 3,
+   "sai_lop": false,
+   "co_cum_tu_khoa": false,
+   "nhom_dap_an": [],
+   "nhom_ket_qua_dau": null,
+   "tri_thuc_dung": [
+    "R15"
+   ],
+   "tri_thuc_tra_ve": [
+    "R75",
+    "R15",
+    "R81"
+   ],
+   "nguyen_nhan": "L5",
+   "ten_nguyen_nhan": "Khoảng trống từ vựng làm tụt hạng",
+   "muc_do": "vua"
+  }
+ ]
+}
