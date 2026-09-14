@@ -11,7 +11,7 @@ GVHD: PGS.TS. Nguyễn Đình Hiển
 |---|---|
 | `bao_cao/BaoCao_Nhom7_CS106.pdf` | **Báo cáo chính thức** — 46 trang, 6 mục, 2 phụ lục, 19 bảng, 9 hình |
 | `bao_cao/bao-cao-latex/` | Mã nguồn LaTeX của báo cáo (`latexmk -xelatex main.tex`) |
-| `slide/Slide_Nhom7_CS106.pptx` | **Slide trình chiếu** 11 trang cho buổi báo cáo |
+| `slide/Slide_Nhom7_CS106.pptx` | **Slide trình chiếu** 21 trang cho buổi báo cáo (kèm bản PDF) |
 | `slide/index.html` | Bản slide chạy trên trình duyệt, dùng đúng token của giao diện |
 | `bao_cao/thiet_ke_giai_phap.md` | Tài liệu thiết kế — nguồn chữ cho mục 3 |
 | `bao_cao/kien_truc.md` | Kiến trúc thực tế đang chạy, kèm đánh giá theo Clean Architecture |

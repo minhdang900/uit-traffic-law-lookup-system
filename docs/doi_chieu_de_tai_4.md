@@ -129,7 +129,7 @@ Theo từng lớp bài toán:
 | Hạng mục | Trạng thái | Tệp |
 |---|---|---|
 | Báo cáo (LaTeX) | **xong** — 46 trang, 6 mục, 2 phụ lục, 19 bảng, 9 hình, đúng 4 thiết lập định dạng | `docs/BaoCao_Nhom7_CS106.pdf` |
-| Slide trình chiếu | **xong** — 11 trang, bám hệ thiết kế Organic của giao diện | `docs/Slide_Nhom7_CS106.pptx` |
+| Slide trình chiếu | **xong** — 21 trang, bám hệ thiết kế Organic của giao diện | `docs/Slide_Nhom7_CS106.pptx` |
 | Hai sơ đồ | **xong** — kiến trúc và luồng B1–B6 | `docs/so_do/` |
 | Giao diện demo | **xong** — 6 màn hình, chạy bằng Docker một lệnh | `src/traffic_law/api/` |
 | Tài liệu thiết kế | **xong** | `docs/thiet_ke_giai_phap.md` |
