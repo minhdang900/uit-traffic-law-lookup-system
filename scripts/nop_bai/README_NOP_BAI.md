@@ -9,10 +9,10 @@ GVHD: PGS.TS. Nguyễn Đình Hiển
 
 | Tệp | Nội dung |
 |---|---|
-| `bao_cao/BaoCao_Nhom7_CS106.docx` | **Báo cáo hoàn chỉnh** — 7 mục, 2 phụ lục, 14 bảng, 2 hình |
+| `bao_cao/BaoCao_Nhom7_CS106.pdf` | **Báo cáo chính thức** — 46 trang, 6 mục, 2 phụ lục, 19 bảng, 9 hình |
+| `bao_cao/bao-cao-latex/` | Mã nguồn LaTeX của báo cáo (`latexmk -xelatex main.tex`) |
 | `slide/Slide_Nhom7_CS106.pptx` | **Slide trình chiếu** 11 trang cho buổi báo cáo |
 | `slide/index.html` | Bản slide chạy trên trình duyệt, dùng đúng token của giao diện |
-| `bao_cao/hinh/` | Hai sơ đồ đã chèn vào báo cáo (kiến trúc, luồng B1–B6) |
 | `bao_cao/thiet_ke_giai_phap.md` | Tài liệu thiết kế — nguồn chữ cho mục 3 |
 | `bao_cao/kien_truc.md` | Kiến trúc thực tế đang chạy, kèm đánh giá theo Clean Architecture |
 | `bao_cao/doi_chieu_de_tai_4.md` | Soát từng dòng yêu cầu đề bài với bằng chứng đo được |
@@ -65,7 +65,7 @@ Thu hẹp cửa sổ dưới 720px để xem bản mobile (thanh tab đáy) — 
 | MRR | 0,8384 |
 | Precision · Recall · F1 (macro) | 0,3373 · 0,9306 · 0,4399 |
 | Thời gian trả lời | 6,2 ms |
-| Kiểm thử tự động | **256 đạt · 5 xfail có số đo · 4 bỏ qua (gói `dense` tuỳ chọn) · phủ 90%** |
+| Kiểm thử tự động | **286 đạt · 5 xfail có số đo · 4 bỏ qua (gói `dense` tuỳ chọn) · phủ 90%** |
 | Ca nghiệm thu | 12/12 đạt |
 
 Cơ sở tri thức `K = (C, R, Rules, F, Keyphrase)`: 73 khái niệm · 482 quan hệ ·
@@ -89,11 +89,12 @@ cd ma_nguon
 python -m venv .venv && source .venv/bin/activate
 pip install -e '.[dev,web,bao-cao]'
 
-pytest -q --cov                              # 256 passed · 5 xfailed · 4 skipped · phủ 90%
+pytest -q --cov                              # 286 passed · 5 xfailed · 4 skipped · phủ 90%
 python eval/evaluate.py --gate-top1 0.7667   # cổng chỉ số
 python eval/ablation.py                      # thí nghiệm loại bỏ thành phần
 python eval/kich_ban.py --chi-tiet           # 12 ca nghiệm thu
 python eval/phat_hien_mien.py                # bảng AUC tách miền
+python eval/kiem_dinh.py                     # KTC 95%, McNemar, trần precision, bỏ dấu
 uvicorn traffic_law.api.web:app --reload     # giao diện
 ```
 
@@ -103,14 +104,14 @@ tổng cộng 6 hạn chế đã đo.
 
 ### Sinh lại báo cáo và slide
 
-Chạy trong `ma_nguon/` — ba script tự nhận ra bố cục thư mục và ghi ra đúng chỗ:
+Chạy trong `ma_nguon/`:
 
 ```bash
-python scripts/ve_so_do.py             # 2 sơ đồ  → docs/so_do/
-python scripts/tao_bao_cao_day_du.py   # báo cáo  → docs/BaoCao_Nhom7_CS106.docx
-node   scripts/lam_slide.js            # slide    → docs/Slide_Nhom7_CS106.pptx
+python scripts/ve_so_do.py             # sơ đồ kiến trúc + luồng B1–B6 → docs/so_do/
+python scripts/thong_ke_du_lieu.py     # biểu đồ phân bố + phân tích lỗi → docs/so_do/
+cd docs/bao-cao-latex && latexmk -xelatex main.tex   # báo cáo → main.pdf
+node   scripts/lam_slide.js            # slide → docs/Slide_Nhom7_CS106.pptx
 ```
 
-Cả ba đọc số liệu thẳng từ `eval/*.json` và `data/kb/*.json`, nên tài liệu không
-bao giờ lệch với thực đo. `scripts/dong_goi_nop_bai.sh` chạy cả ba rồi chép kết
-quả sang thư mục nộp bài.
+Sau khi vẽ lại hình, chép `docs/so_do/hinh*.png` sang `docs/bao-cao-latex/figures/`
+rồi biên dịch lại. `scripts/dong_goi_nop_bai.sh` làm sẵn toàn bộ các bước này.

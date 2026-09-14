@@ -7,7 +7,7 @@ Soát từng dòng yêu cầu trong đề bài với bằng chứng đo được
 - **Hạn báo cáo**: Buổi 10
 
 > **Kết luận**: 7/7 mục yêu cầu chuyên môn đã đạt. Sản phẩm nộp cũng đã đủ:
-> báo cáo Word hoàn chỉnh (`docs/BaoCao_Nhom7_CS106.docx`), slide trình chiếu
+> báo cáo hoàn chỉnh biên dịch từ LaTeX (`docs/BaoCao_Nhom7_CS106.pdf`, nguồn `docs/bao-cao-latex/`), slide trình chiếu
 > (`docs/Slide_Nhom7_CS106.pptx`) và demo chạy được bằng Docker.
 
 ---
@@ -128,17 +128,17 @@ Theo từng lớp bài toán:
 
 | Hạng mục | Trạng thái | Tệp |
 |---|---|---|
-| Báo cáo Word | **xong** — 7 mục, 2 phụ lục, 14 bảng, 2 hình, đúng 4 thiết lập định dạng | `docs/BaoCao_Nhom7_CS106.docx` |
+| Báo cáo (LaTeX) | **xong** — 46 trang, 6 mục, 2 phụ lục, 19 bảng, 9 hình, đúng 4 thiết lập định dạng | `docs/BaoCao_Nhom7_CS106.pdf` |
 | Slide trình chiếu | **xong** — 11 trang, bám hệ thiết kế Organic của giao diện | `docs/Slide_Nhom7_CS106.pptx` |
 | Hai sơ đồ | **xong** — kiến trúc và luồng B1–B6 | `docs/so_do/` |
 | Giao diện demo | **xong** — 6 màn hình, chạy bằng Docker một lệnh | `src/traffic_law/api/` |
 | Tài liệu thiết kế | **xong** | `docs/thiet_ke_giai_phap.md` |
-| Giải trình “01 văn bản” | **xong** — mục 2.1 của báo cáo | xem mục a) ở trên |
-| Hạn chế đã đo | **xong** — mục 5 của báo cáo | `eval/*.json` |
+| Giải trình “01 văn bản” | **xong** — mục 3.1 của báo cáo | xem mục a) ở trên |
+| Hạn chế đã đo | **xong** — mục 6.2 của báo cáo | `eval/*.json` |
 
-Cả ba tệp sinh ra đều dựng lại được bằng một lệnh — xem `scripts/ve_so_do.py`,
-`scripts/tao_bao_cao_day_du.py`, `scripts/lam_slide.js`. Việc còn lại là thao tác
-Word thuần tuý: cập nhật mục lục và xuất PDF.
+Mọi tệp đều dựng lại được bằng lệnh — `scripts/ve_so_do.py`, `scripts/thong_ke_du_lieu.py`
+(hình), `latexmk -xelatex main.tex` trong `docs/bao-cao-latex/` (báo cáo, mục lục tự
+cập nhật) và `scripts/lam_slide.js` (slide).
 
 ---
 

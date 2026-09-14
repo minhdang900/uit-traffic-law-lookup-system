@@ -7,7 +7,7 @@ báo cáo là một trường TOC, nên bản PDF xuất theo cách đó có tra
 chỉ còn dòng nhắc "Nhấn chuột phải… Update Field". Script này điều khiển
 LibreOffice qua UNO để cập nhật chỉ mục trước khi lưu.
 
-    python scripts/xuat_pdf.py docs/BaoCao_Nhom7_CS106.docx docs/Slide_Nhom7_CS106.pptx
+    python scripts/xuat_pdf.py docs/Slide_Nhom7_CS106.pptx
     python scripts/xuat_pdf.py --ra-thu-muc /duong/dan/khac tep1.docx tep2.pptx
 
 Cần LibreOffice. Mô-đun `uno` nằm trong bản cài LibreOffice chứ không phải trên

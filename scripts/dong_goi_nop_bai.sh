@@ -29,13 +29,13 @@ if [ -e "$DICH" ]; then
 fi
 
 echo "==> Thu muc dich: $DICH"
-mkdir -p "$DICH"/ma_nguon "$DICH"/docker "$DICH"/bao_cao/hinh "$DICH"/so_lieu "$DICH"/slide
+mkdir -p "$DICH"/ma_nguon "$DICH"/docker "$DICH"/bao_cao "$DICH"/so_lieu "$DICH"/slide
 
 echo "==> [1/9] Ma nguon (ban sach theo git — khong kem .venv hay cache)"
 git -C "$GOC" archive --format=tar HEAD | tar -x -C "$DICH/ma_nguon"
 # `git archive` chi lay tep DA COMMIT. Bo sung nhung tep sinh ra ma bo nop van
 # can de dung lai duoc bao cao/slide, ke ca khi chua kip commit.
-for T in scripts/ve_so_do.py scripts/tao_bao_cao_day_du.py scripts/lam_slide.js \
+for T in scripts/ve_so_do.py scripts/lam_slide.js \
          scripts/thong_ke_du_lieu.py eval/phan_tich_loi.py \
          eval/ket_qua_kiem_thu.json eval/kich_ban_nghiem_thu.md; do
   [ -f "$GOC/$T" ] && { mkdir -p "$DICH/ma_nguon/$(dirname "$T")"; cp "$GOC/$T" "$DICH/ma_nguon/$T"; }
@@ -102,33 +102,35 @@ for S in scripts/ve_so_do.py scripts/thong_ke_du_lieu.py; do
   fi
 done
 [ "$VE_LAI" -gt 0 ] && echo "    da ve lai tu ma ($VE_LAI/2 bo sinh)"
-cp "$GOC"/docs/so_do/*.png "$DICH/bao_cao/hinh/"
-echo "    $(ls "$DICH/bao_cao/hinh" | wc -l | tr -d ' ') so do"
 
-echo "==> [5/9] Khung bao cao Word"
-if ( cd "$GOC" && PYTHONPATH=src "$PY" -m traffic_law.report.builder ) >/dev/null 2>&1; then
-  cp "$GOC/docs/bao_cao_de_tai_4_khung.docx" "$DICH/bao_cao/"
-  echo "    bao_cao_de_tai_4_khung.docx"
-else
-  echo "    BO QUA: thieu goi 'bao-cao' (pip install -e '.[bao-cao]')" >&2
-fi
+echo "==> [5/9] Tai lieu kem bao cao"
 cp "$GOC"/docs/doi_chieu_de_tai_4.md "$GOC"/docs/thiet_ke_giai_phap.md \
    "$GOC"/docs/kien_truc.md "$GOC"/docs/bao_cao_du_lieu.md "$DICH/bao_cao/"
 # ADR di kem: nguoi cham co the muon biet vi sao chon nhu vay
 mkdir -p "$DICH/bao_cao/adr" && cp "$GOC"/docs/adr/*.md "$DICH/bao_cao/adr/"
 cp "$GOC"/docs/slide/index.html "$DICH/slide/"
 
-echo "==> [6/9] Bao cao hoan chinh + slide trinh chieu"
-# Sinh THANG vao thu muc dich, KHONG ghi de ban trong docs/. Ly do: tep .docx va
-# .pptx nhung dau thoi gian nen moi lan dung lai ra byte khac du noi dung y het —
-# ghi de vao docs/ se lam git ban sau moi lan dong goi. Ban trong docs/ dong vai
-# tro ban luu du phong, chi cap nhat khi ai do chay thang bo sinh khong doi so.
-if ( cd "$GOC" && "$PY" scripts/tao_bao_cao_day_du.py "$GOC" "$GOC/docs/so_do" \
-     "$DICH/bao_cao/BaoCao_Nhom7_CS106.docx" ) >/dev/null 2>&1; then
-  echo "    BaoCao_Nhom7_CS106.docx — sinh lai tu ma"
+echo "==> [6/9] Bao cao LaTeX + slide trinh chieu"
+# Bao cao chinh thuc duy nhat la ban LaTeX (docs/bao-cao-latex). Chep nguon, lay
+# hinh moi nhat tu docs/so_do, bien dich thang trong thu muc dich; thieu TeX thi
+# dung ban PDF da commit. Tep .pptx sinh thang vao thu muc dich, KHONG ghi de ban
+# trong docs/ vi .pptx nhung dau thoi gian — ghi de se lam git ban moi lan dong goi.
+mkdir -p "$DICH/bao_cao/bao-cao-latex"
+cp "$GOC/docs/bao-cao-latex/main.tex" "$DICH/bao_cao/bao-cao-latex/"
+cp -R "$GOC/docs/bao-cao-latex/chapters" "$GOC/docs/bao-cao-latex/figures" \
+  "$DICH/bao_cao/bao-cao-latex/"
+find "$DICH/bao_cao/bao-cao-latex" -name .omc -prune -exec rm -rf {} +
+for H in "$GOC"/docs/so_do/hinh*.png; do
+  cp "$H" "$DICH/bao_cao/bao-cao-latex/figures/"
+done
+if command -v latexmk >/dev/null 2>&1 && ( cd "$DICH/bao_cao/bao-cao-latex" \
+     && latexmk -xelatex -interaction=nonstopmode -halt-on-error main.tex ) >/dev/null 2>&1; then
+  mv "$DICH/bao_cao/bao-cao-latex/main.pdf" "$DICH/bao_cao/BaoCao_Nhom7_CS106.pdf"
+  ( cd "$DICH/bao_cao/bao-cao-latex" && latexmk -c >/dev/null 2>&1 ) || true
+  echo "    BaoCao_Nhom7_CS106.pdf — bien dich lai tu LaTeX"
 else
-  cp "$GOC/docs/BaoCao_Nhom7_CS106.docx" "$DICH/bao_cao/"
-  echo "    BaoCao_Nhom7_CS106.docx — dung ban da luu (thieu python-docx)" >&2
+  cp "$GOC/docs/BaoCao_Nhom7_CS106.pdf" "$DICH/bao_cao/"
+  echo "    BaoCao_Nhom7_CS106.pdf — dung ban da commit (thieu latexmk/XeLaTeX)" >&2
 fi
 if ( cd "$GOC" && node scripts/lam_slide.js "$GOC" "$GOC/docs/so_do" \
      "$DICH/slide/Slide_Nhom7_CS106.pptx" ) >/dev/null 2>&1; then
@@ -138,13 +140,11 @@ else
   echo "    Slide_Nhom7_CS106.pptx — dung ban da luu (thieu node/pptxgenjs)" >&2
 fi
 
-echo "==> [7/9] Xuat PDF (co cap nhat muc luc)"
+echo "==> [7/9] Xuat PDF cho slide"
 # Nguoi cham thuong mo PDF truoc. Dung scripts/xuat_pdf.py chu khong phai
 # `soffice --convert-to` vi lenh do KHONG cap nhat truong TOC — PDF se co trang
-# muc luc trong. Thieu LibreOffice thi bo qua, bo nop van du .docx/.pptx.
-if "$PY" "$GOC/scripts/xuat_pdf.py" \
-     "$DICH/bao_cao/BaoCao_Nhom7_CS106.docx" \
-     "$DICH/slide/Slide_Nhom7_CS106.pptx"; then
+# muc luc trong. Thieu LibreOffice thi bo qua, bo nop van co .pptx.
+if "$PY" "$GOC/scripts/xuat_pdf.py" "$DICH/slide/Slide_Nhom7_CS106.pptx"; then
   :
 else
   echo "    Bo qua PDF — xem canh bao o tren" >&2
